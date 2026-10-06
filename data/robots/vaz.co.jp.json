@@ -1,0 +1,6 @@
+{
+ "origin": "https://vaz.co.jp",
+ "fetchedAt": "2026-10-06T13:00:50.574Z",
+ "status": 200,
+ "text": "User-agent: *\n\nDisallow: /wp-admin/\nDisallow: /contact\nDisallow: /embed\nDisallow: /recruit/mid-career/\nDisallow: /newses/\n\n\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://vaz.co.jp/wp-sitemap.xml\n\n#WP Import Export Rule\nUser-agent: *\nDisallow: /wp-content/uploads/wp-import-export-lite/"
+}
