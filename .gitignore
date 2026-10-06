@@ -4,3 +4,4 @@ data/*.json
 data/*.csv
 !data/.gitkeep
 data/*.log
+out/
