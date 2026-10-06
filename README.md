@@ -10,7 +10,7 @@
 ```bash
 npm install                      # Chromium が未導入の環境では CHROME_PATH を指定
 npm test                         # 抽出ロジックの単体テスト
-node src/cli.js run --per-category 5   # 発見 → 公式サイト補完 → CSV出力
+node src/cli.js run --target 8   # 優先順位どおりに発見 → 公式サイト補完 → CSV出力
 ```
 
 | コマンド | 内容 |
@@ -20,7 +20,7 @@ node src/cli.js run --per-category 5   # 発見 → 公式サイト補完 → CS
 | `export`   | 統合して `data/companies.csv` を出力（サイトにアクセスしない） |
 | `run`      | 上記を一括実行 |
 
-オプション: `--per-category N`(1クエリあたりの取得社数) / `--sources green,wantedly,imitsu` /
+オプション: `--target N`(カテゴリごとの目標社数。達したらそのカテゴリは以降の媒体を見ない) / `--per-query N`(1一覧あたりの最大取得社数) / `--sources green,wantedly,imitsu` /
 `--categories cosme_d2c,influencer_agency,ad_agency,sns_agency` / `--delay ms` / `--no-cache`
 
 環境変数: `CHROME_PATH`（Chromeの場所）、`NO_SANDBOX=1`（root実行時は自動で付与）
@@ -38,6 +38,12 @@ node src/cli.js run --per-category 5   # 発見 → 公式サイト補完 → CS
 | OK | 公式URL・東京都本社・20名以上・カテゴリ該当・問い合わせURL がすべて確認できた |
 | 要確認 | 除外ではないが、不足項目がある（`不足項目` 列に列挙） |
 | 除外 | 東京都外、または従業員数が20名未満と確認できた |
+
+## 媒体の優先順位
+
+`config/categories.js` の `ORDER` に、カテゴリごとの媒体を優先順に並べてある。上から順に見ていき、
+そのカテゴリに該当する企業が `--target` 社に達したら打ち切る。`SITES` で各媒体の状態を管理する
+（`ready` 実装済み / `todo` 未実装 / `blocked` 遮断されるためスキップ）。
 
 ## データの統合（合体）ルール
 

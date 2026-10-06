@@ -41,8 +41,9 @@ export function parseCompany(snap) {
 }
 
 export async function discover(q, ctx) {
-  const url = `${BASE}/projects?keywords=${encodeURIComponent(q.keyword)}&locations=tokyo`;
-  const snap = await ctx.crawler.snapshot(url, { scroll: true });
+  // UI が使う URL 形式。new=true&order=mixed が無いとキーワードが反映されない。固定の広告枠が上位に混ざる点はカテゴリ判定で除外する
+  const url = `${BASE}/projects?new=true&page=1&keywords=${encodeURIComponent(q.keyword)}&order=mixed`;
+  const snap = await ctx.crawler.snapshot(url, { settleMs: 3000 });
   const comps = parseSearch(snap).slice(0, q.limit);
   ctx.log(`  wantedly "${q.keyword}": ${comps.length} 社`);
   for (const co of comps) {

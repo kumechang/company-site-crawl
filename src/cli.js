@@ -3,7 +3,8 @@ import { parseArgs } from 'node:util';
 import { Crawler } from './lib/crawler.js';
 import { Store } from './lib/store.js';
 import { log } from './lib/util.js';
-import { CATEGORIES } from '../config/categories.js';
+import { CATEGORIES, SITES, ORDER } from '../config/categories.js';
+import { consolidate } from './lib/merge.js';
 import { enrichFromOfficial } from './enrich.js';
 import { exportAll } from './export.js';
 import * as green from './sources/green.js';
@@ -15,8 +16,9 @@ const SOURCES = { green, wantedly, imitsu };
 const { values: opt, positionals } = parseArgs({
   allowPositionals: true,
   options: {
-    'per-category': { type: 'string', default: '8' }, // 1クエリあたりの取得社数
-    sources: { type: 'string', default: 'green,wantedly,imitsu' },
+    target: { type: 'string', default: '8' }, // カテゴリごとの目標社数。達したら次の媒体へ進まない
+    'per-query': { type: 'string', default: '8' }, // 1クエリ(一覧)あたりの最大取得社数
+    sources: { type: 'string', default: '' }, // 空なら ORDER の全媒体。指定時はその媒体のみ
     categories: { type: 'string', default: Object.keys(CATEGORIES).join(',') },
     delay: { type: 'string', default: '2500' }, // 同一ホストへの最小アクセス間隔(ms)
     'min-employees': { type: 'string', default: '20' },
@@ -30,7 +32,7 @@ const HELP = `使い方: node src/cli.js <command> [options]
   enrich     公式サイトを巡回して従業員数・住所・問い合わせURLを補完
   export     統合して data/companies.csv を出力
   run        discover → enrich → export を一括実行
-オプション: --per-category N  --sources green,wantedly,imitsu  --categories cosme_d2c,...  --delay ms  --no-cache`;
+オプション: --target N(カテゴリ目標社数)  --per-query N  --sources green,wantedly,imitsu  --categories cosme_d2c,...  --delay ms  --no-cache`;
 
 const cmd = positionals[0];
 if (!cmd || opt.help || !['discover', 'enrich', 'export', 'run'].includes(cmd)) {
@@ -42,22 +44,49 @@ const minEmployees = Number(opt['min-employees']);
 const store = new Store();
 const crawler = new Crawler({ minDelayMs: Number(opt.delay), useCache: !opt['no-cache'] });
 
+/** カテゴリに該当し、除外でない企業の数（打ち切り判定用） */
+function qualified(cat) {
+  const label = CATEGORIES[cat].label;
+  return store.all().filter((c) => {
+    const r = consolidate(c, { minEmployees });
+    return r.status !== '除外' && r.categories.includes(label);
+  }).length;
+}
+
 async function discover() {
-  const limit = Number(opt['per-category']);
+  const target = Number(opt.target);
+  const limit = Number(opt['per-query']);
+  const only = opt.sources ? opt.sources.split(',') : null;
   const ctx = { crawler, log, minEmployees, upsert: (n) => store.upsert(n) };
   for (const cat of opt.categories.split(',')) {
     const def = CATEGORIES[cat];
     if (!def) throw new Error(`unknown category ${cat}`);
-    log(`# ${def.label}`);
-    for (const sid of opt.sources.split(',')) {
-      for (const target of def[sid] ?? []) {
-        const q = sid === 'wantedly' ? { category: cat, keyword: target, limit } : { category: cat, url: target, limit };
+    log(`# ${def.label} (目標 ${target}社)`);
+    for (const sid of ORDER[cat]) {
+      if (only && !only.includes(sid)) continue;
+      const site = SITES[sid];
+      if (site.status === 'blocked') {
+        log(`  - ${site.name}: 利用不可のためスキップ (${site.note})`);
+        continue;
+      }
+      if (!SOURCES[sid]) {
+        log(`  - ${site.name}: 未実装のためスキップ`);
+        continue;
+      }
+      for (const t of def[sid] ?? []) {
+        const q = sid === 'wantedly' ? { category: cat, keyword: t, limit } : { category: cat, url: t, limit };
         try {
           await SOURCES[sid].discover(q, ctx);
         } catch (e) {
-          log(`  ! ${sid} ${target}: ${e.message}`);
+          log(`  ! ${site.name} ${t}: ${e.message}`);
         }
         store.save();
+      }
+      const n = qualified(cat);
+      log(`  → ${site.name} まで: 該当 ${n}/${target}社`);
+      if (n >= target) {
+        log(`  ✔ 目標達成のため ${def.label} の以降の媒体は見ません`);
+        break;
       }
     }
   }

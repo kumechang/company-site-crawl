@@ -109,9 +109,10 @@ export class Crawler {
   /**
    * @param {object} opts
    * @param {boolean} [opts.scroll] 遅延読み込み対策で下までスクロール
+   * @param {number}  [opts.settleMs] 読み込み後に追加で待つ時間(SPAの結果差し替え対策)
    * @param {string}  [opts.waitForText] この文字列が現れるまで待つ(SPA用)
    */
-  async snapshot(url, { scroll = false, waitForText = null, retries = 2 } = {}) {
+  async snapshot(url, { scroll = false, waitForText = null, settleMs = 0, retries = 2 } = {}) {
     const cp = this.cachePath(url);
     if (this.useCache && fs.existsSync(cp)) {
       this.stats.cached++;
@@ -128,6 +129,7 @@ export class Crawler {
         const snap = await this.rawPage(url, async (page) => {
           const res = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: this.timeoutMs });
           await page.waitForNetworkIdle({ idleTime: 800, timeout: 12000 }).catch(() => {}); // 描画が落ち着くまで(上限あり)
+          if (settleMs) await sleep(settleMs); // クライアント側で一覧が差し替わるSPA向け
           if (waitForText) await page.waitForFunction((t) => document.body.innerText.includes(t), { timeout: 10000 }, waitForText).catch(() => {});
           if (scroll) {
             for (let k = 0; k < 4; k++) {

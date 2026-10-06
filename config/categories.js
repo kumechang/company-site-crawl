@@ -42,3 +42,40 @@ export const CATEGORIES = {
     imitsu: ['https://imitsu.jp/ct-net-adagency/pr-tokyo/'],
   },
 };
+
+/**
+ * 媒体の状態。
+ *  ready   … アダプタ実装済み
+ *  todo    … 未実装（robots.txt・構造の確認からやる）
+ *  blocked … この環境からは遮断される（ボット対策の回避はしない）。自宅回線なら通る場合あり
+ */
+export const SITES = {
+  green: { name: 'Green', status: 'ready' },
+  wantedly: { name: 'Wantedly', status: 'ready' },
+  imitsu: { name: 'アイミツ', status: 'ready' },
+  salesnow: { name: 'SalesNow', status: 'todo' },
+  bizmaps: { name: 'BIZMAPS', status: 'blocked', note: '403 (サーバー側でIP拒否)' },
+  indeed: { name: 'Indeed', status: 'blocked', note: 'Cloudflare確認画面。規約上もスクレイピング禁止' },
+  prtimes: { name: 'PR TIMES', status: 'todo' },
+  kyujinbox: { name: '求人ボックス', status: 'todo' },
+  doda: { name: 'doda', status: 'todo' },
+  mynavi: { name: 'マイナビ転職', status: 'todo' },
+  engage: { name: 'エンゲージ', status: 'todo' },
+  boxil: { name: 'BOXIL', status: 'todo' },
+  webkanji: { name: 'Web幹事', status: 'todo' },
+  hikakubiz: { name: '比較ビズ', status: 'todo' },
+  hacchunavi: { name: '発注ナビ', status: 'todo' },
+  digimado: { name: 'デジタル化の窓口', status: 'todo' },
+  aspic: { name: 'アスピック', status: 'todo' },
+  buzztan: { name: 'バズ担', status: 'todo' },
+};
+
+/**
+ * カテゴリごとの媒体の優先順位（上から順に見て、目標社数に達したら打ち切る）。
+ */
+export const ORDER = {
+  cosme_d2c: ['salesnow', 'bizmaps', 'wantedly', 'green', 'prtimes', /* 第2群 */ 'indeed', 'kyujinbox', 'doda', 'mynavi', 'engage'],
+  influencer_agency: ['wantedly', 'green', 'kyujinbox', 'indeed', 'prtimes', 'boxil', 'webkanji', 'imitsu', 'hikakubiz'],
+  ad_agency: ['webkanji', 'imitsu', 'hikakubiz', 'hacchunavi', 'boxil', 'digimado', 'wantedly', 'green', 'doda', 'indeed', 'kyujinbox', 'mynavi', 'engage'],
+  sns_agency: ['boxil', 'aspic', 'digimado', 'buzztan', 'webkanji', 'imitsu', 'hikakubiz', 'wantedly', 'green', 'kyujinbox', 'indeed'],
+};
