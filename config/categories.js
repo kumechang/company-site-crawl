@@ -43,6 +43,7 @@ export const CATEGORIES = {
     aspic: ['https://www.aspicjapan.org/asu/service/list/smm'],
     webkanji: ['https://web-kanji.com/posts/sns-tokyo'],
     hikakubiz: [], // TODO: 比較ビズのSNS運用代行の東京一覧URL
+    kyujinbox: ['https://xn--pckua2a7gp15o89zb.com/SNS%E9%81%8B%E7%94%A8%E4%BB%A3%E8%A1%8C-%E6%9D%B1%E4%BA%AC%E9%83%BD%E3%81%AE%E4%BB%95%E4%BA%8B'],
     imitsu: ['https://imitsu.jp/ct-net-adagency/pr-tokyo/'],
   },
 };
@@ -61,7 +62,7 @@ export const SITES = {
   bizmaps: { name: 'BIZMAPS', status: 'blocked', note: '403 (サーバー側でIP拒否)' },
   indeed: { name: 'Indeed', status: 'blocked', note: 'Cloudflare確認画面。規約上もスクレイピング禁止' },
   prtimes: { name: 'PR TIMES', status: 'enrich', note: '会社名の完全一致で公式URL・本社所在地を補完(発見には未使用)' },
-  kyujinbox: { name: '求人ボックス', status: 'todo' },
+  kyujinbox: { name: '求人ボックス', status: 'ready', note: '求人詳細はrobots.txt禁止のため一覧本文の社名・求人タイトルのみ使用' },
   doda: { name: 'doda', status: 'todo' },
   mynavi: { name: 'マイナビ転職', status: 'todo' },
   engage: { name: 'エンゲージ', status: 'todo' },

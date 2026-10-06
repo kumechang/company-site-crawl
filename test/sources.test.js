@@ -6,6 +6,7 @@ import * as prtimes from '../src/sources/prtimes.js';
 import * as aspic from '../src/sources/aspic.js';
 import * as webkanji from '../src/sources/webkanji.js';
 import * as hikakubiz from '../src/sources/hikakubiz.js';
+import * as kyujinbox from '../src/sources/kyujinbox.js';
 import { consolidate } from '../src/lib/merge.js';
 import { newCompany, addEvidence } from '../src/lib/model.js';
 
@@ -112,4 +113,13 @@ test('比較ビズ 一覧カード', () => {
   assert.equal(r.length, 2);
   assert.equal(r[0].address, '東京都品川区東五反田2-9-5');
   assert.equal(r[1].slug, 'tsukumo');
+});
+
+test('求人ボックス 一覧: タイトル/会社名/勤務地', () => {
+  const text = ['SNS運用スタッフ／Webマーケティング・ネット広告','株式会社ドクターブリッジ','東京都 渋谷区 渋谷駅 徒歩8分','年収300万円～600万円','正社員',
+    '経験2年以上／SNSアカウント運用','東京都','時給～3,180円','業務委託'].join('\n');
+  const r = kyujinbox.parseList({ text });
+  assert.equal(r.length, 1);
+  assert.equal(r[0].company, '株式会社ドクターブリッジ');
+  assert.equal(r[0].title, 'SNS運用スタッフ／Webマーケティング・ネット広告');
 });
