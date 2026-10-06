@@ -22,6 +22,7 @@ export const ORIGINS = {
   digimado: 'https://digi-mado.jp',
   aspic: 'https://www.aspicjapan.org',
   buzztan: 'https://www.buzztan.com',
+  meetsmore: 'https://meetsmore.com',
 };
 
 /** そのサイトで実際に使っているURL（config に書いたもの + アダプタが辿る代表パス） */

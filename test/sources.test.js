@@ -10,6 +10,7 @@ import * as kyujinbox from '../src/sources/kyujinbox.js';
 import * as buzztan from '../src/sources/buzztan.js';
 import * as digimado from '../src/sources/digimado.js';
 import * as engage from '../src/sources/engage.js';
+import * as meetsmore from '../src/sources/meetsmore.js';
 import { consolidate } from '../src/lib/merge.js';
 import { newCompany, addEvidence, setOfficialUrl, bestOfficial } from '../src/lib/model.js';
 
@@ -179,4 +180,18 @@ test('SNS運用代行の一覧掲載媒体を列挙', () => {
   const c = newCompany('株式会社テスト');
   c.sources.push({ source: 'buzztan', url: 'u' }, { source: 'wantedly', url: 'u' }, { source: 'boxil', url: 'u' });
   assert.deepEqual(consolidate(c).listedBy.sort(), ['boxil', 'buzztan']);
+});
+
+test('ミツモア: 一覧のサービス、会社名の表記ゆれ補正、製品URL', () => {
+  const list = meetsmore.parseList({ anchors: [
+    { href: 'https://meetsmore.com/products/comnic', text: 'コムニコ' },
+    { href: 'https://meetsmore.com/products/comnic', text: '費用相場' },
+    { href: 'https://meetsmore.com/product-services/sns-operation-agency/media/1', text: '費用相場' },
+    { href: 'https://meetsmore.com/products/FULLSPEED', text: 'フルスピード' },
+  ] });
+  assert.deepEqual(list.map((x) => x.slug), ['comnic', 'FULLSPEED']);
+  assert.equal(meetsmore.cleanCompany('株株式会社コムニコ（comnico inc.）'), '株式会社コムニコ');
+  const r = meetsmore.parseProduct({ text: 'コムニコ\n株株式会社コムニコ（comnico inc.）\nコムニコなど人気の\n製品URL\nhttps://www.comnico.jp/services/consulting\n更新日' });
+  assert.equal(r.company, '株式会社コムニコ');
+  assert.equal(r.url, 'https://www.comnico.jp/services/consulting');
 });

@@ -92,6 +92,7 @@ export class Crawler {
     try {
       await this.throttle(origin + '/robots.txt');
       rec = await this.rawPage(origin + '/robots.txt', async (page) => {
+        await page.setCacheEnabled(false); // 再取得時に 304(本文なし) を受けて「読めない」と誤判定しないため
         const r = await page.goto(origin + '/robots.txt', { waitUntil: 'domcontentloaded', timeout: 20000 });
         const status = r?.status() ?? 0;
         const text = status < 400 ? await page.evaluate(() => document.body?.innerText ?? '') : '';

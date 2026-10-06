@@ -51,6 +51,7 @@ export const CATEGORIES = {
     kyujinbox: ['https://xn--pckua2a7gp15o89zb.com/SNS%E9%81%8B%E7%94%A8%E4%BB%A3%E8%A1%8C-%E6%9D%B1%E4%BA%AC%E9%83%BD%E3%81%AE%E4%BB%95%E4%BA%8B'],
     // アイミツには専用カテゴリが無く特集ページのみ（ユーザー確認済み）。一覧中の東京のsupplierだけを拾う
     imitsu: ['https://imitsu.jp/list/net-adagency/socialmedia-outsourcing', 'https://imitsu.jp/list/hp-design/sns/'],
+    meetsmore: ['https://meetsmore.com/product-services/sns-operation-agency'], // 広告用パラメータ(utm_*, gclid)は除去
   },
 };
 
@@ -78,6 +79,7 @@ export const SITES = {
   hacchunavi: { name: '発注ナビ', status: 'none', note: 'SNS運用代行・広告代理店のページが無い(ユーザー確認済み)' },
   digimado: { name: 'デジタル化の窓口', status: 'ready', note: 'digi-mado.jp。記事/カテゴリ→製品ページ→運営企業情報' },
   aspic: { name: 'アスピック', status: 'ready' },
+  meetsmore: { name: 'ミツモア', status: 'ready', note: 'ユーザー提供。サービスページに会社名・製品URL。/product-providers 等はrobots禁止' },
   buzztan: { name: 'バズ担', status: 'ready', note: '/list/ 1ページに全社の所在地・公式URLあり' },
 };
 
@@ -88,5 +90,5 @@ export const ORDER = {
   cosme_d2c: ['salesnow', 'bizmaps', 'wantedly', 'green', 'prtimes', /* 第2群 */ 'indeed', 'kyujinbox', 'doda', 'mynavi', 'engage'],
   influencer_agency: ['wantedly', 'green', 'kyujinbox', 'indeed', 'prtimes', 'boxil', 'webkanji', 'imitsu'],
   ad_agency: ['webkanji', 'imitsu', 'boxil', 'digimado', 'wantedly', 'green', 'doda', 'indeed', 'kyujinbox', 'mynavi', 'engage'],
-  sns_agency: ['boxil', 'aspic', 'digimado', 'buzztan', 'webkanji', 'imitsu', 'wantedly', 'green', 'kyujinbox', 'engage', 'indeed'],
+  sns_agency: ['boxil', 'aspic', 'digimado', 'buzztan', 'webkanji', 'imitsu', 'meetsmore', 'wantedly', 'green', 'kyujinbox', 'engage', 'indeed'],
 };

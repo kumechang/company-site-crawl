@@ -1,0 +1,6 @@
+{
+ "origin": "https://shin-c.jp",
+ "fetchedAt": "2026-10-06T09:43:11.149Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /corpsite/wp/wp-admin/\nAllow: /corpsite/wp/wp-admin/admin-ajax.php\n\nSitemap: https://ai-shinc.co.jp/sitemap.xml\nSitemap: https://ai-shinc.co.jp/sitemap.rss\n"
+}
