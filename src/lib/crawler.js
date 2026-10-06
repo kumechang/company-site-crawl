@@ -68,6 +68,20 @@ export class Crawler {
     return path.join(this.cacheDir, h.slice(0, 2), h + '.json');
   }
 
+  /** URLで表せない取得（フォーム検索など）の結果を key でキャッシュする */
+  async memo(key, fn) {
+    const cp = this.cachePath('memo:' + key);
+    if (this.useCache && fs.existsSync(cp)) {
+      this.stats.cached++;
+      return JSON.parse(fs.readFileSync(cp, 'utf8'));
+    }
+    const out = await fn();
+    fs.mkdirSync(path.dirname(cp), { recursive: true });
+    fs.writeFileSync(cp, JSON.stringify(out));
+    this.stats.fetched++;
+    return out;
+  }
+
   async throttle(url) {
     const host = new URL(url).host;
     const wait = (this.lastHit.get(host) ?? 0) + this.minDelayMs + Math.random() * 800 - Date.now();

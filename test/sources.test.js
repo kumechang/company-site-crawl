@@ -12,6 +12,7 @@ import * as digimado from '../src/sources/digimado.js';
 import * as engage from '../src/sources/engage.js';
 import * as meetsmore from '../src/sources/meetsmore.js';
 import * as slidelib from '../src/sources/slidelib.js';
+import * as gbizinfo from '../src/sources/gbizinfo.js';
 import { consolidate } from '../src/lib/merge.js';
 import { newCompany, addEvidence, setOfficialUrl, bestOfficial, needsCorporateUrl } from '../src/lib/model.js';
 
@@ -221,4 +222,15 @@ test('slide lib: 見出し→サービスサイトへ の対応、注記の除�
     { href: 'https://digima.asahi.co.jp/', text: 'サービスサイトへ' } ] });
   assert.deepEqual(r.map((x) => x.company), ['one move株式会社', '株式会社SAKIYOMI', '株式会社デジアサ']);
   assert.deepEqual(r.map((x) => x.url), ['https://onemove.co.jp/SNS', 'https://sns-sakiyomi.com/', 'https://digima.asahi.co.jp/']);
+});
+
+test('Gビズインフォ 検索結果の表を解析し、同名から住所の合うものを選ぶ', () => {
+  const text = ['「株式会社コムニコ」 の検索結果　 632件','法人名','本店所在地','株式会社コムニコ','\t東京都港区\t-\t-\t154人\t3件','株式会社コムニコ','\t大阪府大阪市\t-\t-\t-\t0件','株式会社コムニコス','\t東京都中央区\t-\t-\t-\t6件','株式会社コムニテ(閉鎖)','\t静岡県浜松市\t-\t-\t-\t0件'].join('\n');
+  const rows = gbizinfo.parseResults(text);
+  assert.equal(rows.length, 4);
+  assert.equal(rows[0].employees, 154);
+  const hit = gbizinfo.pickRow(rows, '株式会社コムニコ', '東京都港区新橋');
+  assert.equal(hit.sameName, 2);
+  assert.equal(hit.row.address, '東京都港区');
+  assert.equal(gbizinfo.pickRow(rows, '株式会社コムニ', null), null);
 });

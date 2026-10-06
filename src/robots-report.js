@@ -24,6 +24,7 @@ export const ORIGINS = {
   buzztan: 'https://www.buzztan.com',
   meetsmore: 'https://meetsmore.com',
   slidelib: 'https://cone-c-slide.com',
+  gbizinfo: 'https://info.gbiz.go.jp',
 };
 
 /** そのサイトで実際に使っているURL（config に書いたもの + アダプタが辿る代表パス） */

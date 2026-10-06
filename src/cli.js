@@ -16,6 +16,7 @@ import * as imitsu from './sources/imitsu.js';
 import * as boxil from './sources/boxil.js';
 import * as salesnow from './sources/salesnow.js';
 import * as prtimes from './sources/prtimes.js';
+import * as gbizinfo from './sources/gbizinfo.js';
 import * as aspic from './sources/aspic.js';
 import * as webkanji from './sources/webkanji.js';
 import * as hikakubiz from './sources/hikakubiz.js';
@@ -146,6 +147,18 @@ async function enrich() {
     log(`  → ${n}/${noUrl.length} 社の公式URLを解決`);
     store.mergeByDomain();
     store.save();
+  }
+  // 1c) Gビズインフォ(経産省)で会社名検索 → 本店所在地・従業員数（従業員数が未取得の会社が対象）
+  const gb = store.all().filter((c) => !c.evidence.some((e) => e.field === 'employees') && !c.evidence.some((e) => e.source === 'gbizinfo') && !c.noGbiz);
+  if (gb.length) {
+    log(`# Gビズインフォで補完: ${gb.length} 社`);
+    let n = 0;
+    for (const c of gb) {
+      if (await gbizinfo.lookup(c, { crawler, log })) n++;
+      else c.noGbiz = true; // 一致なしは再検索しない
+      store.save();
+    }
+    log(`  → ${n}/${gb.length} 社が一致`);
   }
   // 2) 公式サイトを巡回（従業員数・住所・問い合わせURL）
   // 公式URLの採用が変わった会社は、以前のサイト由来の情報を破棄して取り直す

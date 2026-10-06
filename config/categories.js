@@ -80,6 +80,7 @@ export const SITES = {
   hacchunavi: { name: '発注ナビ', status: 'none', note: 'SNS運用代行・広告代理店のページが無い(ユーザー確認済み)' },
   digimado: { name: 'デジタル化の窓口', status: 'ready', note: 'digi-mado.jp。記事/カテゴリ→製品ページ→運営企業情報' },
   aspic: { name: 'アスピック', status: 'ready' },
+  gbizinfo: { name: 'Gビズインフォ(経産省)', status: 'enrich', note: '会社名検索(フォーム操作)で本店所在地・従業員数を補完。robots.txtは全面許可' },
   slidelib: { name: 'slide lib(スライドリブ)', status: 'ready', note: 'ユーザー提供。比較記事から会社名と「サービスサイトへ」リンクを取得。住所・従業員数は無し' },
   meetsmore: { name: 'ミツモア', status: 'ready', note: 'ユーザー提供。サービスページに会社名・製品URL。/product-providers 等はrobots禁止' },
   buzztan: { name: 'バズ担', status: 'ready', note: '/list/ 1ページに全社の所在地・公式URLあり' },

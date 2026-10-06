@@ -6,14 +6,14 @@ import { CATEGORIES } from '../../config/categories.js';
 
 /**
  * 項目ごとの情報源の優先順位（左ほど信頼）。
- *  公式サイト > 求人媒体の企業ページ(Green) > SalesNow(推定値) > 比較サイト(アイミツ) > Wantedly
+ *  公式サイト > 求人媒体の企業ページ(Green) > Gビズインフォ(政府保有情報) > SalesNow(推定値) > 比較サイト(アイミツ) > Wantedly
  */
 /** SNS運用代行の会社一覧を載せている媒体 */
 export const LISTING_SITES = ['boxil', 'aspic', 'buzztan', 'webkanji', 'meetsmore', 'slidelib'];
 
 export const PRIORITY = {
-  employees: ['official', 'green', 'salesnow', 'imitsu', 'wantedly'],
-  address: ['official', 'green', 'salesnow', 'wantedly', 'imitsu'],
+  employees: ['official', 'green', 'gbizinfo', 'salesnow', 'imitsu', 'wantedly'],
+  address: ['official', 'gbizinfo', 'green', 'salesnow', 'wantedly', 'imitsu'],
 };
 
 const rank = (field, source) => {
