@@ -1,6 +1,6 @@
 {
  "origin": "https://cactas.co.jp",
- "fetchedAt": "2026-10-06T12:49:59.230Z",
+ "fetchedAt": "2026-10-06T15:17:58.300Z",
  "status": 200,
  "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://cactas.co.jp/sitemap_index.xml\n"
 }

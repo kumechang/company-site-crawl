@@ -1,0 +1,6 @@
+{
+ "origin": "https://panopt.co.jp",
+ "fetchedAt": "2026-10-06T15:02:40.362Z",
+ "status": 200,
+ "text": "User-agent: Googlebot\nUser-agent: *\nAllow: /\n\nSitemap: https://panopt.co.jp/sitemap.xml"
+}

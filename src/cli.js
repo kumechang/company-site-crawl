@@ -189,7 +189,13 @@ async function lookupAll(label, mod, flag, pred) {
   log(`# ${label}で補完: ${todo.length} 社`);
   let n = 0;
   for (const c of todo) {
-    const r = await mod.lookup(c, { crawler, log });
+    // 1社あたり120秒で打ち切る（ページ操作が固まっても次の会社へ進む）
+    let timer;
+    const r = await Promise.race([
+      mod.lookup(c, { crawler, log }),
+      new Promise((res) => { timer = setTimeout(() => { log(`  ! ${label} ${c.name}: 120秒でタイムアウト`); res(null); }, 120000); }),
+    ]);
+    clearTimeout(timer);
     if (r === true) n++;
     else if (r === false) c[flag] = true;
     store.save();

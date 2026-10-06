@@ -1,0 +1,6 @@
+{
+ "origin": "https://soudanshitsu.kracie.co.jp",
+ "fetchedAt": "2026-10-06T15:09:59.793Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /\n\nUser-agent: facebookexternalhit\nDisallow: /\nAllow: /n/form/\n\nUser-agent: Twitterbot\nDisallow: /\nAllow: /n/form/"
+}

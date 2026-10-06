@@ -1,0 +1,6 @@
+{
+ "origin": "https://gem-sigma.com",
+ "fetchedAt": "2026-10-06T14:58:47.034Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://gem-sigma.com/sitemap.xml\nSitemap: https://gem-sigma.com/sitemap.rss\n"
+}

@@ -1,0 +1,6 @@
+{
+ "origin": "https://proactiv.jp",
+ "fetchedAt": "2026-10-06T15:15:48.007Z",
+ "status": 200,
+ "text": "User-agent: *\n \nDisallow: /_hcms/preview/\nDisallow: /hs/manage-preferences/\nDisallow: /hs/preferences-center/\nDisallow: /*?*hs_preview=*\nDisallow: /*?*hsCacheBuster=*\n\nUser-agent: Applebot\nDisallow: /paspap/\nDisallow: /_hcms/preview/\nDisallow: /hs/manage-preferences/\nDisallow: /hs/preferences-center/\nDisallow: /*?*hs_preview=*\nDisallow: /*?*hsCacheBuster=*\n"
+}

@@ -1,6 +1,6 @@
 {
  "origin": "http://www.amique.com",
- "fetchedAt": "2026-10-06T11:57:11.161Z",
+ "fetchedAt": "2026-10-06T15:13:32.947Z",
  "status": "error",
  "text": "",
  "error": "net::ERR_BLOCKED_BY_CLIENT at http://www.amique.com/robots.txt"
