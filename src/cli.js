@@ -6,6 +6,8 @@ import { log } from './lib/util.js';
 import { CATEGORIES, SITES, ORDER } from '../config/categories.js';
 import { consolidate } from './lib/merge.js';
 import { enrichFromOfficial } from './enrich.js';
+import { needsCorporateUrl, bestOfficial } from './lib/model.js';
+import { domainOf } from './lib/util.js';
 import { exportAll } from './export.js';
 import { robotsReport } from './robots-report.js';
 import * as green from './sources/green.js';
@@ -134,7 +136,8 @@ async function enrich() {
     store.save();
   }
   // 1b) まだ公式URLが無い会社は PR TIMES の企業ページ(会社名が完全一致した場合のみ)で解決
-  const noUrl = store.all().filter((c) => !c.officialUrl && !c.evidence.some((e) => e.source === 'prtimes'));
+  // 公式URLが無い、または製品ページ系の媒体由来のみ(本体サイトでない可能性)の会社が対象
+  const noUrl = store.all().filter((c) => (!c.officialUrl || needsCorporateUrl(c)) && !c.evidence.some((e) => e.source === 'prtimes'));
   if (noUrl.length) {
     log(`# PR TIMES で公式URLを解決: ${noUrl.length} 社`);
     let n = 0;
@@ -144,7 +147,17 @@ async function enrich() {
     store.save();
   }
   // 2) 公式サイトを巡回（従業員数・住所・問い合わせURL）
-  const targets = store.all().filter((c) => c.officialUrl && !c.evidence.some((e) => e.source === 'official'));
+  // 公式URLの採用が変わった会社は、以前のサイト由来の情報を破棄して取り直す
+  for (const c of store.all()) {
+    const best = bestOfficial(c);
+    const bestUrl = best && typeof best === 'object' ? best.url : c.officialUrl;
+    const crawled = c.sources.find((s) => s.source === 'official');
+    if (bestUrl && crawled && domainOf(crawled.url) !== domainOf(bestUrl)) {
+      c.evidence = c.evidence.filter((e) => e.source !== 'official');
+      c.sources = c.sources.filter((s) => s.source !== 'official');
+    }
+  }
+  const targets = store.all().filter((c) => (c.officialUrl || bestOfficial(c)) && !c.evidence.some((e) => e.source === 'official'));
   log(`# 公式サイト補完: ${targets.length} 社`);
   for (const c of targets) {
     log(`  official ${c.name} ${c.officialUrl}`);

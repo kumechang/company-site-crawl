@@ -49,3 +49,7 @@ export function bestOfficial(c) {
   const others = [...new Set(ev.map((e) => e.value).filter((v) => domainOf(v) !== domainOf(best)))];
   return { url: best, others };
 }
+
+/** 会社の本体サイトを指しやすい情報源（これらが無い会社は、製品サイトを公式URLにしている可能性がある） */
+export const CORPORATE_URL_SOURCES = ['salesnow', 'prtimes', 'buzztan', 'webkanji', 'boxil', 'imitsu'];
+export const needsCorporateUrl = (c) => !c.evidence.some((e) => e.field === 'officialUrl' && CORPORATE_URL_SOURCES.includes(e.source));

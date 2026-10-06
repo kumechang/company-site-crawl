@@ -12,7 +12,7 @@ import * as digimado from '../src/sources/digimado.js';
 import * as engage from '../src/sources/engage.js';
 import * as meetsmore from '../src/sources/meetsmore.js';
 import { consolidate } from '../src/lib/merge.js';
-import { newCompany, addEvidence, setOfficialUrl, bestOfficial } from '../src/lib/model.js';
+import { newCompany, addEvidence, setOfficialUrl, bestOfficial, needsCorporateUrl } from '../src/lib/model.js';
 
 test('SalesNow 企業ページ', () => {
   const text = [
@@ -194,4 +194,18 @@ test('ミツモア: 一覧のサービス、会社名の表記ゆれ補正、製
   const r = meetsmore.parseProduct({ text: 'コムニコ\n株株式会社コムニコ（comnico inc.）\nコムニコなど人気の\n製品URL\nhttps://www.comnico.jp/services/consulting\n更新日' });
   assert.equal(r.company, '株式会社コムニコ');
   assert.equal(r.url, 'https://www.comnico.jp/services/consulting');
+});
+
+test('ミツモア: サービス名の行(…（株式会社X）)を会社名に使わない', () => {
+  const r = meetsmore.parseProduct({ text: '運用代行サービス（株式会社４Ｘ）\n株式会社４Ｘ\n運用代行サービス（株式会社４Ｘ）など人気の\n製品URL\nhttps://4x-corp.com/service' });
+  assert.equal(r.company, '株式会社４Ｘ');
+});
+
+test('製品ページ系の媒体だけが公式URLの根拠なら本体サイトの探し直し対象', () => {
+  const c = newCompany('株式会社テスト');
+  setOfficialUrl(c, 'https://product.example/', { source: 'meetsmore', url: 'u' });
+  assert.equal(needsCorporateUrl(c), true);
+  setOfficialUrl(c, 'https://corp.example/', { source: 'prtimes', url: 'u2' });
+  assert.equal(needsCorporateUrl(c), false);
+  assert.equal(bestOfficial(c).url, 'https://corp.example/');
 });

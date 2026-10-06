@@ -25,7 +25,8 @@ export function cleanCompany(name) {
 /** サービスページ: 「<サービス名> | <運営会社> | …」と「製品URL」 */
 export function parseProduct(snap) {
   const ls = lines(snap.text);
-  const corp = ls.find((l) => /(株式会社|有限会社|合同会社)/.test(l) && l.length < 60 && !/製品|比較/.test(l));
+  // 会社名の行は先頭か末尾が法人格。「運用代行サービス（株式会社４Ｘ）」のようなサービス名の行は除く
+  const corp = ls.find((l) => /^株?(株式会社|有限会社|合同会社)/.test(l) || /(株式会社|有限会社|合同会社)$/.test(l)) ;
   const url = (snap.text.match(/製品URL\s*\n?\s*(https?:\/\/\S+)/) ?? [])[1] ?? null;
   return { company: corp ? cleanCompany(corp) : null, url };
 }
