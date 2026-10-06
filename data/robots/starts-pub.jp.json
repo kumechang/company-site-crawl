@@ -1,0 +1,6 @@
+{
+ "origin": "https://starts-pub.jp",
+ "fetchedAt": "2026-10-06T11:29:49.422Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://starts-pub.jp/wp-sitemap.xml\n"
+}

@@ -1,0 +1,6 @@
+{
+ "origin": "https://pureflat.co.jp",
+ "fetchedAt": "2026-10-06T11:42:06.985Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://pureflat.co.jp/wp-sitemap.xml\nSitemap: https://pureflat.co.jp/images_sitemap.xml\n\n\n"
+}

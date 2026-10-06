@@ -1,0 +1,6 @@
+{
+ "origin": "https://adcomi.co.jp",
+ "fetchedAt": "2026-10-06T11:41:21.342Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://adcomi.co.jp/sitemap.xml\nSitemap: https://adcomi.co.jp/sitemap.rss\n"
+}

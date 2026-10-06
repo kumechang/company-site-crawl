@@ -1,0 +1,6 @@
+{
+ "origin": "https://gmotech.jp",
+ "fetchedAt": "2026-10-06T11:38:02.469Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp/wp-admin/\nDisallow: /word/\nAllow: /wp/wp-admin/admin-ajax.php\n\nSitemap: https://gmotech.jp/sitemap.xml\nSitemap: https://gmotech.jp/corporate_sitemap.xml\nSitemap: https://gmotech.jp/recruit_sitemap.xml\nSitemap: https://gmotech.jp/semlabo/addl-sitemap.xml\nSitemap: https://gmotech.jp/semlabo/post-sitemap.xml\nSitemap: https://gmotech.jp/semlabo/page-sitemap.xml\nSitemap: https://gmotech.jp/semlabo/seminar-sitemap.xml\nSitemap: https://gmotech.jp/semlabo/category-sitemap.xml\nSitemap: https://gmotech.jp/semlabo/post_tag-sitemap.xml\nSitemap: https://gmotech.jp/semlabo/?feed=googleimagesitemap\n\n#WP Import Export Rule\nUser-agent: *\nDisallow: /wp-content/uploads/wp-import-export-lite/"
+}

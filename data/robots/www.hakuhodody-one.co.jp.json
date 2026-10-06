@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.hakuhodody-one.co.jp",
+ "fetchedAt": "2026-10-06T11:36:06.960Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /search\n\nSitemap: https://www.hakuhodody-one.co.jp/sitemap.xml\n"
+}

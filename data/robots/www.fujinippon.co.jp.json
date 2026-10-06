@@ -1,0 +1,7 @@
+{
+ "origin": "https://www.fujinippon.co.jp",
+ "fetchedAt": "2026-10-06T11:30:23.781Z",
+ "status": "error",
+ "text": "",
+ "error": "net::ERR_TUNNEL_CONNECTION_FAILED at https://www.fujinippon.co.jp/robots.txt"
+}
