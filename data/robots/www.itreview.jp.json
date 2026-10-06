@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.itreview.jp",
+ "fetchedAt": "2026-10-06T09:34:21.431Z",
+ "status": 200,
+ "text": "# See http://www.robotstxt.org/robotstxt.html for documentation on how to use the robots.txt file\nUser-agent: *\nDisallow: /products/*/lead_campaign_forms/*\nDisallow: /*?lastmod=*\n\nUser-agent: YisouSpider\nDisallow: /\n\nUser-agent: Google-Apps-Script\nDisallow: /\n\nSitemap: https://www.itreview.jp/split_sitemaps/sitemap.xml\n# Sitemap: https://www.itreview.jp/blog/sitemap.xml\n"
+}

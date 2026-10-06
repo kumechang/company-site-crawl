@@ -1,0 +1,6 @@
+{
+ "origin": "https://type.jp",
+ "fetchedAt": "2026-10-06T09:34:23.837Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /skillsheet/\nDisallow: /experience/\nDisallow: /job/send_mail_to_displayemail/\nDisallow: /et/feature/robots.txt\nDisallow: /st/feature/robots.txt\nDisallow: /tensyoku-knowhow/robots.txt\nDisallow: /et/feature/sitemaps-engineertype.xml\nDisallow: /st/feature/sitemaps-twentiestype.xml\nDisallow: /tensyoku-knowhow/sitemap/sitemaps-typemag.xml\nDisallow: /maintenance_user/\n\nSitemap: https://type.jp/sitemap.xml\n"
+}
