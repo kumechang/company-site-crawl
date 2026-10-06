@@ -1,0 +1,6 @@
+{
+ "origin": "https://web-kanji.com",
+ "fetchedAt": "2026-10-06T09:15:36.857Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /admin/\nDisallow: /private/\nDisallow: /personal/\nDisallow: /user/\nDisallow: /account/\nDisallow: /*?*\nDisallow: /contact\nDisallow: /search/*/*/*/*/\nDisallow: /search/*--\n\nAllow: /*.jpg?*\nAllow: /*.jpeg?*\nAllow: /*.png?*\nAllow: /*.webp?*\nAllow: /*.gif?*\nAllow: /*.css?*\nAllow: /*.js?*\n\nSitemap: https://web-kanji.com/sitemap.xml\n"
+}

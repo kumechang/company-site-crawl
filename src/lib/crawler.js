@@ -37,8 +37,8 @@ function findChrome() {
  * - 結果は cacheDir に保存（パーサ調整時にサイトへ再アクセスしないため）
  */
 export class Crawler {
-  constructor({ cacheDir = 'data/cache', minDelayMs = 2500, timeoutMs = 45000, useCache = true, respectRobots = true } = {}) {
-    Object.assign(this, { cacheDir, minDelayMs, timeoutMs, useCache, respectRobots });
+  constructor({ cacheDir = 'data/cache', robotsDir = 'data/robots', minDelayMs = 2500, timeoutMs = 45000, useCache = true, respectRobots = true } = {}) {
+    Object.assign(this, { cacheDir, robotsDir, minDelayMs, timeoutMs, useCache, respectRobots });
     this.browser = null;
     this.ua = null;
     this.lastHit = new Map(); // host -> timestamp
@@ -86,24 +86,48 @@ export class Crawler {
     }
   }
 
+  /** robots.txt を取得して data/robots/<host>.json に記録する。status: 取得結果(HTTP番号 or 'error') */
+  async fetchRobots(origin) {
+    let rec = { origin, fetchedAt: new Date().toISOString(), status: 'error', text: '' };
+    try {
+      await this.throttle(origin + '/robots.txt');
+      rec = await this.rawPage(origin + '/robots.txt', async (page) => {
+        const r = await page.goto(origin + '/robots.txt', { waitUntil: 'domcontentloaded', timeout: 20000 });
+        const status = r?.status() ?? 0;
+        const text = status < 400 ? await page.evaluate(() => document.body?.innerText ?? '') : '';
+        return { origin, fetchedAt: rec.fetchedAt, status, text };
+      });
+    } catch (e) {
+      rec.error = e.message.split('\n')[0];
+    }
+    try {
+      fs.mkdirSync(this.robotsDir, { recursive: true });
+      fs.writeFileSync(path.join(this.robotsDir, new URL(origin).host + '.json'), JSON.stringify(rec, null, 1));
+    } catch {}
+    return rec;
+  }
+
+  /**
+   * robots.txt の扱い:
+   *  - 2xx          … 内容に従う
+   *  - 404 / 410    … 制限なし（robots.txt が存在しない）
+   *  - それ以外(401/403/429/5xx/接続失敗) … 判断できないので【アクセスしない】（保守的）
+   */
   async checkRobots(url) {
     if (!this.respectRobots) return true;
     const origin = originOf(url);
     if (!this.robots.has(origin)) {
-      let groups = [];
-      try {
-        await this.throttle(origin + '/robots.txt');
-        const txt = await this.rawPage(origin + '/robots.txt', async (page) => {
-          const r = await page.goto(origin + '/robots.txt', { waitUntil: 'domcontentloaded', timeout: 20000 });
-          if (!r || r.status() >= 400) return '';
-          return page.evaluate(() => document.body?.innerText ?? '');
-        });
-        groups = parseRobots(txt);
-      } catch {}
-      this.robots.set(origin, groups);
+      const rec = await this.fetchRobots(origin);
+      let policy;
+      if (rec.status >= 200 && rec.status < 300) policy = { groups: parseRobots(rec.text) };
+      else if (rec.status === 404 || rec.status === 410) policy = { groups: [] };
+      else policy = { denyAll: true, reason: `robots.txt を取得できない(${rec.status}${rec.error ? ' ' + rec.error : ''})` };
+      this.robots.set(origin, policy);
     }
+    const pol = this.robots.get(origin);
+    if (pol.denyAll) return false;
     const u = new URL(url);
-    return isAllowed(this.robots.get(origin), u.pathname + u.search);
+    return isAllowed(pol.groups, u.pathname + u.search);
   }
 
   /**

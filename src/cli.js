@@ -7,6 +7,7 @@ import { CATEGORIES, SITES, ORDER } from '../config/categories.js';
 import { consolidate } from './lib/merge.js';
 import { enrichFromOfficial } from './enrich.js';
 import { exportAll } from './export.js';
+import { robotsReport } from './robots-report.js';
 import * as green from './sources/green.js';
 import * as wantedly from './sources/wantedly.js';
 import * as imitsu from './sources/imitsu.js';
@@ -51,10 +52,11 @@ const HELP = `使い方: node src/cli.js <command> [options]
   enrich     公式サイトを巡回して従業員数・住所・問い合わせURLを補完
   export     統合して data/companies.csv を出力
   run        discover → enrich → export を一括実行
+  robots     全媒体の robots.txt を取得し、使うURLが許可されているか一覧にする
 オプション: --target N(カテゴリ目標社数)  --per-query N  --sources green,wantedly,imitsu  --categories cosme_d2c,...  --delay ms  --no-cache`;
 
 const cmd = positionals[0];
-if (!cmd || opt.help || !['discover', 'enrich', 'export', 'run'].includes(cmd)) {
+if (!cmd || opt.help || !['discover', 'enrich', 'export', 'run', 'robots'].includes(cmd)) {
   console.log(HELP);
   process.exit(cmd ? 0 : 1);
 }
@@ -151,6 +153,15 @@ async function enrich() {
 }
 
 try {
+  if (cmd === 'robots') {
+    await crawler.launch();
+    const rows = await robotsReport(crawler);
+    for (const r of rows) {
+      const bad = r.checks.filter((c) => !c.allowed);
+      console.log(`${r.status}\t${r.site}\t規則(*)${r.starRules}件\t${bad.length ? '禁止: ' + bad.map((b) => new URL(b.url).pathname).join(' ') : '使用URLは許可'}`);
+    }
+    process.exit(0);
+  }
   if (cmd !== 'export') await crawler.launch();
   if (cmd === 'discover' || cmd === 'run') await discover();
   if (cmd === 'enrich' || cmd === 'run') await enrich();
