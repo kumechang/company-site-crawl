@@ -80,3 +80,42 @@ export async function enrichFromIndex(c, index, { crawler, log }) {
   setOfficialUrl(c, info.homepage, { ...src, snippet: `ホームページ: ${info.homepage}` });
   return true;
 }
+
+/**
+ * 業種別・地域別の一覧から会社を発見する（一覧は規模の大きい順）。
+ * 一覧に載った会社の企業ページで 公式URL・登記住所・従業員数(推定) を取る。
+ */
+export async function discover(q, ctx) {
+  const pages = q.pages ?? 2;
+  let taken = 0;
+  for (let p = 1; p <= pages && taken < q.limit; p++) {
+    const url = p === 1 ? q.url : `${q.url}/page/${p}`;
+    let list;
+    try {
+      list = parseList(await ctx.crawler.snapshot(url));
+    } catch (e) {
+      ctx.log(`  ! salesnow ${url}: ${e.message}`);
+      break;
+    }
+    ctx.log(`  salesnow ${url}: ${list.length} 社`);
+    for (const co of list) {
+      if (taken >= q.limit) break;
+      let info;
+      try {
+        info = parseCompany(await ctx.crawler.snapshot(co.href));
+      } catch (e) {
+        ctx.log(`  ! salesnow ${co.href}: ${e.message}`);
+        continue;
+      }
+      taken++;
+      const c = ctx.upsert(co.name);
+      addSource(c, id, co.href);
+      c.seedCategories.push(q.category);
+      const src = { source: id, url: co.href };
+      addEvidence(c, 'address', info.address, { ...src, snippet: `登記所在地: ${info.address}` });
+      addEvidence(c, 'employees', info.employees, { ...src, snippet: `正社員規模(推定): ${info.employees}名（SalesNowの推定値）` });
+      addEvidence(c, 'profileText', clip(`${q.label ?? ''} ${info.summary}`, 300), { ...src, snippet: `SalesNow「${q.label ?? ''}」一覧に掲載` });
+      setOfficialUrl(c, info.homepage, { ...src, snippet: `ホームページ: ${info.homepage}` });
+    }
+  }
+}

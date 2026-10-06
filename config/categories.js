@@ -15,6 +15,9 @@ export const CATEGORIES = {
     },
     green: ['https://www.green-japan.com/search/area/13/industry/130120'],
     wantedly: ['化粧品 D2C', 'コスメ ブランド'],
+    salesnow: [{ url: 'https://salesnow.jp/db/industries/retail-sales/subIndustries/cosmetics-sales', label: '化粧品' }],
+    jcia: [{ url: 'https://www.jcia.org/admin/memberlist', label: '化粧品' }],
+    jaro: [{ url: 'https://www.jaro.or.jp/kaiinsha/', section: '化粧品・トイレタリー', label: '化粧品' }],
   },
   influencer_agency: {
     label: 'インフルエンサー事務所',
@@ -33,6 +36,14 @@ export const CATEGORIES = {
     green: ['https://www.green-japan.com/search/area/13/industry/100125', 'https://www.green-japan.com/search/area/13/industry/110120'],
     wantedly: ['広告代理店', '運用型広告'],
     imitsu: ['https://imitsu.jp/ct-net-adagency/pr-tokyo/'],
+    grip: [
+      { url: 'https://grip-space.co.jp/ad-db/pref/tokyo/field/5-1', label: '広告代理店' }, // 総合広告代理店
+      { url: 'https://grip-space.co.jp/ad-db/pref/tokyo/field/5-2', label: '広告代理店 ネット広告' }, // ネット広告専門
+    ],
+    agencyhub: [{ url: 'https://agencyhub.jp/prefecture/tokyo/', label: '広告代理店' }],
+    pitact: [{ url: 'https://pitact.com/search/pref-tokyo/category-6751mbkug', label: '広告代理店', pages: 1 }],
+    houjingoo: [{ url: 'https://houjin.goo.to/corporations/prefs/tokyo/category-s-advertising-agency-publicity-industry', label: '広告代理店' }],
+    salesnow: [{ url: 'https://salesnow.jp/db/industries/advertising/tokyo', label: '広告代理店' }],
   },
   sns_agency: {
     label: 'SNS運用代行',
@@ -53,6 +64,10 @@ export const CATEGORIES = {
     imitsu: ['https://imitsu.jp/list/net-adagency/socialmedia-outsourcing', 'https://imitsu.jp/list/hp-design/sns/'],
     slidelib: ['https://cone-c-slide.com/liblog/sns/'], // 他に /liblog/instagram/ /tiktok/ /twitter/ /youtube/ /facebook/ /threads/ /sns-consulting/ の比較記事あり（未使用）
     meetsmore: ['https://meetsmore.com/product-services/sns-operation-agency'], // 広告用パラメータ(utm_*, gclid)は除去
+    grip: [
+      { url: 'https://grip-space.co.jp/ad-db/pref/tokyo/feature/ad-sns', label: 'SNS運用代行 広告代理店' },
+      { url: 'https://grip-space.co.jp/web-db/pref/tokyo/service/sns', label: 'SNS運用代行 ホームページ制作' },
+    ],
   },
 };
 
@@ -66,7 +81,7 @@ export const SITES = {
   green: { name: 'Green', status: 'ready' },
   wantedly: { name: 'Wantedly', status: 'ready' },
   imitsu: { name: 'アイミツ', status: 'ready' },
-  salesnow: { name: 'SalesNow', status: 'enrich', note: '会社名検索が無いため索引化して補完用に使う(発見には使わない)' },
+  salesnow: { name: 'SalesNow', status: 'ready', note: '会社名検索が無いため、業種別・地域別の一覧を発見用に、索引を補完用に使う' },
   bizmaps: { name: 'BIZMAPS', status: 'blocked', note: '403 (サーバー側でIP拒否)' },
   indeed: { name: 'Indeed', status: 'blocked', note: 'Cloudflare確認画面。規約上もスクレイピング禁止' },
   prtimes: { name: 'PR TIMES', status: 'enrich', note: '会社名の完全一致で公式URL・本社所在地を補完(発見には未使用)' },
@@ -80,6 +95,12 @@ export const SITES = {
   hacchunavi: { name: '発注ナビ', status: 'none', note: 'SNS運用代行・広告代理店のページが無い(ユーザー確認済み)' },
   digimado: { name: 'デジタル化の窓口', status: 'ready', note: 'digi-mado.jp。記事/カテゴリ→製品ページ→運営企業情報' },
   aspic: { name: 'アスピック', status: 'ready' },
+  grip: { name: 'グリップ 広告代理店DB', status: 'ready', note: '会社ページに公式サイト・従業員数・法人番号。一覧は?page=N' },
+  houjingoo: { name: '全国法人(houjin.goo.to)', status: 'ready', note: '本社所在地・資本金・従業員数(一部)' },
+  pitact: { name: 'PITACT', status: 'ready', note: '住所・法人番号・従業員数(空欄多い)。ページ送りは/page-N' },
+  agencyhub: { name: 'AgencyHub', status: 'ready', note: '従業員規模のレンジ。所在地は対応エリアの可能性があり住所には使わない' },
+  jcia: { name: '日本化粧品工業会 会員名簿', status: 'ready', note: '社名・住所・電話(URLなし)' },
+  jaro: { name: 'JARO 会員社一覧', status: 'ready', note: '社名のみ。業種見出し(化粧品・トイレタリー等)ごと' },
   gbizinfo: { name: 'Gビズインフォ(経産省)', status: 'enrich', note: '会社名検索(フォーム操作)で本店所在地・従業員数を補完。robots.txtは全面許可' },
   slidelib: { name: 'slide lib(スライドリブ)', status: 'ready', note: 'ユーザー提供。比較記事から会社名と「サービスサイトへ」リンクを取得。住所・従業員数は無し' },
   meetsmore: { name: 'ミツモア', status: 'ready', note: 'ユーザー提供。サービスページに会社名・製品URL。/product-providers 等はrobots禁止' },
@@ -90,8 +111,8 @@ export const SITES = {
  * カテゴリごとの媒体の優先順位（上から順に見て、目標社数に達したら打ち切る）。
  */
 export const ORDER = {
-  cosme_d2c: ['salesnow', 'bizmaps', 'wantedly', 'green', 'prtimes', /* 第2群 */ 'indeed', 'kyujinbox', 'doda', 'mynavi', 'engage'],
+  cosme_d2c: ['salesnow', 'bizmaps', 'jcia', 'jaro', 'wantedly', 'green', 'prtimes', /* 第2群 */ 'indeed', 'kyujinbox', 'doda', 'mynavi', 'engage'],
   influencer_agency: ['wantedly', 'green', 'kyujinbox', 'indeed', 'prtimes', 'boxil', 'webkanji', 'imitsu'],
-  ad_agency: ['webkanji', 'imitsu', 'boxil', 'digimado', 'wantedly', 'green', 'doda', 'indeed', 'kyujinbox', 'mynavi', 'engage'],
-  sns_agency: ['boxil', 'aspic', 'digimado', 'buzztan', 'slidelib', 'webkanji', 'imitsu', 'meetsmore', 'wantedly', 'green', 'kyujinbox', 'engage', 'indeed'],
+  ad_agency: ['webkanji', 'imitsu', 'boxil', 'grip', 'agencyhub', 'pitact', 'houjingoo', 'salesnow', 'digimado', 'wantedly', 'green', 'doda', 'indeed', 'kyujinbox', 'mynavi', 'engage'],
+  sns_agency: ['boxil', 'aspic', 'digimado', 'buzztan', 'slidelib', 'webkanji', 'imitsu', 'meetsmore', 'grip', 'wantedly', 'green', 'kyujinbox', 'engage', 'indeed'],
 };

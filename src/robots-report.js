@@ -25,6 +25,12 @@ export const ORIGINS = {
   meetsmore: 'https://meetsmore.com',
   slidelib: 'https://cone-c-slide.com',
   gbizinfo: 'https://info.gbiz.go.jp',
+  grip: 'https://grip-space.co.jp',
+  houjingoo: 'https://houjin.goo.to',
+  pitact: 'https://pitact.com',
+  agencyhub: 'https://agencyhub.jp',
+  jcia: 'https://www.jcia.org',
+  jaro: 'https://www.jaro.or.jp',
 };
 
 /** そのサイトで実際に使っているURL（config に書いたもの + アダプタが辿る代表パス） */

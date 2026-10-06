@@ -13,6 +13,12 @@ import * as engage from '../src/sources/engage.js';
 import * as meetsmore from '../src/sources/meetsmore.js';
 import * as slidelib from '../src/sources/slidelib.js';
 import * as gbizinfo from '../src/sources/gbizinfo.js';
+import * as grip from '../src/sources/grip.js';
+import * as houjingoo from '../src/sources/houjingoo.js';
+import * as pitact from '../src/sources/pitact.js';
+import * as agencyhub from '../src/sources/agencyhub.js';
+import * as jcia from '../src/sources/jcia.js';
+import * as jaro from '../src/sources/jaro.js';
 import { consolidate } from '../src/lib/merge.js';
 import { newCompany, addEvidence, setOfficialUrl, bestOfficial, needsCorporateUrl } from '../src/lib/model.js';
 
@@ -233,4 +239,67 @@ test('Gビズインフォ 検索結果の表を解析し、同名から住所の
   assert.equal(hit.sameName, 2);
   assert.equal(hit.row.address, '東京都港区');
   assert.equal(gbizinfo.pickRow(rows, '株式会社コムニ', null), null);
+});
+
+test('グリップ: 一覧リンクと会社概要', () => {
+  const list = grip.parseList({ anchors: [
+    { href: 'https://grip-space.co.jp/ad-db/company/3861646', text: '株式会社アドウェイズ\n東京都新宿区' },
+    { href: 'https://grip-space.co.jp/ad-db/company/3861646', text: '続きを見る' },
+    { href: 'https://grip-space.co.jp/web-db/company/12', text: '株式会社テスト' },
+    { href: 'https://grip-space.co.jp/ad-db/pref/tokyo', text: '東京都' } ] });
+  assert.deepEqual(list.map((x) => x.name), ['株式会社アドウェイズ', '株式会社テスト']);
+  const r = grip.parseCompany({ text: '会社概要\n会社名\t株式会社アドウェイズ\n所在地\t東京都新宿区西新宿５丁目１番１号\n公式サイト\thttps://www.adways.net\n従業員数\t745名\n法人番号\t7011101041652\n会社について\t広告事業\nメディア事業\n\n次' });
+  assert.equal(r.employees, 745);
+  assert.equal(r.officialUrl, 'https://www.adways.net');
+  assert.equal(r.address, '東京都新宿区西新宿５丁目１番１号');
+});
+
+test('全国法人: 見出しを住所と取り違えず、従業員数と住所を取る', () => {
+  const text = ['都道府県で探す','検索結果1,978件中 1件目〜50件目を表示','株式会社日宣','ニッセン','証券番号','6543','本社東京都千代田区・サービス業・資本金32,030万円・従業員106名','サービス業','広告業界',' 東京都千代田区神田司町２丁目６番地５','更新日：2026年06月22日',
+    '株式会社テスト広告','テストコウコク','広告業界',' 東京都渋谷区代々木２丁目２番２号 求人情報提供','更新日：2026年09月22日'].join('\n');
+  const r = houjingoo.parseList({ text });
+  assert.equal(r.length, 2);
+  assert.equal(r[0].employees, 106);
+  assert.equal(r[0].address, '東京都千代田区神田司町２丁目６番地５');
+  assert.equal(r[1].address, '東京都渋谷区代々木２丁目２番２号');
+});
+
+test('PITACT: 住所・従業員数', () => {
+  const text = ['株式会社フォルマ','','更新日:2025年02月21日','','法人番号','6012401001421','住所','東京都府中市宮町１丁目４１番地','電話番号','042-366-4141','従業員数','--','商業施設運営',
+    '株式会社デンコー','','更新日:2025年02月21日','','法人番号','7010901007739','住所','東京都世田谷区尾山台３丁目９番１号','電話番号','03','従業員数','20人'].join('\n');
+  const r = pitact.parseList({ text });
+  assert.equal(r.length, 2);
+  assert.equal(r[0].employees, null);
+  assert.equal(r[1].employees, 20);
+  assert.equal(r[1].corpNo, '7010901007739');
+});
+
+test('AgencyHub: 規模レンジの下限', () => {
+  const text = ['詳細','株式会社アド・ウォーク','販促を支援する会社。','専門特化','SNS支援','大阪市','31-100名','詳細を見る','株式会社テスト','説明','総合支援','東京','HPに記載なし','詳細を見る'].join('\n');
+  const r = agencyhub.parseList({ text });
+  assert.equal(r.length, 2);
+  assert.equal(r[0].employeesMin, 31);
+  assert.deepEqual(r[0].tags, ['専門特化', 'SNS支援']);
+  assert.equal(r[1].employeesMin, null);
+});
+
+test('JCIA: 会員名簿の行', () => {
+  const r = jcia.parseList({ text: 'ア行\nアース製薬株式会社\t101-0048\t東京都千代田区神田司町2-12-1\t03-5207-7451\t\n株式会社アーダン\t894-0007\t鹿児島県奄美市\t0997\t' });
+  assert.equal(r.length, 2);
+  assert.equal(r[0].address, '東京都千代田区神田司町2-12-1');
+});
+
+test('JARO: 業種見出しごとの社名', () => {
+  const s = jaro.parseSections({ text: '広告主(367社)\n化粧品・トイレタリー (2社)\n株式会社アリミノ\n株式会社伊勢半\n食品 (1社)\n味の素株式会社' });
+  assert.deepEqual(s['化粧品・トイレタリー'], ['株式会社アリミノ', '株式会社伊勢半']);
+  assert.deepEqual(s['食品'], ['味の素株式会社']);
+});
+
+test('AgencyHubの規模は推定扱い(閾値付近は断定しない)', () => {
+  const c = newCompany('株式会社テスト');
+  addEvidence(c, 'employees', 11, { source: 'agencyhub', url: 'u', snippet: '11-30名' });
+  addEvidence(c, 'address', '東京都渋谷区1-1', { source: 'grip', url: 'u' });
+  const r = consolidate(c);
+  assert.equal(r.emp20, null);
+  assert.ok(r.notes.some((n) => n.includes('AgencyHub')));
 });

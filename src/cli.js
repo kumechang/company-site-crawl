@@ -26,6 +26,12 @@ import * as digimado from './sources/digimado.js';
 import * as engage from './sources/engage.js';
 import * as meetsmore from './sources/meetsmore.js';
 import * as slidelib from './sources/slidelib.js';
+import * as grip from './sources/grip.js';
+import * as houjingoo from './sources/houjingoo.js';
+import * as pitact from './sources/pitact.js';
+import * as agencyhub from './sources/agencyhub.js';
+import * as jcia from './sources/jcia.js';
+import * as jaro from './sources/jaro.js';
 
 const SALESNOW_INDEX_URLS = [
   'https://salesnow.jp/db/industries/advertising/subIndustries/internet-advertising-agency',
@@ -35,7 +41,7 @@ const SALESNOW_INDEX_URLS = [
   'https://salesnow.jp/db/industries/consulting/subIndustries/promotion-consulting',
 ];
 
-const SOURCES = { green, wantedly, imitsu, boxil, aspic, webkanji, hikakubiz, kyujinbox, buzztan, digimado, engage, meetsmore, slidelib };
+const SOURCES = { green, wantedly, imitsu, boxil, aspic, webkanji, hikakubiz, kyujinbox, buzztan, digimado, engage, meetsmore, slidelib, grip, houjingoo, pitact, agencyhub, jcia, jaro, salesnow };
 
 const { values: opt, positionals } = parseArgs({
   allowPositionals: true,
@@ -104,11 +110,13 @@ async function discover() {
         continue;
       }
       for (const t of def[sid] ?? []) {
-        const q = sid === 'wantedly' ? { category: cat, keyword: t, limit } : { category: cat, url: t, limit, pages: 2 };
+        // 目標は URL/キーワードの文字列、または {url, label, pages, section…} のオブジェクトで指定できる
+        const spec = typeof t === 'string' ? (sid === 'wantedly' ? { keyword: t } : { url: t }) : t;
+        const q = { category: cat, limit, pages: 2, ...spec };
         try {
           await SOURCES[sid].discover(q, ctx);
         } catch (e) {
-          log(`  ! ${site.name} ${t}: ${e.message}`);
+          log(`  ! ${site.name} ${spec.url ?? spec.keyword}: ${e.message}`);
         }
         store.save();
       }

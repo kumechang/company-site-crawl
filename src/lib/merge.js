@@ -12,8 +12,8 @@ import { CATEGORIES } from '../../config/categories.js';
 export const LISTING_SITES = ['boxil', 'aspic', 'buzztan', 'webkanji', 'meetsmore', 'slidelib'];
 
 export const PRIORITY = {
-  employees: ['official', 'green', 'gbizinfo', 'salesnow', 'imitsu', 'wantedly'],
-  address: ['official', 'gbizinfo', 'green', 'salesnow', 'wantedly', 'imitsu'],
+  employees: ['official', 'green', 'grip', 'gbizinfo', 'houjingoo', 'pitact', 'salesnow', 'agencyhub', 'imitsu', 'wantedly'],
+  address: ['official', 'gbizinfo', 'grip', 'houjingoo', 'pitact', 'jcia', 'green', 'salesnow', 'wantedly', 'imitsu'],
 };
 
 const rank = (field, source) => {
@@ -51,7 +51,7 @@ export function consolidate(c, { minEmployees = 20 } = {}) {
   const tokyo = addr ? isTokyoAddress(addr.value) : null;
   // 従業員数: 確定値があれば判定、無ければ Wantedly メンバー数は参考値(判定には使わない)
   // SalesNow の規模は推定値。閾値付近(10〜40名)は断定せず「要確認」にする
-  const estimateOnly = emp?.source === 'salesnow';
+  const estimateOnly = ['salesnow', 'agencyhub'].includes(emp?.source);
   const nearThreshold = estimateOnly && emp.value >= 10 && emp.value <= 40;
   const emp20 = emp ? (nearThreshold ? null : emp.value >= minEmployees) : null;
 
@@ -72,7 +72,7 @@ export function consolidate(c, { minEmployees = 20 } = {}) {
   if (addr?.conflicts.length) notes.push(`所在地(東京/他)が情報源間で不一致`);
   if (!cats.length && c.seedCategories.length) notes.push(`カテゴリは検索元の推定のみ: ${[...new Set(c.seedCategories)].map((k) => CATEGORIES[k]?.label).join('/')}`);
   if (off && typeof off === 'object' && off.others.length) notes.push(`公式URL候補が複数: ${[off.url, ...off.others].join(' , ')}`);
-  if (estimateOnly) notes.push(`従業員数はSalesNowの推定値(${emp.value}名)${nearThreshold ? '・閾値付近のため要確認' : ''}`);
+  if (estimateOnly) notes.push(`従業員数は${emp.source === 'agencyhub' ? 'AgencyHubの規模レンジ下限' : 'SalesNowの推定値'}(${emp.value}名)${nearThreshold ? '・閾値付近のため要確認' : ''}`);
   if (emp == null && members) notes.push(`Wantedlyメンバー数 ${members.value}人(参考・従業員数とは別物)`);
 
   return {
