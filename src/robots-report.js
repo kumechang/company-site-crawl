@@ -28,6 +28,8 @@ export const ORIGINS = {
   mynavi_shinsotsu: 'https://job.mynavi.jp',
   grip: 'https://grip-space.co.jp',
   digitre: 'https://www.digi-tre.com',
+  careertasu: 'https://job.career-tasu.jp',
+  openwork: 'https://www.openwork.jp',
   houjingoo: 'https://houjin.goo.to',
   pitact: 'https://pitact.com',
   agencyhub: 'https://agencyhub.jp',

@@ -22,7 +22,7 @@ export function addSource(c, source, url) {
 export function setOfficialUrl(c, url, how) {
   if (!url) return;
   const d = domainOf(url);
-  if (!d || /(wantedly|green-japan|imitsu|facebook|twitter|x\.com|instagram|youtube|note\.com|prtimes|google|linkedin|boxil|aspicjapan|buzztan|digi-mado|web-kanji|biz\.ne\.jp|meetsmore|cone-c-slide|grip-space|goo\.to|pitact|agencyhub|jcia\.org|jaro\.or)/.test(d)) return;
+  if (!d || /(wantedly|green-japan|imitsu|facebook|twitter|x\.com|instagram|youtube|note\.com|prtimes|google|linkedin|boxil|aspicjapan|buzztan|digi-mado|web-kanji|biz\.ne\.jp|meetsmore|cone-c-slide|grip-space|goo\.to|pitact|agencyhub|jcia\.org|jaro\.or|openwork\.jp|career-tasu)/.test(d)) return;
   const origin = new URL(url).origin + '/';
   addEvidence(c, 'officialUrl', origin, how);
   if (!c.officialUrl) {
@@ -35,7 +35,7 @@ export function setOfficialUrl(c, url, how) {
  * 公式URLの採用順。会社の本体サイトを指しやすい情報源を優先し、製品サイトを指しがちな媒体は後ろにする
  * （例: デジタル化の窓口は製品ページの「情報取得元」＝製品サイトのことがある）
  */
-export const OFFICIAL_PRIORITY = ['salesnow', 'prtimes', 'grip', 'buzztan', 'webkanji', 'boxil', 'imitsu', 'meetsmore', 'slidelib', 'wantedly', 'aspic', 'digimado'];
+export const OFFICIAL_PRIORITY = ['salesnow', 'prtimes', 'grip', 'openwork', 'buzztan', 'webkanji', 'boxil', 'imitsu', 'meetsmore', 'slidelib', 'wantedly', 'aspic', 'digimado'];
 
 export function bestOfficial(c) {
   const ev = c.evidence.filter((e) => e.field === 'officialUrl');

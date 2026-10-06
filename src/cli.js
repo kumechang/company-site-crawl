@@ -18,6 +18,8 @@ import * as salesnow from './sources/salesnow.js';
 import * as prtimes from './sources/prtimes.js';
 import * as gbizinfo from './sources/gbizinfo.js';
 import * as mynavi from './sources/mynavi.js';
+import * as careertasu from './sources/careertasu.js';
+import * as openwork from './sources/openwork.js';
 import * as aspic from './sources/aspic.js';
 import * as webkanji from './sources/webkanji.js';
 import * as hikakubiz from './sources/hikakubiz.js';
@@ -180,6 +182,21 @@ async function sample() {
   }
 }
 
+/** 会社名検索型の補完。対象(pred)に合う会社を順に引く。一致なしは no* フラグを立てて再検索しない（エラー時は立てず再試行できる） */
+async function lookupAll(label, mod, flag, pred) {
+  const todo = store.all().filter((c) => pred(c) && !c[flag]);
+  if (!todo.length) return;
+  log(`# ${label}で補完: ${todo.length} 社`);
+  let n = 0;
+  for (const c of todo) {
+    const r = await mod.lookup(c, { crawler, log });
+    if (r === true) n++;
+    else if (r === false) c[flag] = true;
+    store.save();
+  }
+  log(`  → ${n}/${todo.length} 社が一致`);
+}
+
 async function enrich() {
   // 1) SalesNow の索引で、公式URLまたは従業員数が足りない会社を補完
   const needs = (c) => !c.officialUrl || !c.evidence.some((e) => e.field === 'employees');
@@ -204,6 +221,8 @@ async function enrich() {
     store.mergeByDomain();
     store.save();
   }
+  // 1c) それでも公式URLが無い会社は OpenWork の会社名検索（会社名が完全一致した場合のみ）で公式URL・所在地・社員数レンジを補完
+  await lookupAll('OpenWork', openwork, 'noOpenwork', (c) => !c.officialUrl && !c.evidence.some((e) => e.source === 'openwork'));
   // 2) 公式サイトを巡回（従業員数・住所・問い合わせURL）
   // 公式URLの採用が変わった会社は、以前のサイト由来の情報を破棄して取り直す
   for (const c of store.all()) {
@@ -235,19 +254,11 @@ async function enrich() {
     }
     log(`  → ${n}/${gb.length} 社が一致`);
   }
-  // 4) まだ従業員数が無い会社は マイナビ(新卒)の会社名検索で補完（新卒採用をしている会社のみ掲載）
-  const mn = store.all().filter((c) => !c.evidence.some((e) => e.field === 'employees') && !c.evidence.some((e) => e.source === 'mynavi') && !c.noMynavi);
-  if (mn.length) {
-    log(`# マイナビ(新卒)で補完: ${mn.length} 社`);
-    let n = 0;
-    for (const c of mn) {
-      const r = await mynavi.lookup(c, { crawler, log });
-      if (r === true) n++;
-      else if (r === false) c.noMynavi = true;
-      store.save();
-    }
-    log(`  → ${n}/${mn.length} 社が一致`);
-  }
+  // 4) まだ従業員数が無い会社は、新卒向け媒体(マイナビ・キャリタス)の会社名検索 → OpenWork(社員数レンジ)の順で補完
+  const noEmp = (src) => (c) => !c.evidence.some((e) => e.field === 'employees') && !c.evidence.some((e) => e.source === src);
+  await lookupAll('マイナビ(新卒)', mynavi, 'noMynavi', noEmp('mynavi'));
+  await lookupAll('キャリタス就活', careertasu, 'noCareertasu', noEmp('careertasu'));
+  await lookupAll('OpenWork', openwork, 'noOpenwork', noEmp('openwork'));
 }
 
 try {

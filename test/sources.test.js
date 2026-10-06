@@ -442,3 +442,47 @@ test('比較記事: 都道府県名だけの見出しは企業にしない', () 
   const r = article.parseArticle({ text: '東京都\n東京都に拠点を置くインスタ運用代行会社です。\nオア―ド株式会社\nオア―ド株式会社は、東京都に拠点を置く会社。\n' });
   assert.deepEqual(r.map((x) => x.company), ['オア―ド株式会社']);
 });
+
+import * as careertasu from '../src/sources/careertasu.js';
+import * as openwork from '../src/sources/openwork.js';
+
+test('キャリタス就活 検索結果・会社データ', () => {
+  const rows = careertasu.parseResults({
+    anchors: [
+      { href: 'https://job.career-tasu.jp/corp/00021375/default/?tcd=x', text: '大阪府化学・石油｜医薬品｜食品\n\nサラヤ株式会社\n4.17\n12フォロワー\nフォローする' },
+      { href: 'https://job.career-tasu.jp/corp/00024600/default/', text: '東京都化学・石油｜医療関連\n\n東京サラヤ株式会社\n-\n5フォロワー' },
+      { href: 'https://job.career-tasu.jp/corp/00071579/default/', text: '静岡県ソフトウェア\n\n株式会社アミック\n-\n0フォロワー' },
+    ],
+  });
+  assert.equal(rows.length, 3);
+  assert.equal(rows[0].pref, '大阪府');
+  assert.equal(rows[0].url, 'https://job.career-tasu.jp/corp/00021375/detail-uc/');
+  assert.equal(careertasu.pickEntry(rows, 'サラヤ株式会社', []).url, rows[0].url);
+  assert.equal(careertasu.pickEntry(rows, 'サラヤ株式会社', ['東京都品川区']), null); // 既知の住所と都道府県が合わない
+  assert.equal(careertasu.pickEntry(rows, '東京サラヤ株式会社', ['東京都品川区']).url, rows[1].url);
+  const d = careertasu.parseDetail('創業/設立\n1959年2月\n本社所在地1\n大阪府大阪市東住吉区湯里２-２-８\n電話番号\n06\n資本金\n4,500万円\n従業員数\n2,239名（2024年10月現在）（正社員、契約社員、アルバイト・パート含む）\n');
+  assert.equal(d.employees, 2239);
+  assert.equal(d.address, '大阪府大阪市東住吉区湯里２-２-８');
+  assert.equal(d.founded, '1959年2月');
+});
+
+test('OpenWork 検索結果・会社ページ', () => {
+  const list = openwork.parseList({
+    anchors: [
+      { href: 'https://www.openwork.jp/company.php?m_id=a0C10000011UUpz&utm=x', text: '株式会社コムニコ' },
+      { href: 'https://www.openwork.jp/company.php?m_id=a0C10000011UUpz', text: 'クチコミ' },
+      { href: 'https://www.openwork.jp/company_list?src_str=x', text: '企業一覧' },
+    ],
+  });
+  assert.deepEqual(list, [{ name: '株式会社コムニコ', url: 'https://www.openwork.jp/company.php?m_id=a0C10000011UUpz' }]);
+  const c = openwork.parseCompany('x\n企業情報\n業界\nSIer、ソフト開発\nURL\nhttp://www.comnico.jp/\n所在地\n東京都港区虎ノ門4-1-13\n社員数\n100〜499人\nもっと見る ▼\n');
+  assert.equal(c.url, 'http://www.comnico.jp/');
+  assert.equal(c.address, '東京都港区虎ノ門4-1-13');
+  assert.deepEqual(openwork.parseRange(c.range), { min: 100, max: 499 });
+  assert.deepEqual(openwork.parseRange('1000人以上'), { min: 1000, max: null });
+  assert.equal(openwork.parseRange('不明'), null);
+  const cands = [{ info: { address: '大阪府大阪市' }, url: 'a' }, { info: { address: '東京都港区' }, url: 'b' }];
+  assert.equal(openwork.pickCompany(cands, []).url, 'b'); // 既知の住所が無ければ東京都を優先
+  assert.equal(openwork.pickCompany(cands, ['大阪府吹田市']).url, 'a');
+  assert.equal(openwork.pickCompany(cands, ['愛知県名古屋市']), null);
+});

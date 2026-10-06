@@ -2,9 +2,9 @@ import fs from 'node:fs';
 import { consolidate } from './lib/merge.js';
 import { CATEGORIES } from '../config/categories.js';
 
-const ENRICH_SOURCES = new Set(['official', 'salesnow', 'prtimes', 'gbizinfo', 'mynavi']);
+const ENRICH_SOURCES = new Set(['official', 'salesnow', 'prtimes', 'gbizinfo', 'mynavi', 'careertasu', 'openwork']);
 // 従業員数の出所の確からしさ（小さいほど確か）
-const EMP_RANK = { official: 0, green: 1, grip: 1, mynavi: 2, gbizinfo: 2, houjingoo: 2, pitact: 2, salesnow: 3, agencyhub: 3 };
+const EMP_RANK = { official: 0, green: 1, grip: 1, mynavi: 2, careertasu: 2, gbizinfo: 2, houjingoo: 2, pitact: 2, salesnow: 3, agencyhub: 3, openwork: 3 };
 
 const COLS = [
   ['企業名', (r) => r.name],
