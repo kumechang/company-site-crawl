@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.daiichisankyo-hc.co.jp",
+ "fetchedAt": "2026-10-06T11:48:56.602Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow:/contact/index2.html\nSitemap: https://www.daiichisankyo-hc.co.jp/sitemap.xml\nSitemap: https://www.daiichisankyo-hc.co.jp/products/sitemap.xml\nSitemap: https://www.daiichisankyo-hc.co.jp/en/products/sitemap.xml"
+}
