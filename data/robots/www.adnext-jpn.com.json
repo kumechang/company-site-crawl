@@ -1,0 +1,7 @@
+{
+ "origin": "https://www.adnext-jpn.com",
+ "fetchedAt": "2026-10-06T11:57:10.911Z",
+ "status": "error",
+ "text": "",
+ "error": "net::ERR_TUNNEL_CONNECTION_FAILED at https://www.adnext-jpn.com/robots.txt"
+}
