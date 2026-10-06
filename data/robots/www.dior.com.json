@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.dior.com",
+ "fetchedAt": "2026-10-06T11:03:18.187Z",
+ "status": 200,
+ "text": "#DaumWebMasterTool:93a66eb6e45fb1dc6bd8c1f80b640e755c23937ffafaa89e28de6992e10b2ea5:MlFaNSf5e2FRQqF7R10L4Q==\nUser-agent: *\nCrawl-delay: 1\nDisallow: /beauty/*/search.html\nDisallow: /*.json\nDisallow: /beauty/master/\nDisallow: /email/\nDisallow: /invoices/\nDisallow: /file/lvmh*\nDisallow: /file/link*\nDisallow: /beauty/*/tinyWebSite/sendToFriend.ep\nDisallow: /google/\nDisallow: /couture/*/layout/set/print/*\nDisallow: /couture/layout/set/print/*\nDisallow: /couture/ecommerce/directory/*\nDisallow: /security/\nAllow: /fashion/stores/*/search$\nDisallow: */search\nDisallow: /horizon/*\nDisallow: *query=\nDisallow: */login\nDisallow: /fr_mc*\nDisallow: */lady-dior-csc\nDisallow: /couture/ecommerce/media/catalog/\nDisallow: *fashion/products/couture-*\nDisallow: /static/desktop/*\nSitemap: https://www.dior.com/sitemap.xml\n"
+}
