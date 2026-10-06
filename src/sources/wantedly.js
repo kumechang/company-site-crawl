@@ -62,7 +62,7 @@ export async function discover(q, ctx) {
     addEvidence(c, 'address', info.address, { ...src, snippet: info.block });
     // Wantedly の「メンバー」は登録ユーザー数で、従業員数とは別物 → 別フィールドで保持（補助情報）
     addEvidence(c, 'wantedlyMembers', info.members, { ...src, snippet: info.block });
-    addEvidence(c, 'profileText', clip(`${co.jobTitle}`, 300), { ...src, snippet: '募集タイトル' });
+    addEvidence(c, 'jobText', clip(`${co.jobTitle}`, 300), { ...src, snippet: '募集タイトル' });
     addEvidence(c, 'founded', info.founded, src);
     setOfficialUrl(c, info.officialUrl, { ...src, snippet: info.block });
   }

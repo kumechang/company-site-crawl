@@ -43,7 +43,7 @@ export async function discover(q, ctx) {
       addSource(c, id, url);
       c.seedCategories.push(q.category);
       const src = { source: id, url };
-      addEvidence(c, 'profileText', clip(j.title, 200), { ...src, snippet: `求人ボックスの求人タイトル: ${clip(j.title, 60)}` });
+      addEvidence(c, 'jobText', clip(j.title, 200), { ...src, snippet: `求人ボックスの求人タイトル: ${clip(j.title, 60)}` });
       addEvidence(c, 'jobLocation', j.location, { ...src, snippet: `求人の勤務地(本社所在地とは限らない): ${j.location}` });
     }
   }

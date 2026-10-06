@@ -17,6 +17,9 @@ import * as aspic from './sources/aspic.js';
 import * as webkanji from './sources/webkanji.js';
 import * as hikakubiz from './sources/hikakubiz.js';
 import * as kyujinbox from './sources/kyujinbox.js';
+import * as buzztan from './sources/buzztan.js';
+import * as digimado from './sources/digimado.js';
+import * as engage from './sources/engage.js';
 
 const SALESNOW_INDEX_URLS = [
   'https://salesnow.jp/db/industries/advertising/subIndustries/internet-advertising-agency',
@@ -26,7 +29,7 @@ const SALESNOW_INDEX_URLS = [
   'https://salesnow.jp/db/industries/consulting/subIndustries/promotion-consulting',
 ];
 
-const SOURCES = { green, wantedly, imitsu, boxil, aspic, webkanji, hikakubiz, kyujinbox };
+const SOURCES = { green, wantedly, imitsu, boxil, aspic, webkanji, hikakubiz, kyujinbox, buzztan, digimado, engage };
 
 const { values: opt, positionals } = parseArgs({
   allowPositionals: true,

@@ -42,7 +42,12 @@ export const CATEGORIES = {
     boxil: ['https://boxil.jp/sc-sns_operationagency/'],
     aspic: ['https://www.aspicjapan.org/asu/service/list/smm'],
     webkanji: ['https://web-kanji.com/posts/sns-tokyo'],
-    hikakubiz: [], // TODO: 比較ビズのSNS運用代行の東京一覧URL
+    buzztan: ['https://www.buzztan.com/list/'],
+    digimado: [
+      'https://digi-mado.jp/articles/38fdcd64-6f04-4f5d-a762-ab1505cadcf6/', // SNS運用代行おすすめ19選
+      'https://digi-mado.jp/category/marketing/sns-analysis-tools/', // SNS分析ツール
+    ],
+    engage: ['https://en-gage.net/user/search/?from=list&keyword=SNS%E9%81%8B%E7%94%A8&area=23'],
     kyujinbox: ['https://xn--pckua2a7gp15o89zb.com/SNS%E9%81%8B%E7%94%A8%E4%BB%A3%E8%A1%8C-%E6%9D%B1%E4%BA%AC%E9%83%BD%E3%81%AE%E4%BB%95%E4%BA%8B'],
     imitsu: ['https://imitsu.jp/ct-net-adagency/pr-tokyo/'],
   },
@@ -63,16 +68,16 @@ export const SITES = {
   indeed: { name: 'Indeed', status: 'blocked', note: 'Cloudflare確認画面。規約上もスクレイピング禁止' },
   prtimes: { name: 'PR TIMES', status: 'enrich', note: '会社名の完全一致で公式URL・本社所在地を補完(発見には未使用)' },
   kyujinbox: { name: '求人ボックス', status: 'ready', note: '求人詳細はrobots.txt禁止のため一覧本文の社名・求人タイトルのみ使用' },
-  doda: { name: 'doda', status: 'todo' },
-  mynavi: { name: 'マイナビ転職', status: 'todo' },
-  engage: { name: 'エンゲージ', status: 'todo' },
+  doda: { name: 'doda', status: 'blocked', note: '求人一覧(JobSearchList)がrobots.txtで禁止' },
+  mynavi: { name: 'マイナビ転職', status: 'blocked', note: 'この環境からは400/503が返る(アクセス制限)。自宅回線なら取得できる可能性あり' },
+  engage: { name: 'エンゲージ', status: 'ready' },
   boxil: { name: 'BOXIL', status: 'ready', note: 'Cloudflareあり。通常ブラウザで取得できるが規約は要確認' },
   webkanji: { name: 'Web幹事', status: 'ready' },
-  hikakubiz: { name: '比較ビズ', status: 'ready', note: 'カテゴリURLは人手で指定する(スラッグから推測不可)' },
-  hacchunavi: { name: '発注ナビ', status: 'todo' },
-  digimado: { name: 'デジタル化の窓口', status: 'todo' },
+  hikakubiz: { name: '比較ビズ', status: 'ready', note: 'アダプタ実装済み。SNS運用代行・広告代理店のページが無い(ユーザー確認済み)ため現状は対象なし' },
+  hacchunavi: { name: '発注ナビ', status: 'none', note: 'SNS運用代行・広告代理店のページが無い(ユーザー確認済み)' },
+  digimado: { name: 'デジタル化の窓口', status: 'ready', note: 'digi-mado.jp。記事/カテゴリ→製品ページ→運営企業情報' },
   aspic: { name: 'アスピック', status: 'ready' },
-  buzztan: { name: 'バズ担', status: 'todo' },
+  buzztan: { name: 'バズ担', status: 'ready', note: '/list/ 1ページに全社の所在地・公式URLあり' },
 };
 
 /**
@@ -80,7 +85,7 @@ export const SITES = {
  */
 export const ORDER = {
   cosme_d2c: ['salesnow', 'bizmaps', 'wantedly', 'green', 'prtimes', /* 第2群 */ 'indeed', 'kyujinbox', 'doda', 'mynavi', 'engage'],
-  influencer_agency: ['wantedly', 'green', 'kyujinbox', 'indeed', 'prtimes', 'boxil', 'webkanji', 'imitsu', 'hikakubiz'],
-  ad_agency: ['webkanji', 'imitsu', 'hikakubiz', 'hacchunavi', 'boxil', 'digimado', 'wantedly', 'green', 'doda', 'indeed', 'kyujinbox', 'mynavi', 'engage'],
-  sns_agency: ['boxil', 'aspic', 'digimado', 'buzztan', 'webkanji', 'imitsu', 'hikakubiz', 'wantedly', 'green', 'kyujinbox', 'indeed'],
+  influencer_agency: ['wantedly', 'green', 'kyujinbox', 'indeed', 'prtimes', 'boxil', 'webkanji', 'imitsu'],
+  ad_agency: ['webkanji', 'imitsu', 'boxil', 'digimado', 'wantedly', 'green', 'doda', 'indeed', 'kyujinbox', 'mynavi', 'engage'],
+  sns_agency: ['boxil', 'aspic', 'digimado', 'buzztan', 'webkanji', 'imitsu', 'wantedly', 'green', 'kyujinbox', 'engage', 'indeed'],
 };

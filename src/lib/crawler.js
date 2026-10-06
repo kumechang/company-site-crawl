@@ -155,9 +155,10 @@ export class Crawler {
         return out;
       } catch (e) {
         lastErr = e;
-        if (e instanceof HttpError && e.status < 500) break; // 403/404 等は再試行しない
+        // 403/404 等は再試行しない。400/429 は一部サイトが間欠的に返す(アクセス制限)ため上限付きで再試行する
+        if (e instanceof HttpError && e.status < 500 && ![400, 429].includes(e.status)) break;
         log(`  retry ${i + 1}: ${url} (${e.message.split('\n')[0]})`);
-        await sleep(2000 * (i + 1));
+        await sleep(e instanceof HttpError ? 6000 * (i + 1) : 2000 * (i + 1));
       }
     }
     this.stats.failed++;
