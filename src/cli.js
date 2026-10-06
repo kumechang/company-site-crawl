@@ -8,7 +8,7 @@ import { consolidate } from './lib/merge.js';
 import { enrichFromOfficial } from './enrich.js';
 import { needsCorporateUrl, bestOfficial } from './lib/model.js';
 import { domainOf } from './lib/util.js';
-import { exportAll } from './export.js';
+import { exportAll, exportSample } from './export.js';
 import { robotsReport } from './robots-report.js';
 import * as green from './sources/green.js';
 import * as wantedly from './sources/wantedly.js';
@@ -248,6 +248,8 @@ try {
   if (cmd === 'sample') await sample();
   if (cmd === 'enrich' || cmd === 'run') await enrich();
   const rows = exportAll(store.all(), { minEmployees });
+  const sm = exportSample(store.all(), { minEmployees });
+  log('# サンプル(data/sample.csv):', JSON.stringify(sm.summary));
   const n = (s) => rows.filter((r) => r.status === s).length;
   log(`# 完了: 全${rows.length}社 / OK ${n('OK')} / 要確認 ${n('要確認')} / 除外 ${n('除外')}  → data/companies.csv`);
   log('# 通信:', JSON.stringify(crawler.stats));

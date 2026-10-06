@@ -1,5 +1,10 @@
 import fs from 'node:fs';
 import { consolidate } from './lib/merge.js';
+import { CATEGORIES } from '../config/categories.js';
+
+const ENRICH_SOURCES = new Set(['official', 'salesnow', 'prtimes', 'gbizinfo']);
+// 従業員数の出所の確からしさ（小さいほど確か）
+const EMP_RANK = { official: 0, green: 1, grip: 1, gbizinfo: 2, houjingoo: 2, pitact: 2, salesnow: 3, agencyhub: 3 };
 
 const COLS = [
   ['企業名', (r) => r.name],
@@ -33,4 +38,28 @@ export function exportAll(companies, { outDir = 'data', minEmployees = 20 } = {}
   fs.writeFileSync(`${outDir}/companies.csv`, csv);
   fs.writeFileSync(`${outDir}/companies.report.json`, JSON.stringify(rows, null, 1));
   return rows;
+}
+
+/**
+ * カテゴリごとの「しっかりしたサンプル」(判定OKのみ・最大 perCategory 件)。
+ * そのカテゴリの一覧・検索で見つけた会社を対象に、複数媒体に載る会社・従業員数の出所が確かな会社を優先する。
+ */
+export function exportSample(companies, { outDir = 'data', perCategory = 15, minEmployees = 20 } = {}) {
+  const rows = [];
+  const summary = {};
+  for (const [key, def] of Object.entries(CATEGORIES)) {
+    const picked = companies
+      .filter((c) => c.seedCategories.includes(key))
+      .map((c) => ({ c, r: consolidate(c, { minEmployees }) }))
+      .filter(({ r }) => r.status === 'OK' && r.categories.includes(def.label))
+      .map((x) => ({ ...x, nSrc: new Set(x.c.sources.map((s) => s.source).filter((s) => !ENRICH_SOURCES.has(s))).size }))
+      .sort((a, b) => b.nSrc - a.nSrc || (EMP_RANK[a.r.employeesSource] ?? 9) - (EMP_RANK[b.r.employeesSource] ?? 9) || a.r.name.localeCompare(b.r.name, 'ja'))
+      .slice(0, perCategory);
+    summary[def.label] = picked.length;
+    for (const { r } of picked) rows.push({ ...r, sampleCategory: def.label });
+  }
+  const cols = [['カテゴリ', (r) => r.sampleCategory], ...COLS];
+  const csv = '\uFEFF' + [cols.map((c) => c[0]).join(','), ...rows.map((r) => cols.map(([, f]) => esc(f(r))).join(','))].join('\n');
+  fs.writeFileSync(`${outDir}/sample.csv`, csv);
+  return { rows, summary };
 }
