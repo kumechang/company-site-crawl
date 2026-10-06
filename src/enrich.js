@@ -42,7 +42,7 @@ export async function enrichFromOfficial(c, { crawler, log }) {
     return;
   }
   addSource(c, src, c.officialUrl);
-  addEvidence(c, 'profileText', clip(`${top.title} ${flatten(top.text)}`, 500), { source: src, url: c.officialUrl, snippet: 'トップページ' });
+  addEvidence(c, 'profileText', clip(`${top.title} ${flatten(top.text)}`, 1500), { source: src, url: c.officialUrl, snippet: 'トップページ' });
 
   const pages = [{ url: c.officialUrl, snap: top }];
   for (const p of findProfileLinks(top.anchors, c.officialUrl).slice(0, 2)) {
@@ -60,7 +60,7 @@ export async function enrichFromOfficial(c, { crawler, log }) {
     const addr = extractAddress(snap.text);
     if (addr?.labeled) addEvidence(c, 'address', addr.address, { source: src, url, snippet: addr.address });
     else if (addr) addEvidence(c, 'address', addr.address, { source: src, url, snippet: addr.address });
-    if (snap.text) addEvidence(c, 'profileText', clip(flatten(snap.text), 500), { source: src, url, snippet: '会社概要ページ' });
+    if (snap.text) addEvidence(c, 'profileText', clip(flatten(snap.text), 1500), { source: src, url, snippet: '会社概要ページ' });
   }
 
   // 問い合わせURL: 検出したリンクを上位から実在確認 → 見つからなければ一般的なパスを試す

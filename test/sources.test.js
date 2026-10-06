@@ -19,6 +19,7 @@ import * as pitact from '../src/sources/pitact.js';
 import * as agencyhub from '../src/sources/agencyhub.js';
 import * as jcia from '../src/sources/jcia.js';
 import * as jaro from '../src/sources/jaro.js';
+import * as article from '../src/sources/article.js';
 import { consolidate } from '../src/lib/merge.js';
 import { newCompany, addEvidence, setOfficialUrl, bestOfficial, needsCorporateUrl } from '../src/lib/model.js';
 
@@ -329,4 +330,16 @@ test('住所が一致しない情報源の従業員数は使わない(同名の�
   assert.equal(r.employees, null);
   assert.notEqual(r.status, '除外');
   assert.ok(r.notes.some((n) => n.includes('不採用')));
+});
+
+test('記事抽出: 見出しの直後に「<名前>は…」で始まる説明文がある行を企業とみなす', () => {
+  const text = ['目次','【2026年版】インフルエンサー事務所一覧','CARAFUL','Nadia Management','CARAFUL','TikTok特化の事務所です。','CARAFULは2019年設立のインフルエンサーマーケティング企業です。',
+    'CRAZE/株式会社Greed','CRAZE/株式会社Greedは、大手事務所です。','株式会社Greedは、テスト。','Nadia Management','Nadia Managementは2012年設立の料理家プロダクションです。','選び方のポイント','選び方のポイントは次の5つです。','まとめ','まとめは以下の通りです。'].join('\n');
+  const r = article.parseArticle({ text });
+  const names = r.map((x) => x.company);
+  assert.ok(names.includes('CARAFUL'));
+  assert.ok(names.includes('Nadia Management'));
+  assert.ok(names.includes('株式会社Greed'));
+  assert.ok(!names.includes('まとめ'));
+  assert.deepEqual(article.nameVariants('第1位：A社（株式会社エー）'), ['株式会社エー', 'A社']);
 });

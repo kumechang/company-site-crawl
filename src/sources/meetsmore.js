@@ -55,7 +55,8 @@ export async function discover(q, ctx) {
     c.seedCategories.push(q.category);
     const src = { source: id, url };
     // ミツモアの「SNS運用代行サービス比較」掲載 = SNS運用代行の提供根拠
-    addEvidence(c, 'profileText', clip(`SNS運用代行 ${p.name}`, 200), { ...src, snippet: `ミツモア「SNS運用代行サービス比較」掲載: ${p.name}` });
+    const label = q.label ?? 'SNS運用代行';
+    addEvidence(c, 'profileText', clip(`${label} ${p.name}`, 200), { ...src, snippet: `ミツモア「${label}」カテゴリに掲載: ${p.name}` });
     setOfficialUrl(c, info.url, { ...src, snippet: `ミツモア 製品URL: ${info.url}` });
   }
 }

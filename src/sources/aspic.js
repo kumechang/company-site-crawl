@@ -46,6 +46,7 @@ export async function discover(q, ctx) {
     const src = { source: id, url };
     addEvidence(c, 'address', info.address?.replace(/^〒\s*\d{3}-?\d{4}\s*/, ''), { ...src, snippet: `所在地: ${info.address}` });
     // アスピックの「SNS運用代行サービス」カテゴリ掲載 = SNS運用代行の提供根拠
-    addEvidence(c, 'profileText', clip(`${info.title} ${info.summary}`, 400), { ...src, snippet: 'アスピック「SNS運用代行サービス」掲載' });
+    const label = q.label ?? 'SNS運用代行';
+    addEvidence(c, 'profileText', clip(`${label} ${info.title} ${info.summary}`, 400), { ...src, snippet: `アスピック「${label}」カテゴリに掲載` });
   }
 }

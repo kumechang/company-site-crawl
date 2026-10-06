@@ -61,7 +61,8 @@ export async function discover(q, ctx) {
       c.seedCategories.push(q.category);
       const src = { source: id, url: s.url };
       // BOXIL の「SNS運用代行会社」カテゴリに掲載されている = SNS運用代行サービスを提供している、という根拠
-      addEvidence(c, 'profileText', clip(`${s.title} ${info.summary}`, 400), { ...src, snippet: `BOXIL「SNS運用代行会社」掲載: ${s.title}` });
+      const label = q.label ?? 'SNS運用代行';
+      addEvidence(c, 'profileText', clip(`${label} ${s.title} ${info.summary}`, 400), { ...src, snippet: `BOXIL「${label}」カテゴリに掲載: ${s.title}` });
       setOfficialUrl(c, info.officialUrl, { ...src, snippet: `BOXIL詳細ページの公式サイトリンク` });
     }
   }

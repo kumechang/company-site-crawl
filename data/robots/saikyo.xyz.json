@@ -1,6 +1,6 @@
 {
  "origin": "https://saikyo.xyz",
- "fetchedAt": "2026-10-06T09:39:11.933Z",
+ "fetchedAt": "2026-10-06T10:50:26.901Z",
  "status": "error",
  "text": "",
  "error": "net::ERR_BLOCKED_BY_CLIENT at https://saikyo.xyz/robots.txt"

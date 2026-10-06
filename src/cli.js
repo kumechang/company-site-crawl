@@ -32,6 +32,7 @@ import * as pitact from './sources/pitact.js';
 import * as agencyhub from './sources/agencyhub.js';
 import * as jcia from './sources/jcia.js';
 import * as jaro from './sources/jaro.js';
+import * as article from './sources/article.js';
 
 const SALESNOW_INDEX_URLS = [
   'https://salesnow.jp/db/industries/advertising/subIndustries/internet-advertising-agency',
@@ -41,11 +42,12 @@ const SALESNOW_INDEX_URLS = [
   'https://salesnow.jp/db/industries/consulting/subIndustries/promotion-consulting',
 ];
 
-const SOURCES = { green, wantedly, imitsu, boxil, aspic, webkanji, hikakubiz, kyujinbox, buzztan, digimado, engage, meetsmore, slidelib, grip, houjingoo, pitact, agencyhub, jcia, jaro, salesnow };
+const SOURCES = { green, wantedly, imitsu, boxil, aspic, webkanji, hikakubiz, kyujinbox, buzztan, digimado, engage, meetsmore, slidelib, grip, houjingoo, pitact, agencyhub, jcia, jaro, salesnow, article };
 
 const { values: opt, positionals } = parseArgs({
   allowPositionals: true,
   options: {
+    ok: { type: 'string', default: '12' }, // sample: カテゴリごとの「判定OK」目標件数
     target: { type: 'string', default: '8' }, // カテゴリごとの目標社数。達したら次の媒体へ進まない
     'per-query': { type: 'string', default: '8' }, // 1クエリ(一覧)あたりの最大取得社数
     sources: { type: 'string', default: '' }, // 空なら ORDER の全媒体。指定時はその媒体のみ
@@ -63,11 +65,12 @@ const HELP = `使い方: node src/cli.js <command> [options]
   enrich     公式サイトを巡回して従業員数・住所・問い合わせURLを補完
   export     統合して data/companies.csv を出力
   run        discover → enrich → export を一括実行
+  sample     カテゴリごとに「発見→補完→判定OKの件数」を繰り返し、OKが --ok 件に達したら次のカテゴリへ
   robots     全媒体の robots.txt を取得し、使うURLが許可されているか一覧にする
 オプション: --target N(カテゴリ目標社数)  --per-query N  --sources green,wantedly,imitsu  --categories cosme_d2c,...  --delay ms  --no-cache`;
 
 const cmd = positionals[0];
-if (!cmd || opt.help || !['discover', 'enrich', 'export', 'run', 'robots'].includes(cmd)) {
+if (!cmd || opt.help || !['discover', 'enrich', 'export', 'run', 'robots', 'sample'].includes(cmd)) {
   console.log(HELP);
   process.exit(cmd ? 0 : 1);
 }
@@ -85,6 +88,45 @@ function qualified(cat) {
   }).length;
 }
 
+/** 1カテゴリ×1媒体の発見。実行したら true、スキップしたら false */
+async function discoverSource(cat, sid, limit, ctx) {
+  const def = CATEGORIES[cat];
+  const site = SITES[sid];
+  if (site.status === 'blocked') {
+    log(`  - ${site.name}: 利用不可のためスキップ (${site.note})`);
+    return false;
+  }
+  if (!SOURCES[sid]) {
+    log(`  - ${site.name}: ${site.status === 'enrich' ? '補完専用(enrichで使用)' : '未実装のためスキップ'}`);
+    return false;
+  }
+  if (!(def[sid] ?? []).length) {
+    log(`  - ${site.name}: このカテゴリの対象URLが未設定のためスキップ (config/categories.js の ${sid})`);
+    return false;
+  }
+  for (const t of def[sid]) {
+    // 目標は URL/キーワードの文字列、または {url, label, pages, section…} のオブジェクトで指定できる
+    const spec = typeof t === 'string' ? (sid === 'wantedly' ? { keyword: t } : { url: t }) : t;
+    const q = { category: cat, limit, pages: 2, ...spec };
+    try {
+      await SOURCES[sid].discover(q, ctx);
+    } catch (e) {
+      log(`  ! ${site.name} ${spec.url ?? spec.keyword}: ${e.message}`);
+    }
+    store.save();
+  }
+  return true;
+}
+
+/** そのカテゴリで「判定OK」の会社数 */
+function okCount(cat) {
+  const label = CATEGORIES[cat].label;
+  return store.all().filter((c) => {
+    const r = consolidate(c, { minEmployees });
+    return r.status === 'OK' && r.categories.includes(label);
+  }).length;
+}
+
 async function discover() {
   const target = Number(opt.target);
   const limit = Number(opt['per-query']);
@@ -96,32 +138,9 @@ async function discover() {
     log(`# ${def.label} (目標 ${target}社)`);
     for (const sid of ORDER[cat]) {
       if (only && !only.includes(sid)) continue;
-      const site = SITES[sid];
-      if (site.status === 'blocked') {
-        log(`  - ${site.name}: 利用不可のためスキップ (${site.note})`);
-        continue;
-      }
-      if (!SOURCES[sid]) {
-        log(`  - ${site.name}: ${site.status === 'enrich' ? '補完専用(enrichで使用)' : '未実装のためスキップ'}`);
-        continue;
-      }
-      if (!(def[sid] ?? []).length) {
-        log(`  - ${site.name}: このカテゴリの対象URLが未設定のためスキップ (config/categories.js の ${sid})`);
-        continue;
-      }
-      for (const t of def[sid] ?? []) {
-        // 目標は URL/キーワードの文字列、または {url, label, pages, section…} のオブジェクトで指定できる
-        const spec = typeof t === 'string' ? (sid === 'wantedly' ? { keyword: t } : { url: t }) : t;
-        const q = { category: cat, limit, pages: 2, ...spec };
-        try {
-          await SOURCES[sid].discover(q, ctx);
-        } catch (e) {
-          log(`  ! ${site.name} ${spec.url ?? spec.keyword}: ${e.message}`);
-        }
-        store.save();
-      }
+      if (!(await discoverSource(cat, sid, limit, ctx))) continue;
       const n = qualified(cat);
-      log(`  → ${site.name} まで: 該当 ${n}/${target}社`);
+      log(`  → ${SITES[sid].name} まで: 該当 ${n}/${target}社`);
       if (n >= target) {
         log(`  ✔ 目標達成のため ${def.label} の以降の媒体は見ません`);
         break;
@@ -130,6 +149,27 @@ async function discover() {
   }
   store.mergeByDomain();
   store.save();
+}
+
+/** サンプル作成: 媒体ごとに 発見 → 補完 → 「判定OK」件数を数え、目標(--ok)に達したらそのカテゴリを終える */
+async function sample() {
+  const okTarget = Number(opt.ok);
+  const limit = Number(opt['per-query']);
+  const ctx = { crawler, log, minEmployees, upsert: (n) => store.upsert(n) };
+  for (const cat of opt.categories.split(',')) {
+    const def = CATEGORIES[cat];
+    if (!def) throw new Error(`unknown category ${cat}`);
+    log(`# ${def.label}: 判定OKを ${okTarget} 件作る (現在 ${okCount(cat)} 件)`);
+    for (const sid of ORDER[cat]) {
+      if (okCount(cat) >= okTarget) break;
+      if (!(await discoverSource(cat, sid, limit, ctx))) continue;
+      store.mergeByDomain();
+      store.save();
+      await enrich();
+      log(`  → ${SITES[sid].name} まで: 判定OK ${okCount(cat)}/${okTarget}件`);
+    }
+    log(`# ${def.label}: ${okCount(cat) >= okTarget ? '目標達成' : '全媒体を見ても目標に届かず'} (判定OK ${okCount(cat)}件)`);
+  }
 }
 
 async function enrich() {
@@ -201,6 +241,7 @@ try {
   }
   if (cmd !== 'export') await crawler.launch();
   if (cmd === 'discover' || cmd === 'run') await discover();
+  if (cmd === 'sample') await sample();
   if (cmd === 'enrich' || cmd === 'run') await enrich();
   const rows = exportAll(store.all(), { minEmployees });
   const n = (s) => rows.filter((r) => r.status === s).length;

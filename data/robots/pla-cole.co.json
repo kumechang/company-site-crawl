@@ -1,0 +1,6 @@
+{
+ "origin": "http://pla-cole.co",
+ "fetchedAt": "2026-10-06T10:53:57.394Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /page/*/\n"
+}

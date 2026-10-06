@@ -18,6 +18,7 @@ export const CATEGORIES = {
     salesnow: [{ url: 'https://salesnow.jp/db/industries/retail-sales/subIndustries/cosmetics-sales', label: '化粧品' }],
     jcia: [{ url: 'https://www.jcia.org/admin/memberlist', label: '化粧品' }],
     jaro: [{ url: 'https://www.jaro.or.jp/kaiinsha/', section: '化粧品・トイレタリー', label: '化粧品' }],
+    article: [{ url: 'https://service.aainc.co.jp/product/letro/article/d2c_brand', label: '化粧品 D2C ブランド' }],
   },
   influencer_agency: {
     label: 'インフルエンサー事務所',
@@ -29,6 +30,14 @@ export const CATEGORIES = {
     },
     green: ['https://www.green-japan.com/search/area/13/industry/100125'],
     wantedly: ['インフルエンサー キャスティング', 'インフルエンサー マネジメント'],
+    boxil: [{ url: 'https://boxil.jp/sc-influencer_marketing/', label: 'インフルエンサー マーケティング キャスティング' }],
+    aspic: [{ url: 'https://www.aspicjapan.org/asu/service/list/imk', label: 'インフルエンサー マーケティング キャスティング' }],
+    meetsmore: [{ url: 'https://meetsmore.com/product-services/influencer-casting', label: 'インフルエンサー キャスティング マーケティング' }],
+    webkanji: [{ url: 'https://web-kanji.com/search/influencer-marketing', label: 'インフルエンサー マーケティング' }],
+    article: [
+      { url: 'https://buzz-navi.jp/influencer-agency/', label: 'インフルエンサー事務所 マネジメント' },
+      { url: 'https://influencerpulse.jp/recommend/influencer_prod/', label: 'インフルエンサー事務所 マネジメント' },
+    ],
   },
   ad_agency: {
     label: '広告代理店',
@@ -39,11 +48,22 @@ export const CATEGORIES = {
     grip: [
       { url: 'https://grip-space.co.jp/ad-db/pref/tokyo/field/5-1', label: '広告代理店' }, // 総合広告代理店
       { url: 'https://grip-space.co.jp/ad-db/pref/tokyo/field/5-2', label: '広告代理店 ネット広告' }, // ネット広告専門
+      { url: 'https://grip-space.co.jp/ad-db/pref/tokyo/feature/ad-web', label: '広告代理店 Web広告運用' }, // Web広告運用(301社)
     ],
     agencyhub: [{ url: 'https://agencyhub.jp/prefecture/tokyo/', label: '広告代理店' }],
     pitact: [{ url: 'https://pitact.com/search/pref-tokyo/category-6751mbkug', label: '広告代理店', pages: 1 }],
     houjingoo: [{ url: 'https://houjin.goo.to/corporations/prefs/tokyo/category-s-advertising-agency-publicity-industry', label: '広告代理店' }],
     salesnow: [{ url: 'https://salesnow.jp/db/industries/advertising/tokyo', label: '広告代理店' }],
+    aspic: [{ url: 'https://www.aspicjapan.org/asu/service/list/aop', label: '広告運用代行 広告代理店' }],
+    meetsmore: [{ url: 'https://meetsmore.com/product-services/web-advertisement-operation', label: 'Web広告運用代行 広告代理店' }],
+    webkanji: [{ url: 'https://web-kanji.com/posts/listing-tokyo', label: '広告代理店 リスティング広告' }],
+    article: [
+      { url: 'https://media-radar.jp/contents/meditsubu/columns5-tokyo-ad-agency/', label: '広告代理店' },
+      { url: 'https://www.biz.ne.jp/matome/2010215/', label: '広告代理店' },
+      { url: 'https://www.shopowner-support.net/attracting_customers/area/tokyo/webads-agency-tokyo/', label: 'Web広告 広告代理店' },
+      { url: 'https://www.centered.co.jp/blog/ad_tokyo/', label: 'Web広告 広告代理店' },
+      { url: 'https://canvas.d2cr.co.jp/tokyo-ad-agency/', label: '広告代理店' },
+    ],
   },
   sns_agency: {
     label: 'SNS運用代行',
@@ -68,6 +88,19 @@ export const CATEGORIES = {
       { url: 'https://grip-space.co.jp/ad-db/pref/tokyo/feature/ad-sns', label: 'SNS運用代行 広告代理店' },
       { url: 'https://grip-space.co.jp/web-db/pref/tokyo/service/sns', label: 'SNS運用代行 ホームページ制作' },
     ],
+    // 比較・おすすめ記事（見出し→説明文の規則性から掲載企業を抽出）
+    article: [
+      'https://stock-sun.com/column/sns-management-tokyo/',
+      'https://pamxy.co.jp/marke-driven/sns-marketing/tokyo-sns-operation-agency/',
+      'https://e-pace.co.jp/column/tokyo_sns_recommendation/',
+      'https://digital-marketing.jp/sns-marketing/recommended-sns-management-agency-in-tokyo/',
+      'https://fizjapan.com/column/detail/sns-unyo-daiko-tokyo/',
+      'https://sider-story.co.jp/knowledge/tokyo-sns-partner/',
+      'https://dym.asia/biznavi/articles/sns-31-c04afl/',
+      'https://media-radar.jp/contents/meditsubu/columns4-snsoperationagency/',
+      'https://oproduct.jp/articles/1384479',
+      'https://holytech.jp/column/comparison-sns-operate-agency/',
+    ].map((url) => ({ url, label: 'SNS運用代行' })),
   },
 };
 
@@ -95,6 +128,7 @@ export const SITES = {
   hacchunavi: { name: '発注ナビ', status: 'none', note: 'SNS運用代行・広告代理店のページが無い(ユーザー確認済み)' },
   digimado: { name: 'デジタル化の窓口', status: 'ready', note: 'digi-mado.jp。記事/カテゴリ→製品ページ→運営企業情報' },
   aspic: { name: 'アスピック', status: 'ready' },
+  article: { name: '比較・おすすめ記事(共通抽出)', status: 'ready', note: '見出し→「<名>は…」で始まる説明文の規則性から掲載企業を抽出。精度は記事ごとに差がある' },
   grip: { name: 'グリップ 広告代理店DB', status: 'ready', note: '会社ページに公式サイト・従業員数・法人番号。一覧は?page=N' },
   houjingoo: { name: '全国法人(houjin.goo.to)', status: 'ready', note: '本社所在地・資本金・従業員数(一部)' },
   pitact: { name: 'PITACT', status: 'ready', note: '住所・法人番号・従業員数(空欄多い)。ページ送りは/page-N' },
@@ -111,8 +145,8 @@ export const SITES = {
  * カテゴリごとの媒体の優先順位（上から順に見て、目標社数に達したら打ち切る）。
  */
 export const ORDER = {
-  cosme_d2c: ['salesnow', 'bizmaps', 'jcia', 'jaro', 'wantedly', 'green', 'prtimes', /* 第2群 */ 'indeed', 'kyujinbox', 'doda', 'mynavi', 'engage'],
-  influencer_agency: ['wantedly', 'green', 'kyujinbox', 'indeed', 'prtimes', 'boxil', 'webkanji', 'imitsu'],
-  ad_agency: ['webkanji', 'imitsu', 'boxil', 'grip', 'agencyhub', 'pitact', 'houjingoo', 'salesnow', 'digimado', 'wantedly', 'green', 'doda', 'indeed', 'kyujinbox', 'mynavi', 'engage'],
-  sns_agency: ['boxil', 'aspic', 'digimado', 'buzztan', 'slidelib', 'webkanji', 'imitsu', 'meetsmore', 'grip', 'wantedly', 'green', 'kyujinbox', 'engage', 'indeed'],
+  cosme_d2c: ['salesnow', 'bizmaps', 'jcia', 'jaro', 'article', 'wantedly', 'green', 'prtimes', /* 第2群 */ 'indeed', 'kyujinbox', 'doda', 'mynavi', 'engage'],
+  influencer_agency: ['wantedly', 'green', 'kyujinbox', 'indeed', 'prtimes', 'boxil', 'aspic', 'meetsmore', 'webkanji', 'article', 'imitsu'],
+  ad_agency: ['webkanji', 'imitsu', 'boxil', 'aspic', 'meetsmore', 'grip', 'agencyhub', 'pitact', 'houjingoo', 'salesnow', 'article', 'digimado', 'wantedly', 'green', 'doda', 'indeed', 'kyujinbox', 'mynavi', 'engage'],
+  sns_agency: ['boxil', 'aspic', 'digimado', 'buzztan', 'slidelib', 'webkanji', 'imitsu', 'meetsmore', 'grip', 'article', 'wantedly', 'green', 'kyujinbox', 'engage', 'indeed'],
 };
