@@ -1,6 +1,6 @@
 {
  "origin": "https://tenshoku.mynavi.jp",
- "fetchedAt": "2026-10-06T09:15:34.609Z",
- "status": 200,
- "text": "User-agent: *\nSitemap: https://tenshoku.mynavi.jp/sitemap/sitemap_index.xml\nSitemap: https://tenshoku.mynavi.jp/keyword/keyword-sitemap-index.xml\nDisallow: /a/\nDisallow: /b/\nDisallow: /c/\nDisallow: /entry/\nDisallow: /healthcheck/\nDisallow: /help/client/\nDisallow: /jobset/\nDisallow: /manage/\nDisallow: /mt4/\nDisallow: /o/\nDisallow: /rss/\nDisallow: /private/\nDisallow: /return/\nDisallow: /setting/\nDisallow: /sonet/\nDisallow: /useset/\nDisallow: /centuserset/\nDisallow: /info/\nDisallow: /question/form/\nDisallow: /url-forwarder/\nDisallow: /bookmark/\nDisallow: /help/form/\nDisallow: /*/satellite-ajax/*\nDisallow: /ajax/*\nAllow: /ajax/get-dynamic-related-link\nDisallow: /plst/admin/\nDisallow: /plst/client/\nDisallow: /authenticate/\nDisallow: /republish/\nDisallow: /login-republishConfirmation/\nDisallow: /fw/\nDisallow: /applied-job/\nDisallow: /careq/\nDisallow: /fair/registration/\nDisallow: /job/\nDisallow: /login-bookmark/\nDisallow: /logout/\nDisallow: /message/\nDisallow: /mypage/\nDisallow: /question/\nDisallow: /seminar/\nDisallow: /setting/\nDisallow: /url-forwarder/\nDisallow: */?soff=*\nDisallow: /engineer/guide/api/\nDisallow: /engineer/guide/draft/\nDisallow: /engineer/guide/preview\nSitemap:  https://tenshoku.mynavi.jp/engineer/guide/sitemap_index.xml\nUser-agent: bingbot\nCrawl-delay: 30\nUser-agent: Mediapartners-Google\nDisallow: /engineer/guide/draft/\nDisallow: /engineer/guide/preview\nDisallow: /list/*/new/\nDisallow: /list/*/upd/\nDisallow: /list/*/hurryup/\nDisallow: /*/only/\nDisallow: /search_recommend/"
+ "fetchedAt": "2026-10-06T10:26:32.123Z",
+ "status": 400,
+ "text": ""
 }

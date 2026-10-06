@@ -163,7 +163,8 @@ export class Crawler {
     }
     if (!(await this.checkRobots(url))) {
       this.stats.blocked++;
-      throw new RobotsDisallowed(`robots.txt disallows ${url}`);
+      const pol = this.robots.get(originOf(url));
+      throw new RobotsDisallowed(pol?.denyAll ? `${pol.reason}のためアクセスしない: ${url}` : `robots.txt disallows ${url}`);
     }
     if (this.tripped.has(host)) throw new HostTripped(`${host} は連続して拒否されたため、この実行中はアクセスしません`);
     let lastErr;
