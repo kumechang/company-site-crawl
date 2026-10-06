@@ -1,6 +1,6 @@
 {
  "origin": "https://boxil.jp",
- "fetchedAt": "2026-10-06T13:05:21.389Z",
+ "fetchedAt": "2026-10-06T13:44:34.860Z",
  "status": 200,
  "text": "User-Agent: *\nDisallow: /users/\n\nUser-Agent: *\nDisallow: /sc-*/comparison/*-vs-*-vs-\n\nUser-Agent: *\nDisallow: /comparison/*-vs-*-vs-\n\nUser-Agent: *\nDisallow: /registration/\n\nUser-Agent: *\nDisallow: /chat-rooms/\n\nUser-Agent: *\nDisallow: /*/aggregate\n\nUser-Agent: *\nDisallow: /document-requests/\n\nUser-Agent: *\nDisallow: /downloads/\n\nUser-Agent: *\nDisallow: /auth/sign-in/?redirectTo=\n\nUser-Agent: *\nDisallow: /auth/\n\nUser-Agent: *\nDisallow: /mypage/\n\nUser-Agent: *\nDisallow: /api/\n\nUser-Agent: *\nDisallow: /cdn-cgi/\n\nUser-Agent: *\nDisallow: /reputations/\n\nSitemap: https://boxil.jp/sitemap.xml\nSitemap: https://boxil.jp/mag/sitemap.xml\n"
 }

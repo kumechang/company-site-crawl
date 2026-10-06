@@ -27,6 +27,7 @@ export const ORIGINS = {
   gbizinfo: 'https://info.gbiz.go.jp',
   mynavi_shinsotsu: 'https://job.mynavi.jp',
   grip: 'https://grip-space.co.jp',
+  digitre: 'https://www.digi-tre.com',
   houjingoo: 'https://houjin.goo.to',
   pitact: 'https://pitact.com',
   agencyhub: 'https://agencyhub.jp',

@@ -28,6 +28,7 @@ import * as engage from './sources/engage.js';
 import * as meetsmore from './sources/meetsmore.js';
 import * as slidelib from './sources/slidelib.js';
 import * as grip from './sources/grip.js';
+import * as digitre from './sources/digitre.js';
 import * as houjingoo from './sources/houjingoo.js';
 import * as pitact from './sources/pitact.js';
 import * as agencyhub from './sources/agencyhub.js';
@@ -43,7 +44,7 @@ const SALESNOW_INDEX_URLS = [
   'https://salesnow.jp/db/industries/consulting/subIndustries/promotion-consulting',
 ];
 
-const SOURCES = { green, wantedly, imitsu, boxil, aspic, webkanji, hikakubiz, kyujinbox, buzztan, digimado, engage, meetsmore, slidelib, grip, houjingoo, pitact, agencyhub, jcia, jaro, salesnow, article, prtimes };
+const SOURCES = { green, wantedly, imitsu, boxil, aspic, webkanji, hikakubiz, kyujinbox, buzztan, digimado, engage, meetsmore, slidelib, grip, digitre, houjingoo, pitact, agencyhub, jcia, jaro, salesnow, article, prtimes };
 
 const { values: opt, positionals } = parseArgs({
   allowPositionals: true,

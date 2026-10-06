@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.rei-yokohama.co.jp",
+ "fetchedAt": "2026-10-06T13:45:34.007Z",
+ "status": 200,
+ "text": "User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /admin/\nDisallow: /login\nDisallow: /register\nDisallow: /mypage\nDisallow: /410\n# JSライブラリ同梱のサンプルHTML（typed.js / imagesloaded のsandbox）。\n# 中身が空同然でSEO上のノイズになるためクロール対象から外す。\nDisallow: /demoyarundayo/lpo-ads-ope/libs/\nDisallow: /demoyarundayo/offer/lpo-ads-ope/libs/\n\nSitemap: https://www.rei-yokohama.co.jp/sitemap.xml\nSitemap: https://www.rei-yokohama.co.jp/demoyarundayo/sitemap.xml\nSitemap: https://www.rei-yokohama.co.jp/l/sitemap.xml\nSitemap: https://www.rei-yokohama.co.jp/potion/sitemap.xml\nSitemap: https://www.rei-yokohama.co.jp/7/sitemap.xml\nSitemap: https://www.rei-yokohama.co.jp/migikata-agari/sitemap.xml\nSitemap: https://www.rei-yokohama.co.jp/the-king/sitemap.xml\n"
+}

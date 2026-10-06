@@ -1,0 +1,7 @@
+{
+ "origin": "https://b2b.kkk.tokyo.jp",
+ "fetchedAt": "2026-10-06T13:44:53.755Z",
+ "status": "error",
+ "text": "",
+ "error": "net::ERR_TUNNEL_CONNECTION_FAILED at https://b2b.kkk.tokyo.jp/robots.txt"
+}

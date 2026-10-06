@@ -50,6 +50,7 @@ export const CATEGORIES = {
     article: [
       { url: 'https://buzz-navi.jp/influencer-agency/', label: 'インフルエンサー事務所 マネジメント' },
       { url: 'https://influencerpulse.jp/recommend/influencer_prod/', label: 'インフルエンサー事務所 マネジメント' },
+      { url: 'https://boxil.jp/mag/a6710/', label: 'インフルエンサー マーケティング キャスティング' },
     ],
   },
   ad_agency: {
@@ -63,7 +64,10 @@ export const CATEGORIES = {
       { url: 'https://grip-space.co.jp/ad-db/pref/tokyo/field/5-1', label: '広告代理店' }, // 総合広告代理店
       { url: 'https://grip-space.co.jp/ad-db/pref/tokyo/field/5-2', label: '広告代理店 ネット広告' }, // ネット広告専門
       { url: 'https://grip-space.co.jp/ad-db/pref/tokyo/feature/ad-web', label: '広告代理店 Web広告運用' }, // Web広告運用(301社)
+      { url: 'https://grip-space.co.jp/ad-db/pref/tokyo', label: '広告代理店' }, // 東京都の広告代理店 2,225社
     ],
+    // デジトレ: 東京都の代理店75社(8ページ)。会社ページに本社所在地。ページ送りは /page/N/（?page=N は無視される）
+    digitre: [{ url: 'https://www.digi-tre.com/area/s-tokyo/', label: '広告代理店', pages: 8 }],
     agencyhub: [{ url: 'https://agencyhub.jp/prefecture/tokyo/', label: '広告代理店' }],
     pitact: [{ url: 'https://pitact.com/search/pref-tokyo/category-6751mbkug', label: '広告代理店', pages: 1 }],
     houjingoo: [{ url: 'https://houjin.goo.to/corporations/prefs/tokyo/category-s-advertising-agency-publicity-industry', label: '広告代理店' }],
@@ -77,6 +81,11 @@ export const CATEGORIES = {
       { url: 'https://www.shopowner-support.net/attracting_customers/area/tokyo/webads-agency-tokyo/', label: 'Web広告 広告代理店' },
       { url: 'https://www.centered.co.jp/blog/ad_tokyo/', label: 'Web広告 広告代理店' },
       { url: 'https://canvas.d2cr.co.jp/tokyo-ad-agency/', label: '広告代理店' },
+      // 化粧品・美容向けの広告代理店の比較記事
+      { url: 'https://www.rei-yokohama.co.jp/blog/cosme-ec-ad-agency', label: '広告代理店 化粧品 D2C' },
+      { url: 'https://grill.co.jp/marketing-log/13270/', label: '広告代理店 化粧品 D2C' },
+      { url: 'https://stock-sun.com/column/beauty-advertising-agency/', label: '広告代理店 美容' },
+      { url: 'https://ecnomikata.com/bizmatching/category/48/c2-52/', label: '広告運用代行 化粧品' },
     ],
   },
   sns_agency: {
@@ -90,6 +99,7 @@ export const CATEGORIES = {
     buzztan: ['https://www.buzztan.com/list/'],
     digimado: [
       'https://digi-mado.jp/articles/38fdcd64-6f04-4f5d-a762-ab1505cadcf6/', // SNS運用代行おすすめ19選
+      'https://digi-mado.jp/articles/468ac2e4-2734-4a1d-8ac6-261cdf870b7b/', // 東京のSNS運用代行会社21選
       'https://digi-mado.jp/category/marketing/sns-analysis-tools/', // SNS分析ツール
     ],
     engage: ['https://en-gage.net/user/search/?from=list&keyword=SNS%E9%81%8B%E7%94%A8&area=23'],
@@ -101,6 +111,7 @@ export const CATEGORIES = {
     grip: [
       { url: 'https://grip-space.co.jp/ad-db/pref/tokyo/feature/ad-sns', label: 'SNS運用代行 広告代理店' },
       { url: 'https://grip-space.co.jp/web-db/pref/tokyo/service/sns', label: 'SNS運用代行 ホームページ制作' },
+      { url: 'https://grip-space.co.jp/ad-db/feature/ad-sns', label: 'SNS運用代行 広告代理店' }, // 全国356社（東京以外は住所で除外される）
     ],
     // 比較・おすすめ記事（見出し→説明文の規則性から掲載企業を抽出）
     article: [
@@ -114,6 +125,18 @@ export const CATEGORIES = {
       'https://media-radar.jp/contents/meditsubu/columns4-snsoperationagency/',
       'https://oproduct.jp/articles/1384479',
       'https://holytech.jp/column/comparison-sns-operate-agency/',
+      'https://oproduct.jp/categories/8935447',
+      'https://www.nishinippon-adv.jp/news/29/',
+      'https://media-radar.jp/contents/meditsubu/sns_support/',
+      'https://houjinnavi.com/sns-daiko/',
+      'https://probel.jp/promaga/b/5019/',
+      'https://note.com/s_line/n/n70be505055d8',
+      'https://freelance-meikan.com/column/8201/tokyo-sns-agency-recommend-2026/',
+      'https://unitedanimals.co.jp/archives/blog/4515',
+      'https://boxil.jp/mag/a6415/',
+      'https://request.ne.jp/sns-management-agency-comparison/',
+      'https://www.aspicjapan.org/asu/article/43581',
+      'https://ecnomikata.com/bizmatching/category/97/c2-56/',
     ].map((url) => ({ url, label: 'SNS運用代行' })),
   },
 };
@@ -143,6 +166,7 @@ export const SITES = {
   digimado: { name: 'デジタル化の窓口', status: 'ready', note: 'digi-mado.jp。記事/カテゴリ→製品ページ→運営企業情報' },
   aspic: { name: 'アスピック', status: 'ready' },
   article: { name: '比較・おすすめ記事(共通抽出)', status: 'ready', note: '見出し→「<名>は…」で始まる説明文の規則性から掲載企業を抽出。精度は記事ごとに差がある' },
+  digitre: { name: 'デジトレ', status: 'ready', note: '東京都の広告代理店75社。会社ページに本社所在地(従業員数・公式URLなし)' },
   grip: { name: 'グリップ 広告代理店DB', status: 'ready', note: '会社ページに公式サイト・従業員数・法人番号。一覧は?page=N' },
   houjingoo: { name: '全国法人(houjin.goo.to)', status: 'ready', note: '本社所在地・資本金・従業員数(一部)' },
   pitact: { name: 'PITACT', status: 'ready', note: '住所・法人番号・従業員数(空欄多い)。ページ送りは/page-N' },
@@ -162,6 +186,6 @@ export const SITES = {
 export const ORDER = {
   cosme_d2c: ['salesnow', 'bizmaps', 'jcia', 'jaro', 'article', 'wantedly', 'green', 'prtimes', /* 第2群 */ 'indeed', 'kyujinbox', 'doda', 'mynavi', 'engage'],
   influencer_agency: ['wantedly', 'green', 'kyujinbox', 'indeed', 'prtimes', 'boxil', 'aspic', 'meetsmore', 'webkanji', 'article', 'imitsu'],
-  ad_agency: ['webkanji', 'imitsu', 'boxil', 'aspic', 'meetsmore', 'grip', 'agencyhub', 'pitact', 'houjingoo', 'salesnow', 'article', 'digimado', 'wantedly', 'green', 'doda', 'indeed', 'kyujinbox', 'mynavi', 'engage'],
+  ad_agency: ['webkanji', 'imitsu', 'boxil', 'aspic', 'meetsmore', 'grip', 'digitre', 'agencyhub', 'pitact', 'houjingoo', 'salesnow', 'article', 'digimado', 'wantedly', 'green', 'doda', 'indeed', 'kyujinbox', 'mynavi', 'engage'],
   sns_agency: ['boxil', 'aspic', 'digimado', 'buzztan', 'slidelib', 'webkanji', 'imitsu', 'meetsmore', 'grip', 'article', 'wantedly', 'green', 'kyujinbox', 'engage', 'indeed'],
 };

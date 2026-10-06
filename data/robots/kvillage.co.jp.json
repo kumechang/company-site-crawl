@@ -1,0 +1,6 @@
+{
+ "origin": "https://kvillage.co.jp",
+ "fetchedAt": "2026-10-06T13:40:26.226Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp_core/wp-admin/\nAllow: /wp_core/wp-admin/admin-ajax.php\n\nSitemap: https://kvillage.co.jp/wp-sitemap.xml\n\nSitemap: https://kvillage.co.jp/sitemap.xml\n"
+}

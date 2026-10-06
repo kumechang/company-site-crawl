@@ -1,6 +1,6 @@
 {
  "origin": "https://www.nishinippon-adv.jp",
- "fetchedAt": "2026-10-06T10:36:48.324Z",
+ "fetchedAt": "2026-10-06T13:44:05.036Z",
  "status": 200,
  "text": "User-Agent: *\nAllow: /\nDisallow: /mypage/\nDisallow: /login/\nDisallow: /auth/\nDisallow: /api/\nDisallow: /submit/\nDisallow: /report/\nDisallow: /ad/apply/\n\nSitemap: https://www.nishinippon-adv.jp/sitemap.xml\n"
 }

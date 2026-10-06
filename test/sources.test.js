@@ -415,3 +415,25 @@ test('マイナビ(新卒) 検索結果・会社概要', () => {
   assert.equal(mynavi.parseOutline('従業員\tグループ連結　13,135名（2025年12月期末 嘱託・パートを含む）').employees, 13135);
   assert.equal(mynavi.parseOutline('従業員\t1000 ～ 3000人未満').employees, null);
 });
+
+import * as digitre from '../src/sources/digitre.js';
+
+test('デジトレ 一覧・会社ページ', () => {
+  const list = digitre.parseList({
+    anchors: [
+      { href: 'https://www.digi-tre.com/company/ruk/', text: 'RUK株式会社\n\nRUK株式会社は、広告運用' },
+      { href: 'https://www.digi-tre.com/company/ruk/', text: 'もっと見る' },
+      { href: 'https://www.digi-tre.com/area/s-tokyo/page/2/', text: '2' },
+      { href: 'https://www.digi-tre.com/company/gmo-nikko/', text: 'GMO NIKKO株式会社\n\nGMO NIKKOは' },
+    ],
+  });
+  assert.deepEqual(list.map((x) => x.name), ['RUK株式会社', 'GMO NIKKO株式会社']);
+  const c = digitre.parseCompany({ text: '会社案内\nGMO NIKKOは総合マーケティング支援会社で、\n会社情報\n会社名\nGMO NIKKO株式会社 （英文表記：GMO NIKKO Inc.）\n所在地\n本社所在地 〒150-0043 東京都渋谷区道玄坂1-2-3渋谷フクラス\n宮崎オフィス所在地 〒880-0801 宮崎県宮崎市\n事業内容\n総合マーケティング支援事業\n' });
+  assert.equal(c.name, 'GMO NIKKO株式会社');
+  assert.equal(c.address, '東京都渋谷区道玄坂1-2-3渋谷フクラス');
+});
+
+test('比較記事: 「〜とは」の見出しは企業にしない', () => {
+  const r = article.parseArticle({ text: 'SNS運用代行とは\nSNS運用代行とは、アカウント運用を任せることです。\n株式会社テスト\n株式会社テストは、SNS運用を行う会社です。\n' });
+  assert.deepEqual(r.map((x) => x.company), ['株式会社テスト']);
+});
