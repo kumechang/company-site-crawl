@@ -122,6 +122,8 @@ async function discoverSource(cat, sid, limit, ctx) {
 function okCount(cat) {
   const label = CATEGORIES[cat].label;
   return store.all().filter((c) => {
+    // そのカテゴリの一覧・検索で見つけた会社だけを数える（他カテゴリで見つけた会社で目標を満たし、その媒体を見ずに終わるのを防ぐ）
+    if (!c.seedCategories.includes(cat)) return false;
     const r = consolidate(c, { minEmployees });
     return r.status === 'OK' && r.categories.includes(label);
   }).length;

@@ -8,24 +8,26 @@ export const CATEGORIES = {
   cosme_d2c: {
     label: '化粧品D2C/P2C',
     match: {
+      // D2C/P2C事業者に絞るため、直販(D2C/公式通販/定期購入など)を示す語を必須にする。「EC」「通販」単独は広すぎるため含めない
       all: [
-        ['化粧品', 'コスメ', 'スキンケア', 'ヘアケア', 'ボディケア', '美容液', 'サプリ', '美容'],
-        ['D2C', 'P2C', 'DtoC', '自社ブランド', '自社開発', '通販', 'ネット販売', 'オンライン販売', 'EC', '定期'],
+        ['化粧品', 'コスメ', 'スキンケア', 'ヘアケア', 'ボディケア', '美容液', 'サプリメント'],
+        ['D2C', 'P2C', 'DtoC', '公式通販', '公式オンラインストア', '公式オンラインショップ', '公式ストア', '自社ECサイト', '定期購入', '定期便', '自社ブランド'],
       ],
     },
     green: ['https://www.green-japan.com/search/area/13/industry/130120'],
     wantedly: ['化粧品 D2C', 'コスメ ブランド'],
-    salesnow: [{ url: 'https://salesnow.jp/db/industries/retail-sales/subIndustries/cosmetics-sales', label: '化粧品' }],
-    jcia: [{ url: 'https://www.jcia.org/admin/memberlist', label: '化粧品' }],
-    jaro: [{ url: 'https://www.jaro.or.jp/kaiinsha/', section: '化粧品・トイレタリー', label: '化粧品' }],
+    salesnow: [{ url: 'https://salesnow.jp/db/industries/retail-sales/subIndustries/cosmetics-sales', label: '化粧品', pages: 5, limit: 40 }],
+    jcia: [{ url: 'https://www.jcia.org/admin/memberlist', label: '化粧品', limit: 40 }],
+    jaro: [{ url: 'https://www.jaro.or.jp/kaiinsha/', section: '化粧品・トイレタリー', label: '化粧品', limit: 40 }],
     article: [{ url: 'https://service.aainc.co.jp/product/letro/article/d2c_brand', label: '化粧品 D2C ブランド' }],
   },
   influencer_agency: {
     label: 'インフルエンサー事務所',
     match: {
+      // 「マーケティング」単独だと、インフルエンサー施策を扱うだけのSNS代理店まで該当するため含めない
       all: [
         ['インフルエンサー', 'YouTuber', 'TikToker', 'クリエイター', 'タレント'],
-        ['マネジメント', '所属', '事務所', 'キャスティング', 'プロダクション', 'マーケティング'],
+        ['マネジメント', '所属', '事務所', 'キャスティング', 'プロダクション'],
       ],
     },
     green: ['https://www.green-japan.com/search/area/13/industry/100125'],
