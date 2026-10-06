@@ -20,6 +20,12 @@ export const CATEGORIES = {
     jcia: [{ url: 'https://www.jcia.org/admin/memberlist', label: '化粧品', limit: 40 }],
     jaro: [{ url: 'https://www.jaro.or.jp/kaiinsha/', section: '化粧品・トイレタリー', label: '化粧品', limit: 40 }],
     article: [{ url: 'https://service.aainc.co.jp/product/letro/article/d2c_brand', label: '化粧品 D2C ブランド' }],
+    // PR TIMES の検索で見つけた会社。label は「化粧品」のみ（D2C/P2Cかどうかは公式サイトの文章で判定する）
+    prtimes: [
+      { keyword: 'D2C 化粧品', label: '化粧品' },
+      { keyword: 'スキンケア ブランド 公式通販', label: '化粧品' },
+      { keyword: 'コスメ 新ブランド 発売', label: '化粧品' },
+    ],
   },
   influencer_agency: {
     label: 'インフルエンサー事務所',
@@ -32,6 +38,11 @@ export const CATEGORIES = {
     },
     green: ['https://www.green-japan.com/search/area/13/industry/100125'],
     wantedly: ['インフルエンサー キャスティング', 'インフルエンサー マネジメント'],
+    // PR TIMES の検索で見つけた会社。label は「インフルエンサー」のみ（事務所かどうかは公式サイトの文章で判定する）
+    prtimes: [
+      { keyword: 'インフルエンサー 事務所 所属', label: 'インフルエンサー' },
+      { keyword: 'インフルエンサー マネジメント', label: 'インフルエンサー' },
+    ],
     boxil: [{ url: 'https://boxil.jp/sc-influencer_marketing/', label: 'インフルエンサー マーケティング キャスティング' }],
     aspic: [{ url: 'https://www.aspicjapan.org/asu/service/list/imk', label: 'インフルエンサー マーケティング キャスティング' }],
     meetsmore: [{ url: 'https://meetsmore.com/product-services/influencer-casting', label: 'インフルエンサー キャスティング マーケティング' }],
@@ -43,6 +54,7 @@ export const CATEGORIES = {
   },
   ad_agency: {
     label: '広告代理店',
+    maxEmployees: 2000, // 「ベンチャー・中堅」= 従業員2,000名以下（ユーザー指定）。超える会社はこのカテゴリのサンプル・OK件数に含めない
     match: { any: ['広告代理', 'アドエージェンシー', 'Web広告', '運用型広告', '広告運用', 'ネット広告', 'デジタル広告', '広告事業'] },
     green: ['https://www.green-japan.com/search/area/13/industry/100125', 'https://www.green-japan.com/search/area/13/industry/110120'],
     wantedly: ['広告代理店', '運用型広告'],
@@ -119,7 +131,7 @@ export const SITES = {
   salesnow: { name: 'SalesNow', status: 'ready', note: '会社名検索が無いため、業種別・地域別の一覧を発見用に、索引を補完用に使う' },
   bizmaps: { name: 'BIZMAPS', status: 'blocked', note: '403 (サーバー側でIP拒否)' },
   indeed: { name: 'Indeed', status: 'blocked', note: 'Cloudflare確認画面。規約上もスクレイピング禁止' },
-  prtimes: { name: 'PR TIMES', status: 'enrich', note: '会社名の完全一致で公式URL・本社所在地を補完(発見には未使用)' },
+  prtimes: { name: 'PR TIMES', status: 'ready', note: 'キーワード検索で会社を発見 + 会社名の完全一致で公式URL・本社所在地を補完' },
   kyujinbox: { name: '求人ボックス', status: 'ready', note: '求人詳細はrobots.txt禁止のため一覧本文の社名・求人タイトルのみ使用' },
   doda: { name: 'doda', status: 'blocked', note: '求人一覧(JobSearchList)がrobots.txtで禁止' },
   mynavi: { name: 'マイナビ転職', status: 'blocked', note: 'この環境からは400/503が返る(アクセス制限)。自宅回線なら取得できる可能性あり' },

@@ -42,7 +42,7 @@ const SALESNOW_INDEX_URLS = [
   'https://salesnow.jp/db/industries/consulting/subIndustries/promotion-consulting',
 ];
 
-const SOURCES = { green, wantedly, imitsu, boxil, aspic, webkanji, hikakubiz, kyujinbox, buzztan, digimado, engage, meetsmore, slidelib, grip, houjingoo, pitact, agencyhub, jcia, jaro, salesnow, article };
+const SOURCES = { green, wantedly, imitsu, boxil, aspic, webkanji, hikakubiz, kyujinbox, buzztan, digimado, engage, meetsmore, slidelib, grip, houjingoo, pitact, agencyhub, jcia, jaro, salesnow, article, prtimes };
 
 const { values: opt, positionals } = parseArgs({
   allowPositionals: true,
@@ -106,7 +106,7 @@ async function discoverSource(cat, sid, limit, ctx) {
   }
   for (const t of def[sid]) {
     // 目標は URL/キーワードの文字列、または {url, label, pages, section…} のオブジェクトで指定できる
-    const spec = typeof t === 'string' ? (sid === 'wantedly' ? { keyword: t } : { url: t }) : t;
+    const spec = typeof t === 'string' ? (['wantedly', 'prtimes'].includes(sid) ? { keyword: t } : { url: t }) : t;
     const q = { category: cat, limit, pages: 2, ...spec };
     try {
       await SOURCES[sid].discover(q, ctx);
@@ -125,6 +125,8 @@ function okCount(cat) {
     // そのカテゴリの一覧・検索で見つけた会社だけを数える（他カテゴリで見つけた会社で目標を満たし、その媒体を見ずに終わるのを防ぐ）
     if (!c.seedCategories.includes(cat)) return false;
     const r = consolidate(c, { minEmployees });
+    const max = CATEGORIES[cat].maxEmployees; // 例: 広告代理店は「ベンチャー・中堅」= 2,000名以下
+    if (max && r.employees != null && r.employees > max) return false;
     return r.status === 'OK' && r.categories.includes(label);
   }).length;
 }

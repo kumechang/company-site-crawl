@@ -1,6 +1,6 @@
 import { parseLabeled } from '../lib/extract.js';
 import { addEvidence, addSource, setOfficialUrl } from '../lib/model.js';
-import { normalizeName } from '../lib/util.js';
+import { clip, normalizeName } from '../lib/util.js';
 
 export const id = 'prtimes';
 const BASE = 'https://prtimes.jp';
@@ -37,5 +37,46 @@ export async function resolve(c, { crawler, log }) {
   } catch (e) {
     log(`  ! prtimes ${c.name}: ${e.message}`);
     return false;
+  }
+}
+
+/** 検索結果ページ内の企業ページリンク(出現順・重複除去) */
+export function parseSearchCompanies(snap) {
+  const m = new Map();
+  for (const a of snap.anchors) {
+    const x = a.href.match(/\/main\/html\/searchrlp\/company_id\/(\d+)/);
+    const name = (a.text ?? '').split('\n')[0].trim();
+    if (x && name && !m.has(x[1])) m.set(x[1], { id: x[1], name });
+  }
+  return [...m.values()];
+}
+
+/** キーワード検索で会社を発見し、企業ページの 本社所在地・公式URL を取る */
+export async function discover(q, ctx) {
+  const search = `${BASE}/main/action.php?run=html&page=searchkey&search_word=${encodeURIComponent(q.keyword)}`;
+  let list;
+  try {
+    list = parseSearchCompanies(await ctx.crawler.snapshot(search, { settleMs: 1500 })).slice(0, q.limit);
+  } catch (e) {
+    ctx.log(`  ! prtimes "${q.keyword}": ${e.message}`);
+    return;
+  }
+  ctx.log(`  prtimes "${q.keyword}": ${list.length} 社`);
+  for (const co of list) {
+    const url = `${BASE}/main/html/searchrlp/company_id/${co.id}`;
+    let info;
+    try {
+      info = parseCompany(await ctx.crawler.snapshot(url));
+    } catch (e) {
+      ctx.log(`  ! prtimes ${co.id}: ${e.message}`);
+      continue;
+    }
+    const c = ctx.upsert(co.name);
+    addSource(c, id, url);
+    c.seedCategories.push(q.category);
+    const src = { source: id, url };
+    addEvidence(c, 'address', info.address, { ...src, snippet: `本社所在地: ${info.address}` });
+    addEvidence(c, 'profileText', clip(`${q.label ?? ''} ${info.industry ?? ''}`, 120), { ...src, snippet: `PR TIMES「${q.keyword}」の検索に登場` });
+    setOfficialUrl(c, info.url, { ...src, snippet: `PR TIMES企業情報のURL: ${info.url}` });
   }
 }

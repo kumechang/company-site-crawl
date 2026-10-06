@@ -20,6 +20,10 @@ import * as agencyhub from '../src/sources/agencyhub.js';
 import * as jcia from '../src/sources/jcia.js';
 import * as jaro from '../src/sources/jaro.js';
 import * as article from '../src/sources/article.js';
+import { exportSample } from '../src/export.js';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
 import { consolidate } from '../src/lib/merge.js';
 import { newCompany, addEvidence, setOfficialUrl, bestOfficial, needsCorporateUrl } from '../src/lib/model.js';
 
@@ -342,4 +346,33 @@ test('記事抽出: 見出しの直後に「<名前>は…」で始まる説明�
   assert.ok(names.includes('株式会社Greed'));
   assert.ok(!names.includes('まとめ'));
   assert.deepEqual(article.nameVariants('第1位：A社（株式会社エー）'), ['株式会社エー', 'A社']);
+});
+
+test('PR TIMES 検索結果: 企業ページリンクを重複なく取る', () => {
+  const r = prtimes.parseSearchCompanies({ anchors: [
+    { href: 'https://prtimes.jp/main/html/searchrlp/company_id/45188', text: 'ニーリー\n株式会社' },
+    { href: 'https://prtimes.jp/main/html/searchrlp/company_id/45188', text: '' },
+    { href: 'https://prtimes.jp/main/html/searchrlp/company_id/23490', text: 'FANTAS technology株式会社' },
+    { href: 'https://prtimes.jp/main/html/rd/p/1.html', text: 'リリース' } ] });
+  assert.deepEqual(r.map((x) => x.id), ['45188', '23490']);
+  assert.equal(r[0].name, 'ニーリー');
+});
+
+test('サンプル出力: 広告代理店は従業員数2,000名超を含めない', () => {
+  const mk = (name, emp) => {
+    const c = newCompany(name);
+    c.seedCategories.push('ad_agency');
+    c.officialUrl = 'https://' + name + '.example/';
+    addEvidence(c, 'address', '東京都渋谷区1-1', { source: 'official', url: 'u' });
+    addEvidence(c, 'employees', emp, { source: 'official', url: 'u', snippet: '' });
+    addEvidence(c, 'contactUrl', 'https://' + name + '.example/contact', { source: 'official', url: 'u' });
+    addEvidence(c, 'profileText', '広告代理店', { source: 'grip', url: 'u' });
+    c.sources.push({ source: 'grip', url: 'u' });
+    return c;
+  };
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'sample-'));
+  const { summary } = exportSample([mk('mid', 500), mk('edge', 2000), mk('big', 6000)], { outDir: dir });
+  assert.equal(summary['広告代理店'], 2);
+  const csv = fs.readFileSync(path.join(dir, 'sample.csv'), 'utf8');
+  assert.ok(csv.includes('mid') && csv.includes('edge') && !csv.includes('big'));
 });

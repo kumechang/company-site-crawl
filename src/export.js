@@ -52,6 +52,7 @@ export function exportSample(companies, { outDir = 'data', perCategory = 15, min
       .filter((c) => c.seedCategories.includes(key))
       .map((c) => ({ c, r: consolidate(c, { minEmployees }) }))
       .filter(({ r }) => r.status === 'OK' && r.categories.includes(def.label))
+      .filter(({ r }) => !def.maxEmployees || r.employees == null || r.employees <= def.maxEmployees) // カテゴリ別の従業員数上限(広告代理店: 2,000名以下)
       .map((x) => ({ ...x, nSrc: new Set(x.c.sources.map((s) => s.source).filter((s) => !ENRICH_SOURCES.has(s))).size }))
       .sort((a, b) => b.nSrc - a.nSrc || (EMP_RANK[a.r.employeesSource] ?? 9) - (EMP_RANK[b.r.employeesSource] ?? 9) || a.r.name.localeCompare(b.r.name, 'ja'))
       .slice(0, perCategory);
