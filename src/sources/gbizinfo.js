@@ -22,16 +22,30 @@ export function parseResults(text) {
   return rows;
 }
 
-/** 会社名が(正規化して)一致する行から1件選ぶ。既知の住所に合うもの → 従業員数ありの順 */
-export function pickRow(rows, name, knownAddress) {
+const PREF_RE = /^(東京都|北海道|京都府|大阪府|[一-龥]{2,3}県)/;
+const prefOf = (a) => (nfkc(a ?? '').match(PREF_RE) ?? [])[1] ?? null;
+const cityOf = (a) => (nfkc(a ?? '').replace(PREF_RE, '').match(/^[^市区町村郡]*[市区町村郡]/) ?? [])[0] ?? '';
+
+/**
+ * 会社名が(正規化して)一致する行から1件選ぶ。同名の別会社を取り違えないよう:
+ *  - 既知の住所(他の情報源)があれば、都道府県と市区町村が合う行だけを採用。合う行が無ければ採用しない
+ *  - 既知の住所が無く同名が複数あるときは、東京都の行を優先（収集対象が東京の会社のため）し、従業員数のある行を選ぶ
+ */
+export function pickRow(rows, name, knownAddresses = []) {
   const key = normalizeName(name);
-  const exact = rows.filter((r) => normalizeName(r.name.replace(/\(閉鎖\)$/, '')) === key && !/閉鎖/.test(r.name));
+  const exact = rows.filter((r) => normalizeName(r.name) === key && !/閉鎖/.test(r.name));
   if (!exact.length) return null;
-  const area = (a) => nfkc(a ?? '').replace(/^(東京都|北海道|京都府|大阪府|.{2,3}県)/, '').slice(0, 3);
-  const known = knownAddress ? area(knownAddress) : null;
-  const scored = exact.map((r) => ({ r, score: (known && r.address && nfkc(r.address).includes(known) ? 2 : 0) + (r.employees != null ? 1 : 0) }));
-  scored.sort((a, b) => b.score - a.score);
-  return { row: scored[0].r, sameName: exact.length };
+  const known = (Array.isArray(knownAddresses) ? knownAddresses : [knownAddresses]).filter(Boolean);
+  const byEmp = (a, b) => (b.employees != null) - (a.employees != null);
+  let cand;
+  if (known.length) {
+    cand = exact.filter((r) => known.some((k) => prefOf(k) && prefOf(k) === prefOf(r.address) && (!cityOf(r.address) || !cityOf(k) || cityOf(k).startsWith(cityOf(r.address)) || cityOf(r.address).startsWith(cityOf(k)))));
+    if (!cand.length) return null; // 既知の住所と合う同名行が無い = 別会社の可能性
+  } else {
+    cand = exact.length > 1 && exact.some((r) => prefOf(r.address) === '東京都') ? exact.filter((r) => prefOf(r.address) === '東京都') : exact;
+  }
+  cand.sort(byEmp);
+  return { row: cand[0], sameName: exact.length };
 }
 
 /** フォーム検索（URLで表せないためブラウザ操作）。結果の本文テキストを返す */
@@ -70,8 +84,8 @@ export async function lookup(c, { crawler, log }) {
     log(`  ! gbizinfo ${c.name}: ${e.message.split('\n')[0]}`);
     return null; // エラー: 再試行できるよう「一致なし」とは区別する
   }
-  const knownAddr = c.evidence.find((e) => e.field === 'address')?.value;
-  const hit = pickRow(parseResults(text), c.name.replace(/[（(].*[）)]/g, '').trim(), knownAddr);
+  const knownAddrs = c.evidence.filter((e) => e.field === 'address' && e.source !== id).map((e) => e.value);
+  const hit = pickRow(parseResults(text), c.name.replace(/[（(].*[）)]/g, '').trim(), knownAddrs);
   if (!hit) return false;
   const { row, sameName } = hit;
   addSource(c, id, TOP);

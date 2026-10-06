@@ -230,15 +230,31 @@ test('slide lib: 見出し→サービスサイトへ の対応、注記の除�
   assert.deepEqual(r.map((x) => x.url), ['https://onemove.co.jp/SNS', 'https://sns-sakiyomi.com/', 'https://digima.asahi.co.jp/']);
 });
 
-test('Gビズインフォ 検索結果の表を解析し、同名から住所の合うものを選ぶ', () => {
+test('Gビズインフォ 検索結果の表を解析し、同名の取り違えを避ける', () => {
   const text = ['「株式会社コムニコ」 の検索結果　 632件','法人名','本店所在地','株式会社コムニコ','\t東京都港区\t-\t-\t154人\t3件','株式会社コムニコ','\t大阪府大阪市\t-\t-\t-\t0件','株式会社コムニコス','\t東京都中央区\t-\t-\t-\t6件','株式会社コムニテ(閉鎖)','\t静岡県浜松市\t-\t-\t-\t0件'].join('\n');
   const rows = gbizinfo.parseResults(text);
   assert.equal(rows.length, 4);
   assert.equal(rows[0].employees, 154);
-  const hit = gbizinfo.pickRow(rows, '株式会社コムニコ', '東京都港区新橋');
+  const hit = gbizinfo.pickRow(rows, '株式会社コムニコ', ['東京都港区新橋']);
   assert.equal(hit.sameName, 2);
   assert.equal(hit.row.address, '東京都港区');
-  assert.equal(gbizinfo.pickRow(rows, '株式会社コムニ', null), null);
+  assert.equal(gbizinfo.pickRow(rows, '株式会社コムニ', []), null);
+  // 既知の住所(東京都渋谷区)と合う同名行が無ければ採用しない（別会社の可能性）
+  assert.equal(gbizinfo.pickRow(rows, '株式会社コムニコ', ['東京都渋谷区神宮前']), null);
+  // 既知の住所が無く同名が複数あれば東京都の行を優先
+  assert.equal(gbizinfo.pickRow(rows, '株式会社コムニコ', []).row.address, '東京都港区');
+});
+
+test('Gビズインフォの値は10〜40名付近だと断定しない', () => {
+  const c = newCompany('株式会社テスト');
+  addEvidence(c, 'employees', 15, { source: 'gbizinfo', url: 'u', snippet: '' });
+  addEvidence(c, 'address', '東京都渋谷区1-1', { source: 'official', url: 'u' });
+  const r = consolidate(c);
+  assert.equal(r.emp20, null);
+  assert.notEqual(r.status, '除外');
+  const c2 = newCompany('株式会社テスト2');
+  addEvidence(c2, 'employees', 5, { source: 'gbizinfo', url: 'u', snippet: '' });
+  assert.equal(consolidate(c2).emp20, false);
 });
 
 test('グリップ: 一覧リンクと会社概要', () => {

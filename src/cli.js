@@ -156,19 +156,6 @@ async function enrich() {
     store.mergeByDomain();
     store.save();
   }
-  // 1c) Gビズインフォ(経産省)で会社名検索 → 本店所在地・従業員数（従業員数が未取得の会社が対象）
-  const gb = store.all().filter((c) => !c.evidence.some((e) => e.field === 'employees') && !c.evidence.some((e) => e.source === 'gbizinfo') && !c.noGbiz);
-  if (gb.length) {
-    log(`# Gビズインフォで補完: ${gb.length} 社`);
-    let n = 0;
-    for (const c of gb) {
-      const r = await gbizinfo.lookup(c, { crawler, log });
-      if (r === true) n++;
-      else if (r === false) c.noGbiz = true; // 検索したが一致なし → 再検索しない（エラー時は印を付けず再試行できる）
-      store.save();
-    }
-    log(`  → ${n}/${gb.length} 社が一致`);
-  }
   // 2) 公式サイトを巡回（従業員数・住所・問い合わせURL）
   // 公式URLの採用が変わった会社は、以前のサイト由来の情報を破棄して取り直す
   for (const c of store.all()) {
@@ -186,6 +173,19 @@ async function enrich() {
     log(`  official ${c.name} ${c.officialUrl}`);
     await enrichFromOfficial(c, { crawler, log });
     store.save();
+  }
+  // 3) Gビズインフォ(経産省)で会社名検索。公式サイト等で住所が分かった後に引くことで、同名の別会社の取り違えを減らす
+  const gb = store.all().filter((c) => !c.evidence.some((e) => e.field === 'employees') && !c.evidence.some((e) => e.source === 'gbizinfo') && !c.noGbiz);
+  if (gb.length) {
+    log(`# Gビズインフォで補完: ${gb.length} 社`);
+    let n = 0;
+    for (const c of gb) {
+      const r = await gbizinfo.lookup(c, { crawler, log });
+      if (r === true) n++;
+      else if (r === false) c.noGbiz = true; // 検索したが一致なし → 再検索しない（エラー時は印を付けず再試行できる）
+      store.save();
+    }
+    log(`  → ${n}/${gb.length} 社が一致`);
   }
 }
 
