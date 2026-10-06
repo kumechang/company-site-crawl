@@ -6,6 +6,7 @@ import { sleep, originOf, log } from './util.js';
 import { parseRobots, isAllowed } from './robots.js';
 
 export class RobotsDisallowed extends Error {}
+export class HostTripped extends Error {}
 export class HttpError extends Error {
   constructor(status, url) {
     super(`HTTP ${status} ${url}`);
@@ -42,6 +43,8 @@ export class Crawler {
     this.browser = null;
     this.ua = null;
     this.lastHit = new Map(); // host -> timestamp
+    this.denials = new Map(); // host -> 連続して拒否(403/405/429)された回数
+    this.tripped = new Set(); // 連続拒否で、この実行中はアクセスを止めたホスト
     this.robots = new Map(); // origin -> groups
     this.stats = { fetched: 0, cached: 0, blocked: 0, failed: 0 };
     fs.mkdirSync(cacheDir, { recursive: true });
@@ -139,6 +142,7 @@ export class Crawler {
    */
   async snapshot(url, { scroll = false, waitForText = null, settleMs = 0, retries = 2 } = {}) {
     const cp = this.cachePath(url);
+    const host = new URL(url).host;
     if (this.useCache && fs.existsSync(cp)) {
       this.stats.cached++;
       return JSON.parse(fs.readFileSync(cp, 'utf8'));
@@ -147,6 +151,7 @@ export class Crawler {
       this.stats.blocked++;
       throw new RobotsDisallowed(`robots.txt disallows ${url}`);
     }
+    if (this.tripped.has(host)) throw new HostTripped(`${host} は連続して拒否されたため、この実行中はアクセスしません`);
     let lastErr;
     for (let i = 0; i <= retries; i++) {
       try {
@@ -174,6 +179,7 @@ export class Crawler {
           return { ...data, status };
         });
         const out = { url, fetchedAt: new Date().toISOString(), ...snap };
+        this.denials.set(host, 0);
         this.stats.fetched++;
         fs.mkdirSync(path.dirname(cp), { recursive: true });
         fs.writeFileSync(cp, JSON.stringify(out));
@@ -184,6 +190,14 @@ export class Crawler {
         if (e instanceof HttpError && e.status < 500 && ![400, 429].includes(e.status)) break;
         log(`  retry ${i + 1}: ${url} (${e.message.split('\n')[0]})`);
         await sleep(e instanceof HttpError ? 6000 * (i + 1) : 2000 * (i + 1));
+      }
+    }
+    if (lastErr instanceof HttpError && [403, 405, 429].includes(lastErr.status)) {
+      const n = (this.denials.get(host) ?? 0) + 1;
+      this.denials.set(host, n);
+      if (n >= 3 && !this.tripped.has(host)) {
+        this.tripped.add(host);
+        log(`  !! ${host}: ${n}回連続で拒否(HTTP ${lastErr.status})されたため、この実行中はこのサイトへのアクセスを止めます`);
       }
     }
     this.stats.failed++;
