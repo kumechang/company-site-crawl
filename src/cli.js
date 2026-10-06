@@ -154,6 +154,7 @@ async function discover() {
 /** サンプル作成: 媒体ごとに 発見 → 補完 → 「判定OK」件数を数え、目標(--ok)に達したらそのカテゴリを終える */
 async function sample() {
   const okTarget = Number(opt.ok);
+  const only = opt.sources ? opt.sources.split(',') : null;
   const limit = Number(opt['per-query']);
   const ctx = { crawler, log, minEmployees, upsert: (n) => store.upsert(n) };
   for (const cat of opt.categories.split(',')) {
@@ -162,6 +163,7 @@ async function sample() {
     log(`# ${def.label}: 判定OKを ${okTarget} 件作る (現在 ${okCount(cat)} 件)`);
     for (const sid of ORDER[cat]) {
       if (okCount(cat) >= okTarget) break;
+      if (only && !only.includes(sid)) continue;
       if (!(await discoverSource(cat, sid, limit, ctx))) continue;
       store.mergeByDomain();
       store.save();
