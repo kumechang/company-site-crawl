@@ -5,11 +5,11 @@ import { CATEGORIES } from '../../config/categories.js';
 
 /**
  * 項目ごとの情報源の優先順位（左ほど信頼）。
- *  公式サイト > 求人媒体の企業ページ(Green) > 比較サイト(アイミツ) > Wantedly
+ *  公式サイト > 求人媒体の企業ページ(Green) > SalesNow(推定値) > 比較サイト(アイミツ) > Wantedly
  */
 export const PRIORITY = {
-  employees: ['official', 'green', 'imitsu', 'wantedly'],
-  address: ['official', 'green', 'wantedly', 'imitsu'],
+  employees: ['official', 'green', 'salesnow', 'imitsu', 'wantedly'],
+  address: ['official', 'green', 'salesnow', 'wantedly', 'imitsu'],
 };
 
 const rank = (field, source) => {
@@ -42,12 +42,15 @@ export function consolidate(c, { minEmployees = 20 } = {}) {
 
   const tokyo = addr ? isTokyoAddress(addr.value) : null;
   // 従業員数: 確定値があれば判定、無ければ Wantedly メンバー数は参考値(判定には使わない)
-  const emp20 = emp ? emp.value >= minEmployees : null;
+  // SalesNow の規模は推定値。閾値付近(10〜40名)は断定せず「要確認」にする
+  const estimateOnly = emp?.source === 'salesnow';
+  const nearThreshold = estimateOnly && emp.value >= 10 && emp.value <= 40;
+  const emp20 = emp ? (nearThreshold ? null : emp.value >= minEmployees) : null;
 
   const missing = [];
   if (!c.officialUrl) missing.push('公式URL');
   if (tokyo === null) missing.push('本社所在地');
-  if (emp20 === null) missing.push('従業員数');
+  if (emp20 === null) missing.push(nearThreshold ? '従業員数(推定値のみ)' : '従業員数');
   if (!cats.length) missing.push('カテゴリ');
   if (!contact) missing.push('問い合わせURL');
 
@@ -60,6 +63,7 @@ export function consolidate(c, { minEmployees = 20 } = {}) {
   if (emp?.conflicts.length) notes.push(`従業員数が情報源間で不一致: ${[emp, ...emp.conflicts].map((e) => `${e.source ?? emp.source}=${e.value}`).join(', ')}`);
   if (addr?.conflicts.length) notes.push(`所在地(東京/他)が情報源間で不一致`);
   if (!cats.length && c.seedCategories.length) notes.push(`カテゴリは検索元の推定のみ: ${[...new Set(c.seedCategories)].map((k) => CATEGORIES[k]?.label).join('/')}`);
+  if (estimateOnly) notes.push(`従業員数はSalesNowの推定値(${emp.value}名)${nearThreshold ? '・閾値付近のため要確認' : ''}`);
   if (emp == null && members) notes.push(`Wantedlyメンバー数 ${members.value}人(参考・従業員数とは別物)`);
 
   return {

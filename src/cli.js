@@ -10,8 +10,15 @@ import { exportAll } from './export.js';
 import * as green from './sources/green.js';
 import * as wantedly from './sources/wantedly.js';
 import * as imitsu from './sources/imitsu.js';
+import * as boxil from './sources/boxil.js';
+import * as salesnow from './sources/salesnow.js';
 
-const SOURCES = { green, wantedly, imitsu };
+const SALESNOW_INDEX_URLS = [
+  'https://salesnow.jp/db/industries/advertising/subIndustries/internet-advertising-agency',
+  'https://salesnow.jp/db/industries/advertising/subIndustries/advertising-agency',
+];
+
+const SOURCES = { green, wantedly, imitsu, boxil };
 
 const { values: opt, positionals } = parseArgs({
   allowPositionals: true,
@@ -21,6 +28,7 @@ const { values: opt, positionals } = parseArgs({
     sources: { type: 'string', default: '' }, // 空なら ORDER の全媒体。指定時はその媒体のみ
     categories: { type: 'string', default: Object.keys(CATEGORIES).join(',') },
     delay: { type: 'string', default: '2500' }, // 同一ホストへの最小アクセス間隔(ms)
+    'salesnow-pages': { type: 'string', default: '25' }, // SalesNow索引で1業種あたり読むページ数(50社/ページ)
     'min-employees': { type: 'string', default: '20' },
     'no-cache': { type: 'boolean', default: false },
     help: { type: 'boolean', short: 'h', default: false },
@@ -70,11 +78,11 @@ async function discover() {
         continue;
       }
       if (!SOURCES[sid]) {
-        log(`  - ${site.name}: 未実装のためスキップ`);
+        log(`  - ${site.name}: ${site.status === 'enrich' ? '補完専用(enrichで使用)' : '未実装のためスキップ'}`);
         continue;
       }
       for (const t of def[sid] ?? []) {
-        const q = sid === 'wantedly' ? { category: cat, keyword: t, limit } : { category: cat, url: t, limit };
+        const q = sid === 'wantedly' ? { category: cat, keyword: t, limit } : { category: cat, url: t, limit, pages: 2 };
         try {
           await SOURCES[sid].discover(q, ctx);
         } catch (e) {
@@ -95,6 +103,19 @@ async function discover() {
 }
 
 async function enrich() {
+  // 1) SalesNow の索引で、公式URLまたは従業員数が足りない会社を補完
+  const needs = (c) => !c.officialUrl || !c.evidence.some((e) => e.field === 'employees');
+  const lacking = store.all().filter((c) => needs(c) && !c.evidence.some((e) => e.source === 'salesnow'));
+  if (lacking.length) {
+    log(`# SalesNow で補完: ${lacking.length} 社（索引を作成）`);
+    const index = await salesnow.buildIndex(SALESNOW_INDEX_URLS, { crawler, log, maxPages: Number(opt['salesnow-pages']) });
+    let n = 0;
+    for (const c of lacking) if (await salesnow.enrichFromIndex(c, index, { crawler, log })) n++;
+    log(`  → ${n}/${lacking.length} 社が一致`);
+    store.mergeByDomain();
+    store.save();
+  }
+  // 2) 公式サイトを巡回（従業員数・住所・問い合わせURL）
   const targets = store.all().filter((c) => c.officialUrl && !c.evidence.some((e) => e.source === 'official'));
   log(`# 公式サイト補完: ${targets.length} 社`);
   for (const c of targets) {
