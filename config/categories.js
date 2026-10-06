@@ -150,6 +150,7 @@ export const SITES = {
   jcia: { name: '日本化粧品工業会 会員名簿', status: 'ready', note: '社名・住所・電話(URLなし)' },
   jaro: { name: 'JARO 会員社一覧', status: 'ready', note: '社名のみ。業種見出し(化粧品・トイレタリー等)ごと' },
   gbizinfo: { name: 'Gビズインフォ(経産省)', status: 'enrich', note: '会社名検索(フォーム操作)で本店所在地・従業員数を補完。robots.txtは全面許可' },
+  mynavi_shinsotsu: { name: 'マイナビ(新卒)', status: 'enrich', note: '会社名検索(POSTフォーム srchWord)→企業の会社概要で従業員数・本社所在地を補完。新卒採用している会社のみ。従業員数は連結の場合あり' },
   slidelib: { name: 'slide lib(スライドリブ)', status: 'ready', note: 'ユーザー提供。比較記事から会社名と「サービスサイトへ」リンクを取得。住所・従業員数は無し' },
   meetsmore: { name: 'ミツモア', status: 'ready', note: 'ユーザー提供。サービスページに会社名・製品URL。/product-providers 等はrobots禁止' },
   buzztan: { name: 'バズ担', status: 'ready', note: '/list/ 1ページに全社の所在地・公式URLあり' },

@@ -376,3 +376,42 @@ test('サンプル出力: 広告代理店は従業員数2,000名超を含めな�
   const csv = fs.readFileSync(path.join(dir, 'sample.csv'), 'utf8');
   assert.ok(csv.includes('mid') && csv.includes('edge') && !csv.includes('big'));
 });
+
+import * as mynavi from '../src/sources/mynavi.js';
+
+test('マイナビ(新卒) 検索結果・会社概要', () => {
+  const text = `企業検索結果3社
+
+最終更新日：2026/09/25
+
+サラヤグループ【サラヤ(株)／東京サラヤ(株)】
+業　種 化学 、 薬品、食品、化粧品、医療用機器・医療関連
+本　社大阪府大阪市東住吉区、東京都品川区
+従業員1000 ～ 3000人未満
+
+衛生・感染対策のプロフェッショナル
+
+最終更新日：2026/02/04
+
+トーアン(株)
+業　種 商社（複合）
+本　社福島県郡山市
+従業員50 ～ 100人未満
+`;
+  const rows = mynavi.parseResults(text);
+  assert.equal(rows.length, 2);
+  assert.equal(rows[0].hq, '大阪府大阪市東住吉区、東京都品川区');
+  assert.deepEqual(mynavi.nameCandidates(rows[0].title).sort(), ['サラヤ', 'サラヤグルプ', '東京サラヤ'].sort());
+  const links = rows.map((r, i) => ({ href: `https://job.mynavi.jp/28/pc/search/corp${i}/outline.html`, text: r.title }));
+  const hit = mynavi.pickEntry(rows, links, 'サラヤ株式会社', ['東京都品川区東品川']);
+  assert.equal(hit.url, 'https://job.mynavi.jp/28/pc/search/corp0/outline.html');
+  assert.equal(mynavi.pickEntry(rows, links, 'サラヤ株式会社', ['神奈川県横浜市']), null); // 本社の都道府県が合わない = 別会社の可能性
+  assert.equal(mynavi.pickEntry(rows, links, 'アミック株式会社', []), null);
+
+  const o = mynavi.parseOutline('会社データ\n本社郵便番号\t546-0013\n本社所在地\t大阪府大阪市東住吉区湯里2-2-8\n創業\t1952年\n設立\t1959年\n資本金\t4,500万円\n従業員\t2,274名（連結2社　2025年11月現在）\n');
+  assert.equal(o.employees, 2274);
+  assert.equal(o.address, '大阪府大阪市東住吉区湯里2-2-8');
+  assert.equal(o.founded, '1959年');
+  assert.equal(mynavi.parseOutline('従業員\tグループ連結　13,135名（2025年12月期末 嘱託・パートを含む）').employees, 13135);
+  assert.equal(mynavi.parseOutline('従業員\t1000 ～ 3000人未満').employees, null);
+});

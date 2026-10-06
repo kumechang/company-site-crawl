@@ -25,6 +25,7 @@ export const ORIGINS = {
   meetsmore: 'https://meetsmore.com',
   slidelib: 'https://cone-c-slide.com',
   gbizinfo: 'https://info.gbiz.go.jp',
+  mynavi_shinsotsu: 'https://job.mynavi.jp',
   grip: 'https://grip-space.co.jp',
   houjingoo: 'https://houjin.goo.to',
   pitact: 'https://pitact.com',

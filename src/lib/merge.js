@@ -12,8 +12,8 @@ import { CATEGORIES } from '../../config/categories.js';
 export const LISTING_SITES = ['boxil', 'aspic', 'buzztan', 'webkanji', 'meetsmore', 'slidelib'];
 
 export const PRIORITY = {
-  employees: ['official', 'green', 'grip', 'gbizinfo', 'houjingoo', 'pitact', 'salesnow', 'agencyhub', 'imitsu', 'wantedly'],
-  address: ['official', 'gbizinfo', 'grip', 'houjingoo', 'pitact', 'jcia', 'green', 'salesnow', 'wantedly', 'imitsu'],
+  employees: ['official', 'green', 'grip', 'mynavi', 'gbizinfo', 'houjingoo', 'pitact', 'salesnow', 'agencyhub', 'imitsu', 'wantedly'],
+  address: ['official', 'mynavi', 'gbizinfo', 'grip', 'houjingoo', 'pitact', 'jcia', 'green', 'salesnow', 'wantedly', 'imitsu'],
 };
 
 const rank = (field, source) => {

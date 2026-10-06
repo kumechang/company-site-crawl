@@ -17,6 +17,7 @@ import * as boxil from './sources/boxil.js';
 import * as salesnow from './sources/salesnow.js';
 import * as prtimes from './sources/prtimes.js';
 import * as gbizinfo from './sources/gbizinfo.js';
+import * as mynavi from './sources/mynavi.js';
 import * as aspic from './sources/aspic.js';
 import * as webkanji from './sources/webkanji.js';
 import * as hikakubiz from './sources/hikakubiz.js';
@@ -232,6 +233,19 @@ async function enrich() {
       store.save();
     }
     log(`  → ${n}/${gb.length} 社が一致`);
+  }
+  // 4) まだ従業員数が無い会社は マイナビ(新卒)の会社名検索で補完（新卒採用をしている会社のみ掲載）
+  const mn = store.all().filter((c) => !c.evidence.some((e) => e.field === 'employees') && !c.evidence.some((e) => e.source === 'mynavi') && !c.noMynavi);
+  if (mn.length) {
+    log(`# マイナビ(新卒)で補完: ${mn.length} 社`);
+    let n = 0;
+    for (const c of mn) {
+      const r = await mynavi.lookup(c, { crawler, log });
+      if (r === true) n++;
+      else if (r === false) c.noMynavi = true;
+      store.save();
+    }
+    log(`  → ${n}/${mn.length} 社が一致`);
   }
 }
 
