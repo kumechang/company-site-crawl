@@ -11,6 +11,7 @@ import * as buzztan from '../src/sources/buzztan.js';
 import * as digimado from '../src/sources/digimado.js';
 import * as engage from '../src/sources/engage.js';
 import * as meetsmore from '../src/sources/meetsmore.js';
+import * as slidelib from '../src/sources/slidelib.js';
 import { consolidate } from '../src/lib/merge.js';
 import { newCompany, addEvidence, setOfficialUrl, bestOfficial, needsCorporateUrl } from '../src/lib/model.js';
 
@@ -208,4 +209,16 @@ test('製品ページ系の媒体だけが公式URLの根拠なら本体サイ�
   setOfficialUrl(c, 'https://corp.example/', { source: 'prtimes', url: 'u2' });
   assert.equal(needsCorporateUrl(c), false);
   assert.equal(bestOfficial(c).url, 'https://corp.example/');
+});
+
+test('slide lib: 見出し→サービスサイトへ の対応、注記の除去', () => {
+  const text = ['比較表','SNS ONE MATCH（one move株式会社）','SNS ONE MATCHは、SNS運用を行うサービスです。','対応SNS\tInstagram','サービスサイトへ','資料を見てみる',
+    '株式会社SAKIYOMI（Instagram特化）','引用：株式会社SAKIYOMI','説明文が続きます。','サービスサイトへ','サービスサイトへ','株式会社デジアサ','株式会社デジアサは、テレビ制作のノウハウを持つ会社です。','サービスサイトへ'].join('\n');
+  const r = slidelib.parseArticle({ text, anchors: [
+    { href: 'https://onemove.co.jp/SNS', text: 'サービスサイトへ' },
+    { href: 'https://sns-sakiyomi.com/', text: 'サービスサイトへ' },
+    { href: 'https://sns-sakiyomi.com/second', text: 'サービスサイトへ' },
+    { href: 'https://digima.asahi.co.jp/', text: 'サービスサイトへ' } ] });
+  assert.deepEqual(r.map((x) => x.company), ['one move株式会社', '株式会社SAKIYOMI', '株式会社デジアサ']);
+  assert.deepEqual(r.map((x) => x.url), ['https://onemove.co.jp/SNS', 'https://sns-sakiyomi.com/', 'https://digima.asahi.co.jp/']);
 });

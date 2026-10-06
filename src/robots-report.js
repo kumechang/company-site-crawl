@@ -23,6 +23,7 @@ export const ORIGINS = {
   aspic: 'https://www.aspicjapan.org',
   buzztan: 'https://www.buzztan.com',
   meetsmore: 'https://meetsmore.com',
+  slidelib: 'https://cone-c-slide.com',
 };
 
 /** そのサイトで実際に使っているURL（config に書いたもの + アダプタが辿る代表パス） */

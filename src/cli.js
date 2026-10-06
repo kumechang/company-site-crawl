@@ -24,6 +24,7 @@ import * as buzztan from './sources/buzztan.js';
 import * as digimado from './sources/digimado.js';
 import * as engage from './sources/engage.js';
 import * as meetsmore from './sources/meetsmore.js';
+import * as slidelib from './sources/slidelib.js';
 
 const SALESNOW_INDEX_URLS = [
   'https://salesnow.jp/db/industries/advertising/subIndustries/internet-advertising-agency',
@@ -33,7 +34,7 @@ const SALESNOW_INDEX_URLS = [
   'https://salesnow.jp/db/industries/consulting/subIndustries/promotion-consulting',
 ];
 
-const SOURCES = { green, wantedly, imitsu, boxil, aspic, webkanji, hikakubiz, kyujinbox, buzztan, digimado, engage, meetsmore };
+const SOURCES = { green, wantedly, imitsu, boxil, aspic, webkanji, hikakubiz, kyujinbox, buzztan, digimado, engage, meetsmore, slidelib };
 
 const { values: opt, positionals } = parseArgs({
   allowPositionals: true,
