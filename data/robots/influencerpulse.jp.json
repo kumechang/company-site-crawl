@@ -1,0 +1,6 @@
+{
+ "origin": "https://influencerpulse.jp",
+ "fetchedAt": "2026-10-06T10:19:30.020Z",
+ "status": 200,
+ "text": "# START YOAST BLOCK\n# ---------------------------\nUser-agent: *\nDisallow:\n\nSitemap: https://influencerpulse.jp/sitemap_index.xml\n# ---------------------------\n# END YOAST BLOCK"
+}

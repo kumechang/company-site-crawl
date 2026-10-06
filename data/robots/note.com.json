@@ -1,0 +1,6 @@
+{
+ "origin": "https://note.com",
+ "fetchedAt": "2026-10-06T10:25:10.479Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /embed/*\nDisallow: /intent/*\nDisallow: /preview/*\nDisallow: /api/*\nDisallow: /pdf/*\nDisallow: /wrap_up/*\nDisallow: /search\nDisallow: /login?*\nDisallow: /signup?*\nDisallow: /m/*/archive\n\n# /:urlname/~\nDisallow: /*/archives\nDisallow: /*/archives/*\nDisallow: /*/followers\nDisallow: /*/followings\nDisallow: /*/likes\nDisallow: /*/magazines\nDisallow: /*/menu/*\nDisallow: /*/message\nDisallow: /*/terms/specified\n\nUser-agent: Googlebot\nUser-agent: bingbot\nUser-agent: Yeti\nDisallow: /*/message\nDisallow: /login?*\nDisallow: /signup?*\nDisallow: /embed/*\nDisallow: /*/archives\nDisallow: /*/archives/*\nDisallow: /*/terms/specified\nDisallow: /api/v2/boards/*/reserved_posts\nDisallow: /api/v2/attachments\nDisallow: /*/rss\nDisallow: /intent/*\nDisallow: /wrap_up/*\nDisallow: /preview/*\nDisallow: /search\n\nUser-agent: Twitterbot\nDisallow: /*/message\nDisallow: /*/terms/specified\nDisallow: /*/menu/*\nDisallow: /embed/*\nDisallow: /intent/*\nDisallow: /preview/*\nDisallow: /api/*\nDisallow: /pdf/*\nAllow: /wrap_up/*\n\nUser-agent: Livelapbot\nDisallow: /\n\nUser-agent: Megalodon\nDisallow: /\n\nUser-agent: ia_archiver\nDisallow: /\n\nSitemap: https://note.com/sitemaps/production/note.com/sitemap.xml.gz\n"
+}
