@@ -13,6 +13,9 @@ import * as imitsu from './sources/imitsu.js';
 import * as boxil from './sources/boxil.js';
 import * as salesnow from './sources/salesnow.js';
 import * as prtimes from './sources/prtimes.js';
+import * as aspic from './sources/aspic.js';
+import * as webkanji from './sources/webkanji.js';
+import * as hikakubiz from './sources/hikakubiz.js';
 
 const SALESNOW_INDEX_URLS = [
   'https://salesnow.jp/db/industries/advertising/subIndustries/internet-advertising-agency',
@@ -22,7 +25,7 @@ const SALESNOW_INDEX_URLS = [
   'https://salesnow.jp/db/industries/consulting/subIndustries/promotion-consulting',
 ];
 
-const SOURCES = { green, wantedly, imitsu, boxil };
+const SOURCES = { green, wantedly, imitsu, boxil, aspic, webkanji, hikakubiz };
 
 const { values: opt, positionals } = parseArgs({
   allowPositionals: true,
@@ -83,6 +86,10 @@ async function discover() {
       }
       if (!SOURCES[sid]) {
         log(`  - ${site.name}: ${site.status === 'enrich' ? '補完専用(enrichで使用)' : '未実装のためスキップ'}`);
+        continue;
+      }
+      if (!(def[sid] ?? []).length) {
+        log(`  - ${site.name}: このカテゴリの対象URLが未設定のためスキップ (config/categories.js の ${sid})`);
         continue;
       }
       for (const t of def[sid] ?? []) {

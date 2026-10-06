@@ -40,6 +40,9 @@ export const CATEGORIES = {
     green: ['https://www.green-japan.com/search/area/13/industry/100125'],
     wantedly: ['SNS運用代行', 'SNSマーケティング'],
     boxil: ['https://boxil.jp/sc-sns_operationagency/'],
+    aspic: ['https://www.aspicjapan.org/asu/service/list/smm'],
+    webkanji: ['https://web-kanji.com/posts/sns-tokyo'],
+    hikakubiz: [], // TODO: 比較ビズのSNS運用代行の東京一覧URL
     imitsu: ['https://imitsu.jp/ct-net-adagency/pr-tokyo/'],
   },
 };
@@ -63,11 +66,11 @@ export const SITES = {
   mynavi: { name: 'マイナビ転職', status: 'todo' },
   engage: { name: 'エンゲージ', status: 'todo' },
   boxil: { name: 'BOXIL', status: 'ready', note: 'Cloudflareあり。通常ブラウザで取得できるが規約は要確認' },
-  webkanji: { name: 'Web幹事', status: 'todo' },
-  hikakubiz: { name: '比較ビズ', status: 'todo' },
+  webkanji: { name: 'Web幹事', status: 'ready' },
+  hikakubiz: { name: '比較ビズ', status: 'ready', note: 'カテゴリURLは人手で指定する(スラッグから推測不可)' },
   hacchunavi: { name: '発注ナビ', status: 'todo' },
   digimado: { name: 'デジタル化の窓口', status: 'todo' },
-  aspic: { name: 'アスピック', status: 'todo' },
+  aspic: { name: 'アスピック', status: 'ready' },
   buzztan: { name: 'バズ担', status: 'todo' },
 };
 

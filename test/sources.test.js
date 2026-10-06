@@ -3,6 +3,9 @@ import assert from 'node:assert/strict';
 import * as salesnow from '../src/sources/salesnow.js';
 import * as boxil from '../src/sources/boxil.js';
 import * as prtimes from '../src/sources/prtimes.js';
+import * as aspic from '../src/sources/aspic.js';
+import * as webkanji from '../src/sources/webkanji.js';
+import * as hikakubiz from '../src/sources/hikakubiz.js';
 import { consolidate } from '../src/lib/merge.js';
 import { newCompany, addEvidence } from '../src/lib/model.js';
 
@@ -81,4 +84,32 @@ test('PR TIMES 企業情報', () => {
   const r = prtimes.parseCompany({ text });
   assert.equal(r.address, '東京都中央区日本橋2-11-2 太陽生命日本橋ビル18階');
   assert.equal(r.url, 'https://www.tm-nets.com/');
+});
+
+test('アスピック 詳細: 会社名・所在地', () => {
+  const r = aspic.parseService({ text: 'SNS ONE MATCH\n会社概要\n会社名\tone move株式会社\n代表者名\t原 慎吾\n所在地\t〒150-6013 東京都渋谷区恵比寿4-20-3\n資料ダウンロード' });
+  assert.equal(r.company, 'one move株式会社');
+  assert.equal(r.address, '〒150-6013 東京都渋谷区恵比寿4-20-3');
+});
+
+test('Web幹事 一覧と会社ページ', () => {
+  const list = webkanji.parseList({ anchors: [
+    { href: 'https://web-kanji.com/companies/comnico', text: '株式会社コムニコ' },
+    { href: 'https://web-kanji.com/companies/industries', text: 'その他の業界' },
+    { href: 'https://web-kanji.com/companies/comnico', text: '株式会社コムニコ' },
+  ] });
+  assert.deepEqual(list.map((x) => x.slug), ['comnico']);
+  const r = webkanji.parseCompany({ title: '株式会社コムニコの制作実績と評判 | Web幹事', text: '特徴\nSNSに強い\nSNS運用代行可能', anchors: [
+    { href: 'https://douga-kanji.com/', text: '' }, { href: 'https://www.comnico.jp/', text: '' } ] });
+  assert.equal(r.officialUrl, 'https://www.comnico.jp/');
+  assert.ok(r.features.includes('SNS運用代行可能'));
+});
+
+test('比較ビズ 一覧カード', () => {
+  const text = ['企業を選択する','株式会社セグロス','特色','ノウハウ','有村　智也','東京都品川区東五反田2-9-5','実績(23)','対応業務','営業代行','特徴','スピーディー','企業を選択する','株式会社ツクモ','東京都豊島区東池袋1-34-5','対応業務','テレマーケティング'].join('\n');
+  const r = hikakubiz.parseList({ text, anchors: [
+    { href: 'https://www.biz.ne.jp/company/segros/', text: '' }, { href: 'https://www.biz.ne.jp/company/tsukumo/', text: '' } ] });
+  assert.equal(r.length, 2);
+  assert.equal(r[0].address, '東京都品川区東五反田2-9-5');
+  assert.equal(r[1].slug, 'tsukumo');
 });
