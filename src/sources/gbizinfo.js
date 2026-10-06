@@ -42,24 +42,33 @@ async function searchText(crawler, name) {
     return crawler.rawPage(TOP, async (page) => {
       await page.goto(TOP, { waitUntil: 'domcontentloaded', timeout: 45000 });
       await page.waitForNetworkIdle({ idleTime: 800, timeout: 12000 }).catch(() => {});
-      const input = await page.$('form[name="sim_search"] input[type=text], input[type=text], input:not([type])');
-      if (!input) throw new Error('検索ボックスが見つからない');
+      // 画面に表示されている入力欄だけを対象にする（非表示の別検索欄に入力して検索が走らない不具合の防止）
+      const handle = await page.evaluateHandle(() => [...document.querySelectorAll('input[type=text], input[type=search], input:not([type])')].find((i) => i.offsetWidth || i.offsetHeight));
+      const input = handle.asElement();
+      if (!input) throw new Error('表示されている検索ボックスが見つからない');
       await input.type(name);
       await page.keyboard.press('Enter');
-      await page.waitForFunction(() => document.body.innerText.includes('の検索結果'), { timeout: 20000 });
-      return page.evaluate(() => document.body.innerText);
+      // 送信でページが遷移するため、waitForFunction ではなく一定間隔で本文を確認する（遷移中の評価エラーは無視して続行）
+      for (let i = 0; i < 40; i++) {
+        await new Promise((r) => setTimeout(r, 500));
+        try {
+          const t = await page.evaluate(() => document.body.innerText);
+          if (t.includes('の検索結果')) return t;
+        } catch {}
+      }
+      throw new Error('検索結果が表示されなかった');
     });
   });
 }
 
-/** 会社名で Gビズインフォ(経産省)を引き、本店所在地・従業員数を補完 */
+/** 会社名で Gビズインフォ(経産省)を引き、本店所在地・従業員数を補完。戻り値: true=一致 / false=検索したが一致なし / null=エラー */
 export async function lookup(c, { crawler, log }) {
   let text;
   try {
     text = await searchText(crawler, c.name.replace(/[（(].*[）)]/g, '').trim());
   } catch (e) {
     log(`  ! gbizinfo ${c.name}: ${e.message.split('\n')[0]}`);
-    return false;
+    return null; // エラー: 再試行できるよう「一致なし」とは区別する
   }
   const knownAddr = c.evidence.find((e) => e.field === 'address')?.value;
   const hit = pickRow(parseResults(text), c.name.replace(/[（(].*[）)]/g, '').trim(), knownAddr);

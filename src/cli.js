@@ -162,8 +162,9 @@ async function enrich() {
     log(`# Gビズインフォで補完: ${gb.length} 社`);
     let n = 0;
     for (const c of gb) {
-      if (await gbizinfo.lookup(c, { crawler, log })) n++;
-      else c.noGbiz = true; // 一致なしは再検索しない
+      const r = await gbizinfo.lookup(c, { crawler, log });
+      if (r === true) n++;
+      else if (r === false) c.noGbiz = true; // 検索したが一致なし → 再検索しない（エラー時は印を付けず再試行できる）
       store.save();
     }
     log(`  → ${n}/${gb.length} 社が一致`);
