@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.aureo.co.jp",
+ "fetchedAt": "2026-10-06T11:08:32.684Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://www.aureo.co.jp/wp-sitemap.xml\n"
+}
