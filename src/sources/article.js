@@ -26,7 +26,7 @@ export function parseArticle(snap) {
   const ls = lines(snap.text);
   const out = new Map();
   ls.forEach((l, k) => {
-    if (l.length < 2 || l.length > 45 || /[。！？!?]/.test(l) || STOP.test(l) || /とは$/.test(l)) return;
+    if (l.length < 2 || l.length > 45 || /[。！？!?]/.test(l) || STOP.test(l) || /とは$/.test(l) || /^(東京都|北海道|京都府|大阪府|[一-龥]{2,3}県)$/.test(l)) return;
     for (const v of nameVariants(l)) {
       if (v.length < 2) continue;
       const hit = ls.slice(k + 1, k + 9).some((x) => x.startsWith(v) && /^[はがの、，,]/.test(x.slice(v.length)));

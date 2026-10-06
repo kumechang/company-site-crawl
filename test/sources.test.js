@@ -437,3 +437,8 @@ test('比較記事: 「〜とは」の見出しは企業にしない', () => {
   const r = article.parseArticle({ text: 'SNS運用代行とは\nSNS運用代行とは、アカウント運用を任せることです。\n株式会社テスト\n株式会社テストは、SNS運用を行う会社です。\n' });
   assert.deepEqual(r.map((x) => x.company), ['株式会社テスト']);
 });
+
+test('比較記事: 都道府県名だけの見出しは企業にしない', () => {
+  const r = article.parseArticle({ text: '東京都\n東京都に拠点を置くインスタ運用代行会社です。\nオア―ド株式会社\nオア―ド株式会社は、東京都に拠点を置く会社。\n' });
+  assert.deepEqual(r.map((x) => x.company), ['オア―ド株式会社']);
+});

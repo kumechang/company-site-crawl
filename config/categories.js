@@ -137,6 +137,8 @@ export const CATEGORIES = {
       'https://request.ne.jp/sns-management-agency-comparison/',
       'https://www.aspicjapan.org/asu/article/43581',
       'https://ecnomikata.com/bizmatching/category/97/c2-56/',
+      'https://sns-nakodo.com/area/tokyo/', // SNS仲人(インスタ運用代行) 東京 約14社
+      'https://sns-nakodo.com/area/tokyo/page/2/',
     ].map((url) => ({ url, label: 'SNS運用代行' })),
   },
 };
