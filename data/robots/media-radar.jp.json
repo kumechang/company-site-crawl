@@ -1,6 +1,6 @@
 {
  "origin": "https://media-radar.jp",
- "fetchedAt": "2026-10-06T10:21:07.515Z",
+ "fetchedAt": "2026-10-06T10:37:09.018Z",
  "status": 200,
  "text": "User-Agent: *\nDisallow: /staff/\nDisallow: /ad_search/*&*\nDisallow: /ad_list_*.html?*\nDisallow: /*?fb_ref=*\nDisallow: /ad_search/*?*\nAllow: /ad_search/*?batch_dl=1$\nDisallow: /unsubscribe.php\nDisallow: /mail_fav_button.php\n\nUser-agent: SemrushBot\nDisallow: /\n\nUser-agent: AhrefsBot \nDisallow: /\n\nUser-agent: MJ12bot\nDisallow: /\n\nUser-agent: Linguee\nDisallow: /\n\nUser-agent: dotbot\nDisallow: /\n\nUser-agent: PetalBot\nDisallow: /\n\nUser-agent: Cincraw\nDisallow: /\n\nUser-agent: Amazonbot\nDisallow: /\n\nUser-agent: DataForSeoBot\nDisallow: /\n\nUser-agent: BaiduSpider\nDisallow: /\n\nUser-agent: trendictionbot\nDisallow: /\n\nUser-agent: YisouSpider\nDisallow: /\n\nUser-agent: Bytespider\nDisallow: /\n\nUser-agent: BLEXBot\nDisallow: /\n\nUser-agent: OAI-AdsBot\nAllow: /ad_search/*?a=chatgpt\nAllow: /ad_search/*&a=chatgpt\nDisallow: /\n\nSitemap: https://media-radar.jp/sitemap.xml\nSitemap: https://media-radar.jp/sitemap_ad_search.xml\n"
 }

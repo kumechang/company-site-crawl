@@ -1,0 +1,7 @@
+{
+ "origin": "https://www.osn.syogyo.jp",
+ "fetchedAt": "2026-10-06T10:38:43.306Z",
+ "status": "error",
+ "text": "",
+ "error": "net::ERR_TUNNEL_CONNECTION_FAILED at https://www.osn.syogyo.jp/robots.txt"
+}
