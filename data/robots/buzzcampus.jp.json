@@ -1,0 +1,7 @@
+{
+ "origin": "https://buzzcampus.jp",
+ "fetchedAt": "2026-10-06T09:41:49.050Z",
+ "status": "error",
+ "text": "",
+ "error": "net::ERR_TUNNEL_CONNECTION_FAILED at https://buzzcampus.jp/robots.txt"
+}

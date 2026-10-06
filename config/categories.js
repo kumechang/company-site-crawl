@@ -49,7 +49,8 @@ export const CATEGORIES = {
     ],
     engage: ['https://en-gage.net/user/search/?from=list&keyword=SNS%E9%81%8B%E7%94%A8&area=23'],
     kyujinbox: ['https://xn--pckua2a7gp15o89zb.com/SNS%E9%81%8B%E7%94%A8%E4%BB%A3%E8%A1%8C-%E6%9D%B1%E4%BA%AC%E9%83%BD%E3%81%AE%E4%BB%95%E4%BA%8B'],
-    imitsu: ['https://imitsu.jp/ct-net-adagency/pr-tokyo/'],
+    // アイミツには専用カテゴリが無く特集ページのみ（ユーザー確認済み）。一覧中の東京のsupplierだけを拾う
+    imitsu: ['https://imitsu.jp/list/net-adagency/socialmedia-outsourcing', 'https://imitsu.jp/list/hp-design/sns/'],
   },
 };
 
