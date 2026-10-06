@@ -11,7 +11,7 @@ import * as buzztan from '../src/sources/buzztan.js';
 import * as digimado from '../src/sources/digimado.js';
 import * as engage from '../src/sources/engage.js';
 import { consolidate } from '../src/lib/merge.js';
-import { newCompany, addEvidence } from '../src/lib/model.js';
+import { newCompany, addEvidence, setOfficialUrl, bestOfficial } from '../src/lib/model.js';
 
 test('SalesNow 企業ページ', () => {
   const text = [
@@ -163,4 +163,20 @@ test('求人文面(jobText)はカテゴリ判定の根拠にならない', () =>
   assert.deepEqual(consolidate(c).categories, []);
   addEvidence(c, 'profileText', 'SNSアカウント運用代行を提供', { source: 'official', url: 'u2' });
   assert.deepEqual(consolidate(c).categories, ['SNS運用代行']);
+});
+
+test('公式URLは情報源の優先順位で選ぶ(製品サイトを指しがちな媒体は後ろ)', () => {
+  const c = newCompany('テテマーチ株式会社');
+  setOfficialUrl(c, 'https://sinis.jp/lp', { source: 'digimado', url: 'u1' });
+  setOfficialUrl(c, 'https://tetemarche.co.jp/company', { source: 'webkanji', url: 'u2' });
+  const b = bestOfficial(c);
+  assert.equal(b.url, 'https://tetemarche.co.jp/');
+  assert.deepEqual(b.others, ['https://sinis.jp/']);
+  assert.ok(consolidate(c).notes.some((n) => n.includes('公式URL候補が複数')));
+});
+
+test('SNS運用代行の一覧掲載媒体を列挙', () => {
+  const c = newCompany('株式会社テスト');
+  c.sources.push({ source: 'buzztan', url: 'u' }, { source: 'wantedly', url: 'u' }, { source: 'boxil', url: 'u' });
+  assert.deepEqual(consolidate(c).listedBy.sort(), ['boxil', 'buzztan']);
 });

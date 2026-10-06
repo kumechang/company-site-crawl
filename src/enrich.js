@@ -1,5 +1,6 @@
 import { extractEmployees, extractAddress, findContactLinks, findProfileLinks } from './lib/extract.js';
-import { addEvidence, addSource } from './lib/model.js';
+import { addEvidence, addSource, bestOfficial } from './lib/model.js';
+import { domainOf } from './lib/util.js';
 import { clip, flatten } from './lib/util.js';
 import { RobotsDisallowed } from './lib/crawler.js';
 
@@ -25,6 +26,11 @@ async function verifyContact(url, crawler) {
  * トップ → 会社概要ページ(最大2) の順に見る。
  */
 export async function enrichFromOfficial(c, { crawler, log }) {
+  const best = bestOfficial(c);
+  if (best && typeof best === 'object') {
+    c.officialUrl = best.url;
+    c.domain = domainOf(best.url);
+  }
   if (!c.officialUrl) return;
   const src = 'official';
   let top;
@@ -57,7 +63,15 @@ export async function enrichFromOfficial(c, { crawler, log }) {
   }
 
   // 問い合わせURL: 検出したリンクを上位から実在確認 → 見つからなければ一般的なパスを試す
-  const all = pages.flatMap(({ url, snap }) => findContactLinks(snap.anchors, url).map((l) => ({ ...l, from: url })));
+  // 公式サイトと無関係なドメイン(別サービスのフォーム等)は、外部フォームサービスでない限り採用しない。サポート/FAQは問い合わせ先とみなさない
+  const sameDomain = (u) => {
+    const a = domainOf(u) ?? '';
+    const b = domainOf(c.officialUrl) ?? '';
+    return a === b || a.endsWith('.' + b) || b.endsWith('.' + a);
+  };
+  const all = pages
+    .flatMap(({ url, snap }) => findContactLinks(snap.anchors, url).map((l) => ({ ...l, from: url })))
+    .filter((l) => (sameDomain(l.url) || FORM_HOSTS.test(l.url)) && !/\/(support|faq|help)(\/|$)/i.test(new URL(l.url).pathname));
   all.sort((a, b) => b.score - a.score);
   for (const l of all.slice(0, 3)) {
     const v = await verifyContact(l.url, crawler);

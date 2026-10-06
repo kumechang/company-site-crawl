@@ -11,6 +11,7 @@ const COLS = [
   ['20名以上', (r) => (r.emp20 == null ? '未確認' : r.emp20 ? '○' : '×')],
   ['カテゴリ', (r) => r.categories.join(' / ')],
   ['カテゴリ根拠KW', (r) => r.categoryKeywords.join(' / ')],
+  ['SNS運用代行の一覧に掲載', (r) => r.listedBy.join(' + ')],
   ['問い合わせURL', (r) => r.contactUrl],
   ['不足項目', (r) => r.missing.join(' / ')],
   ['情報源', (r) => r.sources.map((s) => s.source).filter((v, i, a) => a.indexOf(v) === i).join(' + ')],

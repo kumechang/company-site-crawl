@@ -1,12 +1,16 @@
 import { classify } from './classify.js';
 import { isTokyoAddress } from './extract.js';
 import { nfkc } from './util.js';
+import { bestOfficial } from './model.js';
 import { CATEGORIES } from '../../config/categories.js';
 
 /**
  * 項目ごとの情報源の優先順位（左ほど信頼）。
  *  公式サイト > 求人媒体の企業ページ(Green) > SalesNow(推定値) > 比較サイト(アイミツ) > Wantedly
  */
+/** SNS運用代行の会社一覧を載せている媒体 */
+export const LISTING_SITES = ['boxil', 'aspic', 'buzztan', 'webkanji'];
+
 export const PRIORITY = {
   employees: ['official', 'green', 'salesnow', 'imitsu', 'wantedly'],
   address: ['official', 'green', 'salesnow', 'wantedly', 'imitsu'],
@@ -36,6 +40,10 @@ export function consolidate(c, { minEmployees = 20 } = {}) {
   const addr = pick(c, 'address', { same: (a, b) => isTokyoAddress(a) === isTokyoAddress(b) });
   const members = pick(c, 'wantedlyMembers');
   const contact = pick(c, 'contactUrl');
+  const off = bestOfficial(c);
+  const officialUrl = off && typeof off === 'object' ? off.url : c.officialUrl;
+  // SNS運用代行の「会社一覧」を掲載している媒体（ツール会社や求人だけで見つかった会社との見分けに使う）
+  const listedBy = [...new Set(c.sources.map((x) => x.source).filter((x) => LISTING_SITES.includes(x)))];
 
   const text = byField(c, 'profileText').map((e) => e.value).join(' ');
   const cats = classify(`${c.name} ${text}`);
@@ -48,7 +56,7 @@ export function consolidate(c, { minEmployees = 20 } = {}) {
   const emp20 = emp ? (nearThreshold ? null : emp.value >= minEmployees) : null;
 
   const missing = [];
-  if (!c.officialUrl) missing.push('公式URL');
+  if (!officialUrl) missing.push('公式URL');
   if (tokyo === null) missing.push('本社所在地');
   if (emp20 === null) missing.push(nearThreshold ? '従業員数(推定値のみ)' : '従業員数');
   if (!cats.length) missing.push('カテゴリ');
@@ -63,12 +71,14 @@ export function consolidate(c, { minEmployees = 20 } = {}) {
   if (emp?.conflicts.length) notes.push(`従業員数が情報源間で不一致: ${[emp, ...emp.conflicts].map((e) => `${e.source ?? emp.source}=${e.value}`).join(', ')}`);
   if (addr?.conflicts.length) notes.push(`所在地(東京/他)が情報源間で不一致`);
   if (!cats.length && c.seedCategories.length) notes.push(`カテゴリは検索元の推定のみ: ${[...new Set(c.seedCategories)].map((k) => CATEGORIES[k]?.label).join('/')}`);
+  if (off && typeof off === 'object' && off.others.length) notes.push(`公式URL候補が複数: ${[off.url, ...off.others].join(' , ')}`);
   if (estimateOnly) notes.push(`従業員数はSalesNowの推定値(${emp.value}名)${nearThreshold ? '・閾値付近のため要確認' : ''}`);
   if (emp == null && members) notes.push(`Wantedlyメンバー数 ${members.value}人(参考・従業員数とは別物)`);
 
   return {
     name: c.name,
-    officialUrl: c.officialUrl,
+    officialUrl,
+    listedBy,
     address: addr?.value ?? null,
     tokyo,
     employees: emp?.value ?? null,
