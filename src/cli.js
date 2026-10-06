@@ -8,8 +8,9 @@ import { consolidate } from './lib/merge.js';
 import { enrichFromOfficial } from './enrich.js';
 import { needsCorporateUrl, bestOfficial } from './lib/model.js';
 import { domainOf } from './lib/util.js';
-import { exportAll, exportSample } from './export.js';
+import { exportAll, exportSample, flatChecks, allChecksOk } from './export.js';
 import { robotsReport } from './robots-report.js';
+import { verifyCompany } from './verify.js';
 import * as green from './sources/green.js';
 import * as wantedly from './sources/wantedly.js';
 import * as imitsu from './sources/imitsu.js';
@@ -70,11 +71,12 @@ const HELP = `使い方: node src/cli.js <command> [options]
   export     統合して data/companies.csv を出力
   run        discover → enrich → export を一括実行
   sample     カテゴリごとに「発見→補完→判定OKの件数」を繰り返し、OKが --ok 件に達したら次のカテゴリへ
+  verify     判定OKの会社を4観点(業種・従業員数・問い合わせURL・企業取り違え)で自己検証し、OK/要確認/NGを付ける
   robots     全媒体の robots.txt を取得し、使うURLが許可されているか一覧にする
 オプション: --target N(カテゴリ目標社数)  --per-query N  --sources green,wantedly,imitsu  --categories cosme_d2c,...  --delay ms  --no-cache`;
 
 const cmd = positionals[0];
-if (!cmd || opt.help || !['discover', 'enrich', 'export', 'run', 'robots', 'sample'].includes(cmd)) {
+if (!cmd || opt.help || !['discover', 'enrich', 'export', 'run', 'robots', 'sample', 'verify'].includes(cmd)) {
   console.log(HELP);
   process.exit(cmd ? 0 : 1);
 }
@@ -131,7 +133,7 @@ function okCount(cat) {
     const r = consolidate(c, { minEmployees });
     const max = CATEGORIES[cat].maxEmployees; // 例: 広告代理店は「ベンチャー・中堅」= 2,000名以下
     if (max && r.employees != null && r.employees > max) return false;
-    return r.status === 'OK' && r.categories.includes(label);
+    return r.status === 'OK' && r.categories.includes(label) && allChecksOk(flatChecks(c, cat)); // 検証(4観点)が全てOKの会社だけ数える
   }).length;
 }
 
@@ -176,9 +178,24 @@ async function sample() {
       store.mergeByDomain();
       store.save();
       await enrich();
-      log(`  → ${SITES[sid].name} まで: 判定OK ${okCount(cat)}/${okTarget}件`);
+      await verify();
+      log(`  → ${SITES[sid].name} まで: 検証OK ${okCount(cat)}/${okTarget}件`);
     }
     log(`# ${def.label}: ${okCount(cat) >= okTarget ? '目標達成' : '全媒体を見ても目標に届かず'} (判定OK ${okCount(cat)}件)`);
+  }
+}
+
+/** 判定OKの会社を検証し c.checks に保存（公式サイト等はキャッシュ優先で再取得しない） */
+async function verify() {
+  const targets = store.all().map((c) => ({ c, r: consolidate(c, { minEmployees }) })).filter(({ r }) => r.status === 'OK');
+  log(`# 検証: 判定OKの ${targets.length} 社`);
+  let i = 0;
+  for (const { c, r } of targets) {
+    const cats = Object.entries(CATEGORIES).filter(([k, d]) => c.seedCategories.includes(k) && r.categories.includes(d.label)).map(([k]) => k);
+    await verifyCompany(c, r, cats, { crawler, log });
+    const k = c.checks;
+    log(`  ${++i}/${targets.length} ${r.name}: 業種=${Object.values(k.industry).map((x) => x.result).join('/') || '-'} 従業員=${k.employees.result} 問合せ=${k.contact.result} 取違=${k.identity.result}`);
+    store.save();
   }
 }
 
@@ -280,6 +297,7 @@ try {
   if (cmd !== 'export') await crawler.launch();
   if (cmd === 'discover' || cmd === 'run') await discover();
   if (cmd === 'sample') await sample();
+  if (cmd === 'verify') await verify();
   if (cmd === 'enrich' || cmd === 'run') await enrich();
   const rows = exportAll(store.all(), { minEmployees });
   const sm = exportSample(store.all(), { minEmployees });

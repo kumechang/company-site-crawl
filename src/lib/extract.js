@@ -86,6 +86,41 @@ const sameSite = (a, b) => {
 const NOISE_HREF = /^(mailto|tel|javascript):|#$/i;
 const NOISE_PRIVACY = /privacy|policy|プライバシー|個人情報|利用規約|採用|recruit|career/i;
 
+
+/**
+ * 問い合わせURLが「一般の問い合わせ窓口」か、用途限定の窓口か（URL/ページ名から判定）。一般なら null。
+ * IR・採用・個人情報・メディア・サポート/EC購入者・英語・サービス別(広告掲載/事業別)・会員向けは、営業先リストの問い合わせ先としては避ける
+ */
+const CONTACT_KINDS = [
+  [/(^|\/)ir(\/|$)|investor|shareholder|stock|kabunushi|株主|投資家/i, 'IR・株主向け'],
+  [/recruit|career|saiyo|採用|求人/i, '採用'],
+  [/privacy|kojin|個人情報|開示/i, '個人情報関連'],
+  [/(^|\/)press(\/|$)|取材|報道/i, 'メディア・取材'],
+  [/(^|\/)(support|faq|help|customer|csr)(\/|$)|お客様|サポート|購入者|myinquiry|myorder|member/i, 'サポート・お客様窓口'],
+  [/(^|\/)(en|english|us|global)(\/|$)|[-_]en(\/|\.|$)/i, '英語サイト'],
+  [/(^|\/)(service|services|adinfo|ad|business|product|products|brand|shop|store|ec)(\/|$)|\/entry(\/|$)/i, 'サービス別・個別窓口'],
+];
+export function contactKind(url, text = '') {
+  let path = url;
+  try {
+    const u = new URL(url);
+    path = decodeURIComponent(u.pathname) + ' ' + (/^(shop|store|ec|order|member)\./i.test(u.hostname) ? 'shop' : '');
+  } catch {}
+  for (const [re, kind] of CONTACT_KINDS) if (re.test(path) || re.test(text)) return kind;
+  return null;
+}
+
+/** `//` の重複など、同じページを指す表記ゆれを正規化 */
+export const normalizeUrl = (u) => {
+  try {
+    const x = new URL(u);
+    x.pathname = x.pathname.replace(/\/{2,}/g, '/');
+    return x.toString();
+  } catch {
+    return u;
+  }
+};
+
 /** アンカー一覧から問い合わせページ候補を探す（スコア降順） */
 export function findContactLinks(anchors, baseUrl) {
   const scored = [];
@@ -98,7 +133,9 @@ export function findContactLinks(anchors, baseUrl) {
     if (NOISE_PRIVACY.test(text) && !tHit) continue;
     let score = (tHit ? 3 : 0) + (hHit ? 2 : 0) + (sameSite(a.href, baseUrl) ? 1 : 0);
     if (/\/(contact|inquiry)\/?(\?.*)?$/i.test(a.href)) score += 2;
-    scored.push({ url: a.href.split('#')[0], text: clip(text, 30), score });
+    if (/^(お問い?合わせ|お問合せ|contact|contact us|問い合わせ)$/i.test(text.trim())) score += 2; // 総合窓口の典型的な文言
+    if (contactKind(a.href, text)) score -= 6; // 用途限定の窓口は後回し
+    scored.push({ url: normalizeUrl(a.href.split('#')[0]), text: clip(text, 30), score, kind: contactKind(a.href, text) });
   }
   const seen = new Set();
   return scored
@@ -110,9 +147,10 @@ export function findContactLinks(anchors, baseUrl) {
 export function findProfileLinks(anchors, baseUrl) {
   const scored = [];
   for (const a of anchors ?? []) {
-    if (!a.href || NOISE_HREF.test(a.href) || !sameSite(a.href, baseUrl)) continue;
+    if (!a.href || NOISE_HREF.test(a.href) || !(sameSite(a.href, baseUrl) || sameBrand(a.href, baseUrl))) continue; // 同じブランドの別ドメイン(会社情報だけ別サイト)も辿る
     const text = nfkc(a.text ?? '');
-    if (/採用|recruit|career|ir\b|news|blog|プライバシー|privacy/i.test(text)) continue;
+    const corpInfo = /会社概要|企業情報|会社情報|会社案内/.test(text); // 「IR・会社情報」のようなリンクは除外しない
+    if (/採用|recruit|career|news|blog|プライバシー|privacy/i.test(text) || (/\bir\b/i.test(text) && !corpInfo)) continue;
     const tHit = PROFILE_TEXT.test(text);
     const hHit = PROFILE_HREF.test(new URL(a.href).pathname);
     if (!tHit && !hHit) continue;

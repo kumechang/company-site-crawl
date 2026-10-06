@@ -130,3 +130,32 @@ test('同じブランドの別ドメインを同一とみなす', () => {
   assert.equal(sameBrand('https://saleskpi.xyz/form', 'https://www.mds-fund.com/'), false);
   assert.equal(sameBrand('https://a.co.jp/', 'https://b.co.jp/'), false);
 });
+
+import { contactKind, normalizeUrl } from '../src/lib/extract.js';
+
+test('問い合わせURLの用途判定: IR・採用・英語・サービス別・EC購入者向けは一般窓口ではない', () => {
+  assert.equal(contactKind('https://www.piala.co.jp/ir/contact'), 'IR・株主向け');
+  assert.equal(contactKind('https://bitstar.tokyo/corp/en/contact-en'), '英語サイト');
+  assert.equal(contactKind('https://www.hottolink.co.jp/service/contact/'), 'サービス別・個別窓口');
+  assert.equal(contactKind('https://corp.allabout.co.jp/adinfo/contact'), 'サービス別・個別窓口');
+  assert.equal(contactKind('https://shiro-shiro.jp/ec/myInquiryList.html'), 'サポート・お客様窓口');
+  assert.equal(contactKind('https://example.co.jp/recruit/contact'), '採用');
+  assert.equal(contactKind('https://example.co.jp/contact/'), null);
+  assert.equal(contactKind('https://example.co.jp/inquiry'), null);
+  assert.equal(contactKind('https://example.co.jp/contact.html'), null);
+});
+
+test('問い合わせURL: // の重複を正規化し、総合窓口を用途限定の窓口より優先する', () => {
+  assert.equal(normalizeUrl('https://www.cyberbuzz.co.jp//contact/'), 'https://www.cyberbuzz.co.jp/contact/');
+  const links = findContactLinks(
+    [
+      { href: 'https://example.co.jp/ir/contact', text: 'お問い合わせ' },
+      { href: 'https://example.co.jp/service/contact/', text: 'お問い合わせ' },
+      { href: 'https://example.co.jp/contact/', text: 'お問い合わせ' },
+    ],
+    'https://example.co.jp/'
+  );
+  assert.equal(links[0].url, 'https://example.co.jp/contact/');
+  assert.equal(links[0].kind, null);
+  assert.ok(links.slice(1).every((l) => l.kind));
+});

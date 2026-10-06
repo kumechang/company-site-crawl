@@ -368,6 +368,8 @@ test('サンプル出力: 広告代理店は従業員数2,000名超を含めな�
     addEvidence(c, 'contactUrl', 'https://' + name + '.example/contact', { source: 'official', url: 'u' });
     addEvidence(c, 'profileText', '広告代理店', { source: 'grip', url: 'u' });
     c.sources.push({ source: 'grip', url: 'u' });
+    const ok = { result: 'OK', comment: '', after: null };
+    c.checks = { verifiedAt: '2026-10-06', industry: { 'ad_agency': ok }, employees: ok, contact: ok, identity: ok };
     return c;
   };
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'sample-'));
@@ -485,4 +487,25 @@ test('OpenWork 検索結果・会社ページ', () => {
   assert.equal(openwork.pickCompany(cands, []).url, 'b'); // 既知の住所が無ければ東京都を優先
   assert.equal(openwork.pickCompany(cands, ['大阪府吹田市']).url, 'a');
   assert.equal(openwork.pickCompany(cands, ['愛知県名古屋市']), null);
+});
+
+test('サンプル出力: 検証が全てOKでない会社はサンプルに入れず、sample_review.csv に出す', () => {
+  const mk = (name, contact) => {
+    const c = newCompany(name);
+    c.seedCategories.push('ad_agency');
+    c.officialUrl = 'https://' + name + '.example/';
+    addEvidence(c, 'address', '東京都渋谷区1-1', { source: 'official', url: 'u' });
+    addEvidence(c, 'employees', 100, { source: 'official', url: 'u', snippet: '従業員数 100名' });
+    addEvidence(c, 'contactUrl', 'https://' + name + '.example/contact', { source: 'official', url: 'u' });
+    addEvidence(c, 'profileText', '広告代理店', { source: 'grip', url: 'u' });
+    const ok = { result: 'OK', comment: '', after: null };
+    c.checks = { verifiedAt: '2026-10-06', industry: { ad_agency: ok }, employees: ok, contact, identity: ok };
+    return c;
+  };
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'sample-'));
+  const { summary, review } = exportSample([mk('good', { result: 'OK', comment: '', after: null }), mk('irpage', { result: '要確認', comment: 'IR専用', after: null })], { outDir: dir });
+  assert.equal(summary['広告代理店'], 1);
+  assert.equal(review, 1);
+  assert.ok(fs.readFileSync(path.join(dir, 'sample_review.csv'), 'utf8').includes('irpage'));
+  assert.ok(!fs.readFileSync(path.join(dir, 'sample.csv'), 'utf8').includes('irpage'));
 });

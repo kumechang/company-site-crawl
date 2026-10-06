@@ -194,3 +194,27 @@ export const ORDER = {
   ad_agency: ['webkanji', 'imitsu', 'boxil', 'aspic', 'meetsmore', 'grip', 'digitre', 'agencyhub', 'pitact', 'houjingoo', 'salesnow', 'article', 'digimado', 'wantedly', 'green', 'doda', 'indeed', 'kyujinbox', 'mynavi', 'engage'],
   sns_agency: ['boxil', 'aspic', 'digimado', 'buzztan', 'slidelib', 'webkanji', 'imitsu', 'meetsmore', 'grip', 'article', 'wantedly', 'green', 'kyujinbox', 'engage', 'indeed'],
 };
+
+/**
+ * 「業種チェック」用。公式サイトが自社をどう説明しているか(タイトル・説明文・トップの冒頭・事業内容)に、そのカテゴリの語があるか、
+ * 主業が別(SaaS・DX・メディア・人材など)でないかを見る。
+ *  main   … そのカテゴリの事業を示す語
+ *  extra  … カテゴリによっては追加で必要な語(化粧品=直販、インフルエンサー=事務所・マネジメントの実態)
+ */
+export const INDUSTRY_CORE = {
+  cosme_d2c: {
+    main: ['化粧品', 'コスメ', 'スキンケア', 'ヘアケア', 'ボディケア', '美容液', 'サプリメント'],
+    extra: ['D2C', 'P2C', 'DtoC', '公式通販', '公式オンラインストア', '公式オンラインショップ', '公式ストア', 'オンラインストア', 'オンラインショップ', '自社EC', '定期購入', '定期便', '直営店', '通販'],
+    extraLabel: '直販(D2C/公式通販など)',
+  },
+  influencer_agency: {
+    main: ['インフルエンサー', 'YouTuber', 'TikToker', 'クリエイター'],
+    extra: ['インフルエンサー事務所', 'クリエイター事務所', 'マネジメント', 'キャスティング', '所属'],
+    extraLabel: '事務所・マネジメント・キャスティング',
+  },
+  ad_agency: { main: ['広告代理', '広告運用', '運用型広告', 'ネット広告', 'インターネット広告', 'Web広告', 'デジタル広告', 'アドエージェンシー', 'アドテク', '広告事業'], weak: ['広告', 'マーケティング', 'プロモーション'] },
+  sns_agency: { main: ['SNS運用', 'SNSマーケティング', 'SNSアカウント運用', 'Instagram運用', 'TikTok運用', 'SNS広告', 'SNS代行', 'SNSコンサル', 'ソーシャルメディアマーケティング', 'ソーシャルメディア運用'], weak: ['SNS', 'ソーシャルメディア', 'インフルエンサー'] },
+};
+
+/** 主業が別にある可能性を示す語(自社説明の冒頭にこれが並ぶ場合は「業種は要確認」) */
+export const COMPETING_BUSINESS = ['SaaS', 'DX', 'コンサルティング', 'システム開発', '受託開発', '人材', 'メディア運営', 'ゲーム', 'EC事業', '不動産', '金融', 'データ分析', 'ソフトウェア', 'プラットフォーム', 'マッチング', 'クラウド', '出版', '製造', 'フリーランス', 'AI', '家具', 'インテリア', 'マットレス', '寝具', '求人', '採用支援', '採用代行', '雑誌', 'スキルマーケット', 'マーケットプレイス', 'ECマーケティング', 'EC支援', 'ウィッグ', '育毛'];

@@ -188,6 +188,7 @@ export class Crawler {
             title: document.title,
             text: document.body?.innerText ?? '',
             anchors: [...document.querySelectorAll('a[href]')].map((a) => ({ href: a.href, text: (a.innerText || a.textContent || a.getAttribute('aria-label') || a.title || a.querySelector('img')?.alt || '').trim() })),
+            meta: (document.querySelector('meta[name="description"]')?.content || document.querySelector('meta[property="og:description"]')?.content || '').trim(),
             jsonld: [...document.querySelectorAll('script[type="application/ld+json"]')].map((s) => s.textContent).slice(0, 5),
             finalUrl: location.href,
           }));

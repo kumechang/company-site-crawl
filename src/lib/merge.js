@@ -2,6 +2,7 @@ import { classify } from './classify.js';
 import { isTokyoAddress } from './extract.js';
 import { nfkc } from './util.js';
 import { bestOfficial } from './model.js';
+import { assessEmployees } from './employees.js';
 import { CATEGORIES } from '../../config/categories.js';
 
 /**
@@ -64,10 +65,15 @@ export function consolidate(c, { minEmployees = 20 } = {}) {
   const nearThreshold = estimateOnly && emp.value >= 10 && emp.value <= 40;
   const emp20 = emp ? (nearThreshold ? null : emp.value >= minEmployees) : null;
 
+  // 従業員数が「確認済み」か(公式で、単体・最近の数字。または第三者が複数一致)。未確認のままOKにしない
+  const empEvs = byField(c, 'employees').filter((e) => Number.isFinite(e.value) && !rejected.has(e.source));
+  const empCheck = assessEmployees(emp, empEvs);
+
   const missing = [];
   if (!officialUrl) missing.push('公式URL');
   if (tokyo === null) missing.push('本社所在地');
   if (emp20 === null) missing.push(nearThreshold ? '従業員数(推定値のみ)' : '従業員数');
+  else if (emp20 && !empCheck.confirmed) missing.push('従業員数(公式で未確認)');
   if (!cats.length) missing.push('カテゴリ');
   if (!contact) missing.push('問い合わせURL');
 
@@ -83,6 +89,7 @@ export function consolidate(c, { minEmployees = 20 } = {}) {
   if (off && typeof off === 'object' && off.others.length) notes.push(`公式URL候補が複数: ${[off.url, ...off.others].join(' , ')}`);
   if (rejected.size && byField(c, 'employees').some((e) => rejected.has(e.source))) notes.push(`住所が一致しない情報源の従業員数は不採用(同名の別会社の可能性): ${[...rejected].join(', ')}`);
   if (estimateOnly) notes.push(`従業員数は${{ agencyhub: 'AgencyHubの規模レンジ下限', openwork: 'OpenWorkの社員数レンジ(下限/上限)', gbizinfo: 'Gビズインフォ(政府保有情報・古い可能性)の値' }[emp.source] ?? 'SalesNowの推定値'}(${emp.value}名)${nearThreshold ? '・閾値付近のため要確認' : ''}`);
+  if (emp20 && !empCheck.confirmed) notes.push(`従業員数が未確認: ${empCheck.reasons.join(' / ')}`);
   if (emp == null && members) notes.push(`Wantedlyメンバー数 ${members.value}人(参考・従業員数とは別物)`);
 
   return {
@@ -94,6 +101,7 @@ export function consolidate(c, { minEmployees = 20 } = {}) {
     employees: emp?.value ?? null,
     employeesSource: emp?.source ?? null,
     emp20,
+    empConfirmed: empCheck.confirmed,
     categories: cats.map((x) => x.label),
     categoryKeywords: [...new Set(cats.flatMap((x) => x.keywords))],
     contactUrl: contact?.value ?? null,
