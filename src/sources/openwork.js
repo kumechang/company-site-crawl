@@ -63,6 +63,7 @@ export async function lookup(c, { crawler, log }) {
   try {
     list = parseList(await crawler.snapshot(`${BASE}/company_list?src_str=${encodeURIComponent(q)}`, { settleMs: 1000 }));
   } catch (e) {
+    if (/HTTP 404/.test(e.message)) return false; // 該当なしのとき 404 を返す
     log(`  ! openwork ${c.name}: ${e.message.split('\n')[0]}`);
     return null;
   }
