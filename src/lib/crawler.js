@@ -187,7 +187,7 @@ export class Crawler {
           const data = await page.evaluate(() => ({
             title: document.title,
             text: document.body?.innerText ?? '',
-            anchors: [...document.querySelectorAll('a[href]')].map((a) => ({ href: a.href, text: (a.innerText || a.textContent || '').trim() })),
+            anchors: [...document.querySelectorAll('a[href]')].map((a) => ({ href: a.href, text: (a.innerText || a.textContent || a.getAttribute('aria-label') || a.title || a.querySelector('img')?.alt || '').trim() })),
             jsonld: [...document.querySelectorAll('script[type="application/ld+json"]')].map((s) => s.textContent).slice(0, 5),
             finalUrl: location.href,
           }));

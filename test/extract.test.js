@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { extractEmployees, extractAddress, isTokyoAddress, findContactLinks, findProfileLinks, parseLabeled } from '../src/lib/extract.js';
+import { extractEmployees, extractAddress, isTokyoAddress, findContactLinks, findProfileLinks, parseLabeled, looksLikeContactPage, nearlySame, sameBrand } from '../src/lib/extract.js';
 import { classify } from '../src/lib/classify.js';
 import { parseRobots, isAllowed } from '../src/lib/robots.js';
 import { normalizeName } from '../src/lib/util.js';
@@ -102,4 +102,31 @@ test('robots', () => {
 test('会社名正規化', () => {
   assert.equal(normalizeName('パンパシフィック 株式会社'), normalizeName('株式会社パンパシフィック'));
   assert.equal(normalizeName('(株)ＡＢＣ'), 'abc');
+});
+
+test('問い合わせページ判定: トップと同じ内容(ソフト404)は不可、メニューの語だけでも不可', () => {
+  const top = 'よくあるご質問\nお問い合わせ\n採用情報\nTOPICS\n新着情報\nSHOP LIST';
+  assert.equal(nearlySame(top, top + '\n追加'), true);
+  assert.equal(looksLikeContactPage({ text: top, finalUrl: 'https://ex.jp/contact.html' }, { requested: 'https://ex.jp/contact.html', topText: top, guess: true }), false);
+  // トップへリダイレクトされる
+  assert.equal(looksLikeContactPage({ text: 'お名前\nメールアドレス\n送信', finalUrl: 'https://ex.jp/' }, { requested: 'https://ex.jp/contact/', topText: top, guess: true }), false);
+  // 本物のフォームページ
+  assert.equal(looksLikeContactPage({ text: 'お問い合わせ\nお名前\nメールアドレス\nお問い合わせ内容\n送信', finalUrl: 'https://ex.jp/contact/' }, { requested: 'https://ex.jp/contact/', topText: top, guess: true }), true);
+  // メニューにお問い合わせの語しかなく、フォーム語が無い推測パスは不可
+  assert.equal(looksLikeContactPage({ text: 'メニュー\nお問い合わせ', finalUrl: 'https://ex.jp/c' }, { requested: 'https://ex.jp/c', topText: top, guess: true }), false);
+});
+test('リンクされた問い合わせページ: フォームが埋め込みで項目名が無くても可。トップと同一は不可', () => {
+  const top = '会社紹介\nサービス\nお問い合わせ\n採用情報';
+  const page = '会社紹介\nサービス\nお問い合わせ\n採用情報\nマーケティング支援に関するご相談など、\nお問い合わせはこちらのフォームから\nご入力ください\n担当より折り返しご連絡します';
+  assert.equal(looksLikeContactPage({ text: page }, { requested: 'https://ex.jp/contact', topText: top }), true);
+  assert.equal(looksLikeContactPage({ text: top }, { requested: 'https://ex.jp/contact', topText: top }), false);
+});
+test('「お客様相談室」も問い合わせ候補', () => {
+  const l = findContactLinks([{ href: 'https://www.hoyu.co.jp/customer/', text: 'お客様相談室' }], 'https://www.hoyu.co.jp/');
+  assert.equal(l[0].url, 'https://www.hoyu.co.jp/customer/');
+});
+test('同じブランドの別ドメインを同一とみなす', () => {
+  assert.equal(sameBrand('https://www.houseofrose.jp/contact/', 'https://www.houseofrose.co.jp/'), true);
+  assert.equal(sameBrand('https://saleskpi.xyz/form', 'https://www.mds-fund.com/'), false);
+  assert.equal(sameBrand('https://a.co.jp/', 'https://b.co.jp/'), false);
 });

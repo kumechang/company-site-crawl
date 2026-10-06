@@ -68,7 +68,7 @@ export function parseLabeled(text, labels, { start = null, stop = null } = {}) {
   return out;
 }
 
-const CONTACT_TEXT = /お問い?合わせ|お問合わせ|問い合わせ|ご相談|contact|inquiry|enquiry/i;
+const CONTACT_TEXT = /お問い?合わせ|お問合わせ|問い合わせ|ご相談|お客様相談|お客様窓口|相談窓口|カスタマーセンター|カスタマーサポート|contact|inquiry|enquiry/i;
 const CONTACT_HREF = /contact|inquiry|enquiry|toiawase|otoiawase|form|support/i;
 const PROFILE_TEXT = /会社概要|会社情報|企業情報|企業概要|会社案内|運営会社|会社紹介|about\s*us|company|corporate|about/i;
 const PROFILE_HREF = /company|corporate|about|gaiyo|overview|profile|outline|info/i;
@@ -124,3 +124,53 @@ export function findProfileLinks(anchors, baseUrl) {
   const seen = new Set();
   return scored.sort((x, y) => y.score - x.score).filter((x) => (seen.has(x.url) ? false : seen.add(x.url)));
 }
+
+const FORM_WORDS = /お名前|氏名|メールアドレス|電話番号|お問い合わせ内容|お問合せ内容|ご質問|送信|入力内容|必須/g;
+const MAIL = /[\w.+-]+@[\w-]+\.[\w.-]+/;
+const lineSet = (t) => new Set((t ?? '').split('\n').map((l) => l.trim()).filter(Boolean));
+
+/** 2つのページ本文が(ほぼ)同じか。存在しないパスでトップページを返すサイト(ソフト404)の検出用 */
+export function nearlySame(a, b) {
+  const x = lineSet(a);
+  const y = lineSet(b);
+  if (!x.size || !y.size) return false;
+  let inter = 0;
+  for (const l of x) if (y.has(l)) inter++;
+  return inter / (x.size + y.size - inter) >= 0.8;
+}
+
+/**
+ * 問い合わせページとして妥当か。メニューにある「お問い合わせ」の文字だけでは足りない。
+ *  - 推測パス(guess=true)は、リダイレクトされていない・トップページと同一でない・フォーム語が2種以上(またはメールアドレス)
+ *  - 実際にリンクされていたページは、トップページと同一でなく、フォーム語が1種以上であればよい
+ */
+export function looksLikeContactPage(snap, { requested, topText, guess = false }) {
+  const text = snap?.text ?? '';
+  if (guess && snap?.finalUrl && requested) {
+    const norm = (u) => new URL(u).pathname.replace(/\/$/, '');
+    if (norm(snap.finalUrl) !== norm(requested)) return false;
+  }
+  if (topText && nearlySame(text, topText)) return false;
+  const kinds = new Set(text.match(FORM_WORDS) ?? []).size;
+  if (guess) return kinds >= 2 || (MAIL.test(text) && /お問い?合わせ|問合せ|contact/i.test(text));
+  // 実際にリンクされていたページ: フォームが埋め込み(iframe等)で本文に項目名が出ないことが多いため、問い合わせに関する語があれば可
+  return kinds >= 1 || /お問い?合わせ|問合せ|contact|相談|フォーム|窓口/i.test(text);
+}
+
+/** ブランド名(ドメインの中核)が同じか。例: houseofrose.co.jp と houseofrose.jp */
+export function coreOfHost(host) {
+  const labels = (host ?? '').replace(/^www\./, '').split('.');
+  const suffix2 = ['co.jp', 'or.jp', 'ne.jp', 'go.jp', 'ac.jp', 'ed.jp', 'co.uk'];
+  const tail = labels.slice(-2).join('.');
+  const rest = suffix2.includes(tail) ? labels.slice(0, -2) : labels.slice(0, -1);
+  return rest[rest.length - 1] ?? '';
+}
+export const sameBrand = (a, b) => {
+  try {
+    const x = coreOfHost(new URL(a).hostname);
+    const y = coreOfHost(new URL(b).hostname);
+    return x.length >= 4 && x === y;
+  } catch {
+    return false;
+  }
+};

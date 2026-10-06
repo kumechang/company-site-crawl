@@ -1,4 +1,4 @@
-import { extractEmployees, extractAddress, findContactLinks, findProfileLinks } from './lib/extract.js';
+import { extractEmployees, extractAddress, findContactLinks, findProfileLinks, looksLikeContactPage, sameBrand } from './lib/extract.js';
 import { addEvidence, addSource, bestOfficial } from './lib/model.js';
 import { domainOf } from './lib/util.js';
 import { clip, flatten } from './lib/util.js';
@@ -9,12 +9,12 @@ const FORM_HOSTS = /(forms\.gle|docs\.google\.com\/forms|tayori\.com|form\.run|f
 const CONTACT_BODY = /お問い?合わせ|お問合せ|問合せ|contact|inquiry|ご相談|フォーム|送信|メールアドレス/i;
 const FALLBACK_PATHS = ['/contact/', '/contact', '/inquiry/', '/inquiry', '/contact.html', '/contact-us/', '/form/', '/toiawase/'];
 
-/** 問い合わせページが実在し、問い合わせ用のページらしいか確認 */
-async function verifyContact(url, crawler) {
+/** 問い合わせページとして妥当か確認（メニューの「お問い合わせ」の文字だけでは通さない） */
+async function verifyContact(url, crawler, topText) {
   if (FORM_HOSTS.test(url)) return { ok: true, how: '外部フォームサービス(公式サイトからリンク)' };
   try {
     const snap = await crawler.snapshot(url);
-    return CONTACT_BODY.test(snap.text) ? { ok: true, how: 'ページ実在を確認' } : { ok: false };
+    return looksLikeContactPage(snap, { requested: url, topText }) ? { ok: true, how: 'ページ実在とフォームの記述を確認' } : { ok: false };
   } catch (e) {
     if (e instanceof RobotsDisallowed) return { ok: true, how: 'リンク検出のみ(robots.txtにより未アクセス)' };
     return { ok: false };
@@ -68,14 +68,16 @@ export async function enrichFromOfficial(c, { crawler, log }) {
   const sameDomain = (u) => {
     const a = domainOf(u) ?? '';
     const b = domainOf(c.officialUrl) ?? '';
-    return a === b || a.endsWith('.' + b) || b.endsWith('.' + a);
+    const same = (x, y) => x === y || x.endsWith('.' + y) || y.endsWith('.' + x);
+    // 同じブランドの別ドメイン(houseofrose.jp 等)や、公式URLのリダイレクト先(corp.kose.co.jp → koseholdings.co.jp)も公式の問い合わせ先
+    return same(a, b) || sameBrand(u, c.officialUrl) || (top.finalUrl && (same(a, domainOf(top.finalUrl) ?? '') || sameBrand(u, top.finalUrl)));
   };
   const all = pages
     .flatMap(({ url, snap }) => findContactLinks(snap.anchors, url).map((l) => ({ ...l, from: url })))
     .filter((l) => (sameDomain(l.url) || FORM_HOSTS.test(l.url)) && !/\/(support|faq|help)(\/|$)/i.test(new URL(l.url).pathname));
   all.sort((a, b) => b.score - a.score);
   for (const l of all.slice(0, 3)) {
-    const v = await verifyContact(l.url, crawler);
+    const v = await verifyContact(l.url, crawler, top.text);
     if (v.ok) {
       addEvidence(c, 'contactUrl', l.url, { source: src, url: l.from, snippet: `リンク文言「${l.text}」/ ${v.how}` });
       return;
@@ -86,8 +88,9 @@ export async function enrichFromOfficial(c, { crawler, log }) {
     const u = origin + path;
     try {
       const snap = await crawler.snapshot(u, { retries: 0 });
-      if (CONTACT_BODY.test(snap.text)) {
-        addEvidence(c, 'contactUrl', u, { source: src, url: u, snippet: `トップにリンクが見つからず、一般的なパス(${path})の実在を確認` });
+      // 存在しないパスでトップページを返すサイト(ソフト404)を除くため、リダイレクト・トップとの同一性・フォーム語まで確認する
+      if (looksLikeContactPage(snap, { requested: u, topText: top.text, guess: true })) {
+        addEvidence(c, 'contactUrl', u, { source: src, url: u, snippet: `トップにリンクが見つからず、一般的なパス(${path})にフォームの記述のあるページが実在` });
         return;
       }
     } catch {}

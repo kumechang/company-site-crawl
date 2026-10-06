@@ -81,6 +81,7 @@ export const CATEGORIES = {
   },
   sns_agency: {
     label: 'SNS運用代行',
+    maxEmployees: 2000, // 広告代理店と同じく「ベンチャー・中堅」= 2,000名以下（メンバーズ3,000名超を除くため。ユーザー指摘）
     match: { any: ['SNS運用', 'SNSアカウント運用', 'SNSマーケティング', 'Instagram運用', 'TikTok運用', 'SNS代行', 'SNSコンサル', 'SNS広告'] },
     green: ['https://www.green-japan.com/search/area/13/industry/100125'],
     wantedly: ['SNS運用代行', 'SNSマーケティング'],

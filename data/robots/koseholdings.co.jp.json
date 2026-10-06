@@ -1,6 +1,6 @@
 {
- "origin": "https://corp.kose.co.jp",
- "fetchedAt": "2026-10-06T13:13:41.688Z",
+ "origin": "https://koseholdings.co.jp",
+ "fetchedAt": "2026-10-06T13:16:28.820Z",
  "status": 200,
  "text": "User-agent: *\nAllow: /\nDisallow: /ja/search/\nDisallow: /en/search/\n"
 }

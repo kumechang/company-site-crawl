@@ -1,0 +1,6 @@
+{
+ "origin": "https://corp.bitstar.tokyo",
+ "fetchedAt": "2026-10-06T13:12:02.479Z",
+ "status": 200,
+ "text": "User-agent: GPTBot\nUser-agent: ClaudeBot\nUser-agent: Google-Extended\nUser-agent: Applebot-Extended\nUser-agent: Meta-ExternalAgent\nUser-agent: FacebookBot\nUser-agent: Bytespider\nUser-agent: CCBot\nUser-agent: cohere-ai\nDisallow: /"
+}
