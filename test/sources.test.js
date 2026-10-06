@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import * as salesnow from '../src/sources/salesnow.js';
 import * as boxil from '../src/sources/boxil.js';
+import * as prtimes from '../src/sources/prtimes.js';
 import { consolidate } from '../src/lib/merge.js';
 import { newCompany, addEvidence } from '../src/lib/model.js';
 
@@ -64,4 +65,20 @@ test('従業員数は公式サイトがSalesNow推定より優先される', () 
   const r = consolidate(c);
   assert.equal(r.employees, 60);
   assert.equal(r.employeesSource, 'official');
+});
+
+test('PR TIMES: 完全一致の企業のみ採用', () => {
+  const snap = { anchors: [
+    { href: 'https://prtimes.jp/main/html/searchrlp/company_id/111', text: '株式会社エクスクリエ2' },
+    { href: 'https://prtimes.jp/main/html/searchrlp/company_id/222', text: '株式会社エクスクリエ' },
+  ] };
+  assert.equal(prtimes.pickCompany(snap, '株式会社エクスクリエ'), 'https://prtimes.jp/main/html/searchrlp/company_id/222');
+  assert.equal(prtimes.pickCompany(snap, '株式会社別会社'), null);
+});
+
+test('PR TIMES 企業情報', () => {
+  const text = '企業情報\n基本情報\n業種\n情報通信\n本社所在地\n東京都中央区日本橋2-11-2\n太陽生命日本橋ビル18階\n電話番号\n03-0000\n代表者名\n大高\n設立\n2008年03月\nURL\nhttps://www.tm-nets.com/\n詳細情報\nX';
+  const r = prtimes.parseCompany({ text });
+  assert.equal(r.address, '東京都中央区日本橋2-11-2 太陽生命日本橋ビル18階');
+  assert.equal(r.url, 'https://www.tm-nets.com/');
 });

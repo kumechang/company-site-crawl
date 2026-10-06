@@ -12,10 +12,14 @@ import * as wantedly from './sources/wantedly.js';
 import * as imitsu from './sources/imitsu.js';
 import * as boxil from './sources/boxil.js';
 import * as salesnow from './sources/salesnow.js';
+import * as prtimes from './sources/prtimes.js';
 
 const SALESNOW_INDEX_URLS = [
   'https://salesnow.jp/db/industries/advertising/subIndustries/internet-advertising-agency',
   'https://salesnow.jp/db/industries/advertising/subIndustries/advertising-agency',
+  'https://salesnow.jp/db/industries/consulting/subIndustries/web-marketing-consulting',
+  'https://salesnow.jp/db/industries/consulting/subIndustries/advertising-operation-consulting',
+  'https://salesnow.jp/db/industries/consulting/subIndustries/promotion-consulting',
 ];
 
 const SOURCES = { green, wantedly, imitsu, boxil };
@@ -112,6 +116,16 @@ async function enrich() {
     let n = 0;
     for (const c of lacking) if (await salesnow.enrichFromIndex(c, index, { crawler, log })) n++;
     log(`  → ${n}/${lacking.length} 社が一致`);
+    store.mergeByDomain();
+    store.save();
+  }
+  // 1b) まだ公式URLが無い会社は PR TIMES の企業ページ(会社名が完全一致した場合のみ)で解決
+  const noUrl = store.all().filter((c) => !c.officialUrl && !c.evidence.some((e) => e.source === 'prtimes'));
+  if (noUrl.length) {
+    log(`# PR TIMES で公式URLを解決: ${noUrl.length} 社`);
+    let n = 0;
+    for (const c of noUrl) if (await prtimes.resolve(c, { crawler, log })) n++;
+    log(`  → ${n}/${noUrl.length} 社の公式URLを解決`);
     store.mergeByDomain();
     store.save();
   }

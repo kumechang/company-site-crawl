@@ -34,7 +34,7 @@ export async function discover(q, ctx) {
       continue;
     }
     if (!info.name) continue;
-    const c = ctx.upsert(info.name);
+    const c = ctx.upsert(info.name.replace(/_\d{4,}$/, '')); // アイミツは社名末尾に識別子(_123456)が付く場合がある
     addSource(c, id, s.url);
     c.seedCategories.push(q.category);
     const src = { source: id, url: s.url };

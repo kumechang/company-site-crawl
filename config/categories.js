@@ -57,7 +57,7 @@ export const SITES = {
   salesnow: { name: 'SalesNow', status: 'enrich', note: '会社名検索が無いため索引化して補完用に使う(発見には使わない)' },
   bizmaps: { name: 'BIZMAPS', status: 'blocked', note: '403 (サーバー側でIP拒否)' },
   indeed: { name: 'Indeed', status: 'blocked', note: 'Cloudflare確認画面。規約上もスクレイピング禁止' },
-  prtimes: { name: 'PR TIMES', status: 'todo' },
+  prtimes: { name: 'PR TIMES', status: 'enrich', note: '会社名の完全一致で公式URL・本社所在地を補完(発見には未使用)' },
   kyujinbox: { name: '求人ボックス', status: 'todo' },
   doda: { name: 'doda', status: 'todo' },
   mynavi: { name: 'マイナビ転職', status: 'todo' },
