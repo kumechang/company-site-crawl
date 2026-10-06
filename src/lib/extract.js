@@ -8,15 +8,16 @@ const PREF = '(?:東京都|北海道|京都府|大阪府|[一-龥]{2,3}県)';
  */
 export function extractEmployees(text) {
   const t = nfkc(flatten(text));
-  const re = /(従業員数|社員数|スタッフ数|人員数|職員数|従業員|社員)(?:（[^）]*）|\([^)]*\))?([\s|:：]*)(?:約|およそ)?\s*(?:正社員\s*)?([0-9][0-9,]*)(?![0-9,])\s*(?:[〜~～-]\s*([0-9][0-9,]*)(?![0-9,]))?\s*(名|人)?(?!\s*年)(?!\s*から)/g;
+  const re = /(従業員数|社員数|スタッフ数|人員数|職員数|従業員|社員)(?:（[^）]*）|\([^)]*\))?([\s|:：]*)(?:約|およそ)?\s*(?:正社員\s*)?([0-9][0-9,]*)(?![0-9,])(?![.．]\s*[^\s0-9])\s*(?:[〜~～-]\s*([0-9][0-9,]*)(?![0-9,]))?\s*(名|人)?(?!\s*年)(?!\s*から)/g;
   for (const m of t.matchAll(re)) {
     const label = m[1];
-    // 「従業員0人からスタート」のような文章中の語を拾わないよう、「数」の無いラベルは区切り文字を必須にする
-    if (!label.endsWith('数') && !m[2]) continue;
+    const strong = label.endsWith('数');
+    // 「従業員」「社員」だけのラベルは、文章・見出し・番号付き箇条書きの誤検出が多いため、区切り文字と単位(名/人)を必須にする
+    if (!strong && (!m[2] || !m[5])) continue;
     const lo = parseInt(m[3].replace(/,/g, ''), 10);
     if (!Number.isFinite(lo) || lo < 1 || lo > 500000) continue;
     const raw = clip(t.slice(m.index, m.index + m[0].length + 24), 60);
-    return { value: lo, raw, approx: Boolean(m[4]) || /約/.test(m[0]) };
+    return { value: lo, raw, approx: Boolean(m[4]) || /約/.test(m[0]), strong };
   }
   return null;
 }

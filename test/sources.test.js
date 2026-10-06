@@ -319,3 +319,14 @@ test('AgencyHubの規模は推定扱い(閾値付近は断定しない)', () => 
   assert.equal(r.emp20, null);
   assert.ok(r.notes.some((n) => n.includes('AgencyHub')));
 });
+
+test('住所が一致しない情報源の従業員数は使わない(同名の別会社)', () => {
+  const c = newCompany('株式会社アクシス');
+  addEvidence(c, 'address', '東京都港区三田5-8-8', { source: 'official', url: 'u1' });
+  addEvidence(c, 'address', '鳥取県米子市夜見町3024-37', { source: 'salesnow', url: 'u2' });
+  addEvidence(c, 'employees', 1, { source: 'salesnow', url: 'u2', snippet: '' });
+  const r = consolidate(c);
+  assert.equal(r.employees, null);
+  assert.notEqual(r.status, '除外');
+  assert.ok(r.notes.some((n) => n.includes('不採用')));
+});

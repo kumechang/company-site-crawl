@@ -53,9 +53,10 @@ export async function enrichFromOfficial(c, { crawler, log }) {
     }
   }
 
+  const emps = pages.map(({ url, snap }) => ({ url, emp: extractEmployees(snap.text) })).filter((x) => x.emp);
+  const anyStrong = emps.some((x) => x.emp.strong);
+  for (const { url, emp } of emps) if (!anyStrong || emp.strong) addEvidence(c, 'employees', emp.value, { source: src, url, snippet: emp.raw });
   for (const { url, snap } of pages) {
-    const emp = extractEmployees(snap.text);
-    if (emp) addEvidence(c, 'employees', emp.value, { source: src, url, snippet: emp.raw });
     const addr = extractAddress(snap.text);
     if (addr?.labeled) addEvidence(c, 'address', addr.address, { source: src, url, snippet: addr.address });
     else if (addr) addEvidence(c, 'address', addr.address, { source: src, url, snippet: addr.address });

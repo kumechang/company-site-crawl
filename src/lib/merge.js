@@ -24,9 +24,9 @@ const rank = (field, source) => {
 const byField = (c, field) => c.evidence.filter((e) => e.field === field);
 
 /** 優先順位の最上位の証拠を採用し、他情報源との食い違いも返す */
-export function pick(c, field, { valid = () => true, same = (a, b) => a === b } = {}) {
+export function pick(c, field, { valid = () => true, same = (a, b) => a === b, exclude = () => false } = {}) {
   const ev = byField(c, field)
-    .filter((e) => valid(e.value))
+    .filter((e) => valid(e.value) && !exclude(e))
     .sort((a, b) => rank(field, a.source) - rank(field, b.source));
   if (!ev.length) return null;
   const best = ev[0];
@@ -36,8 +36,17 @@ export function pick(c, field, { valid = () => true, same = (a, b) => a === b } 
 
 /** 統合してレポート用の1レコードにする */
 export function consolidate(c, { minEmployees = 20 } = {}) {
-  const emp = pick(c, 'employees', { valid: (v) => Number.isFinite(v) });
   const addr = pick(c, 'address', { same: (a, b) => isTokyoAddress(a) === isTokyoAddress(b) });
+  // 同名の別会社を引いた可能性: その情報源自身の住所が、採用した住所と都道府県で食い違うなら、その情報源の従業員数は使わない
+  const prefOf = (a) => (nfkc(a ?? '').replace(/^[\s　]*(?:〒\s*)?\d{3}[-ー−]?\d{4}[\s　]*/, '').match(/^(東京都|北海道|京都府|大阪府|[一-龥]{2,3}県)/) ?? [])[1] ?? null;
+  const finalPref = addr ? prefOf(addr.value) : null;
+  const rejected = new Set(
+    c.evidence
+      .filter((e) => e.field === 'address' && finalPref && prefOf(e.value) && prefOf(e.value) !== finalPref)
+      .map((e) => e.source)
+      .filter((src) => src !== addr?.source)
+  );
+  const emp = pick(c, 'employees', { valid: (v) => Number.isFinite(v), exclude: (e) => rejected.has(e.source) });
   const members = pick(c, 'wantedlyMembers');
   const contact = pick(c, 'contactUrl');
   const off = bestOfficial(c);
@@ -72,6 +81,7 @@ export function consolidate(c, { minEmployees = 20 } = {}) {
   if (addr?.conflicts.length) notes.push(`所在地(東京/他)が情報源間で不一致`);
   if (!cats.length && c.seedCategories.length) notes.push(`カテゴリは検索元の推定のみ: ${[...new Set(c.seedCategories)].map((k) => CATEGORIES[k]?.label).join('/')}`);
   if (off && typeof off === 'object' && off.others.length) notes.push(`公式URL候補が複数: ${[off.url, ...off.others].join(' , ')}`);
+  if (rejected.size && byField(c, 'employees').some((e) => rejected.has(e.source))) notes.push(`住所が一致しない情報源の従業員数は不採用(同名の別会社の可能性): ${[...rejected].join(', ')}`);
   if (estimateOnly) notes.push(`従業員数は${{ agencyhub: 'AgencyHubの規模レンジ下限', gbizinfo: 'Gビズインフォ(政府保有情報・古い可能性)の値' }[emp.source] ?? 'SalesNowの推定値'}(${emp.value}名)${nearThreshold ? '・閾値付近のため要確認' : ''}`);
   if (emp == null && members) notes.push(`Wantedlyメンバー数 ${members.value}人(参考・従業員数とは別物)`);
 

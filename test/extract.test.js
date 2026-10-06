@@ -26,6 +26,14 @@ test('従業員数: 沿革などの文章中の語は拾わない', () => {
   assert.equal(extractEmployees('従業員 | 45名').value, 45);
   assert.equal(extractEmployees('社員数：30人').value, 30);
 });
+test('従業員数: 番号付き見出しや単位のない「社員」を拾わない', () => {
+  assert.equal(extractEmployees('社員 | 2. 中途・新卒社員 | 1. 全雇用形態 | 4'), null);
+  assert.equal(extractEmployees('社員インタビュー | 3 | 先輩社員'), null);
+  const r = extractEmployees('従業員数 | 213名 ※2024年4月現在');
+  assert.equal(r.value, 213);
+  assert.equal(r.strong, true);
+  assert.equal(extractEmployees('従業員 | 45名').strong, false);
+});
 test('住所: ラベル付き', () => {
   const a = extractAddress('本社所在地 | 〒150-0001 東京都渋谷区神宮前1-2-3 ○○ビル5F | TEL 03-0000-0000');
   assert.equal(a.address, '東京都渋谷区神宮前1-2-3 ○○ビル5F');
