@@ -24,7 +24,10 @@
 対応済み: 従業員数の確認条件、公式サイト巡回の強化(別ドメイン・代替公式URL・概要ページ最大4)、問い合わせURLの選別(`contactKind`)、業種の主業判定(`INDUSTRY_CORE` / `COMPETING_BUSINESS`)、サンプルを検証OKのみに。
 
 ## 未完了・次にやること
-1. **再取得の完了**: 全社の公式証拠を消して取り直す処理(enrich → verify → export)の途中だった。データは git 管理外のため、新しいセッションでは `node src/cli.js enrich && node src/cli.js verify && node src/cli.js export` を最初からやり直す必要がある（キャッシュも無い）。
+1. **再取得の完了**: 全社の公式証拠を消して取り直す処理(enrich → verify → export)の途中。
+   - 引き継ぎ用に **`data/companies.json` のスナップショットを作業ブランチ `claude/youthful-wright-2t11kw` にコミット済み**（通常は git 管理外のため `git add -f`。main には入れていない）。393社中296社は新ロジックで公式サイトを取り直し済み、残り97社は公式の証拠が無い状態、検証(verify)は未実施。
+   - 新しいセッションでは、このブランチを取得してから `node src/cli.js enrich && node src/cli.js verify && node src/cli.js export` を実行すれば、未完了の97社だけ続きから取り直される（`enrich` は公式の証拠が無い会社だけが対象）。キャッシュ(`data/cache/`)は無いので、取り直し分は再取得になる。
+   - 作業が進んだら `companies.json` を更新してコミットし直すこと（このファイルが唯一の蓄積データ）。
 2. **カテゴリごとの検証OK件数の確認**: 10件に届かなければ `node src/cli.js sample --ok 12 --categories <cat>` で追加の媒体を回す。追加済みで未取得のリスト: 広告代理店(グリップ全体・デジトレ・化粧品向け記事)、SNS運用代行(比較記事12本・SNS仲人・デジタル化の窓口21選・グリップ全国)、インフルエンサー(BOXILマガジン)。
 3. **EDINET**: ユーザーがAPIキーを取得済み。環境変数 `EDINET_API_KEY` に登録してもらう（新しいセッションから有効）。上場企業の従業員数を有価証券報告書から取る処理が未実装（EDINETコード一覧 → 最新の有報 → 従業員数）。有報は検証基準で一次情報。
 4. **会社情報のDB型をさらに**: doda(会社ページは取れるが検索はrobots禁止)、学情・リクルートエージェント(会社名検索なし)は、URLを渡されれば詳細ページから取れる。
@@ -33,5 +36,5 @@
 - **同時に動かす `cli.js` は1つだけ**（`data/companies.json` を上書きするため）。
 - `pkill -f` はシェア自身も落とすことがある。PID を指定して止める。
 - robots.txt は fail-closed(取得できなければ不許可)。ボット対策の回避はしない。BIZMAPS・Indeed等は対象外。
-- `data/robots/*.json` は記録として git 管理。`data/companies.json`・`data/cache/`・CSVは git 管理外。
+- `data/robots/*.json` は記録として git 管理。`data/companies.json` は通常 git 管理外(`.gitignore`)だが、引き継ぎ用に作業ブランチへ `git add -f` でコミットしている。`data/cache/`・CSVは git 管理外。
 - 実装済み媒体の状態は `config/categories.js` の `SITES`、`node src/cli.js robots` で robots 許可状況の一覧が出る。
