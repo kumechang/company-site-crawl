@@ -163,6 +163,33 @@ export function findProfileLinks(anchors, baseUrl) {
   return scored.sort((x, y) => y.score - x.score).filter((x) => (seen.has(x.url) ? false : seen.add(x.url)));
 }
 
+const SERVICE_TEXT = /事業内容|事業紹介|事業案内|サービス|service|ソリューション|solution|製品|商品|product|ブランド|brand|取扱|取り扱い|実績|事例|business/i;
+
+/** アンカー一覧から事業・サービス紹介ページ候補を探す（同一サイト限定、スコア降順）。業種の取り扱い確認用 */
+export function findServiceLinks(anchors, baseUrl) {
+  const scored = [];
+  for (const a of anchors ?? []) {
+    if (!a.href || NOISE_HREF.test(a.href) || !(sameSite(a.href, baseUrl) || sameBrand(a.href, baseUrl))) continue;
+    const text = nfkc(a.text ?? '');
+    if (/採用|recruit|career|news|ニュース|お知らせ|blog|プライバシー|privacy|お問い?合わせ|contact|\bir\b|サイトマップ|利用規約/i.test(text)) continue;
+    let path;
+    try {
+      path = new URL(a.href).pathname;
+    } catch {
+      continue;
+    }
+    if (path === '/' || path === '') continue;
+    const tHit = SERVICE_TEXT.test(text);
+    const hHit = /\/(service|services|business|solution|solutions|product|products|brand|works?)(\/|$)/i.test(path);
+    if (!tHit && !hHit) continue;
+    let score = (tHit ? 2 : 0) + (hHit ? 2 : 0);
+    if (/事業内容|サービス(?:一覧|紹介)?$/.test(text)) score += 1;
+    scored.push({ url: a.href.split('#')[0], text: clip(text, 30), score });
+  }
+  const seen = new Set();
+  return scored.sort((x, y) => y.score - x.score).filter((x) => (seen.has(x.url) ? false : seen.add(x.url)));
+}
+
 const FORM_WORDS = /お名前|氏名|メールアドレス|電話番号|お問い合わせ内容|お問合せ内容|ご質問|送信|入力内容|必須/g;
 const MAIL = /[\w.+-]+@[\w-]+\.[\w.-]+/;
 const lineSet = (t) => new Set((t ?? '').split('\n').map((l) => l.trim()).filter(Boolean));

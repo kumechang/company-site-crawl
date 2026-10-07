@@ -12,7 +12,7 @@
 1. **収集** (`discover`): 求人媒体・比較サイト・DB・比較記事の一覧から会社名を集める。媒体の優先順位は `config/categories.js` の `ORDER`。
 2. **補完** (`enrich`): SalesNow索引 → PR TIMES → OpenWork(公式URL) → 公式サイト巡回 → EDINET(有報) → Gビズインフォ → マイナビ(新卒) → キャリタス → OpenWork(社員数レンジ)。
 3. **判定** (`src/lib/merge.js`): 項目ごとに情報源の優先順位で採用。OK = 公式URL・東京本社・20名以上・カテゴリ・問い合わせURLが揃い、**従業員数が「確認済み」**。
-4. **自己検証** (`verify`, `src/verify.js`): 判定OKの会社を4観点（業種・従業員数・問い合わせURL・企業取り違え）で OK/要確認/NG に。
+4. **自己検証**（業種は「主業でなくても、会社としてそのカテゴリを取り扱っていればOK」: 自社説明に語があるか、本文・事業ページに複数回あればOK。1回だけの言及・一般語のみは要確認、どこにも無ければNG） (`verify`, `src/verify.js`): 判定OKの会社を4観点（業種・従業員数・問い合わせURL・企業取り違え）で OK/要確認/NG に。
 5. **出力** (`export`): `data/companies.csv`(全社), `data/sample.csv`(4観点すべてOKの会社のみ), `data/sample_review.csv`(要確認・NGの理由つき)。
 
 ### 従業員数が「確認済み」になる条件 (`src/lib/employees.js`)

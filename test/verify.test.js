@@ -9,16 +9,23 @@ test('業種: 自社説明にカテゴリ語があり主業が別でなければ
   assert.equal(r.result, 'OK');
 });
 
-test('業種: DX・SaaS等が主業の会社は要確認', () => {
+test('業種: 主業が別でも、自社説明にカテゴリ語があれば取り扱いありとしてOK', () => {
   const r = checkIndustry('ad_agency', { top: top('Speee | DX・SaaS', 'デジタルトランスフォーメーション DXとSaaS、コンサルティング。広告事業も展開。'), officialText: '' });
-  assert.equal(r.result, '要確認');
-  assert.match(r.comment, /主業が別/);
+  assert.equal(r.result, 'OK');
+  assert.match(r.comment, /主業でない可能性/);
 });
 
-test('業種: 本文にしか語が無い場合は要確認、どこにも無ければNG', () => {
-  const body = '会社概要 当社は不動産の仲介を行います。' + 'x'.repeat(800) + ' 事業の一つとして広告も扱います。';
-  assert.equal(checkIndustry('ad_agency', { top: top('株式会社B', body), officialText: '' }).result, '要確認');
+test('業種: 本文に複数回あればOK、1回だけの言及・一般語のみは要確認、どこにも無ければNG', () => {
+  const pad = '会社概要 当社は不動産の仲介を行います。' + 'x'.repeat(800);
+  const multi = pad + ' ネット広告の運用を行います。インターネット広告の事例も掲載。';
+  const r = checkIndustry('ad_agency', { top: top('株式会社B', multi), officialText: '' });
+  assert.equal(r.result, 'OK');
+  assert.match(r.comment, /本文に.*複数/);
+  assert.equal(checkIndustry('ad_agency', { top: top('株式会社B', pad + ' ネット広告も扱います。'), officialText: '' }).result, '要確認');
+  assert.equal(checkIndustry('ad_agency', { top: top('株式会社B', pad + ' 事業の一つとして広告も扱います。'), officialText: '' }).result, '要確認');
   assert.equal(checkIndustry('ad_agency', { top: top('株式会社C', '家具・インテリアの販売'), officialText: '' }).result, 'NG');
+  // 事業ページ(extraText)に記述があれば取り扱いを確認できる
+  assert.equal(checkIndustry('sns_agency', { top: top('株式会社F', '総合マーケティング'), officialText: '', extraText: 'SNS運用代行・SNSアカウント運用を提供' }).result, 'OK');
 });
 
 test('業種: 化粧品は直販(D2C/公式通販)の記述が無ければ要確認', () => {
@@ -85,4 +92,15 @@ test('worst', () => {
   assert.equal(worst('OK', '要確認', 'OK（リダイレクト）'), '要確認');
   assert.equal(worst('OK', 'NG', '要確認'), 'NG');
   assert.ok(selfDescription({ title: 'A', text: 'B', meta: 'C' }).includes('ABC') === false || true);
+});
+
+import { findServiceLinks } from '../src/lib/extract.js';
+
+test('事業・サービスページのリンク候補', () => {
+  const a = (text, href) => ({ text, href });
+  const links = findServiceLinks(
+    [a('サービス', 'https://example.co.jp/service/'), a('採用情報', 'https://example.co.jp/recruit/'), a('事業内容', 'https://example.co.jp/business'), a('TOP', 'https://example.co.jp/'), a('サービス', 'https://other.com/service/'), a('お問い合わせ', 'https://example.co.jp/contact/')],
+    'https://example.co.jp/'
+  );
+  assert.deepEqual(links.map((l) => l.url).sort(), ['https://example.co.jp/business', 'https://example.co.jp/service/']);
 });

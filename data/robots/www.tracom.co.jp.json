@@ -1,6 +1,6 @@
 {
  "origin": "https://www.tracom.co.jp",
- "fetchedAt": "2026-10-07T01:34:37.171Z",
+ "fetchedAt": "2026-10-07T02:54:43.989Z",
  "status": 200,
  "text": "User-agent: *\nDisallow: /*.pdf$\n\nSitemap: https://www.tracom.co.jp/sitemap_index.xml\n"
 }
