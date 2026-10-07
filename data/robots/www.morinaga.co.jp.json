@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.morinaga.co.jp",
+ "fetchedAt": "2026-10-07T15:08:19.047Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /faq/faq.html\n\nSitemap:https://www.morinaga.co.jp/sitemap.xml\nSitemap:https://www.morinaga.co.jp/direct-store/sitemap.xml\n"
+}

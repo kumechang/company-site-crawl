@@ -1,0 +1,6 @@
+{
+ "origin": "https://cw-consulting.co.jp",
+ "fetchedAt": "2026-10-07T15:07:30.140Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /contents/wp-admin/\nAllow: /contents/wp-admin/admin-ajax.php\n\nSitemap: https://cw-consulting.co.jp/sitemap.xml\nSitemap: https://cw-consulting.co.jp/sitemap.rss\n"
+}
