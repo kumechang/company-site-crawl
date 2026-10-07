@@ -1,6 +1,6 @@
 {
  "origin": "https://www.cyberagent.co.jp",
- "fetchedAt": "2026-10-06T23:44:07.266Z",
+ "fetchedAt": "2026-10-07T01:39:13.105Z",
  "status": 200,
  "text": "User-agent: *\nAllow: /\n\nUser-agent: Amazonbot\nDisallow: /\n\nUser-agent: SemrushBot\nDisallow: /\n\nUser-agent: AhrefsBot\nDisallow: /\n\nUser-agent: MJ12bot\nDisallow: /\n\nUser-agent: Bytespider\nDisallow: /\n\nUser-agent: PetalBot\nDisallow: /\n\nUser-agent: YandexBot\nDisallow: /\n\nUser-agent: meta-externalagent\nDisallow: /\n\nUser-Agent: baiduspider\nDisallow: /\n\nUser-agent: meta-webindexer\nDisallow: /\n\nUser-agent: *\nDisallow: /careers/students/people/?*search\n\nUser-agent: GPTBot\nCrawl-delay: 10\n\nUser-agent: ChatGPT-User\nCrawl-delay: 10\n\nUser-agent: bingbot\nCrawl-delay: 10\n\nUser-agent: facebookexternalhit\nCrawl-delay: 10\n"
 }

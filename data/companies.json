@@ -1036,7 +1036,34 @@
   "seedCategories": [
    "sns_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "sns_agency": {
+     "result": "NG",
+     "comment": "公式の自社説明は「人材/求人/採用支援」が中心で、SNS運用代行を示す語が無い。主業は別(人材・求人)",
+     "after": "主業は 人材・求人・採用支援 の可能性"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "公式サイトで213名（2024年4月時点）",
+    "after": 213,
+    "asOf": "2024年4月",
+    "source": "official"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.tracom.co.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都港区)がprtimesと一致",
+    "after": "https://www.tracom.co.jp/"
+   }
+  }
  },
  {
   "key": "アンドゼン",
@@ -1195,7 +1222,39 @@
    "sns_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "influencer_agency": {
+     "result": "OK",
+     "comment": "公式の自社説明に「インフルエンサー」あり。インフルエンサー事務所として妥当",
+     "after": "インフルエンサー事務所"
+    },
+    "sns_agency": {
+     "result": "OK",
+     "comment": "公式の自社説明に「SNS運用/SNSマーケティング/TikTok運用」あり。SNS運用代行として妥当",
+     "after": "SNS運用代行"
+    }
+   },
+   "employees": {
+    "result": "NG",
+    "comment": "official=23名に対しsalesnow=3名と7.7倍の乖離。別会社の数字の可能性",
+    "after": 23,
+    "asOf": null,
+    "source": "official"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://andthen.co.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都渋谷区)がsalesnow/officialと一致、公式ドメインをboxil/salesnowが示す",
+    "after": "https://andthen.co.jp/"
+   }
+  }
  },
  {
   "key": "onemove",
@@ -2223,7 +2282,34 @@
    "sns_agency",
    "sns_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "sns_agency": {
+     "result": "要確認",
+     "comment": "自社説明にSNS運用代行の語(SNSアカウント運用)と別事業の語(メディア運営)が1つずつあり、主業は要確認",
+     "after": "主業は メディア運営 の可能性"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "公式サイトで50名（2025年11月時点）",
+    "after": 50,
+    "asOf": "2025年11月",
+    "source": "official"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://dgtrends.com/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都新宿区)がaspicと一致、公式ドメインをwebkanji/slidelibが示す",
+    "after": "https://dgtrends.com/"
+   }
+  }
  },
  {
   "key": "アンドブスタ",
@@ -2686,7 +2772,34 @@
    "sns_agency",
    "sns_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "sns_agency": {
+     "result": "NG",
+     "comment": "公式の自社説明は「人材/プラットフォーム/AI/スキルマーケット」が中心で、SNS運用代行を示す語が無い。主業は別(人材・プラットフォーム)",
+     "after": "主業は 人材・プラットフォーム・AI の可能性"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "有価証券報告書(EDINET)で219名（2025年8月時点）。他の情報源(gbizinfo=235)とも概ね整合",
+    "after": 219,
+    "asOf": "2025年8月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://coconala.co.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都渋谷区)がaspic/gbizinfoと一致、公式ドメインをprtimes/meetsmoreが示す",
+    "after": "https://coconala.co.jp/"
+   }
+  }
  },
  {
   "key": "フィシルコム",
@@ -3046,7 +3159,34 @@
    "sns_agency",
    "sns_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "sns_agency": {
+     "result": "要確認",
+     "comment": "自社説明に「SaaS/コンサルティング」が並び、主業が別(SaaS・コンサルティング)の可能性。SNS運用代行は事業の一部かもしれない",
+     "after": "主業は SaaS・コンサルティング の可能性"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "公式サイトで140名",
+    "after": 140,
+    "asOf": null,
+    "source": "official"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.comnico.jp/inquiry-hub"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都港区)がdigimado/buzztan/imitsuと一致、公式ドメインをdigimado/buzztan/webkanji/imitsu/meetsmore/slidelibが示す",
+    "after": "https://www.comnico.jp/"
+   }
+  }
  },
  {
   "key": "statusbrew",
@@ -4391,7 +4531,28 @@
    "sns_agency",
    "sns_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {},
+   "employees": {
+    "result": "OK",
+    "comment": "公式サイトで69名",
+    "after": 69,
+    "asOf": null,
+    "source": "official"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://ayudante.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都千代田区)がdigimado/prtimesと一致",
+    "after": "https://ayudante.jp/"
+   }
+  }
  },
  {
   "key": "socialdog",
@@ -4706,7 +4867,34 @@
   "seedCategories": [
    "sns_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "sns_agency": {
+     "result": "NG",
+     "comment": "公式の自社説明は「AI/ECマーケティング」が中心で、SNS運用代行を示す語が無い。主業は別(AI・ECマーケティング)",
+     "after": "主業は AI・ECマーケティング の可能性"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "有価証券報告書(EDINET)で200名（2026年3月時点）。他の情報源(official=212)とも概ね整合",
+    "after": 200,
+    "asOf": "2026年3月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://itsumo365.co.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都千代田区)がbuzztan/officialと一致",
+    "after": "https://itsumo365.co.jp/"
+   }
+  }
  },
  {
   "key": "ウィズワク",
@@ -5028,7 +5216,34 @@
   "seedCategories": [
    "sns_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "sns_agency": {
+     "result": "要確認",
+     "comment": "自社説明に「DX/コンサルティング/AI/採用支援」が並び、主業が別(DX・コンサルティング)の可能性。SNS運用代行は事業の一部かもしれない",
+     "after": "主業は DX・コンサルティング・AI の可能性"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "公式サイトで42名",
+    "after": 42,
+    "asOf": null,
+    "source": "official"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://umy-game.com/contact/"
+   },
+   "identity": {
+    "result": "要確認",
+    "comment": "公式サイトに社名はあるが、所在地・ドメインを裏付ける別の情報源がなく、同名企業との区別は未確認",
+    "after": "https://umy-game.com/"
+   }
+  }
  },
  {
   "key": "ウブントゥ",
@@ -5516,7 +5731,34 @@
    "sns_agency",
    "sns_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "sns_agency": {
+     "result": "OK",
+     "comment": "公式の自社説明に「SNSマーケティング/SNSアカウント運用/SNS広告」あり。SNS運用代行として妥当",
+     "after": "SNS運用代行"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "有価証券報告書(EDINET)で101名（2025年12月時点）。他の情報源(gbizinfo=140)とも概ね整合",
+    "after": 101,
+    "asOf": "2025年12月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://gaiax-socialmedialab.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都千代田区)がbuzztan/gbizinfo/officialと一致、公式ドメインをbuzztan/webkanji/meetsmore/slidelibが示す / 同名企業が複数ありうる(照合時に既知の住所で絞り込み済み)",
+    "after": "https://gaiax-socialmedialab.jp/"
+   }
+  }
  },
  {
   "key": "カラビナハト",
@@ -6146,7 +6388,34 @@
   "seedCategories": [
    "sns_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "sns_agency": {
+     "result": "要確認",
+     "comment": "自社説明にSNS運用代行の語(Instagram運用)と別事業の語(AI)が1つずつあり、主業は要確認",
+     "after": "主業は AI の可能性"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "公式サイトで179名",
+    "after": 179,
+    "asOf": null,
+    "source": "official"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.sho-san.co.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都杉並区)がbuzztanと一致",
+    "after": "https://www.sho-san.co.jp/"
+   }
+  }
  },
  {
   "key": "stocksun",
@@ -6256,7 +6525,34 @@
   "seedCategories": [
    "sns_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "sns_agency": {
+     "result": "NG",
+     "comment": "公式の自社説明は「AI/採用代行」が中心で、SNS運用代行を示す語が無い。主業は別(AI・採用代行)",
+     "after": "主業は AI・採用代行 の可能性"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "公式サイトで30名",
+    "after": 30,
+    "asOf": null,
+    "source": "official"
+   },
+   "contact": {
+    "result": "要確認",
+    "comment": "IR・株主向けの問い合わせページの可能性(/about/guideline/)。一般の問い合わせ用途か要確認",
+    "after": "https://stock-sun.com/about/guideline/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都新宿区)がbuzztanと一致",
+    "after": "https://stock-sun.com/"
+   }
+  }
  },
  {
   "key": "ホットリンク",
@@ -6510,7 +6806,34 @@
    "sns_agency",
    "sns_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "sns_agency": {
+     "result": "要確認",
+     "comment": "自社説明に「SaaS/コンサルティング/データ分析」が並び、主業が別(SaaS・コンサルティング)の可能性。SNS運用代行は事業の一部かもしれない",
+     "after": "主業は SaaS・コンサルティング・データ分析 の可能性"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "有価証券報告書(EDINET)で119名（2025年12月時点）。他の情報源(gbizinfo=132)とも概ね整合",
+    "after": 119,
+    "asOf": "2025年12月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.hottolink.co.jp/contact-top/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都千代田区)がimitsu/gbizinfo/officialと一致、公式ドメインをwebkanji/imitsu/meetsmore/slidelibが示す / 同名企業が複数ありうる(照合時に既知の住所で絞り込み済み)",
+    "after": "https://www.hottolink.co.jp/"
+   }
+  }
  },
  {
   "key": "グロバルリンクジャパン",
@@ -7584,7 +7907,34 @@
   "seedCategories": [
    "sns_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "sns_agency": {
+     "result": "要確認",
+     "comment": "公式の自社説明(タイトル・冒頭)にSNS運用代行を示す語がなく、関連語(SNS)のみ。主業か要確認",
+     "after": "SNS運用代行"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "公式サイトで59名",
+    "after": 59,
+    "asOf": null,
+    "source": "official"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://conlad.co.jp/contact/"
+   },
+   "identity": {
+    "result": "要確認",
+    "comment": "公式サイトに社名はあるが、所在地・ドメインを裏付ける別の情報源がなく、同名企業との区別は未確認",
+    "after": "https://conlad.co.jp/"
+   }
+  }
  },
  {
   "key": "crevalue",
@@ -8506,7 +8856,34 @@
   "seedCategories": [
    "sns_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "sns_agency": {
+     "result": "NG",
+     "comment": "公式の自社説明は「DX/AI」が中心で、SNS運用代行を示す語が無い。主業は別(DX・AI)",
+     "after": "主業は DX・AI の可能性"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "公式サイトで45名（2026年4月時点）",
+    "after": 45,
+    "asOf": "2026年4月",
+    "source": "official"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.sofcom.co.jp/contact/"
+   },
+   "identity": {
+    "result": "要確認",
+    "comment": "公式サイトに社名はあるが、所在地・ドメインを裏付ける別の情報源がなく、同名企業との区別は未確認",
+    "after": "https://www.sofcom.co.jp/"
+   }
+  }
  },
  {
   "key": "灯白社",
@@ -8814,7 +9191,28 @@
    "sns_agency",
    "sns_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {},
+   "employees": {
+    "result": "OK",
+    "comment": "公式サイトで184名",
+    "after": 184,
+    "asOf": null,
+    "source": "official"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://ysinc.co.jp/contact/"
+   },
+   "identity": {
+    "result": "要確認",
+    "comment": "公式サイトに社名はあるが、所在地・ドメインを裏付ける別の情報源がなく、同名企業との区別は未確認",
+    "after": "https://ysinc.co.jp/"
+   }
+  }
  },
  {
   "key": "ナレッジコミュニケション",
@@ -11768,7 +12166,28 @@
    "sns_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {},
+   "employees": {
+    "result": "要確認",
+    "comment": "edinet=117名に対しofficial=1919名と差がある(16.4倍)。調査時点・集計範囲の違いの可能性",
+    "after": 117,
+    "asOf": "2026年6月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.cm-group.co.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都新宿区)がgreen/prtimes/officialと一致",
+    "after": "https://www.cm-group.co.jp/"
+   }
+  }
  },
  {
   "key": "allads",
@@ -12098,7 +12517,28 @@
    "sns_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {},
+   "employees": {
+    "result": "OK",
+    "comment": "有価証券報告書(EDINET)で564名（2025年6月時点）。他の情報源(green=647, openwork=500, official=647)とも概ね整合",
+    "after": 564,
+    "asOf": "2025年6月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.brainpad.co.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都港区)がgreen/openwork/officialと一致",
+    "after": "https://www.brainpad.co.jp/"
+   }
+  }
  },
  {
   "key": "ambl",
@@ -12482,7 +12922,34 @@
    "ad_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "ad_agency": {
+     "result": "OK",
+     "comment": "公式の自社説明に「ネット広告/インターネット広告/広告事業」あり（他に 人材/AI）。広告代理店として妥当",
+     "after": "広告代理店"
+    }
+   },
+   "employees": {
+    "result": "要確認",
+    "comment": "edinet=2588名に対しgreen=6337名と差がある(2.4倍)。調査時点・集計範囲の違いの可能性",
+    "after": 2588,
+    "asOf": "2025年9月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.cyberagent.co.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都渋谷区)がgreen/grip/officialと一致、公式ドメインをsalesnow/gripが示す",
+    "after": "https://www.cyberagent.co.jp/"
+   }
+  }
  },
  {
   "key": "アドウェイズ",
@@ -12686,7 +13153,34 @@
    "ad_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "ad_agency": {
+     "result": "要確認",
+     "comment": "自社説明に「DX/プラットフォーム/AI」が並び、主業が別(DX・プラットフォーム)の可能性。広告代理店は事業の一部かもしれない",
+     "after": "主業は DX・プラットフォーム・AI の可能性"
+    }
+   },
+   "employees": {
+    "result": "要確認",
+    "comment": "edinet=416名に対しgreen=1125名と差がある(2.7倍)。調査時点・集計範囲の違いの可能性",
+    "after": 416,
+    "asOf": "2025年12月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://adways.net/inquiry/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都新宿区)がgreen/prtimes/grip/officialと一致、公式ドメインをprtimes/gripが示す",
+    "after": "https://www.adways.net/"
+   }
+  }
  },
  {
   "key": "マイティマイティ",
@@ -12841,7 +13335,28 @@
    "sns_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {},
+   "employees": {
+    "result": "要確認",
+    "comment": "official=90名に対しsalesnow=49名と差がある(1.8倍)。調査時点・集計範囲の違いの可能性",
+    "after": 90,
+    "asOf": null,
+    "source": "official"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.mighty2.com/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都港区)がgreen/salesnowと一致",
+    "after": "https://www.mighty2.com/"
+   }
+  }
  },
  {
   "key": "新大陸",
@@ -15399,7 +15914,34 @@
    "sns_agency",
    "sns_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "sns_agency": {
+     "result": "NG",
+     "comment": "公式の自社説明は「DX/AI」が中心で、SNS運用代行を示す語が無い。主業は別(DX・AI)",
+     "after": "主業は DX・AI の可能性"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "有価証券報告書(EDINET)で2836名（2026年3月時点）。他の情報源(official=3072)とも概ね整合",
+    "after": 2836,
+    "asOf": "2026年3月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.members.co.jp/contact"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都中央区)がimitsu/officialと一致、公式ドメインをimitsu/slidelibが示す",
+    "after": "https://www.members.co.jp/"
+   }
+  }
  },
  {
   "key": "リソスクリエイション",
@@ -15669,7 +16211,34 @@
    "sns_agency",
    "sns_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "sns_agency": {
+     "result": "OK",
+     "comment": "公式の自社説明に「SNS運用/SNS広告」あり。SNS運用代行として妥当",
+     "after": "SNS運用代行"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "公式サイトで70名",
+    "after": 70,
+    "asOf": null,
+    "source": "official"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.promost.co.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。公式ドメインをmeetsmore/prtimesが示す",
+    "after": "https://www.promost.co.jp/"
+   }
+  }
  },
  {
   "key": "プルクス",
@@ -16033,7 +16602,34 @@
    "sns_agency",
    "sns_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "sns_agency": {
+     "result": "要確認",
+     "comment": "自社説明に「コンサルティング/プラットフォーム」が並び、主業が別(コンサルティング・プラットフォーム)の可能性。SNS運用代行は事業の一部かもしれない",
+     "after": "主業は コンサルティング・プラットフォーム の可能性"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "有価証券報告書(EDINET)で161名（2025年9月時点）。他の情報源(gbizinfo=178)とも概ね整合",
+    "after": 161,
+    "asOf": "2025年9月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.cyberbuzz.co.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都渋谷区)がprtimes/gbizinfoと一致、公式ドメインをmeetsmore/slidelibが示す",
+    "after": "https://www.cyberbuzz.co.jp/"
+   }
+  }
  },
  {
   "key": "bizforward",
@@ -16812,7 +17408,34 @@
   "contactUrl": null,
   "noMynavi": true,
   "noCareertasu": true,
-  "noOpenwork": true
+  "noOpenwork": true,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "sns_agency": {
+     "result": "要確認",
+     "comment": "自社説明にSNS運用代行の語(SNSマーケティング)と別事業の語(AI)が1つずつあり、主業は要確認",
+     "after": "主業は AI の可能性"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "公式サイトで80名（2025年4月時点）",
+    "after": 80,
+    "asOf": "2025年4月",
+    "source": "official"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://4x-corp.com/contact"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都中央区)がgbizinfo/officialと一致 / 同名企業が複数ありうる(照合時に既知の住所で絞り込み済み)",
+    "after": "https://4x-corp.com/"
+   }
+  }
  },
  {
   "key": "デジアサ",
@@ -16946,7 +17569,34 @@
   "seedCategories": [
    "sns_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "sns_agency": {
+     "result": "要確認",
+     "comment": "公式の自社説明(タイトル・冒頭)にSNS運用代行を示す語がなく、本文中にのみ「SNS運用/SNS広告」。主業か要確認",
+     "after": "SNS運用代行"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "公式サイトで46名。他の情報源(gbizinfo=41)とも概ね整合",
+    "after": 46,
+    "asOf": null,
+    "source": "official"
+   },
+   "contact": {
+    "result": "NG",
+    "comment": "問い合わせURLが公式サイト(digiasa.co.jp)と無関係のドメイン(digima.asahi.co.jp)",
+    "after": null
+   },
+   "identity": {
+    "result": "要確認",
+    "comment": "社名は公式サイトにあるが、prtimes/gbizinfoの所在地(大阪府/大阪府)が採用した所在地(東京都)と食い違う",
+    "after": "https://digiasa.co.jp/"
+   }
+  }
  },
  {
   "key": "beastar",
@@ -17535,7 +18185,34 @@
   "seedCategories": [
    "sns_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "sns_agency": {
+     "result": "要確認",
+     "comment": "自社説明に「プラットフォーム/EC支援」が並び、主業が別(プラットフォーム・EC支援)の可能性。SNS運用代行は事業の一部かもしれない",
+     "after": "主業は プラットフォーム・EC支援 の可能性"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "公式サイトで61名（2025年11月時点）",
+    "after": 61,
+    "asOf": "2025年11月",
+    "source": "official"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://natee.jp/contact"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。公式ドメインをslidelib/prtimesが示す",
+    "after": "https://natee.jp/"
+   }
+  }
  },
  {
   "key": "pamxy",
@@ -20402,7 +21079,28 @@
    "cosme_d2c",
    "cosme_d2c"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {},
+   "employees": {
+    "result": "要確認",
+    "comment": "edinet=591名に対しofficial=1395名と差がある(2.4倍)。調査時点・集計範囲の違いの可能性",
+    "after": 591,
+    "asOf": "2026年6月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.istyle.co.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都港区)がjcia/prtimes/green/officialと一致",
+    "after": "http://www.istyle.co.jp/"
+   }
+  }
  },
  {
   "key": "アイティオ",
@@ -21228,7 +21926,34 @@
    "cosme_d2c",
    "cosme_d2c"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "cosme_d2c": {
+     "result": "要確認",
+     "comment": "自社説明に化粧品D2C/P2Cの語(スキンケア)と別事業の語(AI)が1つずつあり、主業は要確認",
+     "after": "主業は AI の可能性"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "有価証券報告書(EDINET)で134名（2025年7月時点）。他の情報源(gbizinfo=134)とも概ね整合",
+    "after": 134,
+    "asOf": "2025年7月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://axxzia.co.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都新宿区)がjcia/prtimes/gbizinfo/officialと一致",
+    "after": "https://axxzia.co.jp/"
+   }
+  }
  },
  {
   "key": "ine",
@@ -23445,7 +24170,34 @@
   "seedCategories": [
    "ad_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "ad_agency": {
+     "result": "NG",
+     "comment": "公式の自社説明は「AI/求人」が中心で、広告代理店を示す語が無い。主業は別(AI・求人)",
+     "after": "主業は AI・求人 の可能性"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "有価証券報告書(EDINET)で18141名（2026年3月時点）。他の情報源(grip=17325)とも概ね整合",
+    "after": 18141,
+    "asOf": "2026年3月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.trans-cosmos.co.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都渋谷区)がgripと一致",
+    "after": "http://www.trans-cosmos.co.jp/"
+   }
+  }
  },
  {
   "key": "スタツ出版",
@@ -23583,7 +24335,34 @@
   "seedCategories": [
    "ad_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "ad_agency": {
+     "result": "要確認",
+     "comment": "公式の自社説明(タイトル・冒頭)に広告代理店を示す語がなく、関連語(広告/マーケティング/プロモーション)のみ。主業か要確認",
+     "after": "主業は 出版 の可能性"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "有価証券報告書(EDINET)で240名（2025年12月時点）。他の情報源(grip=258, official=240)とも概ね整合",
+    "after": 240,
+    "asOf": "2025年12月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://starts-pub.jp/contact"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都江戸川区)がgripと一致",
+    "after": "https://starts-pub.jp/"
+   }
+  }
  },
  {
   "key": "アライドアキテクツ",
@@ -23745,7 +24524,34 @@
   "seedCategories": [
    "ad_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "ad_agency": {
+     "result": "要確認",
+     "comment": "公式の自社説明(タイトル・冒頭)に広告代理店を示す語がなく、関連語(広告/マーケティング/プロモーション)のみ。主業か要確認",
+     "after": "主業は AI の可能性"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "有価証券報告書(EDINET)で136名（2025年12月時点）。他の情報源(grip=136, official=159)とも概ね整合",
+    "after": 136,
+    "asOf": "2025年12月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK（リダイレクト）",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認（リダイレクトあり）",
+    "after": "https://www.aainc.co.jp/contactportal/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都渋谷区)がgrip/officialと一致",
+    "after": "http://www.aainc.co.jp/"
+   }
+  }
  },
  {
   "key": "フジ日本",
@@ -23993,7 +24799,34 @@
   "seedCategories": [
    "ad_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "ad_agency": {
+     "result": "要確認",
+     "comment": "公式の自社説明(タイトル・冒頭)に広告代理店を示す語がなく、関連語(広告/プロモーション)のみ。主業か要確認",
+     "after": "広告代理店"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "有価証券報告書(EDINET)で705名（2026年3月時点）。他の情報源(grip=829)とも概ね整合",
+    "after": 705,
+    "asOf": "2026年3月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.tfc.co.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都港区)がgrip/officialと一致",
+    "after": "http://www.tfc.co.jp/"
+   }
+  }
  },
  {
   "key": "ディエムソリュションズ",
@@ -24156,7 +24989,34 @@
    "ad_agency",
    "ad_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "ad_agency": {
+     "result": "要確認",
+     "comment": "自社説明に「コンサルティング/メディア運営」が並び、主業が別(コンサルティング・メディア運営)の可能性。広告代理店は事業の一部かもしれない",
+     "after": "主業は コンサルティング・メディア運営 の可能性"
+    }
+   },
+   "employees": {
+    "result": "要確認",
+    "comment": "edinet=324名に対しgrip=618名と差がある(1.9倍)。調査時点・集計範囲の違いの可能性",
+    "after": 324,
+    "asOf": "2026年3月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.dm-s.co.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都武蔵野市)がgrip/officialと一致",
+    "after": "https://www.dm-s.co.jp/"
+   }
+  }
  },
  {
   "key": "乃村工藝社",
@@ -24416,7 +25276,34 @@
   "seedCategories": [
    "ad_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "ad_agency": {
+     "result": "要確認",
+     "comment": "公式の自社説明(タイトル・冒頭)に広告代理店を示す語がなく、関連語(広告/マーケティング/プロモーション)のみ。主業か要確認",
+     "after": "主業は AI の可能性"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "有価証券報告書(EDINET)で138名（2026年3月時点）。他の情報源(grip=202)とも概ね整合",
+    "after": 138,
+    "asOf": "2026年3月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.gendai-a.co.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都新宿区)がgrip/officialと一致",
+    "after": "http://www.gendai-a.co.jp/"
+   }
+  }
  },
  {
   "key": "アクセスグルプホルディングス",
@@ -24708,7 +25595,34 @@
   "seedCategories": [
    "ad_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "ad_agency": {
+     "result": "要確認",
+     "comment": "公式の自社説明(タイトル・冒頭)に広告代理店を示す語がなく、関連語(広告/マーケティング)のみ。主業か要確認",
+     "after": "主業は コンサルティング の可能性"
+    }
+   },
+   "employees": {
+    "result": "要確認",
+    "comment": "edinet=135名に対しofficial=67000名と差がある(496.3倍)。調査時点・集計範囲の違いの可能性",
+    "after": 135,
+    "asOf": "2025年12月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.group.dentsu.com/jp/contactus/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都港区)がgrip/officialと一致",
+    "after": "https://www.group.dentsu.com/"
+   }
+  }
  },
  {
   "key": "enjin",
@@ -24862,7 +25776,34 @@
   "seedCategories": [
    "ad_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "ad_agency": {
+     "result": "NG",
+     "comment": "公式の自社説明は「コンサルティング/人材/プラットフォーム」が中心で、広告代理店を示す語が無い。主業は別(コンサルティング・人材)",
+     "after": "主業は コンサルティング・人材・プラットフォーム の可能性"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "有価証券報告書(EDINET)で126名（2026年5月時点）。他の情報源(grip=129, official=149)とも概ね整合",
+    "after": 126,
+    "asOf": "2026年5月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.y-enjin.co.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都中央区)がgrip/officialと一致",
+    "after": "https://www.y-enjin.co.jp/"
+   }
+  }
  },
  {
   "key": "ベクトル",
@@ -25008,7 +25949,34 @@
   "seedCategories": [
    "ad_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "ad_agency": {
+     "result": "要確認",
+     "comment": "公式の自社説明(タイトル・冒頭)に広告代理店を示す語がなく、関連語(マーケティング)のみ。主業か要確認",
+     "after": "広告代理店"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "有価証券報告書(EDINET)で184名（2026年2月時点）。他の情報源(grip=181)とも概ね整合",
+    "after": 184,
+    "asOf": "2026年2月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://vectorinc.co.jp/inquiry"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都港区)がgrip/officialと一致",
+    "after": "https://vectorinc.co.jp/"
+   }
+  }
  },
  {
   "key": "macbeeplanet",
@@ -25154,7 +26122,34 @@
   "seedCategories": [
    "ad_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "ad_agency": {
+     "result": "要確認",
+     "comment": "公式の自社説明(タイトル・冒頭)に広告代理店を示す語がなく、関連語(マーケティング)のみ。主業か要確認",
+     "after": "主業は AI の可能性"
+    }
+   },
+   "employees": {
+    "result": "要確認",
+    "comment": "edinet=42名に対しofficial=201名と差がある(4.8倍)。調査時点・集計範囲の違いの可能性",
+    "after": 42,
+    "asOf": "2026年4月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://macbee-planet.com/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都渋谷区)がgrip/officialと一致",
+    "after": "https://macbee-planet.com/"
+   }
+  }
  },
  {
   "key": "マイクロアド",
@@ -25304,7 +26299,34 @@
   "seedCategories": [
    "ad_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "ad_agency": {
+     "result": "要確認",
+     "comment": "自社説明に「プラットフォーム/製造/AI」が並び、主業が別(プラットフォーム・製造)の可能性。広告代理店は事業の一部かもしれない",
+     "after": "主業は プラットフォーム・製造・AI の可能性"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "有価証券報告書(EDINET)で246名（2025年9月時点）。他の情報源(gbizinfo=246)とも概ね整合",
+    "after": 246,
+    "asOf": "2025年9月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.microad.co.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都渋谷区)がgrip/gbizinfo/officialと一致",
+    "after": "https://www.microad.co.jp/"
+   }
+  }
  },
  {
   "key": "博報堂dyホルディングス",
@@ -25450,7 +26472,34 @@
   "seedCategories": [
    "ad_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "ad_agency": {
+     "result": "NG",
+     "comment": "公式の自社説明は「金融/AI」が中心で、広告代理店を示す語が無い。主業は別(金融・AI)",
+     "after": "主業は 金融・AI の可能性"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "有価証券報告書(EDINET)で144名（2026年3月時点）。他の情報源(grip=174, official=144)とも概ね整合",
+    "after": 144,
+    "asOf": "2026年3月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.hakuhodody-holdings.co.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都港区)がgrip/officialと一致",
+    "after": "https://www.hakuhodody-holdings.co.jp/"
+   }
+  }
  },
  {
   "key": "ファンコミュニケションズ",
@@ -25588,7 +26637,34 @@
   "seedCategories": [
    "ad_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "ad_agency": {
+     "result": "要確認",
+     "comment": "公式の自社説明(タイトル・冒頭)に広告代理店を示す語がなく、関連語(広告/マーケティング)のみ。主業か要確認",
+     "after": "広告代理店"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "有価証券報告書(EDINET)で319名（2025年12月時点）。他の情報源(grip=447, official=333)とも概ね整合",
+    "after": 319,
+    "asOf": "2025年12月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.fancs.com/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都渋谷区)がgrip/officialと一致",
+    "after": "https://www.fancs.com/"
+   }
+  }
  },
  {
   "key": "speee",
@@ -25734,7 +26810,34 @@
   "seedCategories": [
    "ad_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "ad_agency": {
+     "result": "NG",
+     "comment": "公式サイトの文章に「広告代理/広告運用/運用型広告/ネット広告」等が見当たらず、広告代理店とは確認できない",
+     "after": "主業は DX・コンサルティング・金融 の可能性"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "有価証券報告書(EDINET)で601名（2025年9月時点）。他の情報源(grip=500, official=660)とも概ね整合",
+    "after": 601,
+    "asOf": "2025年9月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://speee.jp/contact"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都港区)がgrip/officialと一致",
+    "after": "https://speee.jp/"
+   }
+  }
  },
  {
   "key": "ジニ",
@@ -25880,7 +26983,34 @@
   "seedCategories": [
    "ad_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "ad_agency": {
+     "result": "要確認",
+     "comment": "自社説明に「SaaS/DX/EC事業/プラットフォーム」が並び、主業が別(SaaS・DX)の可能性。広告代理店は事業の一部かもしれない",
+     "after": "主業は SaaS・DX・EC事業 の可能性"
+    }
+   },
+   "employees": {
+    "result": "要確認",
+    "comment": "edinet=460名に対しofficial=816名と差がある(1.8倍)。調査時点・集計範囲の違いの可能性",
+    "after": 460,
+    "asOf": "2026年3月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://geniee.co.jp/inquiry/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都新宿区)がgrip/officialと一致",
+    "after": "https://geniee.co.jp/"
+   }
+  }
  },
  {
   "key": "hakuhododyone",
@@ -25990,7 +27120,34 @@
   "seedCategories": [
    "ad_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "ad_agency": {
+     "result": "要確認",
+     "comment": "自社説明に「データ分析/AI」が並び、主業が別(データ分析・AI)の可能性。広告代理店は事業の一部かもしれない",
+     "after": "主業は データ分析・AI の可能性"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "公式サイトで3290名（2026年4月時点）。他の情報源(grip=2864)とも概ね整合",
+    "after": 3290,
+    "asOf": "2026年4月",
+    "source": "official"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.hakuhodody-one.co.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都港区)がgripと一致",
+    "after": "https://www.hakuhodody-one.co.jp/"
+   }
+  }
  },
  {
   "key": "ソウルドアウト",
@@ -26247,7 +27404,34 @@
    "ad_agency",
    "ad_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "ad_agency": {
+     "result": "OK",
+     "comment": "公式の自社説明に「広告代理/広告運用/ネット広告」あり（他に AI）。広告代理店として妥当",
+     "after": "広告代理店"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "有価証券報告書(EDINET)で130名（2025年12月時点）。他の情報源(grip=146, official=151)とも概ね整合",
+    "after": 130,
+    "asOf": "2025年12月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://emnet.co.jp/forms/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都新宿区)がgrip/officialと一致",
+    "after": "https://emnet.co.jp/"
+   }
+  }
  },
  {
   "key": "レントラックス",
@@ -26479,7 +27663,34 @@
   "seedCategories": [
    "ad_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "ad_agency": {
+     "result": "OK",
+     "comment": "公式の自社説明に「ネット広告/インターネット広告/広告事業」あり。広告代理店として妥当",
+     "after": "広告代理店"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "有価証券報告書(EDINET)で97名（2025年12月時点）。他の情報源(grip=97)とも概ね整合",
+    "after": 97,
+    "asOf": "2025年12月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.septeni-holdings.co.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都新宿区)がgrip/officialと一致",
+    "after": "https://www.septeni-holdings.co.jp/"
+   }
+  }
  },
  {
   "key": "オルアバウト",
@@ -26634,7 +27845,34 @@
    "ad_agency",
    "ad_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "ad_agency": {
+     "result": "要確認",
+     "comment": "公式の自社説明(タイトル・冒頭)に広告代理店を示す語がなく、本文中にのみ「ネット広告/インターネット広告/広告事業」。主業か要確認",
+     "after": "主業は プラットフォーム の可能性"
+    }
+   },
+   "employees": {
+    "result": "要確認",
+    "comment": "edinet=126名に対しgrip=200名と差がある(1.6倍)。調査時点・集計範囲の違いの可能性",
+    "after": 126,
+    "asOf": "2026年3月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://corp.allabout.co.jp/inquiry/info/info.html"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都渋谷区)がgrip/officialと一致",
+    "after": "https://corp.allabout.co.jp/"
+   }
+  }
  },
  {
   "key": "gmotech",
@@ -26907,7 +28145,34 @@
   "seedCategories": [
    "ad_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "ad_agency": {
+     "result": "OK",
+     "comment": "公式の自社説明に「広告代理/ネット広告/インターネット広告」あり（他に データ分析/AI）。広告代理店として妥当",
+     "after": "広告代理店"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "有価証券報告書(EDINET)で268名（2026年3月時点）。他の情報源(grip=318, official=379)とも概ね整合",
+    "after": 268,
+    "asOf": "2026年3月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.medix-inc.co.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都千代田区)がgrip/officialと一致",
+    "after": "https://www.medix-inc.co.jp/"
+   }
+  }
  },
  {
   "key": "avic",
@@ -27140,7 +28405,34 @@
    "ad_agency",
    "ad_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "ad_agency": {
+     "result": "要確認",
+     "comment": "公式の自社説明(タイトル・冒頭)に広告代理店を示す語がなく、関連語(マーケティング)のみ。主業か要確認",
+     "after": "主業は マッチング の可能性"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "有価証券報告書(EDINET)で381名（2025年12月時点）。他の情報源(grip=416)とも概ね整合",
+    "after": 381,
+    "asOf": "2025年12月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.valuecommerce.co.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都港区)がgrip/officialと一致",
+    "after": "https://www.valuecommerce.co.jp/"
+   }
+  }
  },
  {
   "key": "gmoコマス",
@@ -27270,7 +28562,34 @@
   "seedCategories": [
    "ad_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "ad_agency": {
+     "result": "NG",
+     "comment": "公式の自社説明は「プラットフォーム/AI」が中心で、広告代理店を示す語が無い。主業は別(プラットフォーム・AI)",
+     "after": "主業は プラットフォーム・AI の可能性"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "有価証券報告書(EDINET)で103名（2025年12月時点）。他の情報源(grip=130)とも概ね整合",
+    "after": 103,
+    "asOf": "2025年12月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.gmo-c.jp/service-inquiry/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都渋谷区)がgrip/officialと一致",
+    "after": "https://www.gmo-c.jp/"
+   }
+  }
  },
  {
   "key": "smn",
@@ -27400,7 +28719,34 @@
   "seedCategories": [
    "ad_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "ad_agency": {
+     "result": "OK",
+     "comment": "公式の自社説明に「広告運用/アドテク」あり。広告代理店として妥当",
+     "after": "広告代理店"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "有価証券報告書(EDINET)で151名（2026年3月時点）。他の情報源(grip=150)とも概ね整合",
+    "after": 151,
+    "asOf": "2026年3月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.so-netmedia.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都品川区)がgrip/officialと一致",
+    "after": "https://www.so-netmedia.jp/"
+   }
+  }
  },
  {
   "key": "orchestraholdings",
@@ -27530,7 +28876,34 @@
   "seedCategories": [
    "ad_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "ad_agency": {
+     "result": "要確認",
+     "comment": "自社説明に「人材/ゲーム/クラウド/AI」が並び、主業が別(人材・ゲーム)の可能性。広告代理店は事業の一部かもしれない",
+     "after": "主業は 人材・ゲーム・クラウド の可能性"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "有価証券報告書(EDINET)で40名（2025年12月時点）。他の情報源(grip=40)とも概ね整合",
+    "after": 40,
+    "asOf": "2025年12月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://orchestra-hd.co.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都渋谷区)がgripと一致",
+    "after": "https://orchestra-hd.co.jp/"
+   }
+  }
  },
  {
   "key": "デジタリフト",
@@ -27676,7 +29049,34 @@
   "seedCategories": [
    "ad_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "ad_agency": {
+     "result": "OK",
+     "comment": "公式の自社説明に「広告運用/デジタル広告」あり（他に 採用支援）。広告代理店として妥当",
+     "after": "広告代理店"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "有価証券報告書(EDINET)で46名（2025年9月時点）。他の情報源(grip=66)とも概ね整合",
+    "after": 46,
+    "asOf": "2025年9月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://digitalift.co.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都渋谷区)がgrip/officialと一致",
+    "after": "https://digitalift.co.jp/"
+   }
+  }
  },
  {
   "key": "アイフラッグ",
@@ -28398,7 +29798,34 @@
    "cosme_d2c",
    "cosme_d2c"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "cosme_d2c": {
+     "result": "NG",
+     "comment": "公式サイトの文章に「化粧品/コスメ/スキンケア/ヘアケア」等が見当たらず、化粧品D2C/P2Cとは確認できない",
+     "after": "主業は AI の可能性"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "有価証券報告書(EDINET)で752名（2026年3月時点）。他の情報源(salesnow=908)とも概ね整合",
+    "after": 752,
+    "asOf": "2026年3月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.houseofrose.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都港区)がsalesnowと一致",
+    "after": "https://www.houseofrose.co.jp/"
+   }
+  }
  },
  {
   "key": "日本メナド化粧品",
@@ -36980,7 +38407,28 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {},
+   "employees": {
+    "result": "OK",
+    "comment": "公式サイトで50名",
+    "after": 50,
+    "asOf": null,
+    "source": "official"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://anyglo.co.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都港区)がprtimesと一致、公式ドメインをwantedly/prtimesが示す",
+    "after": "https://anyglo.co.jp/"
+   }
+  }
  },
  {
   "key": "aegisgroup",
@@ -38414,7 +39862,34 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "influencer_agency": {
+     "result": "要確認",
+     "comment": "公式の自社説明(タイトル・冒頭)にインフルエンサー事務所を示す語がなく、本文中にのみ「インフルエンサー」。主業か要確認",
+     "after": "インフルエンサー事務所"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "公式サイトで41名（2026年1月時点）",
+    "after": 41,
+    "asOf": "2026年1月",
+    "source": "official"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://nadia-corp.co.jp/contact/"
+   },
+   "identity": {
+    "result": "要確認",
+    "comment": "公式サイトに社名はあるが、所在地・ドメインを裏付ける別の情報源がなく、同名企業との区別は未確認",
+    "after": "https://nadia-corp.co.jp/"
+   }
+  }
  },
  {
   "key": "kirinz",
@@ -39376,7 +40851,34 @@
    "influencer_agency",
    "cosme_d2c"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "influencer_agency": {
+     "result": "NG",
+     "comment": "公式サイトの文章に「インフルエンサー/YouTuber/TikToker/クリエイター」等が見当たらず、インフルエンサー事務所とは確認できない",
+     "after": null
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "公式サイトで150名（2025年7月時点）",
+    "after": 150,
+    "asOf": "2025年7月",
+    "source": "official"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://twinplanet.co.jp/contact/"
+   },
+   "identity": {
+    "result": "要確認",
+    "comment": "公式サイトに社名はあるが、所在地・ドメインを裏付ける別の情報源がなく、同名企業との区別は未確認",
+    "after": "https://twinplanet.co.jp/"
+   }
+  }
  },
  {
   "key": "fint",
@@ -40022,7 +41524,34 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "influencer_agency": {
+     "result": "要確認",
+     "comment": "公式の自社説明(タイトル・冒頭)にインフルエンサー事務所を示す語がなく、本文中にのみ「インフルエンサー/YouTuber/クリエイター」。主業か要確認",
+     "after": "インフルエンサー事務所"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "公式サイトで162名。他の情報源(gbizinfo=143)とも概ね整合",
+    "after": 162,
+    "asOf": null,
+    "source": "official"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://bitstar.tokyo/corp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都渋谷区)がprtimes/gbizinfoと一致、公式ドメインをmeetsmore/prtimesが示す",
+    "after": "https://corp.bitstar.tokyo/"
+   }
+  }
  },
  {
   "key": "ルスタ",
@@ -40217,7 +41746,34 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "influencer_agency": {
+     "result": "要確認",
+     "comment": "自社説明にインフルエンサー事務所の語(インフルエンサー)と別事業の語(AI)が1つずつあり、主業は要確認",
+     "after": "主業は AI の可能性"
+    }
+   },
+   "employees": {
+    "result": "要確認",
+    "comment": "edinet=105名に対しgbizinfo=274名と差がある(2.6倍)。調査時点・集計範囲の違いの可能性",
+    "after": 105,
+    "asOf": "2026年3月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://find-model.jp/company/contact"
+   },
+   "identity": {
+    "result": "要確認",
+    "comment": "公式サイト上に社名が確認できない(所在地はgbizinfoと一致)",
+    "after": "https://find-model.jp/"
+   }
+  }
  },
  {
   "key": "トリドリ",
@@ -40375,7 +41931,34 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "influencer_agency": {
+     "result": "OK",
+     "comment": "公式の自社説明に「インフルエンサー」あり。インフルエンサー事務所として妥当",
+     "after": "インフルエンサー事務所"
+    }
+   },
+   "employees": {
+    "result": "要確認",
+    "comment": "edinet=53名に対しsalesnow=125名と差がある(2.4倍)。調査時点・集計範囲の違いの可能性",
+    "after": 53,
+    "asOf": "2025年12月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://toridori.co.jp/contact"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都渋谷区)がofficialと一致、公式ドメインをmeetsmore/salesnowが示す",
+    "after": "https://toridori.co.jp/"
+   }
+  }
  },
  {
   "key": "トレンダズ",
@@ -40757,7 +42340,28 @@
   "seedCategories": [
    "cosme_d2c"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {},
+   "employees": {
+    "result": "NG",
+    "comment": "official=41名に対しsalesnow=7名と5.9倍の乖離。別会社の数字の可能性",
+    "after": 41,
+    "asOf": null,
+    "source": "official"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://frontier-pr.jp/contact.html"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都千代田区)がsalesnowと一致",
+    "after": "https://frontier-pr.jp/"
+   }
+  }
  },
  {
   "key": "カエカ",
@@ -41102,7 +42706,34 @@
    "cosme_d2c",
    "cosme_d2c"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "cosme_d2c": {
+     "result": "OK",
+     "comment": "公式の自社説明に「化粧品」あり。化粧品D2C/P2Cとして妥当",
+     "after": "化粧品D2C/P2C"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "公式サイトで26名（2025年10月時点）",
+    "after": 26,
+    "asOf": "2025年10月",
+    "source": "official"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://storiiy.com/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都渋谷区)がprtimesと一致、公式ドメインをwantedly/prtimesが示す",
+    "after": "https://storiiy.com/"
+   }
+  }
  },
  {
   "key": "smbrand",
@@ -41374,7 +43005,34 @@
    "cosme_d2c",
    "cosme_d2c"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "cosme_d2c": {
+     "result": "要確認",
+     "comment": "公式の自社説明(タイトル・冒頭)に化粧品D2C/P2Cを示す語がなく、本文中にのみ「コスメ/スキンケア/ボディケア」。主業か要確認",
+     "after": "主業は 製造 の可能性"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "公式サイトで95名（2025年12月時点）",
+    "after": 95,
+    "asOf": "2025年12月",
+    "source": "official"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://takeuchi-corp.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都品川区)がprtimesと一致、公式ドメインをwantedly/prtimesが示す",
+    "after": "https://takeuchi-corp.jp/"
+   }
+  }
  },
  {
   "key": "vures",
@@ -43499,7 +45157,34 @@
    "cosme_d2c",
    "cosme_d2c"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "cosme_d2c": {
+     "result": "OK",
+     "comment": "公式の自社説明に「化粧品/スキンケア/美容液」あり（他に 育毛）。化粧品D2C/P2Cとして妥当",
+     "after": "化粧品D2C/P2C"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "有価証券報告書(EDINET)で174名（2025年7月時点）。他の情報源(gbizinfo=192)とも概ね整合",
+    "after": 174,
+    "asOf": "2025年7月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.p-antiaging.co.jp/ja/contact.html"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都港区)がprtimes/gbizinfo/officialと一致",
+    "after": "https://www.p-antiaging.com/"
+   }
+  }
  },
  {
   "key": "ネットショップスタジオ",
@@ -43923,7 +45608,34 @@
   "seedCategories": [
    "cosme_d2c"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {
+    "cosme_d2c": {
+     "result": "OK",
+     "comment": "公式の自社説明に「化粧品/コスメ/スキンケア」あり。化粧品D2C/P2Cとして妥当",
+     "after": "化粧品D2C/P2C"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "公式サイトで50名",
+    "after": 50,
+    "asOf": null,
+    "source": "official"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.2wayworld.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都渋谷区)がprtimes/officialと一致",
+    "after": "https://www.2wayworld.jp/"
+   }
+  }
  },
  {
   "key": "タキゲン製造",
@@ -45313,7 +47025,28 @@
   "seedCategories": [
    "cosme_d2c"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {},
+   "employees": {
+    "result": "OK",
+    "comment": "公式サイトで47名（2025年12月時点）",
+    "after": 47,
+    "asOf": "2025年12月",
+    "source": "official"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.ritsubi.co.jp/contact/corporation/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都江東区)がprtimesと一致",
+    "after": "http://www.ritsubi.co.jp/"
+   }
+  }
  },
  {
   "key": "イオン",
@@ -45895,7 +47628,28 @@
   "seedCategories": [
    "cosme_d2c"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "industry": {},
+   "employees": {
+    "result": "OK",
+    "comment": "公式サイトで135名（2024年8月時点）",
+    "after": 135,
+    "asOf": "2024年8月",
+    "source": "official"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://jeane.jp/contact/"
+   },
+   "identity": {
+    "result": "要確認",
+    "comment": "公式サイトに社名はあるが、所在地・ドメインを裏付ける別の情報源がなく、同名企業との区別は未確認",
+    "after": "https://jeane.jp/"
+   }
+  }
  },
  {
   "key": "月架世交易",
