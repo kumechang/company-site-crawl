@@ -11,7 +11,7 @@ import { domainOf } from './lib/util.js';
 import { exportAll, exportSample, flatChecks, allChecksOk } from './export.js';
 import { robotsReport } from './robots-report.js';
 import { Progress, progressKey, applyRun, shouldSkip } from './lib/progress.js';
-import { verifyCompany } from './verify.js';
+import { verifyCompany, checkSig } from './verify.js';
 import * as green from './sources/green.js';
 import * as wantedly from './sources/wantedly.js';
 import * as imitsu from './sources/imitsu.js';
@@ -65,6 +65,7 @@ const { values: opt, positionals } = parseArgs({
     'min-employees': { type: 'string', default: '20' },
     'no-cache': { type: 'boolean', default: false },
     'enrich-limit': { type: 'string', default: '0' }, // sample/enrich: 1回の補完で巡回・照会する会社数の上限(0=無制限。SalesNow・PR TIMES・公式サイト・Gビズ等すべて)。残りは次の補完で処理される
+    reverify: { type: 'boolean', default: false }, // 検証済みで変更のない会社も、検証し直す
     refresh: { type: 'boolean', default: false }, // 「最後まで見た」一覧も先頭から取り直す
     'retry-failed': { type: 'boolean', default: false }, // 連続失敗で飛ばしている一覧も再試行する
     skip: { type: 'string', default: '' }, // 補完で飛ばす情報源(カンマ区切り): salesnow,prtimes,gbizinfo,mynavi,careertasu,openwork（反応が無い/遅い媒体を一時的に外す用）
@@ -241,12 +242,16 @@ async function sample() {
 
 /** 判定OKの会社を検証し c.checks に保存（公式サイト等はキャッシュ優先で再取得しない） */
 async function verify() {
-  const targets = store.all().map((c) => ({ c, r: consolidate(c, { minEmployees }) })).filter(({ r }) => r.status === 'OK');
-  log(`# 検証: 判定OKの ${targets.length} 社`);
+  // 判定OKの会社が対象。sample の途中では、いま作っているカテゴリの会社だけ（他のカテゴリは、そのカテゴリを作るときに検証する）。
+  // 前回と入力(会社の情報・カテゴリ・検証ロジック)が同じ会社は、検証結果が変わらないので取り直さない（--reverify で全部やり直す）
+  const catsOf = (c, r) => Object.entries(CATEGORIES).filter(([k, d]) => c.seedCategories.includes(k) && r.categories.includes(d.label)).map(([k]) => k);
+  const ok = store.all().map((c) => ({ c, r: consolidate(c, { minEmployees }) })).filter(({ r }) => r.status === 'OK');
+  const scoped = currentCat ? ok.filter(({ c }) => c.seedCategories.includes(currentCat)) : ok;
+  const targets = scoped.filter(({ c, r }) => opt.reverify || c.checks?.sig !== checkSig(r, catsOf(c, r)));
+  log(`# 検証: 判定OK ${ok.length}社${currentCat ? `のうち ${CATEGORIES[currentCat].label} ${scoped.length}社` : ''}、検証済みで変更なし ${scoped.length - targets.length}社は飛ばし、${targets.length}社を検証`);
   let i = 0;
   for (const { c, r } of targets) {
-    const cats = Object.entries(CATEGORIES).filter(([k, d]) => c.seedCategories.includes(k) && r.categories.includes(d.label)).map(([k]) => k);
-    await verifyCompany(c, r, cats, { crawler, log });
+    await verifyCompany(c, r, catsOf(c, r), { crawler, log });
     const k = c.checks;
     log(`  ${++i}/${targets.length} ${r.name}: 業種=${Object.values(k.industry).map((x) => x.result).join('/') || '-'} 従業員=${k.employees.result} 問合せ=${k.contact.result} 取違=${k.identity.result}`);
     store.save();

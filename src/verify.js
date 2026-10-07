@@ -199,6 +199,14 @@ export function checkIdentity(c, r, { top, officialText }) {
 const RANK = { OK: 0, 'OK（リダイレクト）': 0, 要確認: 1, NG: 2 };
 export const worst = (...rs) => rs.reduce((a, b) => (RANK[b] > RANK[a] ? b : a), 'OK');
 
+/** 検証ロジックを変えたら上げる（保存済みの検証結果を無効にして、次の実行で取り直す） */
+export const VERIFY_VERSION = 2;
+
+/** 検証の入力の署名。これが前回と同じなら、検証結果も同じになるので取り直さない（会社の情報・カテゴリ・ロジックが変わったときだけ再検証） */
+export function checkSig(r, cats) {
+  return JSON.stringify([VERIFY_VERSION, [...cats].sort(), r.officialUrl, r.address, r.employees, r.employeesSource, r.contactUrl, r.categories]);
+}
+
 /** 1社を検証して c.checks に保存。cats: 検証するカテゴリキー（業種チェック用） */
 export async function verifyCompany(c, r, cats, { crawler, log }) {
   let top = null;
@@ -231,7 +239,7 @@ export async function verifyCompany(c, r, cats, { crawler, log }) {
   const identity = checkIdentity(c, r, { top, officialText });
   const employees = checkEmployees(c, r);
   const contact = await checkContact(c, r, { crawler, top });
-  c.checks = { verifiedAt: new Date().toISOString().slice(0, 10), industry, employees, contact, identity };
+  c.checks = { verifiedAt: new Date().toISOString().slice(0, 10), sig: checkSig(r, cats), industry, employees, contact, identity };
   return c.checks;
 }
 
