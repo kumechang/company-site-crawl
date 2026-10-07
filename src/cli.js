@@ -63,6 +63,7 @@ const { values: opt, positionals } = parseArgs({
     'salesnow-pages': { type: 'string', default: '25' }, // SalesNow索引で1業種あたり読むページ数(50社/ページ)
     'min-employees': { type: 'string', default: '20' },
     'no-cache': { type: 'boolean', default: false },
+    'enrich-limit': { type: 'string', default: '0' }, // sample/enrich: 1回の補完で巡回・照会する会社数の上限(0=無制限)。残りは次の媒体の補完で処理される
     skip: { type: 'string', default: '' }, // 補完で飛ばす情報源(カンマ区切り): openwork,mynavi,careertasu,gbizinfo,prtimes（反応が無い/遅い媒体を一時的に外す用）
     help: { type: 'boolean', short: 'h', default: false },
   },
@@ -85,6 +86,14 @@ if (!cmd || opt.help || !['discover', 'enrich', 'export', 'run', 'robots', 'samp
 }
 
 const minEmployees = Number(opt['min-employees']);
+const enrichLimit = Number(opt['enrich-limit']);
+/** 補完の対象を、いま作っているカテゴリの会社(検索元が一致)から先に並べ、上限(--enrich-limit)で切る */
+let currentCat = null;
+const prioritize = (list) => {
+  const first = (c) => (currentCat && c.seedCategories.includes(currentCat) ? 0 : 1);
+  const sorted = [...list].sort((a, b) => first(a) - first(b));
+  return enrichLimit > 0 ? sorted.slice(0, enrichLimit) : sorted;
+};
 const skipped = new Set(opt.skip.split(',').filter(Boolean));
 // EDINET(有価証券報告書)はAPIキーがあるときだけ使う。無ければこの補完を飛ばす
 const edinet = process.env.EDINET_API_KEY ? new edinetSrc.Edinet({ useCache: !opt['no-cache'], log }) : null;
@@ -183,6 +192,7 @@ async function sample() {
       if (!(await discoverSource(cat, sid, limit, ctx))) continue;
       store.mergeByDomain();
       store.save();
+      currentCat = cat;
       await enrich();
       await verify();
       log(`  → ${SITES[sid].name} まで: 検証OK ${okCount(cat)}/${okTarget}件`);
@@ -211,7 +221,7 @@ async function lookupAll(label, mod, flag, pred) {
     log(`# ${label}: --skip により飛ばす`);
     return;
   }
-  const todo = store.all().filter((c) => pred(c) && !c[flag]);
+  const todo = prioritize(store.all().filter((c) => pred(c) && !c[flag]));
   if (!todo.length) return;
   log(`# ${label}で補完: ${todo.length} 社`);
   let n = 0;
@@ -293,7 +303,7 @@ async function enrich() {
       c.sources = c.sources.filter((s) => s.source !== 'official');
     }
   }
-  const targets = store.all().filter((c) => (c.officialUrl || bestOfficial(c)) && !c.evidence.some((e) => e.source === 'official'));
+  const targets = prioritize(store.all().filter((c) => (c.officialUrl || bestOfficial(c)) && !c.evidence.some((e) => e.source === 'official')));
   log(`# 公式サイト補完: ${targets.length} 社`);
   for (const c of targets) {
     log(`  official ${c.name} ${c.officialUrl}`);
@@ -304,7 +314,7 @@ async function enrich() {
   //     有報を出していない会社は一致なし。有報の従業員数が取れた会社は、次の第三者サイト(Gビズ以降)を引かない
   await enrichEdinet();
   // 3) Gビズインフォ(経産省)で会社名検索。公式サイト等で住所が分かった後に引くことで、同名の別会社の取り違えを減らす
-  const gb = skipped.has('gbizinfo') ? [] : store.all().filter((c) => !c.evidence.some((e) => e.field === 'employees') && !c.evidence.some((e) => e.source === 'gbizinfo') && !c.noGbiz);
+  const gb = skipped.has('gbizinfo') ? [] : prioritize(store.all().filter((c) => !c.evidence.some((e) => e.field === 'employees') && !c.evidence.some((e) => e.source === 'gbizinfo') && !c.noGbiz));
   if (gb.length) {
     log(`# Gビズインフォで補完: ${gb.length} 社`);
     let n = 0;
