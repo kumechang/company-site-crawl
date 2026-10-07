@@ -1,6 +1,6 @@
 {
  "origin": "http://sky-farm.jp",
- "fetchedAt": "2026-10-06T15:24:21.938Z",
+ "fetchedAt": "2026-10-07T01:12:55.625Z",
  "status": "error",
  "text": "",
  "error": "net::ERR_BLOCKED_BY_CLIENT at http://sky-farm.jp/robots.txt"

@@ -1,6 +1,6 @@
 {
  "origin": "https://contact.imagemagic.jp",
- "fetchedAt": "2026-10-06T13:28:13.281Z",
+ "fetchedAt": "2026-10-07T01:07:26.586Z",
  "status": 200,
  "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://contact.imagemagic.jp/sitemap.xml\n"
 }

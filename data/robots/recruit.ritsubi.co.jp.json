@@ -1,0 +1,6 @@
+{
+ "origin": "https://recruit.ritsubi.co.jp",
+ "fetchedAt": "2026-10-07T01:24:50.948Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n"
+}

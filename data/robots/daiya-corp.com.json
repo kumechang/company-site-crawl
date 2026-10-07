@@ -1,6 +1,6 @@
 {
  "origin": "https://daiya-corp.com",
- "fetchedAt": "2026-10-06T13:42:14.097Z",
+ "fetchedAt": "2026-10-07T01:26:32.655Z",
  "status": 200,
  "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://daiya-corp.com/sitemap.xml\nSitemap: https://daiya-corp.com/sitemap.rss\n"
 }

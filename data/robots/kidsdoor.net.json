@@ -1,6 +1,6 @@
 {
  "origin": "https://kidsdoor.net",
- "fetchedAt": "2026-10-06T13:03:26.143Z",
+ "fetchedAt": "2026-10-07T00:57:41.289Z",
  "status": 200,
  "text": "User-agent:*\nDisallow:/admin/\nsitemap:https://kidsdoor.net/sitemap.xml"
 }
