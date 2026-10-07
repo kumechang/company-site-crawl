@@ -104,3 +104,13 @@ test('事業・サービスページのリンク候補', () => {
   );
   assert.deepEqual(links.map((l) => l.url).sort(), ['https://example.co.jp/business', 'https://example.co.jp/service/']);
 });
+
+import { checkSig, VERIFY_VERSION } from '../src/verify.js';
+
+test('検証の署名: 入力が同じなら同じ、会社の情報・カテゴリが変われば変わる', () => {
+  const r = { officialUrl: 'https://a.jp/', address: '東京都港区', employees: 50, employeesSource: 'official', contactUrl: 'https://a.jp/contact', categories: ['広告代理店'] };
+  assert.equal(checkSig(r, ['ad_agency', 'sns_agency']), checkSig({ ...r }, ['sns_agency', 'ad_agency'])); // カテゴリの順序は無関係
+  assert.notEqual(checkSig(r, ['ad_agency']), checkSig({ ...r, employees: 60 }, ['ad_agency'])); // 従業員数が変わった
+  assert.notEqual(checkSig(r, ['ad_agency']), checkSig(r, ['ad_agency', 'sns_agency'])); // 検証するカテゴリが増えた
+  assert.ok(checkSig(r, []).startsWith(`[${VERIFY_VERSION},`)); // ロジックのバージョンを含む
+});
