@@ -9497,6 +9497,8 @@
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -9585,6 +9587,8 @@
    "influencer_agency",
    "cosme_d2c",
    "cosme_d2c",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
@@ -11609,6 +11613,8 @@
   ],
   "seedCategories": [
    "sns_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
@@ -18044,7 +18050,7 @@
     "source": "official",
     "url": "https://digiasa.co.jp/",
     "snippet": "",
-    "at": "2026-10-07T06:27:55.016Z"
+    "at": "2026-10-07T07:03:01.588Z"
    },
    {
     "field": "profileText",
@@ -18052,7 +18058,7 @@
     "source": "official",
     "url": "https://digima.asahi.co.jp/",
     "snippet": "トップページ",
-    "at": "2026-10-07T06:27:55.017Z"
+    "at": "2026-10-07T07:03:01.590Z"
    },
    {
     "field": "employees",
@@ -18060,7 +18066,7 @@
     "source": "official",
     "url": "https://digima.asahi.co.jp/info",
     "snippet": "従業員 | 46名(令和8年4月) | 資本金 | 8500万円(",
-    "at": "2026-10-07T06:27:55.023Z"
+    "at": "2026-10-07T07:03:01.594Z"
    },
    {
     "field": "profileText",
@@ -18068,7 +18074,7 @@
     "source": "official",
     "url": "https://digima.asahi.co.jp/",
     "snippet": "会社概要ページ",
-    "at": "2026-10-07T06:27:55.023Z"
+    "at": "2026-10-07T07:03:01.594Z"
    },
    {
     "field": "address",
@@ -18076,7 +18082,7 @@
     "source": "official",
     "url": "https://digima.asahi.co.jp/info",
     "snippet": "東京都港区浜松町二丁目3番1号 日本生命浜松町クレアタワー18階",
-    "at": "2026-10-07T06:27:55.023Z"
+    "at": "2026-10-07T07:03:01.594Z"
    },
    {
     "field": "profileText",
@@ -18084,7 +18090,7 @@
     "source": "official",
     "url": "https://digima.asahi.co.jp/info",
     "snippet": "会社概要ページ",
-    "at": "2026-10-07T06:27:55.024Z"
+    "at": "2026-10-07T07:03:01.595Z"
    },
    {
     "field": "contactUrl",
@@ -18092,7 +18098,7 @@
     "source": "official",
     "url": "https://digima.asahi.co.jp/",
     "snippet": "リンク文言「お問い合わせ」/ ページ実在とフォームの記述を確認",
-    "at": "2026-10-07T06:27:55.032Z"
+    "at": "2026-10-07T07:03:01.603Z"
    }
   ],
   "seedCategories": [
@@ -38461,6 +38467,7 @@
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -38597,6 +38604,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
@@ -38760,6 +38768,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
@@ -38953,6 +38962,7 @@
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -39072,6 +39082,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
@@ -39229,6 +39240,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
@@ -45814,7 +45826,7 @@
     "source": "official",
     "url": "http://sky-farm.jp/",
     "snippet": "",
-    "at": "2026-10-07T06:27:56.790Z"
+    "at": "2026-10-07T07:03:03.805Z"
    },
    {
     "field": "profileText",
@@ -45822,7 +45834,7 @@
     "source": "official",
     "url": "https://sky-farm.co.jp/",
     "snippet": "トップページ",
-    "at": "2026-10-07T06:27:56.794Z"
+    "at": "2026-10-07T07:03:03.806Z"
    },
    {
     "field": "address",
@@ -45830,7 +45842,7 @@
     "source": "official",
     "url": "https://sky-farm.co.jp/",
     "snippet": "神奈川県横浜市西区みなとみらい2-2-1",
-    "at": "2026-10-07T06:27:56.796Z"
+    "at": "2026-10-07T07:03:03.807Z"
    },
    {
     "field": "profileText",
@@ -45838,7 +45850,7 @@
     "source": "official",
     "url": "https://sky-farm.co.jp/",
     "snippet": "会社概要ページ",
-    "at": "2026-10-07T06:27:56.796Z"
+    "at": "2026-10-07T07:03:03.807Z"
    },
    {
     "field": "profileText",
@@ -45846,7 +45858,7 @@
     "source": "official",
     "url": "https://sky-farm.co.jp/company",
     "snippet": "会社概要ページ",
-    "at": "2026-10-07T06:27:56.796Z"
+    "at": "2026-10-07T07:03:03.807Z"
    },
    {
     "field": "contactUrl",
@@ -45854,7 +45866,7 @@
     "source": "official",
     "url": "https://sky-farm.co.jp/",
     "snippet": "リンク文言「お問い合わせ」/ ページ実在とフォームの記述を確認",
-    "at": "2026-10-07T06:27:56.798Z"
+    "at": "2026-10-07T07:03:03.809Z"
    }
   ],
   "seedCategories": [
@@ -49895,6 +49907,7 @@
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -49991,6 +50004,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
@@ -50112,6 +50126,7 @@
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -50190,6 +50205,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
@@ -52463,6 +52479,10 @@
    {
     "source": "openwork",
     "url": "https://www.openwork.jp/company.php?m_id=a0C2x00000amN3M"
+   },
+   {
+    "source": "official",
+    "url": "https://unlk.jp/"
    }
   ],
   "evidence": [
@@ -52497,6 +52517,54 @@
     "url": "https://www.openwork.jp/company.php?m_id=a0C2x00000amN3M",
     "snippet": "OpenWork URL: https://unlk.jp/",
     "at": "2026-10-07T06:03:00.150Z"
+   },
+   {
+    "field": "profileText",
+    "value": "株式会社unlock | 新規事業の実務支援 内容をスキップ | 株式会社unlock | 新規事業の実務支援 | サービス一覧 | 支援実績 | 企業情報 | コラム | お知らせ | 資料ダウンロード | お問い合わせ | MENU | unlock | the world | and yourself | 新規事業開発を | アイデアから実行、推進まで。 | unlockは地図のない航海を | 共に切り拓くパートナーです。 | NEWS | PICKUP | 2026.5.8 | 支援先のマークスライフ株式会社が、東京証券取引所 TOKYO PRO Marketに上場しました | 2026.10.6 | 【オンラインセミナー開催】＼超初心者向け／ClaudeCode実践ハンズオン コードを1行も書かずに、90分で新規事業のプロトタイプを作る～文系・非エンジニアのための仮説検証～ | 2026.9.16 | ホリプログループ様との支援事例を公開しました | 2026.8.14 | 【オンラインセミナー開催】2026年最新版:8割通る！劇的に改善する新規事業アイデアの企画書の作り方 | 2026.7.16 | 大阪産業局主催セミナーに登壇 ―中小企業の新規事業創出をテーマに講演― | ニュース一覧をみる | ABOUT US | 日本の新規事業開発室を目指しています。 | 株式会社unlockは、新規事業立ち上げ支援に特化した会社として「日本の新規事業開発室」を目指しています。 | 事業会社出身のメンバーが中心となり、単にアドバイスをするだけではなく、アイデアの考案から実行、推進まで新規事業の全てのフェーズにおいて実務支援を行っています。 | お客様の新規事業の航路図を描き、目的地まで共に舵を取り続けるパートナーです。 | 企業情報 | OUR SERVICES | unlockが行う新規事業開発支援 | アイデアを考案する | unlock自身が、お客様にカスタマイズした新規事業アイデアを考案します。貴社の強みをリフレーミングし、unlockの知見と掛け合わせることで、斬新なアイデアを提案します。 | 社内メンバーでは同じようなアイデアしか生まれない、というお客様に最適なサービスです。自社にアイデアがなくても、丸投げでOKです。 | 詳しくみる | アイデアの出し方を学ぶ（研修） | 新規事業の知識や経験がゼロの社員が、3ヶ月間で新規事業立ち上げに必要な知識を習得し、実際に新規事業の企画を完成させることができる研修サービスです。内製化をお求めの企業様にオススメです。 | 詳しくみる | 調査をして検討する | 検討中のビジネスアイデアについて、網羅的ではなく新規事業に必要な要件をクイックに調査します。状況に合わせた調査メニューを無駄なく選択でき、外部の客観的なインサイトやディスカッションを求めている企業におすすめです。 | 詳しくみる | 進め方を相談する | 新規事業を実行・推進するノウハウが不足している、アイデアや戦略へのプロのフィードバックがほしいといった企業向けの壁打ち（ご相談相手）を提供します。豊富な新規事業支援の実績をもとに、新規サービス・製品の早期立ち上がりを支援します。 | 詳しくみる | ターゲットを明確にする | 販売戦略は固まったが実際にお客さまにタッチしながら検証したい、ターゲットが正しいかわからないといったPMF実現に向けた悩みを解決します。お客さまの反応やリード獲得状況をもとにターゲットを絞り込み、共に戦略を策定し…",
+    "source": "official",
+    "url": "https://unlk.jp/",
+    "snippet": "トップページ",
+    "at": "2026-10-07T07:03:03.855Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区恵比寿3丁目9番25号 日仏会館5階",
+    "source": "official",
+    "url": "https://unlk.jp/",
+    "snippet": "東京都渋谷区恵比寿3丁目9番25号 日仏会館5階",
+    "at": "2026-10-07T07:03:03.859Z"
+   },
+   {
+    "field": "profileText",
+    "value": "内容をスキップ | 株式会社unlock | 新規事業の実務支援 | サービス一覧 | 支援実績 | 企業情報 | コラム | お知らせ | 資料ダウンロード | お問い合わせ | MENU | unlock | the world | and yourself | 新規事業開発を | アイデアから実行、推進まで。 | unlockは地図のない航海を | 共に切り拓くパートナーです。 | NEWS | PICKUP | 2026.5.8 | 支援先のマークスライフ株式会社が、東京証券取引所 TOKYO PRO Marketに上場しました | 2026.10.6 | 【オンラインセミナー開催】＼超初心者向け／ClaudeCode実践ハンズオン コードを1行も書かずに、90分で新規事業のプロトタイプを作る～文系・非エンジニアのための仮説検証～ | 2026.9.16 | ホリプログループ様との支援事例を公開しました | 2026.8.14 | 【オンラインセミナー開催】2026年最新版:8割通る！劇的に改善する新規事業アイデアの企画書の作り方 | 2026.7.16 | 大阪産業局主催セミナーに登壇 ―中小企業の新規事業創出をテーマに講演― | ニュース一覧をみる | ABOUT US | 日本の新規事業開発室を目指しています。 | 株式会社unlockは、新規事業立ち上げ支援に特化した会社として「日本の新規事業開発室」を目指しています。 | 事業会社出身のメンバーが中心となり、単にアドバイスをするだけではなく、アイデアの考案から実行、推進まで新規事業の全てのフェーズにおいて実務支援を行っています。 | お客様の新規事業の航路図を描き、目的地まで共に舵を取り続けるパートナーです。 | 企業情報 | OUR SERVICES | unlockが行う新規事業開発支援 | アイデアを考案する | unlock自身が、お客様にカスタマイズした新規事業アイデアを考案します。貴社の強みをリフレーミングし、unlockの知見と掛け合わせることで、斬新なアイデアを提案します。 | 社内メンバーでは同じようなアイデアしか生まれない、というお客様に最適なサービスです。自社にアイデアがなくても、丸投げでOKです。 | 詳しくみる | アイデアの出し方を学ぶ（研修） | 新規事業の知識や経験がゼロの社員が、3ヶ月間で新規事業立ち上げに必要な知識を習得し、実際に新規事業の企画を完成させることができる研修サービスです。内製化をお求めの企業様にオススメです。 | 詳しくみる | 調査をして検討する | 検討中のビジネスアイデアについて、網羅的ではなく新規事業に必要な要件をクイックに調査します。状況に合わせた調査メニューを無駄なく選択でき、外部の客観的なインサイトやディスカッションを求めている企業におすすめです。 | 詳しくみる | 進め方を相談する | 新規事業を実行・推進するノウハウが不足している、アイデアや戦略へのプロのフィードバックがほしいといった企業向けの壁打ち（ご相談相手）を提供します。豊富な新規事業支援の実績をもとに、新規サービス・製品の早期立ち上がりを支援します。 | 詳しくみる | ターゲットを明確にする | 販売戦略は固まったが実際にお客さまにタッチしながら検証したい、ターゲットが正しいかわからないといったPMF実現に向けた悩みを解決します。お客さまの反応やリード獲得状況をもとにターゲットを絞り込み、共に戦略を策定し実行まで行います | 詳しくみる | 顧客候補…",
+    "source": "official",
+    "url": "https://unlk.jp/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:03:03.859Z"
+   },
+   {
+    "field": "profileText",
+    "value": "内容をスキップ | 株式会社unlock | 新規事業の実務支援 | サービス一覧 | 支援実績 | 企業情報 | コラム | お知らせ | 資料ダウンロード | お問い合わせ | MENU | COMPANY | 企業情報 | ホーム | » | 企業情報 | 日本の新規事業開発室を | 目指しています。 | unlockは「日本の新規事業開発室」を目指しています。 | 「次の柱」が必要なものの、人材の採用・育成は困難、 | かつ、本当に売れるかわからないまま事業を始めてしまう企業が多い現状。 | その状況を打破するために | 「新規事業開発室」の役割を果たす人材と仕組みを提供します。 | unlockの特徴・事業紹介 | unlockの2つの事業と特徴についてご紹介します。 | 詳しくみる | 代表メッセージ | 代表の津島からのご挨拶です。当社のミッションや大切にしている考え方をご紹介します。 | 詳しくみる | メンバー紹介 | 事業会社で経験を積んだ事業プロデューサーが、実務的なご支援で伴走いたします。 | 詳しくみる | 会社概要 | unlockの基本情報をお知らせします。 | 詳しくみる | まずはお気軽にお問い合わせください | DOWNLOAD | 資料ダウンロード | 新規事業立ち上げ支援実績資料をご用意いたしました。 | CONTACT | お問い合わせ | 弊社にご興味をお持ちいただきありがとうございます。新規事業のアイデア出しから実行支援まで、お気軽にご相談ください。 | サービスメニュー | サービス一覧 | 新規事業の伴走支援 | アイデアプランニング | アカデミア | マーケットリサーチ | 顧問サービス | ターゲットファインダー | プラットフォーム | サイトメニュー | 支援実績 | お知らせ | コラム | 企業情報 | 採用情報 | 資料ダウンロード | お問い合わせ | 株式会社unlock | 〒150-0013 東京都渋谷区恵比寿3丁目9番25号 日仏会館5階 | 会社概要 | プライバシーポリシー | note | Spotify | © 2026 unlock Inc.",
+    "source": "official",
+    "url": "https://unlk.jp/company/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:03:03.859Z"
+   },
+   {
+    "field": "profileText",
+    "value": "内容をスキップ | 株式会社unlock | 新規事業の実務支援 | サービス一覧 | 支援実績 | 企業情報 | コラム | お知らせ | 資料ダウンロード | お問い合わせ | MENU | ホーム | » | 企業情報 | » | 会社概要 | 企業情報 | 会社概要 | 会社名 | 株式会社unlock（英語表記 : unlock Inc.) | 設立 | 2016年10月 | 代表取締役 | 津島 越朗 | 事業内容 | 新規事業の立ち上げ実務支援 | 所在地 | 〒150-0013 東京都渋谷区恵比寿3丁目9番25号 日仏会館５階 | 所属団体 | 国立研究開発法人 情報通信研究機構、地方創生SDGs官民連携プラットフォーム | 業務提携 | 金融機関：中国銀行、きらぼしコンサルティング | AI：株式会社KICONIA WORKS | ブロックチェーン：株式会社CryptoLab | 弁護士事務所：GVA法律事務所 | unlockの特徴・事業紹介 | unlockの2つの事業と特徴についてご紹介します。 | 詳しくみる | 代表メッセージ | 代表の津島からのご挨拶です。当社のミッションや大切にしている考え方をご紹介します。 | 詳しくみる | メンバー紹介 | 事業会社で経験を積んだ事業プロデューサーが、実務的なご支援で伴走いたします。 | 詳しくみる | 会社概要 | unlockの基本情報をお知らせします。 | 詳しくみる | まずはお気軽にお問い合わせください | DOWNLOAD | 資料ダウンロード | 新規事業立ち上げ支援実績資料をご用意いたしました。 | CONTACT | お問い合わせ | 弊社にご興味をお持ちいただきありがとうございます。新規事業のアイデア出しから実行支援まで、お気軽にご相談ください。 | サービスメニュー | サービス一覧 | 新規事業の伴走支援 | アイデアプランニング | アカデミア | マーケットリサーチ | 顧問サービス | ターゲットファインダー | プラットフォーム | サイトメニュー | 支援実績 | お知らせ | コラム | 企業情報 | 採用情報 | 資料ダウンロード | お問い合わせ | 株式会社unlock | 〒150-0013 東京都渋谷区恵比寿3丁目9番25号 日仏会館5階 | 会社概要 | プライバシーポリシー | note | Spotify | © 2026 unlock Inc.",
+    "source": "official",
+    "url": "https://unlk.jp/company/overview/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:03:03.859Z"
+   },
+   {
+    "field": "profileText",
+    "value": "内容をスキップ | 株式会社unlock | 新規事業の実務支援 | サービス一覧 | 支援実績 | 企業情報 | コラム | お知らせ | 資料ダウンロード | お問い合わせ | MENU | CASES | 情報・通信業 | ホーム | » | 支援実績 | » | 情報・通信業 | 業種で絞り込み： | すべて | 製造業 | 建設業 | 情報・通信業 | サービス業 | 不動産 | 金融 | エンターテインメント | サービスで絞り込み： | すべて | アイデアプランニング | マーケットリサーチ | 戦略策定 | unlockゼロイチ | unlockプログレス | unlockプライム | アカデミア | 顧問サービス | ターゲットファインダー | ハルメク 様 | 外部の力を、社内の原動力に─ハルメクがunlockを伴走者に選んだ理由 | 情報・通信業 | 顧問サービス | クラステクノロジー 様 | ターゲット明確化でリスティング広告対比2倍のCPA達成 | 情報・通信業 | ターゲットファインダー | まずはお気軽にお問い合わせください | DOWNLOAD | 資料ダウンロード | 新規事業立ち上げ支援実績資料をご用意いたしました。 | CONTACT | お問い合わせ | 弊社にご興味をお持ちいただきありがとうございます。新規事業のアイデア出しから実行支援まで、お気軽にご相談ください。 | サービスメニュー | サービス一覧 | 新規事業の伴走支援 | アイデアプランニング | アカデミア | マーケットリサーチ | 顧問サービス | ターゲットファインダー | プラットフォーム | サイトメニュー | 支援実績 | お知らせ | コラム | 企業情報 | 採用情報 | 資料ダウンロード | お問い合わせ | 株式会社unlock | 〒150-0013 東京都渋谷区恵比寿3丁目9番25号 日仏会館5階 | 会社概要 | プライバシーポリシー | note | Spotify | © 2026 unlock Inc.",
+    "source": "official",
+    "url": "https://unlk.jp/case/industry/information-communications-industry/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:03:03.859Z"
    }
   ],
   "seedCategories": [
@@ -52521,6 +52589,10 @@
    {
     "source": "openwork",
     "url": "https://www.openwork.jp/company.php?m_id=a0CIh000002fsr4"
+   },
+   {
+    "source": "official",
+    "url": "https://corp.byup.jp/"
    }
   ],
   "evidence": [
@@ -52555,6 +52627,30 @@
     "url": "https://www.openwork.jp/company.php?m_id=a0CIh000002fsr4",
     "snippet": "OpenWork URL: https://corp.byup.jp/",
     "at": "2026-10-07T06:03:29.385Z"
+   },
+   {
+    "field": "profileText",
+    "value": "株式会社 By Up Partner Business | パートナー事業 | FIT PLACE24 | 全国120店舗展開 | 24時間フィットネスジム | FITPLACE24 | EVANE | 高機能スポーツウェア | EVANE | REYS | 2023年Amazon最優秀賞 | プロテイン・サプリメント | REYS | About us | 会社概要 | 会 社 概 要 | 社 名 | 株式会社 By Up | 代 表 者 | 代表取締役 大島 遼太 | 創 立 | 2021年6月 | 資 本 金 | 300万円 | 所 在 地 | 本社 ：東京都品川区西五反田1-2-10 CIRCLES五反田8F | 事業所：東京都渋谷区神宮前3-1-30-702 | Recruit | リクルート | デジタルマーケティング職 | 通販・店舗事業のマーケティング | 年収600万〜1200万円 | 応募はこちらから | Copyright 2024 By Up Inc",
+    "source": "official",
+    "url": "https://corp.byup.jp/",
+    "snippet": "トップページ",
+    "at": "2026-10-07T07:03:42.493Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都品川区西五反田1-2-10 CIRCLES五反田8F",
+    "source": "official",
+    "url": "https://corp.byup.jp/",
+    "snippet": "東京都品川区西五反田1-2-10 CIRCLES五反田8F",
+    "at": "2026-10-07T07:03:42.494Z"
+   },
+   {
+    "field": "profileText",
+    "value": "Partner Business | パートナー事業 | FIT PLACE24 | 全国120店舗展開 | 24時間フィットネスジム | FITPLACE24 | EVANE | 高機能スポーツウェア | EVANE | REYS | 2023年Amazon最優秀賞 | プロテイン・サプリメント | REYS | About us | 会社概要 | 会 社 概 要 | 社 名 | 株式会社 By Up | 代 表 者 | 代表取締役 大島 遼太 | 創 立 | 2021年6月 | 資 本 金 | 300万円 | 所 在 地 | 本社 ：東京都品川区西五反田1-2-10 CIRCLES五反田8F | 事業所：東京都渋谷区神宮前3-1-30-702 | Recruit | リクルート | デジタルマーケティング職 | 通販・店舗事業のマーケティング | 年収600万〜1200万円 | 応募はこちらから | Copyright 2024 By Up Inc",
+    "source": "official",
+    "url": "https://corp.byup.jp/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:03:42.494Z"
    }
   ],
   "seedCategories": [
@@ -52584,6 +52680,10 @@
    {
     "source": "prtimes",
     "url": "https://prtimes.jp/main/html/searchrlp/company_id/183944"
+   },
+   {
+    "source": "official",
+    "url": "https://livedge.jp/"
    }
   ],
   "evidence": [
@@ -52618,6 +52718,22 @@
     "url": "https://prtimes.jp/main/html/searchrlp/company_id/183944",
     "snippet": "PR TIMES企業情報のURL: https://livedge.jp",
     "at": "2026-10-07T05:22:57.555Z"
+   },
+   {
+    "field": "profileText",
+    "value": "LIVEDGE｜One-Stop Growth-Driven Content Marketing Solutions About Us | News | Creators | Recruit | Services | Contact Us | EN | Live on the Cutting Edge of | Creativity | Live on the Cutting Edge of | Intelligence, Creativity, | and Conversion | In this era of collaboration with AI, creativity is the key to limitless possibilities. | It is human creativity that truly transforms the world—this is LIVEDGE's core belief. | To foster an environment where creativity thrives, we stand at the forefront of intelligence and technology. We pursue the most optimal and efficient solutions, partnering with exceptional creators to continuously craft those pivotal moments that inspire audience choices. | Building meaningful connections between brands, creators and users. | This ultimately translates into tangible results: measurable numbers, earned trust, and a shaped future. | Emotions resonate. Metrics come alive. And the future unfolds. | Partner with Livedge to pioneer a new future of marketing. | We serve clients across diverse sectors such as gaming, applications, e-commerce, finance, consumer electronics, entertainment, and lifestyle services. By working closely with top-tier partners in Japan, Korea, China, and the U.S., we have built deep expertise in each vertical. | 01 | Ads Creative Production | From planning, scripting, shooting, and editing to distribution, we deliver end-to-end ad creative services. | Our local team leverages trend insights and industry expertise to craft opti…",
+    "source": "official",
+    "url": "https://livedge.jp/",
+    "snippet": "トップページ",
+    "at": "2026-10-07T07:04:14.305Z"
+   },
+   {
+    "field": "profileText",
+    "value": "About Us | News | Creators | Recruit | Services | Contact Us | EN | Live on the Cutting Edge of | Creativity | Live on the Cutting Edge of | Intelligence, Creativity, | and Conversion | In this era of collaboration with AI, creativity is the key to limitless possibilities. | It is human creativity that truly transforms the world—this is LIVEDGE's core belief. | To foster an environment where creativity thrives, we stand at the forefront of intelligence and technology. We pursue the most optimal and efficient solutions, partnering with exceptional creators to continuously craft those pivotal moments that inspire audience choices. | Building meaningful connections between brands, creators and users. | This ultimately translates into tangible results: measurable numbers, earned trust, and a shaped future. | Emotions resonate. Metrics come alive. And the future unfolds. | Partner with Livedge to pioneer a new future of marketing. | We serve clients across diverse sectors such as gaming, applications, e-commerce, finance, consumer electronics, entertainment, and lifestyle services. By working closely with top-tier partners in Japan, Korea, China, and the U.S., we have built deep expertise in each vertical. | 01 | Ads Creative Production | From planning, scripting, shooting, and editing to distribution, we deliver end-to-end ad creative services. | Our local team leverages trend insights and industry expertise to craft optimal creative strategies, | ensuring rapid customization and…",
+    "source": "official",
+    "url": "https://livedge.jp/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:04:14.307Z"
    }
   ],
   "seedCategories": [
