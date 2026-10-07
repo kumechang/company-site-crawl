@@ -3,9 +3,9 @@ import { consolidate } from './lib/merge.js';
 import { CATEGORIES } from '../config/categories.js';
 import { worst } from './verify.js';
 
-const ENRICH_SOURCES = new Set(['official', 'salesnow', 'prtimes', 'gbizinfo', 'mynavi', 'careertasu', 'openwork']);
+const ENRICH_SOURCES = new Set(['official', 'edinet', 'salesnow', 'prtimes', 'gbizinfo', 'mynavi', 'careertasu', 'openwork']);
 // 従業員数の出所の確からしさ（小さいほど確か）
-const EMP_RANK = { official: 0, green: 1, grip: 1, mynavi: 2, careertasu: 2, gbizinfo: 2, houjingoo: 2, pitact: 2, salesnow: 3, agencyhub: 3, openwork: 3 };
+const EMP_RANK = { edinet: 0, official: 0, green: 1, grip: 1, mynavi: 2, careertasu: 2, gbizinfo: 2, houjingoo: 2, pitact: 2, salesnow: 3, agencyhub: 3, openwork: 3 };
 
 const COLS = [
   ['企業名', (r) => r.name],
@@ -23,6 +23,8 @@ const COLS = [
   ['情報源', (r) => r.sources.map((s) => s.source).filter((v, i, a) => a.indexOf(v) === i).join(' + ')],
   ['所在地の根拠', (r) => r.evidence.address && `${r.evidence.address.source}: ${r.evidence.address.url}`],
   ['従業員数の根拠', (r) => r.evidence.employees && `${r.evidence.employees.source}: ${r.evidence.employees.snippet} (${r.evidence.employees.url})`],
+  ['EDINETコード', (r) => r.edinetCode],
+  ['証券コード', (r) => r.securitiesCode],
   ['備考', (r) => r.notes.join(' ; ')],
 ];
 

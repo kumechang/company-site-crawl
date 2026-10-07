@@ -1,0 +1,6 @@
+{
+ "origin": "https://est-rouge.com",
+ "fetchedAt": "2026-10-07T04:11:32.314Z",
+ "status": 200,
+ "text": "User-agent: Googlebot\nUser-agent: *\nAllow: /\n\nSitemap: https://est-rouge.com/sitemap.xml"
+}

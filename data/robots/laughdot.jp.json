@@ -1,6 +1,6 @@
 {
  "origin": "https://laughdot.jp",
- "fetchedAt": "2026-10-06T13:40:06.135Z",
+ "fetchedAt": "2026-10-07T01:22:15.431Z",
  "status": 200,
  "text": "# See http://www.robotstxt.org/robotstxt.html for documentation on how to use the robots.txt file\n#\n# To ban all spiders from the entire site uncomment the next two lines:\n# User-agent: *\n# Disallow: /\n"
 }

@@ -1,0 +1,6 @@
+{
+ "origin": "https://livedge.jp",
+ "fetchedAt": "2026-10-07T07:04:04.449Z",
+ "status": 200,
+ "text": "User-agent: *\nAllow: /\n\n# Sitemap location\nSitemap: https://www.livedge.jp/sitemap.xml\n\n# Disallow crawling of admin or private areas (if any)\n# Disallow: /admin/\n# Disallow: /private/\n"
+}

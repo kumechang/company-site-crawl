@@ -1,6 +1,6 @@
 {
  "origin": "https://xn--pckua2a7gp15o89zb.com",
- "fetchedAt": "2026-10-06T09:15:33.086Z",
+ "fetchedAt": "2026-10-07T04:35:30.642Z",
  "status": 200,
  "text": "User-Agent: *\nDisallow: /js/ni/\nDisallow: /js/bundle/ni/\n\nDisallow: /api/\nDisallow: /suggest/\nDisallow: /rd/\nDisallow: /rd-line/\nDisallow: /rd-and/\nDisallow: /ms/\n\nDisallow: /*ja=\nDisallow: /adv/?*\nDisallow: /jb/\nDisallow: /aln-*\nDisallow: /map/\nDisallow: /my/\nDisallow: /apply*\nDisallow: /pdf/\nDisallow: /test/\nDisallow: /server-collect/\nDisallow: /server-collect2/\nDisallow: /jobreport\n\nAllow: /jbi/\nAllow: /jbn/\n\nUser-agent: Baiduspider\nUser-agent: BaiduMobaider\nUser-agent: BaiduImagespider\nCrawl-delay: 1\nDisallow: /js/ni/\nDisallow: /js/bundle/ni/\n\nDisallow: /api/\nDisallow: /suggest/\nDisallow: /rd/\nDisallow: /rd-line/\nDisallow: /rd-and/\nDisallow: /ms/\n\nDisallow: /*ja=\nDisallow: /adv/?*\nDisallow: /jb/\nDisallow: /aln-*\nDisallow: /map/\nDisallow: /my/\nDisallow: /apply*\nDisallow: /pdf/\nDisallow: /test/\nDisallow: /server-collect/\nDisallow: /server-collect2/\nDisallow: /jobreport\n\nDisallow: /%E8%81%B7%E6%A5%AD%E8%A8%93%E7%B7%B4%E8%A9%B3%E7%B4%B0-*\n\nAllow: /jbi/\nAllow: /jbn/\n"
 }

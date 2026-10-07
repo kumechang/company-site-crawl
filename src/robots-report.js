@@ -11,6 +11,7 @@ export const ORIGINS = {
   prtimes: 'https://prtimes.jp',
   indeed: 'https://jp.indeed.com',
   kyujinbox: 'https://xn--pckua2a7gp15o89zb.com',
+  stanby: 'https://jp.stanby.com',
   doda: 'https://doda.jp',
   mynavi: 'https://tenshoku.mynavi.jp',
   engage: 'https://en-gage.net',
@@ -40,7 +41,7 @@ export const ORIGINS = {
 /** そのサイトで実際に使っているURL（config に書いたもの + アダプタが辿る代表パス） */
 function usedUrls(sid) {
   const urls = new Set();
-  for (const def of Object.values(CATEGORIES)) for (const t of def[sid] ?? []) if (/^https?:/.test(t)) urls.add(t);
+  for (const def of Object.values(CATEGORIES)) for (const t of def[sid] ?? []) { const u = typeof t === 'string' ? t : t?.url; if (/^https?:/.test(u ?? '')) urls.add(u); }
   const extra = {
     wantedly: ['https://www.wantedly.com/projects?new=true&page=1&keywords=SNS&order=mixed', 'https://www.wantedly.com/companies/example'],
     green: ['https://www.green-japan.com/company/5377'],
@@ -52,6 +53,7 @@ function usedUrls(sid) {
     digimado: ['https://digi-mado.jp/products/00000000-0000-0000-0000-000000000000/'],
     aspic: ['https://www.aspicjapan.org/asu/service/47781'],
     kyujinbox: ['https://xn--pckua2a7gp15o89zb.com/jb/abc'],
+    stanby: ['https://jp.stanby.com/r_abc/2'],
     doda: ['https://doda.jp/DodaFront/View/JobSearchList.action?k=SNS'],
     hikakubiz: ['https://www.biz.ne.jp/company/segros/'],
   };

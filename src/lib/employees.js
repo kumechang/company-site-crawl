@@ -7,6 +7,7 @@ import { nfkc } from './util.js';
 export const ESTIMATE_SOURCES = new Set(['salesnow', 'agencyhub', 'openwork', 'gbizinfo']); // 推定値・レンジ・古い可能性のある政府保有情報
 const CORROBORATING = new Set(['green', 'grip', 'mynavi', 'careertasu', 'houjingoo', 'pitact']); // 複数一致すれば補強になる第三者
 export const SCOPE_RE = /連結|グループ(?:全体|合計|計|総数|スタッフ|従業員|人員)|当社グループ|関連会社|業務委託|派遣|うち日本|国内外|海外含/;
+const PRIMARY_SOURCES = new Set(['official', 'edinet']); // 会社自身が出した数字（公式サイト・有価証券報告書）
 const STALE_YEARS = 3; // これより古い時点の数字は現行値として断定しない
 
 /** 「2026年5月」「2025年10月現在」などの時点 → { year, month, label } */
@@ -28,15 +29,16 @@ export function assessEmployees(emp, evs, { now = new Date() } = {}) {
   const scope = (emp.snippet ?? '').match(SCOPE_RE)?.[0] ?? null;
   const date = asOf(emp.snippet);
   let confirmed;
-  if (emp.source === 'official') {
+  if (PRIMARY_SOURCES.has(emp.source)) {
+    const label = emp.source === 'edinet' ? '有価証券報告書' : '公式';
     confirmed = true;
     if (scope) {
       confirmed = false;
-      reasons.push(`公式の数字に「${scope}」の記載があり、単体の従業員数ではない可能性`);
+      reasons.push(`${label}の数字に「${scope}」の記載があり、単体の従業員数ではない可能性`);
     }
     if (date && now.getFullYear() - date.year >= STALE_YEARS) {
       confirmed = false;
-      reasons.push(`公式の数字が${date.label}時点と古く、現行値として断定できない`);
+      reasons.push(`${label}の数字が${date.label}時点と古く、現行値として断定できない`);
     }
   } else {
     const others = evs.filter((e) => e.source !== emp.source && CORROBORATING.has(e.source) && ratio(e.value, emp.value) <= 1.5);

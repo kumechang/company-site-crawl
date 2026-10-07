@@ -1,0 +1,6 @@
+{
+ "origin": "https://coconala.co.jp",
+ "fetchedAt": "2026-10-07T01:35:18.830Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://coconala.co.jp/wp-sitemap.xml\n"
+}

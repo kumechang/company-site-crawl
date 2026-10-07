@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.manpowergroup.jp",
+ "fetchedAt": "2026-10-07T07:11:13.479Z",
+ "status": 200,
+ "text": "User-Agent : *\nSitemap : https://www.manpowergroup.jp/sitemap.xml\nDisallow: /*.pdf$"
+}

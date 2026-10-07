@@ -7,14 +7,14 @@ import { CATEGORIES } from '../../config/categories.js';
 
 /**
  * 項目ごとの情報源の優先順位（左ほど信頼）。
- *  公式サイト > 求人媒体の企業ページ(Green) > Gビズインフォ(政府保有情報) > SalesNow(推定値) > 比較サイト(アイミツ) > Wantedly
+ *  有価証券報告書(EDINET・一次情報) > 公式サイト > 求人媒体の企業ページ(Green) > Gビズインフォ(政府保有情報) > SalesNow(推定値) > 比較サイト(アイミツ) > Wantedly
  */
 /** SNS運用代行の会社一覧を載せている媒体 */
 export const LISTING_SITES = ['boxil', 'aspic', 'buzztan', 'webkanji', 'meetsmore', 'slidelib'];
 
 export const PRIORITY = {
-  employees: ['official', 'green', 'grip', 'mynavi', 'careertasu', 'gbizinfo', 'houjingoo', 'pitact', 'salesnow', 'agencyhub', 'openwork', 'imitsu', 'wantedly'],
-  address: ['official', 'mynavi', 'careertasu', 'gbizinfo', 'grip', 'houjingoo', 'pitact', 'jcia', 'openwork', 'green', 'salesnow', 'wantedly', 'imitsu'],
+  employees: ['edinet', 'official', 'green', 'grip', 'mynavi', 'careertasu', 'gbizinfo', 'houjingoo', 'pitact', 'salesnow', 'agencyhub', 'openwork', 'imitsu', 'wantedly'],
+  address: ['edinet', 'official', 'mynavi', 'careertasu', 'gbizinfo', 'grip', 'houjingoo', 'pitact', 'jcia', 'openwork', 'green', 'salesnow', 'wantedly', 'imitsu'],
 };
 
 const rank = (field, source) => {
@@ -49,6 +49,8 @@ export function consolidate(c, { minEmployees = 20 } = {}) {
   );
   const emp = pick(c, 'employees', { valid: (v) => Number.isFinite(v), exclude: (e) => rejected.has(e.source) });
   const members = pick(c, 'wantedlyMembers');
+  const edinetCode = byField(c, 'edinetCode')[0] ?? null;
+  const consolidated = byField(c, 'employeesConsolidated')[0] ?? null;
   const contact = pick(c, 'contactUrl');
   const off = bestOfficial(c);
   const officialUrl = off && typeof off === 'object' ? off.url : c.officialUrl;
@@ -90,6 +92,7 @@ export function consolidate(c, { minEmployees = 20 } = {}) {
   if (rejected.size && byField(c, 'employees').some((e) => rejected.has(e.source))) notes.push(`住所が一致しない情報源の従業員数は不採用(同名の別会社の可能性): ${[...rejected].join(', ')}`);
   if (estimateOnly) notes.push(`従業員数は${{ agencyhub: 'AgencyHubの規模レンジ下限', openwork: 'OpenWorkの社員数レンジ(下限/上限)', gbizinfo: 'Gビズインフォ(政府保有情報・古い可能性)の値' }[emp.source] ?? 'SalesNowの推定値'}(${emp.value}名)${nearThreshold ? '・閾値付近のため要確認' : ''}`);
   if (emp20 && !empCheck.confirmed) notes.push(`従業員数が未確認: ${empCheck.reasons.join(' / ')}`);
+  if (emp?.source === 'edinet' && consolidated) notes.push(`有価証券報告書の連結従業員数は${consolidated.value}名（採用した${emp.value}名は提出会社単体）`);
   if (emp == null && members) notes.push(`Wantedlyメンバー数 ${members.value}人(参考・従業員数とは別物)`);
 
   return {
@@ -102,6 +105,8 @@ export function consolidate(c, { minEmployees = 20 } = {}) {
     employeesSource: emp?.source ?? null,
     emp20,
     empConfirmed: empCheck.confirmed,
+    edinetCode: edinetCode?.value ?? null,
+    securitiesCode: (edinetCode?.snippet ?? '').match(/証券コード(\d{4,5})/)?.[1] ?? null,
     categories: cats.map((x) => x.label),
     categoryKeywords: [...new Set(cats.flatMap((x) => x.keywords))],
     contactUrl: contact?.value ?? null,

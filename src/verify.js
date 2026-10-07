@@ -1,5 +1,5 @@
 import { CATEGORIES, INDUSTRY_CORE, COMPETING_BUSINESS } from '../config/categories.js';
-import { looksLikeContactPage, sameBrand, contactKind, normalizeUrl } from './lib/extract.js';
+import { looksLikeContactPage, sameBrand, contactKind, normalizeUrl, findServiceLinks } from './lib/extract.js';
 import { normalizeName, nfkc, domainOf, flatten } from './lib/util.js';
 import { assessEmployees, SCOPE_RE } from './lib/employees.js';
 
@@ -32,46 +32,52 @@ export function selfDescription(top) {
 }
 
 // ---------------------------------------------------------------- 業種
-export function checkIndustry(catKey, { top, officialText }) {
+const count = (text, words) => words.reduce((n, w) => n + text.split(w).length - 1, 0);
+
+/**
+ * 業種の判定。「主業でなくても、会社としてそのカテゴリを取り扱っていれば含める」方針。
+ *  - 自社説明(タイトル・meta・トップの冒頭)にカテゴリの語がある → OK
+ *  - 本文(会社概要・事業/サービスページ)に語が複数回ある → OK（取り扱いあり）。1回だけの言及は要確認
+ *  - 「広告」「SNS」などの一般語しか無い → 要確認（取り扱いの具体的な記述が無い）
+ *  - どこにも無い → NG
+ * 別事業の語(DX・SaaS等)が並んでいても、それだけでは下げない（備考として残す）。
+ */
+export function checkIndustry(catKey, { top, officialText, extraText }) {
   const core = INDUSTRY_CORE[catKey];
   const label = CATEGORIES[catKey].label;
   if (!core) return { result: '要確認', comment: `${label}: 判定基準が未定義`, after: null };
   const self = selfDescription(top);
-  const body = norm(`${officialText ?? ''} ${flatten(top?.text ?? '')}`);
+  const body = norm(`${officialText ?? ''} ${flatten(top?.text ?? '')} ${extraText ?? ''}`);
   const mainSelf = hits(self, core.main);
   const mainBody = hits(body, core.main);
   const weakAny = hits(body, core.weak ?? []);
   const compSelf = hits(self, COMPETING_BUSINESS);
   if (!top && !officialText) return { result: '要確認', comment: '公式サイトの事業内容を確認できず、業種を判断できない', after: null };
-  const compNote = compSelf.length ? `主業は ${compSelf.slice(0, 3).join('・')} の可能性` : null;
+  const other = compSelf.length ? `（他に ${compSelf.slice(0, 3).join('/')} 等の事業もあり、${label}は主業でない可能性）` : '';
   if (!mainSelf.length && !mainBody.length && !weakAny.length) {
-    return { result: 'NG', comment: `公式サイトの文章に「${core.main.slice(0, 4).join('/')}」等が見当たらず、${label}とは確認できない`, after: compNote };
+    return { result: 'NG', comment: `公式サイトの文章に「${core.main.slice(0, 4).join('/')}」等が見当たらず、${label}とは確認できない`, after: compSelf.length ? `主業は ${compSelf.slice(0, 3).join('・')} の可能性` : null };
   }
-  // 自社説明が別の事業の語ばかりで、カテゴリの語が無い → 主業が明確に別
-  if (!mainSelf.length && compSelf.length >= 2) {
-    return { result: 'NG', comment: `公式の自社説明は「${compSelf.slice(0, 4).join('/')}」が中心で、${label}を示す語が無い。主業は別(${compSelf.slice(0, 2).join('・')})`, after: compNote };
-  }
-  const notes = [];
   let result = 'OK';
-  if (!mainSelf.length) {
+  let comment;
+  if (mainSelf.length) {
+    comment = `公式の自社説明に「${mainSelf.slice(0, 3).join('/')}」あり。${label}を取り扱っている${other}`;
+  } else if (mainBody.length && (mainBody.length >= 2 || count(body, mainBody) >= 2)) {
+    comment = `公式サイトの本文に「${mainBody.slice(0, 3).join('/')}」が複数あり、${label}を取り扱っている（自社説明の冒頭には無く、主業でない可能性）${other}`;
+  } else if (mainBody.length) {
     result = '要確認';
-    notes.push(`公式の自社説明(タイトル・冒頭)に${label}を示す語がなく、${mainBody.length ? `本文中にのみ「${mainBody.slice(0, 3).join('/')}」` : `関連語(${weakAny.slice(0, 3).join('/')})のみ`}。主業か要確認`);
-  } else if (compSelf.length >= 2 && compSelf.length >= mainSelf.length) {
+    comment = `公式サイトの本文に「${mainBody[0]}」の言及が1回あるのみで、取り扱いの実態は要確認`;
+  } else {
     result = '要確認';
-    notes.push(`自社説明に「${compSelf.slice(0, 4).join('/')}」が並び、主業が別(${compSelf.slice(0, 2).join('・')})の可能性。${label}は事業の一部かもしれない`);
-  } else if (compSelf.length === 1 && mainSelf.length === 1) {
-    result = '要確認';
-    notes.push(`自社説明に${label}の語(${mainSelf[0]})と別事業の語(${compSelf[0]})が1つずつあり、主業は要確認`);
+    comment = `公式サイトに${label}を示す具体的な語がなく、関連語(${weakAny.slice(0, 3).join('/')})のみ。取り扱いの有無は要確認`;
   }
-  if (core.extra) {
+  if (core.extra && result === 'OK') {
     const ex = hits(body, core.extra);
     if (!ex.length) {
-      result = result === 'OK' ? '要確認' : result;
-      notes.push(`${core.extraLabel}を示す記述が公式サイトに無く、${label}(の実態)は要確認`);
+      result = '要確認';
+      comment = `${core.extraLabel}を示す記述が公式サイトに無く、${label}(の実態)は要確認`;
     }
   }
-  const comment = result === 'OK' ? `公式の自社説明に「${mainSelf.slice(0, 3).join('/')}」あり${compSelf.length ? `（他に ${compSelf.slice(0, 2).join('/')}）` : ''}。${label}として妥当` : notes.join(' / ');
-  return { result, comment, after: result === 'OK' ? label : compNote ?? label };
+  return { result, comment, after: result === 'OK' ? label : null };
 }
 
 // ---------------------------------------------------------------- 従業員数
@@ -91,7 +97,8 @@ export function checkEmployees(c, r) {
   if (worst && worst.ratio >= 1.5) {
     const detail = `${worst.e.source}=${worst.e.value}名`;
     const explained = SCOPE_RE.test(worst.e.snippet ?? '') || a.scope;
-    if (worst.ratio >= 3 && !explained) {
+    // 有報(EDINET)は社名+所在地で特定した一次情報。他サイトとの乖離は「別会社」ではなく集計範囲・時点の違いとして要確認に留める
+    if (worst.ratio >= 3 && !explained && chosen.source !== 'edinet') {
       result = 'NG';
       notes.push(`${chosen.source}=${r.employees}名に対し${detail}と${worst.ratio.toFixed(1)}倍の乖離。別会社の数字の可能性`);
     } else {
@@ -99,7 +106,7 @@ export function checkEmployees(c, r) {
       notes.push(`${chosen.source}=${r.employees}名に対し${detail}と差がある(${worst.ratio.toFixed(1)}倍)。調査時点・集計範囲の違いの可能性`);
     }
   }
-  if (result === 'OK') notes.unshift(`${chosen.source === 'official' ? '公式サイト' : chosen.source}で${r.employees}名${a.asOf ? `（${a.asOf}時点）` : ''}${others.length ? `。他の情報源(${others.map((e) => `${e.source}=${e.value}`).join(', ')})とも概ね整合` : ''}`);
+  if (result === 'OK') notes.unshift(`${{ official: '公式サイト', edinet: '有価証券報告書(EDINET)' }[chosen.source] ?? chosen.source}で${r.employees}名${a.asOf ? `（${a.asOf}時点）` : ''}${others.length ? `。他の情報源(${others.map((e) => `${e.source}=${e.value}`).join(', ')})とも概ね整合` : ''}`);
   return { result, comment: notes.join(' / '), after: r.employees, asOf: a.asOf, source: chosen.source };
 }
 
@@ -203,8 +210,24 @@ export async function verifyCompany(c, r, cats, { crawler, log }) {
     }
   }
   const officialText = c.evidence.filter((e) => e.field === 'profileText' && e.source === 'official').map((e) => e.value).join(' ');
-  const industry = {};
+  let industry = {};
   for (const k of cats) industry[k] = checkIndustry(k, { top, officialText });
+  // OKにならなかったカテゴリは、事業・サービスのページ(最大3)も読んで取り扱いの記述を探す（取得結果はキャッシュされる）
+  if (top && cats.some((k) => industry[k].result !== 'OK')) {
+    const pages = [];
+    for (const l of findServiceLinks(top.anchors, r.officialUrl).slice(0, 3)) {
+      try {
+        pages.push(flatten((await crawler.snapshot(l.url)).text ?? '').slice(0, 4000));
+      } catch (e) {
+        log?.(`  ! verify ${r.name}: 事業ページを開けない ${l.url} (${e.message.slice(0, 40)})`);
+      }
+    }
+    if (pages.length) {
+      const extraText = pages.join(' ');
+      industry = {};
+      for (const k of cats) industry[k] = checkIndustry(k, { top, officialText, extraText });
+    }
+  }
   const identity = checkIdentity(c, r, { top, officialText });
   const employees = checkEmployees(c, r);
   const contact = await checkContact(c, r, { crawler, top });

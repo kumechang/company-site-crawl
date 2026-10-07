@@ -1,6 +1,6 @@
 {
  "origin": "https://www.dr-recella.com",
- "fetchedAt": "2026-10-06T13:40:54.885Z",
+ "fetchedAt": "2026-10-07T01:23:50.953Z",
  "status": 200,
  "text": "User-agent: *\nDisallow: /grandtop/wp-admin/\nAllow: /grandtop/wp-admin/admin-ajax.php\n\nsitemap:https://www.dr-recella.com/sitemap.xml"
 }

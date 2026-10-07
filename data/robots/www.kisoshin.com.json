@@ -1,0 +1,7 @@
+{
+ "origin": "http://www.kisoshin.com",
+ "fetchedAt": "2026-10-07T06:33:11.944Z",
+ "status": "error",
+ "text": "",
+ "error": "net::ERR_BLOCKED_BY_CLIENT at http://www.kisoshin.com/robots.txt"
+}

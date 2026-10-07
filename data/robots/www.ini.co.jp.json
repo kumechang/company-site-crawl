@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.ini.co.jp",
+ "fetchedAt": "2026-10-07T04:19:19.344Z",
+ "status": 200,
+ "text": "User-Agent: *\nDisallow:\n\nSitemap: https://www.ini.co.jp/sitemap.xml\nSitemap: https://www.ini.co.jp/sitemap-portfolio.xml\nSitemap: https://www.ini.co.jp/sitemap-blog.xml\nSitemap: https://www.ini.co.jp/sitemap-information.xml"
+}

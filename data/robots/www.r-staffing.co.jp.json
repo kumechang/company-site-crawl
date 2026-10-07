@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.r-staffing.co.jp",
+ "fetchedAt": "2026-10-07T07:07:08.590Z",
+ "status": 200,
+ "text": "User-agent: *\n\nDisallow: /sol/op31/sd01/\nDisallow: /sol/op53/sd01/\nDisallow: /sol/op53/sd04/\nDisallow: /tokyo/23ku/AR_CFA10/D160808836D/\nDisallow: /sol/op21/sd02/?simple_search_kbn=6&menu_param=C056524,C056510,C056549,C080052,C117271,C221233,C346033,C086456\nDisallow: /sol/contents/info/staffpocketbook.pdf\nDisallow: /sol/contents/info/sittoku.pdf\n\nSitemap: http://www.r-staffing.co.jp/sitemap.xml\n"
+}

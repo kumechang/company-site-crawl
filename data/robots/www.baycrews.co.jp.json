@@ -1,6 +1,6 @@
 {
  "origin": "http://www.baycrews.co.jp",
- "fetchedAt": "2026-10-06T13:29:38.589Z",
+ "fetchedAt": "2026-10-07T01:10:58.560Z",
  "status": 200,
  "text": "# START YOAST BLOCK\n# ---------------------------\nUser-agent: *\nDisallow:\n\nSitemap: https://baycrews.co.jp/sitemap_index.xml\n# ---------------------------\n# END YOAST BLOCK"
 }

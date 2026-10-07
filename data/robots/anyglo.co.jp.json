@@ -1,6 +1,6 @@
 {
  "origin": "https://anyglo.co.jp",
- "fetchedAt": "2026-10-06T12:50:55.228Z",
+ "fetchedAt": "2026-10-07T01:47:24.652Z",
  "status": 200,
  "text": "# START YOAST BLOCK\n# ---------------------------\nUser-agent: *\nDisallow:\n\nSitemap: https://anyglo.co.jp/sitemap_index.xml\n# ---------------------------\n# END YOAST BLOCK"
 }

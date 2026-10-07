@@ -1,0 +1,6 @@
+{
+ "origin": "https://adways.net",
+ "fetchedAt": "2026-10-07T01:39:32.440Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://adways.net/wp-sitemap.xml"
+}

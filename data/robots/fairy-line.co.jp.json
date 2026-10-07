@@ -1,0 +1,6 @@
+{
+ "origin": "https://fairy-line.co.jp",
+ "fetchedAt": "2026-10-07T07:04:37.894Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://fairy-line.co.jp/sitemap.xml\nSitemap: https://fairy-line.co.jp/sitemap.html\n"
+}

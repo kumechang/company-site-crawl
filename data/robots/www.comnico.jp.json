@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.comnico.jp",
+ "fetchedAt": "2026-10-07T01:35:26.752Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow:/news-test/\nDisallow: /*.pdf$\nDisallow: /_hcms/preview/\nDisallow: /hs/manage-preferences/\nDisallow: /hs/preferences-center/\nDisallow: /*?*hs_preview=*\nDisallow: /*?*hsCacheBuster=*\n"
+}

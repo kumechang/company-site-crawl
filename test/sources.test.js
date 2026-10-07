@@ -21,6 +21,11 @@ import * as jcia from '../src/sources/jcia.js';
 import * as jaro from '../src/sources/jaro.js';
 import * as article from '../src/sources/article.js';
 import { exportSample } from '../src/export.js';
+import * as edinet from '../src/sources/edinet.js';
+import { readZip } from '../src/lib/zip.js';
+import { assessEmployees } from '../src/lib/employees.js';
+import { checkEmployees } from '../src/verify.js';
+import zlib from 'node:zlib';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
@@ -508,4 +513,178 @@ test('サンプル出力: 検証が全てOKでない会社はサンプルに入�
   assert.equal(review, 1);
   assert.ok(fs.readFileSync(path.join(dir, 'sample_review.csv'), 'utf8').includes('irpage'));
   assert.ok(!fs.readFileSync(path.join(dir, 'sample.csv'), 'utf8').includes('irpage'));
+});
+
+// ---------------------------------------------------------------- EDINET(有価証券報告書)
+const CODELIST = [
+  'ダウンロード実行日,2026年10月07日現在,件数,4件',
+  '"ＥＤＩＮＥＴコード","提出者種別","上場区分","連結の有無","資本金","決算日","提出者名","提出者名（英字）","提出者名（ヨミ）","所在地","提出者業種","証券コード","提出者法人番号"',
+  '"E04760","内国法人・組合","上場","有","74609","12月31日","株式会社電通グループ","DENTSU GROUP INC.","","港区東新橋一丁目８番１号","サービス業","43240","4010401048922"',
+  '"E90001","内国法人・組合","非上場","無","100","3月31日","株式会社同名","X","","大阪市西区靱本町","サービス業","",""',
+  '"E90002","内国法人・組合","非上場","無","100","3月31日","株式会社同名","X","","横浜市西区みなとみらい","サービス業","",""',
+  '"E90003","内国法人・組合（有価証券報告書等の提出義務者以外）","非上場","無","100","3月31日","株式会社対象外","X","","千代田区","サービス業","",""',
+].join('\r\n');
+
+test('EDINETコード一覧の解析と提出者の選択', () => {
+  const rows = edinet.parseCodeList(CODELIST);
+  assert.equal(rows.length, 4);
+  assert.deepEqual([rows[0].code, rows[0].name, rows[0].secCode, rows[0].consolidated], ['E04760', '株式会社電通グループ', '43240', '有']);
+  // 名前+東京の既知住所 → 一致。住所が合わなければ別会社として採用しない
+  assert.equal(edinet.pickFiler(rows, '電通グループ', ['東京都港区南青山']).row.code, 'E04760');
+  assert.equal(edinet.pickFiler(rows, '株式会社電通グループ', ['東京都渋谷区神宮前']), null);
+  // 住所が無くても同名が1社なら採用（照合なしの印つき）
+  assert.deepEqual([edinet.pickFiler(rows, '株式会社電通グループ', []).row.code, edinet.pickFiler(rows, '株式会社電通グループ', []).byAddress], ['E04760', false]);
+  // 同名が複数: 住所で1社に絞れれば採用、住所なしは断定しない。「西区」の大阪/横浜も市で区別する
+  assert.equal(edinet.pickFiler(rows, '株式会社同名', []), null);
+  assert.equal(edinet.pickFiler(rows, '株式会社同名', ['大阪府大阪市西区靱本町1-1']).row.code, 'E90001');
+  assert.equal(edinet.pickFiler(rows, '株式会社同名', ['神奈川県横浜市西区']).row.code, 'E90002');
+  // 提出義務者以外は対象外
+  assert.equal(edinet.pickFiler(rows, '株式会社対象外', []), null);
+  // 区だけの住所は東京23区。東京以外の既知住所とは合わない
+  assert.equal(edinet.sameLocation('大阪府大阪市北区', '北区'), false);
+  assert.equal(edinet.sameLocation('東京都北区', '北区'), true);
+});
+
+test('EDINETの所在地に都道府県を補う', () => {
+  assert.equal(edinet.withPrefecture('港区東新橋一丁目８番１号'), '東京都港区東新橋一丁目8番1号');
+  assert.equal(edinet.withPrefecture('横浜市西区みなとみらい', ['神奈川県横浜市']), '神奈川県横浜市西区みなとみらい');
+  assert.equal(edinet.withPrefecture('四條畷市中野新町', []), '四條畷市中野新町'); // 補えないものはそのまま
+});
+
+const q = (cells) => cells.map((x) => `"${x}"`).join('\t');
+const emp = (ctx, v) => q(['jpcrp_cor:NumberOfEmployees', '従業員数', ctx, '当期末', 'その他', '時点', 'pure', '', v]);
+
+test('有報CSVから従業員数(単体/連結)を取る', () => {
+  const csv = [
+    q(['要素ID', '項目名', 'コンテキストID', '相対年度', '連結・個別', '期間・時点', 'ユニットID', '単位', '値']),
+    emp('Prior1YearInstant', '402'),
+    emp('CurrentYearInstant', '1,786'),
+    emp('CurrentYearInstant_NonConsolidatedMember', '568'),
+    emp('CurrentYearInstant_jpcrp030000-asr_E01024-000JapanReportableSegmentsMember', '665'),
+    emp('CurrentYearInstant_NonConsolidatedMember_CorporateSharedMember', '81'),
+  ].join('\r\n');
+  assert.deepEqual(edinet.parseEmployeesCsv(csv), { cur: 1786, nonCons: 568 });
+  assert.deepEqual(edinet.parseEmployeesCsv(emp('CurrentYearInstant', '－')), { cur: null, nonCons: null });
+  // 単体があれば単体。連結のみで連結財務諸表を作る会社は「連結」(単体として断定しない)。連結を作らない会社の当期末は単体
+  assert.deepEqual(edinet.chooseEmployees({ cur: 1786, nonCons: 568 }, true), { value: 568, scope: '提出会社単体', consolidated: 1786 });
+  assert.deepEqual(edinet.chooseEmployees({ cur: 143, nonCons: null }, true), { value: 143, scope: '連結', consolidated: null });
+  assert.deepEqual(edinet.chooseEmployees({ cur: 143, nonCons: null }, false), { value: 143, scope: '提出会社単体', consolidated: null });
+  assert.equal(edinet.chooseEmployees({ cur: null, nonCons: null }, true), null);
+});
+
+test('書類一覧: 有価証券報告書だけを選び、コードごとに最新を残す', () => {
+  const d = (o) => ({ docID: 'S1', edinetCode: 'E1', docTypeCode: '120', formCode: '030000', ordinanceCode: '010', withdrawalStatus: '0', periodEnd: '2026-03-31', submitDateTime: '2026-06-25 09:00', ...o });
+  assert.equal(edinet.isAnnualReport(d({})), true);
+  assert.equal(edinet.isAnnualReport(d({ docTypeCode: '140' })), false); // 四半期報告書
+  assert.equal(edinet.isAnnualReport(d({ formCode: '07A000' })), false); // 投資信託の有報
+  assert.equal(edinet.isAnnualReport(d({ withdrawalStatus: '1' })), false); // 取下げ
+  const m = edinet.latestByCode([d({ docID: 'old', periodEnd: '2025-03-31' }), d({ docID: 'new' }), d({ docID: 'other', edinetCode: 'E2' })]);
+  assert.equal(m.get('E1').docID, 'new');
+  assert.equal(m.size, 2);
+});
+
+test('ZIPの読み出し(deflate・無圧縮)', () => {
+  const zip = (entries) => {
+    const locals = [];
+    const centrals = [];
+    let off = 0;
+    for (const [name, data, method] of entries) {
+      const raw = method === 8 ? zlib.deflateRawSync(data) : data;
+      const nm = Buffer.from(name);
+      const lh = Buffer.alloc(30);
+      lh.writeUInt32LE(0x04034b50, 0);
+      lh.writeUInt16LE(method, 8);
+      lh.writeUInt32LE(raw.length, 18);
+      lh.writeUInt16LE(nm.length, 26);
+      locals.push(lh, nm, raw);
+      const ch = Buffer.alloc(46);
+      ch.writeUInt32LE(0x02014b50, 0);
+      ch.writeUInt16LE(method, 10);
+      ch.writeUInt32LE(raw.length, 20);
+      ch.writeUInt16LE(nm.length, 28);
+      ch.writeUInt32LE(off, 42);
+      centrals.push(ch, nm);
+      off += 30 + nm.length + raw.length;
+    }
+    const cd = Buffer.concat(centrals);
+    const end = Buffer.alloc(22);
+    end.writeUInt32LE(0x06054b50, 0);
+    end.writeUInt16LE(entries.length, 10);
+    end.writeUInt32LE(cd.length, 12);
+    end.writeUInt32LE(off, 16);
+    return Buffer.concat([...locals, cd, end]);
+  };
+  const out = readZip(zip([['a/b.csv', Buffer.from('こんにちは'.repeat(50)), 8], ['c.txt', Buffer.from('plain'), 0], ['dir/', Buffer.alloc(0), 0]]));
+  assert.deepEqual(out.map((e) => e.name), ['a/b.csv', 'c.txt']);
+  assert.equal(out[0].data.toString(), 'こんにちは'.repeat(50));
+  assert.equal(out[1].data.toString(), 'plain');
+});
+
+test('EDINET: 検索→証拠の追加（API部分は差し替え）と、判定への反映', async () => {
+  const fake = {
+    codeList: async () => edinet.parseCodeList(CODELIST),
+    docIndex: async () => new Map([['E04760', { docID: 'S100XS0O', periodEnd: '2025-12-31', submitDateTime: '2026-03-26 15:00' }]]),
+    employeesOf: async () => ({ cur: 67454, nonCons: 135 }),
+  };
+  const c = newCompany('株式会社電通グループ');
+  addEvidence(c, 'address', '東京都港区東新橋', { source: 'official', url: 'u', snippet: '' });
+  addEvidence(c, 'employees', 60000, { source: 'official', url: 'u', snippet: 'グループ全体で60,000名' });
+  assert.equal(await edinet.lookup(c, { edinet: fake, log: () => {} }), true);
+  const r = consolidate(c);
+  // 有報(単体)が公式のグループ値より優先され、確認済み。連結値は備考に出る
+  assert.deepEqual([r.employees, r.employeesSource, r.empConfirmed], [135, 'edinet', true]);
+  assert.equal(r.edinetCode, 'E04760');
+  assert.equal(r.securitiesCode, '4324');
+  assert.equal(r.address, '東京都港区東新橋一丁目8番1号');
+  assert.match(r.notes.join(' '), /連結従業員数は67454名/);
+  // 再実行しても証拠が重複しない
+  await edinet.lookup(c, { edinet: fake, log: () => {} });
+  assert.equal(c.evidence.filter((e) => e.source === 'edinet' && e.field === 'employees').length, 1);
+  // 公式の値(60,000名)との乖離は「別会社」ではなく集計範囲の違いとして要確認(NGにしない)
+  const k = checkEmployees(c, r);
+  assert.notEqual(k.result, 'NG');
+  assert.match(k.comment, /有価証券報告書\(EDINET\)|差がある/);
+  // 一致なし: 以前の証拠は消える
+  const other = newCompany('株式会社コムニコ');
+  assert.equal(await edinet.lookup(other, { edinet: fake, log: () => {} }), false);
+  assert.equal(other.evidence.length, 0);
+});
+
+test('連結のみの有報は従業員数を「確認済み」にしない', () => {
+  const ev = { value: 143, source: 'edinet', snippet: '有価証券報告書 2026年3月期（2026年6月25日提出・書類ID S1） 連結の従業員数 143名' };
+  const a = assessEmployees(ev, [ev]);
+  assert.equal(a.confirmed, false);
+  assert.match(a.reasons.join(), /有価証券報告書の数字に「連結」/);
+  const ok = assessEmployees({ ...ev, snippet: ev.snippet.replace('連結', '提出会社単体') }, [ev]);
+  assert.equal(ok.confirmed, true);
+  assert.equal(ok.asOf, '2026年3月');
+});
+
+test('求人ボックス: 一覧見出しから全件数とページ番号', async () => {
+  const kb = await import('../src/sources/kyujinbox.js');
+  assert.deepEqual(kb.parseTotal({ text: '求人検索 SNS運用 - 東京都の転職・求人情報\n転職・求人情報 71,010 件 3 ページ目\n…' }), { total: 71010, page: 3 });
+  assert.equal(kb.parseTotal({ text: 'ありません' }), null);
+});
+
+test('スタンバイ: 一覧本文から会社名・タイトル・勤務地、全件数', async () => {
+  const sb = await import('../src/sources/stanby.js');
+  const text = [
+    '東京都港区のインフルエンサー マネージャーの求人・仕事・採用', '39,446', '件', '詳細を表示',
+    '業務委託', '業務委託／経験3年以上／インテグレーションマネージャー', '非公開', '港区', '月給100万円',
+    '新着', '正社員', '港区赤坂／インフルエンサーチーフマネージャー（業績・マネージャー管理等）', '株式会社ＴＲＵＳＴＡＲ', '港区', '年収480万円〜648万円 / 賞与・昇給あり',
+    '正社員', 'インフルエンサーキャスティング担当', 'C Channel株式会社', '東京都港区', '月給30万円',
+    '正社員', '同じ会社の別求人', '株式会社ＴＲＵＳＴＡＲ', '港区', '月給30万円',
+  ].join('\n');
+  const list = sb.parseList({ text });
+  assert.deepEqual(list.map((x) => x.company), ['株式会社ＴＲＵＳＴＡＲ', 'C Channel株式会社']); // 「非公開」は除外・重複は1社
+  assert.match(list[0].title, /インフルエンサーチーフマネージャー/);
+  assert.equal(sb.parseTotal({ text }), 39446);
+});
+
+test('スタンバイ: ページ送りはパス形式(/r_…/2)で、robots.txtは詳細・検索・?付きを禁止', async () => {
+  const { parseRobots, isAllowed } = await import('../src/lib/robots.js');
+  const g = parseRobots('User-agent: *\nDisallow: /jobs/\nDisallow: /search\nDisallow: /*?*\n');
+  assert.equal(isAllowed(g, '/r_abc123/2'), true);
+  assert.equal(isAllowed(g, '/jobs/bd5d4d48'), false);
+  assert.equal(isAllowed(g, '/r_abc123?page=2'), false);
 });

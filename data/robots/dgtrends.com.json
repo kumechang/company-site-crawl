@@ -1,0 +1,6 @@
+{
+ "origin": "https://dgtrends.com",
+ "fetchedAt": "2026-10-07T01:35:04.118Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wordpress/wp-admin/\nAllow: /wordpress/wp-admin/admin-ajax.php\nDisallow: /*?fbclid=\nDisallow: /*?gclid=\nDisallow: /*?yclid=\nDisallow: /*?fpc=\nDisallow: /*?utm_source=\nDisallow: /*?argument=\nDisallow: /*?ref=\nDisallow: /*?forcedcta=\nDisallow: /*?s=\nDisallow: /*?sort=\nDisallow: /*?page=\nDisallow: /*?ls=\n"
+}

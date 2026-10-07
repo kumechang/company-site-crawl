@@ -1,6 +1,6 @@
 {
  "origin": "https://shiro-shiro.jp",
- "fetchedAt": "2026-10-06T15:25:47.458Z",
+ "fetchedAt": "2026-10-07T01:18:25.198Z",
  "status": 200,
  "text": "User-agent: Googlebot\nDisallow:\n\nUser-agent: Googlebot-image\nDisallow:\n\nUser-agent: *\nSitemap: https://shiro-shiro.jp/ec/ext/sitemap.xml\n\nDisallow: /ec/giftShEditShoppingBasket.html\nDisallow: /ec/myInquiryList.html\nDisallow: /ec/giftLgLogin.html\nDisallow: /ec/myPage.html\n\nUser-agent: bingbot\ncrawl-delay: 5\n\nUser-agent: baiduspider\ncrawl-delay: 5\n\nUser-agent: yetbot\ncrawl-delay: 5"
 }

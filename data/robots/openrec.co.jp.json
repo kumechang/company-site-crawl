@@ -1,0 +1,6 @@
+{
+ "origin": "https://openrec.co.jp",
+ "fetchedAt": "2026-10-07T09:08:50.190Z",
+ "status": 200,
+ "text": "User-agent: *\nAllow: /\nDisallow: /draft\n\nSitemap: https://openrec.co.jp/sitemap.xml\n"
+}
