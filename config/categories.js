@@ -4,6 +4,13 @@
 //  - wantedly: Wantedly の検索キーワード
 //  - imitsu:   アイミツの東京の一覧URL
 //  最終的なカテゴリ判定は、集めたテキストに対する match で行う（検索元は参考情報）
+
+/**
+ * 求人ボックスの一覧URL: https://求人ボックス.com/{キーワード}の仕事-{都道府県}（複数語は - でつなぐ）。
+ * 求人詳細(/jb/)は robots.txt 禁止のため、一覧本文の社名・求人タイトルだけを使う。
+ */
+const KB = (keyword, pref = '東京都') => `https://xn--pckua2a7gp15o89zb.com/${encodeURIComponent(keyword)}${encodeURIComponent('の仕事')}-${encodeURIComponent(pref)}`;
+
 export const CATEGORIES = {
   cosme_d2c: {
     label: '化粧品D2C/P2C',
@@ -17,7 +24,7 @@ export const CATEGORIES = {
     green: ['https://www.green-japan.com/search/area/13/industry/130120'],
     wantedly: ['化粧品 D2C', 'コスメ ブランド'],
     // 求人ボックスの一覧(ユーザー提供)。求人詳細(/jb/)は robots 禁止のため一覧本文の社名のみ使う。メーカー・小売も混ざるので、D2C(直販)の確認は検証で行う
-    kyujinbox: ['https://xn--pckua2a7gp15o89zb.com/%E5%8C%96%E7%B2%A7%E5%93%81%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD'],
+    kyujinbox: [KB('化粧品'), KB('化粧品-D2C'), KB('コスメ-ブランド')],
     salesnow: [{ url: 'https://salesnow.jp/db/industries/retail-sales/subIndustries/cosmetics-sales', label: '化粧品', pages: 5, limit: 40 }],
     jcia: [{ url: 'https://www.jcia.org/admin/memberlist', label: '化粧品', limit: 40 }],
     jaro: [{ url: 'https://www.jaro.or.jp/kaiinsha/', section: '化粧品・トイレタリー', label: '化粧品', limit: 40 }],
@@ -42,7 +49,7 @@ export const CATEGORIES = {
     green: ['https://www.green-japan.com/search/area/13/industry/100125'],
     wantedly: ['インフルエンサー キャスティング', 'インフルエンサー マネジメント'],
     // 求人ボックスの一覧(ユーザー提供)。求人詳細(/jb/)は robots 禁止のため一覧本文の社名のみ使う
-    kyujinbox: ['https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD'],
+    kyujinbox: [KB('インフルエンサー-事務所'), KB('インフルエンサー-マーケティング'), KB('インフルエンサー-キャスティング'), KB('YouTuber-マネージャー')],
     // PR TIMES の検索で見つけた会社。label は「インフルエンサー」のみ（事務所かどうかは公式サイトの文章で判定する）
     prtimes: [
       { keyword: 'インフルエンサー 事務所 所属', label: 'インフルエンサー' },
@@ -64,6 +71,7 @@ export const CATEGORIES = {
     match: { any: ['広告代理', 'アドエージェンシー', 'Web広告', '運用型広告', '広告運用', 'ネット広告', 'デジタル広告', '広告事業'] },
     green: ['https://www.green-japan.com/search/area/13/industry/100125', 'https://www.green-japan.com/search/area/13/industry/110120'],
     wantedly: ['広告代理店', '運用型広告'],
+    kyujinbox: [KB('広告代理店'), KB('ネット広告-運用'), KB('Web広告-運用'), KB('デジタルマーケティング')],
     imitsu: ['https://imitsu.jp/ct-net-adagency/pr-tokyo/'],
     grip: [
       { url: 'https://grip-space.co.jp/ad-db/pref/tokyo/field/5-1', label: '広告代理店' }, // 総合広告代理店
@@ -108,7 +116,7 @@ export const CATEGORIES = {
       'https://digi-mado.jp/category/marketing/sns-analysis-tools/', // SNS分析ツール
     ],
     engage: ['https://en-gage.net/user/search/?from=list&keyword=SNS%E9%81%8B%E7%94%A8&area=23'],
-    kyujinbox: ['https://xn--pckua2a7gp15o89zb.com/SNS%E9%81%8B%E7%94%A8%E4%BB%A3%E8%A1%8C-%E6%9D%B1%E4%BA%AC%E9%83%BD%E3%81%AE%E4%BB%95%E4%BA%8B'],
+    kyujinbox: ['https://xn--pckua2a7gp15o89zb.com/SNS%E9%81%8B%E7%94%A8%E4%BB%A3%E8%A1%8C-%E6%9D%B1%E4%BA%AC%E9%83%BD%E3%81%AE%E4%BB%95%E4%BA%8B', KB('SNS運用'), KB('SNSマーケティング'), KB('Instagram-運用')],
     // アイミツには専用カテゴリが無く特集ページのみ（ユーザー確認済み）。一覧中の東京のsupplierだけを拾う
     imitsu: ['https://imitsu.jp/list/net-adagency/socialmedia-outsourcing', 'https://imitsu.jp/list/hp-design/sns/'],
     slidelib: ['https://cone-c-slide.com/liblog/sns/'], // 他に /liblog/instagram/ /tiktok/ /twitter/ /youtube/ /facebook/ /threads/ /sns-consulting/ の比較記事あり（未使用）
