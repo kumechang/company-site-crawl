@@ -1,0 +1,6 @@
+{
+ "origin": "https://sys.ne.jp",
+ "fetchedAt": "2026-10-07T15:00:30.814Z",
+ "status": 200,
+ "text": "User-agent: Googlebot\nUser-agent: *\nAllow: /\n\nSitemap: https://sys.ne.jp/sitemap.xml"
+}

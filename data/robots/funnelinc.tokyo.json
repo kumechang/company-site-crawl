@@ -1,0 +1,6 @@
+{
+ "origin": "https://funnelinc.tokyo",
+ "fetchedAt": "2026-10-07T14:57:20.403Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /cms/wp-admin/\nAllow: /cms/wp-admin/admin-ajax.php\n\nSitemap: https://funnelinc.tokyo/wp-sitemap.xml\n"
+}

@@ -1,0 +1,6 @@
+{
+ "origin": "https://bmsg.tokyo",
+ "fetchedAt": "2026-10-07T14:58:43.490Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp/wp-admin/\nAllow: /wp/wp-admin/admin-ajax.php\n\nSitemap: https://bmsg.tokyo/wp-sitemap.xml\n"
+}

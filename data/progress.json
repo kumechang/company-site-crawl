@@ -75,5 +75,27 @@
   "failedAt": null,
   "runs": 2,
   "lastAt": "2026-10-07T14:36:43.297Z"
+ },
+ "influencer_agency|meetsmore|https://meetsmore.com/product-services/influencer-casting": {
+  "nextPage": 1,
+  "offset": 7,
+  "found": 7,
+  "exhausted": false,
+  "failures": 0,
+  "lastError": null,
+  "failedAt": null,
+  "runs": 1,
+  "lastAt": "2026-10-07T14:54:36.667Z"
+ },
+ "influencer_agency|aspic|https://www.aspicjapan.org/asu/service/list/imk": {
+  "nextPage": 1,
+  "offset": 2,
+  "found": 2,
+  "exhausted": false,
+  "failures": 0,
+  "lastError": null,
+  "failedAt": null,
+  "runs": 1,
+  "lastAt": "2026-10-07T15:06:12.634Z"
  }
 }

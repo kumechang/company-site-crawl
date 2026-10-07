@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.valuesccg.com",
+ "fetchedAt": "2026-10-07T15:01:05.801Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\n# ç‰¹å®šã®éŽå‰°ã‚¢ã‚¯ã‚»ã‚¹botã‚’é®æ–­\nUser-agent: LinkupBot\nDisallow: /\n\nUser-agent: DataForSeoBot\nDisallow: /\n\nUser-agent: trendictionbot\nDisallow: /\n\nUser-agent: Amazonbot\nDisallow: /\n\nSitemap: https://www.valuesccg.com/wp-sitemap.xml"
+}

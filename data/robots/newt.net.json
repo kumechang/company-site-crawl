@@ -1,0 +1,6 @@
+{
+ "origin": "https://newt.net",
+ "fetchedAt": "2026-10-07T14:58:14.067Z",
+ "status": 200,
+ "text": "Sitemap: https://newt.net/sitemap.xml\n\nUser-agent: *\nDisallow: /signin\nDisallow: /account\n\n# AI Crawlers - explicitly allowed\nUser-agent: GPTBot\nDisallow: /signin\nDisallow: /account\nAllow: /\n\nUser-agent: ChatGPT-User\nDisallow: /signin\nDisallow: /account\nAllow: /\n\nUser-agent: OAI-SearchBot\nDisallow: /signin\nDisallow: /account\nAllow: /\n\nUser-agent: Google-Extended\nDisallow: /signin\nDisallow: /account\nAllow: /\n\nUser-agent: ClaudeBot\nDisallow: /signin\nDisallow: /account\nAllow: /\n\nUser-agent: PerplexityBot\nDisallow: /signin\nDisallow: /account\nAllow: /\n\nUser-agent: Meta-ExternalAgent\nDisallow: /signin\nDisallow: /account\nAllow: /\n"
+}

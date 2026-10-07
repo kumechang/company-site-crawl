@@ -1,0 +1,6 @@
+{
+ "origin": "https://teamcores.co.jp",
+ "fetchedAt": "2026-10-07T14:56:44.734Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wordpress/wp-admin/\nAllow: /wordpress/wp-admin/admin-ajax.php\n\nSitemap: https://teamcores.co.jp/sitemap.xml\nSitemap: https://teamcores.co.jp/sitemap.rss\n"
+}
