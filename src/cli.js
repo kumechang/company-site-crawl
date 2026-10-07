@@ -268,6 +268,7 @@ async function sample() {
 }
 
 /** 判定OKの会社を検証し c.checks に保存（公式サイト等はキャッシュ優先で再取得しない） */
+const VERIFY_TIMEOUT_MS = 120000;
 async function verify() {
   // 判定OKの会社が対象。sample の途中では、いま作っているカテゴリの会社だけ（他のカテゴリは、そのカテゴリを作るときに検証する）。
   // 前回と入力(会社の情報・カテゴリ・検証ロジック)が同じ会社は、検証結果が変わらないので取り直さない（--reverify で全部やり直す）
@@ -278,7 +279,25 @@ async function verify() {
   log(`# 検証: 判定OK ${ok.length}社${currentCat ? `のうち ${CATEGORIES[currentCat].label} ${scoped.length}社` : ''}、検証済みで変更なし ${scoped.length - targets.length}社は飛ばし、${targets.length}社を検証`);
   let i = 0;
   for (const { c, r } of targets) {
-    await verifyCompany(c, r, catsOf(c, r), { crawler, log });
+    const sig = checkSig(r, catsOf(c, r));
+    // 1社あたり VERIFY_TIMEOUT_MS で打ち切る（ページが固まっても次の会社へ進む）。打ち切った会社は検証できていない扱いで、同じ入力のうちは取り直さない
+    if (!opt.reverify && c.verifyTimeout === sig) {
+      log(`  ${++i}/${targets.length} ${r.name}: 前回タイムアウトのため飛ばす (--reverify で再試行)`);
+      continue;
+    }
+    let timer;
+    const done = await Promise.race([
+      verifyCompany(c, r, catsOf(c, r), { crawler, log }).then(() => true),
+      new Promise((res) => { timer = setTimeout(() => res(false), VERIFY_TIMEOUT_MS); }),
+    ]);
+    clearTimeout(timer);
+    if (!done) {
+      c.verifyTimeout = sig;
+      log(`  ${++i}/${targets.length} ${r.name}: ${VERIFY_TIMEOUT_MS / 1000}秒でタイムアウト（検証できていない扱い）`);
+      store.save();
+      continue;
+    }
+    delete c.verifyTimeout;
     const k = c.checks;
     log(`  ${++i}/${targets.length} ${r.name}: 業種=${Object.values(k.industry).map((x) => x.result).join('/') || '-'} 従業員=${k.employees.result} 問合せ=${k.contact.result} 取違=${k.identity.result}`);
     store.save();
