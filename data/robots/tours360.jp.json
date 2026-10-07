@@ -1,0 +1,6 @@
+{
+ "origin": "https://tours360.jp",
+ "fetchedAt": "2026-10-07T15:52:39.456Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://tours360.jp/sitemap.xml\nSitemap: https://tours360.jp/sitemap.html\n"
+}

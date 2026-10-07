@@ -1,0 +1,6 @@
+{
+ "origin": "https://epicai.co.jp",
+ "fetchedAt": "2026-10-07T15:52:51.013Z",
+ "status": 200,
+ "text": "User-agent: Googlebot\nUser-agent: *\nAllow: /\n\nSitemap: https://epicai.co.jp/sitemap.xml"
+}

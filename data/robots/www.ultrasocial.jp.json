@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.ultrasocial.jp",
+ "fetchedAt": "2026-10-07T15:51:51.584Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wordpress/wp-admin/\nAllow: /wordpress/wp-admin/admin-ajax.php\n\nSitemap: https://ultrasocial.jp/wp-sitemap.xml\n"
+}

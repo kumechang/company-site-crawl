@@ -185,5 +185,16 @@
   "failedAt": null,
   "runs": 1,
   "lastAt": "2026-10-07T15:48:28.822Z"
+ },
+ "influencer_agency|green|https://www.green-japan.com/search/area/13/industry/100125": {
+  "nextPage": 1,
+  "offset": 8,
+  "found": 8,
+  "exhausted": false,
+  "failures": 0,
+  "lastError": null,
+  "failedAt": null,
+  "runs": 1,
+  "lastAt": "2026-10-07T15:59:06.019Z"
  }
 }

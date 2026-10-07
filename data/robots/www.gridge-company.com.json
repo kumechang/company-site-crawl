@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.gridge-company.com",
+ "fetchedAt": "2026-10-07T15:52:12.143Z",
+ "status": 200,
+ "text": "User-agent: *\nAllow: /\nDisallow: *?lightbox=\n\n# Optimization for Google Ads Bot\nUser-agent: AdsBot-Google-Mobile\nUser-agent: AdsBot-Google\nDisallow: /_partials*\nDisallow: /pro-gallery-webapp/v1/galleries/*\n\n# Block PetalBot\nUser-agent: PetalBot\nDisallow: /\n\n# Crawl delay for overly enthusiastic bots\nUser-agent: dotbot\nCrawl-delay: 10\nUser-agent: AhrefsBot\nCrawl-delay: 10\n\nSitemap: https://www.gridge-company.com/en_en-sitemap.xml\nSitemap: https://www.gridge-company.com/sitemap.xml\n\n# Auto generated, go to SEO Tools > Robots.txt Editor to change this"
+}

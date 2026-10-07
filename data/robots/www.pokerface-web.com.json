@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.pokerface-web.com",
+ "fetchedAt": "2026-10-07T16:02:02.942Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://www.pokerface-web.com/sitemap.xml\nSitemap: https://www.pokerface-web.com/sitemap.rss\n"
+}
