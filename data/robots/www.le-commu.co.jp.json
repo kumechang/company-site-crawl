@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.le-commu.co.jp",
+ "fetchedAt": "2026-10-07T09:09:43.465Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp_new/wp-admin/\nAllow: /wp_new/wp-admin/admin-ajax.php\n"
+}
