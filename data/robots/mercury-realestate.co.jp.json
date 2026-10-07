@@ -1,0 +1,7 @@
+{
+ "origin": "https://mercury-realestate.co.jp",
+ "fetchedAt": "2026-10-07T15:31:08.515Z",
+ "status": "error",
+ "text": "",
+ "error": "Navigation timeout of 20000 ms exceeded"
+}

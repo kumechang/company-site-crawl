@@ -1,0 +1,6 @@
+{
+ "origin": "https://roseaupensant.jp",
+ "fetchedAt": "2026-10-07T15:31:48.685Z",
+ "status": 200,
+ "text": "\n\n\n\nUser-agent: *\nDisallow: /_cms/wp-admin/\nAllow: /_cms/wp-admin/admin-ajax.php\n\nSitemap: https://roseaupensant.jp/sitemap.xml\nSitemap: https://roseaupensant.jp/sitemap.rss\n"
+}

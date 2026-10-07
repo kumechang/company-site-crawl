@@ -119,5 +119,16 @@
   "failedAt": null,
   "runs": 1,
   "lastAt": "2026-10-07T15:13:54.762Z"
+ },
+ "influencer_agency|webkanji|https://web-kanji.com/search/influencer-marketing": {
+  "nextPage": 1,
+  "offset": 8,
+  "found": 8,
+  "exhausted": false,
+  "failures": 0,
+  "lastError": null,
+  "failedAt": null,
+  "runs": 1,
+  "lastAt": "2026-10-07T15:27:08.545Z"
  }
 }
