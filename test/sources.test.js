@@ -665,3 +665,26 @@ test('求人ボックス: 一覧見出しから全件数とページ番号', asy
   assert.deepEqual(kb.parseTotal({ text: '求人検索 SNS運用 - 東京都の転職・求人情報\n転職・求人情報 71,010 件 3 ページ目\n…' }), { total: 71010, page: 3 });
   assert.equal(kb.parseTotal({ text: 'ありません' }), null);
 });
+
+test('スタンバイ: 一覧本文から会社名・タイトル・勤務地、全件数', async () => {
+  const sb = await import('../src/sources/stanby.js');
+  const text = [
+    '東京都港区のインフルエンサー マネージャーの求人・仕事・採用', '39,446', '件', '詳細を表示',
+    '業務委託', '業務委託／経験3年以上／インテグレーションマネージャー', '非公開', '港区', '月給100万円',
+    '新着', '正社員', '港区赤坂／インフルエンサーチーフマネージャー（業績・マネージャー管理等）', '株式会社ＴＲＵＳＴＡＲ', '港区', '年収480万円〜648万円 / 賞与・昇給あり',
+    '正社員', 'インフルエンサーキャスティング担当', 'C Channel株式会社', '東京都港区', '月給30万円',
+    '正社員', '同じ会社の別求人', '株式会社ＴＲＵＳＴＡＲ', '港区', '月給30万円',
+  ].join('\n');
+  const list = sb.parseList({ text });
+  assert.deepEqual(list.map((x) => x.company), ['株式会社ＴＲＵＳＴＡＲ', 'C Channel株式会社']); // 「非公開」は除外・重複は1社
+  assert.match(list[0].title, /インフルエンサーチーフマネージャー/);
+  assert.equal(sb.parseTotal({ text }), 39446);
+});
+
+test('スタンバイ: ページ送りはパス形式(/r_…/2)で、robots.txtは詳細・検索・?付きを禁止', async () => {
+  const { parseRobots, isAllowed } = await import('../src/lib/robots.js');
+  const g = parseRobots('User-agent: *\nDisallow: /jobs/\nDisallow: /search\nDisallow: /*?*\n');
+  assert.equal(isAllowed(g, '/r_abc123/2'), true);
+  assert.equal(isAllowed(g, '/jobs/bd5d4d48'), false);
+  assert.equal(isAllowed(g, '/r_abc123?page=2'), false);
+});

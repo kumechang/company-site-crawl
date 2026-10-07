@@ -53,6 +53,8 @@ export const CATEGORIES = {
     green: ['https://www.green-japan.com/search/area/13/industry/100125'],
     wantedly: ['インフルエンサー キャスティング', 'インフルエンサー マネジメント'],
     // 求人ボックスの一覧(ユーザー提供)。求人詳細(/jb/)は robots 禁止のため一覧本文の社名のみ使う
+    // スタンバイの一覧(ユーザー提供)。ページ送りは /r_…/2 のパス形式
+    stanby: [{ url: 'https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316', pages: 5, limit: 60 }],
     kyujinbox: [KB('インフルエンサー-事務'), KB('インフルエンサー-事務所'), KB('インフルエンサー-マーケティング'), KB('インフルエンサー-キャスティング'), KB('YouTuber-マネージャー')],
     // PR TIMES の検索で見つけた会社。label は「インフルエンサー」のみ（事務所かどうかは公式サイトの文章で判定する）
     prtimes: [
@@ -174,6 +176,7 @@ export const SITES = {
   bizmaps: { name: 'BIZMAPS', status: 'blocked', note: '403 (サーバー側でIP拒否)' },
   indeed: { name: 'Indeed', status: 'blocked', note: 'Cloudflare確認画面。規約上もスクレイピング禁止' },
   prtimes: { name: 'PR TIMES', status: 'ready', note: 'キーワード検索で会社を発見 + 会社名の完全一致で公式URL・本社所在地を補完' },
+  stanby: { name: 'スタンバイ', status: 'ready', note: 'ユーザーが作った一覧(/r_…)をパス形式(/r_…/2)でページ送り。求人詳細(/jobs/)・/search・?付きURLはrobots.txt禁止のため使わない。一覧本文の社名・求人タイトルのみ' },
   kyujinbox: { name: '求人ボックス', status: 'ready', note: '求人詳細はrobots.txt禁止のため一覧本文の社名・求人タイトルのみ使用' },
   doda: { name: 'doda', status: 'blocked', note: '求人一覧(JobSearchList)がrobots.txtで禁止' },
   mynavi: { name: 'マイナビ転職', status: 'blocked', note: 'この環境からは400/503が返る(アクセス制限)。自宅回線なら取得できる可能性あり' },
@@ -206,10 +209,10 @@ export const SITES = {
  * カテゴリごとの媒体の優先順位（上から順に見て、目標社数に達したら打ち切る）。
  */
 export const ORDER = {
-  cosme_d2c: ['salesnow', 'bizmaps', 'jcia', 'jaro', 'article', 'wantedly', 'green', 'prtimes', /* 第2群 */ 'indeed', 'kyujinbox', 'doda', 'mynavi', 'engage'],
-  influencer_agency: ['wantedly', 'green', 'kyujinbox', 'indeed', 'prtimes', 'boxil', 'aspic', 'meetsmore', 'webkanji', 'article', 'imitsu'],
-  ad_agency: ['webkanji', 'imitsu', 'boxil', 'aspic', 'meetsmore', 'grip', 'digitre', 'agencyhub', 'pitact', 'houjingoo', 'salesnow', 'article', 'digimado', 'wantedly', 'green', 'doda', 'indeed', 'kyujinbox', 'mynavi', 'engage'],
-  sns_agency: ['boxil', 'aspic', 'digimado', 'buzztan', 'slidelib', 'webkanji', 'imitsu', 'meetsmore', 'grip', 'article', 'wantedly', 'green', 'kyujinbox', 'engage', 'indeed'],
+  cosme_d2c: ['salesnow', 'bizmaps', 'jcia', 'jaro', 'article', 'wantedly', 'green', 'prtimes', /* 第2群 */ 'indeed', 'kyujinbox', 'stanby', 'doda', 'mynavi', 'engage'],
+  influencer_agency: ['wantedly', 'green', 'kyujinbox', 'stanby', 'indeed', 'prtimes', 'boxil', 'aspic', 'meetsmore', 'webkanji', 'article', 'imitsu'],
+  ad_agency: ['webkanji', 'imitsu', 'boxil', 'aspic', 'meetsmore', 'grip', 'digitre', 'agencyhub', 'pitact', 'houjingoo', 'salesnow', 'article', 'digimado', 'wantedly', 'green', 'doda', 'indeed', 'kyujinbox', 'stanby', 'mynavi', 'engage'],
+  sns_agency: ['boxil', 'aspic', 'digimado', 'buzztan', 'slidelib', 'webkanji', 'imitsu', 'meetsmore', 'grip', 'article', 'wantedly', 'green', 'kyujinbox', 'stanby', 'engage', 'indeed'],
 };
 
 /**
