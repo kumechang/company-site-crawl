@@ -106,7 +106,7 @@ export function checkEmployees(c, r) {
       notes.push(`${chosen.source}=${r.employees}名に対し${detail}と差がある(${worst.ratio.toFixed(1)}倍)。調査時点・集計範囲の違いの可能性`);
     }
   }
-  if (result === 'OK') notes.unshift(`${{ official: '公式サイト', edinet: '有価証券報告書(EDINET)' }[chosen.source] ?? chosen.source}で${r.employees}名${a.asOf ? `（${a.asOf}時点）` : ''}${others.length ? `。他の情報源(${others.map((e) => `${e.source}=${e.value}`).join(', ')})とも概ね整合` : ''}`);
+  if (result === 'OK') notes.unshift(`${{ official: '公式サイト', edinet: '有価証券報告書(EDINET)', human: '人の確認' }[chosen.source] ?? chosen.source}で${r.employees}名${a.asOf ? `（${a.asOf}時点）` : ''}${others.length ? `。他の情報源(${others.map((e) => `${e.source}=${e.value}`).join(', ')})とも概ね整合` : ''}`);
   return { result, comment: notes.join(' / '), after: r.employees, asOf: a.asOf, source: chosen.source };
 }
 
@@ -196,7 +196,7 @@ export function checkIdentity(c, r, { top, officialText }) {
 }
 
 // ---------------------------------------------------------------- まとめ
-const RANK = { OK: 0, 'OK（リダイレクト）': 0, 要確認: 1, NG: 2 };
+const RANK = { OK: 0, 'OK（リダイレクト）': 0, 'OK（人の確認）': 0, 要確認: 1, NG: 2 };
 export const worst = (...rs) => rs.reduce((a, b) => (RANK[b] > RANK[a] ? b : a), 'OK');
 
 /** 検証ロジックを変えたら上げる（保存済みの検証結果を無効にして、次の実行で取り直す） */

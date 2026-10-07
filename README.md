@@ -80,6 +80,22 @@ node src/cli.js enrich
 - 出力CSVに `EDINETコード` `証券コード` 列を追加
 - 書類取得APIは公開APIのため robots.txt の対象外（APIキー認証）。リクエスト間隔は約0.6秒
 
+## 人の確認（要確認を人が判断して反映する）
+
+`export` が `data/review_queue.csv` を出す（Actions では成果物 `csv` と、`crawl-data` ブランチの `data/review_queue.csv`）。
+サンプルが目標(`--ok`)に届いていないカテゴリの「あと一歩」の会社だけが、手間の少ない順に並ぶ。
+
+- **検証済み**: 4観点のうち要確認が2つまで・NGなし。人がOKと判断すれば合格になる
+- **未検証**: 判定が要確認で、不足項目が1つだけ（従業員数・問い合わせURL・公式URLなど）。人が補えば次の実行で検証に進む
+
+1. CSV の右側を埋める: 「業種／従業員数／問い合わせURL／企業特定の判断」に `OK` か `NG`（空欄=判断しない）。値が違う・足りないときは「従業員数(修正)」「問い合わせURL(修正)」「公式URL(修正)」に正しい値、「メモ」に理由
+2. 名前を `review_input.csv` にして、リポジトリの `crawl-data` ブランチの `data/` にアップロード（GitHub の Add file → Upload files）
+3. 次の実行の最初に取り込まれ（`node src/cli.js import-review`）、`data/review_applied/` に退避される。ローカルでは `node src/cli.js import-review <ファイル>`
+
+- OK の判断は検証結果を `OK（人の確認）` に上書きし、理由に「人の判断(日付): OK メモ ／ 元の判定: …」を残す。NG は NG のまま（合格にならない）
+- 修正した値は `human` の証拠になり、公式サイト・有報より優先される（従業員数は「確認済み」扱い）
+- 同じ企業IDの判断は、後から取り込んだものが優先される
+
 ## マナー・制約
 
 - **robots.txt を尊重**する（`src/lib/robots.js`）。禁止されたURLには行かない

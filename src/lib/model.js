@@ -35,7 +35,7 @@ export function setOfficialUrl(c, url, how) {
  * 公式URLの採用順。会社の本体サイトを指しやすい情報源を優先し、製品サイトを指しがちな媒体は後ろにする
  * （例: デジタル化の窓口は製品ページの「情報取得元」＝製品サイトのことがある）
  */
-export const OFFICIAL_PRIORITY = ['salesnow', 'prtimes', 'grip', 'openwork', 'buzztan', 'webkanji', 'boxil', 'imitsu', 'meetsmore', 'slidelib', 'wantedly', 'aspic', 'digimado'];
+export const OFFICIAL_PRIORITY = ['human', 'salesnow', 'prtimes', 'grip', 'openwork', 'buzztan', 'webkanji', 'boxil', 'imitsu', 'meetsmore', 'slidelib', 'wantedly', 'aspic', 'digimado'];
 
 export function bestOfficial(c) {
   const ev = c.evidence.filter((e) => e.field === 'officialUrl');

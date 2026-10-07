@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import fs from 'node:fs';
 import { parseArgs } from 'node:util';
 import { Crawler } from './lib/crawler.js';
 import { Store } from './lib/store.js';
@@ -9,6 +10,8 @@ import { enrichFromOfficial } from './enrich.js';
 import { needsCorporateUrl, bestOfficial } from './lib/model.js';
 import { domainOf, nfkc } from './lib/util.js';
 import { exportAll, exportSample, flatChecks, allChecksOk } from './export.js';
+import { parseCsv, toRecords, importReviewRows } from './review.js';
+import { writeReviewQueue } from './review-queue.js';
 import { robotsReport } from './robots-report.js';
 import { Progress, progressKey, applyRun, shouldSkip } from './lib/progress.js';
 import { verifyCompany, checkSig } from './verify.js';
@@ -80,12 +83,13 @@ const HELP = `使い方: node src/cli.js <command> [options]
   export     統合して data/companies.csv を出力
   run        discover → enrich → export を一括実行
   sample     カテゴリごとに「発見→補完→判定OKの件数」を繰り返し、OKが --ok 件に達したら次のカテゴリへ
+  import-review [file]  人の確認(data/review_input.csv)を取り込む。確認用の一覧は export が data/review_queue.csv に出す
   verify     判定OKの会社を4観点(業種・従業員数・問い合わせURL・企業取り違え)で自己検証し、OK/要確認/NGを付ける
   robots     全媒体の robots.txt を取得し、使うURLが許可されているか一覧にする
 オプション: --target N(カテゴリ目標社数)  --per-query N  --sources green,wantedly,imitsu  --categories cosme_d2c,...  --delay ms  --no-cache`;
 
 const cmd = positionals[0];
-if (!cmd || opt.help || !['discover', 'enrich', 'export', 'run', 'robots', 'sample', 'verify'].includes(cmd)) {
+if (!cmd || opt.help || !['discover', 'enrich', 'export', 'run', 'robots', 'sample', 'verify', 'import-review'].includes(cmd)) {
   console.log(HELP);
   process.exit(cmd ? 0 : 1);
 }
@@ -459,6 +463,22 @@ try {
     }
     process.exit(0);
   }
+  if (cmd === 'import-review') {
+    const file = positionals[1] ?? 'data/review_input.csv';
+    if (!fs.existsSync(file)) {
+      log(`# 取り込む確認ファイルが無い: ${file}`);
+    } else {
+      const res = importReviewRows(store, toRecords(parseCsv(fs.readFileSync(file, 'utf8'))));
+      store.save(); // 変更を印づけてから書き出す（save だけだと3秒の間引きで書かれないことがある）
+      store.flush();
+      log(`# 人の確認を取り込み: 反映 ${res.applied}社 / 判断が空 ${res.skipped}行 / 企業IDが見つからない ${res.unknown}行 (${file})`);
+      if (positionals[1] == null) {
+        fs.mkdirSync('data/review_applied', { recursive: true });
+        fs.renameSync(file, `data/review_applied/${new Date().toISOString().replace(/[:T]/g, '').slice(0, 13)}.csv`); // 取り込み済みは退避（同じ判断を繰り返し取り込まない）
+      }
+    }
+    process.exit(0);
+  }
   if (cmd !== 'export') await crawler.launch();
   if (cmd === 'discover' || cmd === 'run') await discover();
   if (cmd === 'sample') await sample();
@@ -466,6 +486,8 @@ try {
   if (cmd === 'enrich' || cmd === 'run') await enrich();
   const rows = exportAll(store.all(), { minEmployees });
   const sm = exportSample(store.all(), { minEmployees });
+  const rq = writeReviewQueue(store.all(), { minEmployees, okTarget: Number(opt.ok), categories: opt.categories.split(',') });
+  log(`# 確認用の一覧(data/review_queue.csv): ${rq.count}社 ${JSON.stringify(rq.summary)}`);
   log('# サンプル(data/sample.csv):', JSON.stringify(sm.summary));
   const n = (s) => rows.filter((r) => r.status === s).length;
   log(`# 完了: 全${rows.length}社 / OK ${n('OK')} / 要確認 ${n('要確認')} / 除外 ${n('除外')}  → data/companies.csv`);
