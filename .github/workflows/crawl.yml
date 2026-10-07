@@ -17,8 +17,8 @@ on:
         description: '1回の補完で巡回する会社数の上限(0=無制限)'
         default: '30'
       skip:
-        description: '補完で飛ばす情報源(例: openwork)'
-        default: 'openwork'
+        description: '補完で飛ばす情報源(salesnow,prtimes,gbizinfo,mynavi,careertasu,openwork)'
+        default: 'openwork,salesnow'
 
 concurrency:
   group: crawl-${{ github.ref_name }}
