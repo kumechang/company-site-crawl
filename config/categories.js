@@ -209,11 +209,14 @@ export const SITES = {
  * カテゴリごとの媒体の優先順位（上から順に見て、目標社数に達したら打ち切る）。
  */
 export const ORDER = {
-  cosme_d2c: ['salesnow', 'bizmaps', 'jcia', 'jaro', 'article', 'wantedly', 'green', 'prtimes', /* 第2群 */ 'indeed', 'kyujinbox', 'stanby', 'doda', 'mynavi', 'engage'],
+  // 実績(該当・合格)の高い順: PR TIMES・Wantedly → 記事・SalesNow・JCIA → Green・JARO(該当率が低い) → 求人系
+  cosme_d2c: ['prtimes', 'wantedly', 'article', 'salesnow', 'jcia', 'green', 'jaro', /* 第2群 */ 'kyujinbox', 'stanby', 'indeed', 'bizmaps', 'doda', 'mynavi', 'engage'],
   // 実績(該当率)の高い順: 比較サイト(boxil・meetsmore・aspic)は載っている会社がほぼ該当 → PR TIMES・求人ボックス → 求人系(wantedly・green・stanby)は該当率が低いので後ろ
   influencer_agency: ['boxil', 'meetsmore', 'aspic', 'prtimes', 'kyujinbox', 'webkanji', 'imitsu', 'article', 'wantedly', 'green', 'stanby', 'indeed'],
-  ad_agency: ['webkanji', 'imitsu', 'boxil', 'aspic', 'meetsmore', 'grip', 'digitre', 'agencyhub', 'pitact', 'houjingoo', 'salesnow', 'article', 'digimado', 'wantedly', 'green', 'doda', 'indeed', 'kyujinbox', 'stanby', 'mynavi', 'engage'],
-  sns_agency: ['boxil', 'aspic', 'digimado', 'buzztan', 'slidelib', 'webkanji', 'imitsu', 'meetsmore', 'grip', 'article', 'wantedly', 'green', 'kyujinbox', 'stanby', 'engage', 'indeed'],
+  // grip は載っている会社がすべて該当で、判定OK・合格も多い → 先頭。他は実績データが無いため従来の順
+  ad_agency: ['grip', 'webkanji', 'imitsu', 'boxil', 'aspic', 'meetsmore', 'digitre', 'agencyhub', 'pitact', 'houjingoo', 'salesnow', 'article', 'digimado', 'wantedly', 'green', 'doda', 'indeed', 'kyujinbox', 'stanby', 'mynavi', 'engage'],
+  // 実績(合格/候補)の高い順: webkanji・slidelib・meetsmore・aspic → buzztan・imitsu → 求人ボックス・boxil・digimado → 求人系(該当率が低い)
+  sns_agency: ['webkanji', 'slidelib', 'meetsmore', 'aspic', 'buzztan', 'imitsu', 'kyujinbox', 'boxil', 'digimado', 'article', 'wantedly', 'stanby', 'engage', 'green', 'grip', 'indeed'],
 };
 
 /**
