@@ -260,11 +260,16 @@ async function enrich() {
   }
   // 1b) まだ公式URLが無い会社は PR TIMES の企業ページ(会社名が完全一致した場合のみ)で解決
   // 公式URLが無い、または製品ページ系の媒体由来のみ(本体サイトでない可能性)の会社が対象
-  const noUrl = store.all().filter((c) => (!c.officialUrl || needsCorporateUrl(c)) && !c.evidence.some((e) => e.source === 'prtimes'));
+  const noUrl = store.all().filter((c) => (!c.officialUrl || needsCorporateUrl(c)) && !c.evidence.some((e) => e.source === 'prtimes') && !c.noPrtimes);
   if (noUrl.length) {
     log(`# PR TIMES で公式URLを解決: ${noUrl.length} 社`);
     let n = 0;
-    for (const c of noUrl) if (await prtimes.resolve(c, { crawler, log })) n++;
+    for (const c of noUrl) {
+      const r = await prtimes.resolve(c, { crawler, log });
+      if (r) n++;
+      else if (r === false) c.noPrtimes = true; // 検索したが一致なし → 再検索しない（sample が enrich を何度も呼ぶため）
+      store.save();
+    }
     log(`  → ${n}/${noUrl.length} 社の公式URLを解決`);
     store.mergeByDomain();
     store.save();

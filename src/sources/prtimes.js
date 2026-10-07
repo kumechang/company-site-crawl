@@ -36,7 +36,7 @@ export async function resolve(c, { crawler, log }) {
     return Boolean(info.url);
   } catch (e) {
     log(`  ! prtimes ${c.name}: ${e.message}`);
-    return false;
+    return /HTTP 404/.test(e.message) ? false : null; // 404=検索結果なし(再検索しない) / 通信エラー等=null(再試行できる)
   }
 }
 
