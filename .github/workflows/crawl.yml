@@ -53,7 +53,7 @@ jobs:
           scripts/ci-crawl.sh "sample --ok ${{ inputs.ok }} --categories ${{ inputs.categories }} --enrich-limit ${{ inputs.enrich_limit }} --skip ${{ inputs.skip }}"
       - name: verify and export
         if: always()
-        run: node src/cli.js verify && node src/cli.js export
+        run: node src/cli.js verify --categories ${{ inputs.categories }} && node src/cli.js export
       - name: save data
         if: always()
         run: |
