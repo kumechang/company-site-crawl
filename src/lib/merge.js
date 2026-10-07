@@ -93,6 +93,7 @@ export function consolidate(c, { minEmployees = 20 } = {}) {
   if (estimateOnly) notes.push(`従業員数は${{ agencyhub: 'AgencyHubの規模レンジ下限', openwork: 'OpenWorkの社員数レンジ(下限/上限)', gbizinfo: 'Gビズインフォ(政府保有情報・古い可能性)の値' }[emp.source] ?? 'SalesNowの推定値'}(${emp.value}名)${nearThreshold ? '・閾値付近のため要確認' : ''}`);
   if (emp20 && !empCheck.confirmed) notes.push(`従業員数が未確認: ${empCheck.reasons.join(' / ')}`);
   if (emp?.source === 'edinet' && consolidated) notes.push(`有価証券報告書の連結従業員数は${consolidated.value}名（採用した${emp.value}名は提出会社単体）`);
+  if (byField(c, 'earlyStop').length) notes.push('公式トップにどのカテゴリの語も無く、巡回を途中で見切った(求人一覧のみで見つかった会社。取りこぼしの疑いがあれば --no-early-stop で取り直す)');
   if (emp == null && members) notes.push(`Wantedlyメンバー数 ${members.value}人(参考・従業員数とは別物)`);
 
   return {

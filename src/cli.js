@@ -3,11 +3,11 @@ import { parseArgs } from 'node:util';
 import { Crawler } from './lib/crawler.js';
 import { Store } from './lib/store.js';
 import { log } from './lib/util.js';
-import { CATEGORIES, SITES, ORDER } from '../config/categories.js';
+import { CATEGORIES, SITES, ORDER, INDUSTRY_CORE } from '../config/categories.js';
 import { consolidate } from './lib/merge.js';
 import { enrichFromOfficial } from './enrich.js';
 import { needsCorporateUrl, bestOfficial } from './lib/model.js';
-import { domainOf } from './lib/util.js';
+import { domainOf, nfkc } from './lib/util.js';
 import { exportAll, exportSample, flatChecks, allChecksOk } from './export.js';
 import { robotsReport } from './robots-report.js';
 import { Progress, progressKey, applyRun, shouldSkip } from './lib/progress.js';
@@ -66,6 +66,7 @@ const { values: opt, positionals } = parseArgs({
     'no-cache': { type: 'boolean', default: false },
     'enrich-limit': { type: 'string', default: '0' }, // sample/enrich: 1回の補完で巡回・照会する会社数の上限(0=無制限。SalesNow・PR TIMES・公式サイト・Gビズ等すべて)。残りは次の補完で処理される
     reverify: { type: 'boolean', default: false }, // 検証済みで変更のない会社も、検証し直す
+    'no-early-stop': { type: 'boolean', default: false }, // 公式トップにカテゴリの語が無い会社も、会社概要・問い合わせまで巡回する
     refresh: { type: 'boolean', default: false }, // 「最後まで見た」一覧も先頭から取り直す
     'retry-failed': { type: 'boolean', default: false }, // 連続失敗で飛ばしている一覧も再試行する
     skip: { type: 'string', default: '' }, // 補完で飛ばす情報源(カンマ区切り): salesnow,prtimes,gbizinfo,mynavi,careertasu,openwork（反応が無い/遅い媒体を一時的に外す用）
@@ -91,11 +92,29 @@ if (!cmd || opt.help || !['discover', 'enrich', 'export', 'run', 'robots', 'samp
 
 const minEmployees = Number(opt['min-employees']);
 const enrichLimit = Number(opt['enrich-limit']);
+// 見切り: 求人の一覧だけで見つかった会社(募集しているだけで事業は無関係なことが多い。観測では該当は約2割)は、
+// 公式トップに4カテゴリのどの語(主要語・関連語)も無ければ、概要・問い合わせの巡回を省く。トップが薄い(JS描画など)ときは判断しない
+const JOB_LIST_SOURCES = new Set(['kyujinbox', 'stanby', 'wantedly', 'green', 'engage']);
+const ENRICH_SOURCES = new Set(['official', 'edinet', 'gbizinfo', 'salesnow', 'openwork', 'mynavi', 'careertasu', 'prtimes']);
+const CORE_WORDS = [...new Set(Object.values(INDUSTRY_CORE).flatMap((d) => [...d.main, ...(d.weak ?? [])]))];
+const foundOnlyByJobLists = (c) => {
+  const srcs = new Set(c.sources.map((x) => x.source).filter((x) => !ENRICH_SOURCES.has(x)));
+  return srcs.size > 0 && [...srcs].every((x) => JOB_LIST_SOURCES.has(x));
+};
+const earlyStopFor = (c) => {
+  if (opt['no-early-stop'] || !foundOnlyByJobLists(c)) return null;
+  return (top) => {
+    const text = nfkc(`${top.title ?? ''} ${top.meta ?? ''} ${top.text ?? ''}`);
+    return text.length >= 200 && !CORE_WORDS.some((w) => text.includes(w));
+  };
+};
+
 /** 補完の対象を、いま作っているカテゴリの会社(検索元が一致)から先に並べ、上限(--enrich-limit)で切る */
 let currentCat = null;
 const prioritize = (list) => {
   const first = (c) => (currentCat && c.seedCategories.includes(currentCat) ? 0 : 1);
-  const sorted = [...list].sort((a, b) => first(a) - first(b));
+  // 東京以外と分かっている会社は、補完しても対象外のままなので、巡回・照会しない
+  const sorted = list.filter((c) => consolidate(c, { minEmployees }).tokyo !== false).sort((a, b) => first(a) - first(b));
   return enrichLimit > 0 ? sorted.slice(0, enrichLimit) : sorted;
 };
 const skipped = new Set(opt.skip.split(',').filter(Boolean));
@@ -103,6 +122,14 @@ const skipped = new Set(opt.skip.split(',').filter(Boolean));
 const edinet = process.env.EDINET_API_KEY ? new edinetSrc.Edinet({ useCache: !opt['no-cache'], log }) : null;
 const store = new Store();
 const progress = new Progress();
+// 止められたとき(Actionsの時間上限・手動停止)も、未保存の分を書いてから終わる
+for (const sig of ['SIGTERM', 'SIGINT']) {
+  process.on(sig, () => {
+    store.flush();
+    progress.save();
+    process.exit(sig === 'SIGINT' ? 130 : 143);
+  });
+}
 const crawler = new Crawler({ minDelayMs: Number(opt.delay), useCache: !opt['no-cache'] });
 
 /** カテゴリに該当し、除外でない企業の数（打ち切り判定用） */
@@ -353,7 +380,7 @@ async function enrich() {
   log(`# 公式サイト補完: ${targets.length} 社`);
   for (const c of targets) {
     log(`  official ${c.name} ${c.officialUrl}`);
-    await enrichFromOfficial(c, { crawler, log });
+    await enrichFromOfficial(c, { crawler, log, earlyStop: earlyStopFor(c) });
     store.save();
   }
   // 2b) EDINET(有価証券報告書): 会社名と、公式サイト等で分かった所在地で上場会社等を特定し、従業員数(提出会社単体)・本店所在地を一次情報で補完。
@@ -401,5 +428,7 @@ try {
   log(`# 完了: 全${rows.length}社 / OK ${n('OK')} / 要確認 ${n('要確認')} / 除外 ${n('除外')}  → data/companies.csv`);
   log('# 通信:', JSON.stringify(crawler.stats));
 } finally {
+  store.flush(); // 書き込みを間引いているので、終わるときに未保存分を確実に書く
+  progress.save();
   await crawler.close();
 }

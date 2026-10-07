@@ -37,7 +37,7 @@ function alternateOfficialUrls(c) {
 }
 
 /** 1つのサイトを巡回: トップ → 会社概要ページ(従業員数が見つかるまで最大4)。従業員数・住所・本文を証拠として追加 */
-async function crawlSite(c, url, { crawler, log, primary }) {
+async function crawlSite(c, url, { crawler, log, primary, earlyStop }) {
   const src = 'official';
   let top;
   try {
@@ -50,6 +50,11 @@ async function crawlSite(c, url, { crawler, log, primary }) {
   addSource(c, src, url);
   addEvidence(c, 'profileText', clip(`${top.title} ${flatten(top.text)}`, 1500), { source: src, url, snippet: 'トップページ' });
   const pages = [{ url, snap: top }];
+  // 見切り: どのカテゴリの語もトップに無い会社は、会社概要・問い合わせの巡回(数ページ)まで進まない
+  if (primary && earlyStop?.(top)) {
+    addEvidence(c, 'earlyStop', true, { source: src, url, snippet: 'トップページにどのカテゴリの語も無いため、概要・問い合わせの巡回を省略(求人一覧のみで見つかった会社)' });
+    return { url, top, pages, hasEmp: false, stopped: true };
+  }
   let strong = !!extractEmployees(top.text)?.strong;
   for (const p of findProfileLinks(top.anchors, url).slice(0, 4)) {
     if (strong && pages.length > 2) break; // 従業員数が見つかり、概要ページも見たなら十分
@@ -112,7 +117,7 @@ async function findContact(c, site, { crawler }) {
  * 公式サイトを巡回して、他媒体で足りなかった項目（従業員数・住所・問い合わせURL）を補完する。
  * 公式URLがサービスサイトで従業員数が載っていない場合は、他の情報源が示す公式URL候補(本体サイト)も巡回する。
  */
-export async function enrichFromOfficial(c, { crawler, log }) {
+export async function enrichFromOfficial(c, { crawler, log, earlyStop }) {
   const best = bestOfficial(c);
   if (best && typeof best === 'object') {
     c.officialUrl = best.url;
@@ -122,7 +127,8 @@ export async function enrichFromOfficial(c, { crawler, log }) {
   const sites = [];
   for (const [i, u] of [c.officialUrl, ...alternateOfficialUrls(c)].entries()) {
     if (i > 0 && sites.some((x) => x.hasEmp)) break;
-    const site = await crawlSite(c, u, { crawler, log, primary: i === 0 });
+    const site = await crawlSite(c, u, { crawler, log, primary: i === 0, earlyStop });
+    if (site?.stopped) return; // 見切り: 別の公式URL候補も、問い合わせの探索もしない
     if (site) sites.push(site);
   }
   for (const site of sites) if (await findContact(c, site, { crawler })) return;
