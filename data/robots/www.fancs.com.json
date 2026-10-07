@@ -1,6 +1,7 @@
 {
  "origin": "https://www.fancs.com",
- "fetchedAt": "2026-10-06T11:34:45.549Z",
- "status": 404,
- "text": ""
+ "fetchedAt": "2026-10-06T23:59:42.837Z",
+ "status": "error",
+ "text": "",
+ "error": "net::ERR_PROXY_CONNECTION_FAILED at https://www.fancs.com/robots.txt"
 }

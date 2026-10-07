@@ -1,6 +1,6 @@
 {
  "origin": "https://www.tdse.jp",
- "fetchedAt": "2026-10-06T09:59:42.840Z",
+ "fetchedAt": "2026-10-06T23:34:31.089Z",
  "status": 200,
  "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://www.tdse.jp/news-sitemap.xml\nSitemap: https://www.tdse.jp/video-sitemap.xml\nSitemap: https://www.tdse.jp/sitemap.xml\nSitemap: https://www.tdse.jp/sitemap.rss\n"
 }

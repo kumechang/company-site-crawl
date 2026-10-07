@@ -1,6 +1,7 @@
 {
  "origin": "https://www.nomurakougei.co.jp",
- "fetchedAt": "2026-10-06T11:31:21.564Z",
- "status": 200,
- "text": "User-agent: bingbot\nCrawl-delay: 60\nDisallow: /search/\nDisallow: /en/search/\nDisallow: /cn/search/\nDisallow: /search/*\nDisallow: /en/search/*\nDisallow: /cn/search/*\nDisallow: /achievements/search/\nDisallow: /achievements/search/*\nDisallow: /en/achievements/search/\nDisallow: /en/achievements/search/*\nDisallow: /cn/achievements/search/\nDisallow: /cn/achievements/search/*\n\nUser-agent: *\nAllow: /\n\n# Host\nHost: https://www.nomurakougei.co.jp\n\n# Sitemaps\nSitemap: https://www.nomurakougei.co.jp/sitemap.xml\nSitemap: https://www.nomurakougei.co.jp/server-sitemap/sitemap.xml\n"
+ "fetchedAt": "2026-10-06T23:59:41.404Z",
+ "status": "error",
+ "text": "",
+ "error": "net::ERR_PROXY_CONNECTION_FAILED at https://www.nomurakougei.co.jp/robots.txt"
 }

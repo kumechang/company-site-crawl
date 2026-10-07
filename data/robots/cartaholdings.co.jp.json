@@ -1,0 +1,6 @@
+{
+ "origin": "https://cartaholdings.co.jp",
+ "fetchedAt": "2026-10-06T23:43:27.819Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\n\n"
+}

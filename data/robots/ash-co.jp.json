@@ -1,6 +1,6 @@
 {
  "origin": "http://ash-co.jp",
- "fetchedAt": "2026-10-06T15:03:48.780Z",
+ "fetchedAt": "2026-10-06T23:48:49.749Z",
  "status": "error",
  "text": "",
  "error": "net::ERR_BLOCKED_BY_CLIENT at http://ash-co.jp/robots.txt"

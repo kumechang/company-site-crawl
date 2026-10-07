@@ -1,6 +1,7 @@
 {
  "origin": "https://www.group.dentsu.com",
- "fetchedAt": "2026-10-06T11:32:26.554Z",
- "status": 404,
- "text": ""
+ "fetchedAt": "2026-10-06T23:59:42.569Z",
+ "status": "error",
+ "text": "",
+ "error": "net::ERR_PROXY_CONNECTION_FAILED at https://www.group.dentsu.com/robots.txt"
 }
