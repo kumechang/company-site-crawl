@@ -22,21 +22,35 @@ export function parseList(snap) {
   return [...out.values()];
 }
 
+/** 一覧の見出し「転職・求人情報 55,072 件 3 ページ目」→ { total: 55072, page: 3 }。無ければ null */
+export function parseTotal(snap) {
+  const m = (snap.text ?? '').match(/([\d,]+)\s*件\s*(\d+)\s*ページ目/);
+  return m ? { total: parseInt(m[1].replace(/,/g, ''), 10), page: Number(m[2]) } : null;
+}
+
 /** 求人詳細(/jb/)は robots.txt で禁止のため、一覧本文のみを使う。勤務地は本社所在地ではないので address には入れない */
 export async function discover(q, ctx) {
   const pages = q.pages ?? 2;
   let taken = 0;
+  const seen = new Set();
   for (let p = 1; p <= pages && taken < q.limit; p++) {
     const url = p === 1 ? q.url : `${q.url}?pg=${p}`;
     let list;
+    let head;
     try {
-      list = parseList(await ctx.crawler.snapshot(url, { settleMs: 1500 }));
+      const snap = await ctx.crawler.snapshot(url, { settleMs: 1500 });
+      list = parseList(snap);
+      head = parseTotal(snap);
     } catch (e) {
-      ctx.log(`  ! kyujinbox ${url}: ${e.message}`);
+      // 404 は最終ページの先（求人ボックスは件数に関わらず、一定のページ数より先を返さない）
+      ctx.log(`  ${/HTTP 404/.test(e.message) ? '- kyujinbox 最終ページを超えた' : '! kyujinbox ' + e.message}: ${url}`);
       break;
     }
-    ctx.log(`  kyujinbox ${url}: ${list.length} 社`);
-    for (const j of list) {
+    const fresh = list.filter((j) => !seen.has(j.company));
+    list.forEach((j) => seen.add(j.company));
+    ctx.log(`  kyujinbox ${url}: ${list.length} 社 (新規 ${fresh.length})${head ? ` / 全${head.total.toLocaleString()}件` : ''}`);
+    if (!list.length || !fresh.length) break; // 新しい会社が出なくなったらそれ以上は辿らない
+    for (const j of fresh) {
       if (taken >= q.limit) break;
       taken++;
       const c = ctx.upsert(j.company);

@@ -659,3 +659,9 @@ test('連結のみの有報は従業員数を「確認済み」にしない', ()
   assert.equal(ok.confirmed, true);
   assert.equal(ok.asOf, '2026年3月');
 });
+
+test('求人ボックス: 一覧見出しから全件数とページ番号', async () => {
+  const kb = await import('../src/sources/kyujinbox.js');
+  assert.deepEqual(kb.parseTotal({ text: '求人検索 SNS運用 - 東京都の転職・求人情報\n転職・求人情報 71,010 件 3 ページ目\n…' }), { total: 71010, page: 3 });
+  assert.equal(kb.parseTotal({ text: 'ありません' }), null);
+});
