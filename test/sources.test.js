@@ -733,3 +733,20 @@ test('Store: 保存は間引かれ、flush で確実に書く', async () => {
   st.flush(); // flush で未保存分が書かれる
   assert.equal(JSON.parse(fs.readFileSync(f, 'utf8')).length, 2);
 });
+
+test('見切り: トップにカテゴリの語が無い会社は、概要・問い合わせを巡回せず、証拠を残す', async () => {
+  const { enrichFromOfficial } = await import('../src/enrich.js');
+  const calls = [];
+  const top = { title: '株式会社X', meta: '', text: '私たちは設備工事を行っています。'.repeat(30), anchors: [{ href: 'https://x.co.jp/company/', text: '会社概要' }, { href: 'https://x.co.jp/contact/', text: 'お問い合わせ' }], finalUrl: 'https://x.co.jp/' };
+  const crawler = { snapshot: async (u) => { calls.push(u); return top; } };
+  const mk = () => { const c = newCompany('株式会社X'); setOfficialUrl(c, 'https://x.co.jp/', { source: 'salesnow', url: 'u', snippet: '' }); return c; };
+  const c = mk();
+  await enrichFromOfficial(c, { crawler, log: () => {}, earlyStop: (t) => t.text.length >= 200 && !/広告|SNS/.test(t.text) });
+  assert.deepEqual(calls, ['https://x.co.jp/']); // トップだけ
+  assert.ok(c.evidence.some((e) => e.field === 'earlyStop'));
+  assert.ok(consolidate(c).notes.join(' ').includes('見切った'));
+  // 見切りしない(earlyStop未指定)なら、概要ページや問い合わせも辿る
+  calls.length = 0;
+  await enrichFromOfficial(mk(), { crawler, log: () => {} });
+  assert.ok(calls.length > 1);
+});
