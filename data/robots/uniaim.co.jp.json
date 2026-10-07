@@ -1,6 +1,6 @@
 {
  "origin": "https://uniaim.co.jp",
- "fetchedAt": "2026-10-06T13:49:17.341Z",
+ "fetchedAt": "2026-10-07T01:33:17.732Z",
  "status": 200,
  "text": "User-agent: *\nDisallow:/corp/wp-admin/\nDisallow:/wp-content/plugins/\n\nSitemap: https://uniaim.co.jp/sitemap.xml\n\n"
 }

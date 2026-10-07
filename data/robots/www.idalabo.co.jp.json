@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.idalabo.co.jp",
+ "fetchedAt": "2026-10-07T01:31:18.163Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /news/\nDisallow: /brand/profael/\nDisallow: /brand/lassic/\n"
+}
