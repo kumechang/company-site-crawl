@@ -51935,8 +51935,8 @@
  {
   "key": "unlock",
   "name": "株式会社Unlock",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://unlk.jp/",
+  "domain": "unlk.jp",
   "sources": [
    {
     "source": "kyujinbox",
@@ -51953,6 +51953,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   },
+   {
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C2x00000amN3M"
    }
   ],
   "evidence": [
@@ -51971,6 +51975,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 世田谷区 三軒茶屋駅 徒歩8分",
     "at": "2026-10-07T04:35:47.920Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区恵比寿3丁目9番25号 日仏会館５階",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C2x00000amN3M",
+    "snippet": "OpenWork 所在地: 東京都渋谷区恵比寿3丁目9番25号 日仏会館５階",
+    "at": "2026-10-07T06:03:00.150Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://unlk.jp/",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C2x00000amN3M",
+    "snippet": "OpenWork URL: https://unlk.jp/",
+    "at": "2026-10-07T06:03:00.150Z"
    }
   ],
   "seedCategories": [
@@ -51985,12 +52005,16 @@
  {
   "key": "byup",
   "name": "株式会社By Up",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://corp.byup.jp/",
+  "domain": "corp.byup.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   },
+   {
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0CIh000002fsr4"
    }
   ],
   "evidence": [
@@ -52009,6 +52033,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区 外苑前駅 徒歩4分",
     "at": "2026-10-07T04:35:55.486Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区神宮前3-1-30-303",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0CIh000002fsr4",
+    "snippet": "OpenWork 所在地: 東京都渋谷区神宮前3-1-30-303",
+    "at": "2026-10-07T06:03:29.385Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://corp.byup.jp/",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0CIh000002fsr4",
+    "snippet": "OpenWork URL: https://corp.byup.jp/",
+    "at": "2026-10-07T06:03:29.385Z"
    }
   ],
   "seedCategories": [
@@ -52084,12 +52124,16 @@
  {
   "key": "fairyline",
   "name": "Fairy Line株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://fairy-line.co.jp/",
+  "domain": "fairy-line.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   },
+   {
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C2x00000YCiMW"
    }
   ],
   "evidence": [
@@ -52108,6 +52152,30 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 中央区",
     "at": "2026-10-07T04:35:55.487Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都新宿区西新宿3-7-1 新宿パークタワーN30階",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C2x00000YCiMW",
+    "snippet": "OpenWork 所在地: 東京都新宿区西新宿3-7-1 新宿パークタワーN30階",
+    "at": "2026-10-07T06:03:58.189Z"
+   },
+   {
+    "field": "employees",
+    "value": 30,
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C2x00000YCiMW",
+    "snippet": "OpenWork 社員数: 30〜99人（レンジ下限を採用）",
+    "at": "2026-10-07T06:03:58.189Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://fairy-line.co.jp/",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C2x00000YCiMW",
+    "snippet": "OpenWork URL: https://fairy-line.co.jp/",
+    "at": "2026-10-07T06:03:58.189Z"
    }
   ],
   "seedCategories": [
@@ -52119,8 +52187,8 @@
  {
   "key": "スペクトラム",
   "name": "株式会社スペクトラム",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://spectrum-inc.co.jp/",
+  "domain": "spectrum-inc.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
@@ -52133,6 +52201,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
+   },
+   {
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0CRC00007XeDo4"
    }
   ],
   "evidence": [
@@ -52159,6 +52231,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
     "snippet": "求人ボックスの求人タイトル: 目黒区／経理・数値管理等 Webマーケティング業界 キャリアアップ環境／幅広く経験可能 福利厚生",
     "at": "2026-10-07T04:36:40.719Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区桜丘町23-17 シティコート桜丘408号室",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0CRC00007XeDo4",
+    "snippet": "OpenWork 所在地: 東京都渋谷区桜丘町23-17 シティコート桜丘408号室",
+    "at": "2026-10-07T06:04:27.279Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://spectrum-inc.co.jp/",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0CRC00007XeDo4",
+    "snippet": "OpenWork URL: https://spectrum-inc.co.jp/",
+    "at": "2026-10-07T06:04:27.279Z"
    }
   ],
   "seedCategories": [
@@ -52172,8 +52260,8 @@
  {
   "key": "directtech",
   "name": "株式会社Direct Tech",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://direct-tech.jp/",
+  "domain": "direct-tech.jp",
   "sources": [
    {
     "source": "kyujinbox",
@@ -52182,6 +52270,10 @@
    {
     "source": "prtimes",
     "url": "https://prtimes.jp/main/html/searchrlp/company_id/54399"
+   },
+   {
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C2x00000Wiwn3"
    }
   ],
   "evidence": [
@@ -52208,6 +52300,22 @@
     "url": "https://prtimes.jp/main/html/searchrlp/company_id/54399",
     "snippet": "本社所在地: 東京都港区赤坂4-15-1 赤坂ガーデンシティ17F",
     "at": "2026-10-07T05:22:57.557Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区赤坂4-15-1",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C2x00000Wiwn3",
+    "snippet": "OpenWork 所在地: 東京都港区赤坂4-15-1",
+    "at": "2026-10-07T06:04:56.900Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://direct-tech.jp/",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C2x00000Wiwn3",
+    "snippet": "OpenWork URL: https://direct-tech.jp/",
+    "at": "2026-10-07T06:04:56.900Z"
    }
   ],
   "seedCategories": [
@@ -56814,7 +56922,8 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "shiffon",
@@ -57442,7 +57551,8 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "aile",
@@ -57476,7 +57586,8 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "ミックス",
@@ -57510,7 +57621,8 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "ミラティブ",
@@ -57650,7 +57762,8 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "エンズ",
@@ -57851,7 +57964,8 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "tresgroup",
@@ -58003,7 +58117,8 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "birch",
@@ -58091,7 +58206,8 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "リバティタウン",
@@ -58179,7 +58295,8 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "gqueen",
@@ -58213,7 +58330,8 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "lumen",
@@ -58252,7 +58370,8 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "ゼロプライド",
@@ -58291,7 +58410,8 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "ティピリンクジャパン",
@@ -58454,7 +58574,8 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "アスリボン",
@@ -58663,7 +58784,8 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "ワキテクノ",
@@ -58697,7 +58819,8 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "西濃運輸",
@@ -58731,7 +58854,8 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "vivion",
@@ -58981,7 +59105,8 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "ドワンゴ",
@@ -59015,7 +59140,8 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "tmy",
@@ -59103,7 +59229,8 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "ドンチャン",
@@ -59137,7 +59264,8 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "jam",
@@ -59171,7 +59299,8 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "first",
@@ -59205,6 +59334,7 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  }
 ]
