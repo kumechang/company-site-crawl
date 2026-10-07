@@ -24,6 +24,8 @@ data_restore() {
   mkdir -p data/robots
   for f in "${DATA_FILES[@]}"; do [ -f "$DATA_WT/$f" ] && cp "$DATA_WT/$f" "$f"; done
   [ -d "$DATA_WT/data/robots" ] && cp -r "$DATA_WT/data/robots/." data/robots/
+  # EDINETの書類一覧・コード一覧のキャッシュ（毎回取り直すと数分かかるため引き継ぐ）
+  if [ -d "$DATA_WT/data/cache/edinet" ]; then mkdir -p data/cache/edinet; cp -r "$DATA_WT/data/cache/edinet/." data/cache/edinet/; fi
   echo "データを復元: $(ls "$DATA_WT"/data 2>/dev/null | tr '\n' ' ')"
   return 0
 }
@@ -34,6 +36,7 @@ data_snapshot() {
   mkdir -p "$DATA_WT/data/robots"
   for f in "${DATA_FILES[@]}"; do [ -f "$f" ] && cp "$f" "$DATA_WT/$f"; done
   [ -d data/robots ] && cp -r data/robots/. "$DATA_WT/data/robots/"
+  if [ -d data/cache/edinet ]; then mkdir -p "$DATA_WT/data/cache/edinet"; cp -r data/cache/edinet/. "$DATA_WT/data/cache/edinet/"; fi
   (
     cd "$DATA_WT" || exit 0
     git add -A

@@ -95,7 +95,8 @@ const enrichLimit = Number(opt['enrich-limit']);
 let currentCat = null;
 const prioritize = (list) => {
   const first = (c) => (currentCat && c.seedCategories.includes(currentCat) ? 0 : 1);
-  const sorted = [...list].sort((a, b) => first(a) - first(b));
+  // 東京以外と分かっている会社は、補完しても対象外のままなので、巡回・照会しない
+  const sorted = list.filter((c) => consolidate(c, { minEmployees }).tokyo !== false).sort((a, b) => first(a) - first(b));
   return enrichLimit > 0 ? sorted.slice(0, enrichLimit) : sorted;
 };
 const skipped = new Set(opt.skip.split(',').filter(Boolean));
@@ -103,6 +104,14 @@ const skipped = new Set(opt.skip.split(',').filter(Boolean));
 const edinet = process.env.EDINET_API_KEY ? new edinetSrc.Edinet({ useCache: !opt['no-cache'], log }) : null;
 const store = new Store();
 const progress = new Progress();
+// 止められたとき(Actionsの時間上限・手動停止)も、未保存の分を書いてから終わる
+for (const sig of ['SIGTERM', 'SIGINT']) {
+  process.on(sig, () => {
+    store.flush();
+    progress.save();
+    process.exit(sig === 'SIGINT' ? 130 : 143);
+  });
+}
 const crawler = new Crawler({ minDelayMs: Number(opt.delay), useCache: !opt['no-cache'] });
 
 /** カテゴリに該当し、除外でない企業の数（打ち切り判定用） */
@@ -401,5 +410,7 @@ try {
   log(`# 完了: 全${rows.length}社 / OK ${n('OK')} / 要確認 ${n('要確認')} / 除外 ${n('除外')}  → data/companies.csv`);
   log('# 通信:', JSON.stringify(crawler.stats));
 } finally {
+  store.flush(); // 書き込みを間引いているので、終わるときに未保存分を確実に書く
+  progress.save();
   await crawler.close();
 }

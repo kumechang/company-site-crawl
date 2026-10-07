@@ -719,3 +719,17 @@ test('発見の進捗: 続きから見る・失敗の記録・最後まで見た
   assert.deepEqual([z.exhausted, z.failures], [false, 1]);
   assert.match(z.lastError, /1社も取れなかった/);
 });
+
+test('Store: 保存は間引かれ、flush で確実に書く', async () => {
+  const { Store } = await import('../src/lib/store.js');
+  const f = path.join(fs.mkdtempSync(path.join(os.tmpdir(), 'store-')), 'companies.json');
+  const st = new Store(f);
+  st.upsert('株式会社A');
+  st.save(); // 最初の保存はすぐ書く
+  assert.equal(JSON.parse(fs.readFileSync(f, 'utf8')).length, 1);
+  st.upsert('株式会社B');
+  st.save(); // 直後の保存は間引かれる
+  assert.equal(JSON.parse(fs.readFileSync(f, 'utf8')).length, 1);
+  st.flush(); // flush で未保存分が書かれる
+  assert.equal(JSON.parse(fs.readFileSync(f, 'utf8')).length, 2);
+});
