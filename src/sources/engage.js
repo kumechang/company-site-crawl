@@ -23,7 +23,7 @@ export function parseList(snap) {
 export async function discover(q, ctx) {
   let list;
   try {
-    list = parseList(await ctx.crawler.snapshot(q.url, { settleMs: 2500 })).slice(0, q.limit);
+    list = parseList(await ctx.crawler.snapshot(q.url, { settleMs: 2500 })).slice(q.offset ?? 0, (q.offset ?? 0) + q.limit);
   } catch (e) {
     ctx.log(`  ! engage ${q.url}: ${e.message}`);
     return;

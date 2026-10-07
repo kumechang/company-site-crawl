@@ -44,7 +44,7 @@ export async function discover(q, ctx) {
   // 所在地が一覧で分かるので、東京都本社のみ採用（取得は1ページで済む）
   const tokyo = list.filter((r) => isTokyoAddress(r.address));
   ctx.log(`  buzztan ${q.url}: 全${list.length}社中 東京都本社 ${tokyo.length}社`);
-  for (const r of tokyo.slice(0, q.limit)) {
+  for (const r of tokyo.slice(q.offset ?? 0, (q.offset ?? 0) + q.limit)) {
     const c = ctx.upsert(r.company);
     addSource(c, id, q.url);
     c.seedCategories.push(q.category);

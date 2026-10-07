@@ -1,0 +1,6 @@
+{
+ "origin": "https://jp.stanby.com",
+ "fetchedAt": "2026-10-07T09:47:13.608Z",
+ "status": 200,
+ "text": "User-agent: *\n\nDisallow: /ma/\nDisallow: /ma2/\nDisallow: /cms/\nDisallow: /jobs/\nDisallow: /map/\nDisallow: /ats/\nDisallow: /search\nDisallow: /magazine/search\nDisallow: /magazine/rss/\nDisallow: /magazine/feed/\nDisallow: /external\nDisallow: /app-connection/keep-list\nDisallow: /*?*\nDisallow: /member/\nDisallow: /mypage/\nDisallow: /v1/\nDisallow: /v2/\nDisallow: /v3/\n\nDisallow: /_nuxt/ni-*\n\n"
+}

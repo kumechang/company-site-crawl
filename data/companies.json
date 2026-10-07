@@ -900,6 +900,9 @@
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -6136,6 +6139,8 @@
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -6960,6 +6965,7 @@
    "sns_agency",
    "sns_agency",
    "sns_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -12250,6 +12256,9 @@
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -12422,6 +12431,10 @@
    {
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Z49G,,"
+   },
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
    }
   ],
   "evidence": [
@@ -12588,6 +12601,8 @@
   ],
   "seedCategories": [
    "sns_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency"
@@ -14841,6 +14856,7 @@
   "seedCategories": [
    "sns_agency",
    "sns_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -16021,6 +16037,7 @@
   "seedCategories": [
    "sns_agency",
    "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -17140,6 +17157,9 @@
    "sns_agency",
    "sns_agency",
    "sns_agency",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency"
@@ -27188,6 +27208,9 @@
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -27590,6 +27613,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD"
+   },
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316"
    }
   ],
   "evidence": [
@@ -27712,10 +27739,30 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区 / 赤坂BizタワーSHOPS&DINING",
     "at": "2026-10-07T04:36:55.386Z"
+   },
+   {
+    "field": "jobText",
+    "value": "インフルエンサープロデューサー／企画プランニング／キャスティング",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316",
+    "snippet": "スタンバイの求人タイトル: インフルエンサープロデューサー／企画プランニング／キャスティング",
+    "at": "2026-10-07T09:46:06.326Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:46:06.326Z"
    }
   ],
   "seedCategories": [
    "ad_agency",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency"
@@ -30223,6 +30270,7 @@
   ],
   "seedCategories": [
    "ad_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -38570,6 +38618,7 @@
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -39085,6 +39134,14 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
+   },
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316"
+   },
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/8"
    }
   ],
   "evidence": [
@@ -39199,9 +39256,29 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
     "snippet": "求人ボックスの求人タイトル: 青山／マーケティング リーダー候補／SNS×インフルエンサー 新着",
     "at": "2026-10-07T04:38:02.835Z"
+   },
+   {
+    "field": "jobText",
+    "value": "青山／マーケティング（リーダー候補）SNS×インフルエンサー／昨対比177%成長／20代活躍中",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316",
+    "snippet": "スタンバイの求人タイトル: 青山／マーケティング（リーダー候補）SNS×インフルエンサー／昨対比177%成長／20代活躍中",
+    "at": "2026-10-07T09:46:06.326Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:46:06.326Z"
    }
   ],
   "seedCategories": [
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
@@ -40133,6 +40210,7 @@
   "seedCategories": [
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -40492,6 +40570,9 @@
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -40775,6 +40856,7 @@
   "seedCategories": [
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -40928,6 +41010,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency"
@@ -42104,6 +42187,18 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   },
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/2"
+   },
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/5"
+   },
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/9"
    }
   ],
   "evidence": [
@@ -42226,9 +42321,47 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区",
     "at": "2026-10-07T04:36:27.272Z"
+   },
+   {
+    "field": "jobText",
+    "value": "「インフルエンサーキャスティング」美容／コスメの広告案件／リモート週3回／フレックス",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/2",
+    "snippet": "スタンバイの求人タイトル: 「インフルエンサーキャスティング」美容／コスメの広告案件／リモート週3回／フレックス",
+    "at": "2026-10-07T09:46:21.564Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/2",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:46:21.564Z"
+   },
+   {
+    "field": "jobText",
+    "value": "プロジェクトマネージャー／SNS・インフルエンサーマーケ案件の進行・品質担保リモート可",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/5",
+    "snippet": "スタンバイの求人タイトル: プロジェクトマネージャー／SNS・インフルエンサーマーケ案件の進行・品質担保リモート可",
+    "at": "2026-10-07T09:47:06.034Z"
+   },
+   {
+    "field": "jobText",
+    "value": "マーケティングプランナー／SNS／インフルエンサー／リモート週3／戦略立案／提案／ディレクター",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/9",
+    "snippet": "スタンバイの求人タイトル: マーケティングプランナー／SNS／インフルエンサー／リモート週3／戦略立案／提案／ディレクター",
+    "at": "2026-10-07T09:48:17.748Z"
    }
   ],
   "seedCategories": [
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
@@ -42515,6 +42648,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency"
@@ -43122,6 +43256,9 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
@@ -44183,6 +44320,7 @@
   ],
   "seedCategories": [
    "cosme_d2c",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -51242,6 +51380,8 @@
   ],
   "seedCategories": [
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -51411,6 +51551,9 @@
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -51533,6 +51676,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -51563,6 +51707,18 @@
    {
     "source": "gbizinfo",
     "url": "https://info.gbiz.go.jp/"
+   },
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
+   },
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/5"
+   },
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/6"
    }
   ],
   "evidence": [
@@ -51621,9 +51777,46 @@
     "url": "https://info.gbiz.go.jp/",
     "snippet": "Gビズインフォ 従業員数: 330人（同名25件から選択）",
     "at": "2026-10-07T09:14:22.833Z"
+   },
+   {
+    "field": "jobText",
+    "value": "アシスタントディレクター／インフルエンサー番組の制作進行／土日休みで働... 新着",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
+    "snippet": "求人ボックスの求人タイトル: アシスタントディレクター／インフルエンサー番組の制作進行／土日休みで働... 新着",
+    "at": "2026-10-07T09:45:47.962Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 渋谷区 渋谷駅 徒歩7分",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 渋谷駅 徒歩7分",
+    "at": "2026-10-07T09:45:47.962Z"
+   },
+   {
+    "field": "jobText",
+    "value": "Vtuber案件のプロジェクトマネージャー（簡体字・英語・日本語）",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/5",
+    "snippet": "スタンバイの求人タイトル: Vtuber案件のプロジェクトマネージャー（簡体字・英語・日本語）",
+    "at": "2026-10-07T09:47:06.034Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/5",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:47:06.034Z"
    }
   ],
   "seedCategories": [
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
@@ -51771,6 +51964,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -51961,6 +52155,10 @@
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -52091,6 +52289,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -52226,6 +52425,7 @@
   ],
   "seedCategories": [
    "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -52341,6 +52541,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -52409,6 +52610,8 @@
   ],
   "seedCategories": [
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -52464,6 +52667,8 @@
   ],
   "seedCategories": [
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -52518,6 +52723,8 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency"
   ],
@@ -52656,6 +52863,10 @@
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -52753,6 +52964,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -52850,6 +53062,9 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency"
@@ -52976,6 +53191,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -53137,6 +53353,8 @@
   "seedCategories": [
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -53260,6 +53478,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -53320,6 +53539,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -53450,6 +53670,8 @@
   ],
   "seedCategories": [
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -53524,6 +53746,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -53576,6 +53799,8 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency"
   ],
@@ -53711,6 +53936,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -53762,6 +53988,8 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency"
   ],
@@ -53818,6 +54046,8 @@
   ],
   "seedCategories": [
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -53872,6 +54102,8 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency"
   ],
@@ -53971,6 +54203,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -54115,6 +54348,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -54237,6 +54471,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -54372,6 +54607,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -54526,6 +54762,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -54649,6 +54886,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -54696,6 +54934,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -54725,6 +54964,10 @@
    {
     "source": "gbizinfo",
     "url": "https://info.gbiz.go.jp/"
+   },
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
    }
   ],
   "evidence": [
@@ -54815,9 +55058,27 @@
     "url": "https://info.gbiz.go.jp/",
     "snippet": "Gビズインフォ 本店所在地: 東京都港区（同名2件から選択）",
     "at": "2026-10-07T09:15:37.788Z"
+   },
+   {
+    "field": "jobText",
+    "value": "キャスティングディレクター 推し活を活用した企画／年休120日以上 新着",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
+    "snippet": "求人ボックスの求人タイトル: キャスティングディレクター 推し活を活用した企画／年休120日以上 新着",
+    "at": "2026-10-07T09:45:47.962Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 豊島区 池袋駅",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 豊島区 池袋駅",
+    "at": "2026-10-07T09:45:47.962Z"
    }
   ],
   "seedCategories": [
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -54934,6 +55195,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -55057,6 +55319,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -55107,6 +55370,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -55225,6 +55489,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -55259,6 +55524,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -55378,6 +55644,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -55496,6 +55763,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -55521,6 +55789,10 @@
    {
     "source": "gbizinfo",
     "url": "https://info.gbiz.go.jp/"
+   },
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
    }
   ],
   "evidence": [
@@ -55582,6 +55854,9 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency"
   ],
@@ -55677,6 +55952,8 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency"
   ],
@@ -55789,6 +56066,8 @@
   ],
   "seedCategories": [
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -55835,6 +56114,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -55948,6 +56228,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -56055,6 +56336,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -56080,6 +56362,10 @@
    {
     "source": "official",
     "url": "https://itsnap.jp/"
+   },
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
    }
   ],
   "evidence": [
@@ -56141,6 +56427,9 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency"
   ],
@@ -56241,6 +56530,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -56345,6 +56635,8 @@
   ],
   "seedCategories": [
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -56444,6 +56736,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -56492,6 +56785,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -56588,6 +56882,8 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency"
   ],
@@ -56745,6 +57041,8 @@
   ],
   "seedCategories": [
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -56864,6 +57162,8 @@
   ],
   "seedCategories": [
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -56976,6 +57276,7 @@
   ],
   "seedCategories": [
    "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -57010,6 +57311,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -57155,6 +57457,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -57271,6 +57574,9 @@
   "seedCategories": [
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -57313,6 +57619,8 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency"
@@ -57441,6 +57749,8 @@
   "seedCategories": [
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -57547,6 +57857,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -57678,6 +57989,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -57761,6 +58073,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -57795,6 +58108,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -57911,6 +58225,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -58053,6 +58368,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -58183,6 +58499,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -58299,6 +58616,9 @@
   "seedCategories": [
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -58345,6 +58665,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -58449,6 +58770,8 @@
   ],
   "seedCategories": [
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -58548,6 +58871,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -58626,6 +58950,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -58643,6 +58968,10 @@
    {
     "source": "prtimes",
     "url": "https://prtimes.jp/main/html/searchrlp/company_id/55469"
+   },
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316"
    }
   ],
   "evidence": [
@@ -58685,9 +59014,27 @@
     "url": "https://trustar.co.jp/",
     "snippet": "",
     "at": "2026-10-07T09:07:55.136Z"
+   },
+   {
+    "field": "jobText",
+    "value": "港区赤坂／インフルエンサーチーフマネージャー（インフルエンサー部署の業績・マネージャー管理等）",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316",
+    "snippet": "スタンバイの求人タイトル: 港区赤坂／インフルエンサーチーフマネージャー（インフルエンサー部署の業績・マネージャー管理等）",
+    "at": "2026-10-07T09:46:06.326Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:46:06.326Z"
    }
   ],
   "seedCategories": [
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -58722,6 +59069,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -58874,6 +59222,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -58964,6 +59313,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -58998,6 +59348,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -59090,6 +59441,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -59188,6 +59540,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -59294,6 +59647,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -59418,6 +59772,8 @@
   "seedCategories": [
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -59452,6 +59808,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -59584,6 +59941,8 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency"
@@ -59737,6 +60096,8 @@
   ],
   "seedCategories": [
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -59800,6 +60161,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -59863,6 +60225,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -59973,6 +60336,8 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
@@ -60127,6 +60492,8 @@
   ],
   "seedCategories": [
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -60165,6 +60532,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency"
   ],
@@ -60308,6 +60676,9 @@
   "seedCategories": [
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -60414,6 +60785,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -60513,6 +60885,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -60660,6 +61033,8 @@
   ],
   "seedCategories": [
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -60742,6 +61117,8 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency"
   ],
@@ -60865,6 +61242,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -60882,6 +61260,10 @@
    {
     "source": "salesnow",
     "url": "https://salesnow.jp/db/companies/jcbb9n5hmbwk84wk"
+   },
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
    }
   ],
   "evidence": [
@@ -60943,6 +61325,8 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -60960,6 +61344,10 @@
    {
     "source": "prtimes",
     "url": "https://prtimes.jp/main/html/searchrlp/company_id/61898"
+   },
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316"
    }
   ],
   "evidence": [
@@ -60994,9 +61382,27 @@
     "url": "https://prtimes.jp/main/html/searchrlp/company_id/61898",
     "snippet": "PR TIMES企業情報のURL: https://www.touchgroup.jp/",
     "at": "2026-10-07T05:23:11.186Z"
+   },
+   {
+    "field": "jobText",
+    "value": "マーケティングディレクターインフルエンサー施策の企画～改善まで経験可昇格スピード",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316",
+    "snippet": "スタンバイの求人タイトル: マーケティングディレクターインフルエンサー施策の企画～改善まで経験可昇格スピード",
+    "at": "2026-10-07T09:46:06.326Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:46:06.326Z"
    }
   ],
   "seedCategories": [
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -61080,6 +61486,8 @@
   ],
   "seedCategories": [
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -61143,6 +61551,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -61161,6 +61570,10 @@
    {
     "source": "openwork",
     "url": "https://www.openwork.jp/company.php?m_id=a0CRC0000C9kL38"
+   },
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/3"
    }
   ],
   "evidence": [
@@ -61195,9 +61608,27 @@
     "url": "https://www.openwork.jp/company.php?m_id=a0CRC0000C9kL38",
     "snippet": "OpenWork URL: https://marketing.uuum.co.jp/",
     "at": "2026-10-07T06:26:35.596Z"
+   },
+   {
+    "field": "jobText",
+    "value": "ゲーム×英語／アカウントエグゼクティブ（欧米担当）インフルエンサーマーケティングプロモーション企画",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/3",
+    "snippet": "スタンバイの求人タイトル: ゲーム×英語／アカウントエグゼクティブ（欧米担当）インフルエンサーマーケティングプロモーション企画",
+    "at": "2026-10-07T09:46:36.785Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/3",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:46:36.785Z"
    }
   ],
   "seedCategories": [
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -61274,6 +61705,8 @@
   ],
   "seedCategories": [
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -61328,6 +61761,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -61362,6 +61796,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -61397,6 +61832,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -61432,6 +61868,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -61487,6 +61924,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -61577,6 +62015,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -61631,6 +62070,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -61685,6 +62125,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -61739,6 +62180,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -61793,6 +62235,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -61847,6 +62290,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -61929,6 +62373,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -61983,6 +62428,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -62037,6 +62483,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -62091,6 +62538,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -62125,6 +62573,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -62160,6 +62609,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -62195,6 +62645,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -62320,6 +62771,8 @@
   "seedCategories": [
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -62370,6 +62823,8 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency"
@@ -62427,6 +62882,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -62481,6 +62937,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -62535,6 +62992,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -62573,6 +63031,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency"
   ],
@@ -62629,6 +63088,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -62680,6 +63140,7 @@
   ],
   "seedCategories": [
    "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -62726,6 +63187,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency"
   ],
@@ -62782,6 +63244,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -62816,6 +63279,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -62871,6 +63335,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -62905,6 +63370,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -62940,6 +63406,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -62980,6 +63447,7 @@
   ],
   "seedCategories": [
    "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -63019,6 +63487,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency"
   ],
@@ -63075,6 +63544,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -63129,6 +63599,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -63150,6 +63621,18 @@
    {
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YGT9,,"
+   },
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
+   },
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/3"
+   },
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/6"
    }
   ],
   "evidence": [
@@ -63208,9 +63691,45 @@
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YGT9,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月24日提出・書類ID S100YGT9） 提出会社単体の従業員数 735名（所在地での照合なし・社名のみ一致）",
     "at": "2026-10-07T09:14:06.257Z"
+   },
+   {
+    "field": "jobText",
+    "value": "タレントグッズ制作企画 生産管理経験歓迎 Vtuber業界のリーディング企業／「ホロライブ」 在宅可",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
+    "snippet": "求人ボックスの求人タイトル: タレントグッズ制作企画 生産管理経験歓迎 Vtuber業界のリーディング企業／「ホロライブ」 在宅可",
+    "at": "2026-10-07T09:45:47.853Z"
+   },
+   {
+    "field": "jobText",
+    "value": "英語圏向けアウトバウンドセールスインフルエンサーマーケティング施策／ライセンス／スポンサー案件等",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/3",
+    "snippet": "スタンバイの求人タイトル: 英語圏向けアウトバウンドセールスインフルエンサーマーケティング施策／ライセンス／スポンサー案件等",
+    "at": "2026-10-07T09:46:36.785Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/3",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:46:36.785Z"
+   },
+   {
+    "field": "jobText",
+    "value": "Vtuberタレントマネージャー「日本初の新しいエンタメ文化「Vtuber」を世界へ」",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/6",
+    "snippet": "スタンバイの求人タイトル: Vtuberタレントマネージャー「日本初の新しいエンタメ文化「Vtuber」を世界へ」",
+    "at": "2026-10-07T09:47:32.418Z"
    }
   ],
   "seedCategories": [
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency"
   ],
@@ -63280,6 +63799,7 @@
   ],
   "seedCategories": [
    "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -63334,6 +63854,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -63388,6 +63909,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -63422,6 +63944,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -63457,6 +63980,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -63492,6 +64016,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -63547,6 +64072,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -63601,6 +64127,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -63655,6 +64182,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -63709,6 +64237,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -63743,6 +64272,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -63778,6 +64308,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -63833,6 +64364,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -63867,6 +64399,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -63902,6 +64435,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -63937,6 +64471,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -63972,9 +64507,2036 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
   "noPrtimes": true
+ },
+ {
+  "key": "クラフトハウス",
+  "name": "株式会社クラフト・ハウス",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "インフルエンサー×大手企業のコラボを支える営業企画・進行サポート",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
+    "snippet": "求人ボックスの求人タイトル: インフルエンサー×大手企業のコラボを支える営業企画・進行サポート",
+    "at": "2026-10-07T09:45:34.008Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 渋谷区 代々木駅 徒歩3分",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 代々木駅 徒歩3分",
+    "at": "2026-10-07T09:45:34.008Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "cores",
+  "name": "株式会社CORES",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "残業なしの事務スタッフ／時給1400円／週3勤務OK",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
+    "snippet": "求人ボックスの求人タイトル: 残業なしの事務スタッフ／時給1400円／週3勤務OK",
+    "at": "2026-10-07T09:45:34.008Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 新宿区 牛込神楽坂駅 徒歩1分",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 新宿区 牛込神楽坂駅 徒歩1分",
+    "at": "2026-10-07T09:45:34.008Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "limne",
+  "name": "株式会社LIMNE",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "内定後すぐ働ける 土日祝日のみ勤務 恵比寿ガーデンプレイスでショールーム運営・事務サポートスタッフ",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
+    "snippet": "求人ボックスの求人タイトル: 内定後すぐ働ける 土日祝日のみ勤務 恵比寿ガーデンプレイスでショールーム運営・事務サポートスタッフ",
+    "at": "2026-10-07T09:45:47.731Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 渋谷区 恵比寿駅 徒歩5分 / 恵比寿ガーデンプレイス",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 恵比寿駅 徒歩5分 / 恵比寿ガーデンプレイス",
+    "at": "2026-10-07T09:45:47.731Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "ファンネルアド",
+  "name": "ファンネルアド株式会社",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "未経験歓迎／経理 美容・ヘルスケアなど幅広く展開 充実の研修・育成体制 年休120日・残業20h",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
+    "snippet": "求人ボックスの求人タイトル: 未経験歓迎／経理 美容・ヘルスケアなど幅広く展開 充実の研修・育成体制 年休120日・残業20h",
+    "at": "2026-10-07T09:45:47.853Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 千代田区 淡路町駅",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 千代田区 淡路町駅",
+    "at": "2026-10-07T09:45:47.853Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "anymindjapan",
+  "name": "AnyMind Japan株式会社",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD"
+   },
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "「東京」マーケティング戦略プランナー「SNS・インフルエンサー施策担当... 新着",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
+    "snippet": "求人ボックスの求人タイトル: 「東京」マーケティング戦略プランナー「SNS・インフルエンサー施策担当... 新着",
+    "at": "2026-10-07T09:45:47.900Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 港区 / 六本木ヒルズ",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区 / 六本木ヒルズ",
+    "at": "2026-10-07T09:45:47.900Z"
+   },
+   {
+    "field": "jobText",
+    "value": "「東京」営業・マーケティング職「ブランドコマースマーケティング事業部」",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
+    "snippet": "求人ボックスの求人タイトル: 「東京」営業・マーケティング職「ブランドコマースマーケティング事業部」",
+    "at": "2026-10-07T09:45:47.957Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency",
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "albona",
+  "name": "株式会社ALBONA",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "渋谷／インフルエンサーマーケディレクター 韓国発ブランド支援／企画",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
+    "snippet": "求人ボックスの求人タイトル: 渋谷／インフルエンサーマーケディレクター 韓国発ブランド支援／企画",
+    "at": "2026-10-07T09:45:47.962Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 渋谷区 渋谷駅",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 渋谷駅",
+    "at": "2026-10-07T09:45:47.962Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "令和トラベル",
+  "name": "株式会社令和トラベル",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "週2在宅／インフルエンサーマーケティング／SNS戦略設計 運用／「行きたい 」旅行を醸成する",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
+    "snippet": "求人ボックスの求人タイトル: 週2在宅／インフルエンサーマーケティング／SNS戦略設計 運用／「行きたい 」旅行を醸成する",
+    "at": "2026-10-07T09:45:47.962Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 渋谷区",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区",
+    "at": "2026-10-07T09:45:47.962Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "hybridbank",
+  "name": "株式会社HYBRIDBANK",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "インフルエンサー好きな方はぜひ／月収1500万円のトップ層あり！気軽トークライバーLINE応募もOK",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316",
+    "snippet": "スタンバイの求人タイトル: インフルエンサー好きな方はぜひ／月収1500万円のトップ層あり！気軽トークライバーLINE応募もOK",
+    "at": "2026-10-07T09:46:06.326Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:46:06.326Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "タイヨウズ",
+  "name": "株式会社タイヨウズ",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "インフルエンサーマーケティング／未経験から一流マーケターへ／売上100億の急成長企業／土日祝休み／12513103",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316",
+    "snippet": "スタンバイの求人タイトル: インフルエンサーマーケティング／未経験から一流マーケターへ／売上100億の急成長企業／土日祝休み／12513103",
+    "at": "2026-10-07T09:46:06.326Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:46:06.326Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "bmsg",
+  "name": "株式会社ＢＭＳＧ",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "アーティストマネジメントデスク／人気アーティスト多数所属／エンタメ補助あり／SKY-HI設立会社",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316",
+    "snippet": "スタンバイの求人タイトル: アーティストマネジメントデスク／人気アーティスト多数所属／エンタメ補助あり／SKY-HI設立会社",
+    "at": "2026-10-07T09:46:06.326Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:46:06.326Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "anycolor",
+  "name": "ANYCOLOR株式会社",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "リモート可／VTuberタレント育成担当／アカデミー運営・マネージャー業務VTuberにじさんじ",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316",
+    "snippet": "スタンバイの求人タイトル: リモート可／VTuberタレント育成担当／アカデミー運営・マネージャー業務VTuberにじさんじ",
+    "at": "2026-10-07T09:46:06.326Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:46:06.326Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "ミラリタ",
+  "name": "ミラリタ株式会社",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "ファンドマネージャー・プライベートバンカー",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316",
+    "snippet": "スタンバイの求人タイトル: ファンドマネージャー・プライベートバンカー",
+    "at": "2026-10-07T09:46:06.326Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:46:06.326Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "日本chrコンサルティング",
+  "name": "日本CHRコンサルティング株式会社",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "営業マネージャー・営業管理",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316",
+    "snippet": "スタンバイの求人タイトル: 営業マネージャー・営業管理",
+    "at": "2026-10-07T09:46:06.326Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:46:06.326Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "大林組",
+  "name": "株式会社大林組",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/2"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "社内SEマネージャー候補（基盤システムのインフラ整備）",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/2",
+    "snippet": "スタンバイの求人タイトル: 社内SEマネージャー候補（基盤システムのインフラ整備）",
+    "at": "2026-10-07T09:46:21.564Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/2",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:46:21.564Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "元気な介護",
+  "name": "株式会社 元気な介護",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/2"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "主任ケアマネジャー（くらしさ芝大門／管理者候補）",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/2",
+    "snippet": "スタンバイの求人タイトル: 主任ケアマネジャー（くらしさ芝大門／管理者候補）",
+    "at": "2026-10-07T09:46:21.564Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/2",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:46:21.564Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "ログラス",
+  "name": "株式会社ログラス",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/2"
+   },
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/8"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "アカウントマネージャー（東海オフィス立ち上げ）／マネージャー候補",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/2",
+    "snippet": "スタンバイの求人タイトル: アカウントマネージャー（東海オフィス立ち上げ）／マネージャー候補",
+    "at": "2026-10-07T09:46:21.564Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/2",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:46:21.564Z"
+   },
+   {
+    "field": "jobText",
+    "value": "アカウントマネージャー",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/8",
+    "snippet": "スタンバイの求人タイトル: アカウントマネージャー",
+    "at": "2026-10-07T09:48:02.518Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency",
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "designdo",
+  "name": "株式会社 ＤＥＳＩＧＮ ＤＯ",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/2"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "ショールームマネージャー",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/2",
+    "snippet": "スタンバイの求人タイトル: ショールームマネージャー",
+    "at": "2026-10-07T09:46:21.564Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/2",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:46:21.564Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "川島コポレション",
+  "name": "株式会社 川島コーポレーション",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/2"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "ケアマネージャー／サニーライフ芝浦",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/2",
+    "snippet": "スタンバイの求人タイトル: ケアマネージャー／サニーライフ芝浦",
+    "at": "2026-10-07T09:46:21.564Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/2",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:46:21.564Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "ミュジアムスタッフ",
+  "name": "株式会社ミュージアム・スタッフ",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/2"
+   },
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/10"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "六本木／スヌーピーミュージアム等の運営マネージャー月収26万～／年休120日",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/2",
+    "snippet": "スタンバイの求人タイトル: 六本木／スヌーピーミュージアム等の運営マネージャー月収26万～／年休120日",
+    "at": "2026-10-07T09:46:21.564Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/2",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:46:21.564Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency",
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "すばる介護センタ",
+  "name": "有限会社 すばる介護センター",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/2"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "ケアマネージャー",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/2",
+    "snippet": "スタンバイの求人タイトル: ケアマネージャー",
+    "at": "2026-10-07T09:46:21.564Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/2",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:46:21.564Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "metateam",
+  "name": "ＭＥＴＡＴＥＡＭ株式会社",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/3"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "ITコンサルタント／マネジャー候補／年収アップ保証／売上3年で約倍の46億円超の急成長企業～",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/3",
+    "snippet": "スタンバイの求人タイトル: ITコンサルタント／マネジャー候補／年収アップ保証／売上3年で約倍の46億円超の急成長企業～",
+    "at": "2026-10-07T09:46:36.784Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/3",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:46:36.784Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "generativex",
+  "name": "株式会社GenerativeX",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/3"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "EM（エンジニアマネージャー）",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/3",
+    "snippet": "スタンバイの求人タイトル: EM（エンジニアマネージャー）",
+    "at": "2026-10-07T09:46:36.784Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/3",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:46:36.784Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "リディングマク",
+  "name": "株式会社リーディングマーク",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/3"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "EM心理学×AI×HR Techプロダクト開発チームのデリバリーマネジメントとチーム運営",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/3",
+    "snippet": "スタンバイの求人タイトル: EM心理学×AI×HR Techプロダクト開発チームのデリバリーマネジメントとチーム運営",
+    "at": "2026-10-07T09:46:36.784Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/3",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:46:36.784Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "cjoliveyoungjapan",
+  "name": "CJ Olive Young Japan株式会社",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/3"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "港区／マーケティング／オンラインモール OLIVE YOUNG Global韓国語スキル活かせる",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/3",
+    "snippet": "スタンバイの求人タイトル: 港区／マーケティング／オンラインモール OLIVE YOUNG Global韓国語スキル活かせる",
+    "at": "2026-10-07T09:46:36.784Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/3",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:46:36.784Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "tsuzucle",
+  "name": "株式会社Tsuzucle",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/3"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "ビジネスコンサルタント（マネージャーレイヤー）／マネージャー募集",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/3",
+    "snippet": "スタンバイの求人タイトル: ビジネスコンサルタント（マネージャーレイヤー）／マネージャー募集",
+    "at": "2026-10-07T09:46:36.784Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/3",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:46:36.784Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "エスワイエス",
+  "name": "株式会社エス・ワイ・エス",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/3"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "EM（エンジニアマネージャー）",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/3",
+    "snippet": "スタンバイの求人タイトル: EM（エンジニアマネージャー）",
+    "at": "2026-10-07T09:46:36.784Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/3",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:46:36.784Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "大泉工場",
+  "name": "株式会社大泉工場",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/3"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "営業マネージャー・営業管理",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/3",
+    "snippet": "スタンバイの求人タイトル: 営業マネージャー・営業管理",
+    "at": "2026-10-07T09:46:36.785Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/3",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:46:36.785Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "identify",
+  "name": "identify株式会社",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/3"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "カスタマーサクセス／昨対比300%超え成長のスタートアップ／縦型ショ",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/3",
+    "snippet": "スタンバイの求人タイトル: カスタマーサクセス／昨対比300%超え成長のスタートアップ／縦型ショ",
+    "at": "2026-10-07T09:46:36.785Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/3",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:46:36.785Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "kikitori",
+  "name": "株式会社ｋｉｋｉｔｏｒｉ",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/4"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "農業流通×SaaS／アカウントマネージャー役員直下で事業・顧客のグロースをリード",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/4",
+    "snippet": "スタンバイの求人タイトル: 農業流通×SaaS／アカウントマネージャー役員直下で事業・顧客のグロースをリード",
+    "at": "2026-10-07T09:46:51.355Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/4",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:46:51.355Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "jypエンタテインメントジャパン",
+  "name": "株式会社ＪＹＰエンターテインメント・ジャパン",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/4"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "青山／アーティストマーケティング／企画から現場運営まで一気通貫／NiziU・NEXZ等所属",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/4",
+    "snippet": "スタンバイの求人タイトル: 青山／アーティストマーケティング／企画から現場運営まで一気通貫／NiziU・NEXZ等所属",
+    "at": "2026-10-07T09:46:51.355Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/4",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:46:51.355Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "ヴァリュズ",
+  "name": "株式会社ヴァリューズ",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/4"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "プロジェクトマネージャー「フレックス制」",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/4",
+    "snippet": "スタンバイの求人タイトル: プロジェクトマネージャー「フレックス制」",
+    "at": "2026-10-07T09:46:51.355Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/4",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:46:51.355Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "translead",
+  "name": "株式会社Translead",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/4"
+   },
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/7"
+   },
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/10"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "海外駐在／カントリーマネージャー候補",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/4",
+    "snippet": "スタンバイの求人タイトル: 海外駐在／カントリーマネージャー候補",
+    "at": "2026-10-07T09:46:51.355Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/4",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:46:51.355Z"
+   },
+   {
+    "field": "jobText",
+    "value": "駐在／台湾／カントリーマネージャー語学力活かしグローバルに活躍／台湾市場における事業立上げ・拡大",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/10",
+    "snippet": "スタンバイの求人タイトル: 駐在／台湾／カントリーマネージャー語学力活かしグローバルに活躍／台湾市場における事業立上げ・拡大",
+    "at": "2026-10-07T09:48:32.493Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "キヤノンマケティングジャパン",
+  "name": "キヤノンマーケティングジャパン株式会社",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/5"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "社内SE／グループ基幹システム刷新の推進マネージャー候補 所定労働7.5ｈ／リモート",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/5",
+    "snippet": "スタンバイの求人タイトル: 社内SE／グループ基幹システム刷新の推進マネージャー候補 所定労働7.5ｈ／リモート",
+    "at": "2026-10-07T09:47:06.034Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/5",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:47:06.034Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "タッチストンキャピタルマネジメント",
+  "name": "タッチストーン・キャピタル・マネージメント株式会社",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/5"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "アセットマネージャー／残業月30h程／年収800万円／900万円",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/5",
+    "snippet": "スタンバイの求人タイトル: アセットマネージャー／残業月30h程／年収800万円／900万円",
+    "at": "2026-10-07T09:47:06.034Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/5",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:47:06.034Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "商船三井システムズ",
+  "name": "商船三井システムズ株式会社",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/5"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "マネージャー候補／商船三井Gサービスデスク・エンドポイントICT管理",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/5",
+    "snippet": "スタンバイの求人タイトル: マネージャー候補／商船三井Gサービスデスク・エンドポイントICT管理",
+    "at": "2026-10-07T09:47:06.034Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/5",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:47:06.034Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "東京瓦斯",
+  "name": "東京瓦斯株式会社",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/5"
+   },
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/6"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "浜松町／プロダクトマネージャー／環境SaaS（DXプロダクト開発人材）／リモートワーク可",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/5",
+    "snippet": "スタンバイの求人タイトル: 浜松町／プロダクトマネージャー／環境SaaS（DXプロダクト開発人材）／リモートワーク可",
+    "at": "2026-10-07T09:47:06.034Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/5",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:47:06.034Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency",
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "大成技研コンストラクション事業部",
+  "name": "大成技研株式会社（コンストラクション事業部）",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/6"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "コンストラクションマネージャー／CADオペレーター",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/6",
+    "snippet": "スタンバイの求人タイトル: コンストラクションマネージャー／CADオペレーター",
+    "at": "2026-10-07T09:47:32.418Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/6",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:47:32.418Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "branu",
+  "name": "BRANU株式会社",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/7"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "採用",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/7",
+    "snippet": "スタンバイの求人タイトル: 採用",
+    "at": "2026-10-07T09:47:47.699Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/7",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:47:47.699Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "フェアモント東京芝浦ホテルマネジメント",
+  "name": "【フェアモント東京】芝浦ホテルマネジメント合同会社",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/7"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "オープニングスタッフ ナイト（デューティー）マネジャー",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/7",
+    "snippet": "スタンバイの求人タイトル: オープニングスタッフ ナイト（デューティー）マネジャー",
+    "at": "2026-10-07T09:47:47.699Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/7",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:47:47.699Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "イニシャル",
+  "name": "株式会社イニシャル",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/7"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "カスタマーサクセス／マネージャー候補／未経験歓迎・PR業界アジアN",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/7",
+    "snippet": "スタンバイの求人タイトル: カスタマーサクセス／マネージャー候補／未経験歓迎・PR業界アジアN",
+    "at": "2026-10-07T09:47:47.700Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/7",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:47:47.700Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "コムシス情報システム",
+  "name": "コムシス情報システム株式会社",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/7"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "システムエンジニアマネジャー コムシスグループ／残業18.6h・年休129日・リモート",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/7",
+    "snippet": "スタンバイの求人タイトル: システムエンジニアマネジャー コムシスグループ／残業18.6h・年休129日・リモート",
+    "at": "2026-10-07T09:47:47.700Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/7",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:47:47.700Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "タイムチケット",
+  "name": "株式会社タイムチケット",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/7"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "未経験歓迎／SNSインフルエンサーマネジメント企画からマネジメントまでお任せインセンティブ有",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/7",
+    "snippet": "スタンバイの求人タイトル: 未経験歓迎／SNSインフルエンサーマネジメント企画からマネジメントまでお任せインセンティブ有",
+    "at": "2026-10-07T09:47:47.700Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/7",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:47:47.700Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "untrodcapitaljapan",
+  "name": "ＵｎｔｒｏＤ Ｃａｐｉｔａｌ Ｊａｐａｎ株式会社",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/8"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "ファンドマネージャースタートアップの成長を／デットファイナンスを通じて支援",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/8",
+    "snippet": "スタンバイの求人タイトル: ファンドマネージャースタートアップの成長を／デットファイナンスを通じて支援",
+    "at": "2026-10-07T09:48:02.518Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/8",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:48:02.518Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "dmmcom",
+  "name": "合同会社DMM.com",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/8"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "プロジェクトマネージャー／アルファ室",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/8",
+    "snippet": "スタンバイの求人タイトル: プロジェクトマネージャー／アルファ室",
+    "at": "2026-10-07T09:48:02.518Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/8",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:48:02.518Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "電通",
+  "name": "株式会社電通",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/8"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "「DX」DX開発マネージャー",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/8",
+    "snippet": "スタンバイの求人タイトル: 「DX」DX開発マネージャー",
+    "at": "2026-10-07T09:48:02.518Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/8",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:48:02.518Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "東京通信社",
+  "name": "株式会社東京通信社",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/8"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "ディレクター・プロジェクトマネージャー～オーダメイドの提案が可能／大手取引多数／フレックス～",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/8",
+    "snippet": "スタンバイの求人タイトル: ディレクター・プロジェクトマネージャー～オーダメイドの提案が可能／大手取引多数／フレックス～",
+    "at": "2026-10-07T09:48:02.518Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/8",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:48:02.518Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "ユニオンゲトグルプ",
+  "name": "株式会社ユニオンゲートグループ",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/8"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "外苑前／販促マネージャーバッグブランド『BRIEFING』を展開中年休122日土日祝休",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/8",
+    "snippet": "スタンバイの求人タイトル: 外苑前／販促マネージャーバッグブランド『BRIEFING』を展開中年休122日土日祝休",
+    "at": "2026-10-07T09:48:02.518Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/8",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:48:02.518Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "avriot",
+  "name": "株式会社ａｖｒｉｏｔ",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/8"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "東京／クリニックマネージャー複数クリニックにおける管理業務DXで医療の未来を変える",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/8",
+    "snippet": "スタンバイの求人タイトル: 東京／クリニックマネージャー複数クリニックにおける管理業務DXで医療の未来を変える",
+    "at": "2026-10-07T09:48:02.518Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/8",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:48:02.518Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "jcos",
+  "name": "株式会社J.C.O.S",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/9"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "営業マネージャー・営業管理",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/9",
+    "snippet": "スタンバイの求人タイトル: 営業マネージャー・営業管理",
+    "at": "2026-10-07T09:48:17.748Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/9",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:48:17.748Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "クラウドワクスコンサルティング",
+  "name": "株式会社クラウドワークス コンサルティング",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/9"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "マネージャー／バックエンドエンジニア大手プライム案件×幅広い案件残業月平均15h",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/9",
+    "snippet": "スタンバイの求人タイトル: マネージャー／バックエンドエンジニア大手プライム案件×幅広い案件残業月平均15h",
+    "at": "2026-10-07T09:48:17.748Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/9",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:48:17.748Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "fptソフトウェアジャパン",
+  "name": "FPTソフトウェアジャパン株式会社",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/9"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "プロジェクトマネージャー／残業20h／年休125日／家族手当・家賃手当有",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/9",
+    "snippet": "スタンバイの求人タイトル: プロジェクトマネージャー／残業20h／年休125日／家族手当・家賃手当有",
+    "at": "2026-10-07T09:48:17.748Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/9",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:48:17.748Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "ソシャルデタバンク",
+  "name": "ソーシャルデータバンク株式会社",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/9"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "営業マネージャー・営業管理",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/9",
+    "snippet": "スタンバイの求人タイトル: 営業マネージャー・営業管理",
+    "at": "2026-10-07T09:48:17.748Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/9",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:48:17.748Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "ポケモンセンタ",
+  "name": "株式会社ポケモンセンター",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/10"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "六本木／IT戦略担当／ポケモンの体験価値強化／国内外全社的なIT戦略・投資計画の策定等",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/10",
+    "snippet": "スタンバイの求人タイトル: 六本木／IT戦略担当／ポケモンの体験価値強化／国内外全社的なIT戦略・投資計画の策定等",
+    "at": "2026-10-07T09:48:32.493Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/10",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:48:32.493Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "日本テレビ音楽",
+  "name": "日本テレビ音楽株式会社",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/10"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "汐留／日テレG／人事・総務／マネージャー候補就業規則など制度設計～統括／年収700万～",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/10",
+    "snippet": "スタンバイの求人タイトル: 汐留／日テレG／人事・総務／マネージャー候補就業規則など制度設計～統括／年収700万～",
+    "at": "2026-10-07T09:48:32.493Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/10",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:48:32.493Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "クロバサン",
+  "name": "株式会社クローバー・サン",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/10"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "PM・PL／開発マネージャー候補（DX関連）大手案件多数年休125日／残業10h",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/10",
+    "snippet": "スタンバイの求人タイトル: PM・PL／開発マネージャー候補（DX関連）大手案件多数年休125日／残業10h",
+    "at": "2026-10-07T09:48:32.493Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/10",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:48:32.493Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "ネクスウィル",
+  "name": "株式会社ネクスウィル",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/10"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "東京／プロジェクトマネージャー／行政×不動産／代表直下での事業構築／空き家問題の解決事業／土日祝休",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/10",
+    "snippet": "スタンバイの求人タイトル: 東京／プロジェクトマネージャー／行政×不動産／代表直下での事業構築／空き家問題の解決事業／土日祝休",
+    "at": "2026-10-07T09:48:32.493Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/10",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:48:32.493Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "ノススタ",
+  "name": "株式会社ノーススター",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/10"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "事務スタッフ／事務「経験必須」 バックオフィス 経理・財務・人事・労務・総務 完全在宅勤務「フルリモート」Of01",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/10",
+    "snippet": "スタンバイの求人タイトル: 事務スタッフ／事務「経験必須」 バックオフィス 経理・財務・人事・労務・総務 完全在宅勤務「フルリモート」Of01",
+    "at": "2026-10-07T09:48:32.493Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/10",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:48:32.493Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "森永製菓",
+  "name": "森永製菓 株式会社",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/10"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "田町本社／リモート可／IRプライム上場大手食品メーカー／創業100年以上の安定基盤／フレックス",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/10",
+    "snippet": "スタンバイの求人タイトル: 田町本社／リモート可／IRプライム上場大手食品メーカー／創業100年以上の安定基盤／フレックス",
+    "at": "2026-10-07T09:48:32.493Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "港区",
+    "source": "stanby",
+    "url": "https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316/10",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 港区",
+    "at": "2026-10-07T09:48:32.493Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
  }
 ]

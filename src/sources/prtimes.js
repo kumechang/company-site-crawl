@@ -56,7 +56,7 @@ export async function discover(q, ctx) {
   const search = `${BASE}/main/action.php?run=html&page=searchkey&search_word=${encodeURIComponent(q.keyword)}`;
   let list;
   try {
-    list = parseSearchCompanies(await ctx.crawler.snapshot(search, { settleMs: 1500 })).slice(0, q.limit);
+    list = parseSearchCompanies(await ctx.crawler.snapshot(search, { settleMs: 1500 })).slice(q.offset ?? 0, (q.offset ?? 0) + q.limit);
   } catch (e) {
     ctx.log(`  ! prtimes "${q.keyword}": ${e.message}`);
     return;

@@ -23,7 +23,7 @@ export function parseSupplier(snap) {
 
 export async function discover(q, ctx) {
   const list = await ctx.crawler.snapshot(q.url);
-  const sups = parseList(list).slice(0, q.limit);
+  const sups = parseList(list).slice(q.offset ?? 0, (q.offset ?? 0) + q.limit);
   ctx.log(`  imitsu ${q.url}: ${sups.length} 社`);
   for (const s of sups) {
     let info;

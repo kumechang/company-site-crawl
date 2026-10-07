@@ -29,7 +29,7 @@ export function parseProduct(snap) {
 export async function discover(q, ctx) {
   let urls;
   try {
-    urls = parseList(await ctx.crawler.snapshot(q.url)).slice(0, q.limit);
+    urls = parseList(await ctx.crawler.snapshot(q.url)).slice(q.offset ?? 0, (q.offset ?? 0) + q.limit);
   } catch (e) {
     ctx.log(`  ! digimado ${q.url}: ${e.message}`);
     return;
