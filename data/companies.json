@@ -17582,7 +17582,7 @@
     "source": "official",
     "url": "https://digiasa.co.jp/",
     "snippet": "",
-    "at": "2026-10-07T04:10:15.767Z"
+    "at": "2026-10-07T04:17:21.266Z"
    },
    {
     "field": "profileText",
@@ -17590,7 +17590,7 @@
     "source": "official",
     "url": "https://digima.asahi.co.jp/",
     "snippet": "トップページ",
-    "at": "2026-10-07T04:10:15.768Z"
+    "at": "2026-10-07T04:17:21.267Z"
    },
    {
     "field": "employees",
@@ -17598,7 +17598,7 @@
     "source": "official",
     "url": "https://digima.asahi.co.jp/info",
     "snippet": "従業員 | 46名(令和8年4月) | 資本金 | 8500万円(",
-    "at": "2026-10-07T04:10:15.772Z"
+    "at": "2026-10-07T04:17:21.269Z"
    },
    {
     "field": "profileText",
@@ -17606,7 +17606,7 @@
     "source": "official",
     "url": "https://digima.asahi.co.jp/",
     "snippet": "会社概要ページ",
-    "at": "2026-10-07T04:10:15.772Z"
+    "at": "2026-10-07T04:17:21.269Z"
    },
    {
     "field": "address",
@@ -17614,7 +17614,7 @@
     "source": "official",
     "url": "https://digima.asahi.co.jp/info",
     "snippet": "東京都港区浜松町二丁目3番1号 日本生命浜松町クレアタワー18階",
-    "at": "2026-10-07T04:10:15.772Z"
+    "at": "2026-10-07T04:17:21.269Z"
    },
    {
     "field": "profileText",
@@ -17622,7 +17622,7 @@
     "source": "official",
     "url": "https://digima.asahi.co.jp/info",
     "snippet": "会社概要ページ",
-    "at": "2026-10-07T04:10:15.772Z"
+    "at": "2026-10-07T04:17:21.270Z"
    },
    {
     "field": "contactUrl",
@@ -17630,7 +17630,7 @@
     "source": "official",
     "url": "https://digima.asahi.co.jp/",
     "snippet": "リンク文言「お問い合わせ」/ ページ実在とフォームの記述を確認",
-    "at": "2026-10-07T04:10:15.778Z"
+    "at": "2026-10-07T04:17:21.271Z"
    }
   ],
   "seedCategories": [
@@ -44846,7 +44846,7 @@
     "source": "official",
     "url": "http://sky-farm.jp/",
     "snippet": "",
-    "at": "2026-10-07T04:10:17.879Z"
+    "at": "2026-10-07T04:17:21.296Z"
    },
    {
     "field": "profileText",
@@ -44854,7 +44854,7 @@
     "source": "official",
     "url": "https://sky-farm.co.jp/",
     "snippet": "トップページ",
-    "at": "2026-10-07T04:10:17.880Z"
+    "at": "2026-10-07T04:17:21.296Z"
    },
    {
     "field": "address",
@@ -44862,7 +44862,7 @@
     "source": "official",
     "url": "https://sky-farm.co.jp/",
     "snippet": "神奈川県横浜市西区みなとみらい2-2-1",
-    "at": "2026-10-07T04:10:17.881Z"
+    "at": "2026-10-07T04:17:21.297Z"
    },
    {
     "field": "profileText",
@@ -44870,7 +44870,7 @@
     "source": "official",
     "url": "https://sky-farm.co.jp/",
     "snippet": "会社概要ページ",
-    "at": "2026-10-07T04:10:17.881Z"
+    "at": "2026-10-07T04:17:21.297Z"
    },
    {
     "field": "profileText",
@@ -44878,7 +44878,7 @@
     "source": "official",
     "url": "https://sky-farm.co.jp/company",
     "snippet": "会社概要ページ",
-    "at": "2026-10-07T04:10:17.882Z"
+    "at": "2026-10-07T04:17:21.297Z"
    },
    {
     "field": "contactUrl",
@@ -44886,7 +44886,7 @@
     "source": "official",
     "url": "https://sky-farm.co.jp/",
     "snippet": "リンク文言「お問い合わせ」/ ページ実在とフォームの記述を確認",
-    "at": "2026-10-07T04:10:17.883Z"
+    "at": "2026-10-07T04:17:21.297Z"
    }
   ],
   "seedCategories": [
@@ -49211,12 +49211,20 @@
  {
   "key": "テレビ朝日メディアプレックス",
   "name": "株式会社テレビ朝日メディアプレックス",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://www.mediaplex.co.jp/",
+  "domain": "mediaplex.co.jp",
   "sources": [
    {
     "source": "green",
     "url": "https://www.green-japan.com/company/1331"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/30314"
+   },
+   {
+    "source": "official",
+    "url": "https://www.mediaplex.co.jp/"
    }
   ],
   "evidence": [
@@ -49251,6 +49259,78 @@
     "url": "https://www.green-japan.com/company/1331",
     "snippet": "",
     "at": "2026-10-07T04:13:52.118Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区西麻布1-2-9 EXタワー7階",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/30314",
+    "snippet": "本社所在地: 東京都港区西麻布1-2-9 EXタワー7階",
+    "at": "2026-10-07T04:16:44.928Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://www.mediaplex.co.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/30314",
+    "snippet": "PR TIMES企業情報のURL: https://www.mediaplex.co.jp/",
+    "at": "2026-10-07T04:16:44.928Z"
+   },
+   {
+    "field": "profileText",
+    "value": "株式会社テレビ朝日メディアプレックス サービス | 事例 | ナレッジ | お役立ち資料 | ニュース | 会社概要 | 採用 | お問い合わせ | 媒体 / media を | 複合的 / complex に活用して | 「今までにない | 楽しさ」を。 | NEWS | EX・AIカンパニー | テレビ朝日と“AI専門コンテンツ制作チーム”の | プロジェクトを結成！ | SERVICE | AIクリエイティブ | AIクリエイティブの力で、 | これまでにない映像・コンテンツ表現を創出します。 | CASE | 国民番付 | TV × WEB | 番組を「見る」から、「参加する」体験へ。 | CASE | フルタの方程式LIVE！ | YouTube × REAL EVENT | ファンが「見る」だけでなく、「一緒に盛り上がる」体験へ。 | CASE | あらき「ARAKI PARTY #5」 | REAL EVENT × DIGITAL | ファンとアーティストの熱狂が、ひとつになる体験へ。 | SERVICE | SNSマーケティング | 戦略設計から縦型動画の制作・運用まで一貫して支援。 | SNS上の接点を、来店・購入につながる導線へ。 | CASE | さまぁ〜ず×さまぁ〜ずBSさまぁ〜ず | TV × FAN CLUB | 番組を、放送だけで終わらないファンとのつながりへ。 | CASE | NHK紅白歌合戦 投票システム | TV × CLOUD | 視聴者の参加が、番組を動かす体験へ。 | CASE | 朝日新聞社「Typoless」 | AI × UX/UI | 複雑なAI校正を、誰もが直感的に使える体験へ。 | SERVICE | クラウド（AWS） | インフラ設計から24時間運用代行まで一貫して支援。 | 安定稼働を継続的に支えます。 | CASE | しまむら ショートドラマ | PRODUCT × SHORT DRAMA | 広告ではなく、物語から商品と出会う体験へ。 | CASE | NJPW WORLD | PRO-WRESTLING × LIVE STREAMING | 会場を越えて、いつでも熱狂できる体験へ。 | media × complex = mediaplex | Pick Up | ピックアップ | 株式会社テレビ朝日 イベント事業局 | 「フルタの方程式LIVE！ ーファン感謝デー2026夏ー」イベント | 出演者と会場参加型クイズ企画 | #YouTube | #イベント | #データ分析 | #リアルタイム企画 | 片倉工業株式会社 | さいたまデジタルキッズ体験イベント | 3日間で1,200名を集めた、デジタル教育イベント施策 | #eスポーツ | #デジタル教育 | #商業施設 | #教育 | #行政 | 株式会社BS朝日 | さまぁ〜ず×さまぁ〜ず BSさまぁ〜ず | 伝説のトークバラエティを多角的にプロデュース | #YouTube運用 | #グッズ制作 | #コアファンビジネス | #コンテンツ企画 | #マルチ展開 | #番組制作 | シンエイ動画株式会社 | 【公式】ドラえもん / 藤子・F・不二雄チャンネル YouTube運用 | ドラえもんをはじめとする藤子・F・不二雄作品の本編エピソード配信に加え、映画情報やオリジナルコンテンツなどを継続的に発信。 | #SNS分析 | #YouTube | #アニメ | #デザイン制作 | #企画制作 | 株式会社シーユーシー | …",
+    "source": "official",
+    "url": "https://www.mediaplex.co.jp/",
+    "snippet": "トップページ",
+    "at": "2026-10-07T04:17:33.075Z"
+   },
+   {
+    "field": "profileText",
+    "value": "サービス | 事例 | ナレッジ | お役立ち資料 | ニュース | 会社概要 | 採用 | お問い合わせ | 媒体 / media を | 複合的 / complex に活用して | 「今までにない | 楽しさ」を。 | NEWS | EX・AIカンパニー | テレビ朝日と“AI専門コンテンツ制作チーム”の | プロジェクトを結成！ | SERVICE | AIクリエイティブ | AIクリエイティブの力で、 | これまでにない映像・コンテンツ表現を創出します。 | CASE | 国民番付 | TV × WEB | 番組を「見る」から、「参加する」体験へ。 | CASE | フルタの方程式LIVE！ | YouTube × REAL EVENT | ファンが「見る」だけでなく、「一緒に盛り上がる」体験へ。 | CASE | あらき「ARAKI PARTY #5」 | REAL EVENT × DIGITAL | ファンとアーティストの熱狂が、ひとつになる体験へ。 | SERVICE | SNSマーケティング | 戦略設計から縦型動画の制作・運用まで一貫して支援。 | SNS上の接点を、来店・購入につながる導線へ。 | CASE | さまぁ〜ず×さまぁ〜ずBSさまぁ〜ず | TV × FAN CLUB | 番組を、放送だけで終わらないファンとのつながりへ。 | CASE | NHK紅白歌合戦 投票システム | TV × CLOUD | 視聴者の参加が、番組を動かす体験へ。 | CASE | 朝日新聞社「Typoless」 | AI × UX/UI | 複雑なAI校正を、誰もが直感的に使える体験へ。 | SERVICE | クラウド（AWS） | インフラ設計から24時間運用代行まで一貫して支援。 | 安定稼働を継続的に支えます。 | CASE | しまむら ショートドラマ | PRODUCT × SHORT DRAMA | 広告ではなく、物語から商品と出会う体験へ。 | CASE | NJPW WORLD | PRO-WRESTLING × LIVE STREAMING | 会場を越えて、いつでも熱狂できる体験へ。 | media × complex = mediaplex | Pick Up | ピックアップ | 株式会社テレビ朝日 イベント事業局 | 「フルタの方程式LIVE！ ーファン感謝デー2026夏ー」イベント | 出演者と会場参加型クイズ企画 | #YouTube | #イベント | #データ分析 | #リアルタイム企画 | 片倉工業株式会社 | さいたまデジタルキッズ体験イベント | 3日間で1,200名を集めた、デジタル教育イベント施策 | #eスポーツ | #デジタル教育 | #商業施設 | #教育 | #行政 | 株式会社BS朝日 | さまぁ〜ず×さまぁ〜ず BSさまぁ〜ず | 伝説のトークバラエティを多角的にプロデュース | #YouTube運用 | #グッズ制作 | #コアファンビジネス | #コンテンツ企画 | #マルチ展開 | #番組制作 | シンエイ動画株式会社 | 【公式】ドラえもん / 藤子・F・不二雄チャンネル YouTube運用 | ドラえもんをはじめとする藤子・F・不二雄作品の本編エピソード配信に加え、映画情報やオリジナルコンテンツなどを継続的に発信。 | #SNS分析 | #YouTube | #アニメ | #デザイン制作 | #企画制作 | 株式会社シーユーシー | 生成AIを使った医療動画制作 | 医療…",
+    "source": "official",
+    "url": "https://www.mediaplex.co.jp/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T04:17:43.623Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区西麻布1-2-9 EXタワー7階",
+    "source": "official",
+    "url": "https://www.mediaplex.co.jp/company/",
+    "snippet": "東京都港区西麻布1-2-9 EXタワー7階",
+    "at": "2026-10-07T04:17:43.623Z"
+   },
+   {
+    "field": "profileText",
+    "value": "サービス | 事例 | ナレッジ | お役立ち資料 | ニュース | 会社概要 | 採用 | お問い合わせ | TOP | 会社概要 | 会社概要 | About Us | 株式会社テレビ朝日メディアプレックスは、テレビ朝日グループのデジタルビジネスを技術とクリエイティブの両面から支える中核企業です。 | メディア業界で培った確かなノウハウと最新テクノロジーを駆使し、あらゆる企業のDX推進とビジネス課題の解決に伴走するデジタルパートナーとして、お客様の持続的な成長に貢献してまいります。 | 企業理念 | 代表メッセージ | 会社概要 | 業務組織 | 役員紹介 | グループ会社 | アクセス | 公告 | 企業理念 | P | u | r | p | o | s | e | 「安心・信頼・創造」 | 私たちは | 安心満足していただける企業をめざします｡ | 皆さまから信頼される企業をめざします｡ | 創造力豊かな企業をめざします｡ | 代表からのメッセージ | M | e | s | s | a | g | e | 私たちは、高い技術力と制作力で | お客様のデジタルトランスフォーメーションを加速し、 | 変革と成長を支援させていただきます。 | お客様を豊かにする新しいエンタテインメントを創造していきます。 | 当社は、デジタル技術の革新の中で、常に進化し、常に挑戦し続け、 | デジタルの力でお客様と共に未来を創る企業でありたいと考えています。 | これからも テクノロジー と クリエイティブ が世界を大きく変えていきます。 | エンジニアリング、そしてコンテンツクリエイティビティへの投資を重点的に行い、邁進していく所存です。 | 皆様より信頼いただける企業をめざし、社員一同、日々努力と挑戦を続けてまいります。 | 引き続きご支援ご鞭撻を賜りますよう、宜しくお願い申し上げます。 | テレビ朝日メディアプレックス | 代表取締役 社長 | 澤 將晃 | 会社情報 | C | o | m | p | a | n | y | ’ | s | O | u | t | l | i | n | e | 商号 | 株式会社テレビ朝日メディアプレックス | 英語会社名 | tv asahi mediaplex corporation | 設立年月日 | 平成１２年２月９日 | 本店所在地 | 〒106-0031 | 東京都港区西麻布1-2-9 EXタワー7階 | 商号 | 株式会社テレビ朝日メディアプレックス | 本店所在地 | （英語表記） | 7F EX Tower. | 1-2-9 Nishiazabu Minato-ku. | Tokyo 106-0031 | 代表取締役 | 澤 將晃（さわ まさあき） | 株主 | 株式会社テレビ朝日 | 事業内容 | ■デジタルトランスフォーメーション | （クラウドマイグレーション/ビッグデータソリューション/デジタルマーケティング） | ■デジタルコンテンツ | （Web制作/データ放送/VR/インターネットライブ配信） | 電話番号 | 03-5413-6111 | FAX番号 | 03-5413-6115 | 資本金 | 9,200万円 | 決算期 | ３月 | 業務組織 | O | r | g | a | n | i | z | a | t | i | o | n | 役員紹介 | D | i | r | e | c | t | o | r | I | n | t | r | o | d | u | c…",
+    "source": "official",
+    "url": "https://www.mediaplex.co.jp/company/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T04:17:43.623Z"
+   },
+   {
+    "field": "profileText",
+    "value": "サービス | 事例 | ナレッジ | お役立ち資料 | ニュース | 会社概要 | 採用 | お問い合わせ | TOP | お問い合わせ | Contact | お問い合わせ | 弊社にお問い合わせの方は、下記の項目を入力し、内容をご確認のうえ画面下部の「送信」ボタンをクリックしてください。 | お問い合わせ内容によっては、返信に時間がかかる場合や、お答えできない場合があります。あらかじめご了承ください。 | 採用に関するお問い合わせにつきましては、採用情報ページをご確認ください。 | 【*】項目は必ずご入力ください。 | お問い合わせ種類 | 事業内容のお問い合わせ | メディアプレックスについてのお問い合わせ | その他 | 会社名 | 株式会社〇〇 | 姓 | 名 | 電話番号 | 090-0000-0000 | メールアドレス | お問い合わせ内容 | 個人情報の取り扱いについて | ■当社が取得する個人情報の利用目的■ | お問合せ対応またはお問合せへの回答のため利用いたします。 | 「個人情報の取り扱いについて」に同意のうえ、お申込みください。 | 同意して送信すると、Cookieにより当社のWebサイト上における閲覧履歴と個人情報を紐付けて把握、分析する場合があります。 | 個人情報の取り扱いについて： | 同意する | 送信 | ※このサイトはreCAPTCHAによって保護されています。 | Download | 資料請求 | 資料ダウンロード一覧 | Contact | お問い合わせ | お問い合わせはこちら | サービス | システム開発 | Webシステム開発 | クラウド(AWS) | データ基盤 | デジタルマーケティング | SNSマーケティング | 広告出稿・運用 | 番組プロモ | コンテンツ制作 | Web制作 | インタラクティブ番組連動 | （データ放送） | インターネットライブ配信 | 動画制作 | 事例 | ナレッジ | お役立ち情報 | ニュース | 会社概要 | アクセス | 業務組織 | 広告 | DXへの取り組みについて | 採用 | 新卒採用 | 中途採用 | スタッフインタビュー | FAQ | コンプライアンス憲章 | 情報セキュリティ方針 | プライバシーポリシー | お問い合わせ | ISMS（ISO/IEC 27001）認証取得 | テクノロジーソリューション事業本部に適用 | © 2026 株式会社テレビ朝日メディアプレックス | PAGETOP",
+    "source": "official",
+    "url": "https://www.mediaplex.co.jp/company/contact",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T04:17:43.623Z"
+   },
+   {
+    "field": "profileText",
+    "value": "サービス | 事例 | ナレッジ | お役立ち資料 | ニュース | 会社概要 | 採用 | お問い合わせ | TOP | DXへの取り組みについて | DXcommit | DXへの取り組みについて | 経営ビジョンとビジネスモデルの方向性 | ・私たちは、高い技術力と制作力を活かし、お客様のデジタルトランスフォーメーション（DX）を加速させ、変革と成長を支援します。 | ・デジタル技術が日々進化する中で、私たちは常に挑戦を続け、デジタルの力でお客様とともに未来を創造する企業を目指しています。 | ・メディア、ビジネス、コンテンツ領域におけるDXを支援し、「お客様を豊かにする新しいエンターテインメントの創造」をビジョンとして掲げています。 | DX戦略 | 私たちは、お客様のメディア・ビジネス・コンテンツにおけるデジタルトランスフォーメーションを支援するため、クラウドマイグレーション、ビッグデータソリューション、デジタルマーケティングといった、デジタルトランスフォーメーション分野をはじめ、番組プロモーションやSNS運用、データ放送、サイト制作など多岐にわたるサービスを柔軟に組み合わせ、課題解決と価値創造に貢献してまいります。 これらのサービスをお客様のニーズに合わせて最適な提供が出来るよう、以下に示す社内の業務改善を継続的に取り組みます。 | 業務効率化 | 社内イントラネットを活用し、各部門のノウハウや成功事例を体系的に整理・共有することで、社員全体のスキル向上を図っています。また、部門間の壁を越えた情報交換と協力体制の強化を推進しています。これらの取り組みにより、各部門の知見を融合させ、業務プロセスの最適化や新たな課題解決策の創出を促進しています。 | ITシステムの活用とセキュリティ強化 | 業務の効率化と安全なデジタル環境の構築を目的に、ITシステムの活用と情報資産を保護するためのセキュリティ強化を推進しています。オフィス環境においては、利便性の高い最新の業務システムを導入し、円滑な情報共有と業務プロセスの最適化に取り組みます。 また、リモートワーク環境の整備を進め、社内外を問わず安全かつ柔軟に業務を遂行できる体制を構築しています。 | データ基盤整備と分析 | これまで培ってきた分散処理基盤の構築・運用、データ分析技術やマーケティングノウハウを活用し、データドリブンな意思決定を実行します。これらは、社内に限らずお客様向けにも展開し、ユーザー行動データの収集・分析など仕組み整備から支援し、コンテンツ制作やマーケティング活動の最大化に寄与します。 | クラウド活用 | クラウドに関する専門知識を深められるよう、AWSやGoogle Cloudなどのクラウド関連資格の取得を奨励しています。 また、主要クラウドベンダーとの定期的な情報交換や勉強会を実施し、最新のサービスやアーキテクチャの導入を検討するなど、クラウド環境を活用した柔軟かつ効率的なシステム運用を推進しています。これらの取り組みを継続し、事業の拡大と競争力の強化を図りながら、持続可能な成長を実現していきます。 | DX推進体制 | DXの推進は全ての事業に関連するため、弊社の各事業部（デジタルマーケティング事業本部、テクノロジーソリューション事業本部、データ放送事業部）とコーポレート部門（経営管理部）全ての管理職合同で実施している「幹部会」にて推進します。 | 本会議では、DXの戦略策定と実行をリードし、代表取締役社長の主導のもと進められます。 | 継続的に部門横断でのDXを強化す…",
+    "source": "official",
+    "url": "https://www.mediaplex.co.jp/company/dxcommit/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T04:17:43.623Z"
+   },
+   {
+    "field": "contactUrl",
+    "value": "https://www.mediaplex.co.jp/company/contact",
+    "source": "official",
+    "url": "https://www.mediaplex.co.jp/",
+    "snippet": "リンク文言「お問い合わせ」/ ページ実在とフォームの記述を確認",
+    "at": "2026-10-07T04:17:43.625Z"
    }
   ],
   "seedCategories": [
@@ -49261,12 +49341,16 @@
  {
   "key": "intloop",
   "name": "INTLOOP株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://www.intloop.com/",
+  "domain": "intloop.com",
   "sources": [
    {
     "source": "green",
     "url": "https://www.green-japan.com/company/1390"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/23636"
    }
   ],
   "evidence": [
@@ -49301,6 +49385,22 @@
     "url": "https://www.green-japan.com/company/1390",
     "snippet": "",
     "at": "2026-10-07T04:14:05.458Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区赤坂2丁目4-6 赤坂グリーンクロス27F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/23636",
+    "snippet": "本社所在地: 東京都港区赤坂2丁目4-6 赤坂グリーンクロス27F",
+    "at": "2026-10-07T04:16:52.818Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://www.intloop.com/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/23636",
+    "snippet": "PR TIMES企業情報のURL: https://www.intloop.com",
+    "at": "2026-10-07T04:16:52.819Z"
    }
   ],
   "seedCategories": [
@@ -49311,12 +49411,16 @@
  {
   "key": "弁護士ドットコム",
   "name": "弁護士ドットコム株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://www.bengo4.com/",
+  "domain": "bengo4.com",
   "sources": [
    {
     "source": "green",
     "url": "https://www.green-japan.com/company/1532"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/44347"
    }
   ],
   "evidence": [
@@ -49351,6 +49455,22 @@
     "url": "https://www.green-japan.com/company/1532",
     "snippet": "",
     "at": "2026-10-07T04:14:18.950Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区六本木4-1-4 黒崎ビル6F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/44347",
+    "snippet": "本社所在地: 東京都港区六本木4-1-4 黒崎ビル6F",
+    "at": "2026-10-07T04:17:00.048Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://www.bengo4.com/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/44347",
+    "snippet": "PR TIMES企業情報のURL: https://www.bengo4.com/corporate/",
+    "at": "2026-10-07T04:17:00.048Z"
    }
   ],
   "seedCategories": [
@@ -49361,12 +49481,16 @@
  {
   "key": "アンティファクトリ",
   "name": "株式会社アンティー・ファクトリー",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://www.un-t.com/",
+  "domain": "un-t.com",
   "sources": [
    {
     "source": "green",
     "url": "https://www.green-japan.com/company/1614"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/79012"
    }
   ],
   "evidence": [
@@ -49401,6 +49525,22 @@
     "url": "https://www.green-japan.com/company/1614",
     "snippet": "",
     "at": "2026-10-07T04:14:47.566Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区南平台町17-13 ヴァンヴェール南平台２F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/79012",
+    "snippet": "本社所在地: 東京都渋谷区南平台町17-13 ヴァンヴェール南平台２F",
+    "at": "2026-10-07T04:17:09.119Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://www.un-t.com/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/79012",
+    "snippet": "PR TIMES企業情報のURL: https://www.un-t.com",
+    "at": "2026-10-07T04:17:09.119Z"
    }
   ],
   "seedCategories": [
@@ -49411,12 +49551,16 @@
  {
   "key": "バイドゥ",
   "name": "バイドゥ株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "http://www.baidu.jp/",
+  "domain": "baidu.jp",
   "sources": [
    {
     "source": "green",
     "url": "https://www.green-japan.com/company/1621"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/6410"
    }
   ],
   "evidence": [
@@ -49451,6 +49595,22 @@
     "url": "https://www.green-japan.com/company/1621",
     "snippet": "",
     "at": "2026-10-07T04:15:01.221Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区六本木6-10-1 六本木ヒルズ森タワー39階",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/6410",
+    "snippet": "本社所在地: 東京都港区六本木6-10-1 六本木ヒルズ森タワー39階",
+    "at": "2026-10-07T04:17:21.227Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "http://www.baidu.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/6410",
+    "snippet": "PR TIMES企業情報のURL: http://www.baidu.jp/",
+    "at": "2026-10-07T04:17:21.227Z"
    }
   ],
   "seedCategories": [
