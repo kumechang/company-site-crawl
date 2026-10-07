@@ -55,15 +55,15 @@
   "lastAt": "2026-10-07T15:20:22.553Z"
  },
  "influencer_agency|stanby|https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316": {
-  "nextPage": 11,
+  "nextPage": 16,
   "offset": 0,
-  "found": 69,
+  "found": 99,
   "exhausted": false,
   "failures": 0,
   "lastError": null,
   "failedAt": null,
-  "runs": 2,
-  "lastAt": "2026-10-07T09:48:32.494Z"
+  "runs": 3,
+  "lastAt": "2026-10-07T16:07:52.863Z"
  },
  "influencer_agency|boxil|https://boxil.jp/sc-influencer_marketing/": {
   "nextPage": 3,
@@ -196,5 +196,38 @@
   "failedAt": null,
   "runs": 1,
   "lastAt": "2026-10-07T15:59:06.019Z"
+ },
+ "cosme_d2c|prtimes|D2C 化粧品": {
+  "nextPage": 1,
+  "offset": 8,
+  "found": 8,
+  "exhausted": false,
+  "failures": 0,
+  "lastError": null,
+  "failedAt": null,
+  "runs": 1,
+  "lastAt": "2026-10-07T16:16:06.710Z"
+ },
+ "cosme_d2c|prtimes|スキンケア ブランド 公式通販": {
+  "nextPage": 1,
+  "offset": 8,
+  "found": 8,
+  "exhausted": false,
+  "failures": 0,
+  "lastError": null,
+  "failedAt": null,
+  "runs": 1,
+  "lastAt": "2026-10-07T16:16:32.777Z"
+ },
+ "cosme_d2c|prtimes|コスメ 新ブランド 発売": {
+  "nextPage": 1,
+  "offset": 8,
+  "found": 8,
+  "exhausted": false,
+  "failures": 0,
+  "lastError": null,
+  "failedAt": null,
+  "runs": 1,
+  "lastAt": "2026-10-07T16:17:00.140Z"
  }
 }

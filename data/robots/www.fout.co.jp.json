@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.fout.co.jp",
+ "fetchedAt": "2026-10-07T16:19:53.847Z",
+ "status": 200,
+ "text": "# START YOAST BLOCK\n# ---------------------------\nUser-agent: *\nDisallow:\n\n# ---------------------------\n# END YOAST BLOCK\nSitemap: https://www.fout.co.jp/sitemap.xml\nSitemap: https://www.fout.co.jp/sitemap.html\n"
+}

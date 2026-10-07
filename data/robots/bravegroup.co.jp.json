@@ -1,0 +1,6 @@
+{
+ "origin": "https://bravegroup.co.jp",
+ "fetchedAt": "2026-10-07T16:20:15.155Z",
+ "status": 200,
+ "text": "# START YOAST BLOCK\n# ---------------------------\nUser-agent: *\nDisallow:\n\nSitemap: https://bravegroup.co.jp/sitemap_index.xml\n# ---------------------------\n# END YOAST BLOCK"
+}

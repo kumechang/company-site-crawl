@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.for-it.co.jp",
+ "fetchedAt": "2026-10-07T16:21:01.797Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /assets/\nDisallow: /english/assets/\n"
+}

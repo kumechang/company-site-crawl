@@ -1,0 +1,6 @@
+{
+ "origin": "https://andfactory.co.jp",
+ "fetchedAt": "2026-10-07T16:20:48.269Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /officialweb/wp-admin/\nDisallow: /officialweb/wp-includes/\nDisallow: /officialweb/wp-content/plugins\nDisallow: /officialweb/wp-content/cache\nDisallow: /officialweb/wp-content/themes\nDisallow: /*.pdf$\nDisallow: /*?*\nDisallow: /*?\nDisallow: /campaign/\nDisallow: /gbr09jhx/\nDisallow: /gbr09jhx/ncoj6t6m/\nDisallow: /messagefrom-oharatakamasa/\nDisallow: /messagefrom-aokirinji/\nDisallow: /messagefrom-umemotoyuki/\nAllow: /officialweb/wp-admin/admin-ajax.php"
+}
