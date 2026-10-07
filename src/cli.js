@@ -274,9 +274,12 @@ async function verify() {
   // 前回と入力(会社の情報・カテゴリ・検証ロジック)が同じ会社は、検証結果が変わらないので取り直さない（--reverify で全部やり直す）
   const catsOf = (c, r) => Object.entries(CATEGORIES).filter(([k, d]) => c.seedCategories.includes(k) && r.categories.includes(d.label)).map(([k]) => k);
   const ok = store.all().map((c) => ({ c, r: consolidate(c, { minEmployees }) })).filter(({ r }) => r.status === 'OK');
-  const scoped = currentCat ? ok.filter(({ c }) => c.seedCategories.includes(currentCat)) : ok;
+  // 対象カテゴリ: sample の途中はいま作っているカテゴリ、単独の verify は --categories（既定は全カテゴリ）
+  const scopeCats = currentCat ? [currentCat] : opt.categories.split(',');
+  // 検索元のカテゴリと判定されたカテゴリが1つも重ならない会社は、どのカテゴリのサンプルにも数えられないので検証しない
+  const scoped = ok.filter(({ c, r }) => catsOf(c, r).some((k) => scopeCats.includes(k)));
   const targets = scoped.filter(({ c, r }) => opt.reverify || c.checks?.sig !== checkSig(r, catsOf(c, r)));
-  log(`# 検証: 判定OK ${ok.length}社${currentCat ? `のうち ${CATEGORIES[currentCat].label} ${scoped.length}社` : ''}、検証済みで変更なし ${scoped.length - targets.length}社は飛ばし、${targets.length}社を検証`);
+  log(`# 検証: 判定OK ${ok.length}社のうち対象カテゴリ(${scopeCats.map((k) => CATEGORIES[k]?.label ?? k).join('/')})の${scoped.length}社、検証済みで変更なし ${scoped.length - targets.length}社は飛ばし、${targets.length}社を検証`);
   let i = 0;
   for (const { c, r } of targets) {
     const sig = checkSig(r, catsOf(c, r));
