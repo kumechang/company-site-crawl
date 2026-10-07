@@ -91,7 +91,8 @@ export function checkEmployees(c, r) {
   if (worst && worst.ratio >= 1.5) {
     const detail = `${worst.e.source}=${worst.e.value}名`;
     const explained = SCOPE_RE.test(worst.e.snippet ?? '') || a.scope;
-    if (worst.ratio >= 3 && !explained) {
+    // 有報(EDINET)は社名+所在地で特定した一次情報。他サイトとの乖離は「別会社」ではなく集計範囲・時点の違いとして要確認に留める
+    if (worst.ratio >= 3 && !explained && chosen.source !== 'edinet') {
       result = 'NG';
       notes.push(`${chosen.source}=${r.employees}名に対し${detail}と${worst.ratio.toFixed(1)}倍の乖離。別会社の数字の可能性`);
     } else {
@@ -99,7 +100,7 @@ export function checkEmployees(c, r) {
       notes.push(`${chosen.source}=${r.employees}名に対し${detail}と差がある(${worst.ratio.toFixed(1)}倍)。調査時点・集計範囲の違いの可能性`);
     }
   }
-  if (result === 'OK') notes.unshift(`${chosen.source === 'official' ? '公式サイト' : chosen.source}で${r.employees}名${a.asOf ? `（${a.asOf}時点）` : ''}${others.length ? `。他の情報源(${others.map((e) => `${e.source}=${e.value}`).join(', ')})とも概ね整合` : ''}`);
+  if (result === 'OK') notes.unshift(`${{ official: '公式サイト', edinet: '有価証券報告書(EDINET)' }[chosen.source] ?? chosen.source}で${r.employees}名${a.asOf ? `（${a.asOf}時点）` : ''}${others.length ? `。他の情報源(${others.map((e) => `${e.source}=${e.value}`).join(', ')})とも概ね整合` : ''}`);
   return { result, comment: notes.join(' / '), after: r.employees, asOf: a.asOf, source: chosen.source };
 }
 

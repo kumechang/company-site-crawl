@@ -18,6 +18,7 @@ import * as boxil from './sources/boxil.js';
 import * as salesnow from './sources/salesnow.js';
 import * as prtimes from './sources/prtimes.js';
 import * as gbizinfo from './sources/gbizinfo.js';
+import * as edinetSrc from './sources/edinet.js';
 import * as mynavi from './sources/mynavi.js';
 import * as careertasu from './sources/careertasu.js';
 import * as openwork from './sources/openwork.js';
@@ -82,6 +83,8 @@ if (!cmd || opt.help || !['discover', 'enrich', 'export', 'run', 'robots', 'samp
 }
 
 const minEmployees = Number(opt['min-employees']);
+// EDINET(有価証券報告書)はAPIキーがあるときだけ使う。無ければこの補完を飛ばす
+const edinet = process.env.EDINET_API_KEY ? new edinetSrc.Edinet({ useCache: !opt['no-cache'], log }) : null;
 const store = new Store();
 const crawler = new Crawler({ minDelayMs: Number(opt.delay), useCache: !opt['no-cache'] });
 
@@ -220,6 +223,27 @@ async function lookupAll(label, mod, flag, pred) {
   log(`  → ${n}/${todo.length} 社が一致`);
 }
 
+/** 全社を EDINET で引き直す（社名照合はメモリ上で完結し、取得は新しい日の書類一覧と未取得の有報だけ） */
+async function enrichEdinet() {
+  if (!edinet) {
+    log('# EDINET: EDINET_API_KEY が未設定のためスキップ');
+    return;
+  }
+  const all = store.all();
+  log(`# EDINET(有価証券報告書)で補完: ${all.length} 社を照合`);
+  let n = 0;
+  for (const c of all) {
+    const r = await edinetSrc.lookup(c, { edinet, log });
+    if (r === true) {
+      n++;
+      store.save();
+    }
+  }
+  store.mergeByDomain();
+  store.save();
+  log(`  → ${n}/${all.length} 社が有価証券報告書の提出会社と一致 (API ${edinet.requests}回)`);
+}
+
 async function enrich() {
   // 1) SalesNow の索引で、公式URLまたは従業員数が足りない会社を補完
   const needs = (c) => !c.officialUrl || !c.evidence.some((e) => e.field === 'employees');
@@ -264,6 +288,9 @@ async function enrich() {
     await enrichFromOfficial(c, { crawler, log });
     store.save();
   }
+  // 2b) EDINET(有価証券報告書): 会社名と、公式サイト等で分かった所在地で上場会社等を特定し、従業員数(提出会社単体)・本店所在地を一次情報で補完。
+  //     有報を出していない会社は一致なし。有報の従業員数が取れた会社は、次の第三者サイト(Gビズ以降)を引かない
+  await enrichEdinet();
   // 3) Gビズインフォ(経産省)で会社名検索。公式サイト等で住所が分かった後に引くことで、同名の別会社の取り違えを減らす
   const gb = store.all().filter((c) => !c.evidence.some((e) => e.field === 'employees') && !c.evidence.some((e) => e.source === 'gbizinfo') && !c.noGbiz);
   if (gb.length) {

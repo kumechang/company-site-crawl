@@ -178,6 +178,7 @@ export const SITES = {
   agencyhub: { name: 'AgencyHub', status: 'ready', note: '従業員規模のレンジ。所在地は対応エリアの可能性があり住所には使わない' },
   jcia: { name: '日本化粧品工業会 会員名簿', status: 'ready', note: '社名・住所・電話(URLなし)' },
   jaro: { name: 'JARO 会員社一覧', status: 'ready', note: '社名のみ。業種見出し(化粧品・トイレタリー等)ごと' },
+  edinet: { name: 'EDINET(金融庁・有価証券報告書)', status: 'enrich', note: 'EDINET API v2(要 EDINET_API_KEY)。コード一覧で社名照合→最新の有報(XBRL→CSV)から従業員数(提出会社単体/連結)・本店所在地。有報提出会社のみ。APIのため robots.txt の対象外(キー認証の公開API)' },
   gbizinfo: { name: 'Gビズインフォ(経産省)', status: 'enrich', note: '会社名検索(フォーム操作)で本店所在地・従業員数を補完。robots.txtは全面許可' },
   mynavi_shinsotsu: { name: 'マイナビ(新卒)', status: 'enrich', note: '会社名検索(POSTフォーム srchWord)→企業の会社概要で従業員数・本社所在地を補完。新卒採用している会社のみ。従業員数は連結の場合あり' },
   slidelib: { name: 'slide lib(スライドリブ)', status: 'ready', note: 'ユーザー提供。比較記事から会社名と「サービスサイトへ」リンクを取得。住所・従業員数は無し' },
