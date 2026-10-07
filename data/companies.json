@@ -1595,6 +1595,10 @@
    {
     "source": "official",
     "url": "http://dym.asia/"
+   },
+   {
+    "source": "green",
+    "url": "https://www.green-japan.com/company/1652"
    }
   ],
   "evidence": [
@@ -1805,12 +1809,45 @@
     "url": "http://dym.asia/",
     "snippet": "リンク文言「CONTACT お問い合わせ」/ ページ実在とフォームの記述を確認",
     "at": "2026-10-06T23:31:59.671Z"
+   },
+   {
+    "field": "address",
+    "value": "〒141-0032　 東京都品川区大崎 1-11-2 ゲートシティ大崎 イーストタワー10階",
+    "source": "green",
+    "url": "https://www.green-japan.com/company/1652",
+    "snippet": "本社住所: 〒141-0032　 東京都品川区大崎 1-11-2 ゲートシティ大崎 イーストタワー10階",
+    "at": "2026-10-07T04:15:28.275Z"
+   },
+   {
+    "field": "employees",
+    "value": 686,
+    "source": "green",
+    "url": "https://www.green-japan.com/company/1652",
+    "snippet": "従業員数: 686人",
+    "at": "2026-10-07T04:15:28.275Z"
+   },
+   {
+    "field": "profileText",
+    "value": "IT/Web・通信・インターネット系 > Webマーケティング・ネット広告 サービス系 > 人材サービス（紹介/派遣/教育/研修） 不動産・建設系 > 不動産賃貸・仲介・管理 / DYMは下記事業を行っております。 ■WEB事業 年間100億円の売上規模まで成長しており、解約率は業界平均を大幅に下回る驚異の1％台。WEBコンサルティングとして営業から運用までワンストップで行っております。 ■人材事業 新卒紹介では業界トップを牽引しており、現在では新卒・第二新卒をはじめテック事業、スカウト事業、顧問紹介、研修事業も順調に伸びています。年間で10億円の利益を創出しています。 ■医療事業 IT×医療で世界No.1を目指すべく、タイ・香港・ニューヨーク・ベトナムで日系企業向けのクリニック事業、法人向けの産業医事業、医療メディア事業を展開しています。 ■不動産事業 新規で立ち上げた事業となります。オ…",
+    "source": "green",
+    "url": "https://www.green-japan.com/company/1652",
+    "snippet": "業界/事業内容",
+    "at": "2026-10-07T04:15:28.275Z"
+   },
+   {
+    "field": "founded",
+    "value": "2007年04月",
+    "source": "green",
+    "url": "https://www.green-japan.com/company/1652",
+    "snippet": "",
+    "at": "2026-10-07T04:15:28.275Z"
    }
   ],
   "seedCategories": [
    "sns_agency",
    "sns_agency",
-   "sns_agency"
+   "sns_agency",
+   "influencer_agency"
   ],
   "contactUrl": null
  },
@@ -21107,7 +21144,8 @@
    "cosme_d2c",
    "cosme_d2c",
    "cosme_d2c",
-   "cosme_d2c"
+   "cosme_d2c",
+   "influencer_agency"
   ],
   "contactUrl": null,
   "checks": {
@@ -49169,5 +49207,349 @@
   "noMynavi": true,
   "noCareertasu": true,
   "noOpenwork": true
+ },
+ {
+  "key": "テレビ朝日メディアプレックス",
+  "name": "株式会社テレビ朝日メディアプレックス",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "green",
+    "url": "https://www.green-japan.com/company/1331"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "address",
+    "value": "〒106-0031 東京都港区西麻布1-2-9　EXタワー7階",
+    "source": "green",
+    "url": "https://www.green-japan.com/company/1331",
+    "snippet": "本社住所: 〒106-0031 東京都港区西麻布1-2-9　EXタワー7階",
+    "at": "2026-10-07T04:13:52.118Z"
+   },
+   {
+    "field": "employees",
+    "value": 200,
+    "source": "green",
+    "url": "https://www.green-japan.com/company/1331",
+    "snippet": "従業員数: 200人",
+    "at": "2026-10-07T04:13:52.118Z"
+   },
+   {
+    "field": "profileText",
+    "value": "IT/Web・通信・インターネット系 > インターネット/Webサービス・ASP IT/Web・通信・インターネット系 > Webマーケティング・ネット広告 / ◆デジタルトランスフォーメーション事業（クラウドマイグレーション／ビッグデータソリューション／デジタルマーケティング） ◆デジタルコンテンツ事業（Web制作／データ放送／VR／インターネットライブ配信） ◆その他関連事業 / クラウド（AWS）エンジニア／メンバークラス / 2026/06/18 更新 / インフラ領域を担うクラウド（AWS）エンジニア！ テレビ朝日グループ◆フレックス勤務◆所定労働7時間！リモート勤務OK / 500万円〜700万円 / 東京都 Python Node.js AWS …",
+    "source": "green",
+    "url": "https://www.green-japan.com/company/1331",
+    "snippet": "業界/事業内容",
+    "at": "2026-10-07T04:13:52.118Z"
+   },
+   {
+    "field": "founded",
+    "value": "2000年02月",
+    "source": "green",
+    "url": "https://www.green-japan.com/company/1331",
+    "snippet": "",
+    "at": "2026-10-07T04:13:52.118Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "intloop",
+  "name": "INTLOOP株式会社",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "green",
+    "url": "https://www.green-japan.com/company/1390"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "address",
+    "value": "〒107-0052 東京都港区赤坂2丁目4-6 グリーンクロス27F",
+    "source": "green",
+    "url": "https://www.green-japan.com/company/1390",
+    "snippet": "本社住所: 〒107-0052 東京都港区赤坂2丁目4-6 グリーンクロス27F",
+    "at": "2026-10-07T04:14:05.458Z"
+   },
+   {
+    "field": "employees",
+    "value": 637,
+    "source": "green",
+    "url": "https://www.green-japan.com/company/1390",
+    "snippet": "従業員数: 637人",
+    "at": "2026-10-07T04:14:05.458Z"
+   },
+   {
+    "field": "profileText",
+    "value": "IT/Web・通信・インターネット系 > ITコンサルティング コンサルティング・リサーチ > 経営/ビジネスコンサルティング・シンクタンク IT/Web・通信・インターネット系 > Webマーケティング・ネット広告 / INTLOOP株式会社は、経営コンサルティングやデジタルコンサルティングなどを中心にサービス提供をおこなう独立系コンサルティングファームです。 代表取締役の林は、同志社大学卒業後、アクセンチュアに入社しコンサルタントとして数多くのプロジェクトを経験。ベンチャー企業の立ち上げ等の経験を経て、2005年に弊社を設立しました。 コンサルティングファームやベンチャー企業の出身者など、多様なバックグラウンドと高いスキルを持った優秀な人材が集まっています。 弊社のサービスは、コンサルティング事業、デジタルトランスフォーメーション事業、エンジニア事業、フリーランスプラットフォーム事業の…",
+    "source": "green",
+    "url": "https://www.green-japan.com/company/1390",
+    "snippet": "業界/事業内容",
+    "at": "2026-10-07T04:14:05.458Z"
+   },
+   {
+    "field": "founded",
+    "value": "2005年02月",
+    "source": "green",
+    "url": "https://www.green-japan.com/company/1390",
+    "snippet": "",
+    "at": "2026-10-07T04:14:05.458Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "弁護士ドットコム",
+  "name": "弁護士ドットコム株式会社",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "green",
+    "url": "https://www.green-japan.com/company/1532"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "address",
+    "value": "東京都港区六本木4-1-4 黒崎ビル 【採用選考におけるハラスメント相談窓口】 人事部労務担当（roumu@bengo4.com） 選考中の当社社員の言動について気になることがありましたら、上記までご連絡ください。ご相談を理由に選考で不利益な取扱いをすることはありません。",
+    "source": "green",
+    "url": "https://www.green-japan.com/company/1532",
+    "snippet": "本社住所: 東京都港区六本木4-1-4 黒崎ビル 【採用選考におけるハラスメント相談窓口】 人事部労務担当（roumu@bengo4.com） 選考中の当社社員の言動について気になることがありましたら、上記までご連絡ください。ご相談を理由に選考で不利益な取扱いをすることはありません。",
+    "at": "2026-10-07T04:14:18.950Z"
+   },
+   {
+    "field": "employees",
+    "value": 610,
+    "source": "green",
+    "url": "https://www.green-japan.com/company/1532",
+    "snippet": "従業員数: 610人",
+    "at": "2026-10-07T04:14:18.950Z"
+   },
+   {
+    "field": "profileText",
+    "value": "IT/Web・通信・インターネット系 > インターネット/Webサービス・ASP IT/Web・通信・インターネット系 > Webマーケティング・ネット広告 / 弁護士ドットコムの開発・運営 税理士ドットコムの開発・運営 弁護士ドットコムニュースの運営 クラウドサインの開発・提供 BUSINESS LAWYERSの運営 弁護士ドットコムキャリアの運営 / フィールドセールス（クラウドサイン） / 2026/06/30 更新 / ミドルマーケットを対象とした電子契約サービスの導入提案！フィールドセールスの募集 / 454万円〜768万円 / 東京都 / 【職務詳細】 フィールドセールスは、従業員500名未満の企業を対象とした新規営業…",
+    "source": "green",
+    "url": "https://www.green-japan.com/company/1532",
+    "snippet": "業界/事業内容",
+    "at": "2026-10-07T04:14:18.950Z"
+   },
+   {
+    "field": "founded",
+    "value": "2005年07月",
+    "source": "green",
+    "url": "https://www.green-japan.com/company/1532",
+    "snippet": "",
+    "at": "2026-10-07T04:14:18.950Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "アンティファクトリ",
+  "name": "株式会社アンティー・ファクトリー",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "green",
+    "url": "https://www.green-japan.com/company/1614"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "address",
+    "value": "東京都渋谷区南平台町17-13 ヴァンヴェール南平台 2F",
+    "source": "green",
+    "url": "https://www.green-japan.com/company/1614",
+    "snippet": "本社住所: 東京都渋谷区南平台町17-13 ヴァンヴェール南平台 2F",
+    "at": "2026-10-07T04:14:47.566Z"
+   },
+   {
+    "field": "employees",
+    "value": 130,
+    "source": "green",
+    "url": "https://www.green-japan.com/company/1614",
+    "snippet": "従業員数: 130人",
+    "at": "2026-10-07T04:14:47.566Z"
+   },
+   {
+    "field": "profileText",
+    "value": "IT/Web・通信・インターネット系 > Webマーケティング・ネット広告 IT/Web・通信・インターネット系 > システムインテグレータ・ソフトハウス / WEBデザイン制作、WEBサイト構築、戦略・企画提案、WEBコンサルティング、WEBシステム構築、 上記にともなうビジネス全般 / アートディレクター / 2023/03/03 更新 / クライアント課題を共に解決し、企業の成長に寄り添える。アートディレクター募集 / 450万円〜600万円 / 東京都 / Web・グラフィックデザインの制作実績と経験を基に、 PC、モバイル、タブレット、サイネージ、パンフレ…",
+    "source": "green",
+    "url": "https://www.green-japan.com/company/1614",
+    "snippet": "業界/事業内容",
+    "at": "2026-10-07T04:14:47.566Z"
+   },
+   {
+    "field": "founded",
+    "value": "2001年01月",
+    "source": "green",
+    "url": "https://www.green-japan.com/company/1614",
+    "snippet": "",
+    "at": "2026-10-07T04:14:47.566Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "バイドゥ",
+  "name": "バイドゥ株式会社",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "green",
+    "url": "https://www.green-japan.com/company/1621"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "address",
+    "value": "東京都 港区六本木6-10-1　六本木ヒルズ森タワー39階",
+    "source": "green",
+    "url": "https://www.green-japan.com/company/1621",
+    "snippet": "本社住所: 東京都 港区六本木6-10-1　六本木ヒルズ森タワー39階",
+    "at": "2026-10-07T04:15:01.221Z"
+   },
+   {
+    "field": "employees",
+    "value": 45,
+    "source": "green",
+    "url": "https://www.green-japan.com/company/1621",
+    "snippet": "従業員数: 45人",
+    "at": "2026-10-07T04:15:01.221Z"
+   },
+   {
+    "field": "profileText",
+    "value": "IT/Web・通信・インターネット系 > インターネット/Webサービス・ASP IT/Web・通信・インターネット系 > Webマーケティング・ネット広告 IT/Web・通信・インターネット系 > モバイル/アプリサービス / インターネット製品、サービスの開発・提供、インターネット広告の販売等 / 【事業コンサルタント・BD】｜最先端AI×広告の新未来｜新規事業立ち上げメンバー募集！！ / 2026/10/05 更新 / 【事業コンサルタント・BD】｜最先端AI×広告の新未来｜新規事業立ち上げメンバー募集！！ / 600万円〜1000万円 / 東京都 / ❐募集背景❐ バイ…",
+    "source": "green",
+    "url": "https://www.green-japan.com/company/1621",
+    "snippet": "業界/事業内容",
+    "at": "2026-10-07T04:15:01.221Z"
+   },
+   {
+    "field": "founded",
+    "value": "2006年12月",
+    "source": "green",
+    "url": "https://www.green-japan.com/company/1621",
+    "snippet": "",
+    "at": "2026-10-07T04:15:01.221Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "ini",
+  "name": "INI株式会社",
+  "officialUrl": "https://www.ini.co.jp/",
+  "domain": "ini.co.jp",
+  "sources": [
+   {
+    "source": "green",
+    "url": "https://www.green-japan.com/company/1637"
+   },
+   {
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcb219cu1pnh3y43n"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "address",
+    "value": "東京都港区西新橋 3-24-9 飯田ビル3F 【最寄駅】 都営三田線 御成門駅(徒歩1分) 東京メトロ 神谷町駅 (徒歩5分) JR山手線 新橋駅・浜松町駅(徒歩10分)",
+    "source": "green",
+    "url": "https://www.green-japan.com/company/1637",
+    "snippet": "本社住所: 東京都港区西新橋 3-24-9 飯田ビル3F 【最寄駅】 都営三田線 御成門駅(徒歩1分) 東京メトロ 神谷町駅 (徒歩5分) JR山手線 新橋駅・浜松町駅(徒歩10分)",
+    "at": "2026-10-07T04:15:14.699Z"
+   },
+   {
+    "field": "employees",
+    "value": 28,
+    "source": "green",
+    "url": "https://www.green-japan.com/company/1637",
+    "snippet": "従業員数: 28人",
+    "at": "2026-10-07T04:15:14.699Z"
+   },
+   {
+    "field": "profileText",
+    "value": "IT/Web・通信・インターネット系 > Webマーケティング・ネット広告 IT/Web・通信・インターネット系 > ITコンサルティング コンサルティング・リサーチ > 経営/ビジネスコンサルティング・シンクタンク / ■デジタルマーケティング戦略立案 ■プロデュース/チームビルディング ■グロースハック支援 ■フロントエンド/バックエンド連携開発 など / Webディレクター / 2023/09/06 更新 / 【リモートOK/フレックス導入】Webデザイナー、コーダー、エンジニアから上流工程で成長したい方を募集しています！（創業22年のデジタル戦略パートナー） / 400万円〜700万円 / 東京都 / B2B、B2Cともに大手ナ…",
+    "source": "green",
+    "url": "https://www.green-japan.com/company/1637",
+    "snippet": "業界/事業内容",
+    "at": "2026-10-07T04:15:14.699Z"
+   },
+   {
+    "field": "founded",
+    "value": "2000年06月",
+    "source": "green",
+    "url": "https://www.green-japan.com/company/1637",
+    "snippet": "",
+    "at": "2026-10-07T04:15:14.699Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区西新橋3丁目24番9号",
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcb219cu1pnh3y43n",
+    "snippet": "登記所在地: 東京都港区西新橋3丁目24番9号",
+    "at": "2026-10-07T04:15:34.251Z"
+   },
+   {
+    "field": "employees",
+    "value": 28,
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcb219cu1pnh3y43n",
+    "snippet": "正社員規模(推定): 28名（SalesNowの推定値）",
+    "at": "2026-10-07T04:15:34.251Z"
+   },
+   {
+    "field": "profileText",
+    "value": "幅広い分野での製品開発やサービス提供を行っています。技術革新を追求し、最新の技術を駆使して高品質な製品を市場に提供します。顧客ニーズに応じたカスタマイズサービスや、迅速なサポート体制を整え、顧客満足度の向上に努めています。また、効率的な物流システムを構築し、迅速かつ確実な配送を実現しています。",
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcb219cu1pnh3y43n",
+    "snippet": "SalesNow概要",
+    "at": "2026-10-07T04:15:34.251Z"
+   },
+   {
+    "field": "founded",
+    "value": "2000年06月",
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcb219cu1pnh3y43n",
+    "snippet": "",
+    "at": "2026-10-07T04:15:34.251Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://www.ini.co.jp/",
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcb219cu1pnh3y43n",
+    "snippet": "ホームページ: https://www.ini.co.jp/profile/company-profile.html",
+    "at": "2026-10-07T04:15:34.251Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
  }
 ]
