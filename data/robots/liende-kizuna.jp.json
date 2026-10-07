@@ -1,0 +1,6 @@
+{
+ "origin": "https://liende-kizuna.jp",
+ "fetchedAt": "2026-10-07T16:35:56.419Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /cmsdir/wp-admin/\nAllow: /cmsdir/wp-admin/admin-ajax.php\n\n# START YOAST BLOCK\n# ---------------------------\nUser-agent: *\nDisallow:\n\nSitemap: http://liende-kizuna.jp/sitemap_index.xml\n# ---------------------------\n# END YOAST BLOCK\nSitemap: https://liende-kizuna.jp/sitemap.xml\n"
+}

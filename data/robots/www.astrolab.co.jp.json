@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.astrolab.co.jp",
+ "fetchedAt": "2026-10-07T16:29:39.762Z",
+ "status": 200,
+ "text": "# MJ12botからのクロールを拒否\nUser-Agent: MJ12bot\nDisallow: /\nUser-Agent:*\n# クロール拒否：Wordpress関連ディレクトリ\nDisallow: /bihinkanri/wp-admin\nDisallow: /bihinkanri/wp-includes\nDisallow: /bihinkanri/wp-content/plugins\nDisallow: /bihinkanri/wp-content/cache\nDisallow: /bihinkanri/wp-content/themes/twentytwentyfour\nDisallow: /bihinkanri/wp-content/themes/twentytwentythree\nDisallow: /bihinkanri/wp-content/themes/twentytwentytwo\nDisallow: /bihinkanri/wp-content/themes/twentytwentyone\nDisallow: /bihinkanri/wp-content/themes/index.php\nDisallow: /bihinkanri/wp-content/themes/bihinkanri.zip\nDisallow: /bihinkanri/category/*/*\nAllow: /bihinkanri/wp-content/uploads\nAllow: /bihinkanri/wp-content/themes/bihinkanri\n# allow google image bot to search all images\nUser-agent: Googlebot-Image\nAllow: /*\n# allow Google adsense bot on entire site\nUser-agent: Mediapartners-Google*\nAllow: /*\nSitemap:https://www.astrolab.co.jp/sitemap.xml"
+}

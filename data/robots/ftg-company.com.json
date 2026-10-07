@@ -1,0 +1,7 @@
+{
+ "origin": "https://ftg-company.com",
+ "fetchedAt": "2026-10-07T16:29:19.690Z",
+ "status": "error",
+ "text": "",
+ "error": "Navigation timeout of 20000 ms exceeded"
+}

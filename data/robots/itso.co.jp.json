@@ -1,0 +1,6 @@
+{
+ "origin": "https://itso.co.jp",
+ "fetchedAt": "2026-10-07T16:36:23.907Z",
+ "status": 200,
+ "text": "# START YOAST BLOCK\n# ---------------------------\nUser-agent: *\nDisallow:\n\nSitemap: https://itso.co.jp/sitemap_index.xml\n# ---------------------------\n# END YOAST BLOCK"
+}

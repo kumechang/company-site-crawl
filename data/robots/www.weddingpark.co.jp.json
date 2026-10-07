@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.weddingpark.co.jp",
+ "fetchedAt": "2026-10-07T16:28:47.880Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://www.weddingpark.co.jp/wp-sitemap.xml\n"
+}

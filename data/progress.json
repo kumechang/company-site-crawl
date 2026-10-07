@@ -229,5 +229,38 @@
   "failedAt": null,
   "runs": 1,
   "lastAt": "2026-10-07T16:17:00.140Z"
+ },
+ "cosme_d2c|wantedly|化粧品 D2C": {
+  "nextPage": 1,
+  "offset": 8,
+  "found": 8,
+  "exhausted": false,
+  "failures": 0,
+  "lastError": null,
+  "failedAt": null,
+  "runs": 1,
+  "lastAt": "2026-10-07T16:25:58.938Z"
+ },
+ "cosme_d2c|wantedly|コスメ ブランド": {
+  "nextPage": 1,
+  "offset": 8,
+  "found": 8,
+  "exhausted": false,
+  "failures": 0,
+  "lastError": null,
+  "failedAt": null,
+  "runs": 1,
+  "lastAt": "2026-10-07T16:26:08.514Z"
+ },
+ "cosme_d2c|article|https://service.aainc.co.jp/product/letro/article/d2c_brand": {
+  "nextPage": 1,
+  "offset": 2,
+  "found": 2,
+  "exhausted": false,
+  "failures": 0,
+  "lastError": null,
+  "failedAt": null,
+  "runs": 1,
+  "lastAt": "2026-10-07T16:33:35.435Z"
  }
 }
