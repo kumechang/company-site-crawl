@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.cross-m.co.jp",
+ "fetchedAt": "2026-10-07T14:41:07.043Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow:/seminar/complete\nDisallow:/report/complete\nDisallow:/report_all/complete\nDisallow: /_hcms/preview/\nDisallow: /hs/manage-preferences/\nDisallow: /hs/preferences-center/\nDisallow: /*?*hs_preview=*\nDisallow: /*?*hsCacheBuster=*\n"
+}

@@ -1,0 +1,6 @@
+{
+ "origin": "https://vivion.jp",
+ "fetchedAt": "2026-10-07T14:44:06.919Z",
+ "status": 200,
+ "text": "# START nuxt-robots (indexable)\nUser-agent: *\nDisallow: /news/preview\nDisallow: /partnership/ma/confirm\nDisallow: /partnership/ma/finished\nDisallow: /partnership/ma/error\nDisallow: /lp/mangaka_recruitment/form\nDisallow: /lp/mangaka_recruitment/confirm\nDisallow: /lp/mangaka_recruitment/error\nDisallow: /lp/mangaka_recruitment/finished\nDisallow: /lp/mangaka_recruitment/tw/form\nDisallow: /lp/mangaka_recruitment/tw/confirm\nDisallow: /lp/mangaka_recruitment/tw/error\nDisallow: /lp/mangaka_recruitment/tw/finished\nDisallow: /lp/tl_mangaka_recruitment/form\nDisallow: /lp/tl_mangaka_recruitment/confirm\nDisallow: /lp/tl_mangaka_recruitment/error\nDisallow: /lp/tl_mangaka_recruitment/finished\nDisallow: /lp/wanted/confirm\nDisallow: /lp/wanted/finished\nDisallow: /maintenance\n\nSitemap: https://vivion.jp/sitemap.xml\n# END nuxt-robots"
+}

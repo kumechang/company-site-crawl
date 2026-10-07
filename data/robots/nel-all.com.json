@@ -1,0 +1,6 @@
+{
+ "origin": "https://nel-all.com",
+ "fetchedAt": "2026-10-07T14:41:19.260Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\n# XML Sitemap & Google News version 5.4.9 - https://status301.net/wordpress-plugins/xml-sitemap-feed/\n\nSitemap: https://www.nel-all.com/wp-sitemap.xml\n"
+}

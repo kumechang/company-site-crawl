@@ -1,0 +1,6 @@
+{
+ "origin": "https://atomfirm.com",
+ "fetchedAt": "2026-10-07T14:43:29.566Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://atomfirm.com/sitemap_index.xml\n"
+}

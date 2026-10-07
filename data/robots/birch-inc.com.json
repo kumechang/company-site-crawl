@@ -1,0 +1,6 @@
+{
+ "origin": "https://birch-inc.com",
+ "fetchedAt": "2026-10-07T14:43:12.393Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://birch-inc.com/wp-sitemap.xml\n"
+}

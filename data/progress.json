@@ -69,11 +69,11 @@
   "nextPage": 3,
   "offset": 0,
   "found": 6,
-  "exhausted": false,
+  "exhausted": true,
   "failures": 0,
   "lastError": null,
   "failedAt": null,
-  "runs": 1,
-  "lastAt": "2026-10-07T14:02:35.124Z"
+  "runs": 2,
+  "lastAt": "2026-10-07T14:36:43.297Z"
  }
 }

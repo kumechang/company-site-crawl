@@ -1,0 +1,6 @@
+{
+ "origin": "https://earth-reborn.co.jp",
+ "fetchedAt": "2026-10-07T14:43:48.145Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://earth-reborn.co.jp/wp-sitemap.xml\n"
+}

@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.tp-link.com",
+ "fetchedAt": "2026-10-07T14:43:18.550Z",
+ "status": 200,
+ "text": "User-agent:*\nDisallow:/ir/\nDisallow:/iq/\n\n# Crawl budget optimization: block non-SEO URL patterns identified in the\n# Omada Crawl Budget Optimization June 2026 audit, row #22.\n\n# Feedback form endpoint: blank / soft-404 dead-ends.\nDisallow: /*addFeedback.html\nDisallow: /*?faqShowId=\nDisallow: /*&faqShowId=\n\n# Internal site-search result URLs. The bare /search hub remains crawlable.\nDisallow: /*?q=\nDisallow: /*&q=\n\n# Tracking parameters: no organic value.\nDisallow: /*?utm_\nDisallow: /*&utm_\n\nSitemap: https://www.tp-link.com/nl/sitemap.xml\n"
+}
