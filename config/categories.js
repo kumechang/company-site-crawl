@@ -16,6 +16,8 @@ export const CATEGORIES = {
     },
     green: ['https://www.green-japan.com/search/area/13/industry/130120'],
     wantedly: ['化粧品 D2C', 'コスメ ブランド'],
+    // 求人ボックスの一覧(ユーザー提供)。求人詳細(/jb/)は robots 禁止のため一覧本文の社名のみ使う。メーカー・小売も混ざるので、D2C(直販)の確認は検証で行う
+    kyujinbox: ['https://xn--pckua2a7gp15o89zb.com/%E5%8C%96%E7%B2%A7%E5%93%81%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD'],
     salesnow: [{ url: 'https://salesnow.jp/db/industries/retail-sales/subIndustries/cosmetics-sales', label: '化粧品', pages: 5, limit: 40 }],
     jcia: [{ url: 'https://www.jcia.org/admin/memberlist', label: '化粧品', limit: 40 }],
     jaro: [{ url: 'https://www.jaro.or.jp/kaiinsha/', section: '化粧品・トイレタリー', label: '化粧品', limit: 40 }],
