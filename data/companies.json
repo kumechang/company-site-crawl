@@ -42903,6 +42903,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"influencer_agency\"],\"https://find-model.jp/\",\"東京都港区芝浦三丁目9番1号 芝浦ルネサイトタワー6階\",105,\"edinet\",\"https://find-model.jp/company/contact\",[\"インフルエンサー事務所\",\"広告代理店\",\"SNS運用代行\"]]",
    "industry": {
     "influencer_agency": {
      "result": "OK",
@@ -43090,6 +43091,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"influencer_agency\"],\"https://toridori.co.jp/\",\"東京都渋谷区円山町28番1号\",53,\"edinet\",\"https://toridori.co.jp/contact\",[\"インフルエンサー事務所\"]]",
    "industry": {
     "influencer_agency": {
      "result": "OK",
@@ -50601,6 +50603,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[],\"https://www.intloop.com/\",\"東京都港区赤坂二丁目4番6号\",716,\"edinet\",\"https://www.intloop.com/contact\",[\"広告代理店\"]]",
    "industry": {},
    "employees": {
     "result": "OK",
@@ -50773,6 +50776,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[],\"https://www.bengo4.com/\",\"東京都港区六本木四丁目1番4号\",613,\"edinet\",\"https://www.bengo4.com/corporate/contact/\",[\"広告代理店\"]]",
    "industry": {},
    "employees": {
     "result": "OK",
@@ -52183,7 +52187,35 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"influencer_agency\"],\"https://thecoo.co.jp/\",\"東京都渋谷区神宮前3丁目25-15神宮前テラス5階\",115,\"edinet\",\"https://ir.thecoo.co.jp/contact\",[\"インフルエンサー事務所\",\"広告代理店\"]]",
+   "industry": {
+    "influencer_agency": {
+     "result": "OK",
+     "comment": "公式の自社説明に「インフルエンサー/YouTuber」あり。インフルエンサー事務所を取り扱っている（他に コンサルティング 等の事業もあり、インフルエンサー事務所は主業でない可能性）",
+     "after": "インフルエンサー事務所"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "有価証券報告書(EDINET)で115名（2025年12月時点）",
+    "after": 115,
+    "asOf": "2025年12月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://ir.thecoo.co.jp/contact"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都渋谷区)がprtimes/officialと一致",
+    "after": "https://thecoo.co.jp/"
+   }
+  }
  },
  {
   "key": "エクシドジャパン",
@@ -54912,7 +54944,29 @@
    "influencer_agency"
   ],
   "contactUrl": null,
-  "noPrtimes": true
+  "noPrtimes": true,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "sig": "[2,[],\"https://www.freemova.com/\",\"東京都渋谷区道玄坂2-25-12 道玄坂通3階3-1a\",800,\"official\",\"https://freemova.com/contact/\",[\"広告代理店\",\"SNS運用代行\"]]",
+   "industry": {},
+   "employees": {
+    "result": "NG",
+    "comment": "official=800名に対しopenwork=100名と8.0倍の乖離。別会社の数字の可能性",
+    "after": 800,
+    "asOf": null,
+    "source": "official"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://freemova.com/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都渋谷区)がopenworkと一致",
+    "after": "https://www.freemova.com/"
+   }
+  }
  },
  {
   "key": "医療法人社団慶祥会",
@@ -57560,7 +57614,35 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"influencer_agency\"],\"https://gloe.jp/\",\"東京都新宿区西新宿7-5-25 西新宿プライムスクエア15階\",76,\"edinet\",\"https://gloe.jp/contact\",[\"インフルエンサー事務所\"]]",
+   "industry": {
+    "influencer_agency": {
+     "result": "OK",
+     "comment": "公式の自社説明に「インフルエンサー/クリエイター」あり。インフルエンサー事務所を取り扱っている（他に ゲーム 等の事業もあり、インフルエンサー事務所は主業でない可能性）",
+     "after": "インフルエンサー事務所"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "有価証券報告書(EDINET)で76名（2026年6月時点）。他の情報源(official=77)とも概ね整合",
+    "after": 76,
+    "asOf": "2026年6月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://gloe.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都新宿区)がprtimes/officialと一致",
+    "after": "https://gloe.jp/"
+   }
+  }
  },
  {
   "key": "wonderx",
@@ -62577,7 +62659,29 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-07",
+   "sig": "[2,[],\"https://jfrontier.jp/\",\"東京都渋谷区渋谷二丁目9番9号\",67,\"edinet\",\"https://jfrontier.jp/contact/\",[\"化粧品D2C/P2C\",\"広告代理店\"]]",
+   "industry": {},
+   "employees": {
+    "result": "要確認",
+    "comment": "edinet=67名に対しofficial=355名と差がある(5.3倍)。調査時点・集計範囲の違いの可能性",
+    "after": 67,
+    "asOf": "2026年5月",
+    "source": "edinet"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://jfrontier.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都渋谷区)がprtimes/officialと一致",
+    "after": "https://jfrontier.jp/"
+   }
+  }
  },
  {
   "key": "インピネス",
