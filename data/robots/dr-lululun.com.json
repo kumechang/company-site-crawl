@@ -1,0 +1,6 @@
+{
+ "origin": "https://dr-lululun.com",
+ "fetchedAt": "2026-10-07T07:12:52.245Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://dr-lululun.com/wp-sitemap.xml\n\nSitemap: https://dr-lululun.com/sitemap.xml\n"
+}

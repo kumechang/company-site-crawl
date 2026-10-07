@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.massmedian.co.jp",
+ "fetchedAt": "2026-10-07T07:17:07.838Z",
+ "status": 200,
+ "text": "User-Agent: *\nDisallow:\n\nSitemap: https://www.massmedian.co.jp/sitemap1.xml\nSitemap: https://www.massmedian.co.jp/sitemap2.xml\nSitemap: https://www.massmedian.co.jp/sitemap3.xml\nSitemap: https://www.massmedian.co.jp/sitemap4.xml\n"
+}

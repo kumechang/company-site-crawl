@@ -1,0 +1,6 @@
+{
+ "origin": "https://fisminc.com",
+ "fetchedAt": "2026-10-07T07:15:56.857Z",
+ "status": 200,
+ "text": "# START YOAST BLOCK\n# ---------------------------\nUser-agent: *\nDisallow: /wp-json/\nDisallow: /?rest_route=\n\nSitemap: https://fisminc.com/sitemap_index.xml\n# ---------------------------\n# END YOAST BLOCK"
+}
