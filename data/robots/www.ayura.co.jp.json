@@ -1,6 +1,6 @@
 {
  "origin": "https://www.ayura.co.jp",
- "fetchedAt": "2026-10-06T15:14:15.140Z",
+ "fetchedAt": "2026-10-07T00:05:42.764Z",
  "status": 200,
  "text": "User-agent: *\nDisallow : /edc_bo/\nDisallow : /edc_pos/\n\nSitemap: https://www.ayura.co.jp/sitemap.xml\n\n"
 }
