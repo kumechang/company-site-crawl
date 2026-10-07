@@ -1,6 +1,6 @@
 {
  "origin": "https://prtimes.jp",
- "fetchedAt": "2026-10-07T00:50:20.625Z",
+ "fetchedAt": "2026-10-07T04:08:45.888Z",
  "status": 200,
  "text": "User-agent: *\nAllow: /\nDisallow: /api/press_release.php/press_release/*/like_count\nDisallow: /im/action.php?run=html&page=releaseimage\nDisallow: /upload/*.m3u8\n\nsitemap: https://prtimes.jp/sitemap.xml\nsitemap: https://prtimes.jp/sitemap-news.xml\n"
 }
