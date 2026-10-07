@@ -5993,6 +5993,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
+   },
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD"
    }
   ],
   "evidence": [
@@ -6115,10 +6119,19 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区 六本木駅 徒歩4分 / 六本木ヒルズ",
     "at": "2026-10-07T04:36:47.960Z"
+   },
+   {
+    "field": "jobText",
+    "value": "インフルエンサーマネージャーのアシスタント・動画編集／未経験OK",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
+    "snippet": "求人ボックスの求人タイトル: インフルエンサーマネージャーのアシスタント・動画編集／未経験OK",
+    "at": "2026-10-07T04:38:09.422Z"
    }
   ],
   "seedCategories": [
    "sns_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency"
@@ -11905,6 +11918,14 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
+   },
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD"
+   },
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
    }
   ],
   "evidence": [
@@ -12075,10 +12096,28 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
     "snippet": "求人ボックスの求人タイトル: 「ディレクター」SNS／インフルエンサーを活用したマーケティング施策で...",
     "at": "2026-10-07T04:37:27.637Z"
+   },
+   {
+    "field": "jobText",
+    "value": "CARTA ZERO &Socialストラテジックプランナー「SNS領域」「zero-b32」",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
+    "snippet": "求人ボックスの求人タイトル: CARTA ZERO &Socialストラテジックプランナー「SNS領域」「zero-b32」",
+    "at": "2026-10-07T04:38:09.422Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 港区 虎ノ門ヒルズ駅 / 虎ノ門ヒルズステーションタワー",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区 虎ノ門ヒルズ駅 / 虎ノ門ヒルズステーションタワー",
+    "at": "2026-10-07T04:38:09.422Z"
    }
   ],
   "seedCategories": [
    "sns_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
@@ -40605,6 +40644,10 @@
    {
     "source": "official",
     "url": "http://kirinz.tokyo/"
+   },
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
    }
   ],
   "evidence": [
@@ -40687,9 +40730,26 @@
     "url": "http://kirinz.tokyo/",
     "snippet": "リンク文言「お問い合わせ」/ ページ実在とフォームの記述を確認",
     "at": "2026-10-07T00:15:02.472Z"
+   },
+   {
+    "field": "jobText",
+    "value": "役者・エキストラ／モデル／イベントスタッフ 完全在宅 スキマ時間で高収入 秋から始めるレアバイト",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
+    "snippet": "求人ボックスの求人タイトル: 役者・エキストラ／モデル／イベントスタッフ 完全在宅 スキマ時間で高収入 秋から始めるレアバイト",
+    "at": "2026-10-07T04:38:30.094Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 日野市 豊田駅",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 日野市 豊田駅",
+    "at": "2026-10-07T04:38:30.094Z"
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency"
   ],
@@ -42122,6 +42182,10 @@
    {
     "source": "official",
     "url": "https://bitstar.tokyo/"
+   },
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
    }
   ],
   "evidence": [
@@ -42252,9 +42316,26 @@
     "url": "https://bitstar.tokyo/corp/company/",
     "snippet": "リンク文言「Contact」/ ページ実在とフォームの記述を確認",
     "at": "2026-10-07T01:01:24.431Z"
+   },
+   {
+    "field": "jobText",
+    "value": "経理財務マネージャー／リモートワーク／フレックスタイム制／経理財務リー...",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
+    "snippet": "求人ボックスの求人タイトル: 経理財務マネージャー／リモートワーク／フレックスタイム制／経理財務リー...",
+    "at": "2026-10-07T04:38:15.961Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 渋谷区 渋谷駅",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 渋谷駅",
+    "at": "2026-10-07T04:38:15.961Z"
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency"
   ],
@@ -51204,6 +51285,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   },
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
    }
   ],
   "evidence": [
@@ -51246,9 +51331,18 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
     "snippet": "求人ボックスの求人タイトル: 「デジタルマーケティング」キャスティング ディレクター／Webマーケテ...",
     "at": "2026-10-07T04:37:55.574Z"
+   },
+   {
+    "field": "jobText",
+    "value": "Fanicon アカウントマネージャー／ファンコミュニティアプリ「Fa... 新着",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
+    "snippet": "求人ボックスの求人タイトル: Fanicon アカウントマネージャー／ファンコミュニティアプリ「Fa... 新着",
+    "at": "2026-10-07T04:38:30.094Z"
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency"
@@ -51771,8 +51865,8 @@
  {
   "key": "東晶貿易",
   "name": "東晶貿易株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://www.tosho-trading.co.jp/",
+  "domain": "tosho-trading.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
@@ -51781,6 +51875,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
+   },
+   {
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcb3fa25eckjk5mh6"
    }
   ],
   "evidence": [
@@ -51799,6 +51897,46 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区",
     "at": "2026-10-07T04:35:55.487Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都文京区湯島3丁目7番8号",
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcb3fa25eckjk5mh6",
+    "snippet": "登記所在地: 東京都文京区湯島3丁目7番8号",
+    "at": "2026-10-07T04:38:43.295Z"
+   },
+   {
+    "field": "employees",
+    "value": 54,
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcb3fa25eckjk5mh6",
+    "snippet": "正社員規模(推定): 54名（SalesNowの推定値）",
+    "at": "2026-10-07T04:38:43.295Z"
+   },
+   {
+    "field": "profileText",
+    "value": "多岐にわたる商品やサービスを取り扱っており、主に輸出入業務を中心に展開しています。高品質な製品を厳選し、国内外の市場に提供することで、顧客のニーズに応えています。さらに、物流やコンサルティングなどの関連サービスも充実させています。",
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcb3fa25eckjk5mh6",
+    "snippet": "SalesNow概要",
+    "at": "2026-10-07T04:38:43.295Z"
+   },
+   {
+    "field": "founded",
+    "value": "1995年12月",
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcb3fa25eckjk5mh6",
+    "snippet": "",
+    "at": "2026-10-07T04:38:43.295Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://www.tosho-trading.co.jp/",
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcb3fa25eckjk5mh6",
+    "snippet": "ホームページ: https://www.tosho-trading.co.jp/company",
+    "at": "2026-10-07T04:38:43.295Z"
    }
   ],
   "seedCategories": [
@@ -53459,12 +53597,16 @@
  {
   "key": "trunk",
   "name": "株式会社TRUNK",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "http://www.trunk-design.jp/",
+  "domain": "trunk-design.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   },
+   {
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcbr47akf662tjx5"
    }
   ],
   "evidence": [
@@ -53483,6 +53625,46 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 明治神宮前駅",
     "at": "2026-10-07T04:36:40.719Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区猿楽町29番9号",
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcbr47akf662tjx5",
+    "snippet": "登記所在地: 東京都渋谷区猿楽町29番9号",
+    "at": "2026-10-07T04:38:45.876Z"
+   },
+   {
+    "field": "employees",
+    "value": 4,
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcbr47akf662tjx5",
+    "snippet": "正社員規模(推定): 4名（SalesNowの推定値）",
+    "at": "2026-10-07T04:38:45.876Z"
+   },
+   {
+    "field": "profileText",
+    "value": "デザインを中心とした商品やサービスを提供しています。グラフィックデザイン、プロダクトデザイン、ウェブデザインなど多岐にわたる分野で活動しており、顧客のニーズに合わせたオーダーメイドのソリューションを展開しています。また、ブランディングやマーケティングの支援も行い、企業の成長をサポートしています。",
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcbr47akf662tjx5",
+    "snippet": "SalesNow概要",
+    "at": "2026-10-07T04:38:45.876Z"
+   },
+   {
+    "field": "founded",
+    "value": "1988年04月",
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcbr47akf662tjx5",
+    "snippet": "",
+    "at": "2026-10-07T04:38:45.876Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "http://www.trunk-design.jp/",
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcbr47akf662tjx5",
+    "snippet": "ホームページ: http://www.trunk-design.jp",
+    "at": "2026-10-07T04:38:45.876Z"
    }
   ],
   "seedCategories": [
@@ -53527,12 +53709,16 @@
  {
   "key": "blitzmarketing",
   "name": "株式会社BLITZ Marketing",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://blitz-marketing.co.jp/",
+  "domain": "blitz-marketing.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   },
+   {
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcbvj678a3jrw1gt"
    }
   ],
   "evidence": [
@@ -53551,6 +53737,46 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 渋谷駅",
     "at": "2026-10-07T04:36:40.719Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区渋谷2丁目12-12三貴ビル3F",
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcbvj678a3jrw1gt",
+    "snippet": "登記所在地: 東京都渋谷区渋谷2丁目12-12三貴ビル3F",
+    "at": "2026-10-07T04:38:48.963Z"
+   },
+   {
+    "field": "employees",
+    "value": 67,
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcbvj678a3jrw1gt",
+    "snippet": "正社員規模(推定): 67名（SalesNowの推定値）",
+    "at": "2026-10-07T04:38:48.963Z"
+   },
+   {
+    "field": "profileText",
+    "value": "デジタルマーケティングを中心に、広告運用やSEO対策、コンテンツ制作、ソーシャルメディア戦略など多岐にわたるサービスを提供しています。データ分析を駆使し、ターゲット市場に最適な戦略を立案し、実行します。企業のブランド価値向上や売上拡大をサポートするための総合的なマーケティング支援を行っています。",
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcbvj678a3jrw1gt",
+    "snippet": "SalesNow概要",
+    "at": "2026-10-07T04:38:48.963Z"
+   },
+   {
+    "field": "founded",
+    "value": "2011年12月",
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcbvj678a3jrw1gt",
+    "snippet": "",
+    "at": "2026-10-07T04:38:48.963Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://blitz-marketing.co.jp/",
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcbvj678a3jrw1gt",
+    "snippet": "ホームページ: https://blitz-marketing.co.jp/",
+    "at": "2026-10-07T04:38:48.963Z"
    }
   ],
   "seedCategories": [
@@ -53712,12 +53938,16 @@
  {
   "key": "ブルオシャン",
   "name": "株式会社ブルーオーシャン",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "http://b-ocean.info/",
+  "domain": "b-ocean.info",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
+   },
+   {
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcb17f5226430j5f"
    }
   ],
   "evidence": [
@@ -53736,6 +53966,38 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 中央区 八丁堀駅",
     "at": "2026-10-07T04:36:47.960Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都江戸川区松江6丁目11番9-101号",
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcb17f5226430j5f",
+    "snippet": "登記所在地: 東京都江戸川区松江6丁目11番9-101号",
+    "at": "2026-10-07T04:38:51.931Z"
+   },
+   {
+    "field": "employees",
+    "value": 3,
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcb17f5226430j5f",
+    "snippet": "正社員規模(推定): 3名（SalesNowの推定値）",
+    "at": "2026-10-07T04:38:51.931Z"
+   },
+   {
+    "field": "founded",
+    "value": "2016年10月",
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcb17f5226430j5f",
+    "snippet": "",
+    "at": "2026-10-07T04:38:51.931Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "http://b-ocean.info/",
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcb17f5226430j5f",
+    "snippet": "ホームページ: http://b-ocean.info",
+    "at": "2026-10-07T04:38:51.931Z"
    }
   ],
   "seedCategories": [
@@ -54375,8 +54637,8 @@
  {
   "key": "cyberace",
   "name": "株式会社CyberACE",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://cyberace.co.jp/",
+  "domain": "cyberace.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
@@ -54385,6 +54647,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   },
+   {
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcbhmft8yp70vf9df"
    }
   ],
   "evidence": [
@@ -54403,6 +54669,46 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 / 渋谷スクランブルスクエア",
     "at": "2026-10-07T04:37:04.783Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区渋谷2丁目24番12号",
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcbhmft8yp70vf9df",
+    "snippet": "登記所在地: 東京都渋谷区渋谷2丁目24番12号",
+    "at": "2026-10-07T04:38:54.576Z"
+   },
+   {
+    "field": "employees",
+    "value": 144,
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcbhmft8yp70vf9df",
+    "snippet": "正社員規模(推定): 144名（SalesNowの推定値）",
+    "at": "2026-10-07T04:38:54.576Z"
+   },
+   {
+    "field": "profileText",
+    "value": "高度な情報技術を活用し、企業のデジタルトランスフォーメーションを支援しています。システム開発、クラウドソリューション、サイバーセキュリティ対策など、幅広いITソリューションを提供しています。顧客のニーズに応じたカスタマイズサービスも行い、ビジネスの効率化と成長をサポートします。",
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcbhmft8yp70vf9df",
+    "snippet": "SalesNow概要",
+    "at": "2026-10-07T04:38:54.576Z"
+   },
+   {
+    "field": "founded",
+    "value": "2018年05月",
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcbhmft8yp70vf9df",
+    "snippet": "",
+    "at": "2026-10-07T04:38:54.576Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://cyberace.co.jp/",
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcbhmft8yp70vf9df",
+    "snippet": "ホームページ: https://cyberace.co.jp/about/company/",
+    "at": "2026-10-07T04:38:54.576Z"
    }
   ],
   "seedCategories": [
@@ -54463,6 +54769,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD"
+   },
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD"
    }
   ],
   "evidence": [
@@ -54481,9 +54791,26 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 渋谷駅 徒歩8分",
     "at": "2026-10-07T04:37:12.473Z"
+   },
+   {
+    "field": "jobText",
+    "value": "SNSに携われる／正社員登用アリ／渋谷勤務／福利厚生充実／人気YouTuberのマネージャー職",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
+    "snippet": "求人ボックスの求人タイトル: SNSに携われる／正社員登用アリ／渋谷勤務／福利厚生充実／人気YouTuberのマネージャー職",
+    "at": "2026-10-07T04:38:09.422Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 渋谷区 渋谷駅 徒歩5分",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 渋谷駅 徒歩5分",
+    "at": "2026-10-07T04:38:09.422Z"
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency"
   ],
@@ -54566,6 +54893,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   },
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
    }
   ],
   "evidence": [
@@ -54584,9 +54915,26 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 渋谷駅 徒歩2分",
     "at": "2026-10-07T04:37:20.472Z"
+   },
+   {
+    "field": "jobText",
+    "value": "ビジネスプロデューサー ソリューション営業",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
+    "snippet": "求人ボックスの求人タイトル: ビジネスプロデューサー ソリューション営業",
+    "at": "2026-10-07T04:38:36.815Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 港区 新橋駅 徒歩2分",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区 新橋駅 徒歩2分",
+    "at": "2026-10-07T04:38:36.815Z"
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -54594,8 +54942,8 @@
  {
   "key": "unity",
   "name": "UNITY株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "http://www.unity-group.co.jp/",
+  "domain": "unity-group.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
@@ -54604,6 +54952,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   },
+   {
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcb03pety8pf8acr2"
    }
   ],
   "evidence": [
@@ -54622,6 +54974,38 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 渋谷駅 徒歩8分",
     "at": "2026-10-07T04:37:20.472Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都中野区本町2丁目1番8号",
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcb03pety8pf8acr2",
+    "snippet": "登記所在地: 東京都中野区本町2丁目1番8号",
+    "at": "2026-10-07T04:38:57.444Z"
+   },
+   {
+    "field": "employees",
+    "value": 25,
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcb03pety8pf8acr2",
+    "snippet": "正社員規模(推定): 25名（SalesNowの推定値）",
+    "at": "2026-10-07T04:38:57.444Z"
+   },
+   {
+    "field": "founded",
+    "value": "2014年02月",
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcb03pety8pf8acr2",
+    "snippet": "",
+    "at": "2026-10-07T04:38:57.444Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "http://www.unity-group.co.jp/",
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcb03pety8pf8acr2",
+    "snippet": "ホームページ: http://www.unity-group.co.jp/index.html",
+    "at": "2026-10-07T04:38:57.444Z"
    }
   ],
   "seedCategories": [
@@ -54633,12 +55017,16 @@
  {
   "key": "arvel",
   "name": "株式会社ARVEL",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://arvel-inc.co.jp/",
+  "domain": "arvel-inc.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   },
+   {
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcbhxhk0jxrn5488"
    }
   ],
   "evidence": [
@@ -54657,6 +55045,46 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区 赤坂駅 徒歩3分",
     "at": "2026-10-07T04:37:20.472Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区赤坂3丁目13-3赤坂セントラルビル6F",
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcbhxhk0jxrn5488",
+    "snippet": "登記所在地: 東京都港区赤坂3丁目13-3赤坂セントラルビル6F",
+    "at": "2026-10-07T04:39:00.275Z"
+   },
+   {
+    "field": "employees",
+    "value": 11,
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcbhxhk0jxrn5488",
+    "snippet": "正社員規模(推定): 11名（SalesNowの推定値）",
+    "at": "2026-10-07T04:39:00.275Z"
+   },
+   {
+    "field": "profileText",
+    "value": "最先端の技術を駆使して、様々な分野におけるソリューションを提供しています。ITインフラの構築や運用、システムの設計・開発、コンサルティングサービスを展開し、企業の業務効率化や競争力強化を支援します。また、デジタルトランスフォーメーションの推進により、顧客のビジネスモデルの革新をサポートします。",
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcbhxhk0jxrn5488",
+    "snippet": "SalesNow概要",
+    "at": "2026-10-07T04:39:00.275Z"
+   },
+   {
+    "field": "founded",
+    "value": "2021年04月",
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcbhxhk0jxrn5488",
+    "snippet": "",
+    "at": "2026-10-07T04:39:00.275Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://arvel-inc.co.jp/",
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcbhxhk0jxrn5488",
+    "snippet": "ホームページ: https://arvel-inc.co.jp/",
+    "at": "2026-10-07T04:39:00.275Z"
    }
   ],
   "seedCategories": [
@@ -54667,12 +55095,16 @@
  {
   "key": "タグピク",
   "name": "タグピク株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://tagpic.jp/",
+  "domain": "tagpic.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
+   },
+   {
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcbb9n5hmbwk84wk"
    }
   ],
   "evidence": [
@@ -54691,6 +55123,46 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区",
     "at": "2026-10-07T04:37:27.637Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区芝2丁目7番17号",
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcbb9n5hmbwk84wk",
+    "snippet": "登記所在地: 東京都港区芝2丁目7番17号",
+    "at": "2026-10-07T04:39:03.549Z"
+   },
+   {
+    "field": "employees",
+    "value": 0,
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcbb9n5hmbwk84wk",
+    "snippet": "正社員規模(推定): 0名（SalesNowの推定値）",
+    "at": "2026-10-07T04:39:03.549Z"
+   },
+   {
+    "field": "profileText",
+    "value": "デジタルマーケティングを中心に、クリエイティブなコンテンツ制作や広告運用を手がけています。ソーシャルメディアの活用やデータ分析を駆使し、顧客のビジネス目標達成をサポートします。また、インフルエンサーマーケティングやブランド戦略の立案・実行も行っています。",
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcbb9n5hmbwk84wk",
+    "snippet": "SalesNow概要",
+    "at": "2026-10-07T04:39:03.549Z"
+   },
+   {
+    "field": "founded",
+    "value": "2015年09月",
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcbb9n5hmbwk84wk",
+    "snippet": "",
+    "at": "2026-10-07T04:39:03.549Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://tagpic.jp/",
+    "source": "salesnow",
+    "url": "https://salesnow.jp/db/companies/jcbb9n5hmbwk84wk",
+    "snippet": "ホームページ: https://tagpic.jp/aboutus/",
+    "at": "2026-10-07T04:39:03.549Z"
    }
   ],
   "seedCategories": [
@@ -55531,6 +56003,14 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   },
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   },
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
    }
   ],
   "evidence": [
@@ -55549,9 +56029,35 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 豊島区",
     "at": "2026-10-07T04:37:47.361Z"
+   },
+   {
+    "field": "jobText",
+    "value": "「新規事業」プロダクトマネージャー",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
+    "snippet": "求人ボックスの求人タイトル: 「新規事業」プロダクトマネージャー",
+    "at": "2026-10-07T04:38:23.025Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 目黒区",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 目黒区",
+    "at": "2026-10-07T04:38:23.025Z"
+   },
+   {
+    "field": "jobText",
+    "value": "プロダクトマネージャー",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
+    "snippet": "求人ボックスの求人タイトル: プロダクトマネージャー",
+    "at": "2026-10-07T04:38:36.815Z"
    }
   ],
   "seedCategories": [
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -55565,6 +56071,14 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   },
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD"
+   },
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
    }
   ],
   "evidence": [
@@ -55583,9 +56097,19 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区",
     "at": "2026-10-07T04:37:55.574Z"
+   },
+   {
+    "field": "jobText",
+    "value": "広告運用コンサルタント／マネージャー",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
+    "snippet": "求人ボックスの求人タイトル: 広告運用コンサルタント／マネージャー",
+    "at": "2026-10-07T04:38:09.422Z"
    }
   ],
   "seedCategories": [
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -55685,6 +56209,1127 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 原宿駅 徒歩10分",
     "at": "2026-10-07T04:37:55.574Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "piebru",
+  "name": "株式会社PIEBRU",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD"
+   },
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "ゲームデバッカープログラマー補佐／未経験OK／完全土日祝休み",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
+    "snippet": "求人ボックスの求人タイトル: ゲームデバッカープログラマー補佐／未経験OK／完全土日祝休み",
+    "at": "2026-10-07T04:38:09.422Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 港区",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区",
+    "at": "2026-10-07T04:38:09.422Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency",
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "tresgroup",
+  "name": "Tres Group株式会社",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "「出社・リモート選べる」Webエンジニア「リモート8割×還元率最大82%／家賃手当～4万",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
+    "snippet": "求人ボックスの求人タイトル: 「出社・リモート選べる」Webエンジニア「リモート8割×還元率最大82%／家賃手当～4万",
+    "at": "2026-10-07T04:38:09.422Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 世田谷区 池尻大橋駅 徒歩8分",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 世田谷区 池尻大橋駅 徒歩8分",
+    "at": "2026-10-07T04:38:09.422Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "ユニバサルコンツェルン",
+  "name": "株式会社ユニバーサルコンツェルン",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD"
+   },
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "西新宿／Java開発エンジニア 残業月10H／在宅勤務95%以上／年休123日／定着率高",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
+    "snippet": "求人ボックスの求人タイトル: 西新宿／Java開発エンジニア 残業月10H／在宅勤務95%以上／年休123日／定着率高",
+    "at": "2026-10-07T04:38:09.422Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 新宿区 西新宿駅",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 新宿区 西新宿駅",
+    "at": "2026-10-07T04:38:09.422Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency",
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "アルイテック",
+  "name": "株式会社アールイーテック",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD"
+   },
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "ゲームテスター 「憧れ」を職業にできる充実研修／年休128日／リモートも可／副業OK",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
+    "snippet": "求人ボックスの求人タイトル: ゲームテスター 「憧れ」を職業にできる充実研修／年休128日／リモートも可／副業OK",
+    "at": "2026-10-07T04:38:09.422Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 千代田区 東京駅",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 千代田区 東京駅",
+    "at": "2026-10-07T04:38:09.422Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 中央区",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 中央区",
+    "at": "2026-10-07T04:38:36.815Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency",
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "birch",
+  "name": "株式会社BIRCH",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "キッチン／ホール／店長・マネージャー候補 有名Youtuberご来店",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
+    "snippet": "求人ボックスの求人タイトル: キッチン／ホール／店長・マネージャー候補 有名Youtuberご来店",
+    "at": "2026-10-07T04:38:09.422Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 大田区 蒲田駅 バス10分",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 大田区 蒲田駅 バス10分",
+    "at": "2026-10-07T04:38:09.422Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "トランジットグルプ",
+  "name": "株式会社トランジットグループ",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "人気YouTuber×SNSで話題×イタリアンレストラン／マネージャー",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
+    "snippet": "求人ボックスの求人タイトル: 人気YouTuber×SNSで話題×イタリアンレストラン／マネージャー",
+    "at": "2026-10-07T04:38:09.422Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 港区 表参道駅 徒歩2分 / 表参道ヒルズ",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区 表参道駅 徒歩2分 / 表参道ヒルズ",
+    "at": "2026-10-07T04:38:09.422Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "リバティタウン",
+  "name": "株式会社リバティタウン",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "人気急上昇のYouTuberマネージャー大募集",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
+    "snippet": "求人ボックスの求人タイトル: 人気急上昇のYouTuberマネージャー大募集",
+    "at": "2026-10-07T04:38:09.422Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 世田谷区 池尻大橋駅 徒歩7分",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 世田谷区 池尻大橋駅 徒歩7分",
+    "at": "2026-10-07T04:38:09.422Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "オガニックグルプ",
+  "name": "オーガニックグループ株式会社",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "「STORiiY」アシスタントブランドマネージャー「東京」",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
+    "snippet": "求人ボックスの求人タイトル: 「STORiiY」アシスタントブランドマネージャー「東京」",
+    "at": "2026-10-07T04:38:09.422Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 渋谷区",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区",
+    "at": "2026-10-07T04:38:09.422Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "gqueen",
+  "name": "株式会社G-QUEEN",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "LIVE配信者／ライブ配信であなたも人気者に専属ライバー募集／お家でアイドル／マネージャー付き",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
+    "snippet": "求人ボックスの求人タイトル: LIVE配信者／ライブ配信であなたも人気者に専属ライバー募集／お家でアイドル／マネージャー付き",
+    "at": "2026-10-07T04:38:15.961Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 千代田区 神保町駅",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 千代田区 神保町駅",
+    "at": "2026-10-07T04:38:15.961Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "lumen",
+  "name": "LUMEN株式会社",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   },
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "ライバー／配信者／顔出し歓迎／完全在宅／成果報酬／フルリモート",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
+    "snippet": "求人ボックスの求人タイトル: ライバー／配信者／顔出し歓迎／完全在宅／成果報酬／フルリモート",
+    "at": "2026-10-07T04:38:15.961Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 千代田区 東京駅",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 千代田区 東京駅",
+    "at": "2026-10-07T04:38:15.961Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency",
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "ゼロプライド",
+  "name": "ゼロプライド株式会社",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   },
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "SNSマーケター#未経験でも月給30万円～#フルリモートも可#週休3日選択可#年休130日#自己PR...",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
+    "snippet": "求人ボックスの求人タイトル: SNSマーケター#未経験でも月給30万円～#フルリモートも可#週休3日選択可#年休130日#自己PR...",
+    "at": "2026-10-07T04:38:15.961Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 港区 三田駅 徒歩3分",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区 三田駅 徒歩3分",
+    "at": "2026-10-07T04:38:15.961Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency",
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "ティピリンクジャパン",
+  "name": "ティーピーリンクジャパン株式会社",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "自社製品の「マーケティング／マネージャー／」／月給40万円～ 新着",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
+    "snippet": "求人ボックスの求人タイトル: 自社製品の「マーケティング／マネージャー／」／月給40万円～ 新着",
+    "at": "2026-10-07T04:38:15.961Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 千代田区",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 千代田区",
+    "at": "2026-10-07T04:38:15.961Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "アトム法律情報",
+  "name": "アトム法律情報株式会社",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "採用担当 YouTubeで話題「アトム法律事務所」グループ／服装髪色完全自由／残業なし／月給28万円",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
+    "snippet": "求人ボックスの求人タイトル: 採用担当 YouTubeで話題「アトム法律事務所」グループ／服装髪色完全自由／残業なし／月給28万円",
+    "at": "2026-10-07T04:38:15.961Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 千代田区 東京駅",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 千代田区 東京駅",
+    "at": "2026-10-07T04:38:15.961Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "カバ",
+  "name": "カバー株式会社",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   },
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "vTuber大手企業!／リーダー候補／VTuberタレントマネージャー",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
+    "snippet": "求人ボックスの求人タイトル: vTuber大手企業!／リーダー候補／VTuberタレントマネージャー",
+    "at": "2026-10-07T04:38:15.961Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 港区 田町駅 徒歩5分",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区 田町駅 徒歩5分",
+    "at": "2026-10-07T04:38:15.961Z"
+   },
+   {
+    "field": "jobText",
+    "value": "東京都港区／プロジェクトマネージャー／VTuber事務所の案件進行管理 新着",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
+    "snippet": "求人ボックスの求人タイトル: 東京都港区／プロジェクトマネージャー／VTuber事務所の案件進行管理 新着",
+    "at": "2026-10-07T04:38:23.025Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 港区",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区",
+    "at": "2026-10-07T04:38:23.025Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency",
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "アスリボン",
+  "name": "株式会社アースリボーン",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   },
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "流行を仕掛ける ECマネージャー候補 年休125日 月給38万円",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
+    "snippet": "求人ボックスの求人タイトル: 流行を仕掛ける ECマネージャー候補 年休125日 月給38万円",
+    "at": "2026-10-07T04:38:15.961Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 台東区 浅草橋駅 徒歩5分",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 台東区 浅草橋駅 徒歩5分",
+    "at": "2026-10-07T04:38:15.961Z"
+   },
+   {
+    "field": "jobText",
+    "value": "ヒットの仕掛け人に「WEBマーケティング」ブランドマネージャー」",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
+    "snippet": "求人ボックスの求人タイトル: ヒットの仕掛け人に「WEBマーケティング」ブランドマネージャー」",
+    "at": "2026-10-07T04:38:23.025Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency",
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "フジデノロ",
+  "name": "フジデノロ株式会社",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "営業マネジャー候補 キャラクタービジネス 「東京」創業以来黒字経営",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
+    "snippet": "求人ボックスの求人タイトル: 営業マネジャー候補 キャラクタービジネス 「東京」創業以来黒字経営",
+    "at": "2026-10-07T04:38:23.025Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 渋谷区",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区",
+    "at": "2026-10-07T04:38:23.025Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "クイックネットワク",
+  "name": "クイック・ネットワーク株式会社",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "カーオークションの反響営業 査定から売却まで伴走 リモート／年休130日／月給30万円～",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
+    "snippet": "求人ボックスの求人タイトル: カーオークションの反響営業 査定から売却まで伴走 リモート／年休130日／月給30万円～",
+    "at": "2026-10-07T04:38:23.025Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 港区",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区",
+    "at": "2026-10-07T04:38:23.025Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "バウンスバック",
+  "name": "株式会社バウンスバック",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "東京／未経験歓迎／インドアゴルフインストラクター 研修充実 独自メソッド有／基本正社員登用有／販売",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
+    "snippet": "求人ボックスの求人タイトル: 東京／未経験歓迎／インドアゴルフインストラクター 研修充実 独自メソッド有／基本正社員登用有／販売",
+    "at": "2026-10-07T04:38:23.025Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 中央区 日本橋駅",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 中央区 日本橋駅",
+    "at": "2026-10-07T04:38:23.025Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "ワキテクノ",
+  "name": "株式会社ワーキテクノ",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "最先端PJに携わる「モノづくり総合職」未経験続々入社中",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
+    "snippet": "求人ボックスの求人タイトル: 最先端PJに携わる「モノづくり総合職」未経験続々入社中",
+    "at": "2026-10-07T04:38:23.025Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 千代田区",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 千代田区",
+    "at": "2026-10-07T04:38:23.025Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "西濃運輸",
+  "name": "西濃運輸株式会社",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "上場グループの「ルートセールス」20代で年収550万円の先輩も",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
+    "snippet": "求人ボックスの求人タイトル: 上場グループの「ルートセールス」20代で年収550万円の先輩も",
+    "at": "2026-10-07T04:38:23.025Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 江東区",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 江東区",
+    "at": "2026-10-07T04:38:23.025Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "vivion",
+  "name": "株式会社viviON",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "秋葉原／在宅可／配信ディレクター VTuberプロダクション「あおぎり高校」 土日祝休 実働7H",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
+    "snippet": "求人ボックスの求人タイトル: 秋葉原／在宅可／配信ディレクター VTuberプロダクション「あおぎり高校」 土日祝休 実働7H",
+    "at": "2026-10-07T04:38:23.025Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 千代田区 秋葉原駅",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 千代田区 秋葉原駅",
+    "at": "2026-10-07T04:38:23.025Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "アナライズログ",
+  "name": "株式会社アナライズログ",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "企画営業&新規事業開発担当／Webマーケティング・ネット広告",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
+    "snippet": "求人ボックスの求人タイトル: 企画営業&新規事業開発担当／Webマーケティング・ネット広告",
+    "at": "2026-10-07T04:38:23.025Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 港区 表参道駅 徒歩9分",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区 表参道駅 徒歩9分",
+    "at": "2026-10-07T04:38:23.025Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "クリエ",
+  "name": "株式会社クーリエ",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "PRマネージャー／メディアリレーション／イベント企画・実行 新着",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
+    "snippet": "求人ボックスの求人タイトル: PRマネージャー／メディアリレーション／イベント企画・実行 新着",
+    "at": "2026-10-07T04:38:23.025Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 渋谷区 / 恵比寿ガーデンプレイス",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 / 恵比寿ガーデンプレイス",
+    "at": "2026-10-07T04:38:23.025Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "wasabi",
+  "name": "株式会社WASABI",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "役者・エキストラ 人気のVtuber大募集 顔出しなし スマホでOK 在宅ワーク",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
+    "snippet": "求人ボックスの求人タイトル: 役者・エキストラ 人気のVtuber大募集 顔出しなし スマホでOK 在宅ワーク",
+    "at": "2026-10-07T04:38:30.094Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 世田谷区 明大前駅",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 世田谷区 明大前駅",
+    "at": "2026-10-07T04:38:30.094Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "三洋販売",
+  "name": "株式会社三洋販売",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "日本橋／マーケティング 企画立案から実行まで／年休125日・残業20H／業界トップの安定基盤",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
+    "snippet": "求人ボックスの求人タイトル: 日本橋／マーケティング 企画立案から実行まで／年休125日・残業20H／業界トップの安定基盤",
+    "at": "2026-10-07T04:38:30.094Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 中央区 日本橋駅",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 中央区 日本橋駅",
+    "at": "2026-10-07T04:38:30.094Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "ドワンゴ",
+  "name": "株式会社ドワンゴ",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "第二新卒歓迎／リモート勤務可／営業事務 渉外デスクサポート／エンタメ業界経験者歓迎／営業事務",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
+    "snippet": "求人ボックスの求人タイトル: 第二新卒歓迎／リモート勤務可／営業事務 渉外デスクサポート／エンタメ業界経験者歓迎／営業事務",
+    "at": "2026-10-07T04:38:30.094Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 中央区 東銀座駅",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 中央区 東銀座駅",
+    "at": "2026-10-07T04:38:30.094Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "tmy",
+  "name": "株式会社TMY",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "店長候補・マネージャー",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
+    "snippet": "求人ボックスの求人タイトル: 店長候補・マネージャー",
+    "at": "2026-10-07T04:38:30.094Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 千代田区 神保町駅 徒歩5分",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 千代田区 神保町駅 徒歩5分",
+    "at": "2026-10-07T04:38:30.094Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "gentle",
+  "name": "株式会社GENTLE",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "店長候補・マネージャー",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
+    "snippet": "求人ボックスの求人タイトル: 店長候補・マネージャー",
+    "at": "2026-10-07T04:38:30.094Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 港区 表参道駅 徒歩7分",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区 表参道駅 徒歩7分",
+    "at": "2026-10-07T04:38:30.094Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "ドンチャン",
+  "name": "株式会社ドンチャン",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "店長候補・マネージャー",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
+    "snippet": "求人ボックスの求人タイトル: 店長候補・マネージャー",
+    "at": "2026-10-07T04:38:30.094Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 新宿区 西武新宿駅 徒歩1分",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 新宿区 西武新宿駅 徒歩1分",
+    "at": "2026-10-07T04:38:30.094Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "jam",
+  "name": "株式会社JAM",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "未経験OK!YouTuber社長が教えるマーケティング",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
+    "snippet": "求人ボックスの求人タイトル: 未経験OK!YouTuber社長が教えるマーケティング",
+    "at": "2026-10-07T04:38:36.815Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 豊島区",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 豊島区",
+    "at": "2026-10-07T04:38:36.815Z"
+   }
+  ],
+  "seedCategories": [
+   "influencer_agency"
+  ],
+  "contactUrl": null
+ },
+ {
+  "key": "first",
+  "name": "株式会社FIRST",
+  "officialUrl": null,
+  "domain": null,
+  "sources": [
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
+   }
+  ],
+  "evidence": [
+   {
+    "field": "jobText",
+    "value": "あなたの人生を変えよう。現役YouTuber直伝。ゼロから全て教えます",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
+    "snippet": "求人ボックスの求人タイトル: あなたの人生を変えよう。現役YouTuber直伝。ゼロから全て教えます",
+    "at": "2026-10-07T04:38:36.815Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 千代田区 溜池山王駅 徒歩3分",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 千代田区 溜池山王駅 徒歩3分",
+    "at": "2026-10-07T04:38:36.815Z"
    }
   ],
   "seedCategories": [
