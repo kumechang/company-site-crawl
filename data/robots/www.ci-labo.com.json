@@ -1,6 +1,6 @@
 {
  "origin": "https://www.ci-labo.com",
- "fetchedAt": "2026-10-06T12:09:11.836Z",
+ "fetchedAt": "2026-10-07T00:08:54.934Z",
  "status": 200,
  "text": "User-agent: *\nDisallow: /shop/sample-\nDisallow: /shop/line_outlet_\nDisallow: *?*bvstate=\nDisallow: /campaign/202606_familysale.html\nDisallow: /campaign/acg200_50_secret_2607.html\nSitemap: https://www.ci-labo.com/sitemap_index.xml"
 }

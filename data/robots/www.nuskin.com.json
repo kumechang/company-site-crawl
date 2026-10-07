@@ -1,6 +1,6 @@
 {
  "origin": "https://www.nuskin.com",
- "fetchedAt": "2026-10-06T12:12:06.592Z",
+ "fetchedAt": "2026-10-07T00:11:40.196Z",
  "status": 200,
  "text": "# robots.txt for nuskin - Fastly\nUser-agent: *\nAllow: /etc/*.css\nAllow: /etc/*.js\nAllow: /apps/*.css\nAllow: /apps/*.js\nDisallow: /mo/\nDisallow: /bin/querybuilder\nDisallow: /en_CA/products/grandfathered.html\nDisallow: /hut/en_US/hut.html\nDisallow: */office/*\nDisallow: */content/products/*\nDisallow: */content/geometrixx/*\nDisallow: /etc/*\nDisallow: /apps/*\nDisallow: /member.html\nDisallow: /mysite/\nDisallow: /*personal-offer.mysite.html\nSitemap: https://www.nuskin.com/sitemap.xml\nUser-agent: amazon-QBusiness\nAllow: /\nUser-agent: Googlebot\nAllow: /\nUser-agent: Googlebot-image\nAllow: /\ncrawl-delay: 30\nDisallow: /static/signup/*/CUSTOMER/invite-landing/\nDisallow: /static/signup/*/MEMBER/invite-landing/"
 }
