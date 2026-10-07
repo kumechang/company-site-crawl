@@ -225,7 +225,7 @@ export async function verifyCompany(c, r, cats, { crawler, log }) {
     const pages = [];
     for (const l of findServiceLinks(top.anchors, r.officialUrl).slice(0, 3)) {
       try {
-        pages.push(flatten((await crawler.snapshot(l.url)).text ?? '').slice(0, 4000));
+        pages.push(flatten((await crawler.snapshot(l.url, { retries: 0, timeoutMs: 20000 })).text ?? '').slice(0, 4000)); // 補助的な確認なので、遅い/落ちるページで待たない
       } catch (e) {
         log?.(`  ! verify ${r.name}: 事業ページを開けない ${l.url} (${e.message.slice(0, 40)})`);
       }

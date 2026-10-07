@@ -154,7 +154,7 @@ export class Crawler {
    * @param {number}  [opts.settleMs] 読み込み後に追加で待つ時間(SPAの結果差し替え対策)
    * @param {string}  [opts.waitForText] この文字列が現れるまで待つ(SPA用)
    */
-  async snapshot(url, { scroll = false, waitForText = null, settleMs = 0, retries = 2 } = {}) {
+  async snapshot(url, { scroll = false, waitForText = null, settleMs = 0, retries = 2, timeoutMs = this.timeoutMs } = {}) {
     const cp = this.cachePath(url);
     const host = new URL(url).host;
     if (this.useCache && fs.existsSync(cp)) {
@@ -172,7 +172,7 @@ export class Crawler {
       try {
         await this.throttle(url);
         const snap = await this.rawPage(url, async (page) => {
-          const res = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: this.timeoutMs });
+          const res = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: timeoutMs });
           await page.waitForNetworkIdle({ idleTime: 800, timeout: 12000 }).catch(() => {}); // 描画が落ち着くまで(上限あり)
           if (settleMs) await sleep(settleMs); // クライアント側で一覧が差し替わるSPA向け
           if (waitForText) await page.waitForFunction((t) => document.body.innerText.includes(t), { timeout: 10000 }, waitForText).catch(() => {});
