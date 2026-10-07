@@ -39,6 +39,8 @@ export const CATEGORIES = {
     },
     green: ['https://www.green-japan.com/search/area/13/industry/100125'],
     wantedly: ['インフルエンサー キャスティング', 'インフルエンサー マネジメント'],
+    // 求人ボックスの一覧(ユーザー提供)。求人詳細(/jb/)は robots 禁止のため一覧本文の社名のみ使う
+    kyujinbox: ['https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD'],
     // PR TIMES の検索で見つけた会社。label は「インフルエンサー」のみ（事務所かどうかは公式サイトの文章で判定する）
     prtimes: [
       { keyword: 'インフルエンサー 事務所 所属', label: 'インフルエンサー' },
