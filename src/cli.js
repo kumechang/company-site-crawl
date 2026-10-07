@@ -63,6 +63,7 @@ const { values: opt, positionals } = parseArgs({
     'salesnow-pages': { type: 'string', default: '25' }, // SalesNow索引で1業種あたり読むページ数(50社/ページ)
     'min-employees': { type: 'string', default: '20' },
     'no-cache': { type: 'boolean', default: false },
+    skip: { type: 'string', default: '' }, // 補完で飛ばす情報源(カンマ区切り): openwork,mynavi,careertasu,gbizinfo,prtimes（反応が無い/遅い媒体を一時的に外す用）
     help: { type: 'boolean', short: 'h', default: false },
   },
 });
@@ -84,6 +85,7 @@ if (!cmd || opt.help || !['discover', 'enrich', 'export', 'run', 'robots', 'samp
 }
 
 const minEmployees = Number(opt['min-employees']);
+const skipped = new Set(opt.skip.split(',').filter(Boolean));
 // EDINET(有価証券報告書)はAPIキーがあるときだけ使う。無ければこの補完を飛ばす
 const edinet = process.env.EDINET_API_KEY ? new edinetSrc.Edinet({ useCache: !opt['no-cache'], log }) : null;
 const store = new Store();
@@ -205,6 +207,10 @@ async function verify() {
 
 /** 会社名検索型の補完。対象(pred)に合う会社を順に引く。一致なしは no* フラグを立てて再検索しない（エラー時は立てず再試行できる） */
 async function lookupAll(label, mod, flag, pred) {
+  if (skipped.has(mod.id)) {
+    log(`# ${label}: --skip により飛ばす`);
+    return;
+  }
   const todo = store.all().filter((c) => pred(c) && !c[flag]);
   if (!todo.length) return;
   log(`# ${label}で補完: ${todo.length} 社`);
@@ -260,7 +266,7 @@ async function enrich() {
   }
   // 1b) まだ公式URLが無い会社は PR TIMES の企業ページ(会社名が完全一致した場合のみ)で解決
   // 公式URLが無い、または製品ページ系の媒体由来のみ(本体サイトでない可能性)の会社が対象
-  const noUrl = store.all().filter((c) => (!c.officialUrl || needsCorporateUrl(c)) && !c.evidence.some((e) => e.source === 'prtimes') && !c.noPrtimes);
+  const noUrl = skipped.has('prtimes') ? [] : store.all().filter((c) => (!c.officialUrl || needsCorporateUrl(c)) && !c.evidence.some((e) => e.source === 'prtimes') && !c.noPrtimes);
   if (noUrl.length) {
     log(`# PR TIMES で公式URLを解決: ${noUrl.length} 社`);
     let n = 0;
@@ -298,7 +304,7 @@ async function enrich() {
   //     有報を出していない会社は一致なし。有報の従業員数が取れた会社は、次の第三者サイト(Gビズ以降)を引かない
   await enrichEdinet();
   // 3) Gビズインフォ(経産省)で会社名検索。公式サイト等で住所が分かった後に引くことで、同名の別会社の取り違えを減らす
-  const gb = store.all().filter((c) => !c.evidence.some((e) => e.field === 'employees') && !c.evidence.some((e) => e.source === 'gbizinfo') && !c.noGbiz);
+  const gb = skipped.has('gbizinfo') ? [] : store.all().filter((c) => !c.evidence.some((e) => e.field === 'employees') && !c.evidence.some((e) => e.source === 'gbizinfo') && !c.noGbiz);
   if (gb.length) {
     log(`# Gビズインフォで補完: ${gb.length} 社`);
     let n = 0;

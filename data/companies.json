@@ -9493,6 +9493,10 @@
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -9581,6 +9585,10 @@
    "influencer_agency",
    "cosme_d2c",
    "cosme_d2c",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
@@ -11351,6 +11359,18 @@
    {
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XUHG,,"
+   },
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD"
+   },
+   {
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   },
+   {
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C100000177mvl"
    }
   ],
   "evidence": [
@@ -11537,10 +11557,64 @@
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XUHG,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月26日提出・書類ID S100XUHG） 連結の従業員数 2160名",
     "at": "2026-10-07T04:35:25.431Z"
+   },
+   {
+    "field": "jobText",
+    "value": "「東京」マーケティング戦略プランナー「SNS・インフルエンサー施策担当... 新着",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
+    "snippet": "求人ボックスの求人タイトル: 「東京」マーケティング戦略プランナー「SNS・インフルエンサー施策担当... 新着",
+    "at": "2026-10-07T04:36:55.386Z"
+   },
+   {
+    "field": "jobLocation",
+    "value": "東京都 港区 / 六本木ヒルズ",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
+    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区 / 六本木ヒルズ",
+    "at": "2026-10-07T04:36:55.386Z"
+   },
+   {
+    "field": "jobText",
+    "value": "「東京」営業・マーケティング職「ブランドコマースマーケティング事業部」",
+    "source": "kyujinbox",
+    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
+    "snippet": "求人ボックスの求人タイトル: 「東京」営業・マーケティング職「ブランドコマースマーケティング事業部」",
+    "at": "2026-10-07T04:37:40.333Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区六本木6-10-1 六本木ヒルズ森タワー31F",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C100000177mvl",
+    "snippet": "OpenWork 所在地: 東京都港区六本木6-10-1 六本木ヒルズ森タワー31F",
+    "at": "2026-10-07T06:23:26.071Z"
+   },
+   {
+    "field": "employees",
+    "value": 100,
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C100000177mvl",
+    "snippet": "OpenWork 社員数: 100〜499人（レンジ下限を採用）",
+    "at": "2026-10-07T06:23:26.071Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://anymindgroup.com/",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C100000177mvl",
+    "snippet": "OpenWork URL: https://anymindgroup.com/ja/",
+    "at": "2026-10-07T06:23:26.071Z"
    }
   ],
   "seedCategories": [
    "sns_agency",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
@@ -17970,7 +18044,7 @@
     "source": "official",
     "url": "https://digiasa.co.jp/",
     "snippet": "",
-    "at": "2026-10-07T04:35:24.884Z"
+    "at": "2026-10-07T06:27:55.016Z"
    },
    {
     "field": "profileText",
@@ -17978,7 +18052,7 @@
     "source": "official",
     "url": "https://digima.asahi.co.jp/",
     "snippet": "トップページ",
-    "at": "2026-10-07T04:35:24.885Z"
+    "at": "2026-10-07T06:27:55.017Z"
    },
    {
     "field": "employees",
@@ -17986,7 +18060,7 @@
     "source": "official",
     "url": "https://digima.asahi.co.jp/info",
     "snippet": "従業員 | 46名(令和8年4月) | 資本金 | 8500万円(",
-    "at": "2026-10-07T04:35:24.886Z"
+    "at": "2026-10-07T06:27:55.023Z"
    },
    {
     "field": "profileText",
@@ -17994,7 +18068,7 @@
     "source": "official",
     "url": "https://digima.asahi.co.jp/",
     "snippet": "会社概要ページ",
-    "at": "2026-10-07T04:35:24.887Z"
+    "at": "2026-10-07T06:27:55.023Z"
    },
    {
     "field": "address",
@@ -18002,7 +18076,7 @@
     "source": "official",
     "url": "https://digima.asahi.co.jp/info",
     "snippet": "東京都港区浜松町二丁目3番1号 日本生命浜松町クレアタワー18階",
-    "at": "2026-10-07T04:35:24.887Z"
+    "at": "2026-10-07T06:27:55.023Z"
    },
    {
     "field": "profileText",
@@ -18010,7 +18084,7 @@
     "source": "official",
     "url": "https://digima.asahi.co.jp/info",
     "snippet": "会社概要ページ",
-    "at": "2026-10-07T04:35:24.887Z"
+    "at": "2026-10-07T06:27:55.024Z"
    },
    {
     "field": "contactUrl",
@@ -18018,7 +18092,7 @@
     "source": "official",
     "url": "https://digima.asahi.co.jp/",
     "snippet": "リンク文言「お問い合わせ」/ ページ実在とフォームの記述を確認",
-    "at": "2026-10-07T04:35:24.889Z"
+    "at": "2026-10-07T06:27:55.032Z"
    }
   ],
   "seedCategories": [
@@ -38385,6 +38459,8 @@
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -38521,6 +38597,8 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
@@ -38682,6 +38760,8 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
@@ -38871,6 +38951,8 @@
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -38990,6 +39072,8 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
@@ -39145,6 +39229,8 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
@@ -45728,7 +45814,7 @@
     "source": "official",
     "url": "http://sky-farm.jp/",
     "snippet": "",
-    "at": "2026-10-07T04:35:24.914Z"
+    "at": "2026-10-07T06:27:56.790Z"
    },
    {
     "field": "profileText",
@@ -45736,7 +45822,7 @@
     "source": "official",
     "url": "https://sky-farm.co.jp/",
     "snippet": "トップページ",
-    "at": "2026-10-07T04:35:24.915Z"
+    "at": "2026-10-07T06:27:56.794Z"
    },
    {
     "field": "address",
@@ -45744,7 +45830,7 @@
     "source": "official",
     "url": "https://sky-farm.co.jp/",
     "snippet": "神奈川県横浜市西区みなとみらい2-2-1",
-    "at": "2026-10-07T04:35:24.915Z"
+    "at": "2026-10-07T06:27:56.796Z"
    },
    {
     "field": "profileText",
@@ -45752,7 +45838,7 @@
     "source": "official",
     "url": "https://sky-farm.co.jp/",
     "snippet": "会社概要ページ",
-    "at": "2026-10-07T04:35:24.918Z"
+    "at": "2026-10-07T06:27:56.796Z"
    },
    {
     "field": "profileText",
@@ -45760,7 +45846,7 @@
     "source": "official",
     "url": "https://sky-farm.co.jp/company",
     "snippet": "会社概要ページ",
-    "at": "2026-10-07T04:35:24.918Z"
+    "at": "2026-10-07T06:27:56.796Z"
    },
    {
     "field": "contactUrl",
@@ -45768,7 +45854,7 @@
     "source": "official",
     "url": "https://sky-farm.co.jp/",
     "snippet": "リンク文言「お問い合わせ」/ ページ実在とフォームの記述を確認",
-    "at": "2026-10-07T04:35:24.919Z"
+    "at": "2026-10-07T06:27:56.798Z"
    }
   ],
   "seedCategories": [
@@ -49807,6 +49893,8 @@
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -49903,6 +49991,8 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
@@ -50020,6 +50110,8 @@
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -50098,6 +50190,8 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
@@ -51231,6 +51325,10 @@
    {
     "source": "prtimes",
     "url": "https://prtimes.jp/main/html/searchrlp/company_id/71141"
+   },
+   {
+    "source": "official",
+    "url": "https://www.tempstaff.co.jp/"
    }
   ],
   "evidence": [
@@ -51281,6 +51379,62 @@
     "url": "https://prtimes.jp/main/html/searchrlp/company_id/71141",
     "snippet": "PR TIMES企業情報のURL: https://www.tempstaff.co.jp/",
     "at": "2026-10-07T05:22:57.547Z"
+   },
+   {
+    "field": "profileText",
+    "value": "派遣の求人・人材派遣会社-テンプスタッフ 仕事をお探しの方 | 企業のご担当の方 | 0120-106-102 | 平日 9:00 - 18:00 | 会社案内 | 採用情報 | お問い合わせ | 検索 | 求人検索 ジョブチェキ | 仕事を探す | 仕事を探す | 求人検索 ジョブチェキ | テンプスタッフを知る | テンプスタッフを知る | テンプスタッフが選ばれる理由 | テンプアプリについて | MYページでできること | スタッフインタビュー | 派遣がはじめての方 | 派遣登録から就業までの流れ | 面談付き登録のメリット | お友達紹介 | はたらき方を選ぶ | はたらき方を選ぶ | 派遣ではたらく | 紹介予定派遣ではたらく | 受託業務スタッフではたらく | 正社員・契約社員ではたらく | はたらき方特集 | 職種から選ぶ | 業界から選ぶ | はたらき方タイプ診断 | ちょっと未来の私診断 | 福利厚生 | 福利厚生 | 社会保険 | 休暇制度 | ヘルスケア | 優待サービス | キャリアサポート・研修 | キャリアサポート・研修 | 自宅で好きなときに学べる | 講師からみんなと学べる | 専門知識を身に付けてキャリアアップ | キャリアアドバイザー | 教育訓練計画概要 | テンプスタッフのキャリア支援 | 特定商取引に基づく表記 | よくあるご質問 | 登録スタッフ限定の情報も | 無料登録して仕事を見る | はじめての方はこちら | 派遣がはじめての方 | 派遣ではたらくことがはじめての方に向けて、派遣のしくみやメリット、登録から就業までの流れをご紹介しています。 | テンプスタッフが選ばれる理由 | はたらきたいと望む人と企業を結びつけ50年以上歩み続けてきた、テンプスタッフが選ばれる理由をご紹介しています。 | 仕事をお探しの方はこちら | あなたらしさを叶える仕事が選べる・見つかる | 仕事を探す | カンタン仕事検索 | 勤務地を選ぶ | 北海道 | 青森 | 岩手 | 宮城 | 秋田 | 山形 | 福島 | 茨城 | 栃木 | 群馬 | 埼玉 | 千葉 | 東京 | 神奈川 | 新潟 | 富山 | 石川 | 福井 | 山梨 | 長野 | 岐阜 | 静岡 | 愛知 | 三重 | 滋賀 | 京都 | 大阪 | 兵庫 | 奈良 | 和歌山 | 鳥取 | 島根 | 岡山 | 広島 | 山口 | 徳島 | 香川 | 愛媛 | 高知 | 福岡 | 佐賀 | 長崎 | 熊本 | 大分 | 宮崎 | 鹿児島 | 沖縄 | 勤務地を選ぶ | 職種を選ぶ | 事務 | 翻訳・通訳 | 金融・証券 | テレマーケティング | 営業 | 販売・接客 | IT・CAD・クリエイティブ | 音楽・映像製作 | 研究開発・メディカル・医事 | 軽作業・製造・施設管理 | 保育・介護 | 栄養士・調理師 | 職種を選ぶ | はたらき方を選ぶ | 派遣・受託業務スタッフ | 紹介予定派遣 | 正社員 | 契約社員 | はたらき方を選ぶ | 検索 | より詳しい条件で検索する | 求人検索 ジョブチェキはこちら | はたらき方を選ぶ | 価値観や考え方は人それぞれ。そのときの状況によって優先したいことや叶えたいことも変わります。 | テンプスタッフでは自分に合ったはたらき方をさまざまな軸で選ぶことができます。 | はたらき方を選ぶを見る | 充実のサポート体制 | 福利厚生 | 社会保険や休暇制度、ヘルスケアや優待サービスなど、安心してはたら…",
+    "source": "official",
+    "url": "https://www.tempstaff.co.jp/",
+    "snippet": "トップページ",
+    "at": "2026-10-07T06:28:13.302Z"
+   },
+   {
+    "field": "profileText",
+    "value": "仕事をお探しの方 | 企業のご担当の方 | 0120-106-102 | 平日 9:00 - 18:00 | 会社案内 | 採用情報 | お問い合わせ | 検索 | 求人検索 ジョブチェキ | 仕事を探す | 仕事を探す | 求人検索 ジョブチェキ | テンプスタッフを知る | テンプスタッフを知る | テンプスタッフが選ばれる理由 | テンプアプリについて | MYページでできること | スタッフインタビュー | 派遣がはじめての方 | 派遣登録から就業までの流れ | 面談付き登録のメリット | お友達紹介 | はたらき方を選ぶ | はたらき方を選ぶ | 派遣ではたらく | 紹介予定派遣ではたらく | 受託業務スタッフではたらく | 正社員・契約社員ではたらく | はたらき方特集 | 職種から選ぶ | 業界から選ぶ | はたらき方タイプ診断 | ちょっと未来の私診断 | 福利厚生 | 福利厚生 | 社会保険 | 休暇制度 | ヘルスケア | 優待サービス | キャリアサポート・研修 | キャリアサポート・研修 | 自宅で好きなときに学べる | 講師からみんなと学べる | 専門知識を身に付けてキャリアアップ | キャリアアドバイザー | 教育訓練計画概要 | テンプスタッフのキャリア支援 | 特定商取引に基づく表記 | よくあるご質問 | 登録スタッフ限定の情報も | 無料登録して仕事を見る | はじめての方はこちら | 派遣がはじめての方 | 派遣ではたらくことがはじめての方に向けて、派遣のしくみやメリット、登録から就業までの流れをご紹介しています。 | テンプスタッフが選ばれる理由 | はたらきたいと望む人と企業を結びつけ50年以上歩み続けてきた、テンプスタッフが選ばれる理由をご紹介しています。 | 仕事をお探しの方はこちら | あなたらしさを叶える仕事が選べる・見つかる | 仕事を探す | カンタン仕事検索 | 勤務地を選ぶ | 北海道 | 青森 | 岩手 | 宮城 | 秋田 | 山形 | 福島 | 茨城 | 栃木 | 群馬 | 埼玉 | 千葉 | 東京 | 神奈川 | 新潟 | 富山 | 石川 | 福井 | 山梨 | 長野 | 岐阜 | 静岡 | 愛知 | 三重 | 滋賀 | 京都 | 大阪 | 兵庫 | 奈良 | 和歌山 | 鳥取 | 島根 | 岡山 | 広島 | 山口 | 徳島 | 香川 | 愛媛 | 高知 | 福岡 | 佐賀 | 長崎 | 熊本 | 大分 | 宮崎 | 鹿児島 | 沖縄 | 勤務地を選ぶ | 職種を選ぶ | 事務 | 翻訳・通訳 | 金融・証券 | テレマーケティング | 営業 | 販売・接客 | IT・CAD・クリエイティブ | 音楽・映像製作 | 研究開発・メディカル・医事 | 軽作業・製造・施設管理 | 保育・介護 | 栄養士・調理師 | 職種を選ぶ | はたらき方を選ぶ | 派遣・受託業務スタッフ | 紹介予定派遣 | 正社員 | 契約社員 | はたらき方を選ぶ | 検索 | より詳しい条件で検索する | 求人検索 ジョブチェキはこちら | はたらき方を選ぶ | 価値観や考え方は人それぞれ。そのときの状況によって優先したいことや叶えたいことも変わります。 | テンプスタッフでは自分に合ったはたらき方をさまざまな軸で選ぶことができます。 | はたらき方を選ぶを見る | 充実のサポート体制 | 福利厚生 | 社会保険や休暇制度、ヘルスケアや優待サービスなど、安心してはたらける福利厚生が揃っています。 | キャリア…",
+    "source": "official",
+    "url": "https://www.tempstaff.co.jp/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T06:29:08.372Z"
+   },
+   {
+    "field": "profileText",
+    "value": "仕事をお探しの方 | 企業のご担当の方 | 派遣の仕事探し・人材派遣・紹介予定派遣・人材紹介・アウトソーシング(業務委託)の活用ならパーソルテンプスタッフ | English | 会社案内 | 採用情報 | 拠点一覧 | 0120-106-102 | 平日 9:00 - 18:00 | トップ | パーソルテンプスタッフ | について | ニュース | ・お知らせ | スタッフの皆さまへ | サービスブランド | ハッケン・テンプ | ニュース・お知らせ | ニュースリリース | 2026/10/5 | パーソル高度バイオDX産業人材育成協働研究所 日本労務学会全国大会で研究成果を発表 ～ 研究者に求められる役割を4つの観点から探索的に整理 ～ | ニュースリリース | 2026/10/2 | 建設DX人材の育成を強化 「ADS（天空率解析・日影計算システム）」無料研修を開催 ～ 10月24日（土）開催、建築設計者・CAD経験者のスキルアップを支援 ～ | ニュースリリース | 2026/9/30 | パーソルグループ3社、障害のある社員によるアート作品34点を提供 「笑顔」がテーマの作品をパーソルテンプスタッフ新本社で展示 ～ 作品を通じて多様な個性が出会い、新たなつながりを創出 ～ | ニュースリリース | 2026/9/30 | 声優支援プロジェクト、総合学園ヒューマンアカデミーと連携 ～ 声優志望者にキャリア・教育機会の相互提供を開始 ～ | ニュースリリース | 2026/9/29 | 矢吹奈子さんが始球式に登場！ 『スキマのすきぴ。』ユニフォーム姿で華麗な一球を披露 | ニュース・お知らせ一覧を見る | パーソルテンプスタッフについて | パーソルテンプスタッフの会社概要や経営理念、沿革などをご覧いただけます。 | サービスブランド | 「テンプスタッフ」をはじめとした、はたらく人の多様な未来を支援するためのサービスを展開しています。 | テンプりん。ミルりん。の紹介 | テンプスタッフのイメージキャラクターをご紹介します。 | ハッケン・テンプ | 派遣スタッフの転換点や派遣ではたらくパパ＆ママ、裏方で支える社員のストーリーなどをご紹介します。 | テンプスタッフの広告 | テンプスタッフの広告をご紹介します。 | わたしの生きる道 | 日本経済新聞社「私の履歴書」に掲載された、篠原 欣子「わたしの生きる道～テンプスタッフ創業者の履歴書～」。 | スタッフの皆さまへ | スタッフの皆さまへ向けた取り組みについてご紹介します。 | 会社案内 | パーソルテンプスタッフについて | 会社概要 | 経営理念 | 社長メッセージ | 役員紹介 | 拠点一覧 | 沿革 | 労働者派遣事業の状況について | 認定・認証について | サステナビリティ | 電子公告 | ニュース・お知らせ | サービスブランド | テンプりん。ミルりん。 | の紹介 | “視点発見”メディア | 「ハッケン・テンプ」 | テンプスタッフの広告 | わたしの生きる道 | スタッフの皆さまへ | 社会貢献活動 | 投資家情報 | お問い合わせ | グループ会社一覧 | サイトマップ | グループ会社 | パーソルホールディングス | パーソルテンプスタッフ | パーソルビジネスプロセスデザイン | パーソルクロステクノロジー | パーソルキャリア | パーソルデジタルベンチャーズ | パーソル総合研究所 | 個人向けサービス | 人材派遣 | テンプスタッフ | ジョ…",
+    "source": "official",
+    "url": "https://www.tempstaff.co.jp/corporate/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T06:29:08.372Z"
+   },
+   {
+    "field": "profileText",
+    "value": "仕事をお探しの方 | 企業のご担当の方 | 0120-106-102 | 平日 9:00 - 18:00 | 会社案内 | 採用情報 | お問い合わせ | 検索 | 求人検索 ジョブチェキ | 仕事を探す | 仕事を探す | 求人検索 ジョブチェキ | テンプスタッフを知る | テンプスタッフを知る | テンプスタッフが選ばれる理由 | テンプアプリについて | MYページでできること | スタッフインタビュー | 派遣がはじめての方 | 派遣登録から就業までの流れ | 面談付き登録のメリット | お友達紹介 | はたらき方を選ぶ | はたらき方を選ぶ | 派遣ではたらく | 紹介予定派遣ではたらく | 受託業務スタッフではたらく | 正社員・契約社員ではたらく | はたらき方特集 | 職種から選ぶ | 業界から選ぶ | はたらき方タイプ診断 | ちょっと未来の私診断 | 福利厚生 | 福利厚生 | 社会保険 | 休暇制度 | ヘルスケア | 優待サービス | キャリアサポート・研修 | キャリアサポート・研修 | 自宅で好きなときに学べる | 講師からみんなと学べる | 専門知識を身に付けてキャリアアップ | キャリアアドバイザー | 教育訓練計画概要 | テンプスタッフのキャリア支援 | 特定商取引に基づく表記 | よくあるご質問 | 派遣 テンプスタッフ テンプスタッフを知る | テンプスタッフを知る | 「テンプスタッフでよかった」 | と思っていただけるよう | 寄り添い、支援します | アプリ・MYページ | スタッフ | インタビュー | 派遣がはじめての方 | 就業までの流れ | 面談付き登録の | メリット | お友達紹介 | テンプスタッフが選ばれる理由 | 自分らしくはたらくことで人生をもっと豊かにできるという想いで、50年以上歩み続けてきました。これからもテンプスタッフは一人ひとりに合ったはたらき方に寄り添い続けます。 | テンプスタッフが選ばれる理由を見る | テンプアプリ・MYページ | あなたのはたらくをより便利にサポートします。 | テンプアプリ | テンプアプリでできること | 仕事の状況や気持ちをスタンプで気軽に回答 | すぐに相談できる | ジョブチェキで仕事探し | 給与・契約情報の確認がいつでもできる | 申請・手続きがスムーズ | テンプアプリについてを見る | MYページ | MYページでできること | あなたにマッチする仕事情報をおすすめ | 仕事の進捗がひと目で分かる | 充実したキャリアサポートや研修の受講 | “やることリスト”で対応事項が分かりやすい | 申請手続き、登録情報や給与明細の確認ができる | MYページでできることを見る | スタッフインタビュー | #事務 | #派遣 | #未経験 | #パソコン操作が多い仕事 | 私を理解してくれたテンプスタッフが、長くはたらける仕事へ導いてくれました。 | #貿易事務 | #派遣 | #未経験 | #一部在宅 | 考えるより、まずは行動。あのとき、派遣を選んでよかったです。 | #テレマーケティング | #正社員 | #完全在宅 | ダブルワークから正社員へ。“ちょうどいい”距離感のテンプスタッフが、自分に合っていました。 | #CAD | #事務 | #派遣 | #未経験 | プロのミュージカルダンサーになるために、夢と仕事を両立できる“いいとこ取り”な派遣を選びました。 | #テレマーケティング | #派遣 | #未経験 | #平日休み…",
+    "source": "official",
+    "url": "https://www.tempstaff.co.jp/about/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T06:29:08.372Z"
+   },
+   {
+    "field": "profileText",
+    "value": "仕事をお探しの方 | 企業のご担当の方 | 0120-106-102 | 平日 9:00 - 18:00 | 会社案内 | 採用情報 | お問い合わせ | 検索 | 求人検索 ジョブチェキ | 仕事を探す | 仕事を探す | 求人検索 ジョブチェキ | テンプスタッフを知る | テンプスタッフを知る | テンプスタッフが選ばれる理由 | テンプアプリについて | MYページでできること | スタッフインタビュー | 派遣がはじめての方 | 派遣登録から就業までの流れ | 面談付き登録のメリット | お友達紹介 | はたらき方を選ぶ | はたらき方を選ぶ | 派遣ではたらく | 紹介予定派遣ではたらく | 受託業務スタッフではたらく | 正社員・契約社員ではたらく | はたらき方特集 | 職種から選ぶ | 業界から選ぶ | はたらき方タイプ診断 | ちょっと未来の私診断 | 福利厚生 | 福利厚生 | 社会保険 | 休暇制度 | ヘルスケア | 優待サービス | キャリアサポート・研修 | キャリアサポート・研修 | 自宅で好きなときに学べる | 講師からみんなと学べる | 専門知識を身に付けてキャリアアップ | キャリアアドバイザー | 教育訓練計画概要 | テンプスタッフのキャリア支援 | 特定商取引に基づく表記 | よくあるご質問 | 派遣 テンプスタッフ お問い合わせ | お問い合わせ | 各種お問い合わせは、下記の該当する項目からお願いします。内容または営業時間などにより、回答に時間がかかる場合もありますので、ご了承ください。 | お問い合わせが多い項目については、よくあるご質問に掲載しています。併せてご確認ください。 | よくあるご質問を見る | 仕事をお探しの方・ | 登録をお考えの方 | 登録スタッフの方 | 企業のご担当の方 | その他のお問い合わせ | 仕事をお探しの方・登録をお考えの方 | 仕事探しに関するご相談を承っています。 | エントリー済みの仕事の進捗は、MYページのエントリー進捗一覧を確認いただくか、仕事詳細に記載のお問い合わせ先までご連絡ください。 | Webで問い合わせる | 新規登録に関するご相談を承っています。 | Webで問い合わせる | 0120-537-102 | 平日 9:00 - 18:00 | 求人検索 ジョブチェキ | ジョブチェキに関するご相談を承っています。 | Webで問い合わせる | 登録スタッフの方 | 登録スタッフの方に安心して就業いただけるよう、各種お問い合わせや証明書の発行など用途別に担当窓口を設けています。 | Webからのお問い合わせ | MYページ | MYページと仮登録に関するご相談を承っています。 | MY ID／パスワードをお忘れの方 | MYページ・仮登録 | Webで問い合わせる | スタッフ相談室 | 担当者に話しにくいことやハラスメントなどの相談も受け付けています。相談内容は守秘義務に基づき、関係者限で対応します。不利益な取り扱いを行うことはありませんのでご安心ください。 | ご相談窓口 | 企業のご担当の方 | 企業のご担当の方のご依頼・ご相談をWebと電話で承っています。 | Webで問い合わせる | 0120-106-102 | 平日 9:00 - 18:00 | その他のお問い合わせ | 当社事業・サービスに関するお問い合わせはこちら。 | 03-5350-1212 | （代表） | 個人情報の取り扱いに関するお問い合わせはこちら。 | Webで問い合…",
+    "source": "official",
+    "url": "https://www.tempstaff.co.jp/info/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T06:29:08.372Z"
+   },
+   {
+    "field": "profileText",
+    "value": "仕事をお探しの方 | 企業のご担当の方 | 0120-106-102 | 平日 9:00 - 18:00 | 会社案内 | 採用情報 | お問い合わせ | 検索 | 求人検索 ジョブチェキ | 仕事を探す | 仕事を探す | 求人検索 ジョブチェキ | テンプスタッフを知る | テンプスタッフを知る | テンプスタッフが選ばれる理由 | テンプアプリについて | MYページでできること | スタッフインタビュー | 派遣がはじめての方 | 派遣登録から就業までの流れ | 面談付き登録のメリット | お友達紹介 | はたらき方を選ぶ | はたらき方を選ぶ | 派遣ではたらく | 紹介予定派遣ではたらく | 受託業務スタッフではたらく | 正社員・契約社員ではたらく | はたらき方特集 | 職種から選ぶ | 業界から選ぶ | はたらき方タイプ診断 | ちょっと未来の私診断 | 福利厚生 | 福利厚生 | 社会保険 | 休暇制度 | ヘルスケア | 優待サービス | キャリアサポート・研修 | キャリアサポート・研修 | 自宅で好きなときに学べる | 講師からみんなと学べる | 専門知識を身に付けてキャリアアップ | キャリアアドバイザー | 教育訓練計画概要 | テンプスタッフのキャリア支援 | 特定商取引に基づく表記 | よくあるご質問 | 派遣 テンプスタッフ テンプスタッフを知る テンプスタッフが選ばれる理由 | テンプスタッフが選ばれる理由 | あなたらしいはたらき方を | 一緒に描き続けます | はたらくことは人生の中でも多くの時間を占めています。だからこそ、自分らしくはたらくことで人生をもっと豊かにできると言う想いで、50年以上歩み続けてきました。これからもテンプスタッフは一人ひとりに合ったはたらき方に寄り添い続けます。 | テンプスタッフが選ばれる3つの理由 | ＜動画で分かる＞テンプスタッフが選ばれる理由 | POINT 1 | 求人数で導く満足度No.1 | 業界最大級の求人数で、一人ひとりに合った仕事が見つかります。雇用形態はもちろん、職種や業界、未経験からできる仕事など、さまざまな仕事があります。またテンプスタッフは、派遣会社満足度ランキングにおいて7年連続でNo.1に選ばれています。多くの求人数があることがこの成果につながっています。 | 利用者の声※2 | 担当者の方が優しく、悩みなどを親身になって聞いてくれた。 | （20代／女性） | フォロー体制が細やかで求人数が多く、かなり細かい条件でお仕事探しができる。 | （40代／女性） | 担当営業の方が親身になって話を聞いてくださり、派遣先企業とのやり取りが円滑に進んだ。 問い合わせへの対応が丁寧かつ早かった。 | （40代／女性） | 営業担当者が相談しやすい人が多いし、働いている人の立場になって迅速に対応してくれた。 | （50代／女性） | 仕事の悩みや相談も親身になって受けてくれました。 | （30代／男性） | アプリがあり、連絡がしやすい。 | （30代／女性） | 派遣スタッフが選ぶ！派遣会社満足度ランキング 2019～2025 総合満足度1位（派遣の働き方研究所） | 上記利用者の声より | 求人検索 ジョブチェキはこちら | POINT 2 | あなたを守る福利厚生 | 安心してはたらいていただくため、社会保険をはじめとした福利厚生や登録スタッフの方が受けられる優待サービスをご用意しています。 | 社会保険 | 健康保険、厚生年金、雇用保険など各種社会保険…",
+    "source": "official",
+    "url": "https://www.tempstaff.co.jp/about/reason.html",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T06:29:08.372Z"
+   },
+   {
+    "field": "contactUrl",
+    "value": "https://so.tempstaff.co.jp/client/inquiry",
+    "source": "official",
+    "url": "https://www.tempstaff.co.jp/corporate/",
+    "snippet": "リンク文言「お問い合わせ」/ ページ実在とフォームの記述を確認",
+    "at": "2026-10-07T06:29:25.850Z"
    }
   ],
   "seedCategories": [
@@ -52367,7 +52521,8 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noOpenwork": true
  },
  {
   "key": "東晶貿易",
@@ -52544,17 +52699,22 @@
    "influencer_agency"
   ],
   "contactUrl": null,
-  "noPrtimes": true
+  "noPrtimes": true,
+  "noOpenwork": true
  },
  {
   "key": "パソルエクセルhrパトナズ",
   "name": "パーソルエクセルHRパートナーズ株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://persol-hrpartners.co.jp/",
+  "domain": "persol-hrpartners.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   },
+   {
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0910000000G2Lf"
    }
   ],
   "evidence": [
@@ -52573,6 +52733,30 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 世田谷区 二子玉川駅 徒歩5分",
     "at": "2026-10-07T04:35:55.487Z"
+   },
+   {
+    "field": "address",
+    "value": "大阪府大阪市北区堂島浜1-1-27 大阪堂島浜タワー11F（総合受付）",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0910000000G2Lf",
+    "snippet": "OpenWork 所在地: 大阪府大阪市北区堂島浜1-1-27 大阪堂島浜タワー11F（総合受付）",
+    "at": "2026-10-07T06:05:56.367Z"
+   },
+   {
+    "field": "employees",
+    "value": 1000,
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0910000000G2Lf",
+    "snippet": "OpenWork 社員数: 1000人以上（レンジ下限を採用）",
+    "at": "2026-10-07T06:05:56.367Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://persol-hrpartners.co.jp/",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0910000000G2Lf",
+    "snippet": "OpenWork URL: https://persol-hrpartners.co.jp/",
+    "at": "2026-10-07T06:05:56.367Z"
    }
   ],
   "seedCategories": [
@@ -52619,7 +52803,8 @@
    "influencer_agency"
   ],
   "contactUrl": null,
-  "noPrtimes": true
+  "noPrtimes": true,
+  "noOpenwork": true
  },
  {
   "key": "大斗",
@@ -52659,7 +52844,8 @@
    "influencer_agency"
   ],
   "contactUrl": null,
-  "noPrtimes": true
+  "noPrtimes": true,
+  "noOpenwork": true
  },
  {
   "key": "metasales",
@@ -52699,7 +52885,8 @@
    "influencer_agency"
   ],
   "contactUrl": null,
-  "noPrtimes": true
+  "noPrtimes": true,
+  "noOpenwork": true
  },
  {
   "key": "ブランドロケット",
@@ -52812,12 +52999,16 @@
  {
   "key": "サンタエンタテイメント",
   "name": "株式会社サンタエンタテイメント",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "http://www.santa-ent.co.jp/",
+  "domain": "santa-ent.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   },
+   {
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C1000000skFEI"
    }
   ],
   "evidence": [
@@ -52836,6 +53027,30 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 豊島区 池袋駅 徒歩3分",
     "at": "2026-10-07T04:36:03.012Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都豊島区池袋2-48-1　信友山の手池袋ビル４Ｆ",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C1000000skFEI",
+    "snippet": "OpenWork 所在地: 東京都豊島区池袋2-48-1　信友山の手池袋ビル４Ｆ",
+    "at": "2026-10-07T06:07:08.888Z"
+   },
+   {
+    "field": "employees",
+    "value": 30,
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C1000000skFEI",
+    "snippet": "OpenWork 社員数: 30〜99人（レンジ下限を採用）",
+    "at": "2026-10-07T06:07:08.888Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "http://www.santa-ent.co.jp/",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C1000000skFEI",
+    "snippet": "OpenWork URL: http://www.santa-ent.co.jp/",
+    "at": "2026-10-07T06:07:08.888Z"
    }
   ],
   "seedCategories": [
@@ -52901,12 +53116,16 @@
  {
   "key": "博報堂dyキャプコ",
   "name": "株式会社博報堂DYキャプコ",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://www.hakuhodo-dy.capco.co.jp/",
+  "domain": "hakuhodo-dy.capco.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   },
+   {
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0910000008zNQ6"
    }
   ],
   "evidence": [
@@ -52925,6 +53144,30 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区 赤坂駅 徒歩1分",
     "at": "2026-10-07T04:36:03.012Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区赤坂2-14-27　国際新赤坂ビル東館11F",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0910000008zNQ6",
+    "snippet": "OpenWork 所在地: 東京都港区赤坂2-14-27　国際新赤坂ビル東館11F",
+    "at": "2026-10-07T06:07:37.611Z"
+   },
+   {
+    "field": "employees",
+    "value": 30,
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0910000008zNQ6",
+    "snippet": "OpenWork 社員数: 30〜99人（レンジ下限を採用）",
+    "at": "2026-10-07T06:07:37.611Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://www.hakuhodo-dy.capco.co.jp/",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0910000008zNQ6",
+    "snippet": "OpenWork URL: https://www.hakuhodo-dy.capco.co.jp/",
+    "at": "2026-10-07T06:07:37.611Z"
    }
   ],
   "seedCategories": [
@@ -52936,12 +53179,16 @@
  {
   "key": "freemova",
   "name": "株式会社free mova",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://www.freemova.com/",
+  "domain": "freemova.com",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   },
+   {
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C1000001V48gv"
    }
   ],
   "evidence": [
@@ -52960,6 +53207,30 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区",
     "at": "2026-10-07T04:36:03.012Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区道玄坂二丁目25番12号 道玄坂通 3階3-1a",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C1000001V48gv",
+    "snippet": "OpenWork 所在地: 東京都渋谷区道玄坂二丁目25番12号 道玄坂通 3階3-1a",
+    "at": "2026-10-07T06:08:06.966Z"
+   },
+   {
+    "field": "employees",
+    "value": 100,
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C1000001V48gv",
+    "snippet": "OpenWork 社員数: 100〜499人（レンジ下限を採用）",
+    "at": "2026-10-07T06:08:06.966Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://www.freemova.com/",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C1000001V48gv",
+    "snippet": "OpenWork URL: https://www.freemova.com/",
+    "at": "2026-10-07T06:08:06.966Z"
    }
   ],
   "seedCategories": [
@@ -53001,7 +53272,8 @@
    "influencer_agency"
   ],
   "contactUrl": null,
-  "noPrtimes": true
+  "noPrtimes": true,
+  "noOpenwork": true
  },
  {
   "key": "buzzcloud",
@@ -53060,12 +53332,16 @@
  {
   "key": "chifull",
   "name": "株式会社Chi-Full",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://chi-full.jp/",
+  "domain": "chi-full.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   },
+   {
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C2x00000ZBkNX"
    }
   ],
   "evidence": [
@@ -53084,6 +53360,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 中央区",
     "at": "2026-10-07T04:36:03.012Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区桜丘町18-4 二宮ビル 1F-27",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C2x00000ZBkNX",
+    "snippet": "OpenWork 所在地: 東京都渋谷区桜丘町18-4 二宮ビル 1F-27",
+    "at": "2026-10-07T06:08:50.555Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://chi-full.jp/",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C2x00000ZBkNX",
+    "snippet": "OpenWork URL: https://chi-full.jp/",
+    "at": "2026-10-07T06:08:50.555Z"
    }
   ],
   "seedCategories": [
@@ -53095,12 +53387,16 @@
  {
   "key": "フリウエイブ",
   "name": "株式会社フリー・ウエイブ",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "http://f-w.co.jp/",
+  "domain": "f-w.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   },
+   {
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C10000011GRjZ"
    }
   ],
   "evidence": [
@@ -53119,6 +53415,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 世田谷区 池尻大橋駅 徒歩5分",
     "at": "2026-10-07T04:36:03.012Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都世田谷区池尻3-19-10　NKビル1階",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C10000011GRjZ",
+    "snippet": "OpenWork 所在地: 東京都世田谷区池尻3-19-10　NKビル1階",
+    "at": "2026-10-07T06:09:19.734Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "http://f-w.co.jp/",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C10000011GRjZ",
+    "snippet": "OpenWork URL: http://f-w.co.jp/",
+    "at": "2026-10-07T06:09:19.734Z"
    }
   ],
   "seedCategories": [
@@ -53160,7 +53472,8 @@
    "influencer_agency"
   ],
   "contactUrl": null,
-  "noPrtimes": true
+  "noPrtimes": true,
+  "noOpenwork": true
  },
  {
   "key": "マンパワグルプ",
@@ -53249,7 +53562,8 @@
    "influencer_agency"
   ],
   "contactUrl": null,
-  "noPrtimes": true
+  "noPrtimes": true,
+  "noOpenwork": true
  },
  {
   "key": "ランスタッド",
@@ -53569,7 +53883,8 @@
    "influencer_agency"
   ],
   "contactUrl": null,
-  "noPrtimes": true
+  "noPrtimes": true,
+  "noOpenwork": true
  },
  {
   "key": "anv",
@@ -53741,12 +54056,16 @@
  {
   "key": "グリンショップ",
   "name": "グリーンショップ合同会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://www.greenshop.co.jp/",
+  "domain": "greenshop.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   },
+   {
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C1000001A6SZp"
    }
   ],
   "evidence": [
@@ -53765,6 +54084,30 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 千代田区 秋葉原駅 徒歩4分",
     "at": "2026-10-07T04:36:14.179Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都新宿区北新宿1-35-20",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C1000001A6SZp",
+    "snippet": "OpenWork 所在地: 東京都新宿区北新宿1-35-20",
+    "at": "2026-10-07T06:18:33.314Z"
+   },
+   {
+    "field": "employees",
+    "value": 9,
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C1000001A6SZp",
+    "snippet": "OpenWork 社員数: 1〜9人（レンジ上限を採用）",
+    "at": "2026-10-07T06:18:33.314Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://www.greenshop.co.jp/",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C1000001A6SZp",
+    "snippet": "OpenWork URL: https://www.greenshop.co.jp/",
+    "at": "2026-10-07T06:18:33.314Z"
    }
   ],
   "seedCategories": [
@@ -53835,12 +54178,16 @@
  {
   "key": "konnektinternational",
   "name": "株式会社KONNEKT INTERNATIONAL",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://konnekt-i.com/",
+  "domain": "konnekt-i.com",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD"
+   },
+   {
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C2x00000XI6CO"
    }
   ],
   "evidence": [
@@ -53859,6 +54206,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区 表参道駅 徒歩8分",
     "at": "2026-10-07T04:36:20.379Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区南青山5-13-1 No.42 ARAI Building 6F・10",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C2x00000XI6CO",
+    "snippet": "OpenWork 所在地: 東京都港区南青山5-13-1 No.42 ARAI Building 6F・10",
+    "at": "2026-10-07T06:19:02.776Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://konnekt-i.com/",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C2x00000XI6CO",
+    "snippet": "OpenWork URL: https://konnekt-i.com/",
+    "at": "2026-10-07T06:19:02.776Z"
    }
   ],
   "seedCategories": [
@@ -53911,7 +54274,8 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noOpenwork": true
  },
  {
   "key": "firebug",
@@ -54198,7 +54562,8 @@
    "influencer_agency"
   ],
   "contactUrl": null,
-  "noPrtimes": true
+  "noPrtimes": true,
+  "noOpenwork": true
  },
  {
   "key": "gloe",
@@ -54369,7 +54734,8 @@
    "influencer_agency"
   ],
   "contactUrl": null,
-  "noPrtimes": true
+  "noPrtimes": true,
+  "noOpenwork": true
  },
  {
   "key": "マスメディアン",
@@ -54438,12 +54804,16 @@
  {
   "key": "heartfull",
   "name": "株式会社Heart Full",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "http://h-full.co.jp/",
+  "domain": "h-full.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   },
+   {
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C1000000vBGTo"
    }
   ],
   "evidence": [
@@ -54462,6 +54832,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 千代田区",
     "at": "2026-10-07T04:36:33.947Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都千代田区九段北1-4-7悠山九段ビル2F",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C1000000vBGTo",
+    "snippet": "OpenWork 所在地: 東京都千代田区九段北1-4-7悠山九段ビル2F",
+    "at": "2026-10-07T06:20:45.079Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "http://h-full.co.jp/",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C1000000vBGTo",
+    "snippet": "OpenWork URL: http://h-full.co.jp/",
+    "at": "2026-10-07T06:20:45.079Z"
    }
   ],
   "seedCategories": [
@@ -54473,12 +54859,16 @@
  {
   "key": "ダイヤモンドファンタジ",
   "name": "株式会社ダイヤモンドファンタジー",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://diamond-f.co.jp/",
+  "domain": "diamond-f.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   },
+   {
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C1000000si079"
    }
   ],
   "evidence": [
@@ -54497,6 +54887,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 中央区",
     "at": "2026-10-07T04:36:33.947Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都中央区銀座3-8-13 銀座三丁目ビルディング2F",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C1000000si079",
+    "snippet": "OpenWork 所在地: 東京都中央区銀座3-8-13 銀座三丁目ビルディング2F",
+    "at": "2026-10-07T06:21:14.129Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://diamond-f.co.jp/",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C1000000si079",
+    "snippet": "OpenWork URL: https://diamond-f.co.jp/",
+    "at": "2026-10-07T06:21:14.129Z"
    }
   ],
   "seedCategories": [
@@ -54592,7 +54998,8 @@
    "influencer_agency"
   ],
   "contactUrl": null,
-  "noPrtimes": true
+  "noPrtimes": true,
+  "noOpenwork": true
  },
  {
   "key": "trunk",
@@ -54912,13 +55319,14 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noOpenwork": true
  },
  {
   "key": "realitystudios",
   "name": "REALITY Studios株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://reality-studios.inc/",
+  "domain": "reality-studios.inc",
   "sources": [
    {
     "source": "kyujinbox",
@@ -54927,6 +55335,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
+   },
+   {
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0CIh000001BTpt"
    }
   ],
   "evidence": [
@@ -54945,6 +55357,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区 / 六本木ヒルズ",
     "at": "2026-10-07T04:36:40.719Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区六本木6-11-1 六本木ヒルズ ゲートタワー",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0CIh000001BTpt",
+    "snippet": "OpenWork 所在地: 東京都港区六本木6-11-1 六本木ヒルズ ゲートタワー",
+    "at": "2026-10-07T06:22:11.772Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://reality-studios.inc/",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0CIh000001BTpt",
+    "snippet": "OpenWork URL: https://reality-studios.inc/",
+    "at": "2026-10-07T06:22:11.772Z"
    }
   ],
   "seedCategories": [
@@ -55165,7 +55593,8 @@
    "influencer_agency"
   ],
   "contactUrl": null,
-  "noPrtimes": true
+  "noPrtimes": true,
+  "noOpenwork": true
  },
  {
   "key": "オクファン",
@@ -55308,7 +55737,8 @@
    "influencer_agency"
   ],
   "contactUrl": null,
-  "noPrtimes": true
+  "noPrtimes": true,
+  "noOpenwork": true
  },
  {
   "key": "openrec",
@@ -55569,55 +55999,8 @@
    "influencer_agency"
   ],
   "contactUrl": null,
-  "noPrtimes": true
- },
- {
-  "key": "anymindjapan",
-  "name": "AnyMind Japan株式会社",
-  "officialUrl": null,
-  "domain": null,
-  "sources": [
-   {
-    "source": "kyujinbox",
-    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD"
-   },
-   {
-    "source": "kyujinbox",
-    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
-   }
-  ],
-  "evidence": [
-   {
-    "field": "jobText",
-    "value": "「東京」マーケティング戦略プランナー「SNS・インフルエンサー施策担当... 新着",
-    "source": "kyujinbox",
-    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
-    "snippet": "求人ボックスの求人タイトル: 「東京」マーケティング戦略プランナー「SNS・インフルエンサー施策担当... 新着",
-    "at": "2026-10-07T04:36:55.386Z"
-   },
-   {
-    "field": "jobLocation",
-    "value": "東京都 港区 / 六本木ヒルズ",
-    "source": "kyujinbox",
-    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
-    "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区 / 六本木ヒルズ",
-    "at": "2026-10-07T04:36:55.386Z"
-   },
-   {
-    "field": "jobText",
-    "value": "「東京」営業・マーケティング職「ブランドコマースマーケティング事業部」",
-    "source": "kyujinbox",
-    "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
-    "snippet": "求人ボックスの求人タイトル: 「東京」営業・マーケティング職「ブランドコマースマーケティング事業部」",
-    "at": "2026-10-07T04:37:40.333Z"
-   }
-  ],
-  "seedCategories": [
-   "influencer_agency",
-   "influencer_agency"
-  ],
-  "contactUrl": null,
-  "noPrtimes": true
+  "noPrtimes": true,
+  "noOpenwork": true
  },
  {
   "key": "leadingcommunication",
@@ -55710,8 +56093,8 @@
  {
   "key": "エクスクリエ",
   "name": "株式会社エクスクリエ",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://www.excrie.co.jp/",
+  "domain": "excrie.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
@@ -55720,6 +56103,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   },
+   {
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C30000002yRA4"
    }
   ],
   "evidence": [
@@ -55738,6 +56125,30 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 初台駅 徒歩5分 / 東京オペラシティビル東京オペラシティタワー",
     "at": "2026-10-07T04:36:55.386Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都新宿区西新宿3-20-2 東京オペラシティタワー24F",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C30000002yRA4",
+    "snippet": "OpenWork 所在地: 東京都新宿区西新宿3-20-2 東京オペラシティタワー24F",
+    "at": "2026-10-07T06:23:55.224Z"
+   },
+   {
+    "field": "employees",
+    "value": 100,
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C30000002yRA4",
+    "snippet": "OpenWork 社員数: 100〜499人（レンジ下限を採用）",
+    "at": "2026-10-07T06:23:55.224Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://www.excrie.co.jp/",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C30000002yRA4",
+    "snippet": "OpenWork URL: https://www.excrie.co.jp/",
+    "at": "2026-10-07T06:23:55.224Z"
    }
   ],
   "seedCategories": [
@@ -55750,12 +56161,16 @@
  {
   "key": "zig",
   "name": "株式会社ZIG",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://mechu.info/",
+  "domain": "mechu.info",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD"
+   },
+   {
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C2x00000XWKT7"
    }
   ],
   "evidence": [
@@ -55774,6 +56189,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 大田区 千鳥町駅 徒歩5分",
     "at": "2026-10-07T04:36:55.386Z"
+   },
+   {
+    "field": "address",
+    "value": "福島県郡山市島2-43-12-2F",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C2x00000XWKT7",
+    "snippet": "OpenWork 所在地: 福島県郡山市島2-43-12-2F",
+    "at": "2026-10-07T06:24:24.282Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://mechu.info/",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C2x00000XWKT7",
+    "snippet": "OpenWork URL: https://mechu.info/",
+    "at": "2026-10-07T06:24:24.282Z"
    }
   ],
   "seedCategories": [
@@ -56034,7 +56465,8 @@
    "influencer_agency"
   ],
   "contactUrl": null,
-  "noPrtimes": true
+  "noPrtimes": true,
+  "noOpenwork": true
  },
  {
   "key": "ilc",
@@ -56119,12 +56551,16 @@
  {
   "key": "tenet",
   "name": "株式会社TENET",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://tenet.co.jp/",
+  "domain": "tenet.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   },
+   {
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C2x00000S2tUA"
    }
   ],
   "evidence": [
@@ -56143,6 +56579,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区",
     "at": "2026-10-07T04:37:20.472Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区神南1-20-2",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C2x00000S2tUA",
+    "snippet": "OpenWork 所在地: 東京都渋谷区神南1-20-2",
+    "at": "2026-10-07T06:25:08.341Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://tenet.co.jp/",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C2x00000S2tUA",
+    "snippet": "OpenWork URL: https://tenet.co.jp/",
+    "at": "2026-10-07T06:25:08.341Z"
    }
   ],
   "seedCategories": [
@@ -56568,8 +57020,8 @@
  {
   "key": "ミンカブジインフォノイド",
   "name": "株式会社ミンカブ・ジ・インフォノイド",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://minkabu.co.jp/",
+  "domain": "minkabu.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
@@ -56578,6 +57030,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   },
+   {
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C1000001J1Hik"
    }
   ],
   "evidence": [
@@ -56612,6 +57068,30 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区 / 麻布台ヒルズ森JPタワー",
     "at": "2026-10-07T04:37:47.361Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区東新橋1-9-1",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C1000001J1Hik",
+    "snippet": "OpenWork 所在地: 東京都港区東新橋1-9-1",
+    "at": "2026-10-07T06:25:37.536Z"
+   },
+   {
+    "field": "employees",
+    "value": 30,
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C1000001J1Hik",
+    "snippet": "OpenWork 社員数: 30〜99人（レンジ下限を採用）",
+    "at": "2026-10-07T06:25:37.536Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://minkabu.co.jp/",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C1000001J1Hik",
+    "snippet": "OpenWork URL: https://minkabu.co.jp/",
+    "at": "2026-10-07T06:25:37.536Z"
    }
   ],
   "seedCategories": [
@@ -56624,12 +57104,16 @@
  {
   "key": "liddell",
   "name": "LIDDELL株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://liddell.tokyo/",
+  "domain": "liddell.tokyo",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
+   },
+   {
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C10000016q10F"
    }
   ],
   "evidence": [
@@ -56648,6 +57132,30 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区 六本木駅",
     "at": "2026-10-07T04:37:27.637Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区神宮前3-35-8 ハニービル青山4F",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C10000016q10F",
+    "snippet": "OpenWork 所在地: 東京都渋谷区神宮前3-35-8 ハニービル青山4F",
+    "at": "2026-10-07T06:26:06.458Z"
+   },
+   {
+    "field": "employees",
+    "value": 30,
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C10000016q10F",
+    "snippet": "OpenWork 社員数: 30〜99人（レンジ下限を採用）",
+    "at": "2026-10-07T06:26:06.458Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://liddell.tokyo/",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C10000016q10F",
+    "snippet": "OpenWork URL: https://liddell.tokyo/",
+    "at": "2026-10-07T06:26:06.458Z"
    }
   ],
   "seedCategories": [
@@ -56659,12 +57167,16 @@
  {
   "key": "uuumマケティング",
   "name": "UUUMマーケティング株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://marketing.uuum.co.jp/",
+  "domain": "marketing.uuum.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
+   },
+   {
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0CRC0000C9kL38"
    }
   ],
   "evidence": [
@@ -56683,6 +57195,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区",
     "at": "2026-10-07T04:37:27.637Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区赤坂9-7-1 ミッドタウン・タワー28階",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0CRC0000C9kL38",
+    "snippet": "OpenWork 所在地: 東京都港区赤坂9-7-1 ミッドタウン・タワー28階",
+    "at": "2026-10-07T06:26:35.596Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://marketing.uuum.co.jp/",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0CRC0000C9kL38",
+    "snippet": "OpenWork URL: https://marketing.uuum.co.jp/",
+    "at": "2026-10-07T06:26:35.596Z"
    }
   ],
   "seedCategories": [
