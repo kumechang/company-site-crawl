@@ -1,6 +1,6 @@
 {
  "origin": "https://corp.allabout.co.jp",
- "fetchedAt": "2026-10-07T01:45:30.915Z",
+ "fetchedAt": "2026-10-07T14:26:23.276Z",
  "status": 200,
  "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\nCrawl-delay: 10"
 }

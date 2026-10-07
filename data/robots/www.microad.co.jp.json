@@ -1,6 +1,6 @@
 {
  "origin": "https://www.microad.co.jp",
- "fetchedAt": "2026-10-07T01:43:52.764Z",
+ "fetchedAt": "2026-10-07T14:25:05.304Z",
  "status": 200,
  "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://www.microad.co.jp/wp-sitemap.xml\n"
 }

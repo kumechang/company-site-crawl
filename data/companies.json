@@ -1102,6 +1102,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"sns_agency\"],\"https://www.tracom.co.jp/\",\"東京都港区赤坂1-12-32 アーク森ビル13F\",213,\"official\",\"https://www.tracom.co.jp/contact/\",[\"SNS運用代行\"]]",
    "industry": {
     "sns_agency": {
      "result": "OK",
@@ -2392,6 +2393,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"sns_agency\"],\"https://dgtrends.com/\",\"東京都新宿区西新宿6-5-1 新宿アイランドタワー 22階\",50,\"official\",\"https://dgtrends.com/contact/\",[\"広告代理店\",\"SNS運用代行\"]]",
    "industry": {
     "sns_agency": {
      "result": "OK",
@@ -2882,6 +2884,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"sns_agency\"],\"https://coconala.co.jp/\",\"東京都渋谷区桜丘町20番1号\",219,\"edinet\",\"https://coconala.co.jp/contact/\",[\"広告代理店\",\"SNS運用代行\"]]",
    "industry": {
     "sns_agency": {
      "result": "OK",
@@ -3269,6 +3272,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"sns_agency\"],\"https://www.comnico.jp/\",\"東京都港区虎ノ門4丁目1-13 プライムテラス神谷町 9階\",140,\"official\",\"https://www.comnico.jp/inquiry-hub\",[\"広告代理店\",\"SNS運用代行\"]]",
    "industry": {
     "sns_agency": {
      "result": "OK",
@@ -4643,6 +4647,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[],\"https://ayudante.jp/\",\"東京都千代田区麹町2丁目2−4\",69,\"official\",\"https://ayudante.jp/contact/\",[\"広告代理店\"]]",
    "industry": {},
    "employees": {
     "result": "OK",
@@ -4979,6 +4984,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"sns_agency\"],\"https://itsumo365.co.jp/\",\"東京都千代田区有楽町1-13-2 第一生命日比谷ファースト\",200,\"edinet\",\"https://itsumo365.co.jp/contact/\",[\"化粧品D2C/P2C\",\"SNS運用代行\"]]",
    "industry": {
     "sns_agency": {
      "result": "要確認",
@@ -5328,6 +5334,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"sns_agency\"],\"https://umy-game.com/\",\"東京都新宿区新宿1丁目24-12 the gate 新宿御苑2階\",42,\"official\",\"https://umy-game.com/contact/\",[\"インフルエンサー事務所\",\"広告代理店\",\"SNS運用代行\"]]",
    "industry": {
     "sns_agency": {
      "result": "OK",
@@ -5843,6 +5850,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"sns_agency\"],\"https://gaiax-socialmedialab.jp/\",\"東京都千代田区平河町2丁目5番地3号\",101,\"edinet\",\"https://gaiax-socialmedialab.jp/contact\",[\"広告代理店\",\"SNS運用代行\"]]",
    "industry": {
     "sns_agency": {
      "result": "OK",
@@ -6537,6 +6545,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"sns_agency\"],\"https://www.sho-san.co.jp/\",\"東京都杉並区阿佐谷南1丁目18-6 第7スカイビル301\",179,\"official\",\"https://www.sho-san.co.jp/contact\",[\"広告代理店\",\"SNS運用代行\"]]",
    "industry": {
     "sns_agency": {
      "result": "OK",
@@ -6674,6 +6683,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"sns_agency\"],\"https://stock-sun.com/\",\"東京都新宿区西新宿3丁目8番3号 新都心丸善ビル7階\",30,\"official\",\"https://stock-sun.com/about/guideline\",[\"広告代理店\",\"SNS運用代行\"]]",
    "industry": {
     "sns_agency": {
      "result": "OK",
@@ -8079,6 +8089,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"sns_agency\"],\"https://conlad.co.jp/\",\"東京都台東区元浅草2-6-6 東京日産台東ビル8階\",59,\"official\",\"https://conlad.co.jp/contact\",[\"広告代理店\",\"SNS運用代行\"]]",
    "industry": {
     "sns_agency": {
      "result": "要確認",
@@ -9029,6 +9040,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"sns_agency\"],\"https://www.sofcom.co.jp/\",\"東京都新宿区新宿1-8-1 大橋御苑駅ビル3階\",45,\"official\",\"https://www.sofcom.co.jp/contact\",[\"広告代理店\",\"SNS運用代行\"]]",
    "industry": {
     "sns_agency": {
      "result": "OK",
@@ -9366,6 +9378,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[],\"https://ysinc.co.jp/\",\"東京都渋谷区渋谷3丁目6−6 渋谷パークビル8F\",184,\"official\",\"https://ysinc.co.jp/contact/\",[\"広告代理店\"]]",
    "industry": {},
    "employees": {
     "result": "OK",
@@ -16432,6 +16445,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"sns_agency\"],\"https://www.members.co.jp/\",\"東京都中央区晴海1-8-10 晴海アイランドトリトンスクエア オフィスタワーX37階\",2836,\"edinet\",\"https://www.members.co.jp/contact\",[\"SNS運用代行\"]]",
    "industry": {
     "sns_agency": {
      "result": "要確認",
@@ -16729,6 +16743,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"sns_agency\"],\"https://www.promost.co.jp/\",\"東京都中央区銀座1-13-15 ダイワロイヤル銀座ビル オフィスフロア2F\",70,\"official\",\"https://www.promost.co.jp/contact/\",[\"広告代理店\",\"SNS運用代行\"]]",
    "industry": {
     "sns_agency": {
      "result": "OK",
@@ -17990,6 +18005,7 @@
   "noOpenwork": true,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"sns_agency\"],\"https://4x-corp.com/\",\"東京都中央区築地5丁目3番地2号 朝日新聞東京本社新館9階\",80,\"official\",\"https://4x-corp.com/contact\",[\"広告代理店\",\"SNS運用代行\"]]",
    "industry": {
     "sns_agency": {
      "result": "OK",
@@ -18708,6 +18724,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"sns_agency\"],\"https://natee.jp/\",\"東京都渋谷区渋谷1-2-5 MFPR渋谷ビル3F\",61,\"official\",\"https://natee.jp/contact\",[\"広告代理店\",\"SNS運用代行\"]]",
    "industry": {
     "sns_agency": {
      "result": "OK",
@@ -22459,10 +22476,11 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"cosme_d2c\"],\"https://axxzia.co.jp/\",\"東京都新宿区西新宿6-3-1新宿アイランド・ウィング2階\",134,\"edinet\",\"https://axxzia.co.jp/contact/\",[\"化粧品D2C/P2C\"]]",
    "industry": {
     "cosme_d2c": {
      "result": "OK",
-     "comment": "公式の自社説明に「スキンケア」あり。化粧品D2C/P2Cを取り扱っている（他に AI 等の事業もあり、化粧品D2C/P2Cは主業でない可能性）",
+     "comment": "公式サイトの本文に「化粧品/スキンケア」が複数あり、化粧品D2C/P2Cを取り扱っている（自社説明の冒頭には無く、主業でない可能性）",
      "after": "化粧品D2C/P2C"
     }
    },
@@ -22474,9 +22492,9 @@
     "source": "edinet"
    },
    "contact": {
-    "result": "OK",
-    "comment": "公式ドメイン上の問い合わせページを開いて確認",
-    "after": "https://axxzia.co.jp/contact/"
+    "result": "NG",
+    "comment": "問い合わせURLを開けない(robots.txt を取得できない(403)のためアクセスしない: https://axxzia.co.jp/cont)",
+    "after": null
    },
    "identity": {
     "result": "OK",
@@ -24708,6 +24726,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"ad_agency\"],\"http://www.trans-cosmos.co.jp/\",\"東京都渋谷区東一丁目2番20号\",18141,\"edinet\",\"https://www.trans-cosmos.co.jp/contact/\",[\"広告代理店\",\"SNS運用代行\"]]",
    "industry": {
     "ad_agency": {
      "result": "要確認",
@@ -24873,6 +24892,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"ad_agency\"],\"https://starts-pub.jp/\",\"東京都江戸川区中葛西五丁目33番14号\",240,\"edinet\",\"https://starts-pub.jp/contact\",[\"広告代理店\"]]",
    "industry": {
     "ad_agency": {
      "result": "要確認",
@@ -25062,6 +25082,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"ad_agency\"],\"http://www.aainc.co.jp/\",\"東京都渋谷区恵比寿一丁目19番15号ウノサワ東急ビル\",136,\"edinet\",\"https://www.aainc.co.jp/contact/\",[\"広告代理店\",\"SNS運用代行\"]]",
    "industry": {
     "ad_agency": {
      "result": "OK",
@@ -25337,6 +25358,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"ad_agency\"],\"http://www.tfc.co.jp/\",\"東京都港区赤坂四丁目8番10号\",705,\"edinet\",\"https://www.tfc.co.jp/contact/\",[\"広告代理店\"]]",
    "industry": {
     "ad_agency": {
      "result": "要確認",
@@ -25527,6 +25549,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"ad_agency\"],\"https://www.dm-s.co.jp/\",\"東京都武蔵野市御殿山一丁目1番3号\",324,\"edinet\",\"https://www.dm-s.co.jp/contact/\",[\"化粧品D2C/P2C\",\"広告代理店\",\"SNS運用代行\"]]",
    "industry": {
     "ad_agency": {
      "result": "OK",
@@ -25814,6 +25837,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"ad_agency\"],\"http://www.gendai-a.co.jp/\",\"東京都新宿区西新宿三丁目20番2号\",138,\"edinet\",\"https://www.gendai-a.co.jp/contact/\",[\"広告代理店\"]]",
    "industry": {
     "ad_agency": {
      "result": "OK",
@@ -26133,6 +26157,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"ad_agency\"],\"https://www.group.dentsu.com/\",\"東京都港区東新橋一丁目8番1号\",135,\"edinet\",\"https://www.group.dentsu.com/jp/contactus/\",[\"広告代理店\"]]",
    "industry": {
     "ad_agency": {
      "result": "要確認",
@@ -26314,6 +26339,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"ad_agency\"],\"https://www.y-enjin.co.jp/\",\"東京都中央区銀座5-13-16\",126,\"edinet\",\"https://www.y-enjin.co.jp/contact/\",[\"広告代理店\"]]",
    "industry": {
     "ad_agency": {
      "result": "要確認",
@@ -26487,6 +26513,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"ad_agency\"],\"https://vectorinc.co.jp/\",\"東京都港区赤坂四丁目15番1号\",184,\"edinet\",\"https://vectorinc.co.jp/inquiry\",[\"インフルエンサー事務所\",\"広告代理店\"]]",
    "industry": {
     "ad_agency": {
      "result": "要確認",
@@ -26660,6 +26687,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"ad_agency\"],\"https://macbee-planet.com/\",\"東京都渋谷区渋谷3ー11ー11IVYイーストビル5階\",42,\"edinet\",\"https://macbee-planet.com/contact\",[\"広告代理店\"]]",
    "industry": {
     "ad_agency": {
      "result": "要確認",
@@ -26837,6 +26865,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"ad_agency\"],\"https://www.microad.co.jp/\",\"東京都渋谷区桜丘町20-1 渋谷インフォスタワー13階\",246,\"edinet\",\"https://www.microad.co.jp/contact/\",[\"広告代理店\"]]",
    "industry": {
     "ad_agency": {
      "result": "OK",
@@ -27010,11 +27039,12 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"ad_agency\"],\"https://www.hakuhodody-holdings.co.jp/\",\"東京都港区赤坂五丁目3番1号\",144,\"edinet\",\"https://www.hakuhodody-holdings.co.jp/contact/\",[\"広告代理店\"]]",
    "industry": {
     "ad_agency": {
-     "result": "要確認",
-     "comment": "公式サイトに広告代理店を示す具体的な語がなく、関連語(広告/マーケティング)のみ。取り扱いの有無は要確認",
-     "after": null
+     "result": "OK",
+     "comment": "公式の自社説明に「広告運用」あり。広告代理店を取り扱っている（他に コンサルティング/AI 等の事業もあり、広告代理店は主業でない可能性）",
+     "after": "広告代理店"
     }
    },
    "employees": {
@@ -27404,6 +27434,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"ad_agency\"],\"https://speee.jp/\",\"東京都港区六本木四丁目1番4号\",601,\"edinet\",\"https://speee.jp/contact\",[\"広告代理店\"]]",
    "industry": {
     "ad_agency": {
      "result": "要確認",
@@ -27419,9 +27450,9 @@
     "source": "edinet"
    },
    "contact": {
-    "result": "OK",
-    "comment": "公式ドメイン上の問い合わせページを開いて確認",
-    "after": "https://speee.jp/contact"
+    "result": "NG",
+    "comment": "問い合わせURLを開けない(HTTP 403 https://speee.jp/contact)",
+    "after": null
    },
    "identity": {
     "result": "OK",
@@ -27577,6 +27608,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"ad_agency\"],\"https://geniee.co.jp/\",\"東京都新宿区西新宿6-8-1\",460,\"edinet\",\"https://geniee.co.jp/inquiry/\",[\"広告代理店\"]]",
    "industry": {
     "ad_agency": {
      "result": "OK",
@@ -28070,6 +28102,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"ad_agency\"],\"https://emnet.co.jp/\",\"東京都新宿区西新宿六丁目10番1号\",130,\"edinet\",\"https://emnet.co.jp/forms/contact/\",[\"広告代理店\",\"SNS運用代行\"]]",
    "industry": {
     "ad_agency": {
      "result": "OK",
@@ -28329,6 +28362,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"ad_agency\"],\"https://www.septeni-holdings.co.jp/\",\"東京都新宿区西新宿八丁目17番1号\",97,\"edinet\",\"https://www.septeni-holdings.co.jp/contact/\",[\"広告代理店\"]]",
    "industry": {
     "ad_agency": {
      "result": "OK",
@@ -28511,10 +28545,11 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"ad_agency\"],\"https://corp.allabout.co.jp/\",\"東京都渋谷区恵比寿南1丁目15番1号\",126,\"edinet\",\"https://corp.allabout.co.jp/inquiry/info/info.html\",[\"広告代理店\"]]",
    "industry": {
     "ad_agency": {
      "result": "OK",
-     "comment": "公式サイトの本文に「ネット広告/インターネット広告/広告事業」が複数あり、広告代理店を取り扱っている（自社説明の冒頭には無く、主業でない可能性）（他に プラットフォーム 等の事業もあり、広告代理店は主業でない可能性）",
+     "comment": "公式サイトの本文に「ネット広告/インターネット広告/広告事業」が複数あり、広告代理店を取り扱っている（自社説明の冒頭には無く、主業でない可能性）（他に 金融/プラットフォーム 等の事業もあり、広告代理店は主業でない可能性）",
      "after": "広告代理店"
     }
    },
@@ -28811,6 +28846,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"ad_agency\"],\"https://www.medix-inc.co.jp/\",\"東京都千代田区神田神保町1‐105\",268,\"edinet\",\"https://www.medix-inc.co.jp/contact/\",[\"広告代理店\",\"SNS運用代行\"]]",
    "industry": {
     "ad_agency": {
      "result": "OK",
@@ -29071,6 +29107,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"ad_agency\"],\"https://www.valuecommerce.co.jp/\",\"東京都港区芝2丁目7番17号 住友芝公園ビル7階\",381,\"edinet\",\"https://www.valuecommerce.co.jp/contact/\",[\"広告代理店\"]]",
    "industry": {
     "ad_agency": {
      "result": "要確認",
@@ -29228,6 +29265,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"ad_agency\"],\"https://www.gmo-c.jp/\",\"東京都渋谷区道玄坂一丁目2番3号\",103,\"edinet\",\"https://www.gmo-c.jp/service-inquiry/\",[\"広告代理店\"]]",
    "industry": {
     "ad_agency": {
      "result": "要確認",
@@ -29385,6 +29423,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"ad_agency\"],\"https://www.so-netmedia.jp/\",\"東京都品川区大崎二丁目11番1号\",151,\"edinet\",\"https://www.so-netmedia.jp/contact/\",[\"広告代理店\"]]",
    "industry": {
     "ad_agency": {
      "result": "OK",
@@ -29542,10 +29581,11 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"ad_agency\"],\"https://orchestra-hd.co.jp/\",\"東京都渋谷区恵比寿四丁目20番3号\",40,\"edinet\",\"https://orchestra-hd.co.jp/contact/\",[\"広告代理店\"]]",
    "industry": {
     "ad_agency": {
      "result": "OK",
-     "comment": "公式の自社説明に「広告代理/ネット広告/インターネット広告」あり。広告代理店を取り扱っている（他に 人材/ゲーム/クラウド 等の事業もあり、広告代理店は主業でない可能性）",
+     "comment": "公式の自社説明に「広告代理/ネット広告/インターネット広告」あり。広告代理店を取り扱っている（他に システム開発/人材/クラウド 等の事業もあり、広告代理店は主業でない可能性）",
      "after": "広告代理店"
     }
    },
@@ -29715,6 +29755,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"ad_agency\"],\"https://digitalift.co.jp/\",\"東京都渋谷区神宮前六丁目17番11号\",46,\"edinet\",\"https://digitalift.co.jp/contact/\",[\"広告代理店\",\"SNS運用代行\"]]",
    "industry": {
     "ad_agency": {
      "result": "OK",
@@ -30486,6 +30527,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"cosme_d2c\"],\"https://www.houseofrose.co.jp/\",\"東京都港区赤坂二丁目21番7号\",752,\"edinet\",\"https://www.houseofrose.jp/contact/\",[\"化粧品D2C/P2C\"]]",
    "industry": {
     "cosme_d2c": {
      "result": "OK",
@@ -43546,6 +43588,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[],\"https://frontier-pr.jp/\",\"東京都千代田区九段南3-7-2 九段みなみビル2F\",41,\"official\",\"https://frontier-pr.jp/contact.html\",[\"インフルエンサー事務所\",\"広告代理店\"]]",
    "industry": {},
    "employees": {
     "result": "NG",
@@ -43912,6 +43955,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"cosme_d2c\"],\"https://storiiy.com/\",\"東京都渋谷区神南1-19-4\",26,\"official\",\"https://storiiy.com/contact/\",[\"化粧品D2C/P2C\"]]",
    "industry": {
     "cosme_d2c": {
      "result": "OK",
@@ -44211,6 +44255,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"cosme_d2c\"],\"https://takeuchi-corp.jp/\",\"東京都品川区西五反田1-18-9 五反田NTビル 5F\",95,\"official\",\"https://takeuchi-corp.jp/contact/\",[\"化粧品D2C/P2C\"]]",
    "industry": {
     "cosme_d2c": {
      "result": "OK",
@@ -46336,6 +46381,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"cosme_d2c\"],\"https://www.p-antiaging.com/\",\"東京都港区虎ノ門二丁目6番1号虎ノ門ヒルズステーションタワー\",174,\"edinet\",\"https://www.p-antiaging.co.jp/ja/contact.html\",[\"化粧品D2C/P2C\"]]",
    "industry": {
     "cosme_d2c": {
      "result": "OK",
@@ -46787,6 +46833,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[\"cosme_d2c\"],\"https://www.2wayworld.jp/\",\"東京都渋谷区神宮前3-1-17 2Way World Bld.\",50,\"official\",\"https://www.2wayworld.jp/contact\",[\"化粧品D2C/P2C\"]]",
    "industry": {
     "cosme_d2c": {
      "result": "OK",
@@ -48204,6 +48251,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[],\"http://www.ritsubi.co.jp/\",\"東京都江東区有明3-6-11 東京ファッションタウンビル東館8F\",47,\"official\",\"https://www.ritsubi.co.jp/contact/corporation/\",[\"広告代理店\"]]",
    "industry": {},
    "employees": {
     "result": "OK",
@@ -48807,6 +48855,7 @@
   "contactUrl": null,
   "checks": {
    "verifiedAt": "2026-10-07",
+   "sig": "[2,[],\"https://jeane.jp/\",\"東京都港区南青山3-1-31 KD南青山ビル4F\",135,\"official\",\"https://jeane.jp/contact/\",[\"広告代理店\"]]",
    "industry": {},
    "employees": {
     "result": "OK",

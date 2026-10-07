@@ -1,6 +1,6 @@
 {
  "origin": "https://ayudante.jp",
- "fetchedAt": "2026-10-07T01:35:39.945Z",
+ "fetchedAt": "2026-10-07T14:17:47.369Z",
  "status": 200,
  "text": "# START YOAST BLOCK\n# ---------------------------\nUser-agent: *\nDisallow:\n\nSitemap: https://ayudante.jp/sitemap_index.xml\n# ---------------------------\n# END YOAST BLOCK\n####"
 }

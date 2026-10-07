@@ -1,6 +1,6 @@
 {
  "origin": "https://www.gmo-c.jp",
- "fetchedAt": "2026-10-07T03:00:45.826Z",
+ "fetchedAt": "2026-10-07T14:27:22.194Z",
  "status": 200,
  "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://www.gmo-c.jp/wp-sitemap.xml\n"
 }

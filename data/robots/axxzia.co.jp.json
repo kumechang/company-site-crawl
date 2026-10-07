@@ -1,6 +1,6 @@
 {
  "origin": "https://axxzia.co.jp",
- "fetchedAt": "2026-10-07T01:41:16.831Z",
- "status": 200,
- "text": "User-agent: *\nDisallow: /n2axel/\nDisallow: /pro/n2axel/\nDisallow: /product/n2axel-superior-essence/\nDisallow: /product/n2axel-superior-moist-emulsion/\nDisallow: /product/n2axel-superior-lotion/\nDisallow: /_ir/\n"
+ "fetchedAt": "2026-10-07T14:22:01.141Z",
+ "status": 403,
+ "text": ""
 }

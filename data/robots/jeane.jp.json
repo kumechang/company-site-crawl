@@ -1,6 +1,6 @@
 {
  "origin": "https://jeane.jp",
- "fetchedAt": "2026-10-07T01:29:30.808Z",
+ "fetchedAt": "2026-10-07T14:29:31.224Z",
  "status": 200,
  "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://jeane.jp/sitemap.xml\nSitemap: https://jeane.jp/sitemap.rss\n"
 }

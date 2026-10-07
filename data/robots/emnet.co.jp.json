@@ -1,6 +1,6 @@
 {
  "origin": "https://emnet.co.jp",
- "fetchedAt": "2026-10-07T01:45:09.871Z",
+ "fetchedAt": "2026-10-07T14:26:07.947Z",
  "status": 200,
  "text": "User-Agent: *\nDisallow: /contact/contact/\nDisallow: /recruit/contact/\n\nSitemap: https://emnet.co.jp/sitemap.xml\n"
 }
