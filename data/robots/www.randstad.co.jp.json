@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.randstad.co.jp",
+ "fetchedAt": "2026-10-07T07:11:26.543Z",
+ "status": 200,
+ "text": "User-agent: bingbot\nCrawl-delay: 60\nDisallow: /myrandstad/\nDisallow: /spot/\n\nUser-agent: Meta-ExternalAgent\nCrawl-delay: 60\nDisallow: /myrandstad/\nDisallow: /spot/\n\nUser-agent: GPTBot\nDisallow: /myrandstad/\nDisallow: /spot/\n\nUser-agent: ClaudeBot\nCrawl-delay: 5\nDisallow: /myrandstad/\n\nUser-Agent: *\nDisallow: /myrandstad/"
+}

@@ -1,0 +1,6 @@
+{
+ "origin": "https://f-w.co.jp",
+ "fetchedAt": "2026-10-07T07:10:47.877Z",
+ "status": 200,
+ "text": "\tUser-agent: *\nDisallow: /wp/wp-admin/\nAllow: /wp/wp-admin/admin-ajax.php\n\nSitemap: https://f-w.co.jp/sitemap.xml\nSitemap: https://f-w.co.jp/sitemap.rss\n"
+}

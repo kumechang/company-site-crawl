@@ -9499,6 +9499,8 @@
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -9587,6 +9589,8 @@
    "influencer_agency",
    "cosme_d2c",
    "cosme_d2c",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
@@ -11613,6 +11617,8 @@
   ],
   "seedCategories": [
    "sns_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
@@ -17989,10 +17995,6 @@
    {
     "source": "gbizinfo",
     "url": "https://info.gbiz.go.jp/"
-   },
-   {
-    "source": "official",
-    "url": "https://digima.asahi.co.jp/"
    }
   ],
   "evidence": [
@@ -18043,62 +18045,6 @@
     "url": "https://info.gbiz.go.jp/",
     "snippet": "Gビズインフォ 従業員数: 41人",
     "at": "2026-10-06T10:48:08.604Z"
-   },
-   {
-    "field": "officialError",
-    "value": "robots.txt を取得できない(403)のためアクセスしない: https://digiasa.co.jp/",
-    "source": "official",
-    "url": "https://digiasa.co.jp/",
-    "snippet": "",
-    "at": "2026-10-07T07:03:01.588Z"
-   },
-   {
-    "field": "profileText",
-    "value": "朝日放送グループがSNS支援、動画支援「ASAHIメソッド」 株式会社デジアサ（朝日放送グループ）独自の | マーケティング手法「ASAHIメソッド」 | 会社情報・所属マーケター | お役立ち資料 | サービス資料 | お問い合わせ | ASAHIメソッドとは | SNS支援 | 動画支援 | 広告支援 | サイト制作支援 | 導入事例・実績 | ノウハウブログ | ウェビナー・勉強会 | 検索 | Topics | more | ・ | 【10/7～9開催】「マーケティングWeek-MaS-」にブース出展します | ・ | 【8/20・21開催】「営業・マーケDXPO 東京 ’26」にブース出展します | 支援実績 | 導入企業様の一覧はこちら | NEW | 2026年10月06日 | YouTube運用代行で失敗する7つの原因｜契約前に確認すべきポイントを解説 | 2026年10月02日 | YouTube運用で成果を上げるコツとは？やってはいけないことも紹介 | 2026年10月02日 | 企業YouTubeのKPIはこの5つだけ。再生回数・登録者数より重要な数字とは？ | 2026年10月02日 | 【2026年度最新】YouTube運用代行会社 オススメ企業14選！費用相場・依頼するメリットも | NEW | 2026年10月06日 | YouTube運用のおすすめ会社は？目的別の選び方とおすすめ企業を徹底解説【2026年最新版】 | NEW | 2026年10月06日 | YouTube運用代行で失敗する7つの原因｜契約前に確認すべきポイントを解説 | 2026年10月02日 | YouTube運用で成果を上げるコツとは？やってはいけないことも紹介 | 2026年10月02日 | 企業YouTubeのKPIはこの5つだけ。再生回数・登録者数より重要な数字とは？ | 2026年10月02日 | 【2026年度最新】YouTube運用代行会社 オススメ企業14選！費用相場・依頼するメリットも | NEW | 2026年10月06日 | YouTube運用のおすすめ会社は？目的別の選び方とおすすめ企業を徹底解説【2026年最新版】 | NEW | 2026年10月06日 | YouTube運用代行で失敗する7つの原因｜契約前に確認すべきポイントを解説 | 2026年10月02日 | YouTube運用で成果を上げるコツとは？やってはいけないことも紹介 | 2026年10月02日 | 企業YouTubeのKPIはこの5つだけ。再生回数・登録者数より重要な数字とは？ | ブログ一覧はこちら | 導入事例・実績（一例） | 朝日放送テレビ株式会社（ナイトinナイト） | さらに詳しく | 朝日放送テレビ株式会社（暮らしの動画メディア「Onnela」） | さらに詳しく | 株式会社阪急阪神カード | さらに詳しく | kiko+＆gg* | さらに詳しく | 兵庫県宝塚市 | さらに詳しく | 朝日放送テレビ株式会社（ナイトinナイト） | さらに詳しく | 朝日放送テレビ株式会社（暮らしの動画メディア「Onnela」） | さらに詳しく | 株式会社阪急阪神カード | さらに詳しく | kiko+＆gg* | さらに詳しく | 兵庫県宝塚市 | さらに詳しく | 朝日放送テレビ株式会社（ナイトinナイト） | さらに詳しく | 朝日放送テレビ株式会社（暮らしの動画メディア「Onnela」） | さらに詳しく | 株式会社阪急阪神カード | …",
-    "source": "official",
-    "url": "https://digima.asahi.co.jp/",
-    "snippet": "トップページ",
-    "at": "2026-10-07T07:03:01.590Z"
-   },
-   {
-    "field": "employees",
-    "value": 46,
-    "source": "official",
-    "url": "https://digima.asahi.co.jp/info",
-    "snippet": "従業員 | 46名(令和8年4月) | 資本金 | 8500万円(",
-    "at": "2026-10-07T07:03:01.594Z"
-   },
-   {
-    "field": "profileText",
-    "value": "株式会社デジアサ（朝日放送グループ）独自の | マーケティング手法「ASAHIメソッド」 | 会社情報・所属マーケター | お役立ち資料 | サービス資料 | お問い合わせ | ASAHIメソッドとは | SNS支援 | 動画支援 | 広告支援 | サイト制作支援 | 導入事例・実績 | ノウハウブログ | ウェビナー・勉強会 | 検索 | Topics | more | ・ | 【10/7～9開催】「マーケティングWeek-MaS-」にブース出展します | ・ | 【8/20・21開催】「営業・マーケDXPO 東京 ’26」にブース出展します | 支援実績 | 導入企業様の一覧はこちら | NEW | 2026年10月06日 | YouTube運用代行で失敗する7つの原因｜契約前に確認すべきポイントを解説 | 2026年10月02日 | YouTube運用で成果を上げるコツとは？やってはいけないことも紹介 | 2026年10月02日 | 企業YouTubeのKPIはこの5つだけ。再生回数・登録者数より重要な数字とは？ | 2026年10月02日 | 【2026年度最新】YouTube運用代行会社 オススメ企業14選！費用相場・依頼するメリットも | NEW | 2026年10月06日 | YouTube運用のおすすめ会社は？目的別の選び方とおすすめ企業を徹底解説【2026年最新版】 | NEW | 2026年10月06日 | YouTube運用代行で失敗する7つの原因｜契約前に確認すべきポイントを解説 | 2026年10月02日 | YouTube運用で成果を上げるコツとは？やってはいけないことも紹介 | 2026年10月02日 | 企業YouTubeのKPIはこの5つだけ。再生回数・登録者数より重要な数字とは？ | 2026年10月02日 | 【2026年度最新】YouTube運用代行会社 オススメ企業14選！費用相場・依頼するメリットも | NEW | 2026年10月06日 | YouTube運用のおすすめ会社は？目的別の選び方とおすすめ企業を徹底解説【2026年最新版】 | NEW | 2026年10月06日 | YouTube運用代行で失敗する7つの原因｜契約前に確認すべきポイントを解説 | 2026年10月02日 | YouTube運用で成果を上げるコツとは？やってはいけないことも紹介 | 2026年10月02日 | 企業YouTubeのKPIはこの5つだけ。再生回数・登録者数より重要な数字とは？ | ブログ一覧はこちら | 導入事例・実績（一例） | 朝日放送テレビ株式会社（ナイトinナイト） | さらに詳しく | 朝日放送テレビ株式会社（暮らしの動画メディア「Onnela」） | さらに詳しく | 株式会社阪急阪神カード | さらに詳しく | kiko+＆gg* | さらに詳しく | 兵庫県宝塚市 | さらに詳しく | 朝日放送テレビ株式会社（ナイトinナイト） | さらに詳しく | 朝日放送テレビ株式会社（暮らしの動画メディア「Onnela」） | さらに詳しく | 株式会社阪急阪神カード | さらに詳しく | kiko+＆gg* | さらに詳しく | 兵庫県宝塚市 | さらに詳しく | 朝日放送テレビ株式会社（ナイトinナイト） | さらに詳しく | 朝日放送テレビ株式会社（暮らしの動画メディア「Onnela」） | さらに詳しく | 株式会社阪急阪神カード | さらに詳しく | 詳しくはこちら | 開催予定ウェビナー・勉強…",
-    "source": "official",
-    "url": "https://digima.asahi.co.jp/",
-    "snippet": "会社概要ページ",
-    "at": "2026-10-07T07:03:01.594Z"
-   },
-   {
-    "field": "address",
-    "value": "東京都港区浜松町二丁目3番1号 日本生命浜松町クレアタワー18階",
-    "source": "official",
-    "url": "https://digima.asahi.co.jp/info",
-    "snippet": "東京都港区浜松町二丁目3番1号 日本生命浜松町クレアタワー18階",
-    "at": "2026-10-07T07:03:01.594Z"
-   },
-   {
-    "field": "profileText",
-    "value": "株式会社デジアサ（朝日放送グループ）独自の | マーケティング手法「ASAHIメソッド」 | 会社情報・所属マーケター | お役立ち資料 | サービス資料 | お問い合わせ | ASAHIメソッドとは | SNS支援 | 動画支援 | 広告支援 | サイト制作支援 | 導入事例・実績 | ノウハウブログ | ウェビナー・勉強会 | 検索 | 会社情報・所属マーケター | HOME>会社情報・所属マーケター | 事業理念 | 会社概要 | マーケター・クリエイター | 事業理念 | “TRUST ACCELERATION” | 「信頼」を加速させ、マーケティングを勝利する。 | AIの加速によって景色が塗り替わる今、市場は想像を超える熱量で沸き立っています。昨日までの正解が瞬時に過去になる。私はこの激動を、最高にワクワクするチャンスだと確信しています。 | どれほど手法がデジタル化しても、最後は「誰を信じるか」に尽きます。私たちは地上波放送を通じて75年もの間、「信頼」という看板を守り抜いてきました。この積み上げた「信頼」を、ただ守るためだけには使いません。混沌とするデジタル領域において、マーケティングを勝利へと突き動かす最強のブースターに変える。それが、私の掲げる“TRUST ACCELERATION”です。 | 地上波局として培った「全てが誠実に結ばれる」という確かな土台があるからこそ、AIという爆速のエンジンを誰よりも深く踏み込める。安全を担保したまま顧客目線で必ず結果を出し、マーケティングの課題解決を完遂する。この圧倒的な「解決力」こそが、新生デジアサの価値です。 | 「ASAHIメソッド」は、きれいな提案書を作るための場所ではありません。皆様を確実に勝利へと導くための、私たちの覚悟そのものです。 | まだ誰も見たことのないお客様の未来を、「結果」で塗り替えられた最高の景色に変えていく。新しく走り出すデジアサの事業理念“TRUST ACCELERATION”にどうぞご期待ください。 | 株式会社デジアサ 代表取締役社長 水町 勝利 | 会社概要 | 名称 | 株式会社デジアサ | 設立 | 昭和61年2月19日 | 社名変更 | 平成18年11月1日 | 所在地 | 本社：〒553-0003 大阪市福島区福島2丁目4番3号 ABCアネックス6階 | 東京オフィス：〒105-0013 東京都港区浜松町二丁目3番1号 日本生命浜松町クレアタワー18階 | 常勤役員 | 代表取締役社長 水町 勝利 | 取締役 葛原 宏一 | 取締役 山﨑 暢子 | 役員 | 取締役5名（うち常勤3名）・監査役1名 | 従業員 | 46名（令和8年4月） | 資本金 | 8500万円（朝日放送グループホールディングス（株）の100%出資） | 事業内容 | ・字幕放送コンテンツの制作/運用 | ・字幕制作ソフト「モジウェーブPRO」開発/販売 | ・データ放送のコンテンツ制作/運用 | ・ホームページなどWEBコンテンツの制作/運用 | ・デジタルコンテンツの制作/運用 | ・SNS運用代行、SNS広告運用代行 | ・番組配信運用サポート | ・パブリッシャー向け広告配信運用 | ・デジタルセールス（マーケティングサポート） | ・WEB系システム開発 | 沿革 | 昭和61年2月「朝日テレスキャン放送株式会社」設立 | 平成8年4月「株式会社朝日文字テレビ」に社名変更 | 平成12年11月「歴史街道」で番組字幕・運用開始 | 平成15年12月地上デジタル放送開始…",
-    "source": "official",
-    "url": "https://digima.asahi.co.jp/info",
-    "snippet": "会社概要ページ",
-    "at": "2026-10-07T07:03:01.595Z"
-   },
-   {
-    "field": "contactUrl",
-    "value": "https://digima.asahi.co.jp/contact",
-    "source": "official",
-    "url": "https://digima.asahi.co.jp/",
-    "snippet": "リンク文言「お問い合わせ」/ ページ実在とフォームの記述を確認",
-    "at": "2026-10-07T07:03:01.603Z"
    }
   ],
   "seedCategories": [
@@ -38468,6 +38414,7 @@
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -38604,6 +38551,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
@@ -38768,6 +38716,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
@@ -38963,6 +38912,7 @@
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -39082,6 +39032,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
@@ -39240,6 +39191,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
@@ -45773,10 +45725,6 @@
    {
     "source": "openwork",
     "url": "https://www.openwork.jp/company.php?m_id=a0CRC0000ImPxyL"
-   },
-   {
-    "source": "official",
-    "url": "https://sky-farm.co.jp/"
    }
   ],
   "evidence": [
@@ -45819,54 +45767,6 @@
     "url": "https://www.openwork.jp/company.php?m_id=a0CRC0000ImPxyL",
     "snippet": "OpenWork URL: https://sky-farm.co.jp/",
     "at": "2026-10-06T16:54:10.568Z"
-   },
-   {
-    "field": "officialError",
-    "value": "robots.txt を取得できない(error net::ERR_BLOCKED_BY_CLIENT at http://sky-farm.jp/robots",
-    "source": "official",
-    "url": "http://sky-farm.jp/",
-    "snippet": "",
-    "at": "2026-10-07T07:03:03.805Z"
-   },
-   {
-    "field": "profileText",
-    "value": "スカイファーム株式会社 | GOOD TIME, GOOD PLACE. スカイファーム株式会社 | GOOD TIME, GOOD PLACE. 読み込まれました | スカイファーム株式会社 | GOOD TIME, GOOD PLACE. | 事業内容 | arrow_drop_up | サービス一覧 | テーブルオーダー | デリバリー | テイクアウト・OMO | 商業施設DX | 導入事例 | 企業情報 | お知らせ | arrow_drop_up | プレスリリース | セミナー | お知らせ | 採用情報 | launch | お問い合わせ | mail_outline | 世界中に | テクノロジーを通じて | 居場所をつくる。 | GOOD TIME,GOOD PLACE. | SERVICE | モバイルオーダーシステム | NEW PORT | NEW PORTモバイルオーダーシステムとは、スマートフォンによる注文＆決済システムのこと。お客様のスマートフォンから食事を選べ、お会計まで並ばずにできるセルフオーダーシステムです。 | 事前決済・事後決済・テイクアウト・デリバリー・OMOと様々なシーンでご活用いただけます。 | trending_flat | VIEW MORE | 商業施設DX支援 | お客様の状況に合わせた様々なシステム連携、システム提供が可能です。 | ・テナント賃料以外でのマネタイズ支援 | ・勤怠管理システム | ・ロボット提供 | ・デジタルマップ作成 | ・アプリ開発 | ・データプラットフォーム連携 | trending_flat | VIEW MORE | CASE | PARTNERS | 採用パートナー様 | 導入事例 | 2026/6/18 00:00 | 「キャッシュレス反対ゼロ」、11店舗の料理をひとつのカートで。高層オフィスビル型フードホールの新しいかたち - NEW PORT導入事例 vol.9 | ■ 施設概要施設名：TORANOMON MARCHÉ（TORANOMON MARCHÉ）所在地：アルセアタワー（東京都港区虎ノ門）低層商業フロア施設規模：187坪、11テナントNEW PORT導入：2025年11月■ はじめに東京・虎ノ門。近年、大型再開発が相次ぎ、ビジネスエリアとしての存在感を増す... | 2026/2/17 01:00 | 観光・商業・就業が集う街で\"目的地化\"するリウボウフードホールの顧客体験戦略とは？- NEW PORT導入事例 vol.8 | 沖縄県那覇市の中心部、国際通りに程近い場所に立地する「パレットくもじ」。創業から長い歴史を持つこの商業施設が、2025年11月にオープンしたフードホール「リウボウフードホール」では、モバイルオーダーシステム「NEW PORT」を導入し、デジタルと人的サービスを融合させた新しい飲食体験を提供している。... | 2025/10/13 23:00 | たまプラーザ テラスが仕掛ける、SC起点の地域活性化プロジェクト「たまメシ。」とは？- NEW PORT導入事例 vol.7 | 2025年に開業15周年を迎えるたまプラーザ テラス。2025年7月から、施設特化型モバイルオーダーシステム「NEW PORT」を基幹システムとする、たまプラーザ テラスの店舗および地域飲食店が加盟するモバイルオーダーサービス「たまメシ。」を開始しました。本サービスでは、テイクアウトやテーブルオーダ... | trending_flat | 導入事例…",
-    "source": "official",
-    "url": "https://sky-farm.co.jp/",
-    "snippet": "トップページ",
-    "at": "2026-10-07T07:03:03.806Z"
-   },
-   {
-    "field": "address",
-    "value": "神奈川県横浜市西区みなとみらい2-2-1",
-    "source": "official",
-    "url": "https://sky-farm.co.jp/",
-    "snippet": "神奈川県横浜市西区みなとみらい2-2-1",
-    "at": "2026-10-07T07:03:03.807Z"
-   },
-   {
-    "field": "profileText",
-    "value": "スカイファーム株式会社 | GOOD TIME, GOOD PLACE. 読み込まれました | スカイファーム株式会社 | GOOD TIME, GOOD PLACE. | 事業内容 | arrow_drop_up | サービス一覧 | テーブルオーダー | デリバリー | テイクアウト・OMO | 商業施設DX | 導入事例 | 企業情報 | お知らせ | arrow_drop_up | プレスリリース | セミナー | お知らせ | 採用情報 | launch | お問い合わせ | mail_outline | 世界中に | テクノロジーを通じて | 居場所をつくる。 | GOOD TIME,GOOD PLACE. | SERVICE | モバイルオーダーシステム | NEW PORT | NEW PORTモバイルオーダーシステムとは、スマートフォンによる注文＆決済システムのこと。お客様のスマートフォンから食事を選べ、お会計まで並ばずにできるセルフオーダーシステムです。 | 事前決済・事後決済・テイクアウト・デリバリー・OMOと様々なシーンでご活用いただけます。 | trending_flat | VIEW MORE | 商業施設DX支援 | お客様の状況に合わせた様々なシステム連携、システム提供が可能です。 | ・テナント賃料以外でのマネタイズ支援 | ・勤怠管理システム | ・ロボット提供 | ・デジタルマップ作成 | ・アプリ開発 | ・データプラットフォーム連携 | trending_flat | VIEW MORE | CASE | PARTNERS | 採用パートナー様 | 導入事例 | 2026/6/18 00:00 | 「キャッシュレス反対ゼロ」、11店舗の料理をひとつのカートで。高層オフィスビル型フードホールの新しいかたち - NEW PORT導入事例 vol.9 | ■ 施設概要施設名：TORANOMON MARCHÉ（TORANOMON MARCHÉ）所在地：アルセアタワー（東京都港区虎ノ門）低層商業フロア施設規模：187坪、11テナントNEW PORT導入：2025年11月■ はじめに東京・虎ノ門。近年、大型再開発が相次ぎ、ビジネスエリアとしての存在感を増す... | 2026/2/17 01:00 | 観光・商業・就業が集う街で\"目的地化\"するリウボウフードホールの顧客体験戦略とは？- NEW PORT導入事例 vol.8 | 沖縄県那覇市の中心部、国際通りに程近い場所に立地する「パレットくもじ」。創業から長い歴史を持つこの商業施設が、2025年11月にオープンしたフードホール「リウボウフードホール」では、モバイルオーダーシステム「NEW PORT」を導入し、デジタルと人的サービスを融合させた新しい飲食体験を提供している。... | 2025/10/13 23:00 | たまプラーザ テラスが仕掛ける、SC起点の地域活性化プロジェクト「たまメシ。」とは？- NEW PORT導入事例 vol.7 | 2025年に開業15周年を迎えるたまプラーザ テラス。2025年7月から、施設特化型モバイルオーダーシステム「NEW PORT」を基幹システムとする、たまプラーザ テラスの店舗および地域飲食店が加盟するモバイルオーダーサービス「たまメシ。」を開始しました。本サービスでは、テイクアウトやテーブルオーダ... | trending_flat | 導入事例一覧 | COMPANY | デリバリーやテイクアウトなど | モバイルオ…",
-    "source": "official",
-    "url": "https://sky-farm.co.jp/",
-    "snippet": "会社概要ページ",
-    "at": "2026-10-07T07:03:03.807Z"
-   },
-   {
-    "field": "profileText",
-    "value": "企業情報 | SKY FARM 読み込まれました | スカイファーム株式会社 | GOOD TIME, GOOD PLACE. | 事業内容 | arrow_drop_up | サービス一覧 | テーブルオーダー | デリバリー | テイクアウト・OMO | 商業施設DX | 導入事例 | 企業情報 | お知らせ | arrow_drop_up | プレスリリース | セミナー | お知らせ | 採用情報 | launch | お問い合わせ | mail_outline | ホーム | ・ | 企業情報 | COMPANY | MISSION | 都市の “ ひととき ” をデザインする。 | Seeking the Future of Lifestyle. | VISION | 世界中にテクノロジーを通じて | 居場所をつくる。 | GOOD TIME, GOOD PLACE. | VALUES | Go Fast | 真剣で向き合おう。 | Become Different | 圧倒的に成長しよう。 | Talk Honestly | 誠実に接しよう。 | COMPANY PROFILE | 会社概要 | 会社名 | スカイファーム株式会社 （SKY FARM, Inc.） | 所在地 | 〒220-8107 神奈川県横浜市西区みなとみらい2-2-1 | 横浜ランドマークタワー7F | 役員 | 代表取締役 社長CEO 木村 拓也 | 取締役 副社長COO 森本 秋偉 | 社外取締役 篠原 靖直 | 社外取締役 島田 敏宏 | 社外取締役 井上 俊宏 | 社外監査役 細川 健 | 顧問弁護士 | リンクス法律事務所 | AZX総合法律事務所 | 設立 | 2015年7月27日 | 資本金 | 445,328,461円（資本準備金含む） | 事業内容 | デリバリー・モバイルオーダー事業 | 次世代オーダープラットフォーム事業 | 商業空間DX事業 | 主要取引先 | 三菱地所株式会社 | 三菱地所プロパティマネジメント株式会社 | 三菱地所・サイモン株式会社 | 株式会社三越伊勢丹ホールディングス | 株式会社三越伊勢丹プロパティ・デザイン | 東日本旅客鉄道株式会社 | 株式会社ルミネ | 阪急阪神不動産株式会社 | 阪急電鉄株式会社 | 阪急阪神ビルマネジメント株式会社 | 株式会社相鉄アーバンクリエイツ | 株式会社相鉄ビルマネジメント | 東急不動産株式会社 | 株式会社東急モールズデベロップメント | 日鉄興和不動産株式会社 | 久茂地都市開発株式会社 | KDDI株式会社 | 株式会社ローソン | 他 | お問い合わせ | サービス・取材・パートナーシップのご相談などはこちらからお気軽にご連絡ください。 | trending_flat | お問い合わせはこちら | 採用について | チームのビジョンに共感し、共に前進できる仲間を探しています。一緒に働いてみませんか？ | launch | 採用情報はこちら | スカイファーム株式会社 | 〒220-8107 | 神奈川県横浜市西区みなとみらい2-2-1 | 横浜ランドマークタワー7F NANA Lv.（ナナレベル） | 事業内容 | arrow_drop_up | サービス一覧 | モバイルオーダー | デリバリー | テイクアウト OMO | 商業施設DX | 導入事例 | 企業情報 | お知らせ | arrow_drop_up | プレスリリース | セミナー | お知らせ |…",
-    "source": "official",
-    "url": "https://sky-farm.co.jp/company",
-    "snippet": "会社概要ページ",
-    "at": "2026-10-07T07:03:03.807Z"
-   },
-   {
-    "field": "contactUrl",
-    "value": "https://sky-farm.co.jp/contact",
-    "source": "official",
-    "url": "https://sky-farm.co.jp/",
-    "snippet": "リンク文言「お問い合わせ」/ ページ実在とフォームの記述を確認",
-    "at": "2026-10-07T07:03:03.809Z"
    }
   ],
   "seedCategories": [
@@ -49908,6 +49808,7 @@
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -50004,6 +49905,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
@@ -50127,6 +50029,7 @@
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -50205,6 +50108,7 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
@@ -52756,6 +52660,10 @@
    {
     "source": "openwork",
     "url": "https://www.openwork.jp/company.php?m_id=a0C2x00000YCiMW"
+   },
+   {
+    "source": "official",
+    "url": "https://fairy-line.co.jp/"
    }
   ],
   "evidence": [
@@ -52798,6 +52706,62 @@
     "url": "https://www.openwork.jp/company.php?m_id=a0C2x00000YCiMW",
     "snippet": "OpenWork URL: https://fairy-line.co.jp/",
     "at": "2026-10-07T06:03:58.189Z"
+   },
+   {
+    "field": "profileText",
+    "value": "Fairy Line株式会社 HOME | 事業内容 | 会社内情報紹介 | 企業情報 | お知らせ | お問い合わせ | SERVICE | 事業内容 | リスキリング事業 | 労働者派遣・職業紹介事業 | アウトソーシング事業 | COMPANY | 企業情報 | GREETING | ごあいさつ | PHILOSOPHY | 企業理念 | COMPANY | 会社概要 | 現在の自分を超える | 新しい学びの力で未来をつかみ取る | 失敗は成功への一歩 | 安心して挑戦できる場所 | 外注ではなく | 共に成果を追うパートナー | 現在の自分を超える | 新しい学びの力で未来をつかみ取る | 失敗は成功への一歩 | 安心して挑戦できる場所 | 外注ではなく | 共に成果を追うパートナー | 2026.02.12 | プレスリリース | 新事業部（リスキリング事業部）設立のお知らせ | 2025.10.25 | 更新情報 | サイトリニューアルのお知らせ | 学びが未来を創造し | スキルで社会を進化させる | すべての人へ可能性の提供をできる企業を目指しています。 | 10年後、20年後の将来を確かなものにする。 | グローバルな視点を持ち生活に革新をもたらすことが当社の使命です。 | 人とスキルの新しい関係 | AIの登場により人はさらに先のスキルを手に入れる必要がでてきています。 | 人工知能に負けず社会に必要とされる人材の排出を実現します。 | GREETING | PHILOSOPHY | COMPANY | GREETING | 挑戦を楽しむ | ビジネスの世界は常に変化し、昨日の正解が今日も通用するとは限りません。だからこそ、私たちは変化を恐れず、挑戦し続ける組織でありたいと考えています。 | ごあいさつ | PHILOSOPHY | リスキリングを起点とし、関わる人へ確たるスキルの確率と収入の向上を目指し雇用の創出 | 営業コンサルティングや派遣事業・有料職業紹介事業を行っている弊社にとって20代の人材への仕事の采配は選択肢が多く比較的容易に様々なことがらを用意することが可能です。これは社会が本音では若い戦力が欲しいというメッセージと捉えています。 | 企業理念 | COMPANY | 「学ぶ」で終わらせない | 「働き、実践し、成長し、次のキャリアへつなげる」まで伴走 | 企業様のご予算やニーズに合わせ、派遣・紹介・紹介予定派遣など、最適なご提案を行うことで、長期的に信頼できるパートナーとしてコストと人材力のバランスを実現。 | 企業情報 | SERVICE | 事業内容 | 主軸となる３つの柱をご紹介いたします。 | 人とスキルの共生を軸に新しい未来の実現と雇用を創出します。 | リスキリング事業 | 当社のリスキリング事業は、単なる「教育サービス」ではありません。私たちは受講生に研修をして終わりではなく、自社で採用し、人材一人ひとりに責任を持ち、実務に直結したスキルを習得できるまでの環境を提供しています。 | リスキリング事業 | 労働者派遣・職業紹介事業 | 弊社の労働者派遣・職業紹介事業は、「人材の質」と「企業様への最適なマッチング」に徹底してこだわっています。 | まず、弊社で働くスタッフは一人ひとりが明確な目標を持ち、成長意欲をもって就業しています。 | 労働者派遣・職業紹介事業 | アウトソーシング事業 | 当社は、企業様の業務効率化と売上向上を支援するため、コールセンター営業代行およびWebマーケティング支援…",
+    "source": "official",
+    "url": "https://fairy-line.co.jp/",
+    "snippet": "トップページ",
+    "at": "2026-10-07T07:04:45.899Z"
+   },
+   {
+    "field": "employees",
+    "value": 40,
+    "source": "official",
+    "url": "https://fairy-line.co.jp/information/company/",
+    "snippet": "従業員数 40名 | 主要取引銀行 三井住友銀行 渋谷駅前支店",
+    "at": "2026-10-07T07:04:53.385Z"
+   },
+   {
+    "field": "profileText",
+    "value": "HOME | 事業内容 | 会社内情報紹介 | 企業情報 | お知らせ | お問い合わせ | SERVICE | 事業内容 | リスキリング事業 | 労働者派遣・職業紹介事業 | アウトソーシング事業 | COMPANY | 企業情報 | GREETING | ごあいさつ | PHILOSOPHY | 企業理念 | COMPANY | 会社概要 | 現在の自分を超える | 新しい学びの力で未来をつかみ取る | 失敗は成功への一歩 | 安心して挑戦できる場所 | 外注ではなく | 共に成果を追うパートナー | 現在の自分を超える | 新しい学びの力で未来をつかみ取る | 失敗は成功への一歩 | 安心して挑戦できる場所 | 外注ではなく | 共に成果を追うパートナー | 2026.02.12 | プレスリリース | 新事業部（リスキリング事業部）設立のお知らせ | 2025.10.25 | 更新情報 | サイトリニューアルのお知らせ | 学びが未来を創造し | スキルで社会を進化させる | すべての人へ可能性の提供をできる企業を目指しています。 | 10年後、20年後の将来を確かなものにする。 | グローバルな視点を持ち生活に革新をもたらすことが当社の使命です。 | 人とスキルの新しい関係 | AIの登場により人はさらに先のスキルを手に入れる必要がでてきています。 | 人工知能に負けず社会に必要とされる人材の排出を実現します。 | GREETING | PHILOSOPHY | COMPANY | GREETING | 挑戦を楽しむ | ビジネスの世界は常に変化し、昨日の正解が今日も通用するとは限りません。だからこそ、私たちは変化を恐れず、挑戦し続ける組織でありたいと考えています。 | ごあいさつ | PHILOSOPHY | リスキリングを起点とし、関わる人へ確たるスキルの確率と収入の向上を目指し雇用の創出 | 営業コンサルティングや派遣事業・有料職業紹介事業を行っている弊社にとって20代の人材への仕事の采配は選択肢が多く比較的容易に様々なことがらを用意することが可能です。これは社会が本音では若い戦力が欲しいというメッセージと捉えています。 | 企業理念 | COMPANY | 「学ぶ」で終わらせない | 「働き、実践し、成長し、次のキャリアへつなげる」まで伴走 | 企業様のご予算やニーズに合わせ、派遣・紹介・紹介予定派遣など、最適なご提案を行うことで、長期的に信頼できるパートナーとしてコストと人材力のバランスを実現。 | 企業情報 | SERVICE | 事業内容 | 主軸となる３つの柱をご紹介いたします。 | 人とスキルの共生を軸に新しい未来の実現と雇用を創出します。 | リスキリング事業 | 当社のリスキリング事業は、単なる「教育サービス」ではありません。私たちは受講生に研修をして終わりではなく、自社で採用し、人材一人ひとりに責任を持ち、実務に直結したスキルを習得できるまでの環境を提供しています。 | リスキリング事業 | 労働者派遣・職業紹介事業 | 弊社の労働者派遣・職業紹介事業は、「人材の質」と「企業様への最適なマッチング」に徹底してこだわっています。 | まず、弊社で働くスタッフは一人ひとりが明確な目標を持ち、成長意欲をもって就業しています。 | 労働者派遣・職業紹介事業 | アウトソーシング事業 | 当社は、企業様の業務効率化と売上向上を支援するため、コールセンター営業代行およびWebマーケティング支援を中心としたアウトソーシングサ…",
+    "source": "official",
+    "url": "https://fairy-line.co.jp/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:04:53.385Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都新宿区西新宿3-7-1",
+    "source": "official",
+    "url": "https://fairy-line.co.jp/information/company/",
+    "snippet": "東京都新宿区西新宿3-7-1",
+    "at": "2026-10-07T07:04:53.386Z"
+   },
+   {
+    "field": "profileText",
+    "value": "HOME | 事業内容 | 会社内情報紹介 | 企業情報 | お知らせ | お問い合わせ | SERVICE | 事業内容 | リスキリング事業 | 労働者派遣・職業紹介事業 | アウトソーシング事業 | COMPANY | 企業情報 | GREETING | ごあいさつ | PHILOSOPHY | 企業理念 | COMPANY | 会社概要 | ホーム 企業情報 会社概要 | 会社概要 | 社名 Fairy Line株式会社 | 本社 〒163-1030 | 東京都新宿区西新宿3-7-1 | 新宿パークタワーN30階 | 創業 2017年4月17日 | 代表者名 榎本 直人 | 電話番号 03-4405-5368 | 決算 年1回（2月） | 事業内容 人材総合サービス | ITソリューション | 営業サポート | 従業員数 40名 | 主要取引銀行 三井住友銀行 渋谷駅前支店 | 職業紹介許可番号 13-ユ-311714 | 人材派遣許可番号 派 13-314559 | 主要取引先 アデコ株式会社 | 株式会社綜合キャリアオプション | アクセス | 〒163-1030 | 東京都新宿区西新宿3-7-1 新宿パークタワーN30階 | 最寄駅：新宿駅 | COMPANY | 企業情報 | ごあいさつ | 企業理念 | 会社概要 | SERVICE | ABOUT US | 企業情報 | TOP | 事業内容 | リスキリング事業 | 派遣・職業紹介事業 | アウトソーシング事業 | 会社内情報紹介 | 人員紹介 | 企業情報 | ごあいさつ | 企業理念 | 会社概要 | お知らせ | INFORMATION | 企業情報 | SERVICE | 事業内容 | ABOUT US | 会社内情報紹介 | プライバシーポリシー お問い合わせ | © 2025 Fairy Line株式会社",
+    "source": "official",
+    "url": "https://fairy-line.co.jp/information/company/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:04:53.386Z"
+   },
+   {
+    "field": "profileText",
+    "value": "HOME | 事業内容 | 会社内情報紹介 | 企業情報 | お知らせ | お問い合わせ | SERVICE | 事業内容 | リスキリング事業 | 労働者派遣・職業紹介事業 | アウトソーシング事業 | COMPANY | 企業情報 | GREETING | ごあいさつ | PHILOSOPHY | 企業理念 | COMPANY | 会社概要 | 人とスキルの新しい関係 | INFORMATION | 企業情報 | COMPANY | 会社概要 | PHILOSOPHY | 企業理念 | GREETING | ごあいさつ | TOP | 事業内容 | リスキリング事業 | 派遣・職業紹介事業 | アウトソーシング事業 | 会社内情報紹介 | 人員紹介 | 企業情報 | ごあいさつ | 企業理念 | 会社概要 | お知らせ | INFORMATION | 企業情報 | SERVICE | 事業内容 | ABOUT US | 会社内情報紹介 | プライバシーポリシー お問い合わせ | © 2025 Fairy Line株式会社",
+    "source": "official",
+    "url": "https://fairy-line.co.jp/information/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:04:53.386Z"
+   },
+   {
+    "field": "contactUrl",
+    "value": "https://fairy-line.co.jp/contact/",
+    "source": "official",
+    "url": "https://fairy-line.co.jp/",
+    "snippet": "リンク文言「お問い合わせ」/ ページ実在とフォームの記述を確認",
+    "at": "2026-10-07T07:04:56.617Z"
    }
   ],
   "seedCategories": [
@@ -52827,6 +52791,10 @@
    {
     "source": "openwork",
     "url": "https://www.openwork.jp/company.php?m_id=a0CRC00007XeDo4"
+   },
+   {
+    "source": "official",
+    "url": "https://spectrum-inc.co.jp/"
    }
   ],
   "evidence": [
@@ -52869,6 +52837,70 @@
     "url": "https://www.openwork.jp/company.php?m_id=a0CRC00007XeDo4",
     "snippet": "OpenWork URL: https://spectrum-inc.co.jp/",
     "at": "2026-10-07T06:04:27.279Z"
+   },
+   {
+    "field": "profileText",
+    "value": "無限の色彩で新たな価値を描く｜株式会社スペクトラム ABOUT US | SERVICE | WORKS | RECRUIT | NEWS | CONTACT | Drawing New | Value with | Infinite Colors | 無限の色彩で 新たな価値を描く | SCROLL | SPECTRUM SPECTRUM SPECTRUM SPECTRUM SPECTRUM SPECTRUM | SPECTRUM SPECTRUM SPECTRUM SPECTRUM SPECTRUM SPECTRUM | SPECTRUM SPECTRUM SPECTRUM SPECTRUM SPECTRUM SPECTRUM | ABOUT US | わたしたちについて | スペクトラムは、人、モノ、サービスを結びつけ、 | 新たな価値を創造するマーケティングパートナーです。 | 多様な人材、アイデア、アプローチを活用して、 | お客さまのビジネスに新しい価値を描きます。 | VIEW MORE | SERVICE | 事業紹介 | 市場分析からプロモーション戦略立案、広告運用、クリエイティブ制作まで | 広告代理店として培った豊富なノウハウを活かし、お客様のビジネスを | トータルでサポートいたします。 | VIEW MORE | 01 | INTERNET ADVERTISING BUSINESS | インターネット広告事業 | 成果報酬型モデルを軸に、無駄な広告費を抑えながら確実な成果を提供します。 | 02 | ASP BUSINESS | ASP事業 | 広告主とメディア・インフルエンサーをつなぐ成果報酬型プラットフォームを提供しています。 | 03 | INFLUENCER BUSINESS | インフルエンサー事業 | Instagramを中心としたSNSを活用し、影響力を活用した共感型マーケティングを実現します。 | 04 | ADVERTISING MATERIAL SALES BUSINESS | 広告素材販売事業 | ターゲットに響くクリエイティブで、広告のクオリティとパフォーマンスを最大化します。 | 05 | CATERING BUSINESS | ケータリング事業 | スペクトラムのケータリング事業「Condiment」は、食の提供を通じて、新たな価値を創造します。 | WORKS | 事例紹介 | アフィリエイト広告に最適な素材を、キャスティングから撮影までお任せで提供 | アフィリエイト | モデルキャスティング | 広告素材撮影代行 | 目標件数に5,000件届かない状況から、1.8万件/月の獲得に成功！ | Google 広告 | LINE Ads Platform | Yahoo!広告 | インターネット広告運用 | 育毛系医薬品の広告運用で1日200件の新規獲得を達成！ | LINE Ads Platform | インターネット広告運用 | 新規顧客獲得 | VIEW MORE | RECRUIT | 採用情報 | 可能性を描こう。 | 私たちは、挑戦する。 | でも、ただ無謀に突き進むわけではない。 | 着実に、しなやかに、そして何より | 「ワクワク」という原動力を大切にしながら。 | インターネット広告という私たちの強みを活かし、 | 新たな価値を生み出すことに挑戦し続ける。 | それが、スペクトラムです。 | VIEW MORE | NEWS | お知らせ | 2026.04.15 | お知ら…",
+    "source": "official",
+    "url": "https://spectrum-inc.co.jp/",
+    "snippet": "トップページ",
+    "at": "2026-10-07T07:05:03.967Z"
+   },
+   {
+    "field": "profileText",
+    "value": "ABOUT US | SERVICE | WORKS | RECRUIT | NEWS | CONTACT | Drawing New | Value with | Infinite Colors | 無限の色彩で 新たな価値を描く | SCROLL | SPECTRUM SPECTRUM SPECTRUM SPECTRUM SPECTRUM SPECTRUM | SPECTRUM SPECTRUM SPECTRUM SPECTRUM SPECTRUM SPECTRUM | SPECTRUM SPECTRUM SPECTRUM SPECTRUM SPECTRUM SPECTRUM | ABOUT US | わたしたちについて | スペクトラムは、人、モノ、サービスを結びつけ、 | 新たな価値を創造するマーケティングパートナーです。 | 多様な人材、アイデア、アプローチを活用して、 | お客さまのビジネスに新しい価値を描きます。 | VIEW MORE | SERVICE | 事業紹介 | 市場分析からプロモーション戦略立案、広告運用、クリエイティブ制作まで | 広告代理店として培った豊富なノウハウを活かし、お客様のビジネスを | トータルでサポートいたします。 | VIEW MORE | 01 | INTERNET ADVERTISING BUSINESS | インターネット広告事業 | 成果報酬型モデルを軸に、無駄な広告費を抑えながら確実な成果を提供します。 | 02 | ASP BUSINESS | ASP事業 | 広告主とメディア・インフルエンサーをつなぐ成果報酬型プラットフォームを提供しています。 | 03 | INFLUENCER BUSINESS | インフルエンサー事業 | Instagramを中心としたSNSを活用し、影響力を活用した共感型マーケティングを実現します。 | 04 | ADVERTISING MATERIAL SALES BUSINESS | 広告素材販売事業 | ターゲットに響くクリエイティブで、広告のクオリティとパフォーマンスを最大化します。 | 05 | CATERING BUSINESS | ケータリング事業 | スペクトラムのケータリング事業「Condiment」は、食の提供を通じて、新たな価値を創造します。 | WORKS | 事例紹介 | アフィリエイト広告に最適な素材を、キャスティングから撮影までお任せで提供 | アフィリエイト | モデルキャスティング | 広告素材撮影代行 | 目標件数に5,000件届かない状況から、1.8万件/月の獲得に成功！ | Google 広告 | LINE Ads Platform | Yahoo!広告 | インターネット広告運用 | 育毛系医薬品の広告運用で1日200件の新規獲得を達成！ | LINE Ads Platform | インターネット広告運用 | 新規顧客獲得 | VIEW MORE | RECRUIT | 採用情報 | 可能性を描こう。 | 私たちは、挑戦する。 | でも、ただ無謀に突き進むわけではない。 | 着実に、しなやかに、そして何より | 「ワクワク」という原動力を大切にしながら。 | インターネット広告という私たちの強みを活かし、 | 新たな価値を生み出すことに挑戦し続ける。 | それが、スペクトラムです。 | VIEW MORE | NEWS | お知らせ | 2026.04.15 | お知らせ | ケータリングサービス「Condiment」が…",
+    "source": "official",
+    "url": "https://spectrum-inc.co.jp/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:05:14.201Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区桜丘町23-17 シティコート桜丘408号室",
+    "source": "official",
+    "url": "https://spectrum-inc.co.jp/company",
+    "snippet": "東京都渋谷区桜丘町23-17 シティコート桜丘408号室",
+    "at": "2026-10-07T07:05:14.201Z"
+   },
+   {
+    "field": "profileText",
+    "value": "ABOUT US | SERVICE | WORKS | RECRUIT | NEWS | CONTACT | HOME ABOUT US | ABOUT US | わたしたちについて | 無限の色彩で新たな価値を描く | スペクトラムは、人、モノ、サービスを結びつけ、 | 新たな価値を創造するマーケティングパートナーです。 | 多様な人材、アイデア、アプローチを活用して、 | お客さまのビジネスに新しい価値を描きます。 | MISSION | ミッション | 「金儲けと人儲け」 | スペクトラム株式会社では、事業の発展と売り上げの確保を最優先にしています。 | この売り上げは、事業投資に活用するだけでなく、従業員の報酬向上や就業環境の改善にも役立てられています。 | 結果として、より多くの人がこの会社で働きたいと感じられる環境作りを目指しています。 | また、社会に対してもしっかり貢献し、その中で共に成長できるメンバーやパートナーを増やすことを目指しています。 | これこそが「金儲けと人儲け」という当社の理念です。 | OUR VALUE | 行動指針 | 01約束を守り、責任感を持つ | 最後まで責任感を持ち、有言実行できる組織に | 02主体的に取り組む | 自主性を超えて、主体性を培う | 03成功に貪欲に | 諦めない、なぜにこだわる。失敗を失敗のまま終わらせない | 04何事もスピーディー、即レス！ | まずは質より量を。即レス＝信用 | 05否定しない | 建設的なコミュニケーションを図り、お互いを尊重する | CEO MESSAGE | 代表メッセージ | マーケティングの力で価値を生み、 | “ありがとう”を増やしていく | 株式会社スペクトラムは、インターネット広告事業を通じて、お客様のビジネスの成長を支援し、売上向上に貢献することを使命としています。広告は単なる手段ではなく、企業の魅力や価値を正しく届けるための大切なツールです。私たちは、マーケティングの力でお客様の課題を解決し、「売れる仕組み」を創り上げることにこだわり続けています。 | しかし、私たちが本当に目指したいのは、それだけではありません。 | 広告やマーケティングの力を活かし、事業を通じて社会に貢献することで、「ありがとう」と言われるような仕事をしていきたい。そんな想いを持って、スペクトラムの事業を展開しています。 | これからも、変化し続ける時代の中で、広告・マーケティングを軸に、より多くの人々に貢献できる事業を創り出していきます。 | OUTLINE | 会社概要 | 会社名 | 株式会社スペクトラム | 代表取締役社長 | 世一 貴大 | 事業内容 | インターネット広告事業、ASP事業、インフルエンサー事業、ケータリング事業、広告素材販売事業 | 資本金 | 10,000,000円（2023年6月現在） | 設立 | 2018年4月 | 住所 | 勤務地 | 〒153-0042 東京都目黒区青葉台4-7-7住友不動産青葉台ヒルズ8F | 渋谷駅 徒歩15分 / 池尻大橋駅 徒歩7分 / 神泉駅 徒歩7分 | 所在地：〒150-0031 東京都渋谷区桜丘町23-17 シティコート桜丘408号室 | 電話番号 | 03-6403-5301 | CONTACT | お問い合わせ | 当社のサービスについてなど、お気軽にお問い合わせください。 | CONTACT | Spectrum Co., Ltd. | 408, City Court Sakuragaoka…",
+    "source": "official",
+    "url": "https://spectrum-inc.co.jp/company",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:05:14.201Z"
+   },
+   {
+    "field": "profileText",
+    "value": "ABOUT US | SERVICE | WORKS | RECRUIT | NEWS | CONTACT | HOME NEWS | NEWS | お知らせ | 2026.04.15 | お知らせ | ケータリングサービス「Condiment」が2店舗目を出店しました。 | 2025.03.08 | お知らせ | Webサイトをリニューアルいたしました。 | すべて | お知らせ | CONTACT | お問い合わせ | 当社のサービスについてなど、お気軽にお問い合わせください。 | CONTACT | Spectrum Co., Ltd. | 408, City Court Sakuragaoka, 23-17 Sakuragaoka-cho, | Shibuya-ku, Tokyo 150-0031, Japan | Instagram | note | ABOUT US | SERVICE | WORKS | RECRUIT | NEWS | COLUMN | CONTACT | PRIVACY POLICY | © Spectrum. All rights reserved.",
+    "source": "official",
+    "url": "https://spectrum-inc.co.jp/news/info",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:05:14.201Z"
+   },
+   {
+    "field": "profileText",
+    "value": "ABOUT US | SERVICE | WORKS | RECRUIT | NEWS | CONTACT | HOME NEWS ケータリングサービス「CONDIMENT」が2店舗目を出店しました。 | 2026.04.15 お知らせ | ケータリングサービス「Condiment」が2店舗目を出店しました。 | 株式会社スペクトラムのケータリングサービス「Condiment」は、サービスエリア拡大に伴い2店舗目をオープンしました。 | 「Condiment」公式HPはこちら | 一覧へ戻る | すべて | お知らせ | CONTACT | お問い合わせ | 当社のサービスについてなど、お気軽にお問い合わせください。 | CONTACT | Spectrum Co., Ltd. | 408, City Court Sakuragaoka, 23-17 Sakuragaoka-cho, | Shibuya-ku, Tokyo 150-0031, Japan | Instagram | note | ABOUT US | SERVICE | WORKS | RECRUIT | NEWS | COLUMN | CONTACT | PRIVACY POLICY | © Spectrum. All rights reserved.",
+    "source": "official",
+    "url": "https://spectrum-inc.co.jp/news/info/222.html",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:05:14.201Z"
+   },
+   {
+    "field": "profileText",
+    "value": "ABOUT US | SERVICE | WORKS | RECRUIT | NEWS | CONTACT | HOME NEWS WEBサイトをリニューアルいたしました。 | 2025.03.08 お知らせ | Webサイトをリニューアルいたしました。 | 弊社のWebサイトをリニューアルいたしますので、お知らせいたします。 | 今回のリニューアルでは、より快適にご利用いただけるよう、デザインや構成を一新しました。 | 今後も定期的にサイトを更新し、サービス改善、コンテンツの充実に努めてまいります。 | これからも、引き続きよろしくお願い申し上げます。 | 一覧へ戻る | すべて | お知らせ | CONTACT | お問い合わせ | 当社のサービスについてなど、お気軽にお問い合わせください。 | CONTACT | Spectrum Co., Ltd. | 408, City Court Sakuragaoka, 23-17 Sakuragaoka-cho, | Shibuya-ku, Tokyo 150-0031, Japan | Instagram | note | ABOUT US | SERVICE | WORKS | RECRUIT | NEWS | COLUMN | CONTACT | PRIVACY POLICY | © Spectrum. All rights reserved.",
+    "source": "official",
+    "url": "https://spectrum-inc.co.jp/news/info/9.html",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:05:14.201Z"
+   },
+   {
+    "field": "contactUrl",
+    "value": "https://spectrum-inc.co.jp/contact",
+    "source": "official",
+    "url": "https://spectrum-inc.co.jp/",
+    "snippet": "リンク文言「CONTACT」/ ページ実在とフォームの記述を確認",
+    "at": "2026-10-07T07:05:17.029Z"
    }
   ],
   "seedCategories": [
@@ -52896,6 +52928,10 @@
    {
     "source": "openwork",
     "url": "https://www.openwork.jp/company.php?m_id=a0C2x00000Wiwn3"
+   },
+   {
+    "source": "official",
+    "url": "https://direct-tech.jp/"
    }
   ],
   "evidence": [
@@ -52938,6 +52974,46 @@
     "url": "https://www.openwork.jp/company.php?m_id=a0C2x00000Wiwn3",
     "snippet": "OpenWork URL: https://direct-tech.jp/",
     "at": "2026-10-07T06:04:56.900Z"
+   },
+   {
+    "field": "profileText",
+    "value": "Direct Tech – わたしたちは、独自のメソッドでD2Cブランドをグロースさせる BRANDING PRODUCE COMPANYです。 コンテンツへスキップ | PROJECTS | SERVICE | COMPANY | NEWS | CONTACT | RECRUIT | わたしたちは、独自のメソッドでD2Cブランドをグロースさせる | BRANDING PRODUCE COMPANYです。 | 多様な領域でブランド展開する自社ブランドのノウハウをベースに、 | エージェントとしてもワンストップでブランドのグロースを支援します。 | PROJECTPROJECT | EITHER& | 2024 | グローバルビューティーの最先端にあるk-Beauty! | vim BEAUTY | 2021 | ハリウッドセレブさながらのメイクで話題のマリリンをプロデューサーとして迎えたトータルビューティーブランド。 | VIEW MORE | SERVICESERVICE | D2Cブランドコンサルティング＆プロデュース | D2C Brand Consulting & Produce | VIEW MORE | COMPANYCOMPANY | Vision | -ビジョン | HELLO WORLD | D2C BRANDING PRODUCE COMPANY | Mission | Statement | -ミッション・ステートメント | 独自のメソッドでD2Cブランドをグロースさせる多様な領域でブランド展開する自社ブランドのノウハウをベースに、エージェントとしてもワンストップでブランドのグロースを支援。 | Our Value | -私たちの価値 | ブランドを短期間で立ち上げ、早期認知・集客・収益化を可能にしたBRANDING PRODUCE | VIEW MORE | NEWSNEWS | 〈vim BEAUTY〉素肌錯覚ファンデーション「all day moist liquid foundation」に、自然な血色感を演出する新色「21 bloom」ミディアムピンクベージュカラーが登場 | 2026.8.25 | vim BEAUTY | 〈vim BEAUTY〉夏限定コレクション「summer edition 2026 」を展開「stay cool, stay strong.」をテーマに夏のメイク悩みに寄り添う新アイテムが登場 | 2026.7.22 | vim BEAUTY | ＜vim BEAUTY＞仕上がりとキープ力で支持！クッションファンデ「effect like finish cushion foundation」に血色感を演出するミディアムピンクベージュカラーが登場 | 2026.6.22 | vim BEAUTY | <vim BEAUTY>うるおい満ちる水艶UV下地「aqua charge UV essence」3月3日(火)より店頭発売を順次開始 | 2026.3.2 | vim BEAUTY | VIEW LIST | CONTACT | Direct Techへのお問い合わせは | フォームにてお受けしております。 | お問い合わせフォーム | RECRUIT | Direct Techの採用についてはこちらから | ご確認ください。 | ENTRY | PROJECTS | SERVICE | COMPANY | NEWS | CONTACT | RECRUIT | Copyright Direct Te…",
+    "source": "official",
+    "url": "https://direct-tech.jp/",
+    "snippet": "トップページ",
+    "at": "2026-10-07T07:05:23.861Z"
+   },
+   {
+    "field": "profileText",
+    "value": "コンテンツへスキップ | PROJECTS | SERVICE | COMPANY | NEWS | CONTACT | RECRUIT | わたしたちは、独自のメソッドでD2Cブランドをグロースさせる | BRANDING PRODUCE COMPANYです。 | 多様な領域でブランド展開する自社ブランドのノウハウをベースに、 | エージェントとしてもワンストップでブランドのグロースを支援します。 | PROJECTPROJECT | EITHER& | 2024 | グローバルビューティーの最先端にあるk-Beauty! | vim BEAUTY | 2021 | ハリウッドセレブさながらのメイクで話題のマリリンをプロデューサーとして迎えたトータルビューティーブランド。 | VIEW MORE | SERVICESERVICE | D2Cブランドコンサルティング＆プロデュース | D2C Brand Consulting & Produce | VIEW MORE | COMPANYCOMPANY | Vision | -ビジョン | HELLO WORLD | D2C BRANDING PRODUCE COMPANY | Mission | Statement | -ミッション・ステートメント | 独自のメソッドでD2Cブランドをグロースさせる多様な領域でブランド展開する自社ブランドのノウハウをベースに、エージェントとしてもワンストップでブランドのグロースを支援。 | Our Value | -私たちの価値 | ブランドを短期間で立ち上げ、早期認知・集客・収益化を可能にしたBRANDING PRODUCE | VIEW MORE | NEWSNEWS | 〈vim BEAUTY〉素肌錯覚ファンデーション「all day moist liquid foundation」に、自然な血色感を演出する新色「21 bloom」ミディアムピンクベージュカラーが登場 | 2026.8.25 | vim BEAUTY | 〈vim BEAUTY〉夏限定コレクション「summer edition 2026 」を展開「stay cool, stay strong.」をテーマに夏のメイク悩みに寄り添う新アイテムが登場 | 2026.7.22 | vim BEAUTY | ＜vim BEAUTY＞仕上がりとキープ力で支持！クッションファンデ「effect like finish cushion foundation」に血色感を演出するミディアムピンクベージュカラーが登場 | 2026.6.22 | vim BEAUTY | <vim BEAUTY>うるおい満ちる水艶UV下地「aqua charge UV essence」3月3日(火)より店頭発売を順次開始 | 2026.3.2 | vim BEAUTY | VIEW LIST | CONTACT | Direct Techへのお問い合わせは | フォームにてお受けしております。 | お問い合わせフォーム | RECRUIT | Direct Techの採用についてはこちらから | ご確認ください。 | ENTRY | PROJECTS | SERVICE | COMPANY | NEWS | CONTACT | RECRUIT | Copyright Direct Tech, Inc. All Rights Reserved. | Privacy policy｜ Outbound policy",
+    "source": "official",
+    "url": "https://direct-tech.jp/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:05:26.222Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区千駄ヶ谷2-1-8 Barbizon8 4F",
+    "source": "official",
+    "url": "https://direct-tech.jp/company",
+    "snippet": "東京都渋谷区千駄ヶ谷2-1-8 Barbizon8 4F",
+    "at": "2026-10-07T07:05:26.222Z"
+   },
+   {
+    "field": "profileText",
+    "value": "コンテンツへスキップ | PROJECTS | SERVICE | COMPANY | NEWS | CONTACT | RECRUIT | ABOUT COMPANY | Vision | -ビジョン | HELLO WORLD | D2C BRANDING PRODUCE COMPANY | Mission | Statement | -ミッション・ステートメント | 独自のメソッドでD2Cブランドをグロースさせる | 多様な領域でブランド展開する自社ブランドのノウハウを | ベースに、エージェントとしてもワンストップで | ブランドのグロースを支援。 | Our Value | -私たちの価値 | ブランドを短期間で立ち上げ、 | 早期認知・集客・収益化を可能にしたBRANDING PRODUCE | Company Profile | 会社概要 | 社名 株式会社Direct Tech | 本社 〒151-0051 東京都渋谷区千駄ヶ谷2-1-8 Barbizon8 4F | 代表取締役 井上 信太郎 | 設立 2018年11月 | 資本金 1億円 | 事業内容 商品の企画・製造・販売マーケティング事業 | 広告代理事業 | PR事業 | インターネットに関する総合コンサルティング業務 | インターネットのホームページの企画立案、制作及び保守に関する業務 | インターネットのコンテンツの企画・制作・運営・配信・販売 | Webソリューションの開発・販売 | インターネット等のオンラインを利用した市場調査、宣伝及び広告等の受託 | インターネット等のネットワークシステムを利用した通信販売業 | キャスティング事業 | 物流・倉庫・コールセンター等のフルフィルメント受託事業 | 前各号に附帯又は関連する一切の事業 | Access | アクセス | CONTACT | Direct Techへのお問い合わせは | フォームにてお受けしております。 | お問い合わせフォーム | RECRUIT | Direct Techの採用についてはこちらから | ご確認ください。 | ENTRY | PROJECTS | SERVICE | COMPANY | NEWS | CONTACT | RECRUIT | Copyright Direct Tech, Inc. All Rights Reserved. | Privacy policy｜ Outbound policy",
+    "source": "official",
+    "url": "https://direct-tech.jp/company",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:05:26.222Z"
+   },
+   {
+    "field": "contactUrl",
+    "value": "https://direct-tech.jp/contact",
+    "source": "official",
+    "url": "https://direct-tech.jp/",
+    "snippet": "リンク文言「CONTACT」/ ページ実在とフォームの記述を確認",
+    "at": "2026-10-07T07:05:32.047Z"
    }
   ],
   "seedCategories": [
@@ -53009,6 +53085,10 @@
    {
     "source": "salesnow",
     "url": "https://salesnow.jp/db/companies/jcb3fa25eckjk5mh6"
+   },
+   {
+    "source": "official",
+    "url": "https://www.tosho-trading.co.jp/"
    }
   ],
   "evidence": [
@@ -53067,6 +53147,46 @@
     "url": "https://salesnow.jp/db/companies/jcb3fa25eckjk5mh6",
     "snippet": "ホームページ: https://www.tosho-trading.co.jp/company",
     "at": "2026-10-07T04:38:43.295Z"
+   },
+   {
+    "field": "profileText",
+    "value": "東晶貿易株式会社 「知りたい情報が見つからない…」 | 「伝えたい情報が届かない…」 | 情報が混雑する現代社会の問題に、 | 私たちはWebマーケティングのプロフェッショナルとして日々挑戦し続けています。 | また東晶貿易が常に最高のパフォーマンスを追求することで、関わる企業・ユーザーとWIN-WINの関係を築くことを行動指針としています。 | 東京の風景を一望できる六本木グランドタワーのオフィスには、社員一人ひとりが伸び伸びと働ける環境が整っています。 | 風通しのいいオフィス空間で生み出されるクリエイティブなサービスは、業界トップクラスの成果を出してきました。 | その時代に合わせたトレンドを組み込み、常に新しいサービスを創り出していきます。 | 2025.03.24 | 引越しに伴うライフライン手続きの一括代行は「くらしテク」へ | 累計利用者数１０万人を突破！ スピード対応と最適プランの提案で急増加 | 【News Release】「くらしテク」累計利用者数が10万人を突破 | 2024.09.03 | カンテレ「ドっとコネクト」で「転職サイト比較Plus」が紹介されました | 8月31日（土）放送のカンテレ「ドっとコネクト」で「転職サイト比較Plus」が実施したアンケート内容が放送されました。 | MC石井亮次さんとゲストが話題のニュースについて討論するコーナー「ドっちやねん!?いドばた喫茶店」。8月31日（土）のテーマ【若者の間に広がる「静かな退職」って？】において、「転職サイト比較Plus」が実施した下記アンケートが社会のトレンドとしてピックアップされました。 | ●プレスリリース | 出世欲のない20代は77%！出世したくない理由は「責任のある仕事をしたくない」がトップでワークライフバランスを重視する若者が増加傾向に | https://prtimes.jp/main/html/rd/p/000000067.000005088.html | ●関連記事 | https://www.tosho-trading.co.jp/career/20dai-syusseyoku/ | ●転職サイト比較Plus | https://www.tosho-trading.co.jp/career/ | ●カンテレ「ドっとコネクト」 | https://www.ktv.jp/dotconnect/240831/ | 2024.08.20 | 【「三井住友カード」小さな毎日、大きな世界篇】の撮影にご利用いただきました | 山下美月さんが出演する三井住友カードのCM【小さな毎日、大きな世界篇】の仕事風景は、東晶貿易のオフィスで撮影されました。YouTubeでも公開されていますので、ぜひご覧ください。 | TVCM | メイキング | 2024.08.09 | 新サービス「くらしテク引越し」が誕生！ | 「くらしテク」が「引越しラクっと NAVI🄬」と提携し、引越しの一括見積もりサービスの提供を開始いたしました。 | くらしテクでは、引越しにかかるお客様の手続きの負担軽減と低コスト化を実現すべく、引越し業者の手配からライフラインの開通までまとめてサポートいたします。 | 【News Release】新サービス「くらしテク引越し」誕生 | 2024.07.22 | 【朝マック アゲアゲの朝「ハッシュポテト」篇】の撮影にご利用いただきました | 岡田准一さんが出演するマクドナルドのCM【朝マック アゲアゲの朝「ハッシュポテト」篇】は、東晶貿易のオフィスで撮…",
+    "source": "official",
+    "url": "https://www.tosho-trading.co.jp/",
+    "snippet": "トップページ",
+    "at": "2026-10-07T07:05:38.332Z"
+   },
+   {
+    "field": "profileText",
+    "value": "「知りたい情報が見つからない…」 | 「伝えたい情報が届かない…」 | 情報が混雑する現代社会の問題に、 | 私たちはWebマーケティングのプロフェッショナルとして日々挑戦し続けています。 | また東晶貿易が常に最高のパフォーマンスを追求することで、関わる企業・ユーザーとWIN-WINの関係を築くことを行動指針としています。 | 東京の風景を一望できる六本木グランドタワーのオフィスには、社員一人ひとりが伸び伸びと働ける環境が整っています。 | 風通しのいいオフィス空間で生み出されるクリエイティブなサービスは、業界トップクラスの成果を出してきました。 | その時代に合わせたトレンドを組み込み、常に新しいサービスを創り出していきます。 | 2025.03.24 | 引越しに伴うライフライン手続きの一括代行は「くらしテク」へ | 累計利用者数１０万人を突破！ スピード対応と最適プランの提案で急増加 | 【News Release】「くらしテク」累計利用者数が10万人を突破 | 2024.09.03 | カンテレ「ドっとコネクト」で「転職サイト比較Plus」が紹介されました | 8月31日（土）放送のカンテレ「ドっとコネクト」で「転職サイト比較Plus」が実施したアンケート内容が放送されました。 | MC石井亮次さんとゲストが話題のニュースについて討論するコーナー「ドっちやねん!?いドばた喫茶店」。8月31日（土）のテーマ【若者の間に広がる「静かな退職」って？】において、「転職サイト比較Plus」が実施した下記アンケートが社会のトレンドとしてピックアップされました。 | ●プレスリリース | 出世欲のない20代は77%！出世したくない理由は「責任のある仕事をしたくない」がトップでワークライフバランスを重視する若者が増加傾向に | https://prtimes.jp/main/html/rd/p/000000067.000005088.html | ●関連記事 | https://www.tosho-trading.co.jp/career/20dai-syusseyoku/ | ●転職サイト比較Plus | https://www.tosho-trading.co.jp/career/ | ●カンテレ「ドっとコネクト」 | https://www.ktv.jp/dotconnect/240831/ | 2024.08.20 | 【「三井住友カード」小さな毎日、大きな世界篇】の撮影にご利用いただきました | 山下美月さんが出演する三井住友カードのCM【小さな毎日、大きな世界篇】の仕事風景は、東晶貿易のオフィスで撮影されました。YouTubeでも公開されていますので、ぜひご覧ください。 | TVCM | メイキング | 2024.08.09 | 新サービス「くらしテク引越し」が誕生！ | 「くらしテク」が「引越しラクっと NAVI🄬」と提携し、引越しの一括見積もりサービスの提供を開始いたしました。 | くらしテクでは、引越しにかかるお客様の手続きの負担軽減と低コスト化を実現すべく、引越し業者の手配からライフラインの開通までまとめてサポートいたします。 | 【News Release】新サービス「くらしテク引越し」誕生 | 2024.07.22 | 【朝マック アゲアゲの朝「ハッシュポテト」篇】の撮影にご利用いただきました | 岡田准一さんが出演するマクドナルドのCM【朝マック アゲアゲの朝「ハッシュポテト」篇】は、東晶貿易のオフィスで撮影されました。 |…",
+    "source": "official",
+    "url": "https://www.tosho-trading.co.jp/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:05:41.339Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都文京区湯島3-7-8",
+    "source": "official",
+    "url": "https://www.tosho-trading.co.jp/company",
+    "snippet": "東京都文京区湯島3-7-8",
+    "at": "2026-10-07T07:05:41.339Z"
+   },
+   {
+    "field": "profileText",
+    "value": "HOME / 会社概要 | 会社名 東晶貿易株式会社 | 設立日 1995年12月12日 | 所在地 ・東京営業所 | 〒106-6238 東京都港区六本木3-2-1 | 住友不動産六本木グランドタワー8F/38F（総合受付：38F） | --- | ・本社 | 〒113-0034 東京都文京区湯島3-7-8 | --- | ・中国 天津開発部 / 天津河北区営業所 | ・中国 大連沙河口営業所 | 資本金 20,000,000円 | 役員 | 代表取締役 | 緒方 悟 | 取締役／事業戦略責任者 | 山本 幸紀雄 | 取締役／スポーツ事業責任者 | 福田 秀憲 | 取締役／最高技術責任者 | 尹 凱 | 取締役／最高人事責任者 | 中花 らら | 執行役員／事業本部長 | 中島 里佳 | 関連会社 天津佳盼汽車制冷有限公司 | 天津市東銀機電設備有限公司 | 天津松晶国際貿易有限公司 | ■東京営業所 | 〒106-6238 東京都港区六本木3-2-1 住友不動産六本木グランドタワー38F | TEL: 03-6230-9978 FAX: 03-6230-9083 | 東京メトロ南北線「六本木一丁目」駅直結 | 東京メトロ日比谷線「神谷町」駅徒歩7分 | 東京メトロ銀座線・南北線「溜池山王」駅徒歩7分 | 東京メトロ日比谷線・都営大江戸線「六本木」駅徒歩9分 | ■天津開発部 | 中国天津河北区営業所 | 天津公式ページ:https://www.tosho-cn.com TEL: 86-22-2628-6188 FAX: 86-22-2628-6188 | 中国メディア事業 | 中国メディア事業は、天津にあるオフィスを拠点にアジアでの集客から販売、物流までをワンストップでサポートします。 | その一つ越境EC事業では、TAOBAOやWeChatなどのプラットフォームを活用し、国境を超えてブランド認知度向上や販路拡大を実現いたします。 | プライバシーポリシー | 反社会的勢力排除宣言 | 消費者志向自主宣言 | ページ上部に戻る | トップページ | 会社概要 | 経営理念 | 事業内容 | オフィス環境 | 採用情報 | お問い合わせ | プライバシーポリシー | 反社会的勢力排除宣言 | © 2019 TOSHO Trading Co., Ltd.",
+    "source": "official",
+    "url": "https://www.tosho-trading.co.jp/company",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:05:41.340Z"
+   },
+   {
+    "field": "contactUrl",
+    "value": "https://www.tosho-trading.co.jp/contact",
+    "source": "official",
+    "url": "https://www.tosho-trading.co.jp/",
+    "snippet": "リンク文言「CONTACT」/ ページ実在とフォームの記述を確認",
+    "at": "2026-10-07T07:05:45.782Z"
    }
   ],
   "seedCategories": [
@@ -53122,6 +53242,14 @@
     "url": "https://prtimes.jp/main/html/searchrlp/company_id/178154",
     "snippet": "PR TIMES企業情報のURL: https://aunara.jp/",
     "at": "2026-10-07T05:22:57.611Z"
+   },
+   {
+    "field": "officialError",
+    "value": "robots.txt を取得できない(403)のためアクセスしない: https://aunara.jp/",
+    "source": "official",
+    "url": "https://aunara.jp/",
+    "snippet": "",
+    "at": "2026-10-07T07:05:47.241Z"
    }
   ],
   "seedCategories": [
@@ -53183,6 +53311,10 @@
    {
     "source": "openwork",
     "url": "https://www.openwork.jp/company.php?m_id=a0910000000G2Lf"
+   },
+   {
+    "source": "official",
+    "url": "https://persol-hrpartners.co.jp/"
    }
   ],
   "evidence": [
@@ -53225,6 +53357,70 @@
     "url": "https://www.openwork.jp/company.php?m_id=a0910000000G2Lf",
     "snippet": "OpenWork URL: https://persol-hrpartners.co.jp/",
     "at": "2026-10-07T06:05:56.367Z"
+   },
+   {
+    "field": "profileText",
+    "value": "事務・エンジニアの派遣・正社員のお仕事探し【パーソルエクセルＨＲパートナーズ】人材派遣会社 仕事をお探しの皆さま | 企業のご担当者さま | 会社情報 | 採用情報 | 拠点一覧 | お問い合わせ | はたらき方のご紹介 | まずは相談 | 資料ダウンロード | はたらき方のご紹介 | まずは相談 | 資料ダウンロード | はたらき方のご紹介 | 1 | 2 | for THE PERSON in CHARGE | 企業ご担当の方 | 選ばれる理由 | パナソニックのグループ会社として設立 | パナソニック株式会社の人材系子会社として1989年に設立した当社には約30年以上に渡りパナソニックをはじめ、大手・中小メーカー様の“人”と“モノづくり”にまつわるご支援実績があり、組織の構造や業務の特性に対するナレッジがあります。 | パーソルグループが持つ多様なリソースを活用 | パーソルグループには人材派遣、人材紹介、人材開発、採用支援、業務委託、受託開発など多様なサービスがあり、国内外企業のあらゆる人や雇用・労働課題への取組みに対するご支援実績があります。これらのリソースを最大限に活用したご提案を行い、長期視点で伴走します。 | 丁寧な対応と確かな品質をお約束 | 当社グループは、高い倫理観のもと、相手を正しく理解し、誠実・着実に対応する姿勢を大切にしています。また開発受託の技術力、受託生産の製造力においては、パナソニックの要求ラインに準拠してきた実績で確かな品質を保証いたします。 | 当社の強み | SERVICE | サービス一覧 | 派遣サービス | 事務派遣 | エンジニア派遣 | 外国人エンジニア | 派遣 OVERS | アウトソーシング・受託サービス | アウトソーシング | ソフトウェア開発 | ハードウェア開発 | view more | おすすめコンテンツ | 相談・お問い合わせ | 人材に関わるあらゆる課題を解決します。お気軽にご相談ください。 | まずは相談 | 資料請求 | 派遣・アウトソーシング・受託開発など当社のサービス資料をダウンロードいただけます。 | 資料ダウンロード | メールマガジン | 人材に関わるお役立ち情報をメールで定期的に配信します。 | メルマガ申し込み | JOB SEARCH | お仕事をお探しの方 | 多様なニーズにお応えする パーソルエクセルＨＲ パートナーズのお仕事専門サイト | オフィスワーク・営業・販売 | 派遣・紹介予定派遣 | 大手優良企業の求人多数あり | エンジニア・技術者 | 派遣・紹介予定派遣 | 多彩な技術系案件をご紹介 | 転職支援 | 業界に精通したコンサルタントがサポート | オフィスワーク | IT・エンジニア | オフィスワーク・営業・販売 大手優良企業の求人多数あり | エリアで探す | 関東 | 東京 神奈川 埼玉 千葉 茨城 栃木 群馬 山梨 | 関西 | 大阪 兵庫 京都 滋賀 奈良 和歌山 | 北海道・東北 | 北海道 宮城 | 北信越・東海 | 愛知 静岡 岐阜 三重 | 中国・四国 | 広島 岡山 山口 | 九州・沖縄 | 福岡 | 職種で探す | 一般事務・その他オフィスワーク | 経理・財務 | 人事・総務 | 貿易事務・海外営業事務 | 営業事務 | 秘書 | 受付・ レセプショニスト | パソコン操作・データ入力 | テレマーケティング | 関連サイト | 全国のお店の社員求人 | 街のでんきやさん就Go！サイト | 工場・製造の求人 | パ…",
+    "source": "official",
+    "url": "https://persol-hrpartners.co.jp/",
+    "snippet": "トップページ",
+    "at": "2026-10-07T07:05:56.178Z"
+   },
+   {
+    "field": "profileText",
+    "value": "仕事をお探しの皆さま | 企業のご担当者さま | 会社情報 | 採用情報 | 拠点一覧 | お問い合わせ | はたらき方のご紹介 | まずは相談 | 資料ダウンロード | はたらき方のご紹介 | まずは相談 | 資料ダウンロード | はたらき方のご紹介 | 1 | 2 | for THE PERSON in CHARGE | 企業ご担当の方 | 選ばれる理由 | パナソニックのグループ会社として設立 | パナソニック株式会社の人材系子会社として1989年に設立した当社には約30年以上に渡りパナソニックをはじめ、大手・中小メーカー様の“人”と“モノづくり”にまつわるご支援実績があり、組織の構造や業務の特性に対するナレッジがあります。 | パーソルグループが持つ多様なリソースを活用 | パーソルグループには人材派遣、人材紹介、人材開発、採用支援、業務委託、受託開発など多様なサービスがあり、国内外企業のあらゆる人や雇用・労働課題への取組みに対するご支援実績があります。これらのリソースを最大限に活用したご提案を行い、長期視点で伴走します。 | 丁寧な対応と確かな品質をお約束 | 当社グループは、高い倫理観のもと、相手を正しく理解し、誠実・着実に対応する姿勢を大切にしています。また開発受託の技術力、受託生産の製造力においては、パナソニックの要求ラインに準拠してきた実績で確かな品質を保証いたします。 | 当社の強み | SERVICE | サービス一覧 | 派遣サービス | 事務派遣 | エンジニア派遣 | 外国人エンジニア | 派遣 OVERS | アウトソーシング・受託サービス | アウトソーシング | ソフトウェア開発 | ハードウェア開発 | view more | おすすめコンテンツ | 相談・お問い合わせ | 人材に関わるあらゆる課題を解決します。お気軽にご相談ください。 | まずは相談 | 資料請求 | 派遣・アウトソーシング・受託開発など当社のサービス資料をダウンロードいただけます。 | 資料ダウンロード | メールマガジン | 人材に関わるお役立ち情報をメールで定期的に配信します。 | メルマガ申し込み | JOB SEARCH | お仕事をお探しの方 | 多様なニーズにお応えする パーソルエクセルＨＲ パートナーズのお仕事専門サイト | オフィスワーク・営業・販売 | 派遣・紹介予定派遣 | 大手優良企業の求人多数あり | エンジニア・技術者 | 派遣・紹介予定派遣 | 多彩な技術系案件をご紹介 | 転職支援 | 業界に精通したコンサルタントがサポート | オフィスワーク | IT・エンジニア | オフィスワーク・営業・販売 大手優良企業の求人多数あり | エリアで探す | 関東 | 東京 神奈川 埼玉 千葉 茨城 栃木 群馬 山梨 | 関西 | 大阪 兵庫 京都 滋賀 奈良 和歌山 | 北海道・東北 | 北海道 宮城 | 北信越・東海 | 愛知 静岡 岐阜 三重 | 中国・四国 | 広島 岡山 山口 | 九州・沖縄 | 福岡 | 職種で探す | 一般事務・その他オフィスワーク | 経理・財務 | 人事・総務 | 貿易事務・海外営業事務 | 営業事務 | 秘書 | 受付・ レセプショニスト | パソコン操作・データ入力 | テレマーケティング | 関連サイト | 全国のお店の社員求人 | 街のでんきやさん就Go！サイト | 工場・製造の求人 | パーソルファクトリーパートナーズ | JOB JOURNEY | 日本での仕事を探す外国人のた…",
+    "source": "official",
+    "url": "https://persol-hrpartners.co.jp/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:06:09.150Z"
+   },
+   {
+    "field": "profileText",
+    "value": "仕事をお探しの皆さま | 企業のご担当者さま | 会社情報 | 採用情報 | 拠点一覧 | お問い合わせ | 会社情報 | トップページ 会社情報 | 会社概要 | 当社の会社情報をご覧いただけます。 | 社長メッセージ | 代表取締役社長 伊藤 卓郎よりご挨拶申し上げます。 | 沿革 | 当社の沿革・あゆみについてご紹介します。 | ニュース | 当社の最新ニュースをご紹介します。 | 仕事をお探しの皆さま | 仕事をお探しのシニアの皆さま | 企業のご担当者さま | サービスラインナップ | 活用手法を比較する | 当社の強み | 活用事例 | 会社情報 | 会社概要 | 社長メッセージ | 沿革 | ニュース | 採用情報 | 拠点一覧 | 北海道・東北エリア | 首都圏エリア | 東海・北信越エリア | 関西エリア | 中国・四国エリア | 九州・沖縄エリア | お問い合わせ | オフィスワーク派遣 | 技術者派遣 | 転職支援 | 正社員エンジニア | シニア人材登録 | 企業のご担当者さま | 新卒採用 | キャリア採用 | その他 | サイトのご利用にあたって 個人情報保護方針 情報セキュリティ基本方針 労働者派遣事業に関わる情報提供 有料職業紹介事業に関わる情報提供 マルチステークホルダー方針 | © PERSOL EXCEL HR PARTNERS CO., LTD.",
+    "source": "official",
+    "url": "https://persol-hrpartners.co.jp/company/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:06:09.150Z"
+   },
+   {
+    "field": "address",
+    "value": "大阪府大阪市北区堂島浜一丁目1番27号",
+    "source": "official",
+    "url": "https://persol-hrpartners.co.jp/company/profile.html",
+    "snippet": "大阪府大阪市北区堂島浜一丁目1番27号",
+    "at": "2026-10-07T07:06:09.150Z"
+   },
+   {
+    "field": "profileText",
+    "value": "仕事をお探しの皆さま | 企業のご担当者さま | 会社情報 | 採用情報 | 拠点一覧 | お問い合わせ | 会社概要 | トップページ 会社情報 会社概要 | パーソルエクセルＨＲパートナーズは、1989年パナソニック株式会社100％出資の人材派遣会社として設立されました。以来、多様化するお客さまの人材ニーズに対し、派遣・紹介予定派遣・人材紹介・アウトソーシングといった提供サービスを拡充するとともに、オフィスワーク、エンジニア、製造、販売といったサポートフィールドを拡大。パナソニックグループはもちろんのこと、グループ以外の幅広い業界のお客さまへ人材ソリューションを提供しております。また、お仕事をお探しのみなさまには安定した就業機会の確保はもちろんのこと、能力向上の機会を積極的に提供するとともに、業界トップクラスの福利厚生制度により、安心して働くことができる環境の整備にも努めております。 | 会社概要 | 商号 パーソルエクセルＨＲパートナーズ株式会社 | PERSOL EXCEL HR PARTNERS CO., LTD. | 本社 大阪府大阪市北区堂島浜一丁目1番27号 | 大阪堂島浜タワー11F（総合受付） | 設立 1989年3月 | 資本金 9,000万円（パーソルテンプスタッフ株式会社66.61％ パナソニック ホールディングス株式会社33.39％） | 代表者 代表取締役社長 伊藤 卓郎 | 主要取引銀行 三井住友銀行 | 営業種目 | 1. 労働者派遣事業 | 2. 有料職業紹介事業 | 3. 市場調査、広告、宣伝に関する業務、広告代理業及びイベントの企画、実施 | 4. 請負業務全般 | 5. 人材の育成、能力開発、技能向上に関する教育業務及び職業適性能力の診断 | 6. 情報収集、処理、提供サービス及び関連する機器の開発、設計、製作、保守、運営、販売 | 7. 前各号に関するコンサルティング業務及び経営コンサルティング業務 | 8. 前各号に付帯するまたは関連する一切の業務 | 役員構成 | 代表取締役社長 伊藤 卓郎 | 専務取締役 弓場 良平 | 取締役（非常勤） 木村 和成 | 取締役（非常勤） 田中 和也 | 取締役（非常勤） 谷川 裕二 | 監査役（非常勤） 横溝 敦之 | 監査役（非常勤） 大角 恭司 | 登録者数 約43万名（2025年3月現在） | 事業許可 労働者派遣事業派27-010226 有料職業紹介事業27-ユ-010074 | 特定募集情報等提供事業 届出受理番号 51-募-000761 | 関連会社 | 製造派遣・請負 | パーソルファクトリーパートナーズ | 特例子会社 | パーソルエクセルアソシエイツ | 正規雇用労働者の中途採用比率​ | 労働施策総合推進法に基づく中途採用比率の公表​ | 2025年度 45％​ | 2024年度 68％​ | 2023年度 80％​ | 公表日：2026年7月1日 | PERSOLについて | ビジョンステートメント | はたらくことは、 生きること。 | はたらき方は、 一人ひとり違うもの。 | だから、 自分の“はたらく”は、 自分で決める。 | すべての“はたらく”が、 | 笑顔につながる社会を目指して。 | 会社情報 | 会社概要 | 社長メッセージ | 沿革 | ニュース | 仕事をお探しの皆さま | 仕事をお探しのシニアの皆さま | 企業のご担当者さま | サービスラインナップ | 活用手法を比較する | 当社の強み | 活用事例 | 会社情報 …",
+    "source": "official",
+    "url": "https://persol-hrpartners.co.jp/company/profile.html",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:06:09.150Z"
+   },
+   {
+    "field": "address",
+    "value": "大阪府大阪市北区堂島浜一丁目1番27号 大阪堂島浜タワー11F(総合受付)",
+    "source": "official",
+    "url": "https://persol-hrpartners.co.jp/company/branch/",
+    "snippet": "大阪府大阪市北区堂島浜一丁目1番27号 大阪堂島浜タワー11F(総合受付)",
+    "at": "2026-10-07T07:06:09.150Z"
+   },
+   {
+    "field": "profileText",
+    "value": "仕事をお探しの皆さま | 企業のご担当者さま | 会社情報 | 採用情報 | 拠点一覧 | お問い合わせ | 拠点一覧 | トップページ 拠点一覧 | 北海道・東北 | 首都圏 | 東海・北信越 | 関西 | 中国・四国 | 九州・沖縄 | 北海道・東北 | 北海道支店 | 〒060-0004 北海道札幌市中央区北4条西5-1-4 大樹生命札幌共同ビル4階 | JR線札幌駅から徒歩6分 | 地下鉄豊東線・南北線さっぽろ駅から徒歩3分 | TEL：(011)222-5077 | MAP | 東北支店 | 〒980-8485 宮城県仙台市青葉区中央1-2-3 仙台マークワン12階 | JR各線仙台駅 西口から徒歩1分 | 仙台市営地下鉄仙台駅 北8出口から徒歩1分 | TEL：(022)224-7320 | MAP | 首都圏 | 東京第一支店／東京第二支店／東京第三支店／東京第四支店 | 〒104-0061 東京都中央区銀座4-6-1 銀座三和ビル8階 | 東京メトロ各線銀座駅 A12番出口から徒歩3分 | JR有楽町駅 中央口・銀座口から徒歩7分 | TEL：(03)5524-6797 | MAP | 首都圏第一支店／首都圏第二支店 | 〒104-0061 東京都中央区銀座4-6-1 銀座三和ビル8階 | 東京メトロ各線銀座駅 A12番出口から徒歩3分 | JR有楽町駅 中央口・銀座口から徒歩7分 | TEL：(03)5524-6798 | MAP | 第一営業部 | 〒104-0061 東京都中央区銀座4-6-1 銀座三和ビル8階 | 東京メトロ各線銀座駅 A12番出口から徒歩3分 | JR有楽町駅 中央口・銀座口から徒歩7分 | TEL：(03)4212-2895 | MAP | キャリアサポート第一部 | 〒104-0061 東京都中央区銀座4-6-1 銀座三和ビル8階 | 東京メトロ各線銀座駅 A12番出口から徒歩3分 | JR有楽町駅 中央口・銀座口から徒歩7分 | TEL：(03)5524-1502 | MAP | ソリューション営業一部／オペレーション改革一部／人事アウトソーシング二部 | 〒104-0061 東京都中央区銀座4-6-1 銀座三和ビル8階 | 東京メトロ各線銀座駅 A12番出口から徒歩3分 | JR有楽町駅 中央口・銀座口から徒歩7分 | TEL：(03)5524-6792 | MAP | 首都圏第三支店 | 〒221-0835 神奈川県横浜市神奈川区鶴屋町2-23-2 TSプラザビルディング4階 | 各線横浜駅から徒歩5分 | TEL：(045)410-1226 | MAP | 東海・北信越 | 中部支店 | 〒450-0002 愛知県名古屋市中村区名駅3-25-9 堀内ビルディング7階 | JR名古屋駅 桜通口から徒歩3分 | ユニモール6番出口（U6出口）すぐ | TEL：(052)569-7050 | MAP | 関西 | 本社 | 〒530-0004 大阪府大阪市北区堂島浜一丁目1番27号 大阪堂島浜タワー11F（総合受付） | 京阪電鉄大江橋駅 徒歩約2分 | Osaka Metro各線、京阪電鉄淀屋橋駅 徒歩約4分 | JR北新地駅 徒歩約5分 | 代表電話番号：(06)6945-9011 | MAP | 滋賀支店／関西第四支店 | 〒525-0059 滋賀県草津市野路1-15-5 フェリエ南草津4階 | JR南草津駅直結 | TEL：(077)561-0793 | MAP | 京都支店 | 〒600-…",
+    "source": "official",
+    "url": "https://persol-hrpartners.co.jp/company/branch/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:06:09.150Z"
+   },
+   {
+    "field": "contactUrl",
+    "value": "https://persol-hrpartners.co.jp/contact/",
+    "source": "official",
+    "url": "https://persol-hrpartners.co.jp/",
+    "snippet": "リンク文言「お問い合わせ」/ ページ実在とフォームの記述を確認",
+    "at": "2026-10-07T07:06:24.075Z"
    }
   ],
   "seedCategories": [
@@ -53369,6 +53565,10 @@
    {
     "source": "prtimes",
     "url": "https://prtimes.jp/main/html/searchrlp/company_id/144244"
+   },
+   {
+    "source": "official",
+    "url": "https://brand-rocket.jp/"
    }
   ],
   "evidence": [
@@ -53403,6 +53603,30 @@
     "url": "https://prtimes.jp/main/html/searchrlp/company_id/144244",
     "snippet": "PR TIMES企業情報のURL: https://brand-rocket.jp/",
     "at": "2026-10-07T05:22:57.616Z"
+   },
+   {
+    "field": "profileText",
+    "value": "株式会社ブランドロケット｜ブランドをローンチ成功へと打ち上げる TOP | OUR BUSINESS | NEWS | COMPANY | CONTACT | アイデアでブランドを打ち上げる | CONTACT | ACHIEVEMENT | 私たちがサポートした新しいブランドの実績 | ¥ | 0 | 2026 - NOW | 私たちは新規ブランドのローンチから軌道に乗せるまでのサポートに特化した専門集団です。 | この3年で20億円以上の新規ブランドや商品の立ち上げをWEBマーケティングを駆使し、95％以上の確率で成功させています。 | NOW LAUNCHING . . . . . . . . | FOEHN 001 | Futon Dryer/布団乾燥機 | 空気をデザインするカドーの2023年を代表する新製品、FOHEN 001。コンパクトながら大風量と消臭効果など多機能を備えた本製品は、初めてMakuakeで登場しました。そのマーケティングプランの計画・実行により、1.5億円を超える応援金額を達成しました。その後の販売やPRにも大きな好影響を与える結果となりました。 | Makuake 応援購入金額 | ¥158,312,526 | LAUNCH PAGE | 金乃縁 | 中目黒の飲食店のリブランディング＆プロデュースとして会員制飲食ブランドの立ち上げ。SNS連動した集客マーケティングと店舗運営だけに留まらないD2Cブランドの確立や飲食ブランドのPR,体験という新しい形を持った店舗として誕生。 | OPEN開始後、30分で予約が満席になる | 店舗集客の成功モデルへ | BRAND SITE | HYDRO CLEANER | 新しい家電ブランドの立ち上げというテーマの中で、市場の中における可能性とプロダクトの優位性を活かした商品価値整理とマーケティングにより、初登場ながら7000万円を超えるローンチ結果となった。 | Makuake 応援購入金額 | ¥75,167,400 | LAUNCH PAGE | OUR BUSINESS | ブランドローンチ成功へと打ち上げる | これをやったら100％成功するという方法はないが、これをしていないと100％成功はないということはある。 | これまでのブランド開発、マーケティングプランニングの経験から、目指している姿や目標に向かった戦略と戦術をご提案します。 | BRANDING | ブランディング | 新しい付加価値を創造し、世の中に必要とされるブランドやプロダクトの開発をサポート | MARKETING MIX | マーケティングミックス | ブランドを成長の軌道に乗せるためにWEBマーケティング、店舗PR、LINE運用などの全体的なマーケティングプランを構築するサポート | CREATIVE&DESIGN | クリエイティブ&デザイン | ブランドやプロダクトがよりお客様に伝わる、届きやすくするための素材撮影からWEBデザインやプロダクトデザイン、またコピーライティングなどをサポート | NEWS | 2024/06/11 | アイデアでブランドをローンチ成功へと打ち上げる「Brand Rocket」1年間で20プロダクトのローンチ額６億円以上を達成！ | 2024/06/01 | コーポレートサイトをオープンしました。 | COMPANY INFO | 社名 | 株式会社ブランドロケット | 代表者 | 代表取締役 道端 孝助 | 設立 | 2022年10月13日 | オフィス | …",
+    "source": "official",
+    "url": "https://brand-rocket.jp/",
+    "snippet": "トップページ",
+    "at": "2026-10-07T07:06:30.001Z"
+   },
+   {
+    "field": "profileText",
+    "value": "TOP | OUR BUSINESS | NEWS | COMPANY | CONTACT | アイデアでブランドを打ち上げる | CONTACT | ACHIEVEMENT | 私たちがサポートした新しいブランドの実績 | ¥ | 0 | 2026 - NOW | 私たちは新規ブランドのローンチから軌道に乗せるまでのサポートに特化した専門集団です。 | この3年で20億円以上の新規ブランドや商品の立ち上げをWEBマーケティングを駆使し、95％以上の確率で成功させています。 | NOW LAUNCHING . . . . . . . . | FOEHN 001 | Futon Dryer/布団乾燥機 | 空気をデザインするカドーの2023年を代表する新製品、FOHEN 001。コンパクトながら大風量と消臭効果など多機能を備えた本製品は、初めてMakuakeで登場しました。そのマーケティングプランの計画・実行により、1.5億円を超える応援金額を達成しました。その後の販売やPRにも大きな好影響を与える結果となりました。 | Makuake 応援購入金額 | ¥158,312,526 | LAUNCH PAGE | 金乃縁 | 中目黒の飲食店のリブランディング＆プロデュースとして会員制飲食ブランドの立ち上げ。SNS連動した集客マーケティングと店舗運営だけに留まらないD2Cブランドの確立や飲食ブランドのPR,体験という新しい形を持った店舗として誕生。 | OPEN開始後、30分で予約が満席になる | 店舗集客の成功モデルへ | BRAND SITE | HYDRO CLEANER | 新しい家電ブランドの立ち上げというテーマの中で、市場の中における可能性とプロダクトの優位性を活かした商品価値整理とマーケティングにより、初登場ながら7000万円を超えるローンチ結果となった。 | Makuake 応援購入金額 | ¥75,167,400 | LAUNCH PAGE | OUR BUSINESS | ブランドローンチ成功へと打ち上げる | これをやったら100％成功するという方法はないが、これをしていないと100％成功はないということはある。 | これまでのブランド開発、マーケティングプランニングの経験から、目指している姿や目標に向かった戦略と戦術をご提案します。 | BRANDING | ブランディング | 新しい付加価値を創造し、世の中に必要とされるブランドやプロダクトの開発をサポート | MARKETING MIX | マーケティングミックス | ブランドを成長の軌道に乗せるためにWEBマーケティング、店舗PR、LINE運用などの全体的なマーケティングプランを構築するサポート | CREATIVE&DESIGN | クリエイティブ&デザイン | ブランドやプロダクトがよりお客様に伝わる、届きやすくするための素材撮影からWEBデザインやプロダクトデザイン、またコピーライティングなどをサポート | NEWS | 2024/06/11 | アイデアでブランドをローンチ成功へと打ち上げる「Brand Rocket」1年間で20プロダクトのローンチ額６億円以上を達成！ | 2024/06/01 | コーポレートサイトをオープンしました。 | COMPANY INFO | 社名 | 株式会社ブランドロケット | 代表者 | 代表取締役 道端 孝助 | 設立 | 2022年10月13日 | オフィス | WeWork 丸の内北口 | 東京都千代田区丸の内1-6-5 |…",
+    "source": "official",
+    "url": "https://brand-rocket.jp/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:06:30.002Z"
+   },
+   {
+    "field": "contactUrl",
+    "value": "https://brand-rocket.jp/contact/",
+    "source": "official",
+    "url": "https://brand-rocket.jp/",
+    "snippet": "リンク文言「CONTACT」/ ページ実在とフォームの記述を確認",
+    "at": "2026-10-07T07:06:31.493Z"
    }
   ],
   "seedCategories": [
@@ -53423,6 +53647,10 @@
    {
     "source": "prtimes",
     "url": "https://prtimes.jp/main/html/searchrlp/company_id/12506"
+   },
+   {
+    "source": "official",
+    "url": "http://cdc.type.jp/"
    }
   ],
   "evidence": [
@@ -53457,6 +53685,62 @@
     "url": "https://prtimes.jp/main/html/searchrlp/company_id/12506",
     "snippet": "PR TIMES企業情報のURL: http://cdc.type.jp/",
     "at": "2026-10-07T05:22:57.617Z"
+   },
+   {
+    "field": "profileText",
+    "value": "株式会社キャリアデザインセンター 企業情報 | サービス | 投資家情報 | サステナビリティ | お知らせ | 採用情報 | お問合わせ | English | Scroll | © CAREER DESIGN CENTER CO.,LTD | 2026.07.01 2026年 オリコン顧客満足度®調査 転職サイト 女性 ランキングにて、女の転職typeが第1位を獲得！ | Service | サービス | 日々の仕事が人生の時間を豊かにする。 | 私たちは、そのかけがえのない価値との出会いをサポートしています。 | サービス一覧 | 企業が求職者に直接アプローチする転職アプリ | ダイレクトリクルーティング | 日本最大級のエンジニア向け転職フェア | 転職フェア | 就職の本質を考えるキャリア研究サイト | 新卒採用支援 | 日本最大級の女性特化型転職イベント | 転職フェア | アクセス者数No.1。充実感や成長を感じられる、ひとつ上を目指す人のキャリア転職サイト | 転職サイト | 女性がおすすめしたい転職サイトNo.1。 正社員で長く働きたい女性のための転職サイト | 転職サイト | 専任のキャリアアドバイザーが転職のアドバイスと 求人企業をご紹介する人材紹介・転職エージェント | 人材紹介 | エンジニア採用に強い『type』から生まれた ＩＴ業界に特化した人材派遣サービス | 人材派遣 | 企業が求職者に直接アプローチする転職アプリ | ダイレクトリクルーティング | 日本最大級のエンジニア向け転職フェア | 転職フェア | 就職の本質を考えるキャリア研究サイト | 新卒採用支援 | 日本最大級の女性特化型転職イベント | 転職フェア | アクセス者数No.1。充実感や成長を感じられる、ひとつ上を目指す人のキャリア転職サイト | 転職サイト | 女性がおすすめしたい転職サイトNo.1。 正社員で長く働きたい女性のための転職サイト | 転職サイト | 専任のキャリアアドバイザーが転職のアドバイスと 求人企業をご紹介する人材紹介・転職エージェント | 人材紹介 | エンジニア採用に強い『type』から生まれた ＩＴ業界に特化した人材派遣サービス | 人材派遣 | 企業が求職者に直接アプローチする転職アプリ | ダイレクトリクルーティング | 日本最大級のエンジニア向け転職フェア | 転職フェア | 就職の本質を考えるキャリア研究サイト | 新卒採用支援 | 日本最大級の女性特化型転職イベント | 転職フェア | 1 | 2 | CAREER | DESIGN CENTER | About | キャリアデザインセンターについて | 企業理念 | Philosophy | 会社概要 | Company | 代表メッセージ | Message | 投資家情報 | IR Information | 採用情報 | Recruit | お問合わせ | Contact | News | 最新情報 | すべて | IRニュース | プレスリリース | 重要なお知らせ | プレスリリース | 2026.07.01 | 2026年 オリコン顧客満足度®調査 転職サイト 女性 ランキングにて、女の転職typeが第1位を獲得！ | IRニュース | 2026.03.17 | 「統合報告書2026」発行に関するお知らせ | IRニュース | 2026.10.01 | 当社株式の監理銘柄（審査中）指定に関するお知らせ | プレスリリース | 2026.09.25…",
+    "source": "official",
+    "url": "http://cdc.type.jp/",
+    "snippet": "トップページ",
+    "at": "2026-10-07T07:06:36.871Z"
+   },
+   {
+    "field": "employees",
+    "value": 768,
+    "source": "official",
+    "url": "https://cdc.type.jp/company/about/",
+    "snippet": "従業員数 | 768名(2025年9月30日現在) | 資本金 | 5",
+    "at": "2026-10-07T07:06:46.726Z"
+   },
+   {
+    "field": "profileText",
+    "value": "企業情報 | サービス | 投資家情報 | サステナビリティ | お知らせ | 採用情報 | お問合わせ | English | Scroll | © CAREER DESIGN CENTER CO.,LTD | 2026.07.01 2026年 オリコン顧客満足度®調査 転職サイト 女性 ランキングにて、女の転職typeが第1位を獲得！ | Service | サービス | 日々の仕事が人生の時間を豊かにする。 | 私たちは、そのかけがえのない価値との出会いをサポートしています。 | サービス一覧 | 企業が求職者に直接アプローチする転職アプリ | ダイレクトリクルーティング | 日本最大級のエンジニア向け転職フェア | 転職フェア | 就職の本質を考えるキャリア研究サイト | 新卒採用支援 | 日本最大級の女性特化型転職イベント | 転職フェア | アクセス者数No.1。充実感や成長を感じられる、ひとつ上を目指す人のキャリア転職サイト | 転職サイト | 女性がおすすめしたい転職サイトNo.1。 正社員で長く働きたい女性のための転職サイト | 転職サイト | 専任のキャリアアドバイザーが転職のアドバイスと 求人企業をご紹介する人材紹介・転職エージェント | 人材紹介 | エンジニア採用に強い『type』から生まれた ＩＴ業界に特化した人材派遣サービス | 人材派遣 | 企業が求職者に直接アプローチする転職アプリ | ダイレクトリクルーティング | 日本最大級のエンジニア向け転職フェア | 転職フェア | 就職の本質を考えるキャリア研究サイト | 新卒採用支援 | 日本最大級の女性特化型転職イベント | 転職フェア | アクセス者数No.1。充実感や成長を感じられる、ひとつ上を目指す人のキャリア転職サイト | 転職サイト | 女性がおすすめしたい転職サイトNo.1。 正社員で長く働きたい女性のための転職サイト | 転職サイト | 専任のキャリアアドバイザーが転職のアドバイスと 求人企業をご紹介する人材紹介・転職エージェント | 人材紹介 | エンジニア採用に強い『type』から生まれた ＩＴ業界に特化した人材派遣サービス | 人材派遣 | 企業が求職者に直接アプローチする転職アプリ | ダイレクトリクルーティング | 日本最大級のエンジニア向け転職フェア | 転職フェア | 就職の本質を考えるキャリア研究サイト | 新卒採用支援 | 日本最大級の女性特化型転職イベント | 転職フェア | 1 | 2 | CAREER | DESIGN CENTER | About | キャリアデザインセンターについて | 企業理念 | Philosophy | 会社概要 | Company | 代表メッセージ | Message | 投資家情報 | IR Information | 採用情報 | Recruit | お問合わせ | Contact | News | 最新情報 | すべて | IRニュース | プレスリリース | 重要なお知らせ | プレスリリース | 2026.07.01 | 2026年 オリコン顧客満足度®調査 転職サイト 女性 ランキングにて、女の転職typeが第1位を獲得！ | IRニュース | 2026.03.17 | 「統合報告書2026」発行に関するお知らせ | IRニュース | 2026.10.01 | 当社株式の監理銘柄（審査中）指定に関するお知らせ | プレスリリース | 2026.09.25 | ビジネスシーンでも使いやすい…",
+    "source": "official",
+    "url": "http://cdc.type.jp/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:06:46.726Z"
+   },
+   {
+    "field": "profileText",
+    "value": "企業情報 | サービス | 投資家情報 | サステナビリティ | お知らせ | 採用情報 | お問合わせ | English | Home | 企業情報 | Company | 企業情報 | Company | 企業理念 | Philosophy | 会社概要 | Company | 役員一覧 | Officers | 沿革 | History | Company | 企業情報 | 企業理念 | 会社概要 | 役員一覧 | 沿革 | Service | サービス | type | 女の転職type | Direct type | typeエンジニア転職フェア | 女の転職typeイベント | type転職エージェント | typeIT派遣 | type就活 | IR Information | 投資家情報 | 社長メッセージ | IRニュース | IRライブラリ | 決算短信 | 有価証券報告書等 | 決算説明会・補足説明資料 | 統合報告書 | 中期経営計画 | 株主総会 | 業績ハイライト | 株式情報 | IRカレンダー | CDCについて | ディスクロージャーポリシー | 電子公告 | Sustainability | サステナビリティ | 代表メッセージ | CDCにおけるサステナビリティ | 環境への取り組み | 社会への取り組み | ガバナンスへの取り組み | ESGデータ | Recruit | 採用情報 | 新卒採用 | 中途採用 | 正社員型ITエンジニア派遣採用 | カスタマーハラスメント基本方針 | マルチステークホルダー方針 | 反社会的勢力に対する方針 | 情報セキュリティ基本方針 | ソーシャルメディアポリシー | 個人情報の取扱いについて | クッキーポリシー | お問合わせ | Copyright © CAREER DESIGN CENTER CO.,LTD. All Rights Reserved.",
+    "source": "official",
+    "url": "https://cdc.type.jp/company/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:06:46.726Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区赤坂3-21-20 赤坂ロングビーチビル",
+    "source": "official",
+    "url": "https://cdc.type.jp/company/about/",
+    "snippet": "東京都港区赤坂3-21-20 赤坂ロングビーチビル",
+    "at": "2026-10-07T07:06:46.726Z"
+   },
+   {
+    "field": "profileText",
+    "value": "企業情報 | サービス | 投資家情報 | サステナビリティ | お知らせ | 採用情報 | お問合わせ | English | Home | 企業情報 | 会社概要 | Company 企業情報 | 会社概要 | 会社概要 | 会社概要 | 株式会社キャリアデザインセンター（CAREER DESIGN CENTER CO.,LTD.） | 上場 | 東京証券取引所プライム市場（証券コード：2410）​ | 所在地 | 本社・赤坂オフィス | 〒107-0052 東京都港区赤坂3-21-20 赤坂ロングビーチビル | 赤坂山王オフィス | 〒107-0052 東京都港区赤坂2-5-1 S-GATE赤坂山王ビル | 事業内容 | ■キャリア転職の専門情報サイト『type』『女の転職type』などの運営 | ■転職フェアの開催 | ■人材紹介事業（厚生労働大臣許可 13-ユ-040429） | ■質の高い就職活動を情報誌、イベント、情報サイトで支援する『type就活』サービス | ■IT業界に特化した人材派遣サービス『typeIT派遣』（厚生労働大臣許可 派13-315344） | ■Webマガジン『エンジニアtype』『Woman type』『20’s type』の企画・編集・運営 | など、企業の採用活動の総合的なサポート | 設立 | 1993年7月8日 | 従業員数 | 768名（2025年9月30日現在） | 資本金 | 5億5,866万円 | 売上高 | 186億4,625万円（2025年9月期 個別実績） | 決算 | 9月 | 取引銀行 | 三菱UFJ銀行 | みずほ銀行 | 三井住友銀行 | 三菱UFJ信託銀行 | 役員構成 | 代表取締役社長兼会長：多田 弘實 | 代表取締役副社長：加山 祐介 | 代表取締役副社長：西山 裕 | 取締役常勤監査等委員：菊池 亮平 | 取締役監査等委員(社外)：和田 芳幸 | 取締役監査等委員(社外)：齋藤 哲男 | 取締役監査等委員(社外)：宮地 夕紀子 | 特別顧問：高橋 俊介（ピープル・ファクター・コンサルティング代表） | アクセス | 本社・赤坂オフィス | ・東京メトロ丸ノ内線・銀座線「赤坂見附駅」より徒歩1分 | ・東京メトロ半蔵門線・南北線・有楽町線「永田町駅」より徒歩5分 | ・東京メトロ千代田線「赤坂駅」より徒歩7分 | 赤坂山王オフィス | ・東京メトロ千代田線「赤坂駅」より徒歩3分 | ・東京メトロ銀座線・南北線「溜池山王駅」より徒歩4分 | ・東京メトロ丸ノ内線・銀座線「赤坂見附駅」より徒歩6分 | 企業理念 | Philosophy | 会社概要 | Company | 役員一覧 | Officers | 沿革 | History | Company | 企業情報 | 企業理念 | 会社概要 | 役員一覧 | 沿革 | Service | サービス | type | 女の転職type | Direct type | typeエンジニア転職フェア | 女の転職typeイベント | type転職エージェント | typeIT派遣 | type就活 | IR Information | 投資家情報 | 社長メッセージ | IRニュース | IRライブラリ | 決算短信 | 有価証券報告書等 | 決算説明会・補足説明資料 | 統合報告書 | 中期経営計画 | 株主総会 | 業績ハイライト | 株式情報 | IRカレンダー | CDCについて | ディスクロージャーポリシー | 電…",
+    "source": "official",
+    "url": "https://cdc.type.jp/company/about/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:06:46.726Z"
+   },
+   {
+    "field": "contactUrl",
+    "value": "https://cdc.type.jp/contact/",
+    "source": "official",
+    "url": "http://cdc.type.jp/",
+    "snippet": "リンク文言「お問合わせ」/ ページ実在とフォームの記述を確認",
+    "at": "2026-10-07T07:06:48.436Z"
    }
   ],
   "seedCategories": [
@@ -53477,6 +53761,10 @@
    {
     "source": "openwork",
     "url": "https://www.openwork.jp/company.php?m_id=a0C1000000skFEI"
+   },
+   {
+    "source": "official",
+    "url": "http://www.santa-ent.co.jp/"
    }
   ],
   "evidence": [
@@ -53519,6 +53807,62 @@
     "url": "https://www.openwork.jp/company.php?m_id=a0C1000000skFEI",
     "snippet": "OpenWork URL: http://www.santa-ent.co.jp/",
     "at": "2026-10-07T06:07:08.888Z"
+   },
+   {
+    "field": "profileText",
+    "value": "株式会社サンタエンタテイメント - アニメーション・CG・映像制作 COMPANY | SERVICE | PRODUCTS | RECRUIT | ACCESS | CONTACT | 映像の力で、 | まだ見ぬ世界を描く。 | NEWS | お知らせ一覧 | 2025/10/01 | お知らせ | HP開設のお知らせ | SANTA ENTERTAINMENT EST.1997 | SANTA ENTERTAINMENT EST.1997 | SANTA ENTERTAINMENT EST.1997 | SANTA ENTERTAINMENT EST.1997 | SANTA ENTERTAINMENT EST.1997 | SANTA ENTERTAINMENT EST.1997 | SANTA ENTERTAINMENT EST.1997 | SANTA ENTERTAINMENT EST.1997 | SANTA ENTERTAINMENT EST.1997 | SANTA ENTERTAINMENT EST.1997 | SANTA ENTERTAINMENT EST.1997 | SANTA ENTERTAINMENT EST.1997 | 私たちのこと | ABOUT US | サンタエンタテイメントは、1997年の創業以来、アニメーションやCGを活かした映像制作に取り組んできました。私たちが目指しているのは、ただの映像ではなく、人の心を動かし、驚きや感動を生み出す作品です。 | 映像技術は日々進化しています。2Dから3Dへ、手描きからフルCGへ、そしてリアルタイムレンダリングを使ったインタラクティブな表現へ。私たちは常に新しい技術を取り入れ、より豊かな映像体験を生み出すことに挑戦し続けています。 | アイデアを形にし、想像を超える映像を。 | 企画から制作までをワンストップで手がけ、ストーリーと映像表現を組み合わせながら、まだ誰も見たことのない世界をつくり上げていきます。 | 映像の可能性は無限大。 | 私たちは、新しい表現を追求し続けながら、これからも驚きと感動を届けていきます。 | VIEW DETAIL | 事業内容 | SERVICE | 映像制作事業 | web制作・メディア制作運用事業 | BPO事業 | FPVドローン映像撮影事業 | 制作実績 | PRODUCTS | 1997年の設立以来、遊技機における多様な制作に携わって参りました。ワンストップで企画、制作、編集、制作に向き合ってきたからこそ蓄えられた経験と技術で見る人の心に焼きつく体験を生み出します。 | VIEW DETAIL | お問い合わせ | CONTACT | メールフォーム、または電話・FAXにてお気軽にお問い合わせください。 | TEL:03-5979-1019 | 対応時間 10:00～19:00(土・日・祝日除く) | FAX: 03-5979-1023 | お問い合わせ | 株式会社サンタエンタテイメント | 〒170-0014 | 東京都豊島区池袋2-48-1 信友山の手池袋ビル4F | TEL: 03-5979-1019 FAX: 03-5979-1023 | ホーム | 会社案内 | 事業内容 | 映像制作事業 | WEB制作・メディア制作運用事業 | BPO事業 | FPVドローン映像撮影事業 | 制作実績 | 採用情報 | アクセス | お問い合わせ | プライバシーポリシー | お知らせ | © SANTA entertain…",
+    "source": "official",
+    "url": "http://www.santa-ent.co.jp/",
+    "snippet": "トップページ",
+    "at": "2026-10-07T07:06:57.664Z"
+   },
+   {
+    "field": "employees",
+    "value": 50,
+    "source": "official",
+    "url": "https://www.santa-ent.co.jp/company/",
+    "snippet": "従業員数 50名 | 売上高 8億3百万円(2012年度) |",
+    "at": "2026-10-07T07:07:06.126Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都豊島区池袋2-48-1 信友山の手池袋ビル4F",
+    "source": "official",
+    "url": "http://www.santa-ent.co.jp/",
+    "snippet": "東京都豊島区池袋2-48-1 信友山の手池袋ビル4F",
+    "at": "2026-10-07T07:07:06.126Z"
+   },
+   {
+    "field": "profileText",
+    "value": "COMPANY | SERVICE | PRODUCTS | RECRUIT | ACCESS | CONTACT | 映像の力で、 | まだ見ぬ世界を描く。 | NEWS | お知らせ一覧 | 2025/10/01 | お知らせ | HP開設のお知らせ | SANTA ENTERTAINMENT EST.1997 | SANTA ENTERTAINMENT EST.1997 | SANTA ENTERTAINMENT EST.1997 | SANTA ENTERTAINMENT EST.1997 | SANTA ENTERTAINMENT EST.1997 | SANTA ENTERTAINMENT EST.1997 | SANTA ENTERTAINMENT EST.1997 | SANTA ENTERTAINMENT EST.1997 | SANTA ENTERTAINMENT EST.1997 | SANTA ENTERTAINMENT EST.1997 | SANTA ENTERTAINMENT EST.1997 | SANTA ENTERTAINMENT EST.1997 | 私たちのこと | ABOUT US | サンタエンタテイメントは、1997年の創業以来、アニメーションやCGを活かした映像制作に取り組んできました。私たちが目指しているのは、ただの映像ではなく、人の心を動かし、驚きや感動を生み出す作品です。 | 映像技術は日々進化しています。2Dから3Dへ、手描きからフルCGへ、そしてリアルタイムレンダリングを使ったインタラクティブな表現へ。私たちは常に新しい技術を取り入れ、より豊かな映像体験を生み出すことに挑戦し続けています。 | アイデアを形にし、想像を超える映像を。 | 企画から制作までをワンストップで手がけ、ストーリーと映像表現を組み合わせながら、まだ誰も見たことのない世界をつくり上げていきます。 | 映像の可能性は無限大。 | 私たちは、新しい表現を追求し続けながら、これからも驚きと感動を届けていきます。 | VIEW DETAIL | 事業内容 | SERVICE | 映像制作事業 | web制作・メディア制作運用事業 | BPO事業 | FPVドローン映像撮影事業 | 制作実績 | PRODUCTS | 1997年の設立以来、遊技機における多様な制作に携わって参りました。ワンストップで企画、制作、編集、制作に向き合ってきたからこそ蓄えられた経験と技術で見る人の心に焼きつく体験を生み出します。 | VIEW DETAIL | お問い合わせ | CONTACT | メールフォーム、または電話・FAXにてお気軽にお問い合わせください。 | TEL:03-5979-1019 | 対応時間 10:00～19:00(土・日・祝日除く) | FAX: 03-5979-1023 | お問い合わせ | 株式会社サンタエンタテイメント | 〒170-0014 | 東京都豊島区池袋2-48-1 信友山の手池袋ビル4F | TEL: 03-5979-1019 FAX: 03-5979-1023 | ホーム | 会社案内 | 事業内容 | 映像制作事業 | WEB制作・メディア制作運用事業 | BPO事業 | FPVドローン映像撮影事業 | 制作実績 | 採用情報 | アクセス | お問い合わせ | プライバシーポリシー | お知らせ | © SANTA entertainment.",
+    "source": "official",
+    "url": "http://www.santa-ent.co.jp/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:07:06.127Z"
+   },
+   {
+    "field": "profileText",
+    "value": "COMPANY | SERVICE | PRODUCTS | RECRUIT | ACCESS | CONTACT | 会社案内 | COMPANY | 代表挨拶 企業情報 沿革 アクセス | 代表挨拶 | 1997年、私たちはまだ見ぬ世界にかたちを与えるという想いを胸に、静かに歩みを始めました。視覚を通じて心に触れる体験を届けること。それが私たちの根底にある想いです。色や動き、音や間――それらが織りなす“ことばではないメッセージ”に、どれほどの力があるか。創業以来、私たちはその答えを探しながら、日々、手を動かし、目を凝らしてきました。 | 表現の手段は時代とともに姿を変えています。筆による描画から、光の粒による構成へ。瞬間を切り取る手法は、技術とともに広がり続けています。 | 私たちはその変化を柔らかく受けとめ、常に“次の一手”を模索しています。構想から緻密な調整までをひとつの屋根の下で担う体制を整え、発想と仕上げを地続きに紡いでいく。この流れのなかでこそ、誰かの記憶に残るものが生まれると信じています。 | ただし、私たちの力はひとりで育まれたものではありません。想いと技をもつ人たちが集い、響き合うことで、ようやく世界に届く何かができあがります。だからこそ私たちは、共に取り組む仲間との結びつきを、最も大切な基盤としています。 | いま、私たちはこれまでの枠組みをそっと外し、新たな試みにも向き合い始めています。これまで培った経験や感覚を頼りに、これからの「伝え方」や「届け方」をかたちにしようとしています。 | その歩みを進めるためには、次の時代を一緒に描いていく仲間が必要です。経験の多寡よりも、「誰かの記憶に残るものを生み出したい」という想いを重視したい。そんな方々との出会いを、私たちは心から楽しみにしています。 | これからも、変わりゆく時代のなかで、想像と創造を通じて、小さな驚きと、大きな感動をお届けし続けてまいります。 | 今後とも、あたたかいご理解と応援を賜れますよう、心よりお願い申し上げます。 | 代表取締役 松井 善吾 | 企業情報 | 社名 株式会社サンタエンタテイメント | 設立 1997年1月 | 所在地 〒171-0014 東京都豊島区池袋2-48-1 信友山の手池袋ビル4F | 資本金 1,000万円 | 従業員数 50名 | 売上高 8億3百万円（2012年度） | 主要取引銀行 三菱東京ＵＦＪ銀行、巣鴨信用金庫 | 主要取引先 任天堂株式会社 | Natsume Inc. | 株式会社アサツー・ディ・ケイ | 加賀電子株式会社 | 株式会社講談社 | 株式会社小学館 | 株式会社小学館集英社プロダクション | 株式会社宝島社 | 株式会社トーセ | 東京書籍株式会社 | 日本コンピュータシステム株式会社 | 株式会社マーベラスAQL | 沿革 | 1997年1月 有限会社サンタエンタテイメント設立 | 家庭用ゲーム機用ソフトウェア企画開発事業開始 | 1998年6月 本社を東京都豊島区西池袋5丁目に移転 | 1998年8月 有限会社から株式会社に組織変更 | 2001年6月 アミューズメント機器（ぱちんこ・パチスロ）液晶部グラフィックおよびソフトウェア企画開発事業開始 | 2006年8月 本社を東京都豊島区池袋2丁目に移転 | 2007年6月 事業拡大に伴い本社増床 | 2008年7月 CS事業部設立 | 2013年9月 事業拡大に伴い本社増床 | 2015年10月 モバイルゲーム開発事業開始 | 2022年8月 WEB…",
+    "source": "official",
+    "url": "https://www.santa-ent.co.jp/company/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:07:06.127Z"
+   },
+   {
+    "field": "profileText",
+    "value": "COMPANY | SERVICE | PRODUCTS | RECRUIT | ACCESS | CONTACT | お知らせ | すべて | お知らせ | お知らせ一覧 | 2025/10/01 | お知らせ | HP開設のお知らせ | お問い合わせ | CONTACT | メールフォーム、または電話・FAXにてお気軽にお問い合わせください。 | TEL:03-5979-1019 | 対応時間 10:00～19:00(土・日・祝日除く) | FAX: 03-5979-1023 | お問い合わせ | 株式会社サンタエンタテイメント | 〒170-0014 | 東京都豊島区池袋2-48-1 信友山の手池袋ビル4F | TEL: 03-5979-1019 FAX: 03-5979-1023 | ホーム | 会社案内 | 事業内容 | 映像制作事業 | WEB制作・メディア制作運用事業 | BPO事業 | FPVドローン映像撮影事業 | 制作実績 | 採用情報 | アクセス | お問い合わせ | プライバシーポリシー | お知らせ | © SANTA entertainment.",
+    "source": "official",
+    "url": "https://www.santa-ent.co.jp/category/information",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:07:06.127Z"
+   },
+   {
+    "field": "contactUrl",
+    "value": "https://www.santa-ent.co.jp/contact/",
+    "source": "official",
+    "url": "http://www.santa-ent.co.jp/",
+    "snippet": "リンク文言「CONTACT」/ ページ実在とフォームの記述を確認",
+    "at": "2026-10-07T07:07:08.538Z"
    }
   ],
   "seedCategories": [
@@ -53540,6 +53884,10 @@
    {
     "source": "prtimes",
     "url": "https://prtimes.jp/main/html/searchrlp/company_id/31056"
+   },
+   {
+    "source": "official",
+    "url": "https://www.r-staffing.co.jp/"
    }
   ],
   "evidence": [
@@ -53574,6 +53922,62 @@
     "url": "https://prtimes.jp/main/html/searchrlp/company_id/31056",
     "snippet": "PR TIMES企業情報のURL: https://www.r-staffing.co.jp/corporate/",
     "at": "2026-10-07T05:22:57.619Z"
+   },
+   {
+    "field": "profileText",
+    "value": "派遣のお仕事、派遣登録なら【リクルートスタッフィング】人材派遣会社サイト 派遣のお仕事をご希望の方 | 企業のご担当者様 | コーポレートサイト | 採用情報 | 新規登録する | ログインする | Q＆A・お問い合わせ | トップ | お仕事検索 | 研修・キャリア支援 | お役立ち情報 | はじめての方へ | お仕事をはじめる方はこちら▼ | 新規登録する | 登録済の方はこちら▼ | ログインする | はじめての方へ | かんたんお仕事検索 | よく使う検索条件 | 条件を細かく設定する | 都道府県を選択 | 東京都 | 神奈川県 | 埼玉県 | 千葉県 | 茨城県 | 栃木県 | 群馬県 | 山梨県 | 大阪府 | 兵庫県 | 京都府 | 滋賀県 | 奈良県 | 和歌山県 | 愛知県 | 静岡県 | 岐阜県 | 三重県 | 北海道 | 宮城県 | 青森県 | 秋田県 | 岩手県 | 福島県 | 広島県 | 福岡県 | 長崎県・熊本県 | 職務を選択 | オフィスワーク・事務 | ITエンジニア | WEB・その他IT系 | 営業・販売 | テレマーケティング | 金融 | メディカル・介護 | 勤務条件を選択 | 検索する | 令和8年熊本地震により被害に遭われた皆さまへ | 注目のお仕事情報 | 関東 | 関西 | 東海 | 北海道 | 東北 | 中国 | 九州 | Pick up | テレワークOKの事務のお仕事特集 | Pick up | 10月スタートのお仕事特集！ | Pick up | 11月スタートのお仕事特集！ | Pick up | 12月スタートのお仕事特集！ | 派遣から正社員・契約社員に！紹介予定派遣のお仕事 | 【大学特集】残業少・未経験OKのお仕事多数！ | 英語・語学力を活かす事務のお仕事特集 | 残業なしのIT系のお仕事 | 東名阪限定！在宅ワーク特集 | Jobマ！（介護職）のお仕事特集 | 関東エリアのお仕事一覧 | 大手・人気企業のおすすめお仕事情報 | トヨタ自動車 | 早稲田大学 | 楽天 | サイバーエージェント | リクルート | 法政大学 | 森ビル | KDDI | 日立グループ | LIFULL | 明治安田生命 | あいおいニッセイ | 同和損害保険 | バンダイナムコ | あずさ監査法人 | 講談社 | 博報堂 | 大手・人気企業特集一覧 | リクルートスタッフィングの特徴 | 来社不要、オンラインで | すぐに登録完了 MyPageにて | リアルタイムに | お仕事情報をお届け テレワークOKの | お仕事も充実 オンラインで受講できる | 無料の研修やセミナーを | 多数ご用意 キャリアコンサルティングや | 疑問解消も | オンラインでどこからでも | 福利厚生 | 協会けんぽに加入いただくほか、無料の健康診断や、育児・介護休業など、充実の福利厚生。 | フォロー体制・サポート | コンシェルジュがお仕事探しの第一歩をサポート。就業中もお困りごとはチャットボットで気軽に質問。 | 研修・キャリア支援 | オンラインで学べる研修や理想のワークスタイルに近づくためのキャリア支援であなたの成長をお手伝い。 | はじめての方へ | お仕事のご紹介には派遣登録が必要です。 | リクルートスタッフィングに登録する | はじめての方へ | リクルートスタッフィング | アプリ | リクルートスタッフィング | のテレワーク | おすすめ講座の | 動画公開中 | 労働者派遣法について |…",
+    "source": "official",
+    "url": "https://www.r-staffing.co.jp/",
+    "snippet": "トップページ",
+    "at": "2026-10-07T07:07:24.812Z"
+   },
+   {
+    "field": "profileText",
+    "value": "派遣のお仕事をご希望の方 | 企業のご担当者様 | コーポレートサイト | 採用情報 | 新規登録する | ログインする | Q＆A・お問い合わせ | トップ | お仕事検索 | 研修・キャリア支援 | お役立ち情報 | はじめての方へ | お仕事をはじめる方はこちら▼ | 新規登録する | 登録済の方はこちら▼ | ログインする | はじめての方へ | かんたんお仕事検索 | よく使う検索条件 | 条件を細かく設定する | 都道府県を選択 | 東京都 | 神奈川県 | 埼玉県 | 千葉県 | 茨城県 | 栃木県 | 群馬県 | 山梨県 | 大阪府 | 兵庫県 | 京都府 | 滋賀県 | 奈良県 | 和歌山県 | 愛知県 | 静岡県 | 岐阜県 | 三重県 | 北海道 | 宮城県 | 青森県 | 秋田県 | 岩手県 | 福島県 | 広島県 | 福岡県 | 長崎県・熊本県 | 職務を選択 | オフィスワーク・事務 | ITエンジニア | WEB・その他IT系 | 営業・販売 | テレマーケティング | 金融 | メディカル・介護 | 勤務条件を選択 | 検索する | 令和8年熊本地震により被害に遭われた皆さまへ | 注目のお仕事情報 | 関東 | 関西 | 東海 | 北海道 | 東北 | 中国 | 九州 | Pick up | テレワークOKの事務のお仕事特集 | Pick up | 10月スタートのお仕事特集！ | Pick up | 11月スタートのお仕事特集！ | Pick up | 12月スタートのお仕事特集！ | 派遣から正社員・契約社員に！紹介予定派遣のお仕事 | 【大学特集】残業少・未経験OKのお仕事多数！ | 英語・語学力を活かす事務のお仕事特集 | 残業なしのIT系のお仕事 | 東名阪限定！在宅ワーク特集 | Jobマ！（介護職）のお仕事特集 | 関東エリアのお仕事一覧 | 大手・人気企業のおすすめお仕事情報 | トヨタ自動車 | 早稲田大学 | 楽天 | サイバーエージェント | リクルート | 法政大学 | 森ビル | KDDI | 日立グループ | LIFULL | 明治安田生命 | あいおいニッセイ | 同和損害保険 | バンダイナムコ | あずさ監査法人 | 講談社 | 博報堂 | 大手・人気企業特集一覧 | リクルートスタッフィングの特徴 | 来社不要、オンラインで | すぐに登録完了 MyPageにて | リアルタイムに | お仕事情報をお届け テレワークOKの | お仕事も充実 オンラインで受講できる | 無料の研修やセミナーを | 多数ご用意 キャリアコンサルティングや | 疑問解消も | オンラインでどこからでも | 福利厚生 | 協会けんぽに加入いただくほか、無料の健康診断や、育児・介護休業など、充実の福利厚生。 | フォロー体制・サポート | コンシェルジュがお仕事探しの第一歩をサポート。就業中もお困りごとはチャットボットで気軽に質問。 | 研修・キャリア支援 | オンラインで学べる研修や理想のワークスタイルに近づくためのキャリア支援であなたの成長をお手伝い。 | はじめての方へ | お仕事のご紹介には派遣登録が必要です。 | リクルートスタッフィングに登録する | はじめての方へ | リクルートスタッフィング | アプリ | リクルートスタッフィング | のテレワーク | おすすめ講座の | 動画公開中 | 労働者派遣法について | 派遣で働くときに特に知っておきたいこと 労働者派遣法改正について 労働者…",
+    "source": "official",
+    "url": "https://www.r-staffing.co.jp/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:07:58.640Z"
+   },
+   {
+    "field": "profileText",
+    "value": "ホーム | ミッション | 事業紹介 | ニュース | 採用情報 | サステナビリティ | 会社情報 | 派遣のお仕事をご希望の方 | 企業のご担当者様 | コーポレートサイト | 本社へのアクセス | Mission | お知らせ | 2026年7月29日 | 令和8年熊本地震により被害に遭われた皆さまへ | お知らせ | 2026年6月2日 | 公正取引委員会による立入検査について | お知らせ | 2026年4月1日 | 新経営体制のお知らせ | 多様な働き方 | 私たちは「Workstyle Maker」として | 派遣サービスを中心に多様な働き方をつくりだしています。 | 未経験から育てる | 事務キャリア | 紹介予定派遣 | サービス | 働いてみて、 | 「合うのかどうか」 | 確かめられる。 | 人材派遣 | サービス | その人の“らしさ”まで見つめて、 | 人と企業に | 伴走しつづける。 | アウトソーシング | サービス | 最適かつ | 実効性のある提案で | 生産性向上を実現。 | 障害をオープンに | 働くという選択肢 | 日本語のできる | 日本で働きたい | 外国人派遣サービス | 事業紹介 | ニュースリリース・お知らせ | 2026年7月29日 | ニュースリリース | 令和8年熊本地震により被害に遭われた皆さまへ | 2026年6月2日 | お知らせ | 公正取引委員会による立入検査について | 2026年4月1日 | ニュースリリース | 新経営体制のお知らせ | 一覧へ | 採用情報 | 採用情報 | ページ上部へ | リクルートスタッフィングの公表データ | 女性活躍推進の状況・行動計画 | 採用の実績 | 次世代法に基づく行動計画 | お問い合わせ | プライバシーポリシー | ご利用にあたって | (C) Recruit Staffing Co., Ltd.",
+    "source": "official",
+    "url": "https://www.r-staffing.co.jp/corporate/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:07:58.640Z"
+   },
+   {
+    "field": "profileText",
+    "value": "（C）Recruit Staffing Co., Ltd.",
+    "source": "official",
+    "url": "https://www.r-staffing.co.jp/sol/contents/it/about/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:07:58.640Z"
+   },
+   {
+    "field": "profileText",
+    "value": "ホーム | ミッション | 事業紹介 | ニュース | 採用情報 | サステナビリティ | 会社情報 | 派遣のお仕事をご希望の方 | 企業のご担当者様 | コーポレートサイト | 本社へのアクセス | TOP | ニュース | ニュース | 2026年 | 2025年 | 2024年 | 2023年 | 2022年 | 2021年 | 2020年 | 2019年 | 2018年 | 2017年 | 2016年 | 2015年 | 2014年 | 2013年 | 2012年 | 2011年 | 2010年 | 2009年 | 2008年 | 2007年 | 2006年 | 2005年 | 2004年 | 2003年 | 2002年 | お知らせ | 令和8年熊本地震により被害に遭われた皆さまへ | 2026年7月29日 株式会社リクルートスタッフィング | 2026年7月28日に発生した「令和8年熊本地震」により犠牲となられた方々に心よりお悔み申し上げるとともに、被災された皆さまならびにそのご家族、関係者の皆さまに対してお見舞い申し上げます。 | 被災された皆さまの安全と被災地域の一日も早い復興をお祈り申し上げます。 | 一覧へ戻る | ページ上部へ | お問い合わせ | プライバシーポリシー | ご利用にあたって | (C) Recruit Staffing Co., Ltd.",
+    "source": "official",
+    "url": "https://www.r-staffing.co.jp/corporate/news/2026/072901.html",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:07:58.640Z"
+   },
+   {
+    "field": "profileText",
+    "value": "派遣のお仕事をご希望の方 | 企業のご担当者様 | コーポレートサイト | 採用情報 | 新規登録する | ログインする | Q＆A・お問い合わせ | トップ | お仕事検索 | 研修・キャリア支援 | お役立ち情報 | はじめての方へ | 派遣会社のリクルートスタッフィング トップ | インフォメーション | インフォメーション | 2026.08.06 | 全国 | 日本人材派遣協会実施「★2026年度 派遣社員WEBアンケート★～派遣という働き方について、みなさんの声をお聞かせください！～」にご協力をお願いします！（別サイトが開きます） | 派遣のお仕事をご希望の方 | お仕事を検索する | リアルタイムでお仕事情報更新中！あなたにぴったりのお仕事がきっと見つかります。 | はじめての方へ | 研修・キャリア支援 | 大手・人気企業のおすすめお仕事情報 | Q＆A・お問い合わせ | 来社不要！オンラインで登録完了 | リクルートスタッフィングに登録する | 登録までの流れ | 働き方のご案内 | 派遣 | 紹介予定派遣 | アウトソーシング契約社員 | 短期／単発派遣・パート派遣 | (C) Recruit Staffing Co., Ltd. | お問い合わせ | プライバシーポリシー | ご利用にあたって",
+    "source": "official",
+    "url": "https://www.r-staffing.co.jp/sol/cont/information/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:07:58.640Z"
+   },
+   {
+    "field": "contactUrl",
+    "value": "https://www.r-staffing.co.jp/sol/cont/contact/",
+    "source": "official",
+    "url": "https://www.r-staffing.co.jp/corporate/",
+    "snippet": "リンク文言「お問い合わせ」/ ページ実在とフォームの記述を確認",
+    "at": "2026-10-07T07:08:07.854Z"
    }
   ],
   "seedCategories": [
@@ -53594,6 +53998,10 @@
    {
     "source": "openwork",
     "url": "https://www.openwork.jp/company.php?m_id=a0910000008zNQ6"
+   },
+   {
+    "source": "official",
+    "url": "https://www.hakuhodo-dy.capco.co.jp/"
    }
   ],
   "evidence": [
@@ -53636,6 +54044,94 @@
     "url": "https://www.openwork.jp/company.php?m_id=a0910000008zNQ6",
     "snippet": "OpenWork URL: https://www.hakuhodo-dy.capco.co.jp/",
     "at": "2026-10-07T06:07:37.611Z"
+   },
+   {
+    "field": "profileText",
+    "value": "博報堂ＤＹグループの人材派遣・紹介会社｜博報堂ＤＹキャプコ 広告会社、広告・マスコミ業界の人材派遣＆人材紹介「博報堂ＤＹキャプコ」 | 会社案内 | 特長＆メリット | 登録から就業までの流れ | 人材をお探しの企業様 | お問い合わせ | 博報堂ＤＹキャプコは | 博報堂ＤＹグループの | 人材派遣・人材紹介会社です。 | かんたんお仕事検索 | エリアを選択してください | 東京エリア | 関西エリア | 九州エリア | 名古屋 他エリア | 職種を選択してください（複数選択可能） | 営業・進行管理 | 事務 | 調査マーケティング | クリエイティブ | WEB・システム | 語学 | 戻る | フリーワードお仕事検索 | 【博報堂ＤＹキャプコからのお知らせ】 | はじめての方へ | 登録から | 就業までの流れ | 会社所在地 | 会社案内 | よくある質問 | 派遣の求人情報 | 一覧を見る | 鹿児島県 《薩摩川内市》人のお世話をすることが好きな方必見★カンタン一般事務 | 東京都 【未経験OK】【テレワークあり】【残業ナシも相談可能】活気ある会社で働こう！ | 愛知県 【栄駅スグ】大手広告会社のお仕事！有名クライアントの広告・宣伝に関われます！ | 東京都 大手外資出版社！おしゃれで福利厚生の充実した職場！時短勤務や勤務曜日は応相談！ | 東京都 市ヶ谷駅から徒歩5分！人気エンタメ企業でこれまでの事務経験を活かして働けます！ | 福岡県 〈久々の求人〉大手企業で正社員／経験活かせる！国内営業事務 | 紹介（紹介予定派遣）の求人情報 | 一覧を見る | 東京都 紹介予定派遣（正社員）！アニメ・ゲームIPの新規事業に企画段階から携われます！ | 大阪府 【淀屋橋エリア】20～30代活躍中！給与計算や社保経験を活かしてステップアップ！ | 福岡県 福岡の街づくりを担う大手企業でのビックプロジェクトに携わるお仕事です。 | 福岡県 オシャレなオフィス♪メディア媒体への広告入稿作業やレポーティングを行う仕事★ | 東京都 安定企業の最前線！やりがいある営業＆制作進行ポジション！ | 東京都 スポーツやエンタメのイベント実施で有名な国立競技場でサイネージのスポンサー営業 | 博報堂ＤＹキャプコは博報堂ＤＹグループの人材派遣・人材紹介会社です。 | 当サイトでは、求職者の皆様への求人情報と当社へのご登録のご案内をしております。 | 「博報堂ＤＹホールディングス」傘下の「博報堂」「大広」「読売広告社」をはじめ、 | 広告、マスコミ業界を中心とした派遣のお仕事や紹介予定派遣、職業紹介の求人情報をご紹介しています。 | 広告代理店・マスコミ業界の経験を活かせるお仕事はもちろん、業界未経験からスタートできるお仕事もあります。 | また、人材をお探しの企業様には人材活用のキャリアパートナーとして、人材派遣、紹介予定派遣、人材紹介など、 | 企業様のニーズにあった形で、より良い人材を人選してご提案いたします。 | 当社の事業内容について | 会社所在地 | 本社 | 〒107-0052 東京都港区赤坂6-2-4S-GATE赤坂7F | 東京メトロ千代田線「赤坂駅」徒歩1分 | 東京メトロ銀座線 南北線「溜池山王駅」徒歩6分 | 東京メトロ丸の内線 銀座線「赤坂見附駅」徒歩8分 | 関西支社 | 〒530-0005 大阪府大阪市北区中之島2-2-7中之島セントラルタワー15Ｆ | 「大阪駅」中央南口 徒歩12分 | 地下鉄四つ橋線「肥後橋駅」1-Ａ出口 徒歩…",
+    "source": "official",
+    "url": "https://www.hakuhodo-dy.capco.co.jp/",
+    "snippet": "トップページ",
+    "at": "2026-10-07T07:08:19.636Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区赤坂6-2-4S-GATE赤坂7F",
+    "source": "official",
+    "url": "https://www.hakuhodo-dy.capco.co.jp/",
+    "snippet": "東京都港区赤坂6-2-4S-GATE赤坂7F",
+    "at": "2026-10-07T07:08:31.578Z"
+   },
+   {
+    "field": "profileText",
+    "value": "広告会社、広告・マスコミ業界の人材派遣＆人材紹介「博報堂ＤＹキャプコ」 | 会社案内 | 特長＆メリット | 登録から就業までの流れ | 人材をお探しの企業様 | お問い合わせ | 博報堂ＤＹキャプコは | 博報堂ＤＹグループの | 人材派遣・人材紹介会社です。 | かんたんお仕事検索 | エリアを選択してください | 東京エリア | 関西エリア | 九州エリア | 名古屋 他エリア | 職種を選択してください（複数選択可能） | 営業・進行管理 | 事務 | 調査マーケティング | クリエイティブ | WEB・システム | 語学 | 戻る | フリーワードお仕事検索 | 【博報堂ＤＹキャプコからのお知らせ】 | はじめての方へ | 登録から | 就業までの流れ | 会社所在地 | 会社案内 | よくある質問 | 派遣の求人情報 | 一覧を見る | 鹿児島県 《薩摩川内市》人のお世話をすることが好きな方必見★カンタン一般事務 | 東京都 【未経験OK】【テレワークあり】【残業ナシも相談可能】活気ある会社で働こう！ | 愛知県 【栄駅スグ】大手広告会社のお仕事！有名クライアントの広告・宣伝に関われます！ | 東京都 大手外資出版社！おしゃれで福利厚生の充実した職場！時短勤務や勤務曜日は応相談！ | 東京都 市ヶ谷駅から徒歩5分！人気エンタメ企業でこれまでの事務経験を活かして働けます！ | 福岡県 〈久々の求人〉大手企業で正社員／経験活かせる！国内営業事務 | 紹介（紹介予定派遣）の求人情報 | 一覧を見る | 東京都 紹介予定派遣（正社員）！アニメ・ゲームIPの新規事業に企画段階から携われます！ | 大阪府 【淀屋橋エリア】20～30代活躍中！給与計算や社保経験を活かしてステップアップ！ | 福岡県 福岡の街づくりを担う大手企業でのビックプロジェクトに携わるお仕事です。 | 福岡県 オシャレなオフィス♪メディア媒体への広告入稿作業やレポーティングを行う仕事★ | 東京都 安定企業の最前線！やりがいある営業＆制作進行ポジション！ | 東京都 スポーツやエンタメのイベント実施で有名な国立競技場でサイネージのスポンサー営業 | 博報堂ＤＹキャプコは博報堂ＤＹグループの人材派遣・人材紹介会社です。 | 当サイトでは、求職者の皆様への求人情報と当社へのご登録のご案内をしております。 | 「博報堂ＤＹホールディングス」傘下の「博報堂」「大広」「読売広告社」をはじめ、 | 広告、マスコミ業界を中心とした派遣のお仕事や紹介予定派遣、職業紹介の求人情報をご紹介しています。 | 広告代理店・マスコミ業界の経験を活かせるお仕事はもちろん、業界未経験からスタートできるお仕事もあります。 | また、人材をお探しの企業様には人材活用のキャリアパートナーとして、人材派遣、紹介予定派遣、人材紹介など、 | 企業様のニーズにあった形で、より良い人材を人選してご提案いたします。 | 当社の事業内容について | 会社所在地 | 本社 | 〒107-0052 東京都港区赤坂6-2-4S-GATE赤坂7F | 東京メトロ千代田線「赤坂駅」徒歩1分 | 東京メトロ銀座線 南北線「溜池山王駅」徒歩6分 | 東京メトロ丸の内線 銀座線「赤坂見附駅」徒歩8分 | 関西支社 | 〒530-0005 大阪府大阪市北区中之島2-2-7中之島セントラルタワー15Ｆ | 「大阪駅」中央南口 徒歩12分 | 地下鉄四つ橋線「肥後橋駅」1-Ａ出口 徒歩3分 | 地下鉄御堂筋線/京阪本線「淀屋橋駅」7番出口 徒歩…",
+    "source": "official",
+    "url": "https://www.hakuhodo-dy.capco.co.jp/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:08:31.578Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区赤坂6-2-4 S-GATE赤坂7F",
+    "source": "official",
+    "url": "https://www.hakuhodo-dy.capco.co.jp/company/profile.html",
+    "snippet": "東京都港区赤坂6-2-4 S-GATE赤坂7F",
+    "at": "2026-10-07T07:08:31.578Z"
+   },
+   {
+    "field": "profileText",
+    "value": "広告会社、広告・マスコミ業界の人材派遣＆人材紹介「博報堂ＤＹキャプコ」 | 会社案内 | 特長＆メリット | 登録から就業までの流れ | 人材をお探しの企業様 | お問い合わせ | トップ▶ 会社案内▶ 会社概要 | 会社概要 | 博報堂ＤＹキャプコは博報堂ＤＹグループの総合人材サービス会社として、 「博報堂」「大広」「読売広告社」をはじめとするグループ内各社及び広告、マスコミ関連業界各社への人材派遣・人材紹介を行っています。 | 概要 | 社名 株式会社博報堂ＤＹキャプコ | （商標：博報堂ＤＹ ＣＡＰＣＯ） | （英文名：Hakuhodo DY Capco Inc.） | 本社 〒107-0052 | 東京都港区赤坂6-2-4 S-GATE赤坂7F | [代表] 03-6441-6645 [FAX] 03-6441-6646 | 関西支社 〒530-0005 | 大阪府大阪市北区中之島2-2-7 中之島セントラルタワー15Ｆ | [代表] 06-6229-5298 [FAX] 06-6229-5299 | 九州支店 〒810-0001 | 福岡県福岡市中央区天神4-2-20 天神幸ビル6Ｆ | [代表] 092-713-2255 [FAX] 092-713-2258 | 設立 平成6年 8月 11日（平成18年 10月1日 博報堂キャプコより社名変更） | 資本金 8,000万円（株式会社 博報堂ＤＹホールディングス100％出資） | 事業内容 労働者派遣事業（派13-040308） | 有料職業紹介事業（13-ユｰ040328） | 代表者 代表取締役社長 橋爪 雅彦 | 売上高 34億3千万円（令和7年度） | 博報堂ＤＹキャプコとは | 会社概要 | グループ会社紹介 | 労働者派遣事業に係る各種情報 | 会社所在地・登録場所 | 採用情報 | 博報堂ＤＹキャプコは博報堂ＤＹグループの人材派遣・人材紹介会社です。 | 当サイトでは、求職者の皆様への求人情報と当社へのご登録のご案内をしております。 | 「博報堂ＤＹホールディングス」傘下の「博報堂」「大広」「読売広告社」をはじめ、 | 広告、マスコミ業界を中心とした派遣のお仕事や紹介予定派遣、職業紹介の求人情報をご紹介しています。 | 広告代理店・マスコミ業界の経験を活かせるお仕事はもちろん、業界未経験からスタートできるお仕事もあります。 | また、人材をお探しの企業様には人材活用のキャリアパートナーとして、人材派遣、紹介予定派遣、人材紹介など、 | 企業様のニーズにあった形で、より良い人材を人選してご提案いたします。 | 求人情報 | 派遣、紹介予定派遣、職業紹介の | 求人情報を紹介しています。 | 求人情報一覧 | 東京エリアの求人 | 関西エリアの求人 | 九州エリアの求人 | 名古屋 他エリアの求人 | 会社案内 | 博報堂ＤＹキャプコについて、 | ご案内いたします。 | 博報堂ＤＹキャプコとは | 会社概要 | グループ会社紹介 | 労働者派遣事業に係る各種情報 | 会社所在地・登録場所 | 採用情報 | 博報堂ＤＹキャプコの | 特長＆メリット | 当社の特長＆メリットについて | ご案内しています。 | 博報堂ＤＹキャプコの特長＆メリット | 広告・マスコミ業界に強い | 安心のフォロー体制 | 福利厚生も充実 | よくある人気のお仕事 | お問い合わせ | 博報堂ＤＹキャプコへの | お問い合わせはこちらから。 | お問い合わせ先 | サイトマップ | はじめての方へ …",
+    "source": "official",
+    "url": "https://www.hakuhodo-dy.capco.co.jp/company/profile.html",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:08:31.578Z"
+   },
+   {
+    "field": "profileText",
+    "value": "広告会社、広告・マスコミ業界の人材派遣＆人材紹介「博報堂ＤＹキャプコ」 | 会社案内 | 特長＆メリット | 登録から就業までの流れ | 人材をお探しの企業様 | お問い合わせ | トップ▶ 会社案内 | 博報堂ＤＹキャプコとは | 博報堂ＤＹキャプコは博報堂ＤＹグループの総合人材サービス会社として、 「博報堂」「大広」「読売広告社」をはじめとするグループ内各社及び広告、 マスコミ関連業界各社への人材派遣・人材紹介を行っています。 | 社名の「ＣＡＰＣＯ」（キャプコ）は、 Career Partner Coordinateから。 | 人材を求める企業様と、仕事を探している方たち双方のベストパートナー となること。 | これが、会社設立以来、社員全員が変わらず持ち続けている思いです。 | 博報堂ＤＹキャプコは、1994年、博報堂100％出資の人材派遣会社「博報堂キャプコ」としてスタートしました。 | 2006年には、博報堂ＤＹホールディングスの100％子会社となり、社名も変更。 | 「博報堂ＤＹキャプコ」と名を変えて、グループの総合人材サービス会社となりました。 | 多くの方たちが、自分の経験・スキルを活かして派遣スタッフとして働き、そして、派遣就業を通して更なる経験・スキルを積んで、次のキャリアステージへと旅立っています。 | また、近年は、博報堂ＤＹグループを中心とした人材紹介でも実績をあげ、各企業様の採用活動・仕事を探している方たちの転職活動を支援しております。 | 主な派遣先・紹介先 | ・博報堂 | ・博報堂プロダクツ | ・大広 | ・読売広告社 | ・博報堂ＤＹホールディングス | ・博報堂ＤＹコーポレートイニシアティブ | ・博報堂ＤＹアイ・オー | ・博報堂ＤＹトータルサポート | ・TBWA＼HAKUHODO | ・博報堂スポーツマーケティング | ・博報堂ＤＹミュージック＆ピクチャーズ | ・博報堂ＤＹアウトドア | ・その他博報堂ＤＹグループ各社 | ・制作プロダクション | ・媒体社等 | 主な職種 | ・営業・媒体サポート（制作進行・媒体進行） | ・営業アシスタント | ・一般事務 | ・営業事務 | ・経理、総務 | ・調査、マーケティング | ・編集 | ・広報、ＰＲ | ・クリエイティブ系 | ・Web関連 | ・イベント関連 | ・秘書 他 | 博報堂ＤＹキャプコとは | 会社概要 | グループ会社紹介 | 労働者派遣事業に係る各種情報 | 会社所在地・登録場所 | 採用情報 | 博報堂ＤＹキャプコは博報堂ＤＹグループの人材派遣・人材紹介会社です。 | 当サイトでは、求職者の皆様への求人情報と当社へのご登録のご案内をしております。 | 「博報堂ＤＹホールディングス」傘下の「博報堂」「大広」「読売広告社」をはじめ、 | 広告、マスコミ業界を中心とした派遣のお仕事や紹介予定派遣、職業紹介の求人情報をご紹介しています。 | 広告代理店・マスコミ業界の経験を活かせるお仕事はもちろん、業界未経験からスタートできるお仕事もあります。 | また、人材をお探しの企業様には人材活用のキャリアパートナーとして、人材派遣、紹介予定派遣、人材紹介など、 | 企業様のニーズにあった形で、より良い人材を人選してご提案いたします。 | 求人情報 | 派遣、紹介予定派遣、職業紹介の | 求人情報を紹介しています。 | 求人情報一覧 | 東京エリアの求人 | 関西エリアの求人 | 九州エリアの求人 | 名古屋 他エリアの求人 | 会社案内 | …",
+    "source": "official",
+    "url": "https://www.hakuhodo-dy.capco.co.jp/company/index.html",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:08:31.578Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区芝2-14-5",
+    "source": "official",
+    "url": "https://www.hakuhodo-dy.capco.co.jp/company/group.html",
+    "snippet": "東京都港区芝2-14-5",
+    "at": "2026-10-07T07:08:31.578Z"
+   },
+   {
+    "field": "profileText",
+    "value": "広告会社、広告・マスコミ業界の人材派遣＆人材紹介「博報堂ＤＹキャプコ」 | 会社案内 | 特長＆メリット | 登録から就業までの流れ | 人材をお探しの企業様 | お問い合わせ | トップ▶ 会社案内▶ グループ会社紹介 | グループ会社紹介 | 博報堂ＤＹグループについて | 博報堂ＤＹグループは2003年10月、「博報堂」「大広」「読売広告社」の経営統合により発足した広告会社グループです。 経営統合に伴い設立した持株会社、「博報堂ＤＹホールディングス」は、2005年2月に東京証券取引所市場第1部に上場しました。 | 各社の紹介 | 株式会社 博報堂 | 1895年に創業。発想の原点「生活者発想」と、ビジネスの原点「パートナー主義」を企業フィロソフィー（企業理念）として、高度化・複雑化する広告主のマーケティング課題の解決に努めてきました。 | 「未来を発明する会社へ」を新たなビジョンに掲げ、自ら渦の中心となって、未解決の社会テーマや、これまで出会うことのなかったプレイヤー、テクノロジー、コンテンツを掛け算して、クリエイティビティで新たな解（別解）を生み出していきます。 | ・本 社：東京都港区赤坂5-3-1 赤坂Bizタワー | ・関西支社：大阪府大阪市北区中之島2-2-7 中之島セントラルタワー | 株式会社 大広 | 1944年創業。2019年新たな企業フィロソフィー（企業理念）として「我々は、企業と顧客と、社会を敬愛する」を掲げ、ロゴデザインも刷新しました。 | 顧客価値を積み重ね、ブランドの活動をつくる「Brand Activation,ＤＡＩＫＯ」という活動を通し、企業が進める顧客との事業共創のパートナーをめざし、顧客の賛同を得る「顧客価値」を発見し、それをブランド価値につなげる「顧客体験」をつくり出すことで得意先の事業成長に貢献していきます。 | ・東京本社：東京都港区芝2-14-5 | ・大阪本社：大阪府大阪市北区中之島2-2-7 中之島セントラルタワー | 株式会社 読売広告社 | 1929年創業の読売広告社は、住生活分野を起点とする卓越したマーケティング開発力、 セールスプロモーション分野での長年の経験に基づいた、戦略提案力に定評がある一方、アニメーション番組やイベント事業の企画を通して培ったエンタテインメント分野のビジネス開発力を有した広告会社です。 | 基本方針として「プロモーションコンサルティング」を掲げ、顧客の商品・ サービスが「売れる」「支持される」ことを第一義に業務遂行することを標榜しております。 | そして、既存の伝統的な業務領域にこだわらずに幅広く顧客サポートを行い、真のビジネスパートナーと認識されることを目指しています。 | ・本 社：東京都港区赤坂5-2-20 赤坂パークビル | ・関西支社：大阪府大阪市中央区備後町4-1-3 御堂筋三井ビルディング | その他 博報堂ＤＹホールディングスグループ会社 | ・株式会社 博報堂ＤＹアイ・オー | ・株式会社 博報堂ＤＹトータルサポート | 博報堂ＤＹキャプコとは | 会社概要 | グループ会社紹介 | 労働者派遣事業に係る各種情報 | 会社所在地・登録場所 | 採用情報 | 博報堂ＤＹキャプコは博報堂ＤＹグループの人材派遣・人材紹介会社です。 | 当サイトでは、求職者の皆様への求人情報と当社へのご登録のご案内をしております。 | 「博報堂ＤＹホールディングス」傘下の「博報堂」「大広」「読売広告社」をはじめ、 | 広告、マスコミ業界を中心とした派遣のお仕事や紹介…",
+    "source": "official",
+    "url": "https://www.hakuhodo-dy.capco.co.jp/company/group.html",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:08:31.578Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区赤坂6-2-4 S-GATE赤坂7F【Googleマップへ】",
+    "source": "official",
+    "url": "https://www.hakuhodo-dy.capco.co.jp/company/map.html",
+    "snippet": "東京都港区赤坂6-2-4 S-GATE赤坂7F【Googleマップへ】",
+    "at": "2026-10-07T07:08:31.579Z"
+   },
+   {
+    "field": "profileText",
+    "value": "広告会社、広告・マスコミ業界の人材派遣＆人材紹介「博報堂ＤＹキャプコ」 | 会社案内 | 特長＆メリット | 登録から就業までの流れ | 人材をお探しの企業様 | お問い合わせ | トップ▶ 会社案内▶ 会社所在地・登録場所 | 会社所在地・登録場所 | ご来社いただかなくても登録が完了するＷｅｂ登録を各拠点で実施しています。 | 詳細は こちら をご確認ください。 | 東京本社 | 住所 〒107-0052 東京都港区赤坂6-2-4 S-GATE赤坂7F【Googleマップへ】 | アクセス | 東京メトロ 千代田線「赤坂駅」徒歩1分 | 東京メトロ銀座線 南北線「溜池山王駅」徒歩6分 | 東京メトロ丸の内線 銀座線「赤坂見附駅」徒歩8分 | 関西支社 | 住所 〒530-0005 大阪府大阪市北区中之島2-2-7 中之島セントラルタワー15Ｆ【Googleマップへ】 | アクセス | 「大阪駅」中央南口 徒歩12分 | 地下鉄四つ橋線「肥後橋駅」1-Ａ出口 徒歩3分 | 地下鉄御堂筋線/京阪本線「淀屋橋駅」7番出口 徒歩3分 | 京阪中之島線「大江橋駅」1番出口 徒歩2分 | 九州支店 | 住所 〒810-0001 福岡県福岡市中央区天神4-2-20 天神幸ビル6Ｆ【Googleマップへ】 | アクセス | 地下鉄空港線「天神駅」東1b出口 徒歩2分 | 博報堂ＤＹキャプコは博報堂ＤＹグループの人材派遣・人材紹介会社です。 | 当サイトでは、求職者の皆様への求人情報と当社へのご登録のご案内をしております。 | 「博報堂ＤＹホールディングス」傘下の「博報堂」「大広」「読売広告社」をはじめ、 | 広告、マスコミ業界を中心とした派遣のお仕事や紹介予定派遣、職業紹介の求人情報をご紹介しています。 | 広告代理店・マスコミ業界の経験を活かせるお仕事はもちろん、業界未経験からスタートできるお仕事もあります。 | また、人材をお探しの企業様には人材活用のキャリアパートナーとして、人材派遣、紹介予定派遣、人材紹介など、 | 企業様のニーズにあった形で、より良い人材を人選してご提案いたします。 | 求人情報 | 派遣、紹介予定派遣、職業紹介の | 求人情報を紹介しています。 | 求人情報一覧 | 東京エリアの求人 | 関西エリアの求人 | 九州エリアの求人 | 名古屋 他エリアの求人 | 会社案内 | 博報堂ＤＹキャプコについて、 | ご案内いたします。 | 博報堂ＤＹキャプコとは | 会社概要 | グループ会社紹介 | 労働者派遣事業に係る各種情報 | 会社所在地・登録場所 | 採用情報 | 博報堂ＤＹキャプコの | 特長＆メリット | 当社の特長＆メリットについて | ご案内しています。 | 博報堂ＤＹキャプコの特長＆メリット | 広告・マスコミ業界に強い | 安心のフォロー体制 | 福利厚生も充実 | よくある人気のお仕事 | お問い合わせ | 博報堂ＤＹキャプコへの | お問い合わせはこちらから。 | お問い合わせ先 | サイトマップ | はじめての方へ | 登録から就業までの流れ | はじめての方へご登録について | ご案内しています。 | はじめての方へ登録から就業までの流れ | 「まずは登録」ご希望の方はこちら | キャリアアップ支援 | 働き方のしくみ | 登録手続きの詳細 | よくあるご質問 | 登録済みスタッフの方専用ページ | 人材をお探しの企業様 | 人材派遣、紹介予定派遣、人材紹介 | サービスについてご案内しています。 | ご依頼い…",
+    "source": "official",
+    "url": "https://www.hakuhodo-dy.capco.co.jp/company/map.html",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:08:31.579Z"
+   },
+   {
+    "field": "contactUrl",
+    "value": "https://www.hakuhodo-dy.capco.co.jp/contact/index.html",
+    "source": "official",
+    "url": "https://www.hakuhodo-dy.capco.co.jp/",
+    "snippet": "リンク文言「お問い合わせ」/ ページ実在とフォームの記述を確認",
+    "at": "2026-10-07T07:08:34.944Z"
    }
   ],
   "seedCategories": [
@@ -53657,6 +54153,10 @@
    {
     "source": "openwork",
     "url": "https://www.openwork.jp/company.php?m_id=a0C1000001V48gv"
+   },
+   {
+    "source": "official",
+    "url": "https://www.freemova.com/"
    }
   ],
   "evidence": [
@@ -53699,6 +54199,62 @@
     "url": "https://www.openwork.jp/company.php?m_id=a0C1000001V48gv",
     "snippet": "OpenWork URL: https://www.freemova.com/",
     "at": "2026-10-07T06:08:06.966Z"
+   },
+   {
+    "field": "profileText",
+    "value": "free mova About Us | About Us | Service | Service | Culture | Culture | Recruit | Recruit | Contact | 境界線のない、世界線を。 | A world without borders. | About Us | 若者たちの生きがいを、 | 社会のエネルギーに。 | 私自身、20代を振り返ってみると、 | 就職活動にも転職活動にも手こずりました。 | 適職を選べるだけの知見がなく、導いてくれる人もいない。 | 思い込みで作った狭い枠に捉われていました。 | 過去には戻れませんが、自分自身の失敗を糧にし、 | 迷える20代を広い世界に連れていくことはできます。 | 若者たちがそれぞれに生きがいを持てるようになれば、 | 企業活動にも社会全体にも多大なエネルギーが与えられるはず。 | free movaが存在するというこの世界線を、 | 必ず良きものにしてみせます。 | 代表取締役社長 廣瀬 暁己 | About More | About More | ＞ | Service | 人や組織の可能性を、 | 事業部の枠を超えてボーダレスに創出。 | サービスについてはこちら | 新卒人材紹介 | 中途人材紹介 | 中途人材紹介（ヘルスケア） | SES | モバイル派遣 | アパレル派遣 | 採用コンサルティング | 求人広告 | 介護派遣 | 事務派遣 | 就職相談（中途） | 就職相談（新卒） | 弊社採用についてはこちら | 障がい者雇用 | アパレル販売 | 営業事務 | 事務全般 | SNS広報・デザイナー | WEBマーケター | 人事 | キャリアコーディネーター | リクルーティングアドバイザー | モバイル販売 | キャリアアドバイザー | Culture | 福利厚生の詳細や社員インタビューなどをお届け。 | 社内報はバックナンバーも全て公開。 | 2025.10.18 | 社内報 | ムヴァる。Vol.33 | 2025.09.19 | 社内報 | ムヴァる。Vol.32 | 2025.08.19 | 社内報 | ムヴァる。Vol.31 | Culture More | Culture More | ＞ | Recruit | いつまでも、未完成。 | free movaは、変化が日常的に起こる会社です。 | メンバーが爆速で昇進したり、新規事業が立ち上がったり、 | 社内制度や福利厚生が増えたり。 | リクルートサイトでは、こういった変化に合わせて | メインビジュアルが進化します。 | サイトが完成する日は、いつまでも訪れません。 | 徐々に組み上がっていく建物を見るような感覚で、 | 進化のプロセスを楽しんでいただけると幸いです。 | Recruitment Info | Recruitment Info | ＞ | News | メディア掲載、採用情報の更新など、 | 様々なアクションをタイムリーにお知らせ。 | メディア掲載 | 2026.09.15 | 【受賞】マイナビAWARD「優秀賞」のお知らせ | ＞ | お知らせ | 2026.09.01 | シルバーウイーク(9/21～9/23)休業のお知らせ | ＞ | お知らせ | 2026.08.04 | 株式会社Arteria(アルテリア)設立のお知らせ | ＞ | お知らせ | 2026.07.01 | 新支店開設のお知らせ | ＞ | ALL News | ALL Ne…",
+    "source": "official",
+    "url": "https://www.freemova.com/",
+    "snippet": "トップページ",
+    "at": "2026-10-07T07:08:41.484Z"
+   },
+   {
+    "field": "employees",
+    "value": 800,
+    "source": "official",
+    "url": "https://freemova.com/company/",
+    "snippet": "従業員数 | 800名 | 本社所在地 | 〒150-0043 | 東",
+    "at": "2026-10-07T07:08:54.384Z"
+   },
+   {
+    "field": "profileText",
+    "value": "About Us | About Us | Service | Service | Culture | Culture | Recruit | Recruit | Contact | 境界線のない、世界線を。 | A world without borders. | About Us | 若者たちの生きがいを、 | 社会のエネルギーに。 | 私自身、20代を振り返ってみると、 | 就職活動にも転職活動にも手こずりました。 | 適職を選べるだけの知見がなく、導いてくれる人もいない。 | 思い込みで作った狭い枠に捉われていました。 | 過去には戻れませんが、自分自身の失敗を糧にし、 | 迷える20代を広い世界に連れていくことはできます。 | 若者たちがそれぞれに生きがいを持てるようになれば、 | 企業活動にも社会全体にも多大なエネルギーが与えられるはず。 | free movaが存在するというこの世界線を、 | 必ず良きものにしてみせます。 | 代表取締役社長 廣瀬 暁己 | About More | About More | ＞ | Service | 人や組織の可能性を、 | 事業部の枠を超えてボーダレスに創出。 | サービスについてはこちら | 新卒人材紹介 | 中途人材紹介 | 中途人材紹介（ヘルスケア） | SES | モバイル派遣 | アパレル派遣 | 採用コンサルティング | 求人広告 | 介護派遣 | 事務派遣 | 就職相談（中途） | 就職相談（新卒） | 弊社採用についてはこちら | 障がい者雇用 | アパレル販売 | 営業事務 | 事務全般 | SNS広報・デザイナー | WEBマーケター | 人事 | キャリアコーディネーター | リクルーティングアドバイザー | モバイル販売 | キャリアアドバイザー | Culture | 福利厚生の詳細や社員インタビューなどをお届け。 | 社内報はバックナンバーも全て公開。 | 2025.10.18 | 社内報 | ムヴァる。Vol.33 | 2025.09.19 | 社内報 | ムヴァる。Vol.32 | 2025.08.19 | 社内報 | ムヴァる。Vol.31 | Culture More | Culture More | ＞ | Recruit | いつまでも、未完成。 | free movaは、変化が日常的に起こる会社です。 | メンバーが爆速で昇進したり、新規事業が立ち上がったり、 | 社内制度や福利厚生が増えたり。 | リクルートサイトでは、こういった変化に合わせて | メインビジュアルが進化します。 | サイトが完成する日は、いつまでも訪れません。 | 徐々に組み上がっていく建物を見るような感覚で、 | 進化のプロセスを楽しんでいただけると幸いです。 | Recruitment Info | Recruitment Info | ＞ | News | メディア掲載、採用情報の更新など、 | 様々なアクションをタイムリーにお知らせ。 | メディア掲載 | 2026.09.15 | 【受賞】マイナビAWARD「優秀賞」のお知らせ | ＞ | お知らせ | 2026.09.01 | シルバーウイーク(9/21～9/23)休業のお知らせ | ＞ | お知らせ | 2026.08.04 | 株式会社Arteria(アルテリア)設立のお知らせ | ＞ | お知らせ | 2026.07.01 | 新支店開設のお知らせ | ＞ | ALL News | ALL News | ＞ | 法…",
+    "source": "official",
+    "url": "https://www.freemova.com/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:08:54.384Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区道玄坂2-25-12 道玄坂通3階3-1a",
+    "source": "official",
+    "url": "https://freemova.com/company/",
+    "snippet": "東京都渋谷区道玄坂2-25-12 道玄坂通3階3-1a",
+    "at": "2026-10-07T07:08:54.385Z"
+   },
+   {
+    "field": "profileText",
+    "value": "About Us | About Us | Service | Service | Culture | Culture | Recruit | Recruit | Contact | About Us | - | Mission | - | Vision | - | Value | - | Outline | Mission | まだ見ぬ場所へ、 | 連れて行く。 | Take you to a wonder place. | 変わりたいけど、どう変わればいいのか分からない。 | 今の殻を破って、新しいことがしたい。 | そんな想いを持った人たちの手を取り、引っ張っていくことこそが、 | free movaの存在意義です。 | その先に待ち受けているのは、あなたが予想だにしていなかった場所。 | その場所ですら、ひとつの通過点に過ぎません。 | クライアント、ユーザー、メンバー。 | free movaは、関わる全ての人たちを、まだ見ぬ場所へと連れて行きます。 | Vision | 境界線のない、 | 世界線を。 | A world without borders. | free movaが存在しなかった世界線と、free movaが存在する世界線。 | ここは、free movaが存在する世界線です。 | その世界線で目指すべきは、世の中の境界線をなくすこと。 | 学歴の間にある境界線。年齢の間にある境界線。 | 性別の間にある境界線。未経験者と経験者の間にある境界線。 | 仕事とプライベートの間にある境界線。 | 私たちが描いているのは、これら全てがなくなっている未来です。 | Value | 全員が、当事者。 | Everyone is involved. | 全員でアイデアを出し、全員で会社を作る。歯車は、ひとりもいない。 | 逆風を、追い風に。 | Turn headwinds into tailwinds. | 失敗を通して得られる学びは、山ほどある。その学びが多いほど、成功は大きくなる。 | 向き不向きを、決めつけない。 | Don’t decide who’s right or wrong. | 思い込みで可能性を閉ざすのは勿体ない。判断するのは、やってみてからでいい。 | Outline | 会社概要 | 会社名 | 株式会社free mova (カタカナ表記フリームーヴァ) | マージン率 | 資本金 | 1,250万円 | 会社設立日 | 2019年8月 | 役員 | 代表取締役社長 廣瀬 暁己 | 従業員数 | 800名 | 本社所在地 | 〒150-0043 | 東京都渋谷区道玄坂2-25-12 道玄坂通3階3-1a | 拠点所在地 | 〒060-0004 | 北海道札幌市中央区北4条西4丁目1-7 | MMS札幌駅前ビル 324 | 〒980-0811 | 宮城県仙台市青葉区一番町3-3-1 | クラックス仙台4F | 〒370-0841 | 群馬県高崎市栄町3-11 | 高崎バナーズビル 512 | 〒450-0002 | 愛知県名古屋市中村区名駅3-28-12 | 大名古屋ビルヂング11F | 〒530-0052 | 大阪府大阪市北区南扇町7-17 | MF梅田ビル3F | 〒730-0016 | 広島県広島市中区幟町13−15 | リージャス新広島 232 | 〒810-0001 | 福岡県福岡市中央区天神4-3-8 | Zero-Ten Parkミーナ天神8F | 〒060-0004 | 沖縄県那覇市久茂地2-…",
+    "source": "official",
+    "url": "https://freemova.com/company/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:08:54.385Z"
+   },
+   {
+    "field": "profileText",
+    "value": "よくある課題 | サービス | 特長 | 対応範囲 | 実績 | 料金プラン | 導入フロー | Q&A | ＼ご相談は完全無料／ | 無料相談に申し込む | 事務職特化の総合派遣サービス | 欠員対応も、採用も。 | 人材の詰まりを一気通貫で解決。 | 比較検討中でもOK！ | ＼ご相談は完全無料／ | 無料相談に申し込む | こんなお悩みありませんか？ | 繁忙期にデータ入力要因を補充したい | マニュアル・資料作成できるアシスタントがほしい | 業務が属人化していて、引き継ぎが難しい | 採用しても定着せず、教育コストだけが増える | コールセンターの人手が足りず、現場が回らない | 若手人材の集客・定着に強い | free mova | なら、全て解決できます | 私たちは単なる人材派遣ではありません。 | 業界特化の教育を受けたCrewが現場を強力にサポートし、 | 貴社の「現場が回らない」という課題を根本から解消します。 | free movaが選ばれる理由へ | そもそも | とは？ | Crew=育成前提の無期雇用型の専門チーム | 今までの個人を“派遣する”やり方ではなく、育成を前提に、業界特化型のチームを送り出します。 | また、事務人材の「派遣」だけでなく、紹介予定派遣や 採用支援まで、 | 必要に応じて組み合わせて設計するサービスです。 | 比較検討中でもOK! | まずはご相談ください。 | 無料相談はカンタン30秒で完了！ | ＼ご相談は完全無料！／ | 無料相談に申し込む | の強み | 若手・未経験を“リスク”にしない。 戦力化の前提を揃えます。 | 01 | 研修 | 配属前に「最低限ここまで」を揃える設計（OA／業務ツール／基本対応 など） | 02 | 定着フォロー | 就業後のつまずきを拾い、離脱・ミスマッチを減らす運用 | 03 | 紹介予定派遣 | 採用前提で見極める選択肢も用意（条件は要相談） | 04 | 採用支援 | SNS広告／SNS運用／求人媒体運用を組み合わせ、母集団形成〜改善運用まで支援 | 課題を明確に。最適なチームを。 | まずはご相談ください。 | 無料相談はカンタン30秒で完了！ | ＼ご相談は完全無料！／ | 無料相談に申し込む | 対応範囲 | 派遣 | 一般事務 | 総務・庶務 | 経理補助 | コールセンター | 秘書 | 採用アシスタント | 一般事務の対応業務 | データ入力・修正 | 資料作成（Word/Excel/PowerPoint） | メール・電話対応 | ファイリング・書類整理 | 備品管理・発注 | 見積もり・請求書関連サポート | 採用支援 | 求人媒体運用 | スカウト運用 | SNS運用 | 広告運用 | 求人媒体運用の対応業務 | 求人票作成 | 求人票更新 | 数値改善 | レポート作成 | データ入力・集計 | 活用事例 | 派遣：コールセンター | 急な欠員による業務停滞 | 業界 | 通信 | 会社規模 | 1,000名 | ソリューション | ✓ | 適性スタッフを配置し、実業務だけでなく、マニュアル作成・スクリプトの運用ルールを整備 | ✓ | 立ち上がりフォローを徹底 | 結果 | 一次対応〜記録の流れが整理され、業務フローが安定 | SVが本来業務（品質/教育/分析）に戻れ、対応のばらつきが減少 | 料金・プラン | ヒアリング後、貴社仕様にカスタマイズいたします。まずはご相談ださい。 | プランA | A | -B | -C | …",
+    "source": "official",
+    "url": "https://service.freemova.com/crew/office/company",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:08:54.385Z"
+   },
+   {
+    "field": "contactUrl",
+    "value": "https://freemova.com/contact/",
+    "source": "official",
+    "url": "https://www.freemova.com/",
+    "snippet": "リンク文言「Contact」/ ページ実在とフォームの記述を確認",
+    "at": "2026-10-07T07:08:57.639Z"
    }
   ],
   "seedCategories": [
@@ -53756,6 +54312,10 @@
    {
     "source": "prtimes",
     "url": "https://prtimes.jp/main/html/searchrlp/company_id/157041"
+   },
+   {
+    "source": "official",
+    "url": "https://buzzcloud.co.jp/"
    }
   ],
   "evidence": [
@@ -53790,6 +54350,54 @@
     "url": "https://prtimes.jp/main/html/searchrlp/company_id/157041",
     "snippet": "PR TIMES企業情報のURL: https://buzzcloud.co.jp/",
     "at": "2026-10-07T05:23:03.346Z"
+   },
+   {
+    "field": "profileText",
+    "value": "BuzzCloud株式会社 – “推し活”マーケティングNo1 カンパニー BuzzCloud株式会社 – “推し活”マーケティングNo1 カンパニー 読み込まれました | Top | News | Works | Service | About | Recruit | お問い合わせ | “推し活”マーケティング | この6年で約5倍に拡大し、 | 約8000億を超える「推し活」市場。 | 可処分時間・所得の約40%を推し活に費やす熱狂的な消費行動を | 貴社の商品・サービスへ活用することで | 購入を前提としたマーケティングを提供します。 | 2026/9/15 | 【Brand Summit Autumn 2026】生活者は、“属性”では動かない。AI時代、“推し活”から読み解くインサイト | 2025/10/20 | 【共催ウェビナー】SNSで“ファン”を顧客に変える！推し活マーケティングとは？成功事例から学ぶ最新マーケ戦略 | 2025/7/31 | 「数字至上主義から“購買力“重視へ」VTuberキャスティングの新基準 | News一覧はこちら | 制作実績 | 実績一覧はこちら | 取引先企業例 | ※一部抜粋 | 事業内容 | “推し活” | マーケティング | 事業 | SNS | マーケティング | 事業 | キャスティング | 事業 | 広告代理業 | 会社概要 | ミッション | 会社概要 | “ワクワク”のその先へ。 | 私たちと一緒に働きませんか？ | 採用情報について詳しくはこちら | “推し活”マーケティング No.1 カンパニーとして | 豊富な実績とノウハウで貴社の広告課題を解決していきます。 | ぜひお気軽にご相談ください。 | お電話またはメールフォームにて無料で相談対応いたします。 | 03-6457-8723 | ［お電話受付時間／10:00～17:00 （土日祝除く）］ | 今すぐ無料相談 | “推し活” | マーケティング事業 | SNSマーケティング | 事業 | キャスティング | 事業 | 広告代理業 | BuzzCloud株式会社 | 本社：〒106-0032 東京都港区六本木7-14-23 521-522号（クロスオフィス六本木内） | 事業所：〒107-0052 東京都港区赤坂1-14-14 418号室（第35興和ビル内） | TEL: 03-6457-8723 | Top | News | Works | Service | About | Recruit | お問い合わせ | Privacy Policy | Copyright © BuzzCloud株式会社 All Rights Reserved.",
+    "source": "official",
+    "url": "https://buzzcloud.co.jp/",
+    "snippet": "トップページ",
+    "at": "2026-10-07T07:10:02.659Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区六本木7-14-23 521-522号(クロスオフィス六本木内)",
+    "source": "official",
+    "url": "https://buzzcloud.co.jp/",
+    "snippet": "東京都港区六本木7-14-23 521-522号(クロスオフィス六本木内)",
+    "at": "2026-10-07T07:10:19.330Z"
+   },
+   {
+    "field": "profileText",
+    "value": "BuzzCloud株式会社 – “推し活”マーケティングNo1 カンパニー 読み込まれました | Top | News | Works | Service | About | Recruit | お問い合わせ | “推し活”マーケティング | この6年で約5倍に拡大し、 | 約8000億を超える「推し活」市場。 | 可処分時間・所得の約40%を推し活に費やす熱狂的な消費行動を | 貴社の商品・サービスへ活用することで | 購入を前提としたマーケティングを提供します。 | 2026/9/15 | 【Brand Summit Autumn 2026】生活者は、“属性”では動かない。AI時代、“推し活”から読み解くインサイト | 2025/10/20 | 【共催ウェビナー】SNSで“ファン”を顧客に変える！推し活マーケティングとは？成功事例から学ぶ最新マーケ戦略 | 2025/7/31 | 「数字至上主義から“購買力“重視へ」VTuberキャスティングの新基準 | News一覧はこちら | 制作実績 | 実績一覧はこちら | 取引先企業例 | ※一部抜粋 | 事業内容 | “推し活” | マーケティング | 事業 | SNS | マーケティング | 事業 | キャスティング | 事業 | 広告代理業 | 会社概要 | ミッション | 会社概要 | “ワクワク”のその先へ。 | 私たちと一緒に働きませんか？ | 採用情報について詳しくはこちら | “推し活”マーケティング No.1 カンパニーとして | 豊富な実績とノウハウで貴社の広告課題を解決していきます。 | ぜひお気軽にご相談ください。 | お電話またはメールフォームにて無料で相談対応いたします。 | 03-6457-8723 | ［お電話受付時間／10:00～17:00 （土日祝除く）］ | 今すぐ無料相談 | “推し活” | マーケティング事業 | SNSマーケティング | 事業 | キャスティング | 事業 | 広告代理業 | BuzzCloud株式会社 | 本社：〒106-0032 東京都港区六本木7-14-23 521-522号（クロスオフィス六本木内） | 事業所：〒107-0052 東京都港区赤坂1-14-14 418号室（第35興和ビル内） | TEL: 03-6457-8723 | Top | News | Works | Service | About | Recruit | お問い合わせ | Privacy Policy | Copyright © BuzzCloud株式会社 All Rights Reserved.",
+    "source": "official",
+    "url": "https://buzzcloud.co.jp/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:10:19.330Z"
+   },
+   {
+    "field": "profileText",
+    "value": "会社概要｜BuzzCloud株式会社 読み込まれました | About | 会社概要 | Top | News | Works | Service | About | Recruit | お問い合わせ | 会社名 | BuzzCloud株式会社 | 代表取締役 | 大西 照弘 | 会社所在地 | 【本社】 | 〒106-0032 | 東京都港区六本木7-14-23 521-522号（クロスオフィス六本木内） | 【事業所】 | 〒107-0052 | 東京都港区赤坂1-14-14 418号室（第35興和ビル内） | TEL | 03-6457-8723 | 事業内容 | 1.“推し活”マーケティング事業 | 2.SNSマーケティング事業 | 3.キャスティング事業 | 4.広告代理業 | 資本金 | 9,000,000円 | オフィス | アクセス | ミッション | “推し活” | マーケティング事業 | SNSマーケティング | 事業 | キャスティング | 事業 | 広告代理業 | BuzzCloud株式会社 | 本社：〒106-0032 東京都港区六本木7-14-23 521-522号（クロスオフィス六本木内） | 事業所：〒107-0052 東京都港区赤坂1-14-14 418号室（第35興和ビル内） | TEL: 03-6457-8723 | Top | News | Works | Service | About | Recruit | お問い合わせ | Privacy Policy | Copyright © BuzzCloud株式会社 All Rights Reserved.",
+    "source": "official",
+    "url": "https://buzzcloud.co.jp/about-outline",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:10:19.330Z"
+   },
+   {
+    "field": "profileText",
+    "value": "ミッション｜BuzzCloud株式会社 読み込まれました | About | ミッション | Top | News | Works | Service | About | Recruit | お問い合わせ | BuzzCloudは“推し活”マーケティング | No.1企業です。 | 世の中で“推し活”は一般化されてきた概念。 | 市場規模も | 6年で約5倍に拡大。 | 8,000億円を超える規模になっており、 | 今後も増加する見込みです。 | 消費者の財布が固くなる一方で、 | 可処分時間と所得を推し活へ費やす世の中へ | 意欲的な“推し活”の消費行動を | 貴社の商品・サービスに向けさせることで | 「購入を前提としたマーケティング」をご提供いたします。 | BuzzCloudの事業内容はこちら | “推し活” | マーケティング | SNS | マーケティング | キャスティング事業 | 広告代理業 | 会社概要 | “推し活” | マーケティング事業 | SNSマーケティング | 事業 | キャスティング | 事業 | 広告代理業 | BuzzCloud株式会社 | 本社：〒106-0032 東京都港区六本木7-14-23 521-522号（クロスオフィス六本木内） | 事業所：〒107-0052 東京都港区赤坂1-14-14 418号室（第35興和ビル内） | TEL: 03-6457-8723 | Top | News | Works | Service | About | Recruit | お問い合わせ | Privacy Policy | Copyright © BuzzCloud株式会社 All Rights Reserved.",
+    "source": "official",
+    "url": "https://buzzcloud.co.jp/about-mission",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:10:19.331Z"
+   },
+   {
+    "field": "contactUrl",
+    "value": "https://buzzcloud.co.jp/contact",
+    "source": "official",
+    "url": "https://buzzcloud.co.jp/",
+    "snippet": "リンク文言「お問い合わせ」/ ページ実在とフォームの記述を確認",
+    "at": "2026-10-07T07:10:24.554Z"
    }
   ],
   "seedCategories": [
@@ -53810,6 +54418,10 @@
    {
     "source": "openwork",
     "url": "https://www.openwork.jp/company.php?m_id=a0C2x00000ZBkNX"
+   },
+   {
+    "source": "official",
+    "url": "https://chi-full.jp/"
    }
   ],
   "evidence": [
@@ -53844,6 +54456,62 @@
     "url": "https://www.openwork.jp/company.php?m_id=a0C2x00000ZBkNX",
     "snippet": "OpenWork URL: https://chi-full.jp/",
     "at": "2026-10-07T06:08:50.555Z"
+   },
+   {
+    "field": "profileText",
+    "value": "株式会社Chi-Full - 十人十色、数多の充実を創出する ホーム | 事業内容 | 会社情報 | 採用情報 | 数多の充実を創出する | 株式会社Chi-Fullは、多様な課題に柔軟に対応し、 | Webソリューションを中心に幅広いサービスを提供しています。 | 企業のニーズに応じた最適な解決策で、ビジネスの成長をサポートします。 | お問い合わせ | Service | 事業内容 | Webマーケティング事業 | Jimnny | アパレルEC事業 | 詳しく見る | About | 数多の充実を創出する | 企業活動を通して、社会の未来を支え、 | すべての人が充実した人生を送れるようサポートする。 | それが、私たちChi-Fullの使命です。 | 現在の経済の動向から生活水準の低迷が予見されますが、 | もう一度経済成長期に入るためには個人の成長が | 必要不可欠と考えております。 | 経済活動に従事する全ての人の成長を加速させ | 「人々が数多に輝く未来」を実現させます。 | 詳しく見る | Recruit | 採用情報 | 共に熱狂できる仲間を探しています！ | 職場を知る | 仕事を知る | 人を知る | 募集要項 | 詳しく見る | Media | メディア | マーケティング・デザインに関する記事をnoteにて配信しています！ | 変化を恐れたブランドが失ったもの | 「見られる」より「見られ続ける」 | 文化を読み解くマーケティングの視点 | WEB研修頑張りました。 | データが示す、男女の選択行動に学ぶ | 競合とは「同業」だけではない | 理論で理解して、感情で動く | タイポグラフィの分類 | フォントで“心をつかむ” | デザインは「作る力」ではなく「考える力」から始まる | 変化を恐れたブランドが失ったもの | 「見られる」より「見られ続ける」 | 文化を読み解くマーケティングの視点 | WEB研修頑張りました。 | データが示す、男女の選択行動に学ぶ | 競合とは「同業」だけではない | 記事一覧へ | Contact | お問い合わせ | お問い合わせをご希望の方はフォーム、 | または電話番号よりお問い合わせください。 | Chi-Fullでは一緒に | 働きたい人を積極採用募集中！ | 採用応募フォームはこちら | お電話でのお問い合わせはこちら | 03-4400-4260 | お問い合わせはこちら | お問い合わせフォーム | 〒104-0045 | 東京都中央区築地2-11-10 Misto Tsukiji | 事業内容 | 会社情報 | 採用情報 | 職場を知る | 人を知る | 仕事を知る | 募集要項 | プライバシーポリシー | 採用募集に応募する | お問い合わせ | Chi-Full Co., Ltd. All rights reserved",
+    "source": "official",
+    "url": "https://chi-full.jp/",
+    "snippet": "トップページ",
+    "at": "2026-10-07T07:10:31.442Z"
+   },
+   {
+    "field": "employees",
+    "value": 60,
+    "source": "official",
+    "url": "https://chi-full.jp/company/",
+    "snippet": "従業員数 60名 | 電話番号 03-4400-4260(代表)",
+    "at": "2026-10-07T07:10:36.348Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都中央区築地2-11-10 Misto Tsukiji",
+    "source": "official",
+    "url": "https://chi-full.jp/",
+    "snippet": "東京都中央区築地2-11-10 Misto Tsukiji",
+    "at": "2026-10-07T07:10:36.349Z"
+   },
+   {
+    "field": "profileText",
+    "value": "ホーム | 事業内容 | 会社情報 | 採用情報 | 数多の充実を創出する | 株式会社Chi-Fullは、多様な課題に柔軟に対応し、 | Webソリューションを中心に幅広いサービスを提供しています。 | 企業のニーズに応じた最適な解決策で、ビジネスの成長をサポートします。 | お問い合わせ | Service | 事業内容 | Webマーケティング事業 | Jimnny | アパレルEC事業 | 詳しく見る | About | 数多の充実を創出する | 企業活動を通して、社会の未来を支え、 | すべての人が充実した人生を送れるようサポートする。 | それが、私たちChi-Fullの使命です。 | 現在の経済の動向から生活水準の低迷が予見されますが、 | もう一度経済成長期に入るためには個人の成長が | 必要不可欠と考えております。 | 経済活動に従事する全ての人の成長を加速させ | 「人々が数多に輝く未来」を実現させます。 | 詳しく見る | Recruit | 採用情報 | 共に熱狂できる仲間を探しています！ | 職場を知る | 仕事を知る | 人を知る | 募集要項 | 詳しく見る | Media | メディア | マーケティング・デザインに関する記事をnoteにて配信しています！ | 変化を恐れたブランドが失ったもの | 「見られる」より「見られ続ける」 | 文化を読み解くマーケティングの視点 | WEB研修頑張りました。 | データが示す、男女の選択行動に学ぶ | 競合とは「同業」だけではない | 理論で理解して、感情で動く | タイポグラフィの分類 | フォントで“心をつかむ” | デザインは「作る力」ではなく「考える力」から始まる | 変化を恐れたブランドが失ったもの | 「見られる」より「見られ続ける」 | 文化を読み解くマーケティングの視点 | WEB研修頑張りました。 | データが示す、男女の選択行動に学ぶ | 競合とは「同業」だけではない | 記事一覧へ | Contact | お問い合わせ | お問い合わせをご希望の方はフォーム、 | または電話番号よりお問い合わせください。 | Chi-Fullでは一緒に | 働きたい人を積極採用募集中！ | 採用応募フォームはこちら | お電話でのお問い合わせはこちら | 03-4400-4260 | お問い合わせはこちら | お問い合わせフォーム | 〒104-0045 | 東京都中央区築地2-11-10 Misto Tsukiji | 事業内容 | 会社情報 | 採用情報 | 職場を知る | 人を知る | 仕事を知る | 募集要項 | プライバシーポリシー | 採用募集に応募する | お問い合わせ | Chi-Full Co., Ltd. All rights reserved",
+    "source": "official",
+    "url": "https://chi-full.jp/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:10:36.349Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都中央区築地2丁目11-10",
+    "source": "official",
+    "url": "https://chi-full.jp/company/",
+    "snippet": "東京都中央区築地2丁目11-10",
+    "at": "2026-10-07T07:10:36.349Z"
+   },
+   {
+    "field": "profileText",
+    "value": "ホーム | 事業内容 | 会社情報 | 採用情報 | ホーム 会社情報 | Company | 会社情報 | Chi-Fullの想い | 会社概要 | 数多の充実を創出する | 企業活動を通して、社会の未来を支え、すべての人が充実した人生を送れるようサポートする。 | それが、私たちChi-Fullの使命です。 | 現在の経済の動向から生活水準の低迷が予見されますが、 | もう一度経済成長期に入るためには個人の成長が必要不可欠と考えております。 | 経済活動に従事する全ての人の成長を加速させ「人々が数多に輝く未来」を実現させます。 | Credo | 行動指針 | Credo01 | 圧倒的思考 | 現代は、消費者行動が急速に変化し、マーケットの常識も日々塗り替えられる時代です。私たちがクライアント様へ最大の価値を届け続けるためには、過去の成功例に捉われず、課題の本質を考え抜く姿勢、そして新たな手法に果敢にアプローチすることが必要です。これまでの当たり前を疑い、結果が出るまで粘り強く考え実行し続けること。「圧倒的思考」の上にクライアント様の期待を超える価値提供が実現します。 | Credo02 | 結果へのプライド | メンバー全員が何よりも結果にプライドを持ちます。 | プロセスを軽視し短期的な結果を求めるという意味ではなく、これまでのやり方や過去の実績へのこだわりは捨て、泥臭くとも最大限の結果を追求する。 | この姿勢が成長の土台と信頼を作ります。常に結果で語るプロ集団であり続けます。 | Credo03 | GIVE & GIVE | 今の私たちがあるのは、周りからのお力添えがあるからこそ。 | これを常に心に留め、お客様・社会・社員にGIVEし続けることで初めて『真の価値提供』が可能となります。 | 因果応報の中で、利他の精神を最大限に発揮し、世の中に貢献します。 | Credo04 | 自立集団 | 経済が衰退の一途をたどる中、ビジネスの領域も格差社会となり、所得の差がより大きく開きます。社員一人一人が厳しい時代を生き抜く力を培って欲しい。「不断の努力」と「高いプロ意識」を持ち、依存ではなく共存していく自立型人材を育成することで、個人が十色に輝く内部環境を構築します。また自立型人材が一つのチームとなることで、相乗的な成果の創出を実現します。 | Credo05 | 日常五心 | 「はい」という素直な心、「すみません」という反省の心、「おかげさま」という謙虚な心、「私がします」という奉仕の心、「ありがとう」という感謝の心。当たり前のことを誰よりも当たり前に。日本人の和の心を大切にします。 | Overview | 会社概要 | 会社名 株式会社Chi-Full | 代表取締役 雫石 諒 | 事業内容 Webマーケティング事業 | Jimnny | アパレル事業 | 設立 2022年12月20日 | 従業員数 60名 | 電話番号 03-4400-4260（代表） | 顧問弁護士 コスモス法律事務所 | 顧問税理士 上野税理士法人 | 顧問社労士 みずき特定社会保険労務士・中小企業診断士事務所 | 認定 労働者派遣事業：派13-317856 | 有料職業紹介事業：13-ユ-317800 | Office | オフィス所在地 | TSUKIJI Office | 〒104-0045 | 東京都中央区築地2丁目11-10 | Misto Tsukiji | SHIBUYA First Office | 〒150-0031 | 東京都渋谷区桜丘町…",
+    "source": "official",
+    "url": "https://chi-full.jp/company/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:10:36.349Z"
+   },
+   {
+    "field": "contactUrl",
+    "value": "https://chi-full.jp/contact/",
+    "source": "official",
+    "url": "https://chi-full.jp/",
+    "snippet": "リンク文言「お問い合わせ」/ ページ実在とフォームの記述を確認",
+    "at": "2026-10-07T07:10:41.927Z"
    }
   ],
   "seedCategories": [
@@ -53865,6 +54533,10 @@
    {
     "source": "openwork",
     "url": "https://www.openwork.jp/company.php?m_id=a0C10000011GRjZ"
+   },
+   {
+    "source": "official",
+    "url": "http://f-w.co.jp/"
    }
   ],
   "evidence": [
@@ -53899,6 +54571,70 @@
     "url": "https://www.openwork.jp/company.php?m_id=a0C10000011GRjZ",
     "snippet": "OpenWork URL: http://f-w.co.jp/",
     "at": "2026-10-07T06:09:19.734Z"
+   },
+   {
+    "field": "profileText",
+    "value": "外国人モデル・ハーフモデル・俳優・外国人ナレーター｜外国人モデル事務所フリー・ウエイブ【東京・大阪】 モデル/タレントを探す | 会社案内 | 取引ガイドライン | 出演実績 | モデル登録 | お問合せ | JP | EN | 0 | お気に入り一覧 | 外国人モデル・タレント事務所フリー・ウエイブ｜モデル・ナレーター・俳優のキャスティング | 1992年創業、​東京・​大阪を​拠点に35年以上の​実績を​誇る日本最​大級の​外国人モデル・タレント事務所フリー・ウエイブ。 | CM、​映画、​イベントなど​幅​広い​案件に、豊富な​外国人モデル・ハーフモデル・ナレーターを​短時間で​高品質に​キャスティングします。​ | 外国人モデル／ハーフモデル | キッズモデル | 外国人ナレーター | 外国人俳優/日本人俳優 | 外国人シンガー／ミュージシャン | 外国人ダンサー | ファッションモデル | インフルエンサー | タレント | NEWS | 出演実績・最新情報 | 年間4,000件以上の​キャスティング実績。NHK番組や​大手TVCMでも​活躍 | #テレビ・映画・舞台 | Netflixシリーズ「俺のこと、なんか言ってた？」フリー・ウエイブの俳優たちが出演！ | 2026.09.30 | #テレビ・映画・舞台 | 映画『YAMANEKO』トミコ・クレアが出演 | 2026.09.25 | 『相棒 season25』フリー・ウエイブの俳優たちが出演！ | 2026.09.16 | #テレビ・映画・舞台 | ジョエル・ディカーソンが 『真田十勇士 SHADOWS OF THE TEN NINJA』に出演！ | 2026.08.17 | #テレビ・映画・舞台 | 「TIGER & BUNNY」THE STAGEにジョエル・ショウヘイが出演決定！ | 2026.06.30 | #テレビ・映画・舞台 | ミュージカル『新テニスの王子様』The Final Stage キャスト3名出演決定！ | 2026.06.04 | 2026.10.06 | 企業名鑑に代表・高橋のインタビュー掲載！未経験から築いた創業の原点と誠実さ | 2026.10.05 | 外国人マリアッチ出張手配・派遣｜イベントを彩る本場メキシコの生演奏 | 2026.10.01 | 訪日外国人向けInstagram「PutiJapan」1万人突破！インバウンドPR・タイアップ募集 | 2026.09.30 | Netflixシリーズ「俺のこと、なんか言ってた？」フリー・ウエイブの俳優たちが出演！ | 2026.09.25 | 映画『YAMANEKO』トミコ・クレアが出演 | 出演実績をもっと見る | MODELS & TALENTS | 東京・大阪（関西） | ロシア出身。透明感が魅力のモデル | マリア | 「5時に夢中!」黒船特派員火曜日レギュラー、バラエティーから舞台まで幅広く活躍中 | トキ | アメリカ・マイアミ出身の俳優／モデル | ジェイド・ナッピ | 元プロロッククライマーの俳優／モデル。スポーツ・フィットネス系の広告等で活躍中 | アレク | モデル・俳優としての活動に加え、看護師免許を保持しているという異色の経歴を持つタレント | スエヒロ ミズホ | 連続テレビ小説「風、薫る」バーンズ役で注目のイギリス出身俳優 | エマ・ハワード | てれび戦士としても活躍中！はじける笑顔の正統派ハーフ美少女 | カネコ リラ | Eテレ「天才てれびくん」てれび戦士。表現力豊か…",
+    "source": "official",
+    "url": "http://f-w.co.jp/",
+    "snippet": "トップページ",
+    "at": "2026-10-07T07:10:47.875Z"
+   },
+   {
+    "field": "profileText",
+    "value": "モデル/タレントを探す | 会社案内 | 取引ガイドライン | 出演実績 | モデル登録 | お問合せ | JP | EN | 0 | お気に入り一覧 | 外国人モデル・タレント事務所フリー・ウエイブ｜モデル・ナレーター・俳優のキャスティング | 1992年創業、​東京・​大阪を​拠点に35年以上の​実績を​誇る日本最​大級の​外国人モデル・タレント事務所フリー・ウエイブ。 | CM、​映画、​イベントなど​幅​広い​案件に、豊富な​外国人モデル・ハーフモデル・ナレーターを​短時間で​高品質に​キャスティングします。​ | 外国人モデル／ハーフモデル | キッズモデル | 外国人ナレーター | 外国人俳優/日本人俳優 | 外国人シンガー／ミュージシャン | 外国人ダンサー | ファッションモデル | インフルエンサー | タレント | NEWS | 出演実績・最新情報 | 年間4,000件以上の​キャスティング実績。NHK番組や​大手TVCMでも​活躍 | #テレビ・映画・舞台 | Netflixシリーズ「俺のこと、なんか言ってた？」フリー・ウエイブの俳優たちが出演！ | 2026.09.30 | #テレビ・映画・舞台 | 映画『YAMANEKO』トミコ・クレアが出演 | 2026.09.25 | 『相棒 season25』フリー・ウエイブの俳優たちが出演！ | 2026.09.16 | #テレビ・映画・舞台 | ジョエル・ディカーソンが 『真田十勇士 SHADOWS OF THE TEN NINJA』に出演！ | 2026.08.17 | #テレビ・映画・舞台 | 「TIGER & BUNNY」THE STAGEにジョエル・ショウヘイが出演決定！ | 2026.06.30 | #テレビ・映画・舞台 | ミュージカル『新テニスの王子様』The Final Stage キャスト3名出演決定！ | 2026.06.04 | 2026.10.06 | 企業名鑑に代表・高橋のインタビュー掲載！未経験から築いた創業の原点と誠実さ | 2026.10.05 | 外国人マリアッチ出張手配・派遣｜イベントを彩る本場メキシコの生演奏 | 2026.10.01 | 訪日外国人向けInstagram「PutiJapan」1万人突破！インバウンドPR・タイアップ募集 | 2026.09.30 | Netflixシリーズ「俺のこと、なんか言ってた？」フリー・ウエイブの俳優たちが出演！ | 2026.09.25 | 映画『YAMANEKO』トミコ・クレアが出演 | 出演実績をもっと見る | MODELS & TALENTS | 東京・大阪（関西） | ロシア出身。透明感が魅力のモデル | マリア | 「5時に夢中!」黒船特派員火曜日レギュラー、バラエティーから舞台まで幅広く活躍中 | トキ | アメリカ・マイアミ出身の俳優／モデル | ジェイド・ナッピ | 元プロロッククライマーの俳優／モデル。スポーツ・フィットネス系の広告等で活躍中 | アレク | モデル・俳優としての活動に加え、看護師免許を保持しているという異色の経歴を持つタレント | スエヒロ ミズホ | 連続テレビ小説「風、薫る」バーンズ役で注目のイギリス出身俳優 | エマ・ハワード | てれび戦士としても活躍中！はじける笑顔の正統派ハーフ美少女 | カネコ リラ | Eテレ「天才てれびくん」てれび戦士。表現力豊かでパワフルなキッズモデル | へアストン・ナディア・凛 | ダンサー・俳優・モデルとして、広告から舞台…",
+    "source": "official",
+    "url": "http://f-w.co.jp/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:11:01.190Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都世田谷区池尻3-19-10 NKビル1階",
+    "source": "official",
+    "url": "https://f-w.co.jp/about/company/",
+    "snippet": "東京都世田谷区池尻3-19-10 NKビル1階",
+    "at": "2026-10-07T07:11:01.190Z"
+   },
+   {
+    "field": "profileText",
+    "value": "モデル/タレントを探す | 会社案内 | 取引ガイドライン | 出演実績 | モデル登録 | お問合せ | JP | EN | 0 | お気に入り一覧 | TOP | 会社案内 | 会社概要・取引先・沿革 | About Us | 会社案内 | 会社概要・取引先・沿革 | 会社概要 | 名称 | 株式会社 フリー・ウエイブ | 所在地 | 東京本社 | 東京都世田谷区池尻3-19-10 NKビル1階 | TEL：03-6453-2744／FAX：03-6453-2743 | Email： | 大阪オフィス | 大阪府大阪市中央区北浜3-2-5京浜淀屋橋ビル804 | 資本金 | 1,000万円 | 設立 | 平成4年2月 有限会社フリー・ウエイブを設立。 | 平成15年4月 有限会社から株式会社に組織名を変更。 | 取締役 | 代表取締役：高橋 睦実 代表取締役のメッセージはこちら | 専務取締役：横畑 考二 | 常務取締役：伊藤洋輔 | 取締役：小堀希代美 | 社外取締役：平岡久人 | 取引銀行 | みずほ銀行 渋谷中央支店 | 東京三菱UFJ銀行 渋谷支店 | 昭和信用金庫 大橋支店 | 事業内容 | 広告物、TV、映画などへの外国人モデル・タレント・俳優・エキストラ等のマネージメント | 外国人ナレーターのキャスティング・マネージメント及びナレーションデータ納品業務 | 外国人及び日本人ダンサー・ミュージシャン・パフォーマーのマネージメント及びコーディネート | 外国人モデルの招聘 外国人インフルエンサーのマネージメント | イベント等への外国人ミュージシャン・パフォーマーなどのキャスティング及びコーディネート | 資格及び取得許可 | 有料職業紹介：<13-ユ-301307> 入管申請取次 | 営業受付時間 | 10:30から19:30 (土日祝日を除く) | 会社概要(PDF)ダウンロード | 株式会社フリー・ウエイブの会社概要資料をこちらからダウンロードしてご覧いただけます。 | ※会社概要資料はPDFデータです。 | ご利用いただくにはアドビ社のAdobe Acrobat Readerが必要です。 | お持ちでない方はアドビ社のWEBサイトよリダウンロードしてからご利用ください | お取引実績企業 | ※一部、過去のお取引実績を含みます | ※その他、CMキャスティング会社、映像制作会社、イベント制作会社、アパレルブランドなど 累計3,000社以上の取引実績がございます。 | 沿革 | 1989年 | 米国法人スターダンスコネクションの日本事務局として活動開始。アメリカ人HIP HOPダンサーのプロモーション（TV番組、雑誌等、全国ツアー、イベント出演など）を担当。当時大ブームを巻き起こしたHIP HOPをアメリカからいち早く日本に紹介。 | 1990年 | 日本人ダンサーのエージェントとしての活動を開始。渡辺美里、TMNなどのツアーダンサーのブッキングを手掛ける | 1992年 | 有限会社フリー・ウエイブを設立。在日外国人ダンサーのエージェントとしての老舗のショークラブ、TV、CMのキャスティング業務を手掛け、ダンスショー制作・プロデュースをスタート。 | 1993年 | イベントキャスティング、各種イベントのアトラクション（バンド、パフォーマー、タレント、司会、ものまね、ダンサー）などのイベントキャスティングも多く手掛ける。大道芸人、パフォーマーなどのエージェントを開始。 | 1996年 | Paul Jacksonのマネージ…",
+    "source": "official",
+    "url": "https://f-w.co.jp/about/company/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:11:01.190Z"
+   },
+   {
+    "field": "profileText",
+    "value": "モデル/タレントを探す | 会社案内 | 取引ガイドライン | 出演実績 | モデル登録 | お問合せ | JP | EN | 0 | お気に入り一覧 | TOP | 会社案内 | About Us | 会社案内 | フリー・ウエイブとは | 創業30年以上の歴史を誇る、業界トップの外国人モデル・タレント事務所です。 | 豊富な経験値とタレントマネージメント力で多くのクライアント様に選ばれ続けています | 登録者 約3,000名以上 | 幅広い年代層と個性溢れた外国人モデル・タレント人材が多数在籍。 | フリー・ウエイブは約3,000名、100ケ国以上の幅広い年代の外国人モデルやタレントが在籍しており、業界トップのネットワークを誇っています。 | 東京・大阪を拠点に、全国の外国人モデルやタレント・ナレーターのコーディネートに柔軟に対応いたします。 | 豊富な実績と経験 | 当社は取引企業3,000社以上、年間案件数は5000件以上。CMや映像制作からテレビ業界、音楽、イベント、ファッション、教育、地方創生など多岐にわたる分野で豊富な実績を誇ります。お客様の多様なニーズに応じて、最適なコーディネートを提供いたします。 | 取引企業を見る | 実績を見る | モデル一覧を見る | お客様に選ばれる理由 | フリー・ウエイブの4つの強み | 「タレント力×マネージャー力」でお客様を全力でサポート! | 外国人モデル・タレント等のキャスティングや外国語ナレーションでお悩みの方は、まずご相談ください。 | お客様の声 | 数ある外国人タレント事務所の中、多くのクライアント様が継続的にフリー・ウエイブを | 選ばれる理由は何なのでしょうか？クライアント様のお声をご紹介します。 | MV | この度はメインキャスト、ナレーターのご提案、そして現場でのフォローまで、誠にありがとうございました！マネージャーさんの細かい情報とご提案には大変助けられました。おかげでクライアントへの提案の幅を広げることができました。現場での通訳・フォローも抜けのないご対応、さすがでございました。おかげさまで良い作品が出来上がりそうです！ | （制作会社 B様） | 映画 | 外国人キャストが必要な際には必ずフリー・ウエイブに連絡するよう、制作やキャスティングに伝えています。現場でもマネージャーさんが臨機応変に動いてくれるため、いつも制作チームの一員だと思っています。 | （映画監督 A様） | ドラマ | ただキャストを提案するだけではなく、撮影時の注意点や考慮すべき点などのアドバイス、また必要に応じた現場でのサポートもしてくださるため、外国人キャストが必要な際には、頼り切ってます！ | （キャスティング・ディレクター B様） | 語学番組 | 急なお願いでしたのに、ご丁寧に対応してくださり本当に助かりました。これからもよろしくお願いいたします。 | （制作会社 C様） | 企業広告 | 御社のモデルさんはプロ意識が高く、 現場のレベルを上げてくれていたように感じました。改めて感謝申し上げます。 | （キャスティング会社 A様） | PRイベント | モデルのお二人がとても気さくで、現場にもすぐになじんでくれました。 | 一方で本番は表情ががらりと変わり、プロフェッショナルな表情を見せてくれて、プロのお仕事だなと感銘すると同時に、本当におふたりにお願いしてよかったと思いました！また、機会がありましたらどうぞよろしくお願いします。 | （メーカー A様 ） | Free Wave とは …",
+    "source": "official",
+    "url": "https://f-w.co.jp/about/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:11:01.190Z"
+   },
+   {
+    "field": "profileText",
+    "value": "モデル/タレントを探す | 会社案内 | 取引ガイドライン | 出演実績 | モデル登録 | お問合せ | JP | EN | 0 | お気に入り一覧 | TOP | 外国人モデル | マリア | マリア | No.19599 | Maria | 身長 | ： | 174cm | バスト | ： | 76cm | ウエスト | ： | 60cm | ヒップ | ： | 85cm | 靴サイズ | ： | 24cm | 髪 | ： | ブラウン | 瞳 | ： | ヘーゼル | 言語 | ： | ロシア語 / 英語 | ルーツ | ： | ロシア | 活動ジャンル | ： | モデル | コンポジット | プロフィール | ファッションモデルページ | キャスティングの​ご相談・お問い合わせ | マネージャーコメント | キュートな笑顔とクールな表情を自在に使い分け、長い手足を活かした美しいポージングで魅せる多才なモデル。 | カタログ撮影はもちろん、CM出演や趣味・特技である音楽を活かしたお仕事にも幅広く対応しています。 | 6歳からフルート、8歳からピアノを始め、音楽大学附属校や音楽院で専門的な教育を受けてきました。 | 現在までにフルート歴は約17年。音楽的な素養と表現力も兼ね備えた存在です。 | プロフィール | 基本情報 | 名前：マリア | 国籍：ロシア | 言語：ロシア語（ネイティブ）、英語（流暢）、日本語（初級） | 身長：173cm | モデル経歴 | ファッション、スチール | ・ジルスチュアート 医療服 | ・オーシャンパシフィック | ・REDUCTS | ・FUKAKI NET カシミア | ・BrandCo Paris | ・MIS GENERAL LABEL 26SS | ・KRIFF MAYER | ・4℃ | ・河谷シャツ 2025AW | ・ストリングス名古屋 | ・Anna Sui | ・Jill Stuart | ・SUITS SQUARE | ・Nano Universe | ・Lacoste | ・Y3 ファッションブランド | ・EVRIS ファッションブランド | ・TAKAMIブライダル | ・LEON（雑誌） 編集ページ掲載 | ・FUDGE（雑誌） 編集ページ掲載 | ・Glamour（大阪版） 編集ページ掲載 | ・Bluelea | 広告 | ・洋服の青山 | ・大丸松坂屋百貨店_AnotherADdress | ・SPHR鎌倉プリンスホテル | ・GOKUMIN (マットレス) | ・SHARP AQUOS | ・TOYOTA | ・Sony | 音楽活動 | ・フルート歴17年 | ・ヤマハジャパンにてライブ演奏（プライベートおよび公共イベント） | ・ワイン＆ミュージックナイト、各国大使館、プライベートパーティーなどでの演奏 | 出演実績 | 2026年注目の女性モデル・タレント5選｜広告・映像業界の次世代エースをプロが厳選 | 2026.03.10 | 出演実績をもっと見る | キャスティングの​ご相談・お問い合わせ | CONTACT | お問い合わせフォーム | メールでのお問合せは24時間受付中 | 東京：03-6453-2744 | 大阪：06-7222-3141 | 営業時間：10:00～19:30（土日祝を除く） | FAX（本社）：03-6453-2743 | Access：【東京本社】 / 【大阪オフィス】 | フリー・ウエイブは、東京・大阪を拠点とする業界トップクラ…",
+    "source": "official",
+    "url": "https://f-w.co.jp/catalog/profile/?modelid=19599",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:11:01.190Z"
+   },
+   {
+    "field": "profileText",
+    "value": "モデル/タレントを探す | 会社案内 | 取引ガイドライン | 出演実績 | モデル登録 | お問合せ | JP | EN | 0 | お気に入り一覧 | TOP | 外国人モデル | トキ | トキ | No.18241 | Toki | 身長 | ： | 191cm | バスト | ： | 92.5cm | ウエスト | ： | 82.5cm | ヒップ | ： | 99cm | 靴サイズ | ： | 28.5cm | 髪 | ： | ダークブラウン | 瞳 | ： | ブラウン | 言語 | ： | 日本語 / 英語 | ルーツ | ： | 日本 | 活動ジャンル | ： | モデル | 3610 | コンポジット | プロフィール | タレントWebサイト | キャスティングの​ご相談・お問い合わせ | マネージャーコメント | 日本とアメリカのミックスのトキ。 | 幼少期からサッカー、陸上競技、日本拳法などスポーツに打ち込んでいました。 | 現在はモデル業の傍ら、カメラマンとしても活動をしています。 | 今後の活躍の期待できるモデルです。 | プロフィール | 日本とアメリカのハーフとして生まれたトキ。 | 幼い頃から父の影響でカメラに触れる機会が多く、その奥深い世界に強く惹かれていく。 | その情熱はやがて本格的な学びへとつながり、ニューヨークの大学で映像・写真を専攻。現在はフリーカメラマンとしても活動している。 | 2023年秋、周囲の後押しを受けてモデルとしてのキャリアをスタート。 | 「知らない世界に飛び込めば、成長しかない。できることは全部やってみたい。」 | そんな前向きなスタンスを武器に、ジャンルを超えて挑戦の幅を広げている。 | 2025年4月には、TOKYO MX「5時に夢中！」のオーディション出演を経て、火曜・新黒船特派員の座を獲得。 | さらに、ミュージカル『新テニスの王子様』The Fifth Stage では、スペイン代表マルス・デ・コロン役として舞台にも立つなど、活動の場を着実に広げている。 | 【主な実績】 | NHK高校講座「ベーシック英語」スキット出演 | TOKYO MX「5時に夢中！」火曜 黒船特派員（2025/4月よりレギュラー） | ドクターソワ iPS Re: クリーム モデル | ミュージカル「新テニスの王子様」スペイン代表マルス・デ・コロン役 | -2025年 The Fifth Stage | -2026年 The Final Stage | MANHUNT JAPAN 2024 第3位 | ドッキリGP「秒でドッキリ しらきになっちゃった」（ヘアメイク役） | IKKOさんディナーショー DJ | 【特技】 | カメラ、日本拳法（黒帯・歴15年）、サッカー、陸上、テニス、キックボクシング | 【趣味】 | 時間をかけて仕上げる料理 | （例：ビーフシチュー＋フォカッチャに8時間かけるほどのこだわり派） | 出演実績 | #雑誌・カタログ・書籍 | Tokiがドクターソワの広告に出演しました | 2026.05.01 | #テレビ・映画・舞台 | NHK語学番組にフリー・ウエイブのタレントとナレーター達が出演中！ | 2026.04.17 | 2026年注目の男性モデル・タレント5選｜広告・映像業界の次世代エースをプロが厳選 | 2026.02.25 | 出演実績をもっと見る | キャスティングの​ご相談・お問い合わせ | CONTACT | お問い合わせフォーム | メールでのお問合せ…",
+    "source": "official",
+    "url": "https://f-w.co.jp/catalog/profile/?modelid=18241",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:11:01.191Z"
+   },
+   {
+    "field": "contactUrl",
+    "value": "https://f-w.co.jp/contact/",
+    "source": "official",
+    "url": "http://f-w.co.jp/",
+    "snippet": "リンク文言「お問い合わせフォーム メールでのお問合せは24時間受付中」/ ページ実在とフォームの記述を確認",
+    "at": "2026-10-07T07:11:05.897Z"
    }
   ],
   "seedCategories": [
@@ -53956,6 +54692,10 @@
    {
     "source": "prtimes",
     "url": "https://prtimes.jp/main/html/searchrlp/company_id/9974"
+   },
+   {
+    "source": "official",
+    "url": "http://www.manpowergroup.jp/"
    }
   ],
   "evidence": [
@@ -53990,6 +54730,62 @@
     "url": "https://prtimes.jp/main/html/searchrlp/company_id/9974",
     "snippet": "PR TIMES企業情報のURL: http://www.manpowergroup.jp",
     "at": "2026-10-07T05:23:03.349Z"
+   },
+   {
+    "field": "profileText",
+    "value": "人材派遣・人材紹介のマンパワーグループ | マンパワーグループ マンパワーグループとは English Global Home | 企業向けサービス | 仕事を探す | 採用情報 | 会社概要 | お問い合わせ | 総合人材サービスのマンパワーグループ | 法人の方 | お問い合わせはこちら | 派 遣 | 求人を探す | 転 職 | 求人を探す | 企業のご担当者の方 | マンパワーグループは、世界最大級の総合人材会社としての豊富な実績を生かし、お客様に様々なソリューションを提供しています。 | リクルーティングから人材育成、アウトソーシング、人材コンサルティングなどあらゆるサービスをワンストップで提供し、ビジネスを成功へと導きます。 | 詳細を見る | 主要サービス一覧 | 人材派遣 | 人材紹介 | 業務委託 | その他サービス一覧 | 会社概要 | 拠点一覧 | お仕事をお探しの方 | マンパワーグループでは、あなたにあった豊富なサービスラインナップをご用意しています。 | ピッタリの職場を選ぶなら、 | マンパワーを。 | 派遣で働きたい方 | 世界最大級の | 総合人材派遣会社だから | 信頼できる。 | 正社員で働きたい方 | 未経験から | 事務職で働きたい方 | 未経験から | 正社員ITエンジニアを目指したい方 | 障がい者就業支援を希望する方 | フリーランスで働きたい方 | 再就職支援を利用したい方 | 介護業界で働きたい方 | マンパワーグループについて | マンパワーグループは世界70カ国・地域にオフィスを持ち、ワールドワイドに展開している人材サービスのグローバルカンパニーManpowerGroupの100%出資の日本法人で日本で最初の人材派遣会社です。 | 会社概要 拠点一覧 | ニュースリリース | 2026年9月8日 国内企業の雇用意欲、前四半期比2ポイント上昇 | 2026年6月9日 国内調査対象企業の雇用意欲は、前四半期比-9ポイントの結果 | 2026年6月2日 公正取引委員会による立入検査について | ニュースリリース一覧 | お知らせ | 2026年7月29日 「令和8年熊本地震」に対するお見舞い | 2025年11月26日 【重要なお知らせ】マンパワーグループ社員を装ったなりすましアカウントにご注意ください | 2026年6月25日 岩手県沖を震源とする地震に対するお見舞い | お知らせ一覧 | コラム | マンパワーグループがお届けする「人材」に関する専門メディア | 採用 | 2026年9月16日 | 新卒採用基準に必要な5つの評価項目や設計する4ステップを解説 | 人材派遣 | 2026年9月15日 | パートタイム・有期雇用労働法をわかりやすく解説！2026年の改正内容も紹介 | 採用 | 2026年9月 9日 | 採用直結型インターンとは？認められるための要件と実施のポイントを解説 | コラム一覧 | 調査データ | 2026年8月18日 | 【派遣社員経験者800名の実態調査】派遣就業の継続を左右する要因とは？選ぶ理由・辞める理由を調査 | 2025年12月 9日 | 転職経験者の7割強が「転職の際に福利厚生を重視」と回答！あったら良いもの、転職で重視するものとは？ | 2025年11月10日 | 転職経験者の6割超が「転職後に働きやすさが改善された」と回答。働きやすい職場、働きにくい職場の要因とは？ | 調査データ一覧 | 「学ぼう、広げよう。あなたと仕事の可能性」 | マンパワーグルー…",
+    "source": "official",
+    "url": "http://www.manpowergroup.jp/",
+    "snippet": "トップページ",
+    "at": "2026-10-07T07:11:13.478Z"
+   },
+   {
+    "field": "employees",
+    "value": 4423,
+    "source": "official",
+    "url": "https://www.manpowergroup.jp/company/",
+    "snippet": "従業員数 | 4,423人 | (子会社含む) (2026年4月現在)",
+    "at": "2026-10-07T07:11:22.273Z"
+   },
+   {
+    "field": "profileText",
+    "value": "マンパワーグループとは English Global Home | 企業向けサービス | 仕事を探す | 採用情報 | 会社概要 | お問い合わせ | 総合人材サービスのマンパワーグループ | 法人の方 | お問い合わせはこちら | 派 遣 | 求人を探す | 転 職 | 求人を探す | 企業のご担当者の方 | マンパワーグループは、世界最大級の総合人材会社としての豊富な実績を生かし、お客様に様々なソリューションを提供しています。 | リクルーティングから人材育成、アウトソーシング、人材コンサルティングなどあらゆるサービスをワンストップで提供し、ビジネスを成功へと導きます。 | 詳細を見る | 主要サービス一覧 | 人材派遣 | 人材紹介 | 業務委託 | その他サービス一覧 | 会社概要 | 拠点一覧 | お仕事をお探しの方 | マンパワーグループでは、あなたにあった豊富なサービスラインナップをご用意しています。 | ピッタリの職場を選ぶなら、 | マンパワーを。 | 派遣で働きたい方 | 世界最大級の | 総合人材派遣会社だから | 信頼できる。 | 正社員で働きたい方 | 未経験から | 事務職で働きたい方 | 未経験から | 正社員ITエンジニアを目指したい方 | 障がい者就業支援を希望する方 | フリーランスで働きたい方 | 再就職支援を利用したい方 | 介護業界で働きたい方 | マンパワーグループについて | マンパワーグループは世界70カ国・地域にオフィスを持ち、ワールドワイドに展開している人材サービスのグローバルカンパニーManpowerGroupの100%出資の日本法人で日本で最初の人材派遣会社です。 | 会社概要 拠点一覧 | ニュースリリース | 2026年9月8日 国内企業の雇用意欲、前四半期比2ポイント上昇 | 2026年6月9日 国内調査対象企業の雇用意欲は、前四半期比-9ポイントの結果 | 2026年6月2日 公正取引委員会による立入検査について | ニュースリリース一覧 | お知らせ | 2026年7月29日 「令和8年熊本地震」に対するお見舞い | 2025年11月26日 【重要なお知らせ】マンパワーグループ社員を装ったなりすましアカウントにご注意ください | 2026年6月25日 岩手県沖を震源とする地震に対するお見舞い | お知らせ一覧 | コラム | マンパワーグループがお届けする「人材」に関する専門メディア | 採用 | 2026年9月16日 | 新卒採用基準に必要な5つの評価項目や設計する4ステップを解説 | 人材派遣 | 2026年9月15日 | パートタイム・有期雇用労働法をわかりやすく解説！2026年の改正内容も紹介 | 採用 | 2026年9月 9日 | 採用直結型インターンとは？認められるための要件と実施のポイントを解説 | コラム一覧 | 調査データ | 2026年8月18日 | 【派遣社員経験者800名の実態調査】派遣就業の継続を左右する要因とは？選ぶ理由・辞める理由を調査 | 2025年12月 9日 | 転職経験者の7割強が「転職の際に福利厚生を重視」と回答！あったら良いもの、転職で重視するものとは？ | 2025年11月10日 | 転職経験者の6割超が「転職後に働きやすさが改善された」と回答。働きやすい職場、働きにくい職場の要因とは？ | 調査データ一覧 | 「学ぼう、広げよう。あなたと仕事の可能性」 | マンパワーグループは働くすべての人が雇用環境の変化に対応できるよう、 | 新しい…",
+    "source": "official",
+    "url": "http://www.manpowergroup.jp/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:11:22.273Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区芝浦三丁目1番1号田町ステーションタワーN 30階",
+    "source": "official",
+    "url": "https://www.manpowergroup.jp/company/",
+    "snippet": "東京都港区芝浦三丁目1番1号田町ステーションタワーN 30階",
+    "at": "2026-10-07T07:11:22.273Z"
+   },
+   {
+    "field": "profileText",
+    "value": "マンパワーグループとは | 会社概要 | 私たちの取り組み | ニュース | 企業向けサービス | 仕事をさがす | 採用情報 | 拠点一覧 | お問い合わせ | ホーム | マンパワーグループとは | 会社概要 | About Us | 会社概要 | 求人をお探しの方 | 求人を探す | 法人の方 | お問い合わせ | マンパワーグループは世界70カ国・地域にオフィスを持ち、ワールドワイドに展開している人材サービスのグローバルカンパニー、ManpowerGroupの100%出資の日本法人で、日本で最初の人材派遣会社です。 | 会社名 | マンパワーグループ株式会社 | 本社 | 本社 〒108-0023 | 東京都港区芝浦三丁目1番1号田町ステーションタワーN 30階 | Googleマップ | 代表取締役社長 | 吉田 誠 | 設立年月日 | 昭和41年11月30日 | 資本金 | 40億円 | 業務内容 | 総合人材サービス全般 | ・ 労働者派遣事業 | ・ 有料職業紹介事業 | ・ 再就職支援事業 | ・ アウトソーシング事業 | ・ ITソリューションサービス事業 | ・ コンサルティング事業 | サービス紹介についてはこちら | ブランド展開 | ブランド展開についてはこちら | 許可番号 | 労働者派遣事業 | ： 派13 - 315642 | 有料職業紹介事業 | ： 13-ユ-313561 | 取得認証 | 数字でみるマンパワーグループ | 創業 | 1966年 | 国内初の人材派遣会社として設立。 | マンパワーグループの沿革 | 従業員数 | 4,423人 | (子会社含む) (2026年4月現在) | 登録者数 | 71万6000人 | (2026年4月現在) | サービスネットワーク | 全国営業拠点 | 159拠点 | (2026年4月現在) | 拠点一覧 | グローバル | 世界70カ国・地域 | (2026年4月現在) | 関連会社 | マンパワーグループ プラス株式会社 | エクスペリス・エグゼクティブ株式会社​ | プロハント株式会社​ | 加盟団体 | ・ 日本人材派遣協会 | ・ 国際人材派遣事業団体連合 | ・ 日本経済団体連合会 | ・ キャリアカウンセリング協会 | ・ 日本人材紹介事業協会 再就職支援協議会 | ・ 日本キャリア開発協会 | ・ 入管協会 | ・ 情報サービス産業協会 | マンパワーグループの取り組み | 働く人の声をカタチに | サステナビリティ | コンプライアンス | リサーチセンター | ニュースリリース | 情報公開 | 毎年6万件の求人に最適な人材をご紹介 | 実績とノウハウでご要望にお応えします。 | お気軽に相談お問い合わせください。 | 法人の方 | お問い合わせはこちら | 採用情報 | 新卒採用（総合職）、キャリア採用（総合職）、 | 新卒・キャリア採用（ITエンジニア職）、障がい者採用 | 採用情報はこちら | ピッタリの職場に出会うならJOBNET | 派遣の求人を探す | 世界最大級の総合人材会社だから信頼できる | 登録して正社員の求人を見る | 企業サービス | サービス一覧 | 人材派遣・人材紹介 | 人材派遣 | 人材紹介 | 紹介予定派遣 | 障がい者雇用支援 | 業務委託・アウトソーシング | 業務委託・BPO | 採用代行・RPO | 派遣管理デスク・MSP | ITソリューション | ITエンジニア派遣 | ITソリューション | 人事コ…",
+    "source": "official",
+    "url": "https://www.manpowergroup.jp/company/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:11:22.273Z"
+   },
+   {
+    "field": "profileText",
+    "value": "マンパワーグループとは English Global Home | 企業向けサービス | 仕事を探す | 採用情報 | 会社概要 | お問い合わせ | ホーム このサイトについて | このサイトについて | 1. セキュリティーについて | 当サイトでは、個人情報を入力するページの全てにおいて SSL（Secure Sockets Layer）128ビット暗号化通信を行っておりますので、第三者の改ざん、成りすましなどから保護されています。安心してご利用ください。 | 2. 外部リンクについて​ | 当サイトには他のサイトへのリンクが含まれることがありますが、マンパワーグループはかかる他のサイトのプライバシー保護には責任を負いませんのでご了承ください。本プライバシー記述は、当サイトにおいて収集された情報のみに適用されます。​ | 3. Cookie（クッキー）の使用について | 当サイトでは、お客様により適切なサービスを提供できるよう、Cookieと呼ばれる技術を利用しています。 | Cookieとは | お客様がウェブページを利用した際に、閲覧履歴や入力内容などを、お客様のコンピュータにファイルとして保存しておく仕組みです。次回、同じページにアクセスすると、保存されたCookieを使ってお客様を識別し、お客様ごとにあわせた情報表示など、サイト動作がスムーズになる効果が期待できます。 | 当サイトでは、より良いサービスをご提供するためにCookieを取得しており、ページ閲覧時のデバイス／ブラウザ情報、サイトへのアクセス情報等を取得することがあります。 | Cookieとマンパワーグループが保有する情報との照合により「個人情報の取扱いについて」に定める利用目的の範囲で利用する場合がございますが、Cookieには個人が特定される情報は含まれておりません。また、当社が取得したCookieを第三者に提供することはございません。 | Cookie利用の目的 | 当社では、以下の目的のためCookieを使用します。​ | お客様が認証サービスにログインする際、保存されているお客様の登録情報を参照し、お客様ごとにカスタマイズされたサービスを提供するなど、サイトの利便性やサービスを改善するため | 当社のサイトの利用者数や閲覧数などのトラフィックを調査するため | セキュリティー保持のため、ご利用から一定の時間が経過したお客様に対してパスワードの再入力（再認証）を促すため | 当社のサービスを改善するため | お客様が興味を持っている内容や、当社のサイト上での利用状況をもとに、最も適切な広告を他社サイト上で表示するため | 個々のお客様に最適化されたウェブコンテンツやサービスを提供するため | Cookieは、当社ウェブページ上で提供される機能を利用するために設けられるものと、提携する第三者によって設定されるものの2種類があります。例えばYahoo! JAPAN、Googleを含む第三者によって、当社のオンライン広告を最適な場所に掲載することができるよう設定されるような場合です。このような場合も、Cookieと他の情報と照合して個人を特定することはございません。 | Cookieリスト | Cookieは、その機能及び利用目的に応じて、「必要なCookie」、「ターゲティングCookie」、「機能性Cookie」及び「パフォーマンスCookie」の4つに分類されます。 | 必要なCookie | この Cookie はウェブサイトが正常に機能するために必要であり、…",
+    "source": "official",
+    "url": "https://www.manpowergroup.jp/about/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:11:22.274Z"
+   },
+   {
+    "field": "contactUrl",
+    "value": "https://www.manpowergroup.jp/inquiry/",
+    "source": "official",
+    "url": "http://www.manpowergroup.jp/",
+    "snippet": "リンク文言「お問い合わせ」/ ページ実在とフォームの記述を確認",
+    "at": "2026-10-07T07:11:26.509Z"
    }
   ],
   "seedCategories": [
@@ -54046,6 +54842,10 @@
    {
     "source": "prtimes",
     "url": "https://prtimes.jp/main/html/searchrlp/company_id/4185"
+   },
+   {
+    "source": "official",
+    "url": "https://www.randstad.co.jp/"
    }
   ],
   "evidence": [
@@ -54080,6 +54880,62 @@
     "url": "https://prtimes.jp/main/html/searchrlp/company_id/4185",
     "snippet": "PR TIMES企業情報のURL: https://www.randstad.co.jp",
     "at": "2026-10-07T05:23:03.355Z"
+   },
+   {
+    "field": "profileText",
+    "value": "ランスタッド(Randstad)の求人・転職・派遣 ログイン | お仕事をお探しの方 企業のご担当の方 ランスタッドについて お問い合わせ 拠点一覧 採用情報 | 事務派遣・正社員 | 製造･軽作業･ドライバー | 単発･短期バイト | エンジニア派遣 | ハイクラス向け転職 | 障がい者の求人 | キャリアサポート･福利厚生 | ランスタッドに登録 | ランスタッドの求人サーチ | カテゴリ（必須） | 事務派遣・正社員 | 製造･軽作業･ドライバー | 単発・短期バイト | エンジニア派遣 | ハイクラス向け転職 | 障がい者求人 | － | 北海道・東北 | 北関東 | 首都圏 | 東海・北信越 | 近畿 | 中国・四国 | 九州 | 検索 | ランスタッドに登録 | 【重要なお知らせ】システムメンテナンスに伴うWEBサイトの一時停止について | 派遣・紹介予定派遣 | 事務・オフィスワーク | 製造・工場・軽作業・物流 | ドライバー派遣・送迎ドライバー | 単発・短期のバイト | エンジニア派遣 | プロフェッショナル派遣（ハイクラス派遣） | 正社員 | ハイクラス向け転職 | エンジニア転職 | エンジニアリングソリューションサービス | ITインフラサービス | キャリアチェンジ転職（年収300～600万円） | 専門サービス | 障がい者の転職支援 | グローバル人材の就職 ・求人・雇用 | partner for talent. | ランスタッドは、人材に寄り添う真のパートナー。 | どんな仕事も、一人で成し遂げられるものではありません。人と人とがつながり、最高のチームで働くとき、その力は足し算ではなく掛け算のように飛躍するのです。 | あなたが輝ける場所を、私たちと一緒に見つけてみませんか？ | ランスタッドに登録 | ランスタッド支店一覧 | ランスタッドは北海道から九州まで全国に拠点を展開しています。 | 拠点一覧 | キャリアHUB | あなたと「働く」をつなぐキャリアHUBは、「転職・キャリア」「派遣で働く」「スキルアップ」「働くを考える」「仕事と子育て」など、ビジネスパーソンに役立つコンテンツを配信しています。 | 【「夏休みの壁」に悩むパパ＆ママへ】データで見る、リアルな乗り切り方と\"罪悪感\"の溶かし方 | 仕事と子育て | 今年もやってくる「夏休みの壁」と、働くパパ＆ママたちの本音 子どもの世話、猛暑対策、出費に仕事の進行......不安の種は尽きない ランスタッドが2026年6月に実施した調査によると、ワーキングペアレンツの実に42.5％（約4割）が「夏休みの到来に対して、不安やプレッシャー（怖さ）を感じている」と回... | 詳しく見る | 「自分の努力が足りない」と責める前に。発達障害グレーゾーンの特性と向き合い、働きやすい環境を整えるヒント | 自分らしく働く | 昨今、メディアなどでも「発達障害グレーゾーン」という言葉を、よく目にするようになりました。「一生懸命に取り組んでいるけど、なぜか仕事がうまくいかない」「働きづらいと感じるのは、私の努力が足りないのかな......」。そんなふうに感じたことのある方も、いるのではないでしょうか。ただし働きづらさの原因... | 詳しく見る | 絶対受かる、紹介予定派遣！面接成功のポイント＆質問対策集 | 派遣で働く | ※本記事は2017年6月8日公開の内容に、2026年6月時点の最新情報を加えてアップデートしたものです。 自分に合った企業に納得して入社できる就…",
+    "source": "official",
+    "url": "https://www.randstad.co.jp/",
+    "snippet": "トップページ",
+    "at": "2026-10-07T07:11:37.399Z"
+   },
+   {
+    "field": "employees",
+    "value": 38480,
+    "source": "official",
+    "url": "https://www.randstad.co.jp/about/outline/",
+    "snippet": "従業員数 38,480名(2025年12月末時点) | 資本金 7,37",
+    "at": "2026-10-07T07:11:45.266Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都千代田区紀尾井町4-1 ニューオータニガーデンコート21F",
+    "source": "official",
+    "url": "https://www.randstad.co.jp/",
+    "snippet": "東京都千代田区紀尾井町4-1 ニューオータニガーデンコート21F",
+    "at": "2026-10-07T07:11:45.266Z"
+   },
+   {
+    "field": "profileText",
+    "value": "ログイン | お仕事をお探しの方 企業のご担当の方 ランスタッドについて お問い合わせ 拠点一覧 採用情報 | 事務派遣・正社員 | 製造･軽作業･ドライバー | 単発･短期バイト | エンジニア派遣 | ハイクラス向け転職 | 障がい者の求人 | キャリアサポート･福利厚生 | ランスタッドに登録 | ランスタッドの求人サーチ | カテゴリ（必須） | 事務派遣・正社員 | 製造･軽作業･ドライバー | 単発・短期バイト | エンジニア派遣 | ハイクラス向け転職 | 障がい者求人 | － | 北海道・東北 | 北関東 | 首都圏 | 東海・北信越 | 近畿 | 中国・四国 | 九州 | 検索 | ランスタッドに登録 | 【重要なお知らせ】システムメンテナンスに伴うWEBサイトの一時停止について | 派遣・紹介予定派遣 | 事務・オフィスワーク | 製造・工場・軽作業・物流 | ドライバー派遣・送迎ドライバー | 単発・短期のバイト | エンジニア派遣 | プロフェッショナル派遣（ハイクラス派遣） | 正社員 | ハイクラス向け転職 | エンジニア転職 | エンジニアリングソリューションサービス | ITインフラサービス | キャリアチェンジ転職（年収300～600万円） | 専門サービス | 障がい者の転職支援 | グローバル人材の就職 ・求人・雇用 | partner for talent. | ランスタッドは、人材に寄り添う真のパートナー。 | どんな仕事も、一人で成し遂げられるものではありません。人と人とがつながり、最高のチームで働くとき、その力は足し算ではなく掛け算のように飛躍するのです。 | あなたが輝ける場所を、私たちと一緒に見つけてみませんか？ | ランスタッドに登録 | ランスタッド支店一覧 | ランスタッドは北海道から九州まで全国に拠点を展開しています。 | 拠点一覧 | キャリアHUB | あなたと「働く」をつなぐキャリアHUBは、「転職・キャリア」「派遣で働く」「スキルアップ」「働くを考える」「仕事と子育て」など、ビジネスパーソンに役立つコンテンツを配信しています。 | 【「夏休みの壁」に悩むパパ＆ママへ】データで見る、リアルな乗り切り方と\"罪悪感\"の溶かし方 | 仕事と子育て | 今年もやってくる「夏休みの壁」と、働くパパ＆ママたちの本音 子どもの世話、猛暑対策、出費に仕事の進行......不安の種は尽きない ランスタッドが2026年6月に実施した調査によると、ワーキングペアレンツの実に42.5％（約4割）が「夏休みの到来に対して、不安やプレッシャー（怖さ）を感じている」と回... | 詳しく見る | 「自分の努力が足りない」と責める前に。発達障害グレーゾーンの特性と向き合い、働きやすい環境を整えるヒント | 自分らしく働く | 昨今、メディアなどでも「発達障害グレーゾーン」という言葉を、よく目にするようになりました。「一生懸命に取り組んでいるけど、なぜか仕事がうまくいかない」「働きづらいと感じるのは、私の努力が足りないのかな......」。そんなふうに感じたことのある方も、いるのではないでしょうか。ただし働きづらさの原因... | 詳しく見る | 絶対受かる、紹介予定派遣！面接成功のポイント＆質問対策集 | 派遣で働く | ※本記事は2017年6月8日公開の内容に、2026年6月時点の最新情報を加えてアップデートしたものです。 自分に合った企業に納得して入社できる就職スタイルとして人気の「紹介予定派遣」。一般の派遣と…",
+    "source": "official",
+    "url": "https://www.randstad.co.jp/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:11:45.266Z"
+   },
+   {
+    "field": "profileText",
+    "value": "ログイン | お仕事をお探しの方 企業のご担当の方 ランスタッドについて お問い合わせ 拠点一覧 採用情報 | ビジョン･コアバリュー | 会社概要 | トップメッセージ | ニュースリリース | エンプロイヤーブランド | サステナビリティ(SDGs) | 総合人材サービス ランスタッドTOP / ランスタッドについて / 会社概要 | 会社概要 | Partner for Talent | 人材に寄り添う真のパートナーとして世界で最も公平で専門性を備えた人材サービス会社を目指します。 | ランスタッド株式会社 | 社名 ランスタッド株式会社（Randstad K.K.） | 設立 1980年8月 | 代表者 | 代表取締役会長 兼 CEO 道上 淳之介 | 代表取締役社長 兼 CGO 猿谷 哲 | 住所 〒102-8578 東京都千代田区紀尾井町4-1 ニューオータニガーデンコート21F | アクセス | 資本金 1億円 | 事業内容 人材派遣サービス、人材紹介サービス、テクノロジーサービス、アウトソーシング事業、人事サービス | 拠点数 拠点数91拠点 ※内インハウス拠点数20（2026年8月1日時点） | 事業許可番号 | 労働者派遣事業許可番号 派13-010538 | 有料職業紹介事業許可番号 13-ユ-010554 | URL https://www.randstad.co.jp/ | ※2026年8月時点 | ランスタッド・エヌ・ヴィー | 社名 ランスタッド・エヌ・ヴィー | 設立 1960年10月 | 代表者 | CEO&Chairman サンダー・ヴァント・ノールデンデ（2022年4月1日より） | CFO ホルヘ・バスケス（2023年3月29日より） | 本社所在地 オランダ | 従業員数 38,480名（2025年12月末時点） | 資本金 7,376億8,866万円（40億200万ユーロ）2025年12月末時点 | 売上高 4兆2,537億円（230億7,700万ユーロ）2025年度実績（12月決算） | 事業所 オランダ・アルゼンチン・オーストラリア・ベルギー・ルクセンブルク・カナダ・チリ・フランス・ドイツ・ギリシャ・インド・イタリア・日本･メキシコ・ポーランド・ポルトガル・スペイン・スウェーデン・スイス・イギリス・アメリカなど 世界39の国と地域 | 事業内容 総合人材サービス | URL https://www.randstad.com/ | ※2026年4月時点 | （※1ユーロ184.33円換算/2025年12月末時点） | 国内ネットワーク | ランスタッドは、日本全国に91拠点を構える世界最大※の総合人材サービス会社です。 | ※Staffing Industry Analysts 2025、人材サービス企業売上ランキングより | 北海道 | 札幌／千歳 | 東北 | 山形／仙台／郡山 | 北関東 | 那須／宇都宮／平出／清原／情報の森／筑西／小山／古河／水戸／つくば／足利／高崎／伊勢崎 | 南関東 | さいたま／熊谷／久喜／所沢／千葉／船橋／横浜／厚木 | 東京 | 赤坂／新宿／立川／有明 | 甲信越 | 新潟／長岡／五泉 | 東海 | 静岡／名古屋伏見／四日市 | 近畿 | 大阪／京都／神戸 | 中国・四国 | 広島／高松／松山 | 九州 | 北九州／福岡／熊本／宮崎／鹿児島 | ※同地区に複数拠点有 | ※地図内にインハウス・キャリアセンターは除く | ※2025年7月1日現在 | 国外ネットワーク…",
+    "source": "official",
+    "url": "https://www.randstad.co.jp/about/outline/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:11:45.266Z"
+   },
+   {
+    "field": "profileText",
+    "value": "ログイン | お仕事をお探しの方 企業のご担当の方 ランスタッドについて お問い合わせ 拠点一覧 採用情報 | ビジョン･コアバリュー | 会社概要 | トップメッセージ | ニュースリリース | エンプロイヤーブランド | サステナビリティ(SDGs) | ランスタッドの求人・転職・派遣TOP / ランスタッドについて | ランスタッドについて | about randstad | この社会の発展に、私たちの人材サービスを | ランスタッドは、世界で働くすべての人たちのために、時代の変化に柔軟に対応し、総合人材サービスの提供を通じて、労働市場の健全で効率的な発展に貢献しています。 | 会社概要 | トップメッセージ | ニュースリリース | オフィス案内 | 事業部案内 | サステナビリティ | スポンサーシップ | ランスタッドの歴史 | ランスタッドは1960年にオランダにて設立されました。現在世界39の国と地域に拠点を置く、世界最大級の人材サービス企業です。おかげさまで、2025年には設立65周年を迎えました。 | もっと見る | CSR・社会貢献活動 | 発展途上国の貧困問題の解決と自立を支援するNGO組織VSO（Voluntary Service Overseas）と提携しています。過去には日本からも社員ボランティアを派遣したことがあり、VSO活動支援金のファンドレイジングを目的としたキリマンジャロ・チャレンジに参加しています。 | もっと見る | 人権に関するポリシー | ランスタッドは、当社のコアバリューと Partner for Talent （人材に寄り添う真のパートナー）戦略に沿って、すべての人が尊厳と敬意をもって扱われる権利を持っていると考えています。人材サービス業界のグローバルリーダーとして、私たちは社会における自分たちの役割と人権を尊重する責任を認識しています。ランスタッドは、事業およびサービスに起因または関連する人権への悪影響を防止または軽減し、そのような影響が発生した場合に対処することを約束します。当社の人権に関するポリシーでは、人権に関してランスタッドとその従業員および候補者のための主要な原則と、外部のステークホルダーに対する期待を示しています。 | ポリシーの全文はこちらから | お仕事をお探しの方 | ランスタッドに登録 | 派遣・紹介予定派遣 | 事務派遣・正社員 | 製造・軽作業・ドライバー | 単発・短期バイト | エンジニア派遣 | プロフェッショナル派遣 | Amazon物流拠点内のお仕事 | 正社員 | ハイクラス向け転職 | エンジニア転職 | 専門サービス | 障がい者の転職支援 | グローバル人材の就職・求人・雇用 | 求職者様向けブログ | キャリアHUB | キャリア転職アドバイス | お仕事辞典 | 求職者様向けQ＆A | 企業のご担当の方 | 人材のご依頼・ご相談 | サービスラインナップ | 人材派遣 | 人材紹介 | アウトソーシング | 短期スポット（バイト・派遣） | チャレンジド採用（障がい者） | 人事・HR関連サービス | 採用代行サービス（RPO） | 派遣管理デスク（MSP） | 再就職支援・キャリア開発（ライズスマート） | 組織開発サービス | 法人様向けお役立ち情報 | 資料ダウンロード | セミナー情報 | 知っておきたい法令ガイド | 人材サービス用語集 | 活用事例 | 法人様向けブログ | workforce Biz | 法人様向けFAQ | ランスタ…",
+    "source": "official",
+    "url": "https://www.randstad.co.jp/about/",
+    "snippet": "会社概要ページ",
+    "at": "2026-10-07T07:11:45.266Z"
+   },
+   {
+    "field": "contactUrl",
+    "value": "https://www.randstad.co.jp/contact/",
+    "source": "official",
+    "url": "https://www.randstad.co.jp/",
+    "snippet": "リンク文言「お問い合わせ」/ ページ実在とフォームの記述を確認",
+    "at": "2026-10-07T07:11:53.094Z"
    }
   ],
   "seedCategories": [
