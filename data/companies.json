@@ -51246,7 +51246,8 @@
   ],
   "contactUrl": null,
   "noOpenwork": true,
-  "noPrtimes": true
+  "noPrtimes": true,
+  "noMynavi": true
  },
  {
   "key": "パソルテンプスタッフ",
@@ -52411,7 +52412,8 @@
   ],
   "contactUrl": null,
   "noPrtimes": true,
-  "noGbiz": true
+  "noGbiz": true,
+  "noMynavi": true
  },
  {
   "key": "elm",
@@ -52464,7 +52466,8 @@
   ],
   "contactUrl": null,
   "noOpenwork": true,
-  "noPrtimes": true
+  "noPrtimes": true,
+  "noMynavi": true
  },
  {
   "key": "elシステム",
@@ -52517,7 +52520,8 @@
   ],
   "contactUrl": null,
   "noOpenwork": true,
-  "noPrtimes": true
+  "noPrtimes": true,
+  "noMynavi": true
  },
  {
   "key": "unlock",
@@ -52651,7 +52655,8 @@
    "influencer_agency"
   ],
   "contactUrl": null,
-  "noPrtimes": true
+  "noPrtimes": true,
+  "noMynavi": true
  },
  {
   "key": "byup",
@@ -52746,7 +52751,8 @@
    "influencer_agency"
   ],
   "contactUrl": null,
-  "noPrtimes": true
+  "noPrtimes": true,
+  "noMynavi": true
  },
  {
   "key": "livedge",
@@ -52842,7 +52848,8 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noMynavi": true
  },
  {
   "key": "fairyline",
@@ -52992,6 +52999,10 @@
    {
     "source": "official",
     "url": "https://spectrum-inc.co.jp/"
+   },
+   {
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/"
    }
   ],
   "evidence": [
@@ -53098,6 +53109,22 @@
     "url": "https://spectrum-inc.co.jp/",
     "snippet": "リンク文言「CONTACT」/ ページ実在とフォームの記述を確認",
     "at": "2026-10-07T07:05:17.029Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区",
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/",
+    "snippet": "Gビズインフォ 本店所在地: 東京都渋谷区（同名8件から選択）",
+    "at": "2026-10-07T09:14:56.090Z"
+   },
+   {
+    "field": "employees",
+    "value": 26,
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/",
+    "snippet": "Gビズインフォ 従業員数: 26人（同名8件から選択）",
+    "at": "2026-10-07T09:14:56.090Z"
    }
   ],
   "seedCategories": [
@@ -53129,6 +53156,10 @@
    {
     "source": "official",
     "url": "https://direct-tech.jp/"
+   },
+   {
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/"
    }
   ],
   "evidence": [
@@ -53211,12 +53242,21 @@
     "url": "https://direct-tech.jp/",
     "snippet": "リンク文言「CONTACT」/ ページ実在とフォームの記述を確認",
     "at": "2026-10-07T07:05:32.047Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区",
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/",
+    "snippet": "Gビズインフォ 本店所在地: 東京都渋谷区",
+    "at": "2026-10-07T09:14:59.563Z"
    }
   ],
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noMynavi": true
  },
  {
   "key": "スマトコスメ",
@@ -53231,6 +53271,10 @@
    {
     "source": "prtimes",
     "url": "https://prtimes.jp/main/html/searchrlp/company_id/170007"
+   },
+   {
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/"
    }
   ],
   "evidence": [
@@ -53257,13 +53301,22 @@
     "url": "https://prtimes.jp/main/html/searchrlp/company_id/170007",
     "snippet": "本社所在地: 東京都渋谷区渋谷 ２丁目３−５ コエル渋谷二丁目 5階",
     "at": "2026-10-07T05:22:57.558Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区",
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/",
+    "snippet": "Gビズインフォ 本店所在地: 東京都渋谷区",
+    "at": "2026-10-07T09:15:03.163Z"
    }
   ],
   "seedCategories": [
    "influencer_agency"
   ],
   "contactUrl": null,
-  "noOpenwork": true
+  "noOpenwork": true,
+  "noMynavi": true
  },
  {
   "key": "東晶貿易",
@@ -53405,6 +53458,10 @@
    {
     "source": "prtimes",
     "url": "https://prtimes.jp/main/html/searchrlp/company_id/178154"
+   },
+   {
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/"
    }
   ],
   "evidence": [
@@ -53447,12 +53504,21 @@
     "url": "https://aunara.jp/",
     "snippet": "",
     "at": "2026-10-07T07:05:47.241Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区",
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/",
+    "snippet": "Gビズインフォ 本店所在地: 東京都渋谷区",
+    "at": "2026-10-07T09:15:06.614Z"
    }
   ],
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noMynavi": true
  },
  {
   "key": "enrichtechnology",
@@ -53467,6 +53533,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   },
+   {
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/"
    }
   ],
   "evidence": [
@@ -53485,6 +53555,14 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 渋谷駅",
     "at": "2026-10-07T04:35:55.487Z"
+   },
+   {
+    "field": "address",
+    "value": "大阪府大阪市北区",
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/",
+    "snippet": "Gビズインフォ 本店所在地: 大阪府大阪市北区",
+    "at": "2026-10-07T09:15:10.442Z"
    }
   ],
   "seedCategories": [
@@ -53493,7 +53571,8 @@
   ],
   "contactUrl": null,
   "noPrtimes": true,
-  "noOpenwork": true
+  "noOpenwork": true,
+  "noMynavi": true
  },
  {
   "key": "パソルエクセルhrパトナズ",
@@ -53639,6 +53718,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   },
+   {
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/"
    }
   ],
   "evidence": [
@@ -53657,6 +53740,14 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 中央区 日本橋駅",
     "at": "2026-10-07T04:35:55.487Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区",
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/",
+    "snippet": "Gビズインフォ 本店所在地: 東京都渋谷区（同名6件から選択）",
+    "at": "2026-10-07T09:15:15.296Z"
    }
   ],
   "seedCategories": [
@@ -53665,7 +53756,8 @@
   ],
   "contactUrl": null,
   "noPrtimes": true,
-  "noOpenwork": true
+  "noOpenwork": true,
+  "noMynavi": true
  },
  {
   "key": "大斗",
@@ -53680,6 +53772,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   },
+   {
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/"
    }
   ],
   "evidence": [
@@ -53698,6 +53794,14 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 新宿区 新宿駅",
     "at": "2026-10-07T04:35:55.487Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区",
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/",
+    "snippet": "Gビズインフォ 本店所在地: 東京都港区（同名14件から選択）",
+    "at": "2026-10-07T09:15:18.912Z"
    }
   ],
   "seedCategories": [
@@ -53706,7 +53810,8 @@
   ],
   "contactUrl": null,
   "noPrtimes": true,
-  "noOpenwork": true
+  "noOpenwork": true,
+  "noMynavi": true
  },
  {
   "key": "metasales",
@@ -53721,6 +53826,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   },
+   {
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/"
    }
   ],
   "evidence": [
@@ -53739,6 +53848,14 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 新宿区 新宿駅",
     "at": "2026-10-07T04:35:55.487Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区",
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/",
+    "snippet": "Gビズインフォ 本店所在地: 東京都渋谷区",
+    "at": "2026-10-07T09:15:22.640Z"
    }
   ],
   "seedCategories": [
@@ -53766,6 +53883,10 @@
    {
     "source": "official",
     "url": "https://brand-rocket.jp/"
+   },
+   {
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/"
    }
   ],
   "evidence": [
@@ -53824,6 +53945,14 @@
     "url": "https://brand-rocket.jp/",
     "snippet": "リンク文言「CONTACT」/ ページ実在とフォームの記述を確認",
     "at": "2026-10-07T07:06:31.493Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都目黒区",
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/",
+    "snippet": "Gビズインフォ 本店所在地: 東京都目黒区",
+    "at": "2026-10-07T09:15:26.271Z"
    }
   ],
   "seedCategories": [
@@ -54113,6 +54242,10 @@
    {
     "source": "official",
     "url": "https://www.r-staffing.co.jp/"
+   },
+   {
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/"
    }
   ],
   "evidence": [
@@ -54203,6 +54336,22 @@
     "url": "https://www.r-staffing.co.jp/corporate/",
     "snippet": "リンク文言「お問い合わせ」/ ページ実在とフォームの記述を確認",
     "at": "2026-10-07T07:08:07.854Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都千代田区",
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/",
+    "snippet": "Gビズインフォ 本店所在地: 東京都千代田区",
+    "at": "2026-10-07T09:15:30.444Z"
+   },
+   {
+    "field": "employees",
+    "value": 2292,
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/",
+    "snippet": "Gビズインフォ 従業員数: 2292人",
+    "at": "2026-10-07T09:15:30.444Z"
    }
   ],
   "seedCategories": [
@@ -54497,6 +54646,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   },
+   {
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/"
    }
   ],
   "evidence": [
@@ -54515,6 +54668,14 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区",
     "at": "2026-10-07T04:36:03.012Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都葛飾区",
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/",
+    "snippet": "Gビズインフォ 本店所在地: 東京都葛飾区（同名3件から選択）",
+    "at": "2026-10-07T09:15:34.496Z"
    }
   ],
   "seedCategories": [
@@ -54541,6 +54702,10 @@
    {
     "source": "official",
     "url": "https://buzzcloud.co.jp/"
+   },
+   {
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/"
    }
   ],
   "evidence": [
@@ -54623,6 +54788,14 @@
     "url": "https://buzzcloud.co.jp/",
     "snippet": "リンク文言「お問い合わせ」/ ページ実在とフォームの記述を確認",
     "at": "2026-10-07T07:10:24.554Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区",
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/",
+    "snippet": "Gビズインフォ 本店所在地: 東京都港区（同名2件から選択）",
+    "at": "2026-10-07T09:15:37.788Z"
    }
   ],
   "seedCategories": [
@@ -54866,7 +55039,8 @@
    "influencer_agency"
   ],
   "contactUrl": null,
-  "noPrtimes": true
+  "noPrtimes": true,
+  "noGbiz": true
  },
  {
   "key": "ウィズ",
@@ -54877,6 +55051,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   },
+   {
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/"
    }
   ],
   "evidence": [
@@ -54895,6 +55073,14 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 原宿駅 徒歩10分",
     "at": "2026-10-07T04:36:03.012Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都新宿区",
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/",
+    "snippet": "Gビズインフォ 本店所在地: 東京都新宿区（同名38件から選択）",
+    "at": "2026-10-07T09:15:45.227Z"
    }
   ],
   "seedCategories": [
@@ -55052,7 +55238,8 @@
   ],
   "contactUrl": null,
   "noPrtimes": true,
-  "noOpenwork": true
+  "noOpenwork": true,
+  "noGbiz": true
  },
  {
   "key": "ランスタッド",
@@ -55185,6 +55372,10 @@
    {
     "source": "official",
     "url": "https://hoken-all.co.jp/"
+   },
+   {
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/"
    }
   ],
   "evidence": [
@@ -55259,6 +55450,22 @@
     "url": "https://hoken-all.co.jp/",
     "snippet": "リンク文言「お金のプロに直接相談 無料相談を予約」/ ページ実在とフォームの記述を確認",
     "at": "2026-10-07T07:12:37.600Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都豊島区",
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/",
+    "snippet": "Gビズインフォ 本店所在地: 東京都豊島区",
+    "at": "2026-10-07T09:15:52.422Z"
+   },
+   {
+    "field": "employees",
+    "value": 321,
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/",
+    "snippet": "Gビズインフォ 従業員数: 321人",
+    "at": "2026-10-07T09:15:52.422Z"
    }
   ],
   "seedCategories": [
@@ -55283,6 +55490,10 @@
    {
     "source": "prtimes",
     "url": "https://prtimes.jp/main/html/searchrlp/company_id/5397"
+   },
+   {
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/"
    }
   ],
   "evidence": [
@@ -55325,6 +55536,22 @@
     "url": "http://sega.jp/",
     "snippet": "",
     "at": "2026-10-07T07:12:44.487Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都品川区",
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/",
+    "snippet": "Gビズインフォ 本店所在地: 東京都品川区（同名2件から選択）",
+    "at": "2026-10-07T09:16:06.764Z"
+   },
+   {
+    "field": "employees",
+    "value": 2552,
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/",
+    "snippet": "Gビズインフォ 従業員数: 2552人（同名2件から選択）",
+    "at": "2026-10-07T09:16:06.764Z"
    }
   ],
   "seedCategories": [
@@ -55548,6 +55775,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   },
+   {
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/"
    }
   ],
   "evidence": [
@@ -55566,6 +55797,14 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 江戸川区",
     "at": "2026-10-07T04:36:14.179Z"
+   },
+   {
+    "field": "address",
+    "value": "新潟県新潟市中央区",
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/",
+    "snippet": "Gビズインフォ 本店所在地: 新潟県新潟市中央区",
+    "at": "2026-10-07T09:16:10.231Z"
    }
   ],
   "seedCategories": [
@@ -55592,6 +55831,10 @@
    {
     "source": "official",
     "url": "https://www.anv.co.jp/"
+   },
+   {
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/"
    }
   ],
   "evidence": [
@@ -55666,6 +55909,14 @@
     "url": "https://www.anv.co.jp/",
     "snippet": "リンク文言「お問い合わせ」/ ページ実在とフォームの記述を確認",
     "at": "2026-10-07T07:13:44.291Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区",
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/",
+    "snippet": "Gビズインフォ 本店所在地: 東京都渋谷区（同名4件から選択）",
+    "at": "2026-10-07T09:16:13.932Z"
    }
   ],
   "seedCategories": [
