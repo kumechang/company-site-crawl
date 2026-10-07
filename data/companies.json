@@ -51247,7 +51247,8 @@
   "contactUrl": null,
   "noOpenwork": true,
   "noPrtimes": true,
-  "noMynavi": true
+  "noMynavi": true,
+  "noCareertasu": true
  },
  {
   "key": "パソルテンプスタッフ",
@@ -52413,7 +52414,8 @@
   "contactUrl": null,
   "noPrtimes": true,
   "noGbiz": true,
-  "noMynavi": true
+  "noMynavi": true,
+  "noCareertasu": true
  },
  {
   "key": "elm",
@@ -52467,7 +52469,8 @@
   "contactUrl": null,
   "noOpenwork": true,
   "noPrtimes": true,
-  "noMynavi": true
+  "noMynavi": true,
+  "noCareertasu": true
  },
  {
   "key": "elシステム",
@@ -52521,7 +52524,8 @@
   "contactUrl": null,
   "noOpenwork": true,
   "noPrtimes": true,
-  "noMynavi": true
+  "noMynavi": true,
+  "noCareertasu": true
  },
  {
   "key": "unlock",
@@ -52656,7 +52660,8 @@
   ],
   "contactUrl": null,
   "noPrtimes": true,
-  "noMynavi": true
+  "noMynavi": true,
+  "noCareertasu": true
  },
  {
   "key": "byup",
@@ -52752,7 +52757,8 @@
   ],
   "contactUrl": null,
   "noPrtimes": true,
-  "noMynavi": true
+  "noMynavi": true,
+  "noCareertasu": true
  },
  {
   "key": "livedge",
@@ -52849,7 +52855,8 @@
    "influencer_agency"
   ],
   "contactUrl": null,
-  "noMynavi": true
+  "noMynavi": true,
+  "noCareertasu": true
  },
  {
   "key": "fairyline",
@@ -53256,7 +53263,8 @@
    "influencer_agency"
   ],
   "contactUrl": null,
-  "noMynavi": true
+  "noMynavi": true,
+  "noCareertasu": true
  },
  {
   "key": "スマトコスメ",
@@ -53316,7 +53324,8 @@
   ],
   "contactUrl": null,
   "noOpenwork": true,
-  "noMynavi": true
+  "noMynavi": true,
+  "noCareertasu": true
  },
  {
   "key": "東晶貿易",
@@ -53518,7 +53527,8 @@
    "influencer_agency"
   ],
   "contactUrl": null,
-  "noMynavi": true
+  "noMynavi": true,
+  "noCareertasu": true
  },
  {
   "key": "enrichtechnology",
@@ -53572,7 +53582,8 @@
   "contactUrl": null,
   "noPrtimes": true,
   "noOpenwork": true,
-  "noMynavi": true
+  "noMynavi": true,
+  "noCareertasu": true
  },
  {
   "key": "パソルエクセルhrパトナズ",
@@ -53757,7 +53768,8 @@
   "contactUrl": null,
   "noPrtimes": true,
   "noOpenwork": true,
-  "noMynavi": true
+  "noMynavi": true,
+  "noCareertasu": true
  },
  {
   "key": "大斗",
@@ -53811,7 +53823,8 @@
   "contactUrl": null,
   "noPrtimes": true,
   "noOpenwork": true,
-  "noMynavi": true
+  "noMynavi": true,
+  "noCareertasu": true
  },
  {
   "key": "metasales",
@@ -53865,7 +53878,8 @@
   "contactUrl": null,
   "noPrtimes": true,
   "noOpenwork": true,
-  "noMynavi": true
+  "noMynavi": true,
+  "noCareertasu": true
  },
  {
   "key": "ブランドロケット",
@@ -53960,7 +53974,8 @@
    "influencer_agency"
   ],
   "contactUrl": null,
-  "noMynavi": true
+  "noMynavi": true,
+  "noCareertasu": true
  },
  {
   "key": "キャリアデザインセンタ",
@@ -54686,7 +54701,8 @@
   "contactUrl": null,
   "noPrtimes": true,
   "noOpenwork": true,
-  "noMynavi": true
+  "noMynavi": true,
+  "noCareertasu": true
  },
  {
   "key": "buzzcloud",
@@ -54805,7 +54821,8 @@
    "influencer_agency"
   ],
   "contactUrl": null,
-  "noMynavi": true
+  "noMynavi": true,
+  "noCareertasu": true
  },
  {
   "key": "chifull",
@@ -55045,7 +55062,8 @@
   "contactUrl": null,
   "noPrtimes": true,
   "noGbiz": true,
-  "noMynavi": true
+  "noMynavi": true,
+  "noCareertasu": true
  },
  {
   "key": "ウィズ",
@@ -55094,7 +55112,8 @@
   "contactUrl": null,
   "noPrtimes": true,
   "noOpenwork": true,
-  "noMynavi": true
+  "noMynavi": true,
+  "noCareertasu": true
  },
  {
   "key": "マンパワグルプ",
@@ -55245,7 +55264,9 @@
   "contactUrl": null,
   "noPrtimes": true,
   "noOpenwork": true,
-  "noGbiz": true
+  "noGbiz": true,
+  "noMynavi": true,
+  "noCareertasu": true
  },
  {
   "key": "ランスタッド",
@@ -55818,7 +55839,8 @@
   ],
   "contactUrl": null,
   "noPrtimes": true,
-  "noOpenwork": true
+  "noOpenwork": true,
+  "noMynavi": true
  },
  {
   "key": "anv",
@@ -55928,7 +55950,8 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noMynavi": true
  },
  {
   "key": "stech&co",
@@ -56121,7 +56144,8 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noMynavi": true
  },
  {
   "key": "グリンショップ",
@@ -56323,7 +56347,8 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noMynavi": true
  },
  {
   "key": "konnektinternational",
@@ -56422,7 +56447,8 @@
    "influencer_agency"
   ],
   "contactUrl": null,
-  "noPrtimes": true
+  "noPrtimes": true,
+  "noMynavi": true
  },
  {
   "key": "ヘンケルジャパン",
@@ -56469,7 +56495,8 @@
    "influencer_agency"
   ],
   "contactUrl": null,
-  "noOpenwork": true
+  "noOpenwork": true,
+  "noMynavi": true
  },
  {
   "key": "firebug",
@@ -56564,7 +56591,8 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noMynavi": true
  },
  {
   "key": "イスピリット",
@@ -56587,6 +56615,10 @@
    {
     "source": "official",
     "url": "https://www.e-spirit.jp/"
+   },
+   {
+    "source": "mynavi",
+    "url": "https://job.mynavi.jp/28/pc/search/corp76723/outline.html"
    }
   ],
   "evidence": [
@@ -56685,6 +56717,30 @@
     "url": "https://www.e-spirit.jp/",
     "snippet": "リンク文言「CONTACT」/ ページ実在とフォームの記述を確認",
     "at": "2026-10-07T07:15:56.814Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区渋谷１丁目7-7 住友不動産青山通ビル13階",
+    "source": "mynavi",
+    "url": "https://job.mynavi.jp/28/pc/search/corp76723/outline.html",
+    "snippet": "マイナビ(新卒) 本社所在地: 東京都渋谷区渋谷１丁目7-7 住友不動産青山通ビル13階",
+    "at": "2026-10-07T09:18:24.171Z"
+   },
+   {
+    "field": "employees",
+    "value": 69,
+    "source": "mynavi",
+    "url": "https://job.mynavi.jp/28/pc/search/corp76723/outline.html",
+    "snippet": "マイナビ(新卒) 従業員: 69名（男性28名、女性41名）",
+    "at": "2026-10-07T09:18:24.171Z"
+   },
+   {
+    "field": "founded",
+    "value": "2000年7月18日",
+    "source": "mynavi",
+    "url": "https://job.mynavi.jp/28/pc/search/corp76723/outline.html",
+    "snippet": "",
+    "at": "2026-10-07T09:18:24.171Z"
    }
   ],
   "seedCategories": [
@@ -56810,7 +56866,8 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noMynavi": true
  },
  {
   "key": "ネクストレベル",
@@ -56957,7 +57014,8 @@
   ],
   "contactUrl": null,
   "noPrtimes": true,
-  "noOpenwork": true
+  "noOpenwork": true,
+  "noMynavi": true
  },
  {
   "key": "gloe",
