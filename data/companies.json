@@ -53864,7 +53864,8 @@
   ],
   "contactUrl": null,
   "noPrtimes": true,
-  "noOpenwork": true
+  "noOpenwork": true,
+  "noMynavi": true
  },
  {
   "key": "ブランドロケット",
@@ -53958,7 +53959,8 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noMynavi": true
  },
  {
   "key": "キャリアデザインセンタ",
@@ -54683,7 +54685,8 @@
   ],
   "contactUrl": null,
   "noPrtimes": true,
-  "noOpenwork": true
+  "noOpenwork": true,
+  "noMynavi": true
  },
  {
   "key": "buzzcloud",
@@ -54801,7 +54804,8 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noMynavi": true
  },
  {
   "key": "chifull",
@@ -55040,7 +55044,8 @@
   ],
   "contactUrl": null,
   "noPrtimes": true,
-  "noGbiz": true
+  "noGbiz": true,
+  "noMynavi": true
  },
  {
   "key": "ウィズ",
@@ -55088,7 +55093,8 @@
   ],
   "contactUrl": null,
   "noPrtimes": true,
-  "noOpenwork": true
+  "noOpenwork": true,
+  "noMynavi": true
  },
  {
   "key": "マンパワグルプ",
