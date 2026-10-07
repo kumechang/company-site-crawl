@@ -1,0 +1,7 @@
+{
+ "origin": "https://www.tombow.com",
+ "fetchedAt": "2026-10-07T16:50:51.996Z",
+ "status": "error",
+ "text": "",
+ "error": "Navigation timeout of 20000 ms exceeded"
+}

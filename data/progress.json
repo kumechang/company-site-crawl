@@ -262,5 +262,82 @@
   "failedAt": null,
   "runs": 1,
   "lastAt": "2026-10-07T16:33:35.435Z"
+ },
+ "cosme_d2c|salesnow|https://salesnow.jp/db/industries/retail-sales/subIndustries/cosmetics-sales": {
+  "nextPage": 2,
+  "offset": 0,
+  "found": 40,
+  "exhausted": false,
+  "failures": 0,
+  "lastError": null,
+  "failedAt": null,
+  "runs": 1,
+  "lastAt": "2026-10-07T16:39:04.895Z"
+ },
+ "cosme_d2c|jcia|https://www.jcia.org/admin/memberlist": {
+  "nextPage": 1,
+  "offset": 40,
+  "found": 40,
+  "exhausted": false,
+  "failures": 0,
+  "lastError": null,
+  "failedAt": null,
+  "runs": 1,
+  "lastAt": "2026-10-07T16:39:17.239Z"
+ },
+ "cosme_d2c|green|https://www.green-japan.com/search/area/13/industry/130120": {
+  "nextPage": 1,
+  "offset": 8,
+  "found": 8,
+  "exhausted": false,
+  "failures": 0,
+  "lastError": null,
+  "failedAt": null,
+  "runs": 1,
+  "lastAt": "2026-10-07T16:41:19.178Z"
+ },
+ "cosme_d2c|jaro|https://www.jaro.or.jp/kaiinsha/": {
+  "nextPage": 1,
+  "offset": 40,
+  "found": 40,
+  "exhausted": false,
+  "failures": 0,
+  "lastError": null,
+  "failedAt": null,
+  "runs": 1,
+  "lastAt": "2026-10-07T16:44:19.893Z"
+ },
+ "cosme_d2c|kyujinbox|https://xn--pckua2a7gp15o89zb.com/%E5%8C%96%E7%B2%A7%E5%93%81%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD": {
+  "nextPage": 6,
+  "offset": 0,
+  "found": 55,
+  "exhausted": false,
+  "failures": 0,
+  "lastError": null,
+  "failedAt": null,
+  "runs": 1,
+  "lastAt": "2026-10-07T16:44:51.290Z"
+ },
+ "cosme_d2c|kyujinbox|https://xn--pckua2a7gp15o89zb.com/%E5%8C%96%E7%B2%A7%E5%93%81-D2C%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD": {
+  "nextPage": 6,
+  "offset": 0,
+  "found": 34,
+  "exhausted": false,
+  "failures": 0,
+  "lastError": null,
+  "failedAt": null,
+  "runs": 1,
+  "lastAt": "2026-10-07T16:45:17.998Z"
+ },
+ "cosme_d2c|kyujinbox|https://xn--pckua2a7gp15o89zb.com/%E3%82%B3%E3%82%B9%E3%83%A1-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD": {
+  "nextPage": 6,
+  "offset": 0,
+  "found": 60,
+  "exhausted": false,
+  "failures": 0,
+  "lastError": null,
+  "failedAt": null,
+  "runs": 1,
+  "lastAt": "2026-10-07T16:45:45.114Z"
  }
 }

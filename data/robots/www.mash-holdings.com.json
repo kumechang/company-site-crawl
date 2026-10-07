@@ -1,0 +1,6 @@
+{
+ "origin": "http://www.mash-holdings.com",
+ "fetchedAt": "2026-10-07T16:43:54.540Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp/\n\nDisallow: /business/\nDisallow: /company/\nDisallow: /contact/\nDisallow: /mail/\nDisallow: /mailmagazine/\nDisallow: /mashparkproject/\nDisallow: /news/\nDisallow: /pdf_map/\nDisallow: /philosophy/\nDisallow: /pma5245/\nDisallow: /privacypolicy/\nDisallow: /recruit/\nDisallow: /sitepolicy/\nDisallow: /uran_blog/\n\nSitemap:http://www.mash-holdings.com/sitemap.xml\n"
+}

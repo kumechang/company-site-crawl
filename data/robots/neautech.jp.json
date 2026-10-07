@@ -1,0 +1,6 @@
+{
+ "origin": "https://neautech.jp",
+ "fetchedAt": "2026-10-07T16:44:00.679Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://neautech.jp/sitemap.xml\nSitemap: https://neautech.jp/sitemap.rss\n"
+}

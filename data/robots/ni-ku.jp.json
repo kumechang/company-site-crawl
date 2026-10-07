@@ -1,0 +1,6 @@
+{
+ "origin": "https://ni-ku.jp",
+ "fetchedAt": "2026-10-07T16:51:18.198Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://ni-ku.jp/sitemap.xml\nSitemap: https://ni-ku.jp/sitemap.rss\n\nSitemap: https://ni-ku.jp/sitemap.xml\nSitemap: https://ni-ku.jp/sitemap.html\n"
+}

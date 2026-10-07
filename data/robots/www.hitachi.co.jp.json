@@ -1,0 +1,6 @@
+{
+ "origin": "http://www.hitachi.co.jp",
+ "fetchedAt": "2026-10-07T16:47:29.115Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /media\n"
+}
