@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.nagase.com",
+ "fetchedAt": "2026-10-06T11:47:14.157Z",
+ "status": 200,
+ "text": "User-agent: *\nAllow: /\n\n\nDisallow: /errors/\nDisallow: /resources/denacol-white-paper/thank-you\nDisallow: /resources/denamer-webinar/thank-you\nDisallow: /resources/aoma-webinar/thank-you\nDisallow: /resources/soluble-core-case-study/thank-you\nDisallow: /contact-us/thank-you\nDisallow: /contact-us/newsletter-thank-you\n\nDisallow: /*?filters.*\nDisallow: /*?tabs.*\nDisallow: /*?query.*\n\nSitemap: https://www.nagase.com/sitemap.xml"
+}

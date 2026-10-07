@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.tfc.co.jp",
+ "fetchedAt": "2026-10-06T23:59:14.544Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /cms/wp-admin/\nAllow: /cms/wp-admin/admin-ajax.php\n\nSitemap: https://www.tfc.co.jp/wp-sitemap.xml\n"
+}

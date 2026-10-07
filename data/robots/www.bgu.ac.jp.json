@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.bgu.ac.jp",
+ "fetchedAt": "2026-10-07T00:15:03.138Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\n# 繝壹�繧ｸ繝阪�繧ｷ繝ｧ繝ｳ\nDisallow: /*/page/\n\n# 繝輔ぅ繝ｼ繝�\nDisallow: /*/feed/\n\n# digitalbook�亥�蟄舌ン繝･繝ｼ繧｢縺ｮ蛻�牡HTML��\nDisallow: /assets/digitalbook/\n\n# 繧ｪ繝輔ぅ繧ｹ邉ｻ繝輔ぃ繧､繝ｫ蜈ｨ闊ｬ\nDisallow: /*.docx$\nDisallow: /*.doc$\nDisallow: /*.xlsx$\nDisallow: /*.xls$\nDisallow: /*.pptx$\nDisallow: /*.ppt$\n\n# 蜍慕判繧ｹ繝医Μ繝ｼ繝溘Φ繧ｰ髢｢騾｣\nDisallow: /*.m3u8$\nDisallow: /*.ts$\nDisallow: /*.mp4$\n\n# WordPress讀懃ｴ｢URL繧貞ｮ悟�驕ｮ譁ｭ\nDisallow: /search/\nDisallow: /*?s=\n\nSitemap: https://www.bgu.ac.jp/sitemap.xml\n"
+}

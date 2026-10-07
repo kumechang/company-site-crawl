@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.piala.co.jp",
+ "fetchedAt": "2026-10-06T23:30:49.108Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /motehada\nDisallow: /motehada/*\nDisallow: /motehada/healthclinic\nDisallow: /motehada/healthclinic/*\nDisallow: /motehada/hellathclinic\nDisallow: /motehada/hellathclinic/*\n\nSitemap: https://www.piala.co.jp/wp-sitemap.xml\nSitemap: https://www.piala.co.jp/sitemap-column.xml\n"
+}

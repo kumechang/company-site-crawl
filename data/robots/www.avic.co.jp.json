@@ -1,0 +1,7 @@
+{
+ "origin": "https://www.avic.co.jp",
+ "fetchedAt": "2026-10-07T00:02:10.432Z",
+ "status": "error",
+ "text": "",
+ "error": "net::ERR_CONNECTION_RESET at https://www.avic.co.jp/robots.txt"
+}

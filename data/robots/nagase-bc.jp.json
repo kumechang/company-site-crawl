@@ -1,0 +1,6 @@
+{
+ "origin": "https://nagase-bc.jp",
+ "fetchedAt": "2026-10-06T12:11:53.225Z",
+ "status": 200,
+ "text": "User-Agent: *\nAllow: /wp/wp-content/uploads/\nDisallow: /wp/wp-content/plugins/\nDisallow: /wp/wp-admin/\nDisallow: /readme.html\nDisallow: /refer/\nSitemap: https://nagase-bc.jp/sitemap.xml"
+}

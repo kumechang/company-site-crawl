@@ -1,0 +1,7 @@
+{
+ "origin": "https://hojin.info",
+ "fetchedAt": "2026-10-06T10:27:08.786Z",
+ "status": "error",
+ "text": "",
+ "error": "net::ERR_TUNNEL_CONNECTION_FAILED at https://hojin.info/robots.txt"
+}

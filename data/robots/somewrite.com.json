@@ -1,0 +1,6 @@
+{
+ "origin": "https://somewrite.com",
+ "fetchedAt": "2026-10-06T23:49:13.720Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nDisallow: /news/info/gappeikokoku/\nDisallow: /news/info/gappeikokoku/æ±ºç®—æ›¸_20240401_20250331.pdf\nDisallow: /news/info/gappeikokoku/20250725-01-SW.pdf\n\nSitemap: https://somewrite.com/sitemap.xml\n\nSitemap: https://somewrite.com/sitemap.xml"
+}

@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.apgroup.com",
+ "fetchedAt": "2026-10-07T00:05:08.116Z",
+ "status": 200,
+ "text": "########################################################\n#\n#    apgroup.com Robots File\n#    Last Updated on October 29, 2019\n#\n########################################################\nUser-agent: *\nDisallow: \nSitemap: http://www.apgroup.com/int/en/sitemap.xml\nSitemap: http://www.apgroup.com/int/ko/sitemap.xml\nSitemap: http://www.apgroup.com/int/zh/sitemap.xml\nSitemap: http://www.apgroup.com/sg/en/sitemap.xml\nSitemap: http://www.apgroup.com/my/en/sitemap.xml\nSitemap: http://www.apgroup.com/tw/zh/sitemap.xml\nSitemap: http://www.apgroup.com/th/th/sitemap.xml\nSitemap: http://www.apgroup.com/jp/ja/sitemap.xml"
+}

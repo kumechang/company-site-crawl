@@ -1,0 +1,17 @@
+{
+  "name": "company-site-crawl",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "東京の化粧品D2C/インフルエンサー事務所/広告代理店/SNS運用代行企業を収集する個人用クローラー",
+  "scripts": {
+    "crawl": "node src/cli.js",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "puppeteer": "^25.12.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.nagoya-yakult.co.jp",
+ "fetchedAt": "2026-10-06T11:48:29.551Z",
+ "status": 200,
+ "text": "User-agent:*\nDisallow:/library/\nDisallow:/material/\nAllow:/library/*/favicon/*/favicon.ico\nAllow:/library/*/favicon/*/webclip.png\nAllow:/library/5b35d70479a19cea09330db9/*\nSitemap: https://www.nagoya-yakult.co.jp/sitemap.xml"
+}

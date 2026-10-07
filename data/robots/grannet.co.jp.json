@@ -1,0 +1,6 @@
+{
+ "origin": "https://grannet.co.jp",
+ "fetchedAt": "2026-10-06T23:29:44.317Z",
+ "status": 200,
+ "text": "# START YOAST BLOCK\n# ---------------------------\nUser-agent: *\nDisallow:\n\nSitemap: https://grannet.co.jp/sitemap_index.xml\n# ---------------------------\n# END YOAST BLOCK"
+}

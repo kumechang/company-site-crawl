@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.almado.co.jp",
+ "fetchedAt": "2026-10-06T11:59:41.591Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wordpress/wp-admin/\nAllow: /wordpress/wp-admin/admin-ajax.php\n"
+}

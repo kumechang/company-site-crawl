@@ -1,0 +1,7 @@
+{
+ "origin": "http://www.kita-pr.co.jp",
+ "fetchedAt": "2026-10-07T00:15:00.656Z",
+ "status": "error",
+ "text": "",
+ "error": "net::ERR_BLOCKED_BY_CLIENT at http://www.kita-pr.co.jp/robots.txt"
+}

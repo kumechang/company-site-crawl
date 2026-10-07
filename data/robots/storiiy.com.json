@@ -1,0 +1,6 @@
+{
+ "origin": "https://storiiy.com",
+ "fetchedAt": "2026-10-06T13:22:33.706Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp_storiiy/wp-admin/\nAllow: /wp_storiiy/wp-admin/admin-ajax.php\n\nSitemap: https://storiiy.com/wp-sitemap.xml\n\n# START YOAST BLOCK\n# ---------------------------\nUser-agent: *\nDisallow: /?s=\nDisallow: /page/*/?s=\nDisallow: /search/\nDisallow: /wp-json/\nDisallow: /?rest_route=\n\nUser-agent: AdsBot\nDisallow: /\n\n# ---------------------------\n# END YOAST BLOCK\nSitemap: https://storiiy.com/sitemap.xml\n"
+}

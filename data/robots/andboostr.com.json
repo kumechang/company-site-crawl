@@ -1,0 +1,6 @@
+{
+ "origin": "https://andboostr.com",
+ "fetchedAt": "2026-10-06T23:32:13.307Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://andboostr.com/sitemap_index.xml\n\nSitemap: https://andboostr.com/sitemap.xml\nSitemap: https://andboostr.com/google-news.xml\n"
+}

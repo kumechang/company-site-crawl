@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.make-career.site",
+ "fetchedAt": "2026-10-06T15:03:03.500Z",
+ "status": 200,
+ "text": "User-agent: *\nAllow: /wp-admin/admin-ajax.php\nDisallow: /wp-admin/\n\nSitemap: https://www.make-career.site/sitemap.xml\nSitemap: https://www.make-career.site/sitemap.rss\n\n"
+}

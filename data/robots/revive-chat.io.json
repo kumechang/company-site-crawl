@@ -1,0 +1,6 @@
+{
+ "origin": "https://revive-chat.io",
+ "fetchedAt": "2026-10-06T09:51:46.699Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://revive-chat.io/sitemap.xml\n"
+}

@@ -1,0 +1,6 @@
+{
+ "origin": "https://reinolz.co.jp",
+ "fetchedAt": "2026-10-06T23:39:20.193Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.phpSitemap: https://reinolz.co.jp/sitemap.xml\nSitemap: https://reinolz.co.jp/sitemap.rss"
+}

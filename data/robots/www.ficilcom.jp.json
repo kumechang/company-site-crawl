@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.ficilcom.jp",
+ "fetchedAt": "2026-10-06T10:51:41.751Z",
+ "status": 200,
+ "text": "User-Agent: GPTBot\nAllow: /\nAllow: /api/media/file/\nDisallow: /admin\nDisallow: /api\nDisallow: /next\n\nUser-Agent: OAI-SearchBot\nAllow: /\nAllow: /api/media/file/\nDisallow: /admin\nDisallow: /api\nDisallow: /next\n\nUser-Agent: ClaudeBot\nAllow: /\nAllow: /api/media/file/\nDisallow: /admin\nDisallow: /api\nDisallow: /next\n\nUser-Agent: PerplexityBot\nAllow: /\nAllow: /api/media/file/\nDisallow: /admin\nDisallow: /api\nDisallow: /next\n\nUser-Agent: CCBot\nAllow: /\nAllow: /api/media/file/\nDisallow: /admin\nDisallow: /api\nDisallow: /next\n\nUser-Agent: anthropic-ai\nAllow: /\nAllow: /api/media/file/\nDisallow: /admin\nDisallow: /api\nDisallow: /next\n\nUser-Agent: *\nAllow: /api/media/file/\nDisallow: /admin\nDisallow: /api\nDisallow: /next\n\nSitemap: https://www.ficilcom.jp/sitemap.xml\nSitemap: https://www.ficilcom.jp/image-sitemap.xml\n"
+}

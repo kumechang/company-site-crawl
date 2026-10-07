@@ -1,0 +1,6 @@
+{
+ "origin": "https://career-vision.co.jp",
+ "fetchedAt": "2026-10-06T12:48:54.827Z",
+ "status": 200,
+ "text": "User-agent: *\nAllow: /\nDisallow: /thanks\nDisallow: /entry\n\n# AI crawlers welcome\nUser-agent: GPTBot\nAllow: /\n\nUser-agent: ClaudeBot\nAllow: /\n\nUser-agent: Google-Extended\nAllow: /\n\nUser-agent: PerplexityBot\nAllow: /\n\nSitemap: https://career-vision.co.jp/sitemap-index.xml\n"
+}

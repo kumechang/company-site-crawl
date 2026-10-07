@@ -1,0 +1,6 @@
+{
+ "origin": "https://cominka.co.jp",
+ "fetchedAt": "2026-10-06T13:24:16.428Z",
+ "status": 200,
+ "text": "# START YOAST BLOCK\n# ---------------------------\nUser-agent: *\nDisallow:\n\nSitemap: https://cominka.co.jp/sitemap_index.xml\n# ---------------------------\n# END YOAST BLOCK"
+}

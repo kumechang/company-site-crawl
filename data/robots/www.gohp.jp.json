@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.gohp.jp",
+ "fetchedAt": "2026-10-06T23:37:04.589Z",
+ "status": 200,
+ "text": "# =========================================\n# robots.txt (UTF-8) - 株式会社シスコム gohp.jp\n# SEO を考慮したクロール制御と管理領域の保護を目的にした設定\n# =========================================\n\nUser-agent: *\n# --- CMS 管理画面・認証ページはクロール不要 ---\nDisallow: /wp-admin/\nDisallow: /blog/wp-admin/\nAllow: /wp-admin/admin-ajax.php\nAllow: /blog/wp-admin/admin-ajax.php\n\n# --- 重複や品質の低いページを検索結果に出さない ---\nDisallow: /?s=\nDisallow: /search/\nDisallow: /feed/\nDisallow: /comments/feed/\nDisallow: /wp-json/\nDisallow: /blog/?s=\nDisallow: /blog/search/\nDisallow: /blog/feed/\nDisallow: /blog/comments/feed/\n\n# --- LLM・AI ボット向け公開ドキュメントを明示的に許可 ---\nAllow: /llms.txt\nAllow: /blog/llms.txt\n\nUser-agent: Googlebot-Image\n# 画像検索流入を維持するためアップロードされた画像は許可\nAllow: /wp-content/uploads/\nAllow: /blog/wp-content/uploads/\n\n# --- サイトマップ ---\nSitemap: https://www.gohp.jp/sitemap_index.xml\nSitemap: https://www.gohp.jp/blog/sitemap_index.xml\n"
+}
