@@ -1,6 +1,6 @@
 {
  "origin": "http://takeyama-ec.com",
- "fetchedAt": "2026-10-06T15:11:07.274Z",
+ "fetchedAt": "2026-10-07T00:02:35.638Z",
  "status": "error",
  "text": "",
  "error": "net::ERR_BLOCKED_BY_CLIENT at http://takeyama-ec.com/robots.txt"

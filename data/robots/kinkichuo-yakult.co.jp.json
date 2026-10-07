@@ -1,6 +1,6 @@
 {
  "origin": "http://kinkichuo-yakult.co.jp",
- "fetchedAt": "2026-10-06T15:11:08.058Z",
+ "fetchedAt": "2026-10-07T00:03:01.420Z",
  "status": "error",
  "text": "",
  "error": "net::ERR_BLOCKED_BY_CLIENT at http://kinkichuo-yakult.co.jp/robots.txt"

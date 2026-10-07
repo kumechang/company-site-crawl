@@ -1,6 +1,6 @@
 {
  "origin": "https://idaryogokudo.co.jp",
- "fetchedAt": "2026-10-06T11:50:12.627Z",
+ "fetchedAt": "2026-10-07T00:02:25.332Z",
  "status": 200,
  "text": "User-agent: *\nDisallow: /_controll/wp-admin/\nAllow: /_controll/wp-admin/admin-ajax.php\n\nSitemap: https://idaryogokudo.co.jp/wp-sitemap.xml\n"
 }
