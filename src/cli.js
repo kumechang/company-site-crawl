@@ -109,14 +109,33 @@ const earlyStopFor = (c) => {
   };
 };
 
-/** 補完の対象を、いま作っているカテゴリの会社(検索元が一致)から先に並べ、上限(--enrich-limit)で切る */
+/**
+ * 補完の対象を、いま作っているカテゴリの会社(検索元が一致)から先に並べる。
+ * --enrich-limit があるときは、補完の1回(enrich)の最初に「この回に補完する会社」を上限の数だけ選んで固定し(round)、
+ * SalesNow・PR TIMES・公式サイト・Gビズ・マイナビ・キャリタスは、その会社の中だけで進める。
+ * 段階ごとに別の上位N社を選び直すと、Gビズで20社が済んでも、次のマイナビがまた別の20社を引いて、1回で何十社も補完してしまう。
+ */
 let currentCat = null;
-const prioritize = (list) => {
-  const first = (c) => (currentCat && c.seedCategories.includes(currentCat) ? 0 : 1);
-  // 東京以外と分かっている会社は、補完しても対象外のままなので、巡回・照会しない
-  const sorted = list.filter((c) => consolidate(c, { minEmployees }).tokyo !== false).sort((a, b) => first(a) - first(b));
-  return enrichLimit > 0 ? sorted.slice(0, enrichLimit) : sorted;
-};
+let round = null; // この回に補完する会社のkey集合。null=制限なし
+const outsideTokyo = (c) => consolidate(c, { minEmployees }).tokyo === false; // 東京以外と分かっている会社は、補完しても対象外のままなので巡回・照会しない
+const catFirst = (c) => (currentCat && c.seedCategories.includes(currentCat) ? 0 : 1);
+const prioritize = (list) => list.filter((c) => !outsideTokyo(c) && (!round || round.has(c.key))).sort((a, b) => catFirst(a) - catFirst(b));
+
+/** まだ補完の手が残っている会社か（公式サイト未巡回 / 公式URLが無く未照会 / 従業員数が無く未照会の情報源がある） */
+function hasPendingEnrichment(c) {
+  const noEmp = !c.evidence.some((e) => e.field === 'employees');
+  const crawlPending = (c.officialUrl || bestOfficial(c)) && !c.evidence.some((e) => e.source === 'official');
+  const urlPending = !c.officialUrl && !skipped.has('prtimes') && !c.noPrtimes;
+  const empPending = noEmp && ((!skipped.has('gbizinfo') && !c.noGbiz) || (!skipped.has('mynavi') && !c.noMynavi) || (!skipped.has('careertasu') && !c.noCareertasu) || (!skipped.has('openwork') && !c.noOpenwork));
+  return Boolean(crawlPending || urlPending || empPending);
+}
+
+/** この回の補完対象を選ぶ（いま作っているカテゴリの会社を優先。補完の手が残っている会社だけ） */
+function pickRound() {
+  if (!(enrichLimit > 0)) return null;
+  const cand = store.all().filter((c) => !outsideTokyo(c) && hasPendingEnrichment(c)).sort((a, b) => catFirst(a) - catFirst(b));
+  return new Set(cand.slice(0, enrichLimit).map((c) => c.key));
+}
 const skipped = new Set(opt.skip.split(',').filter(Boolean));
 // EDINET(有価証券報告書)はAPIキーがあるときだけ使う。無ければこの補完を飛ばす
 const edinet = process.env.EDINET_API_KEY ? new edinetSrc.Edinet({ useCache: !opt['no-cache'], log }) : null;
@@ -354,6 +373,8 @@ async function enrichEdinet() {
 }
 
 async function enrich() {
+  round = pickRound();
+  if (round) log(`# 今回の補完対象: ${round.size}社（--enrich-limit ${enrichLimit}。各段階はこの会社の中だけで進める）`);
   // 1) SalesNow の索引で、公式URLまたは従業員数が足りない会社を補完
   const needs = (c) => !c.officialUrl || !c.evidence.some((e) => e.field === 'employees');
   const lacking = skipped.has('salesnow') ? [] : prioritize(store.all().filter((c) => needs(c) && !c.evidence.some((e) => e.source === 'salesnow') && !c.noSalesnow));
