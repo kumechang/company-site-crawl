@@ -40,7 +40,7 @@ export const ORIGINS = {
 /** そのサイトで実際に使っているURL（config に書いたもの + アダプタが辿る代表パス） */
 function usedUrls(sid) {
   const urls = new Set();
-  for (const def of Object.values(CATEGORIES)) for (const t of def[sid] ?? []) if (/^https?:/.test(t)) urls.add(t);
+  for (const def of Object.values(CATEGORIES)) for (const t of def[sid] ?? []) { const u = typeof t === 'string' ? t : t?.url; if (/^https?:/.test(u ?? '')) urls.add(u); }
   const extra = {
     wantedly: ['https://www.wantedly.com/projects?new=true&page=1&keywords=SNS&order=mixed', 'https://www.wantedly.com/companies/example'],
     green: ['https://www.green-japan.com/company/5377'],

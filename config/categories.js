@@ -9,7 +9,11 @@
  * 求人ボックスの一覧URL: https://求人ボックス.com/{キーワード}の仕事-{都道府県}（複数語は - でつなぐ）。
  * 求人詳細(/jb/)は robots.txt 禁止のため、一覧本文の社名・求人タイトルだけを使う。
  */
-const KB = (keyword, pref = '東京都') => `https://xn--pckua2a7gp15o89zb.com/${encodeURIComponent(keyword)}${encodeURIComponent('の仕事')}-${encodeURIComponent(pref)}`;
+const KB = (keyword, { pref = '東京都', pages = 5, limit = 60 } = {}) => ({
+  url: `https://xn--pckua2a7gp15o89zb.com/${encodeURIComponent(keyword)}${encodeURIComponent('の仕事')}-${encodeURIComponent(pref)}`,
+  pages, // ?pg=2,3… とページ送りする枚数（後ろのページほど関連が薄く既出の会社が増える）
+  limit, // 1URLあたりの最大取得社数（--per-query の既定8だと足りないため上書き）
+});
 
 export const CATEGORIES = {
   cosme_d2c: {
@@ -49,7 +53,7 @@ export const CATEGORIES = {
     green: ['https://www.green-japan.com/search/area/13/industry/100125'],
     wantedly: ['インフルエンサー キャスティング', 'インフルエンサー マネジメント'],
     // 求人ボックスの一覧(ユーザー提供)。求人詳細(/jb/)は robots 禁止のため一覧本文の社名のみ使う
-    kyujinbox: [KB('インフルエンサー-事務所'), KB('インフルエンサー-マーケティング'), KB('インフルエンサー-キャスティング'), KB('YouTuber-マネージャー')],
+    kyujinbox: [KB('インフルエンサー-事務'), KB('インフルエンサー-事務所'), KB('インフルエンサー-マーケティング'), KB('インフルエンサー-キャスティング'), KB('YouTuber-マネージャー')],
     // PR TIMES の検索で見つけた会社。label は「インフルエンサー」のみ（事務所かどうかは公式サイトの文章で判定する）
     prtimes: [
       { keyword: 'インフルエンサー 事務所 所属', label: 'インフルエンサー' },
