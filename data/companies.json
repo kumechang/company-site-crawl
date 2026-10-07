@@ -52426,6 +52426,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   },
+   {
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/"
    }
   ],
   "evidence": [
@@ -52444,6 +52448,14 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 新宿区 新宿駅",
     "at": "2026-10-07T04:35:47.920Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都新宿区",
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/",
+    "snippet": "Gビズインフォ 本店所在地: 東京都新宿区（同名15件から選択）",
+    "at": "2026-10-07T09:14:37.453Z"
    }
   ],
   "seedCategories": [
@@ -52467,6 +52479,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   },
+   {
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/"
    }
   ],
   "evidence": [
@@ -52485,6 +52501,14 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 台東区 上野駅",
     "at": "2026-10-07T04:35:47.920Z"
+   },
+   {
+    "field": "address",
+    "value": "大阪府大阪市中央区",
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/",
+    "snippet": "Gビズインフォ 本店所在地: 大阪府大阪市中央区",
+    "at": "2026-10-07T09:14:40.842Z"
    }
   ],
   "seedCategories": [
@@ -52524,6 +52548,10 @@
    {
     "source": "official",
     "url": "https://unlk.jp/"
+   },
+   {
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/"
    }
   ],
   "evidence": [
@@ -52606,6 +52634,14 @@
     "url": "https://unlk.jp/case/industry/information-communications-industry/",
     "snippet": "会社概要ページ",
     "at": "2026-10-07T07:03:03.859Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区",
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/",
+    "snippet": "Gビズインフォ 本店所在地: 東京都渋谷区（同名11件から選択）",
+    "at": "2026-10-07T09:14:44.674Z"
    }
   ],
   "seedCategories": [
@@ -52634,6 +52670,10 @@
    {
     "source": "official",
     "url": "https://corp.byup.jp/"
+   },
+   {
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/"
    }
   ],
   "evidence": [
@@ -52692,6 +52732,14 @@
     "url": "https://corp.byup.jp/",
     "snippet": "会社概要ページ",
     "at": "2026-10-07T07:03:42.494Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都品川区",
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/",
+    "snippet": "Gビズインフォ 本店所在地: 東京都品川区",
+    "at": "2026-10-07T09:14:48.450Z"
    }
   ],
   "seedCategories": [
@@ -52725,6 +52773,10 @@
    {
     "source": "official",
     "url": "https://livedge.jp/"
+   },
+   {
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/"
    }
   ],
   "evidence": [
@@ -52775,6 +52827,14 @@
     "url": "https://livedge.jp/",
     "snippet": "会社概要ページ",
     "at": "2026-10-07T07:04:14.307Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区",
+    "source": "gbizinfo",
+    "url": "https://info.gbiz.go.jp/",
+    "snippet": "Gビズインフォ 本店所在地: 東京都港区（同名2件から選択）",
+    "at": "2026-10-07T09:14:52.317Z"
    }
   ],
   "seedCategories": [
