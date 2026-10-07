@@ -210,7 +210,8 @@ export const SITES = {
  */
 export const ORDER = {
   cosme_d2c: ['salesnow', 'bizmaps', 'jcia', 'jaro', 'article', 'wantedly', 'green', 'prtimes', /* 第2群 */ 'indeed', 'kyujinbox', 'stanby', 'doda', 'mynavi', 'engage'],
-  influencer_agency: ['wantedly', 'green', 'kyujinbox', 'stanby', 'indeed', 'prtimes', 'boxil', 'aspic', 'meetsmore', 'webkanji', 'article', 'imitsu'],
+  // 実績(該当率)の高い順: 比較サイト(boxil・meetsmore・aspic)は載っている会社がほぼ該当 → PR TIMES・求人ボックス → 求人系(wantedly・green・stanby)は該当率が低いので後ろ
+  influencer_agency: ['boxil', 'meetsmore', 'aspic', 'prtimes', 'kyujinbox', 'webkanji', 'imitsu', 'article', 'wantedly', 'green', 'stanby', 'indeed'],
   ad_agency: ['webkanji', 'imitsu', 'boxil', 'aspic', 'meetsmore', 'grip', 'digitre', 'agencyhub', 'pitact', 'houjingoo', 'salesnow', 'article', 'digimado', 'wantedly', 'green', 'doda', 'indeed', 'kyujinbox', 'stanby', 'mynavi', 'engage'],
   sns_agency: ['boxil', 'aspic', 'digimado', 'buzztan', 'slidelib', 'webkanji', 'imitsu', 'meetsmore', 'grip', 'article', 'wantedly', 'green', 'kyujinbox', 'stanby', 'engage', 'indeed'],
 };
