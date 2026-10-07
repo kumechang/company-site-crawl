@@ -3838,7 +3838,8 @@
    "sns_agency",
    "sns_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "プラスアルファコンサルティング",
@@ -4160,7 +4161,8 @@
   "noGbiz": true,
   "noMynavi": true,
   "noCareertasu": true,
-  "noOpenwork": true
+  "noOpenwork": true,
+  "noPrtimes": true
  },
  {
   "key": "notari",
@@ -8134,7 +8136,8 @@
   "noGbiz": true,
   "noOpenwork": true,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "tensen",
@@ -9127,7 +9130,8 @@
   "seedCategories": [
    "sns_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "stageon",
@@ -9242,7 +9246,8 @@
   "contactUrl": null,
   "noMynavi": true,
   "noCareertasu": true,
-  "noOpenwork": true
+  "noOpenwork": true,
+  "noPrtimes": true
  },
  {
   "key": "y's",
@@ -9366,7 +9371,8 @@
     "comment": "公式サイトに社名はあるが、所在地・ドメインを裏付ける別の情報源がなく、同名企業との区別は未確認",
     "after": "https://ysinc.co.jp/"
    }
-  }
+  },
+  "noPrtimes": true
  },
  {
   "key": "ナレッジコミュニケション",
@@ -9483,6 +9489,10 @@
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -9578,12 +9588,17 @@
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
   "noMynavi": true,
   "noCareertasu": true,
-  "noOpenwork": true
+  "noOpenwork": true,
+  "noPrtimes": true
  },
  {
   "key": "冒険社プラコレ",
@@ -10037,7 +10052,8 @@
   "noGbiz": true,
   "noMynavi": true,
   "noCareertasu": true,
-  "noOpenwork": true
+  "noOpenwork": true,
+  "noPrtimes": true
  },
  {
   "key": "サムシングファン",
@@ -10605,7 +10621,8 @@
    "sns_agency",
    "sns_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "岸田産業",
@@ -10917,7 +10934,8 @@
   ],
   "contactUrl": null,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "アンビエントナビ",
@@ -11003,7 +11021,8 @@
   "seedCategories": [
    "sns_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "クリエイティブリソスインスティチュト",
@@ -11182,7 +11201,8 @@
   "contactUrl": null,
   "noMynavi": true,
   "noCareertasu": true,
-  "noOpenwork": true
+  "noOpenwork": true,
+  "noPrtimes": true
  },
  {
   "key": "a",
@@ -11530,6 +11550,10 @@
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -11626,7 +11650,8 @@
   "contactUrl": null,
   "noMynavi": true,
   "noCareertasu": true,
-  "noOpenwork": true
+  "noOpenwork": true,
+  "noPrtimes": true
  },
  {
   "key": "lassic",
@@ -12643,7 +12668,8 @@
    "sns_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "ブレインパッド",
@@ -12847,7 +12873,8 @@
     "comment": "公式サイトに社名あり。所在地(東京都港区)がgreen/openwork/officialと一致",
     "after": "https://www.brainpad.co.jp/"
    }
-  }
+  },
+  "noPrtimes": true
  },
  {
   "key": "ambl",
@@ -13970,7 +13997,8 @@
   "contactUrl": null,
   "noOpenwork": true,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "バオリン",
@@ -14109,7 +14137,8 @@
    "sns_agency",
    "sns_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "アクシス",
@@ -14415,7 +14444,8 @@
    "sns_agency"
   ],
   "contactUrl": null,
-  "noOpenwork": true
+  "noOpenwork": true,
+  "noPrtimes": true
  },
  {
   "key": "フォスタトアップス",
@@ -14770,7 +14800,8 @@
   "contactUrl": null,
   "noOpenwork": true,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "chadult",
@@ -14932,7 +14963,8 @@
   "contactUrl": null,
   "noOpenwork": true,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "mksn",
@@ -14981,7 +15013,8 @@
   "contactUrl": null,
   "noOpenwork": true,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "テンポスホルディングス",
@@ -15151,7 +15184,8 @@
   "seedCategories": [
    "sns_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "minival",
@@ -15255,7 +15289,8 @@
   ],
   "contactUrl": null,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "sigma",
@@ -15389,7 +15424,8 @@
   "seedCategories": [
    "sns_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "vectim",
@@ -15438,7 +15474,8 @@
   "contactUrl": null,
   "noOpenwork": true,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "エムジ東京",
@@ -15476,7 +15513,8 @@
   "noGbiz": true,
   "noOpenwork": true,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "borderless",
@@ -15572,7 +15610,8 @@
   ],
   "contactUrl": null,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "パノプト",
@@ -15716,7 +15755,8 @@
   ],
   "contactUrl": null,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "ディンプル人材紹介事業部採用窓口",
@@ -15754,7 +15794,8 @@
   "noGbiz": true,
   "noOpenwork": true,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "donuts",
@@ -16002,7 +16043,8 @@
   ],
   "contactUrl": null,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "digdig",
@@ -16098,7 +16140,8 @@
   ],
   "contactUrl": null,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "メンバズ",
@@ -16777,7 +16820,8 @@
    "sns_agency",
    "sns_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "サイババズ",
@@ -17134,7 +17178,8 @@
   "contactUrl": null,
   "noGbiz": true,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "リプカ",
@@ -17317,7 +17362,8 @@
   "contactUrl": null,
   "noMynavi": true,
   "noCareertasu": true,
-  "noOpenwork": true
+  "noOpenwork": true,
+  "noPrtimes": true
  },
  {
   "key": "textrade",
@@ -17525,7 +17571,8 @@
   "contactUrl": null,
   "noMynavi": true,
   "noCareertasu": true,
-  "noOpenwork": true
+  "noOpenwork": true,
+  "noPrtimes": true
  },
  {
   "key": "tsutaworld",
@@ -17632,7 +17679,8 @@
   "noGbiz": true,
   "noMynavi": true,
   "noCareertasu": true,
-  "noOpenwork": true
+  "noOpenwork": true,
+  "noPrtimes": true
  },
  {
   "key": "4x",
@@ -17841,7 +17889,8 @@
     "comment": "公式サイトに社名あり。所在地(東京都中央区)がgbizinfo/officialと一致 / 同名企業が複数ありうる(照合時に既知の住所で絞り込み済み)",
     "after": "https://4x-corp.com/"
    }
-  }
+  },
+  "noPrtimes": true
  },
  {
   "key": "デジアサ",
@@ -20787,7 +20836,8 @@
   "contactUrl": null,
   "noOpenwork": true,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "アス製薬",
@@ -21012,7 +21062,8 @@
   "contactUrl": null,
   "noOpenwork": true,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "アイダ",
@@ -21064,7 +21115,8 @@
   "contactUrl": null,
   "noOpenwork": true,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "アイエシ",
@@ -21560,7 +21612,8 @@
   "contactUrl": null,
   "noOpenwork": true,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "アイビ化粧品",
@@ -21906,7 +21959,8 @@
   "contactUrl": null,
   "noOpenwork": true,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "アウラ",
@@ -21958,7 +22012,8 @@
   "contactUrl": null,
   "noOpenwork": true,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "アウレオ",
@@ -22153,7 +22208,8 @@
   "contactUrl": null,
   "noOpenwork": true,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "アクシジア",
@@ -23413,7 +23469,8 @@
    "cosme_d2c",
    "cosme_d2c"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "エビス",
@@ -23457,7 +23514,8 @@
   "contactUrl": null,
   "noOpenwork": true,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "花王",
@@ -23622,7 +23680,8 @@
    "cosme_d2c",
    "cosme_d2c"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "カネボウ化粧品",
@@ -23892,7 +23951,8 @@
    "cosme_d2c",
    "cosme_d2c"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "北の達人コポレション",
@@ -24187,7 +24247,8 @@
    "cosme_d2c",
    "cosme_d2c"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "オルビス",
@@ -33035,7 +33096,8 @@
    "cosme_d2c"
   ],
   "contactUrl": null,
-  "noOpenwork": true
+  "noOpenwork": true,
+  "noPrtimes": true
  },
  {
   "key": "acro",
@@ -33462,7 +33524,8 @@
   "contactUrl": null,
   "noOpenwork": true,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "味の素ヘルシサプライ",
@@ -33589,7 +33652,8 @@
    "cosme_d2c",
    "cosme_d2c"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "アステス",
@@ -33628,7 +33692,8 @@
   "noGbiz": true,
   "noOpenwork": true,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "アストラム",
@@ -33789,7 +33854,8 @@
   "contactUrl": null,
   "noOpenwork": true,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "アチブ",
@@ -33907,7 +33973,8 @@
    "cosme_d2c"
   ],
   "contactUrl": null,
-  "noOpenwork": true
+  "noOpenwork": true,
+  "noPrtimes": true
  },
  {
   "key": "アドネクスト",
@@ -34115,7 +34182,8 @@
   ],
   "contactUrl": null,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "アプロス",
@@ -34171,7 +34239,8 @@
    "cosme_d2c"
   ],
   "contactUrl": null,
-  "noOpenwork": true
+  "noOpenwork": true,
+  "noPrtimes": true
  },
  {
   "key": "アミックグルプ",
@@ -34522,7 +34591,8 @@
   ],
   "contactUrl": null,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "アリナミン製薬",
@@ -34715,7 +34785,8 @@
   "contactUrl": null,
   "noOpenwork": true,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "アルビオン",
@@ -35410,7 +35481,8 @@
   "contactUrl": null,
   "noOpenwork": true,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "コセ",
@@ -35856,7 +35928,8 @@
   ],
   "contactUrl": null,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "ザプロアクティブカンパニ",
@@ -36616,7 +36689,8 @@
   "contactUrl": null,
   "noOpenwork": true,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "ジャパンゲトウェイ",
@@ -36876,7 +36950,8 @@
    "cosme_d2c",
    "cosme_d2c"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "ジョンソン",
@@ -36918,7 +36993,8 @@
   "contactUrl": null,
   "noOpenwork": true,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "シンエイ",
@@ -36960,7 +37036,8 @@
   "contactUrl": null,
   "noOpenwork": true,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "新日本製薬",
@@ -38016,7 +38093,8 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "アドシド",
@@ -38305,6 +38383,8 @@
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -38441,6 +38521,8 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
@@ -38604,6 +38686,8 @@
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -38688,7 +38772,8 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "もったいない",
@@ -38784,9 +38869,12 @@
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "studio15",
@@ -38906,11 +38994,14 @@
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "anyglo",
@@ -39054,6 +39145,8 @@
    }
   ],
   "seedCategories": [
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
@@ -42080,7 +42173,8 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "apoc",
@@ -42460,7 +42554,8 @@
   "contactUrl": null,
   "noMynavi": true,
   "noCareertasu": true,
-  "noOpenwork": true
+  "noOpenwork": true,
+  "noPrtimes": true
  },
  {
   "key": "ソシャルワイヤ",
@@ -42614,7 +42709,8 @@
     "comment": "公式サイト上に社名が確認できない(所在地はgbizinfoと一致)",
     "after": "https://find-model.jp/"
    }
-  }
+  },
+  "noPrtimes": true
  },
  {
   "key": "トリドリ",
@@ -43093,7 +43189,8 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "フロンティアコンサルティング",
@@ -44245,7 +44342,8 @@
   "contactUrl": null,
   "noGbiz": true,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "noPrtimes": true
  },
  {
   "key": "cominka",
@@ -44957,7 +45055,8 @@
   "seedCategories": [
    "cosme_d2c"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "アンファ",
@@ -45348,7 +45447,8 @@
   "seedCategories": [
    "cosme_d2c"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "ベイクルズ",
@@ -49705,6 +49805,8 @@
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
@@ -49804,9 +49906,12 @@
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "emooove",
@@ -49913,6 +50018,8 @@
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null
@@ -49994,13 +50101,16 @@
    "influencer_agency",
    "influencer_agency",
    "influencer_agency",
+   "influencer_agency",
+   "influencer_agency",
    "influencer_agency"
   ],
   "contactUrl": null,
   "noGbiz": true,
   "noMynavi": true,
   "noCareertasu": true,
-  "noOpenwork": true
+  "noOpenwork": true,
+  "noPrtimes": true
  },
  {
   "key": "テレビ朝日メディアプレックス",
@@ -51092,13 +51202,15 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noOpenwork": true,
+  "noPrtimes": true
  },
  {
   "key": "パソルテンプスタッフ",
   "name": "パーソルテンプスタッフ株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://www.tempstaff.co.jp/",
+  "domain": "tempstaff.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
@@ -51115,6 +51227,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/71141"
    }
   ],
   "evidence": [
@@ -51149,6 +51265,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 恵比寿駅 徒歩7分",
     "at": "2026-10-07T04:36:27.272Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都新宿区新宿６丁目２７－３０ 新宿イーストサイドスクエア１８Ｆ",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/71141",
+    "snippet": "本社所在地: 東京都新宿区新宿６丁目２７－３０ 新宿イーストサイドスクエア１８Ｆ",
+    "at": "2026-10-07T05:22:57.547Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://www.tempstaff.co.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/71141",
+    "snippet": "PR TIMES企業情報のURL: https://www.tempstaff.co.jp/",
+    "at": "2026-10-07T05:22:57.547Z"
    }
   ],
   "seedCategories": [
@@ -51162,12 +51294,16 @@
  {
   "key": "スタッフサビス",
   "name": "株式会社スタッフサービス",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://www.staffservice.co.jp/",
+  "domain": "staffservice.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD"
+   },
+   {
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0910000000HIBU"
    }
   ],
   "evidence": [
@@ -51186,12 +51322,37 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 世田谷区 二子玉川駅 徒歩5分",
     "at": "2026-10-07T04:35:47.919Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都千代田区神田練塀町85 JEBL秋葉原スクエア",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0910000000HIBU",
+    "snippet": "OpenWork 所在地: 東京都千代田区神田練塀町85 JEBL秋葉原スクエア",
+    "at": "2026-10-07T05:24:19.023Z"
+   },
+   {
+    "field": "employees",
+    "value": 1000,
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0910000000HIBU",
+    "snippet": "OpenWork 社員数: 1000人以上（レンジ下限を採用）",
+    "at": "2026-10-07T05:24:19.023Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://www.staffservice.co.jp/",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0910000000HIBU",
+    "snippet": "OpenWork URL: https://www.staffservice.co.jp/",
+    "at": "2026-10-07T05:24:19.023Z"
    }
   ],
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "フェロズ",
@@ -51264,17 +51425,23 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noOpenwork": true,
+  "noPrtimes": true
  },
  {
   "key": "セブンエ美容",
   "name": "セブンエー美容株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://www.koi-hada.jp/",
+  "domain": "koi-hada.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD"
+   },
+   {
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C10000015J4z4"
    }
   ],
   "evidence": [
@@ -51293,18 +51460,35 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 渋谷駅 徒歩3分",
     "at": "2026-10-07T04:35:47.920Z"
+   },
+   {
+    "field": "address",
+    "value": "福岡県福岡市中央区天神2-7-6　DADAビル5F",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C10000015J4z4",
+    "snippet": "OpenWork 所在地: 福岡県福岡市中央区天神2-7-6　DADAビル5F",
+    "at": "2026-10-07T05:25:03.525Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://www.koi-hada.jp/",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C10000015J4z4",
+    "snippet": "OpenWork URL: https://www.koi-hada.jp/",
+    "at": "2026-10-07T05:25:03.525Z"
    }
   ],
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "thecoo",
   "name": "THECOO株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://thecoo.co.jp/",
+  "domain": "thecoo.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
@@ -51321,6 +51505,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/15650"
    }
   ],
   "evidence": [
@@ -51371,6 +51559,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
     "snippet": "求人ボックスの求人タイトル: Fanicon アカウントマネージャー／ファンコミュニティアプリ「Fa... 新着",
     "at": "2026-10-07T04:38:30.094Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区神宮前2-34-17 住友不動産原宿ビル9,10,11階",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/15650",
+    "snippet": "本社所在地: 東京都渋谷区神宮前2-34-17 住友不動産原宿ビル9,10,11階",
+    "at": "2026-10-07T05:22:57.550Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://thecoo.co.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/15650",
+    "snippet": "PR TIMES企業情報のURL: https://thecoo.co.jp/",
+    "at": "2026-10-07T05:22:57.550Z"
    }
   ],
   "seedCategories": [
@@ -51384,12 +51588,20 @@
  {
   "key": "エクシドジャパン",
   "name": "株式会社エクシードジャパン",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "http://www.exceedjapan.co.jp/",
+  "domain": "exceedjapan.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/98404"
+   },
+   {
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C1000000rXAWr"
    }
   ],
   "evidence": [
@@ -51408,6 +51620,30 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 中央区 三越前駅",
     "at": "2026-10-07T04:35:47.920Z"
+   },
+   {
+    "field": "address",
+    "value": "大阪府大阪市淀川区西中島4-3-8 新大阪阪神ビル",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/98404",
+    "snippet": "本社所在地: 大阪府大阪市淀川区西中島4-3-8 新大阪阪神ビル",
+    "at": "2026-10-07T05:22:57.551Z"
+   },
+   {
+    "field": "address",
+    "value": "大阪府大阪市淀川区西中島4-3-8 新大阪阪神ビル7階",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C1000000rXAWr",
+    "snippet": "OpenWork 所在地: 大阪府大阪市淀川区西中島4-3-8 新大阪阪神ビル7階",
+    "at": "2026-10-07T05:25:32.786Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "http://www.exceedjapan.co.jp/",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C1000000rXAWr",
+    "snippet": "OpenWork URL: http://www.exceedjapan.co.jp/",
+    "at": "2026-10-07T05:25:32.786Z"
    }
   ],
   "seedCategories": [
@@ -51418,8 +51654,8 @@
  {
   "key": "パソナ",
   "name": "株式会社パソナ",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://www.pasona.co.jp/",
+  "domain": "pasona.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
@@ -51428,6 +51664,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   },
+   {
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0910000000Fr0n"
    }
   ],
   "evidence": [
@@ -51454,23 +51694,52 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
     "snippet": "求人ボックスの求人タイトル: 営業事務／営業事務時給1870円以上／ITサービス未経験OK 残業なし",
     "at": "2026-10-07T04:36:03.012Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区南青山3-1-30",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0910000000Fr0n",
+    "snippet": "OpenWork 所在地: 東京都港区南青山3-1-30",
+    "at": "2026-10-07T05:26:03.377Z"
+   },
+   {
+    "field": "employees",
+    "value": 1000,
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0910000000Fr0n",
+    "snippet": "OpenWork 社員数: 1000人以上（レンジ下限を採用）",
+    "at": "2026-10-07T05:26:03.377Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://www.pasona.co.jp/",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0910000000Fr0n",
+    "snippet": "OpenWork URL: https://www.pasona.co.jp/",
+    "at": "2026-10-07T05:26:03.377Z"
    }
   ],
   "seedCategories": [
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "a1mediagroup",
   "name": "株式会社A1 Media Group",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://www.a1mediagroup.jp/",
+  "domain": "a1mediagroup.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD"
+   },
+   {
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C1000001DWsHM"
    }
   ],
   "evidence": [
@@ -51489,18 +51758,43 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 中央区 東銀座駅 / GINZA SIX",
     "at": "2026-10-07T04:35:47.920Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都中央区銀座3-11-3",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C1000001DWsHM",
+    "snippet": "OpenWork 所在地: 東京都中央区銀座3-11-3",
+    "at": "2026-10-07T05:26:32.291Z"
+   },
+   {
+    "field": "employees",
+    "value": 30,
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C1000001DWsHM",
+    "snippet": "OpenWork 社員数: 30〜99人（レンジ下限を採用）",
+    "at": "2026-10-07T05:26:32.291Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://www.a1mediagroup.jp/",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0C1000001DWsHM",
+    "snippet": "OpenWork URL: https://www.a1mediagroup.jp/",
+    "at": "2026-10-07T05:26:32.291Z"
    }
   ],
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "キソシン",
   "name": "株式会社キソシン",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "http://www.kisoshin.com/",
+  "domain": "kisoshin.com",
   "sources": [
    {
     "source": "kyujinbox",
@@ -51509,6 +51803,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD"
+   },
+   {
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0CRC00008oFGoO"
    }
   ],
   "evidence": [
@@ -51527,13 +51825,30 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区 品川駅",
     "at": "2026-10-07T04:35:47.920Z"
+   },
+   {
+    "field": "address",
+    "value": "神奈川県横浜市瀬谷区五貫目町24-21-203",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0CRC00008oFGoO",
+    "snippet": "OpenWork 所在地: 神奈川県横浜市瀬谷区五貫目町24-21-203",
+    "at": "2026-10-07T05:27:01.579Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "http://www.kisoshin.com/",
+    "source": "openwork",
+    "url": "https://www.openwork.jp/company.php?m_id=a0CRC00008oFGoO",
+    "snippet": "OpenWork URL: http://www.kisoshin.com/",
+    "at": "2026-10-07T05:27:01.579Z"
    }
   ],
   "seedCategories": [
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "elm",
@@ -51572,7 +51887,9 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noOpenwork": true,
+  "noPrtimes": true
  },
  {
   "key": "elシステム",
@@ -51611,7 +51928,9 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noOpenwork": true,
+  "noPrtimes": true
  },
  {
   "key": "unlock",
@@ -51660,7 +51979,8 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "byup",
@@ -51694,13 +52014,14 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "livedge",
   "name": "LIVEDGE株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://livedge.jp/",
+  "domain": "livedge.jp",
   "sources": [
    {
     "source": "kyujinbox",
@@ -51713,6 +52034,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/183944"
    }
   ],
   "evidence": [
@@ -51731,6 +52056,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区 赤羽橋駅 徒歩5分",
     "at": "2026-10-07T04:35:55.486Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区東麻布1丁目-9-11 1403",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/183944",
+    "snippet": "本社所在地: 東京都港区東麻布1丁目-9-11 1403",
+    "at": "2026-10-07T05:22:57.555Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://livedge.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/183944",
+    "snippet": "PR TIMES企業情報のURL: https://livedge.jp",
+    "at": "2026-10-07T05:22:57.555Z"
    }
   ],
   "seedCategories": [
@@ -51772,7 +52113,8 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "スペクトラム",
@@ -51824,7 +52166,8 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "directtech",
@@ -51835,6 +52178,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/54399"
    }
   ],
   "evidence": [
@@ -51853,6 +52200,14 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 北参道駅",
     "at": "2026-10-07T04:35:55.487Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区赤坂4-15-1 赤坂ガーデンシティ17F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/54399",
+    "snippet": "本社所在地: 東京都港区赤坂4-15-1 赤坂ガーデンシティ17F",
+    "at": "2026-10-07T05:22:57.557Z"
    }
   ],
   "seedCategories": [
@@ -51869,6 +52224,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/170007"
    }
   ],
   "evidence": [
@@ -51887,6 +52246,14 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区",
     "at": "2026-10-07T04:35:55.487Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区渋谷 ２丁目３−５ コエル渋谷二丁目 5階",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/170007",
+    "snippet": "本社所在地: 東京都渋谷区渋谷 ２丁目３−５ コエル渋谷二丁目 5階",
+    "at": "2026-10-07T05:22:57.558Z"
    }
   ],
   "seedCategories": [
@@ -51980,12 +52347,16 @@
  {
   "key": "アウナラ",
   "name": "株式会社アウナラ",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://aunara.jp/",
+  "domain": "aunara.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/178154"
    }
   ],
   "evidence": [
@@ -52004,6 +52375,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 渋谷駅",
     "at": "2026-10-07T04:35:55.487Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区渋谷 3丁目26-16 第5叶ビル7階",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/178154",
+    "snippet": "本社所在地: 東京都渋谷区渋谷 3丁目26-16 第5叶ビル7階",
+    "at": "2026-10-07T05:22:57.611Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://aunara.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/178154",
+    "snippet": "PR TIMES企業情報のURL: https://aunara.jp/",
+    "at": "2026-10-07T05:22:57.611Z"
    }
   ],
   "seedCategories": [
@@ -52048,7 +52435,8 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "パソルエクセルhrパトナズ",
@@ -52082,7 +52470,8 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "lop",
@@ -52121,7 +52510,8 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "大斗",
@@ -52160,7 +52550,8 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "metasales",
@@ -52199,17 +52590,22 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "ブランドロケット",
   "name": "株式会社ブランドロケット",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://brand-rocket.jp/",
+  "domain": "brand-rocket.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/144244"
    }
   ],
   "evidence": [
@@ -52228,6 +52624,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 恵比寿駅 徒歩7分",
     "at": "2026-10-07T04:35:55.487Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都目黒区東山2-3-5 ビラ・アペックスタワー1F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/144244",
+    "snippet": "本社所在地: 東京都目黒区東山2-3-5 ビラ・アペックスタワー1F",
+    "at": "2026-10-07T05:22:57.616Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://brand-rocket.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/144244",
+    "snippet": "PR TIMES企業情報のURL: https://brand-rocket.jp/",
+    "at": "2026-10-07T05:22:57.616Z"
    }
   ],
   "seedCategories": [
@@ -52238,12 +52650,16 @@
  {
   "key": "キャリアデザインセンタ",
   "name": "株式会社キャリアデザインセンター",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "http://cdc.type.jp/",
+  "domain": "cdc.type.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/12506"
    }
   ],
   "evidence": [
@@ -52262,6 +52678,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 渋谷駅 徒歩1分",
     "at": "2026-10-07T04:35:55.487Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区赤坂3-21-20 赤坂ロングビーチビル",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/12506",
+    "snippet": "本社所在地: 東京都港区赤坂3-21-20 赤坂ロングビーチビル",
+    "at": "2026-10-07T05:22:57.617Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "http://cdc.type.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/12506",
+    "snippet": "PR TIMES企業情報のURL: http://cdc.type.jp/",
+    "at": "2026-10-07T05:22:57.617Z"
    }
   ],
   "seedCategories": [
@@ -52301,17 +52733,22 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "リクルトスタッフィング",
   "name": "株式会社リクルートスタッフィング",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://www.r-staffing.co.jp/",
+  "domain": "r-staffing.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/31056"
    }
   ],
   "evidence": [
@@ -52330,6 +52767,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 品川区 目黒駅 徒歩1分",
     "at": "2026-10-07T04:36:03.012Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都千代田区有楽町1-13-1 第一生命日比谷ファースト",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/31056",
+    "snippet": "本社所在地: 東京都千代田区有楽町1-13-1 第一生命日比谷ファースト",
+    "at": "2026-10-07T05:22:57.619Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://www.r-staffing.co.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/31056",
+    "snippet": "PR TIMES企業情報のURL: https://www.r-staffing.co.jp/corporate/",
+    "at": "2026-10-07T05:22:57.619Z"
    }
   ],
   "seedCategories": [
@@ -52369,7 +52822,8 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "freemova",
@@ -52403,7 +52857,8 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "医療法人社団慶祥会",
@@ -52437,17 +52892,22 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "buzzcloud",
   "name": "株式会社Buzzcloud",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://buzzcloud.co.jp/",
+  "domain": "buzzcloud.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/157041"
    }
   ],
   "evidence": [
@@ -52466,6 +52926,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区",
     "at": "2026-10-07T04:36:03.012Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区六本木7-14-23 クロスオフィス内 5F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/157041",
+    "snippet": "本社所在地: 東京都港区六本木7-14-23 クロスオフィス内 5F",
+    "at": "2026-10-07T05:23:03.346Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://buzzcloud.co.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/157041",
+    "snippet": "PR TIMES企業情報のURL: https://buzzcloud.co.jp/",
+    "at": "2026-10-07T05:23:03.346Z"
    }
   ],
   "seedCategories": [
@@ -52505,7 +52981,8 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "フリウエイブ",
@@ -52539,7 +53016,8 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "ウィズ",
@@ -52573,17 +53051,22 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "マンパワグルプ",
   "name": "マンパワーグループ株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "http://www.manpowergroup.jp/",
+  "domain": "manpowergroup.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/9974"
    }
   ],
   "evidence": [
@@ -52602,6 +53085,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 中央区 馬喰横山駅",
     "at": "2026-10-07T04:36:03.012Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区芝浦3-1-1 田町ステーションタワー 30階",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/9974",
+    "snippet": "本社所在地: 東京都港区芝浦3-1-1 田町ステーションタワー 30階",
+    "at": "2026-10-07T05:23:03.349Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "http://www.manpowergroup.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/9974",
+    "snippet": "PR TIMES企業情報のURL: http://www.manpowergroup.jp",
+    "at": "2026-10-07T05:23:03.349Z"
    }
   ],
   "seedCategories": [
@@ -52641,17 +53140,22 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "ランスタッド",
   "name": "ランスタッド株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://www.randstad.co.jp/",
+  "domain": "randstad.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/4185"
    }
   ],
   "evidence": [
@@ -52670,6 +53174,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区 六本木駅 徒歩5分",
     "at": "2026-10-07T04:36:03.012Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都千代田区紀尾井町4-1 ニューオータニガーデンコート21Ｆ",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/4185",
+    "snippet": "本社所在地: 東京都千代田区紀尾井町4-1 ニューオータニガーデンコート21Ｆ",
+    "at": "2026-10-07T05:23:03.355Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://www.randstad.co.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/4185",
+    "snippet": "PR TIMES企業情報のURL: https://www.randstad.co.jp",
+    "at": "2026-10-07T05:23:03.355Z"
    }
   ],
   "seedCategories": [
@@ -52680,12 +53200,16 @@
  {
   "key": "ほけんのぜんぶ",
   "name": "株式会社ほけんのぜんぶ",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://hoken-all.co.jp/",
+  "domain": "hoken-all.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/58426"
    }
   ],
   "evidence": [
@@ -52704,6 +53228,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 豊島区 池袋駅",
     "at": "2026-10-07T04:36:03.012Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都豊島区池袋2-40-13 池袋DUPLEX B’s 7階",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/58426",
+    "snippet": "本社所在地: 東京都豊島区池袋2-40-13 池袋DUPLEX B’s 7階",
+    "at": "2026-10-07T05:23:03.356Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://hoken-all.co.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/58426",
+    "snippet": "PR TIMES企業情報のURL: https://hoken-all.co.jp/",
+    "at": "2026-10-07T05:23:03.356Z"
    }
   ],
   "seedCategories": [
@@ -52714,8 +53254,8 @@
  {
   "key": "セガ",
   "name": "株式会社セガ",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "http://sega.jp/",
+  "domain": "sega.jp",
   "sources": [
    {
     "source": "kyujinbox",
@@ -52724,6 +53264,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/5397"
    }
   ],
   "evidence": [
@@ -52742,6 +53286,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 品川区 大崎駅 徒歩6分",
     "at": "2026-10-07T04:36:14.179Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都品川区西品川1-1-1 住友不動産大崎ガーデンタワー",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/5397",
+    "snippet": "本社所在地: 東京都品川区西品川1-1-1 住友不動産大崎ガーデンタワー",
+    "at": "2026-10-07T05:23:03.358Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "http://sega.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/5397",
+    "snippet": "PR TIMES企業情報のURL: http://sega.jp/",
+    "at": "2026-10-07T05:23:03.358Z"
    }
   ],
   "seedCategories": [
@@ -52753,8 +53313,8 @@
  {
   "key": "drルルルン",
   "name": "Dr.ルルルン株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "http://dr-lululun.com/",
+  "domain": "dr-lululun.com",
   "sources": [
    {
     "source": "kyujinbox",
@@ -52763,6 +53323,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/17608"
    }
   ],
   "evidence": [
@@ -52781,6 +53345,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 渋谷駅",
     "at": "2026-10-07T04:36:14.179Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区渋谷2-12-4 ネクストサイト渋谷ビル11F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/17608",
+    "snippet": "本社所在地: 東京都渋谷区渋谷2-12-4 ネクストサイト渋谷ビル11F",
+    "at": "2026-10-07T05:23:03.360Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "http://dr-lululun.com/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/17608",
+    "snippet": "PR TIMES企業情報のURL: http://dr-lululun.com",
+    "at": "2026-10-07T05:23:03.360Z"
    }
   ],
   "seedCategories": [
@@ -52792,8 +53372,8 @@
  {
   "key": "パンクチュアル",
   "name": "株式会社パンクチュアル",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://punctual.co.jp/",
+  "domain": "punctual.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
@@ -52802,6 +53382,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/58823"
    }
   ],
   "evidence": [
@@ -52820,6 +53404,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 中央区 / GINZA SIX",
     "at": "2026-10-07T04:36:14.179Z"
+   },
+   {
+    "field": "address",
+    "value": "高知県須崎市緑町1-12",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/58823",
+    "snippet": "本社所在地: 高知県須崎市緑町1-12",
+    "at": "2026-10-07T05:23:03.362Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://punctual.co.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/58823",
+    "snippet": "PR TIMES企業情報のURL: https://punctual.co.jp/",
+    "at": "2026-10-07T05:23:03.362Z"
    }
   ],
   "seedCategories": [
@@ -52860,17 +53460,22 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "anv",
   "name": "株式会社ANV",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://www.anv.co.jp/",
+  "domain": "anv.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/187808"
    }
   ],
   "evidence": [
@@ -52889,6 +53494,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 渋谷駅 徒歩4分",
     "at": "2026-10-07T04:36:14.179Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区渋谷3-6-3 渋谷363清水ビル7F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/187808",
+    "snippet": "本社所在地: 東京都渋谷区渋谷3-6-3 渋谷363清水ビル7F",
+    "at": "2026-10-07T05:23:03.368Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://www.anv.co.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/187808",
+    "snippet": "PR TIMES企業情報のURL: https://www.anv.co.jp/",
+    "at": "2026-10-07T05:23:03.368Z"
    }
   ],
   "seedCategories": [
@@ -52899,12 +53520,16 @@
  {
   "key": "stech&co",
   "name": "株式会社Stech&Co.",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://stech-and-co.com/",
+  "domain": "stech-and-co.com",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/184879"
    }
   ],
   "evidence": [
@@ -52923,6 +53548,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区 六本木駅 徒歩8分",
     "at": "2026-10-07T04:36:14.179Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区六本木5-18-19 グランメール六本木209",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/184879",
+    "snippet": "本社所在地: 東京都港区六本木5-18-19 グランメール六本木209",
+    "at": "2026-10-07T05:23:03.369Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://stech-and-co.com/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/184879",
+    "snippet": "PR TIMES企業情報のURL: https://stech-and-co.com/",
+    "at": "2026-10-07T05:23:03.369Z"
    }
   ],
   "seedCategories": [
@@ -52933,8 +53574,8 @@
  {
   "key": "styliction",
   "name": "STYLICTION株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://itsnap.jp/",
+  "domain": "itsnap.jp",
   "sources": [
    {
     "source": "kyujinbox",
@@ -52943,6 +53584,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/17612"
    }
   ],
   "evidence": [
@@ -52961,6 +53606,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 恵比寿駅 徒歩5分",
     "at": "2026-10-07T04:36:14.179Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区恵比寿南1-24-2 EBISU FORT 1F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/17612",
+    "snippet": "本社所在地: 東京都渋谷区恵比寿南1-24-2 EBISU FORT 1F",
+    "at": "2026-10-07T05:23:03.371Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://itsnap.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/17612",
+    "snippet": "PR TIMES企業情報のURL: https://itsnap.jp/",
+    "at": "2026-10-07T05:23:03.371Z"
    }
   ],
   "seedCategories": [
@@ -53001,13 +53662,14 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "bibin",
   "name": "株式会社bibin",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://bibin.jp/",
+  "domain": "bibin.jp",
   "sources": [
    {
     "source": "kyujinbox",
@@ -53016,6 +53678,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/176969"
    }
   ],
   "evidence": [
@@ -53034,6 +53700,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区 赤坂見附駅 徒歩2分",
     "at": "2026-10-07T04:36:14.179Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区赤坂2-14-5 Daiwa赤坂ビル6F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/176969",
+    "snippet": "本社所在地: 東京都港区赤坂2-14-5 Daiwa赤坂ビル6F",
+    "at": "2026-10-07T05:23:03.373Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://bibin.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/176969",
+    "snippet": "PR TIMES企業情報のURL: https://bibin.jp/",
+    "at": "2026-10-07T05:23:03.373Z"
    }
   ],
   "seedCategories": [
@@ -53074,7 +53756,8 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "ヘンケルジャパン",
@@ -53085,6 +53768,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/151485"
    }
   ],
   "evidence": [
@@ -53103,6 +53790,14 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区 品川駅",
     "at": "2026-10-07T04:36:20.379Z"
+   },
+   {
+    "field": "address",
+    "value": "神奈川県横浜市磯子区新磯子町２７−７",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/151485",
+    "snippet": "本社所在地: 神奈川県横浜市磯子区新磯子町２７−７",
+    "at": "2026-10-07T05:23:03.376Z"
    }
   ],
   "seedCategories": [
@@ -53113,8 +53808,8 @@
  {
   "key": "firebug",
   "name": "株式会社FIREBUG",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "http://firebug.jp/",
+  "domain": "firebug.jp",
   "sources": [
    {
     "source": "kyujinbox",
@@ -53123,6 +53818,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/27493"
    }
   ],
   "evidence": [
@@ -53141,6 +53840,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 代々木駅",
     "at": "2026-10-07T04:36:20.379Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区代々木1-32-11 Kビル3F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/27493",
+    "snippet": "本社所在地: 東京都渋谷区代々木1-32-11 Kビル3F",
+    "at": "2026-10-07T05:23:03.430Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "http://firebug.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/27493",
+    "snippet": "PR TIMES企業情報のURL: http://firebug.jp/",
+    "at": "2026-10-07T05:23:03.430Z"
    }
   ],
   "seedCategories": [
@@ -53152,8 +53867,8 @@
  {
   "key": "イスピリット",
   "name": "株式会社イー・スピリット",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://www.e-spirit.jp/",
+  "domain": "e-spirit.jp",
   "sources": [
    {
     "source": "kyujinbox",
@@ -53162,6 +53877,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/137424"
    }
   ],
   "evidence": [
@@ -53196,6 +53915,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区",
     "at": "2026-10-07T04:37:34.295Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区渋谷１丁目７−７ 住友不動産青山通ビル13F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/137424",
+    "snippet": "本社所在地: 東京都渋谷区渋谷１丁目７−７ 住友不動産青山通ビル13F",
+    "at": "2026-10-07T05:23:03.431Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://www.e-spirit.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/137424",
+    "snippet": "PR TIMES企業情報のURL: https://www.e-spirit.jp/",
+    "at": "2026-10-07T05:23:03.431Z"
    }
   ],
   "seedCategories": [
@@ -53207,8 +53942,8 @@
  {
   "key": "fism",
   "name": "FISM株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://fisminc.com/",
+  "domain": "fisminc.com",
   "sources": [
    {
     "source": "kyujinbox",
@@ -53217,6 +53952,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/28715"
    }
   ],
   "evidence": [
@@ -53235,6 +53974,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 渋谷駅 徒歩10分",
     "at": "2026-10-07T04:36:20.379Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区代官山町14-23 セントラル代官山7階",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/28715",
+    "snippet": "本社所在地: 東京都渋谷区代官山町14-23 セントラル代官山7階",
+    "at": "2026-10-07T05:23:03.433Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://fisminc.com/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/28715",
+    "snippet": "PR TIMES企業情報のURL: https://fisminc.com/",
+    "at": "2026-10-07T05:23:03.433Z"
    }
   ],
   "seedCategories": [
@@ -53246,8 +54001,8 @@
  {
   "key": "ネクストレベル",
   "name": "株式会社ネクストレベル",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://next-level.biz/",
+  "domain": "next-level.biz",
   "sources": [
    {
     "source": "kyujinbox",
@@ -53256,6 +54011,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/32757"
    }
   ],
   "evidence": [
@@ -53274,6 +54033,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 新宿区",
     "at": "2026-10-07T04:36:27.272Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区恵比寿4-20-3 恵比寿ガーデンプレイスタワー",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/32757",
+    "snippet": "本社所在地: 東京都渋谷区恵比寿4-20-3 恵比寿ガーデンプレイスタワー",
+    "at": "2026-10-07T05:23:03.434Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://next-level.biz/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/32757",
+    "snippet": "PR TIMES企業情報のURL: https://next-level.biz/",
+    "at": "2026-10-07T05:23:03.434Z"
    }
   ],
   "seedCategories": [
@@ -53314,17 +54089,22 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "gloe",
   "name": "GLOE株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://gloe.jp/",
+  "domain": "gloe.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/17003"
    }
   ],
   "evidence": [
@@ -53343,6 +54123,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 新宿区",
     "at": "2026-10-07T04:36:27.272Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都新宿区大京町22-1 グランファースト新宿御苑6F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/17003",
+    "snippet": "本社所在地: 東京都新宿区大京町22-1 グランファースト新宿御苑6F",
+    "at": "2026-10-07T05:23:03.435Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://gloe.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/17003",
+    "snippet": "PR TIMES企業情報のURL: https://gloe.jp",
+    "at": "2026-10-07T05:23:03.435Z"
    }
   ],
   "seedCategories": [
@@ -53353,8 +54149,8 @@
  {
   "key": "wonderx",
   "name": "株式会社wonderX",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "http://wonderx.co.jp/",
+  "domain": "wonderx.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
@@ -53367,6 +54163,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/34805"
    }
   ],
   "evidence": [
@@ -53393,6 +54193,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
     "snippet": "求人ボックスの求人タイトル: インフルエンサーマーケティングの営業担当／ブランクOK／完全週休2日制 新着",
     "at": "2026-10-07T04:37:27.637Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区赤坂2-17-65 ウィンド赤坂IIビル303",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/34805",
+    "snippet": "本社所在地: 東京都港区赤坂2-17-65 ウィンド赤坂IIビル303",
+    "at": "2026-10-07T05:23:03.436Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "http://wonderx.co.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/34805",
+    "snippet": "PR TIMES企業情報のURL: http://wonderx.co.jp/",
+    "at": "2026-10-07T05:23:03.436Z"
    }
   ],
   "seedCategories": [
@@ -53444,13 +54260,14 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "マスメディアン",
   "name": "株式会社マスメディアン",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://www.massmedian.co.jp/",
+  "domain": "massmedian.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
@@ -53463,6 +54280,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/7617"
    }
   ],
   "evidence": [
@@ -53481,6 +54302,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区",
     "at": "2026-10-07T04:36:27.272Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区南青山3-11-13 新東急ビル9階",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/7617",
+    "snippet": "本社所在地: 東京都港区南青山3-11-13 新東急ビル9階",
+    "at": "2026-10-07T05:23:03.437Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://www.massmedian.co.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/7617",
+    "snippet": "PR TIMES企業情報のURL: https://www.massmedian.co.jp/",
+    "at": "2026-10-07T05:23:03.437Z"
    }
   ],
   "seedCategories": [
@@ -53522,7 +54359,8 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "ダイヤモンドファンタジ",
@@ -53556,17 +54394,22 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "clout",
   "name": "株式会社Clout",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://clout-fi.com/",
+  "domain": "clout-fi.com",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/147685"
    }
   ],
   "evidence": [
@@ -53585,6 +54428,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 神泉駅",
     "at": "2026-10-07T04:36:33.947Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区南青山3丁目1番36号 青山丸竹ビル6F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/147685",
+    "snippet": "本社所在地: 東京都港区南青山3丁目1番36号 青山丸竹ビル6F",
+    "at": "2026-10-07T05:23:03.438Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://clout-fi.com/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/147685",
+    "snippet": "PR TIMES企業情報のURL: https://clout-fi.com/",
+    "at": "2026-10-07T05:23:03.438Z"
    }
   ],
   "seedCategories": [
@@ -53624,7 +54483,8 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "trunk",
@@ -53707,12 +54567,16 @@
  {
   "key": "humanmade",
   "name": "HUMAN MADE株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://humanmade.co.jp/",
+  "domain": "humanmade.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/113892"
    }
   ],
   "evidence": [
@@ -53731,6 +54595,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 品川区 目黒駅",
     "at": "2026-10-07T04:36:40.719Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都品川区上大崎2-24-9 アイケイビルディング",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/113892",
+    "snippet": "本社所在地: 東京都品川区上大崎2-24-9 アイケイビルディング",
+    "at": "2026-10-07T05:23:03.440Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://humanmade.co.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/113892",
+    "snippet": "PR TIMES企業情報のURL: https://humanmade.co.jp/",
+    "at": "2026-10-07T05:23:03.440Z"
    }
   ],
   "seedCategories": [
@@ -53819,8 +54699,8 @@
  {
   "key": "ウィングリット",
   "name": "株式会社ウィングリット",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://wingrit.jp/",
+  "domain": "wingrit.jp",
   "sources": [
    {
     "source": "kyujinbox",
@@ -53833,6 +54713,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/118411"
    }
   ],
   "evidence": [
@@ -53851,6 +54735,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区",
     "at": "2026-10-07T04:36:40.719Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区上原3-1-12 ハイネス代々木上原402",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/118411",
+    "snippet": "本社所在地: 東京都渋谷区上原3-1-12 ハイネス代々木上原402",
+    "at": "2026-10-07T05:23:03.440Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://wingrit.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/118411",
+    "snippet": "PR TIMES企業情報のURL: https://wingrit.jp/",
+    "at": "2026-10-07T05:23:03.440Z"
    }
   ],
   "seedCategories": [
@@ -53869,6 +54769,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/159049"
    }
   ],
   "evidence": [
@@ -53887,6 +54791,14 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 豊島区",
     "at": "2026-10-07T04:36:40.719Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区神宮前6-31-15 マンション31",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/159049",
+    "snippet": "本社所在地: 東京都渋谷区神宮前6-31-15 マンション31",
+    "at": "2026-10-07T05:23:03.441Z"
    }
   ],
   "seedCategories": [
@@ -53931,17 +54843,22 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "fantia",
   "name": "Fantia株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://fantia.co.jp/",
+  "domain": "fantia.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/188258"
    }
   ],
   "evidence": [
@@ -53960,6 +54877,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 千代田区 秋葉原駅 徒歩3分",
     "at": "2026-10-07T04:36:40.719Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都千代田区外神田三丁目5番12号 聖公会神田ビル 4F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/188258",
+    "snippet": "本社所在地: 東京都千代田区外神田三丁目5番12号 聖公会神田ビル 4F",
+    "at": "2026-10-07T05:23:03.443Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://fantia.co.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/188258",
+    "snippet": "PR TIMES企業情報のURL: https://fantia.co.jp/",
+    "at": "2026-10-07T05:23:03.443Z"
    }
   ],
   "seedCategories": [
@@ -54040,12 +54973,16 @@
  {
   "key": "trustar",
   "name": "株式会社TRUSTAR",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://trustar.co.jp/",
+  "domain": "trustar.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/55469"
    }
   ],
   "evidence": [
@@ -54064,6 +55001,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区",
     "at": "2026-10-07T04:36:47.960Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区赤坂6丁目9-17 赤坂メープルヒル4階",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/55469",
+    "snippet": "本社所在地: 東京都港区赤坂6丁目9-17 赤坂メープルヒル4階",
+    "at": "2026-10-07T05:23:03.444Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://trustar.co.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/55469",
+    "snippet": "PR TIMES企業情報のURL: https://trustar.co.jp/",
+    "at": "2026-10-07T05:23:03.444Z"
    }
   ],
   "seedCategories": [
@@ -54103,17 +55056,22 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "オクファン",
   "name": "株式会社オークファン",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://aucfan.co.jp/",
+  "domain": "aucfan.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/8833"
    }
   ],
   "evidence": [
@@ -54132,6 +55090,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 品川区 五反田駅",
     "at": "2026-10-07T04:36:47.960Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都品川区北品川5-1-18 住友不動産大崎ツインビル東館７F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/8833",
+    "snippet": "本社所在地: 東京都品川区北品川5-1-18 住友不動産大崎ツインビル東館７F",
+    "at": "2026-10-07T05:23:03.447Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://aucfan.co.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/8833",
+    "snippet": "PR TIMES企業情報のURL: https://aucfan.co.jp/",
+    "at": "2026-10-07T05:23:03.447Z"
    }
   ],
   "seedCategories": [
@@ -54142,12 +55116,16 @@
  {
   "key": "joker's",
   "name": "JOKER'S株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://jokers-inc.com/",
+  "domain": "jokers-inc.com",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/72019"
    }
   ],
   "evidence": [
@@ -54166,6 +55144,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区",
     "at": "2026-10-07T04:36:47.960Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区恵比寿西2丁目4番8号 ウィンド恵比寿ビル8F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/72019",
+    "snippet": "本社所在地: 東京都渋谷区恵比寿西2丁目4番8号 ウィンド恵比寿ビル8F",
+    "at": "2026-10-07T05:23:03.448Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://jokers-inc.com/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/72019",
+    "snippet": "PR TIMES企業情報のURL: https://jokers-inc.com/",
+    "at": "2026-10-07T05:23:03.448Z"
    }
   ],
   "seedCategories": [
@@ -54205,17 +55199,22 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "openrec",
   "name": "株式会社OPENREC",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://www.openrec.tv/",
+  "domain": "openrec.tv",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/115510"
    }
   ],
   "evidence": [
@@ -54234,6 +55233,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 代々木駅",
     "at": "2026-10-07T04:36:47.960Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区代々木1ｰ24ｰ10 TSビル3階",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/115510",
+    "snippet": "本社所在地: 東京都渋谷区代々木1ｰ24ｰ10 TSビル3階",
+    "at": "2026-10-07T05:23:07.514Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://www.openrec.tv/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/115510",
+    "snippet": "PR TIMES企業情報のURL: https://www.openrec.tv/",
+    "at": "2026-10-07T05:23:07.514Z"
    }
   ],
   "seedCategories": [
@@ -54244,12 +55259,16 @@
  {
   "key": "remow",
   "name": "REMOW株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://www.remow.com/",
+  "domain": "remow.com",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/97644"
    }
   ],
   "evidence": [
@@ -54268,6 +55287,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 千代田区 神保町駅",
     "at": "2026-10-07T04:36:55.386Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都千代田区神田神保町2-10-4 PMO神保町11F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/97644",
+    "snippet": "本社所在地: 東京都千代田区神田神保町2-10-4 PMO神保町11F",
+    "at": "2026-10-07T05:23:07.515Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://www.remow.com/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/97644",
+    "snippet": "PR TIMES企業情報のURL: https://www.remow.com/",
+    "at": "2026-10-07T05:23:07.515Z"
    }
   ],
   "seedCategories": [
@@ -54278,12 +55313,16 @@
  {
   "key": "novarca",
   "name": "株式会社NOVARCA",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://www.novarca.jp/",
+  "domain": "novarca.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/49775"
    }
   ],
   "evidence": [
@@ -54302,6 +55341,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 千代田区",
     "at": "2026-10-07T04:36:55.386Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都千代田区神田錦町2-2-1 KANDA SQUARE11階（Wework内）",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/49775",
+    "snippet": "本社所在地: 東京都千代田区神田錦町2-2-1 KANDA SQUARE11階（Wework内）",
+    "at": "2026-10-07T05:23:07.516Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://www.novarca.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/49775",
+    "snippet": "PR TIMES企業情報のURL: https://www.novarca.jp/",
+    "at": "2026-10-07T05:23:07.516Z"
    }
   ],
   "seedCategories": [
@@ -54312,8 +55367,8 @@
  {
   "key": "sparty",
   "name": "株式会社Sparty",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://www.sparty.jp/",
+  "domain": "sparty.jp",
   "sources": [
    {
     "source": "kyujinbox",
@@ -54326,6 +55381,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/34407"
    }
   ],
   "evidence": [
@@ -54344,6 +55403,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区",
     "at": "2026-10-07T04:36:55.386Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区道玄坂1丁目22-10 見真ビル3階",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/34407",
+    "snippet": "本社所在地: 東京都渋谷区道玄坂1丁目22-10 見真ビル3階",
+    "at": "2026-10-07T05:23:07.520Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://www.sparty.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/34407",
+    "snippet": "PR TIMES企業情報のURL: https://www.sparty.jp/",
+    "at": "2026-10-07T05:23:07.520Z"
    }
   ],
   "seedCategories": [
@@ -54385,7 +55460,8 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "anymindjapan",
@@ -54432,13 +55508,14 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "leadingcommunication",
   "name": "株式会社Leading Communication",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://www.le-commu.co.jp/",
+  "domain": "le-commu.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
@@ -54451,6 +55528,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/46021"
    }
   ],
   "evidence": [
@@ -54493,6 +55574,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
     "snippet": "求人ボックスの求人タイトル: 「第二新卒歓迎」渋谷・未経験OK・年収380万「SNS全般／アカウントプランナー」年休120日",
     "at": "2026-10-07T04:37:47.361Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区道玄坂1-16-10 渋谷DTビ6F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/46021",
+    "snippet": "本社所在地: 東京都渋谷区道玄坂1-16-10 渋谷DTビ6F",
+    "at": "2026-10-07T05:23:11.174Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://www.le-commu.co.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/46021",
+    "snippet": "PR TIMES企業情報のURL: https://www.le-commu.co.jp/?argument=TsWqj3yy&dmai=prtimes_info",
+    "at": "2026-10-07T05:23:11.174Z"
    }
   ],
   "seedCategories": [
@@ -54539,7 +55636,8 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "zig",
@@ -54573,17 +55671,22 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "muscleholdings",
   "name": "株式会社Muscle Holdings",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://highprotein.jp/",
+  "domain": "highprotein.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/98276"
    }
   ],
   "evidence": [
@@ -54602,6 +55705,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 品川区",
     "at": "2026-10-07T04:36:55.386Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都品川区東五反田2-5-2 THE CASK GOTANDA 704",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/98276",
+    "snippet": "本社所在地: 東京都品川区東五反田2-5-2 THE CASK GOTANDA 704",
+    "at": "2026-10-07T05:23:11.176Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://highprotein.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/98276",
+    "snippet": "PR TIMES企業情報のURL: https://highprotein.jp/products/high-protein-pan",
+    "at": "2026-10-07T05:23:11.176Z"
    }
   ],
   "seedCategories": [
@@ -54612,8 +55731,8 @@
  {
   "key": "マシュマロエンタメ",
   "name": "株式会社マシュマロエンタメ",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://m2ie.io/",
+  "domain": "m2ie.io",
   "sources": [
    {
     "source": "kyujinbox",
@@ -54630,6 +55749,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/144699"
    }
   ],
   "evidence": [
@@ -54656,6 +55779,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
     "snippet": "求人ボックスの求人タイトル: インフルエンサーマーケティング担当者",
     "at": "2026-10-07T04:37:27.637Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区恵比寿4丁目11-9 クオーレエビス5階",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/144699",
+    "snippet": "本社所在地: 東京都渋谷区恵比寿4丁目11-9 クオーレエビス5階",
+    "at": "2026-10-07T05:23:11.177Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://m2ie.io/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/144699",
+    "snippet": "PR TIMES企業情報のURL: https://m2ie.io/",
+    "at": "2026-10-07T05:23:11.177Z"
    }
   ],
   "seedCategories": [
@@ -54786,13 +55925,14 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "ilc",
   "name": "株式会社ILC",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://ilc-video.com/",
+  "domain": "ilc-video.com",
   "sources": [
    {
     "source": "kyujinbox",
@@ -54805,6 +55945,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/66008"
    }
   ],
   "evidence": [
@@ -54839,6 +55983,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 渋谷駅 徒歩5分",
     "at": "2026-10-07T04:38:09.422Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区渋谷3-15-4 アロス渋谷ビル8F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/66008",
+    "snippet": "本社所在地: 東京都渋谷区渋谷3-15-4 アロス渋谷ビル8F",
+    "at": "2026-10-07T05:23:11.181Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://ilc-video.com/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/66008",
+    "snippet": "PR TIMES企業情報のURL: https://ilc-video.com/",
+    "at": "2026-10-07T05:23:11.181Z"
    }
   ],
   "seedCategories": [
@@ -54880,17 +56040,22 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "三崎未来ホルディングス",
   "name": "三崎未来ホールディングス株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://mfh.co.jp/",
+  "domain": "mfh.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/168085"
    }
   ],
   "evidence": [
@@ -54909,6 +56074,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区",
     "at": "2026-10-07T04:37:20.472Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区道玄坂1-16-3 渋谷センタープレイス2F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/168085",
+    "snippet": "本社所在地: 東京都渋谷区道玄坂1-16-3 渋谷センタープレイス2F",
+    "at": "2026-10-07T05:23:11.183Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://mfh.co.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/168085",
+    "snippet": "PR TIMES企業情報のURL: https://mfh.co.jp/",
+    "at": "2026-10-07T05:23:11.183Z"
    }
   ],
   "seedCategories": [
@@ -54919,8 +56100,8 @@
  {
   "key": "クリクアンドリバ社",
   "name": "株式会社クリーク・アンド・リバー社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://www.cri.co.jp/",
+  "domain": "cri.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
@@ -54929,6 +56110,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/3670"
    }
   ],
   "evidence": [
@@ -54963,6 +56148,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区 新橋駅 徒歩2分",
     "at": "2026-10-07T04:38:36.815Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区新橋四丁目1番1号 新虎通りCORE",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/3670",
+    "snippet": "本社所在地: 東京都港区新橋四丁目1番1号 新虎通りCORE",
+    "at": "2026-10-07T05:23:11.185Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://www.cri.co.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/3670",
+    "snippet": "PR TIMES企業情報のURL: https://www.cri.co.jp",
+    "at": "2026-10-07T05:23:11.185Z"
    }
   ],
   "seedCategories": [
@@ -55205,12 +56406,16 @@
  {
   "key": "touchgroup",
   "name": "TOUCH GROUP株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://www.touchgroup.jp/",
+  "domain": "touchgroup.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/61898"
    }
   ],
   "evidence": [
@@ -55229,6 +56434,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区 御成門駅",
     "at": "2026-10-07T04:37:27.637Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区西新橋3-23-5 ANYZ504",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/61898",
+    "snippet": "本社所在地: 東京都港区西新橋3-23-5 ANYZ504",
+    "at": "2026-10-07T05:23:11.186Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://www.touchgroup.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/61898",
+    "snippet": "PR TIMES企業情報のURL: https://www.touchgroup.jp/",
+    "at": "2026-10-07T05:23:11.186Z"
    }
   ],
   "seedCategories": [
@@ -55289,7 +56510,8 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "liddell",
@@ -55323,7 +56545,8 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "uuumマケティング",
@@ -55357,13 +56580,14 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "otonari",
   "name": "株式会社OTONARI",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://otonari.tokyo/",
+  "domain": "otonari.tokyo",
   "sources": [
    {
     "source": "kyujinbox",
@@ -55372,6 +56596,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/36414"
    }
   ],
   "evidence": [
@@ -55406,6 +56634,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 品川区 五反田駅 徒歩4分",
     "at": "2026-10-07T04:37:55.574Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都品川区西五反田2-13-6 セラヴィ五反田5F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/36414",
+    "snippet": "本社所在地: 東京都品川区西五反田2-13-6 セラヴィ五反田5F",
+    "at": "2026-10-07T05:23:11.190Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://otonari.tokyo/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/36414",
+    "snippet": "PR TIMES企業情報のURL: https://otonari.tokyo/",
+    "at": "2026-10-07T05:23:11.190Z"
    }
   ],
   "seedCategories": [
@@ -55417,12 +56661,16 @@
  {
   "key": "feelconnection",
   "name": "株式会社FEEL CONNECTION",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://www.feelconnection.co.jp/",
+  "domain": "feelconnection.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/41058"
    }
   ],
   "evidence": [
@@ -55441,6 +56689,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 中央区 銀座駅 / GINZA SIX",
     "at": "2026-10-07T04:37:27.637Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都中央区銀座6-10-1 GINZA SIX 10F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/41058",
+    "snippet": "本社所在地: 東京都中央区銀座6-10-1 GINZA SIX 10F",
+    "at": "2026-10-07T05:23:11.191Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://www.feelconnection.co.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/41058",
+    "snippet": "PR TIMES企業情報のURL: https://www.feelconnection.co.jp/",
+    "at": "2026-10-07T05:23:11.191Z"
    }
   ],
   "seedCategories": [
@@ -55480,7 +56744,8 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "スタッフサビスitソリュション",
@@ -55514,7 +56779,8 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noPrtimes": true
  },
  {
   "key": "イスピリット/キャスティングプランナ/未経験歓迎",
@@ -55553,12 +56819,16 @@
  {
   "key": "shiffon",
   "name": "株式会社SHIFFON",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "http://shiffon.com/",
+  "domain": "shiffon.com",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/34756"
    }
   ],
   "evidence": [
@@ -55577,6 +56847,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区",
     "at": "2026-10-07T04:37:40.332Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区赤坂5-2-20 赤坂パークビル18F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/34756",
+    "snippet": "本社所在地: 東京都港区赤坂5-2-20 赤坂パークビル18F",
+    "at": "2026-10-07T05:23:15.281Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "http://shiffon.com/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/34756",
+    "snippet": "PR TIMES企業情報のURL: http://shiffon.com/",
+    "at": "2026-10-07T05:23:15.281Z"
    }
   ],
   "seedCategories": [
@@ -55587,12 +56873,16 @@
  {
   "key": "ジェイフロンティア",
   "name": "ジェイフロンティア株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://jfrontier.jp/",
+  "domain": "jfrontier.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/5491"
    }
   ],
   "evidence": [
@@ -55611,6 +56901,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 渋谷駅 徒歩7分",
     "at": "2026-10-07T04:37:40.333Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区桜丘町9-8 KN 渋谷3 4階",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/5491",
+    "snippet": "本社所在地: 東京都渋谷区桜丘町9-8 KN 渋谷3 4階",
+    "at": "2026-10-07T05:23:15.283Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://jfrontier.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/5491",
+    "snippet": "PR TIMES企業情報のURL: https://jfrontier.jp/",
+    "at": "2026-10-07T05:23:15.283Z"
    }
   ],
   "seedCategories": [
@@ -55621,12 +56927,16 @@
  {
   "key": "インピネス",
   "name": "インピネス株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://inppiness.com/",
+  "domain": "inppiness.com",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/188221"
    }
   ],
   "evidence": [
@@ -55645,6 +56955,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 代々木八幡駅 徒歩1分",
     "at": "2026-10-07T04:37:40.333Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区富ヶ谷1-3-8 第22SYビル4F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/188221",
+    "snippet": "本社所在地: 東京都渋谷区富ヶ谷1-3-8 第22SYビル4F",
+    "at": "2026-10-07T05:23:15.283Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://inppiness.com/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/188221",
+    "snippet": "PR TIMES企業情報のURL: https://inppiness.com/",
+    "at": "2026-10-07T05:23:15.283Z"
    }
   ],
   "seedCategories": [
@@ -55655,12 +56981,16 @@
  {
   "key": "ジャパンオプンポカツア",
   "name": "ジャパンオープンポーカーツアー株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://japanopenpoker.com/",
+  "domain": "japanopenpoker.com",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/76570"
    }
   ],
   "evidence": [
@@ -55679,6 +57009,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 新宿区 四ツ谷駅",
     "at": "2026-10-07T04:37:40.333Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都新宿区市谷本村町２−２１ 市ヶ谷キャナルコート3F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/76570",
+    "snippet": "本社所在地: 東京都新宿区市谷本村町２−２１ 市ヶ谷キャナルコート3F",
+    "at": "2026-10-07T05:23:15.285Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://japanopenpoker.com/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/76570",
+    "snippet": "PR TIMES企業情報のURL: https://japanopenpoker.com",
+    "at": "2026-10-07T05:23:15.285Z"
    }
   ],
   "seedCategories": [
@@ -55689,12 +57035,16 @@
  {
   "key": "plott",
   "name": "株式会社Plott",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://plott.tokyo/",
+  "domain": "plott.tokyo",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/47837"
    }
   ],
   "evidence": [
@@ -55713,6 +57063,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 千代田区",
     "at": "2026-10-07T04:37:40.333Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都千代田区神田錦町2-4 ダヴィンチ小川町5F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/47837",
+    "snippet": "本社所在地: 東京都千代田区神田錦町2-4 ダヴィンチ小川町5F",
+    "at": "2026-10-07T05:23:15.286Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://plott.tokyo/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/47837",
+    "snippet": "PR TIMES企業情報のURL: https://plott.tokyo",
+    "at": "2026-10-07T05:23:15.286Z"
    }
   ],
   "seedCategories": [
@@ -55723,12 +57089,16 @@
  {
   "key": "thinkpunks",
   "name": "株式会社ThinkPunks",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://thinkpunks.jp/",
+  "domain": "thinkpunks.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/130113"
    }
   ],
   "evidence": [
@@ -55747,6 +57117,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区",
     "at": "2026-10-07T04:37:40.333Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区桜丘町31-14 SLACK SHIBUYA 302",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/130113",
+    "snippet": "本社所在地: 東京都渋谷区桜丘町31-14 SLACK SHIBUYA 302",
+    "at": "2026-10-07T05:23:15.286Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://thinkpunks.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/130113",
+    "snippet": "PR TIMES企業情報のURL: https://thinkpunks.jp/",
+    "at": "2026-10-07T05:23:15.286Z"
    }
   ],
   "seedCategories": [
@@ -55757,12 +57143,16 @@
  {
   "key": "solia",
   "name": "株式会社SOLIA",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "http://www.alo-organic.com/",
+  "domain": "alo-organic.com",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/10863"
    }
   ],
   "evidence": [
@@ -55781,6 +57171,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区 / 青山ビルヂング",
     "at": "2026-10-07T04:37:47.361Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区南青山1-1-1",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/10863",
+    "snippet": "本社所在地: 東京都港区南青山1-1-1",
+    "at": "2026-10-07T05:23:15.287Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "http://www.alo-organic.com/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/10863",
+    "snippet": "PR TIMES企業情報のURL: http://www.alo-organic.com/",
+    "at": "2026-10-07T05:23:15.287Z"
    }
   ],
   "seedCategories": [
@@ -55791,12 +57197,16 @@
  {
   "key": "エブリ",
   "name": "株式会社エブリー",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "http://corp.every.tv/",
+  "domain": "corp.every.tv",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/18729"
    }
   ],
   "evidence": [
@@ -55815,6 +57225,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区",
     "at": "2026-10-07T04:37:47.361Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区六本木3-2-1 住友不動産六本木グランドタワー38階",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/18729",
+    "snippet": "本社所在地: 東京都港区六本木3-2-1 住友不動産六本木グランドタワー38階",
+    "at": "2026-10-07T05:23:15.288Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "http://corp.every.tv/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/18729",
+    "snippet": "PR TIMES企業情報のURL: http://corp.every.tv/",
+    "at": "2026-10-07T05:23:15.288Z"
    }
   ],
   "seedCategories": [
@@ -55825,12 +57251,16 @@
  {
   "key": "クロスマケティング",
   "name": "株式会社クロス・マーケティング",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "http://www.cross-m.co.jp/",
+  "domain": "cross-m.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/4729"
    }
   ],
   "evidence": [
@@ -55849,6 +57279,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 千代田区",
     "at": "2026-10-07T04:37:47.361Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都新宿区西新宿3-20-2 東京オペラシティタワー24階",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/4729",
+    "snippet": "本社所在地: 東京都新宿区西新宿3-20-2 東京オペラシティタワー24階",
+    "at": "2026-10-07T05:23:15.290Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "http://www.cross-m.co.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/4729",
+    "snippet": "PR TIMES企業情報のURL: http://www.cross-m.co.jp/",
+    "at": "2026-10-07T05:23:15.290Z"
    }
   ],
   "seedCategories": [
@@ -55859,12 +57305,16 @@
  {
   "key": "nel",
   "name": "NEL株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://nel-all.com/",
+  "domain": "nel-all.com",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/35504"
    }
   ],
   "evidence": [
@@ -55883,6 +57333,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区",
     "at": "2026-10-07T04:37:47.361Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区道玄坂1-16-3 渋谷センタープレイス9階",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/35504",
+    "snippet": "本社所在地: 東京都渋谷区道玄坂1-16-3 渋谷センタープレイス9階",
+    "at": "2026-10-07T05:23:15.291Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://nel-all.com/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/35504",
+    "snippet": "PR TIMES企業情報のURL: https://nel-all.com",
+    "at": "2026-10-07T05:23:15.291Z"
    }
   ],
   "seedCategories": [
@@ -55893,12 +57359,16 @@
  {
   "key": "truxia",
   "name": "株式会社TRUXiA",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://truxia.co.jp/",
+  "domain": "truxia.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/128077"
    }
   ],
   "evidence": [
@@ -55917,6 +57387,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区",
     "at": "2026-10-07T04:37:47.361Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都杉並区和泉一丁目２２番１９号",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/128077",
+    "snippet": "本社所在地: 東京都杉並区和泉一丁目２２番１９号",
+    "at": "2026-10-07T05:23:15.292Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://truxia.co.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/128077",
+    "snippet": "PR TIMES企業情報のURL: https://truxia.co.jp/",
+    "at": "2026-10-07T05:23:15.292Z"
    }
   ],
   "seedCategories": [
@@ -56029,8 +57515,8 @@
  {
   "key": "ミラティブ",
   "name": "株式会社ミラティブ",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://www.mirrativ.co.jp/",
+  "domain": "mirrativ.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
@@ -56043,6 +57529,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/33025"
    }
   ],
   "evidence": [
@@ -56085,6 +57575,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5",
     "snippet": "求人ボックスの求人タイトル: プロダクトマネージャー",
     "at": "2026-10-07T04:38:36.815Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都目黒区目黒2-10-11 目黒山手プレイス 8F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/33025",
+    "snippet": "本社所在地: 東京都目黒区目黒2-10-11 目黒山手プレイス 8F",
+    "at": "2026-10-07T05:23:15.294Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://www.mirrativ.co.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/33025",
+    "snippet": "PR TIMES企業情報のURL: https://www.mirrativ.co.jp/",
+    "at": "2026-10-07T05:23:15.294Z"
    }
   ],
   "seedCategories": [
@@ -56149,12 +57655,16 @@
  {
   "key": "エンズ",
   "name": "株式会社エンズ",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://enz-inc.jp/",
+  "domain": "enz-inc.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/68391"
    }
   ],
   "evidence": [
@@ -56173,6 +57683,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区",
     "at": "2026-10-07T04:37:55.574Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区赤坂1-3-3 T-FRONTビル6F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/68391",
+    "snippet": "本社所在地: 東京都港区赤坂1-3-3 T-FRONTビル6F",
+    "at": "2026-10-07T05:23:15.296Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://enz-inc.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/68391",
+    "snippet": "PR TIMES企業情報のURL: https://enz-inc.jp/",
+    "at": "2026-10-07T05:23:15.296Z"
    }
   ],
   "seedCategories": [
@@ -56183,12 +57709,16 @@
  {
   "key": "ケテル",
   "name": "株式会社ケテル",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "http://ketel.tokyo/",
+  "domain": "ketel.tokyo",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/44574"
    }
   ],
   "evidence": [
@@ -56207,6 +57737,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 渋谷駅 徒歩7分",
     "at": "2026-10-07T04:37:55.574Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都新宿区下落合4-21-19 目白LKビル2F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/44574",
+    "snippet": "本社所在地: 東京都新宿区下落合4-21-19 目白LKビル2F",
+    "at": "2026-10-07T05:23:15.298Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "http://ketel.tokyo/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/44574",
+    "snippet": "PR TIMES企業情報のURL: http://ketel.tokyo",
+    "at": "2026-10-07T05:23:15.298Z"
    }
   ],
   "seedCategories": [
@@ -56217,12 +57763,16 @@
  {
   "key": "トイボックスエジェント",
   "name": "株式会社トイボックスエージェント",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://www.toyboxagent.com/",
+  "domain": "toyboxagent.com",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/54403"
    }
   ],
   "evidence": [
@@ -56241,6 +57791,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 原宿駅 徒歩10分",
     "at": "2026-10-07T04:37:55.574Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区宇田川町16-8 渋谷センタービル3F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/54403",
+    "snippet": "本社所在地: 東京都渋谷区宇田川町16-8 渋谷センタービル3F",
+    "at": "2026-10-07T05:23:15.299Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://www.toyboxagent.com/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/54403",
+    "snippet": "PR TIMES企業情報のURL: https://www.toyboxagent.com",
+    "at": "2026-10-07T05:23:15.299Z"
    }
   ],
   "seedCategories": [
@@ -56290,12 +57856,16 @@
  {
   "key": "tresgroup",
   "name": "Tres Group株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://tres-group.jp/",
+  "domain": "tres-group.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/181655"
    }
   ],
   "evidence": [
@@ -56314,6 +57884,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 世田谷区 池尻大橋駅 徒歩8分",
     "at": "2026-10-07T04:38:09.422Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都中央区銀座 Circles銀座10F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/181655",
+    "snippet": "本社所在地: 東京都中央区銀座 Circles銀座10F",
+    "at": "2026-10-07T05:23:19.030Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://tres-group.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/181655",
+    "snippet": "PR TIMES企業情報のURL: https://tres-group.jp",
+    "at": "2026-10-07T05:23:19.030Z"
    }
   ],
   "seedCategories": [
@@ -56334,6 +57920,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=5"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/10761"
    }
   ],
   "evidence": [
@@ -56352,6 +57942,14 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 新宿区 西新宿駅",
     "at": "2026-10-07T04:38:09.422Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都新宿区西新宿6-15-1 ｾﾝﾄﾗﾙﾊﾟｰｸﾀﾜｰ・ﾗﾄｩｰﾙ新宿401",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/10761",
+    "snippet": "本社所在地: 東京都新宿区西新宿6-15-1 ｾﾝﾄﾗﾙﾊﾟｰｸﾀﾜｰ・ﾗﾄｩｰﾙ新宿401",
+    "at": "2026-10-07T05:23:19.031Z"
    }
   ],
   "seedCategories": [
@@ -56410,12 +58008,16 @@
  {
   "key": "birch",
   "name": "株式会社BIRCH",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://birch-inc.com/",
+  "domain": "birch-inc.com",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/89740"
    }
   ],
   "evidence": [
@@ -56434,6 +58036,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 大田区 蒲田駅 バス10分",
     "at": "2026-10-07T04:38:09.422Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都品川区西品川3-19-6 リビングライフ大崎7F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/89740",
+    "snippet": "本社所在地: 東京都品川区西品川3-19-6 リビングライフ大崎7F",
+    "at": "2026-10-07T05:23:23.810Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://birch-inc.com/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/89740",
+    "snippet": "PR TIMES企業情報のURL: https://birch-inc.com",
+    "at": "2026-10-07T05:23:23.810Z"
    }
   ],
   "seedCategories": [
@@ -56478,12 +58096,16 @@
  {
   "key": "リバティタウン",
   "name": "株式会社リバティタウン",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://libertytown.co.jp/",
+  "domain": "libertytown.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/48236"
    }
   ],
   "evidence": [
@@ -56502,6 +58124,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 世田谷区 池尻大橋駅 徒歩7分",
     "at": "2026-10-07T04:38:09.422Z"
+   },
+   {
+    "field": "address",
+    "value": "目黒区青葉台3-6-28 住友不動産青葉台タワー8F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/48236",
+    "snippet": "本社所在地: 目黒区青葉台3-6-28 住友不動産青葉台タワー8F",
+    "at": "2026-10-07T05:23:23.813Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://libertytown.co.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/48236",
+    "snippet": "PR TIMES企業情報のURL: https://libertytown.co.jp/",
+    "at": "2026-10-07T05:23:23.813Z"
    }
   ],
   "seedCategories": [
@@ -56658,12 +58296,16 @@
  {
   "key": "ティピリンクジャパン",
   "name": "ティーピーリンクジャパン株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://www.tp-link.com/",
+  "domain": "tp-link.com",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/93240"
    }
   ],
   "evidence": [
@@ -56682,6 +58324,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 千代田区",
     "at": "2026-10-07T04:38:15.961Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都千代田区外神田三丁目12番8号 住友不動産秋葉原ビル9階",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/93240",
+    "snippet": "本社所在地: 東京都千代田区外神田三丁目12番8号 住友不動産秋葉原ビル9階",
+    "at": "2026-10-07T05:23:23.820Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://www.tp-link.com/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/93240",
+    "snippet": "PR TIMES企業情報のURL: https://www.tp-link.com/jp/",
+    "at": "2026-10-07T05:23:23.820Z"
    }
   ],
   "seedCategories": [
@@ -56692,12 +58350,16 @@
  {
   "key": "アトム法律情報",
   "name": "アトム法律情報株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://atomfirm.co.jp/",
+  "domain": "atomfirm.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/130267"
    }
   ],
   "evidence": [
@@ -56716,6 +58378,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=2",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 千代田区 東京駅",
     "at": "2026-10-07T04:38:15.961Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都千代田区永田町1-11-28 合人社東京永田町ビル7階",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/130267",
+    "snippet": "本社所在地: 東京都千代田区永田町1-11-28 合人社東京永田町ビル7階",
+    "at": "2026-10-07T05:23:23.821Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://atomfirm.co.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/130267",
+    "snippet": "PR TIMES企業情報のURL: https://atomfirm.co.jp/",
+    "at": "2026-10-07T05:23:23.821Z"
    }
   ],
   "seedCategories": [
@@ -56781,8 +58459,8 @@
  {
   "key": "アスリボン",
   "name": "株式会社アースリボーン",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://earth-reborn.co.jp/",
+  "domain": "earth-reborn.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
@@ -56791,6 +58469,10 @@
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/80785"
    }
   ],
   "evidence": [
@@ -56817,6 +58499,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
     "snippet": "求人ボックスの求人タイトル: ヒットの仕掛け人に「WEBマーケティング」ブランドマネージャー」",
     "at": "2026-10-07T04:38:23.025Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都中央区東日本橋2-28-5 協和ビル9階",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/80785",
+    "snippet": "本社所在地: 東京都中央区東日本橋2-28-5 協和ビル9階",
+    "at": "2026-10-07T05:23:23.822Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://earth-reborn.co.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/80785",
+    "snippet": "PR TIMES企業情報のURL: https://earth-reborn.co.jp",
+    "at": "2026-10-07T05:23:23.822Z"
    }
   ],
   "seedCategories": [
@@ -56828,12 +58526,16 @@
  {
   "key": "フジデノロ",
   "name": "フジデノロ株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "http://www.fujidenolo.co.jp/",
+  "domain": "fujidenolo.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/65791"
    }
   ],
   "evidence": [
@@ -56852,6 +58554,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区",
     "at": "2026-10-07T04:38:23.025Z"
+   },
+   {
+    "field": "address",
+    "value": "愛知県小牧市多気南町361番池1",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/65791",
+    "snippet": "本社所在地: 愛知県小牧市多気南町361番池1",
+    "at": "2026-10-07T05:23:23.823Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "http://www.fujidenolo.co.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/65791",
+    "snippet": "PR TIMES企業情報のURL: http://www.fujidenolo.co.jp",
+    "at": "2026-10-07T05:23:23.823Z"
    }
   ],
   "seedCategories": [
@@ -56862,12 +58580,16 @@
  {
   "key": "クイックネットワク",
   "name": "クイック・ネットワーク株式会社",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://quicknetwork.co.jp/",
+  "domain": "quicknetwork.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/118153"
    }
   ],
   "evidence": [
@@ -56886,6 +58608,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区",
     "at": "2026-10-07T04:38:23.025Z"
+   },
+   {
+    "field": "address",
+    "value": "兵庫県神戸市中央区明石町44 神戸御幸ビル4F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/118153",
+    "snippet": "本社所在地: 兵庫県神戸市中央区明石町44 神戸御幸ビル4F",
+    "at": "2026-10-07T05:23:23.824Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://quicknetwork.co.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/118153",
+    "snippet": "PR TIMES企業情報のURL: https://quicknetwork.co.jp/",
+    "at": "2026-10-07T05:23:23.824Z"
    }
   ],
   "seedCategories": [
@@ -56998,12 +58736,16 @@
  {
   "key": "vivion",
   "name": "株式会社viviON",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://vivion.jp/",
+  "domain": "vivion.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/89066"
    }
   ],
   "evidence": [
@@ -57022,6 +58764,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 千代田区 秋葉原駅",
     "at": "2026-10-07T04:38:23.025Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都千代田区神田練塀町300 住友不動産秋葉原駅前ビル12階",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/89066",
+    "snippet": "本社所在地: 東京都千代田区神田練塀町300 住友不動産秋葉原駅前ビル12階",
+    "at": "2026-10-07T05:23:27.897Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://vivion.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/89066",
+    "snippet": "PR TIMES企業情報のURL: https://vivion.jp/",
+    "at": "2026-10-07T05:23:27.897Z"
    }
   ],
   "seedCategories": [
@@ -57032,12 +58790,16 @@
  {
   "key": "アナライズログ",
   "name": "株式会社アナライズログ",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://analyzelog.jp/",
+  "domain": "analyzelog.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/42106"
    }
   ],
   "evidence": [
@@ -57056,6 +58818,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区 表参道駅 徒歩9分",
     "at": "2026-10-07T04:38:23.025Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都港区南青山2－26－32 セイザンⅠ 1002",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/42106",
+    "snippet": "本社所在地: 東京都港区南青山2－26－32 セイザンⅠ 1002",
+    "at": "2026-10-07T05:23:27.898Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://analyzelog.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/42106",
+    "snippet": "PR TIMES企業情報のURL: https://analyzelog.jp",
+    "at": "2026-10-07T05:23:27.898Z"
    }
   ],
   "seedCategories": [
@@ -57066,12 +58844,16 @@
  {
   "key": "クリエ",
   "name": "株式会社クーリエ",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://www.courier.jpn.com/",
+  "domain": "courier.jpn.com",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/15597"
    }
   ],
   "evidence": [
@@ -57090,6 +58872,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=3",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 渋谷区 / 恵比寿ガーデンプレイス",
     "at": "2026-10-07T04:38:23.025Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区恵比寿4-20-3 恵比寿ガーデンプレイスタワー９F",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/15597",
+    "snippet": "本社所在地: 東京都渋谷区恵比寿4-20-3 恵比寿ガーデンプレイスタワー９F",
+    "at": "2026-10-07T05:23:27.899Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://www.courier.jpn.com/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/15597",
+    "snippet": "PR TIMES企業情報のURL: https://www.courier.jpn.com/",
+    "at": "2026-10-07T05:23:27.899Z"
    }
   ],
   "seedCategories": [
@@ -57100,12 +58898,16 @@
  {
   "key": "wasabi",
   "name": "株式会社WASABI",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://wasabi-jp.biz/",
+  "domain": "wasabi-jp.biz",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/171215"
    }
   ],
   "evidence": [
@@ -57124,6 +58926,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 世田谷区 明大前駅",
     "at": "2026-10-07T04:38:30.094Z"
+   },
+   {
+    "field": "address",
+    "value": "東京都渋谷区道玄坂1-10-8",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/171215",
+    "snippet": "本社所在地: 東京都渋谷区道玄坂1-10-8",
+    "at": "2026-10-07T05:23:27.900Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://wasabi-jp.biz/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/171215",
+    "snippet": "PR TIMES企業情報のURL: https://wasabi-jp.biz/",
+    "at": "2026-10-07T05:23:27.900Z"
    }
   ],
   "seedCategories": [
@@ -57202,12 +59020,16 @@
  {
   "key": "tmy",
   "name": "株式会社TMY",
-  "officialUrl": null,
-  "domain": null,
+  "officialUrl": "https://www.tmy-inc.co.jp/",
+  "domain": "tmy-inc.co.jp",
   "sources": [
    {
     "source": "kyujinbox",
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4"
+   },
+   {
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/102072"
    }
   ],
   "evidence": [
@@ -57226,6 +59048,22 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=4",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 千代田区 神保町駅 徒歩5分",
     "at": "2026-10-07T04:38:30.094Z"
+   },
+   {
+    "field": "address",
+    "value": "神奈川県川崎市川崎区小川町13-5",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/102072",
+    "snippet": "本社所在地: 神奈川県川崎市川崎区小川町13-5",
+    "at": "2026-10-07T05:23:27.903Z"
+   },
+   {
+    "field": "officialUrl",
+    "value": "https://www.tmy-inc.co.jp/",
+    "source": "prtimes",
+    "url": "https://prtimes.jp/main/html/searchrlp/company_id/102072",
+    "snippet": "PR TIMES企業情報のURL: https://www.tmy-inc.co.jp",
+    "at": "2026-10-07T05:23:27.903Z"
    }
   ],
   "seedCategories": [
