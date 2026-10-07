@@ -46,7 +46,7 @@ export async function discover(q, ctx) {
   try {
     const snap = await ctx.crawler.snapshot(q.url, { settleMs: 1500 });
     title = snap.title;
-    list = parseArticle(snap).slice(0, q.limit);
+    list = parseArticle(snap).slice(q.offset ?? 0, (q.offset ?? 0) + q.limit);
   } catch (e) {
     ctx.log(`  ! article ${q.url}: ${e.message}`);
     return;

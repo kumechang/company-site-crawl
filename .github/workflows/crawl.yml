@@ -56,7 +56,7 @@ jobs:
       - name: save snapshot
         if: always()
         run: |
-          git add -f data/companies.json && git add data/robots
+          git add -f data/companies.json data/progress.json && git add data/robots
           git diff --cached --quiet || { git commit -qm "CI snapshot after verify/export"; git pull -q --rebase origin "$(git rev-parse --abbrev-ref HEAD)" && git push -q origin "HEAD:$(git rev-parse --abbrev-ref HEAD)"; }
       - uses: actions/upload-artifact@v4
         if: always()

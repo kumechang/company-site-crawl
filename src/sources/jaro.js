@@ -28,7 +28,7 @@ export async function discover(q, ctx) {
   }
   const names = sections[q.section] ?? [];
   ctx.log(`  jaro ${q.url} 「${q.section}」: ${names.length} 社`);
-  for (const name of names.slice(0, q.limit)) {
+  for (const name of names.slice(q.offset ?? 0, (q.offset ?? 0) + q.limit)) {
     const c = ctx.upsert(name);
     addSource(c, id, q.url);
     c.seedCategories.push(q.category);

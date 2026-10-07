@@ -38,7 +38,7 @@ export function parseArticle(snap) {
 export async function discover(q, ctx) {
   let list;
   try {
-    list = parseArticle(await ctx.crawler.snapshot(q.url, { settleMs: 1500 })).slice(0, q.limit);
+    list = parseArticle(await ctx.crawler.snapshot(q.url, { settleMs: 1500 })).slice(q.offset ?? 0, (q.offset ?? 0) + q.limit);
   } catch (e) {
     ctx.log(`  ! slidelib ${q.url}: ${e.message}`);
     return;

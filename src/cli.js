@@ -10,6 +10,7 @@ import { needsCorporateUrl, bestOfficial } from './lib/model.js';
 import { domainOf } from './lib/util.js';
 import { exportAll, exportSample, flatChecks, allChecksOk } from './export.js';
 import { robotsReport } from './robots-report.js';
+import { Progress, progressKey, applyRun, shouldSkip } from './lib/progress.js';
 import { verifyCompany } from './verify.js';
 import * as green from './sources/green.js';
 import * as wantedly from './sources/wantedly.js';
@@ -64,6 +65,8 @@ const { values: opt, positionals } = parseArgs({
     'min-employees': { type: 'string', default: '20' },
     'no-cache': { type: 'boolean', default: false },
     'enrich-limit': { type: 'string', default: '0' }, // sample/enrich: 1回の補完で巡回・照会する会社数の上限(0=無制限)。残りは次の媒体の補完で処理される
+    refresh: { type: 'boolean', default: false }, // 「最後まで見た」一覧も先頭から取り直す
+    'retry-failed': { type: 'boolean', default: false }, // 連続失敗で飛ばしている一覧も再試行する
     skip: { type: 'string', default: '' }, // 補完で飛ばす情報源(カンマ区切り): openwork,mynavi,careertasu,gbizinfo,prtimes（反応が無い/遅い媒体を一時的に外す用）
     help: { type: 'boolean', short: 'h', default: false },
   },
@@ -98,6 +101,7 @@ const skipped = new Set(opt.skip.split(',').filter(Boolean));
 // EDINET(有価証券報告書)はAPIキーがあるときだけ使う。無ければこの補完を飛ばす
 const edinet = process.env.EDINET_API_KEY ? new edinetSrc.Edinet({ useCache: !opt['no-cache'], log }) : null;
 const store = new Store();
+const progress = new Progress();
 const crawler = new Crawler({ minDelayMs: Number(opt.delay), useCache: !opt['no-cache'] });
 
 /** カテゴリに該当し、除外でない企業の数（打ち切り判定用） */
@@ -128,13 +132,47 @@ async function discoverSource(cat, sid, limit, ctx) {
   for (const t of def[sid]) {
     // 目標は URL/キーワードの文字列、または {url, label, pages, section…} のオブジェクトで指定できる
     const spec = typeof t === 'string' ? (['wantedly', 'prtimes'].includes(sid) ? { keyword: t } : { url: t }) : t;
-    const q = { category: cat, limit, pages: 2, ...spec };
-    try {
-      await SOURCES[sid].discover(q, ctx);
-    } catch (e) {
-      log(`  ! ${site.name} ${spec.url ?? spec.keyword}: ${e.message}`);
+    const key = progressKey(cat, sid, spec);
+    const rec = progress.get(key);
+    const label = decodeURIComponent(spec.url ?? spec.keyword ?? '').slice(0, 90);
+    const why = shouldSkip(rec, { refresh: opt.refresh, retryFailed: opt['retry-failed'] });
+    if (why === 'exhausted') {
+      log(`  - ${site.name} ${label}: 最後まで見た（${rec.found}社）ため飛ばす (--refresh で取り直し)`);
+      continue;
     }
+    if (why === 'failing') {
+      log(`  - ${site.name} ${label}: 直近${rec.failures}回続けて失敗（${rec.lastError}）。24時間は飛ばす (--retry-failed で再試行)`);
+      continue;
+    }
+    // 続きから見る: ページ送りの媒体は次のページから、1ページ完結の一覧は次の位置から
+    const state = {};
+    const names = new Set();
+    const errors = [];
+    const rctx = {
+      ...ctx,
+      upsert: (n) => {
+        names.add(n);
+        return ctx.upsert(n);
+      },
+      log: (m, ...rest) => {
+        if (/^\s*!/.test(String(m))) errors.push(String(m));
+        ctx.log(m, ...rest);
+      },
+    };
+    const q = { category: cat, limit, pages: 2, ...spec, startPage: rec?.nextPage ?? 1, offset: rec?.offset ?? 0, state };
+    if (rec && (q.startPage > 1 || q.offset > 0)) log(`  ${site.name} ${label}: 前回の続き（${q.startPage > 1 ? `${q.startPage}ページ目から` : `${q.offset}社目から`}）`);
+    try {
+      await SOURCES[sid].discover(q, rctx);
+    } catch (e) {
+      errors.push(`  ! ${e.message}`);
+      log(`  ! ${site.name} ${label}: ${e.message}`);
+    }
+    const next = applyRun(rec, { found: names.size, errors, lastPage: state.lastPage ?? null, paged: state.lastPage != null });
+    progress.set(key, next);
+    if (next.failures) log(`  ✗ ${site.name} ${label}: 取れなかった（${next.failures}回目: ${next.lastError}）。位置は進めず記録`);
+    else if (next.exhausted) log(`  ✓ ${site.name} ${label}: 最後まで見た（累計${next.found}社）`);
     store.save();
+    progress.save();
   }
   return true;
 }

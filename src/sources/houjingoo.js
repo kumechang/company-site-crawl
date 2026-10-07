@@ -26,7 +26,8 @@ export function parseList(snap) {
 export async function discover(q, ctx) {
   const pages = q.pages ?? 2;
   let taken = 0;
-  for (let p = 1; p <= pages && taken < q.limit; p++) {
+  for (let p = q.startPage ?? 1; p < (q.startPage ?? 1) + pages && taken < q.limit; p++) {
+    if (q.state) q.state.lastPage = p;
     const url = p === 1 ? q.url : `${q.url}/page${p}`;
     let list;
     try {

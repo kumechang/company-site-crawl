@@ -49,7 +49,7 @@ export async function discover(q, ctx) {
   const cards = parseSearch(snap).filter((c) => c.employees == null || c.employees >= ctx.minEmployees);
   ctx.log(`  green ${q.url}: カード${cards.length}件(従業員数フィルタ後)`);
   let taken = 0;
-  for (const card of cards) {
+  for (const card of cards.slice(q.offset ?? 0)) {
     if (taken >= q.limit) break;
     const companyUrl = `${BASE}/company/${card.id}`;
     let info = null;

@@ -8,7 +8,7 @@ SNAP_MIN="${SNAP_MIN:-15}"         # 退避の間隔
 BRANCH="$(git rev-parse --abbrev-ref HEAD)"
 
 snapshot() {
-  git add -f data/companies.json 2>/dev/null || true
+  git add -f data/companies.json data/progress.json 2>/dev/null || true
   git add data/robots 2>/dev/null || true
   if ! git diff --cached --quiet; then
     git commit -qm "CI snapshot: companies.json and robots.txt records" || return 0

@@ -688,3 +688,34 @@ test('スタンバイ: ページ送りはパス形式(/r_…/2)で、robots.txt�
   assert.equal(isAllowed(g, '/jobs/bd5d4d48'), false);
   assert.equal(isAllowed(g, '/r_abc123?page=2'), false);
 });
+
+test('発見の進捗: 続きから見る・失敗の記録・最後まで見た', async () => {
+  const { applyRun, shouldSkip, progressKey } = await import('../src/lib/progress.js');
+  const t0 = new Date('2026-10-07T00:00:00Z');
+  assert.equal(progressKey('c', 's', { url: 'u' }), 'c|s|u');
+  // ページ送りの媒体: 次の実行は次のページから
+  let r = applyRun(undefined, { found: 12, lastPage: 3, paged: true }, t0);
+  assert.deepEqual([r.nextPage, r.offset, r.found, r.exhausted], [4, 0, 12, false]);
+  // 1ページ完結の一覧: 次の実行は取った件数の続きから
+  const o = applyRun(undefined, { found: 8 }, t0);
+  assert.deepEqual([o.nextPage, o.offset], [1, 8]);
+  // 見つかった後に0社 = 最後まで見た。以後は飛ばし、--refresh で取り直せる
+  r = applyRun(r, { found: 0, lastPage: 4, paged: true }, t0);
+  assert.equal(r.exhausted, true);
+  assert.equal(shouldSkip(r), 'exhausted');
+  assert.equal(shouldSkip(r, { refresh: true }), null);
+  // エラーで1社も取れなかった = 失敗。位置は進めず記録し、連続2回でクールダウン中は飛ばす
+  let f = applyRun(o, { found: 0, errors: ['  ! kyujinbox: HTTP 403'] }, t0);
+  assert.deepEqual([f.failures, f.offset, f.exhausted, f.lastError], [1, 8, false, 'kyujinbox: HTTP 403']);
+  assert.equal(shouldSkip(f, {}, t0), null);
+  f = applyRun(f, { found: 0, errors: ['  ! kyujinbox: HTTP 403'] }, t0);
+  assert.equal(shouldSkip(f, {}, new Date(t0.getTime() + 3600 * 1000)), 'failing');
+  assert.equal(shouldSkip(f, { retryFailed: true }, new Date(t0.getTime() + 3600 * 1000)), null);
+  assert.equal(shouldSkip(f, {}, new Date(t0.getTime() + 25 * 3600 * 1000)), null); // 24時間後は再試行
+  // 成功すると連続失敗は戻る
+  assert.equal(applyRun(f, { found: 5, lastPage: 1, paged: true }, t0).failures, 0);
+  // 最初の位置から1社も取れず、エラーも無い = 取得側の不具合として失敗扱い（最後まで見た、にはしない）
+  const z = applyRun(undefined, { found: 0 }, t0);
+  assert.deepEqual([z.exhausted, z.failures], [false, 1]);
+  assert.match(z.lastError, /1社も取れなかった/);
+});
