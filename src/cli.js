@@ -64,10 +64,10 @@ const { values: opt, positionals } = parseArgs({
     'salesnow-pages': { type: 'string', default: '25' }, // SalesNow索引で1業種あたり読むページ数(50社/ページ)
     'min-employees': { type: 'string', default: '20' },
     'no-cache': { type: 'boolean', default: false },
-    'enrich-limit': { type: 'string', default: '0' }, // sample/enrich: 1回の補完で巡回・照会する会社数の上限(0=無制限)。残りは次の媒体の補完で処理される
+    'enrich-limit': { type: 'string', default: '0' }, // sample/enrich: 1回の補完で巡回・照会する会社数の上限(0=無制限。SalesNow・PR TIMES・公式サイト・Gビズ等すべて)。残りは次の補完で処理される
     refresh: { type: 'boolean', default: false }, // 「最後まで見た」一覧も先頭から取り直す
     'retry-failed': { type: 'boolean', default: false }, // 連続失敗で飛ばしている一覧も再試行する
-    skip: { type: 'string', default: '' }, // 補完で飛ばす情報源(カンマ区切り): openwork,mynavi,careertasu,gbizinfo,prtimes（反応が無い/遅い媒体を一時的に外す用）
+    skip: { type: 'string', default: '' }, // 補完で飛ばす情報源(カンマ区切り): salesnow,prtimes,gbizinfo,mynavi,careertasu,openwork（反応が無い/遅い媒体を一時的に外す用）
     help: { type: 'boolean', short: 'h', default: false },
   },
 });
@@ -302,19 +302,22 @@ async function enrichEdinet() {
 async function enrich() {
   // 1) SalesNow の索引で、公式URLまたは従業員数が足りない会社を補完
   const needs = (c) => !c.officialUrl || !c.evidence.some((e) => e.field === 'employees');
-  const lacking = store.all().filter((c) => needs(c) && !c.evidence.some((e) => e.source === 'salesnow'));
+  const lacking = skipped.has('salesnow') ? [] : prioritize(store.all().filter((c) => needs(c) && !c.evidence.some((e) => e.source === 'salesnow') && !c.noSalesnow));
   if (lacking.length) {
     log(`# SalesNow で補完: ${lacking.length} 社（索引を作成）`);
     const index = await salesnow.buildIndex(SALESNOW_INDEX_URLS, { crawler, log, maxPages: Number(opt['salesnow-pages']) });
     let n = 0;
-    for (const c of lacking) if (await salesnow.enrichFromIndex(c, index, { crawler, log })) n++;
+    for (const c of lacking) {
+      if (await salesnow.enrichFromIndex(c, index, { crawler, log })) n++;
+      else c.noSalesnow = true; // 索引に無かった会社は再照合しない（索引の作成に数分かかるため、毎回の補完で呼ばれないように）
+    }
     log(`  → ${n}/${lacking.length} 社が一致`);
     store.mergeByDomain();
     store.save();
   }
   // 1b) まだ公式URLが無い会社は PR TIMES の企業ページ(会社名が完全一致した場合のみ)で解決
   // 公式URLが無い、または製品ページ系の媒体由来のみ(本体サイトでない可能性)の会社が対象
-  const noUrl = skipped.has('prtimes') ? [] : store.all().filter((c) => (!c.officialUrl || needsCorporateUrl(c)) && !c.evidence.some((e) => e.source === 'prtimes') && !c.noPrtimes);
+  const noUrl = skipped.has('prtimes') ? [] : prioritize(store.all().filter((c) => (!c.officialUrl || needsCorporateUrl(c)) && !c.evidence.some((e) => e.source === 'prtimes') && !c.noPrtimes));
   if (noUrl.length) {
     log(`# PR TIMES で公式URLを解決: ${noUrl.length} 社`);
     let n = 0;
