@@ -1,0 +1,6 @@
+{
+ "origin": "https://minkabu.co.jp",
+ "fetchedAt": "2026-10-07T14:03:58.674Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /admin_users/sign_in/\nDisallow: /admin/\nDisallow: /choice/wp-content/themes/diver/lib/assets/prism/\n\nSitemap: https://minkabu.co.jp/choice/sitemap.xml\nSitemap: https://minkabu.co.jp/sitemap.xml\n"
+}

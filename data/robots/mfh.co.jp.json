@@ -1,0 +1,6 @@
+{
+ "origin": "https://mfh.co.jp",
+ "fetchedAt": "2026-10-07T09:12:57.484Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://mfh.co.jp/wp-sitemap.xml\n"
+}

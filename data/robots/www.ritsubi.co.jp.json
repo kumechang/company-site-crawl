@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.ritsubi.co.jp",
+ "fetchedAt": "2026-10-07T01:24:36.336Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /new_graduate/work/\nDisallow: /new_graduate/interview/\nDisallow: /manual/"
+}

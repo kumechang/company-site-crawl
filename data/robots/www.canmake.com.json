@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.canmake.com",
+ "fetchedAt": "2026-10-07T01:31:07.604Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://www.canmake.com/wp-sitemap.xml\n"
+}

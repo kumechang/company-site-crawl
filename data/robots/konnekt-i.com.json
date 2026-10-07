@@ -1,0 +1,6 @@
+{
+ "origin": "https://konnekt-i.com",
+ "fetchedAt": "2026-10-07T07:14:38.460Z",
+ "status": 200,
+ "text": "User-agent: Mediapartners-Google\nDisallow: \n\nUser-agent: *\nDisallow: /search\nAllow: /\n\nSitemap: http://www.konnekt-i.com/sitemap.xml\n\nUser-agent: *\nDisallow: /\nAllow: /$\n\n"
+}

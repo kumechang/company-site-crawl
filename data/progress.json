@@ -1,0 +1,79 @@
+{
+ "influencer_agency|kyujinbox|https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD": {
+  "nextPage": 6,
+  "offset": 0,
+  "found": 60,
+  "exhausted": false,
+  "failures": 0,
+  "lastError": null,
+  "failedAt": null,
+  "runs": 1,
+  "lastAt": "2026-10-07T09:45:47.731Z"
+ },
+ "influencer_agency|kyujinbox|https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD": {
+  "nextPage": 6,
+  "offset": 0,
+  "found": 59,
+  "exhausted": false,
+  "failures": 0,
+  "lastError": null,
+  "failedAt": null,
+  "runs": 1,
+  "lastAt": "2026-10-07T09:45:47.853Z"
+ },
+ "influencer_agency|kyujinbox|https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD": {
+  "nextPage": 6,
+  "offset": 0,
+  "found": 40,
+  "exhausted": false,
+  "failures": 0,
+  "lastError": null,
+  "failedAt": null,
+  "runs": 1,
+  "lastAt": "2026-10-07T09:45:47.907Z"
+ },
+ "influencer_agency|kyujinbox|https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD": {
+  "nextPage": 6,
+  "offset": 0,
+  "found": 60,
+  "exhausted": false,
+  "failures": 0,
+  "lastError": null,
+  "failedAt": null,
+  "runs": 1,
+  "lastAt": "2026-10-07T09:45:47.962Z"
+ },
+ "influencer_agency|kyujinbox|https://xn--pckua2a7gp15o89zb.com/YouTuber-%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD": {
+  "nextPage": 6,
+  "offset": 0,
+  "found": 40,
+  "exhausted": false,
+  "failures": 0,
+  "lastError": null,
+  "failedAt": null,
+  "runs": 1,
+  "lastAt": "2026-10-07T09:45:48.018Z"
+ },
+ "influencer_agency|stanby|https://jp.stanby.com/r_2c83adb06e94c9e8de628a7afb4c7316": {
+  "nextPage": 11,
+  "offset": 0,
+  "found": 69,
+  "exhausted": false,
+  "failures": 0,
+  "lastError": null,
+  "failedAt": null,
+  "runs": 2,
+  "lastAt": "2026-10-07T09:48:32.494Z"
+ },
+ "influencer_agency|boxil|https://boxil.jp/sc-influencer_marketing/": {
+  "nextPage": 3,
+  "offset": 0,
+  "found": 6,
+  "exhausted": false,
+  "failures": 0,
+  "lastError": null,
+  "failedAt": null,
+  "runs": 1,
+  "lastAt": "2026-10-07T14:02:35.124Z"
+ }
+}

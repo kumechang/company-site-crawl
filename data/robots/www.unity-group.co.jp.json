@@ -1,0 +1,7 @@
+{
+ "origin": "http://www.unity-group.co.jp",
+ "fetchedAt": "2026-10-07T09:13:41.060Z",
+ "status": "error",
+ "text": "",
+ "error": "net::ERR_BLOCKED_BY_CLIENT at http://www.unity-group.co.jp/robots.txt"
+}

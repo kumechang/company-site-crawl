@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.arsoa.co.jp",
+ "fetchedAt": "2026-10-06T23:55:07.799Z",
+ "status": 200,
+ "text": "User-agent: *\n\nSitemap: https://www.arsoa.co.jp/sitemap.xml\nDisallow: /thanks_letter/index.html\nDisallow: /welcome2021/index.html\nDisallow: /company/sustainabeauty-present/index.html\nDisallow: /arsoaworldteaser/index.html\nDisallow: /skinupcare2022/\nDisallow: /*.pdf$\nDisallow: https://www.arsoa.co.jp/company//rdcenter.html\nDisallow: https://www.arsoa.co.jp/company//history.html\nDisallow: https://www.arsoa.co.jp/company//recruit.html\nDisallow: https://www.arsoa.co.jp/company//factory.html\nDisallow: https://www.arsoa.co.jp/company//message.html\nDisallow: https://www.arsoa.co.jp/company//profile.html\n"
+}

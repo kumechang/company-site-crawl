@@ -1,0 +1,6 @@
+{
+ "origin": "http://www.koi-hada.jp",
+ "fetchedAt": "2026-10-07T06:30:15.764Z",
+ "status": 200,
+ "text": "User-Agent : *\n\nDisallow: /column/feed\n\nSitemap: https://www.koi-hada.jp/sitemap.xml"
+}

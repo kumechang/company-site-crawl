@@ -1,0 +1,6 @@
+{
+ "origin": "https://marketing.uuum.co.jp",
+ "fetchedAt": "2026-10-07T14:04:29.196Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nUser-agent: ChatGPT-User\nAllow: /\n\nUser-agent: PerplexityBot\nAllow: /\n\nUser-agent: OAI-SearchBot\nAllow: /\n\nUser-agent: Claude-User\nAllow: /\n\nUser-agent: GPTBot\nDisallow: /\n\nUser-agent: Anthropic-AI\nDisallow: /\n\nUser-agent: ClaudeBot\nDisallow: /\n\nUser-agent: Google-Extended\nDisallow: /\n\nUser-agent: CCBot\nDisallow: /\n\nUser-agent: Scrapy\nDisallow: /\n\nUser-agent: Amazonbot\nDisallow: /\n\nUser-agent: Applebot-Extended\nDisallow: /\n\nUser-agent: Bytespider\nDisallow: /\n\nUser-agent: CloudflareBrowserRenderingCrawler\nDisallow: /\n\nUser-agent: meta-externalagent\nDisallow: /\n\nSitemap: https://marketing.uuum.co.jp/sitemap.xml\nSitemap: https://marketing.uuum.co.jp/sitemap.rss\n"
+}

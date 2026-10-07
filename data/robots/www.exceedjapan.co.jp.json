@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.exceedjapan.co.jp",
+ "fetchedAt": "2026-10-07T06:31:37.171Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://www.exceedjapan.co.jp/sitemap.xml\nSitemap: https://www.exceedjapan.co.jp/sitemap.rss\n"
+}

@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.jcsa-cosmetics.jp",
+ "fetchedAt": "2026-10-06T10:39:16.478Z",
+ "status": 200,
+ "text": "User-agent: Amazonbot\nDisallow: /\n\nUser-agent: cohere-ai\nDisallow: /\n\nUser-agent: Omgilibot\nDisallow: /\n\nUser-agent: PerplexityBot\nDisallow: /\n\nUser-agent: YouBot\nDisallow: /\n\nUser-agent: Bytespider\nDisallow: /\n\nUser-agent: Diffbot\nDisallow: /\n\nUser-agent: cohere-training-data-crawler\nDisallow: /\n\nUser-agent: Baiduspider\nDisallow: /\n\nUser-agent: SiteAuditBot\nDisallow: /          \n\nUser-agent: SemrushBot-BA\nDisallow: /       \n\nUser-agent: SemrushBot-SI\nDisallow: /       \n\nUser-agent: SemrushBot-SWA\nDisallow: /         \n\nUser-agent: SplitSignalBot\nDisallow: /       \n\nUser-agent: SemrushBot-OCOB\nDisallow: /        \n\nUser-agent: AhrefsBot\nDisallow: /\n\nUser-agent: DotBot\nDisallow: /\n\nUser-agent: MJ12bot\nDisallow: /\n\nUser-agent: serpstatbot\nDisallow: /\n\nUser-agent: SemrushBot-SI\nDisallow: /\n\nUser-agent: SemrushBot-FT\nDisallow: /\n\nUser-agent: RyteBot\nDisallow: /\n\nUser-agent: DataForSeoBot\nDisallow: /\n"
+}

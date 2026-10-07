@@ -1,0 +1,6 @@
+{
+ "origin": "https://gloe.jp",
+ "fetchedAt": "2026-10-07T07:16:34.853Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://gloe.jp/sitemap.xml\n"
+}

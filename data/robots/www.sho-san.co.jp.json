@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.sho-san.co.jp",
+ "fetchedAt": "2026-10-07T01:37:06.842Z",
+ "status": 200,
+ "text": "# Last update: 2026-04-28\n\n# Default\nUser-agent: *\n\n# Allow/Disallow WP directory\nAllow: /wp-admin/admin-ajax.php\nDisallow: /wp-admin/\nDisallow: /wp-content/plugins/\nDisallow: /wp-json/\nDisallow: /xmlrpc.php\n\n# Disallow WP auto-parameter\nDisallow: /*?*preview=true*\nDisallow: /*?*replytocom=*\nDisallow: /*?s=*\n\n# Disallow tracking parameters\nDisallow: /*?utm_\n\n# Sitemap\nSitemap: https://www.sho-san.co.jp/sitemap.xml\n\n# Allow AI crawlers explicitly\nUser-agent: GPTBot\nAllow: /\n\nUser-agent: Google-Extended\nAllow: /\n\nUser-agent: CCBot\nAllow: /\n\nUser-agent: PerplexityBot\nAllow: /"
+}

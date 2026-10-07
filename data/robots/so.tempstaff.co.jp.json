@@ -1,0 +1,6 @@
+{
+ "origin": "https://so.tempstaff.co.jp",
+ "fetchedAt": "2026-10-07T06:29:08.380Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /webmail/\nDisallow: /shared/webmail/"
+}

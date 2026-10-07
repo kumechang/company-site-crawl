@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.westjr.co.jp",
+ "fetchedAt": "2026-10-07T00:56:25.001Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /jin/kisotsu/syousai.html\n"
+}

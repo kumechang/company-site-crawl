@@ -1,0 +1,6 @@
+{
+ "origin": "https://corp.byup.jp",
+ "fetchedAt": "2026-10-07T07:03:30.206Z",
+ "status": 200,
+ "text": "User-agent: *\nSitemap: https://corp.byup.jp/sitemap.xml\n\n#---------------\n# CRAWL SPEED\n#---------------\n# SEMRush Bot\nUser-agent: SemrushBot\nCrawl-delay: 10\n"
+}

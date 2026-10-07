@@ -1,0 +1,6 @@
+{
+ "origin": "https://yoake-tokyo.jp",
+ "fetchedAt": "2026-10-06T23:39:44.553Z",
+ "status": 200,
+ "text": "\n\n\nUser-agent: *\nDisallow: /_hcms/preview/\nDisallow: /hs/manage-preferences/\nDisallow: /hs/preferences-center/\nDisallow: /*?*hs_preview=*\nDisallow: /*?*hsCacheBuster=*\n"
+}

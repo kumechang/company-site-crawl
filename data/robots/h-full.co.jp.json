@@ -1,0 +1,6 @@
+{
+ "origin": "https://h-full.co.jp",
+ "fetchedAt": "2026-10-07T09:04:16.387Z",
+ "status": 200,
+ "text": "\n\nUser-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://h-full.co.jp/sitemap.xml\nSitemap: https://h-full.co.jp/sitemap.html\n"
+}

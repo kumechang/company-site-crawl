@@ -1,0 +1,6 @@
+{
+ "origin": "https://hoken-all.co.jp",
+ "fetchedAt": "2026-10-07T07:11:53.126Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /stg.hoken-all.co.jp/\n"
+}

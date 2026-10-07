@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.freemova.com",
+ "fetchedAt": "2026-10-07T07:08:34.977Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /cms/wp-admin/\nAllow: /cms/wp-admin/admin-ajax.php\nSitemap: https://freemova.com/sitemap.xml\nSitemap: https://freemova.com/sitemap.rss\n"
+}

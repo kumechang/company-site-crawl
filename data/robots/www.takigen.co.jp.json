@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.takigen.co.jp",
+ "fetchedAt": "2026-10-07T01:16:48.466Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /truck/\nDisallow: /qr/\nDisallow: /mail/\n\n"
+}

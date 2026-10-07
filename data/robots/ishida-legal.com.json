@@ -1,0 +1,6 @@
+{
+ "origin": "https://ishida-legal.com",
+ "fetchedAt": "2026-10-07T00:14:50.946Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://ishida-legal.com/sitemap.xml\n"
+}

@@ -1,0 +1,6 @@
+{
+ "origin": "https://bibin.jp",
+ "fetchedAt": "2026-10-07T07:14:21.626Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://bibin.jp/sitemap.xml\nSitemap: https://bibin.jp/sitemap.rss\n"
+}

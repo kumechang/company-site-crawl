@@ -1,0 +1,6 @@
+{
+ "origin": "https://orylab.com",
+ "fetchedAt": "2026-10-07T04:10:27.202Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://orylab.com/sitemap.xml\n"
+}

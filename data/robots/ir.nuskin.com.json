@@ -1,0 +1,7 @@
+{
+ "origin": "https://ir.nuskin.com",
+ "fetchedAt": "2026-10-07T00:12:01.165Z",
+ "status": "error",
+ "text": "",
+ "error": "net::ERR_HTTP2_PROTOCOL_ERROR at https://ir.nuskin.com/robots.txt"
+}

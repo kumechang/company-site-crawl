@@ -1,0 +1,6 @@
+{
+ "origin": "https://cyberace.co.jp",
+ "fetchedAt": "2026-10-07T09:11:03.204Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /contents/wp-admin/\nAllow: /contents/wp-admin/admin-ajax.php\n\nSitemap: https://cyberace.co.jp/sitemap.xml\nSitemap: https://cyberace.co.jp/sitemap.rss\n"
+}

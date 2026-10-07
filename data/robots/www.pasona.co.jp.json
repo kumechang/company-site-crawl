@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.pasona.co.jp",
+ "fetchedAt": "2026-10-07T06:31:44.700Z",
+ "status": 200,
+ "text": "User-agent: SemrushBot\nDisallow: /\n\nUser-agent: MJ12bot\nDisallow: /\n\n#add-shirotsu\nuser-agent: *\nDisallow: /*ref=jobnet\n\n#add 2024/7/29\nDisallow: /jobsearch/*/result?\n\n#add 2025/2/10\nDisallow: /*jobEntry=\nDisallow: /*jobids=\n\n"
+}

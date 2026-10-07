@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.miz-pharmacy.co.jp",
+ "fetchedAt": "2026-10-06T11:51:53.717Z",
+ "status": 200,
+ "text": "\n\n\n\nUser-agent: *\nDisallow: /site/wp-admin/\nAllow: /site/wp-admin/admin-ajax.php\n\nSitemap: https://www.miz-pharmacy.co.jp/wp-sitemap.xml\n"
+}

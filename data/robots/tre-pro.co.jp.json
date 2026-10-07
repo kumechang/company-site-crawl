@@ -1,0 +1,6 @@
+{
+ "origin": "https://tre-pro.co.jp",
+ "fetchedAt": "2026-10-07T01:03:59.757Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://tre-pro.co.jp/sitemap.xml\nSitemap: https://tre-pro.co.jp/sitemap.rss\n"
+}

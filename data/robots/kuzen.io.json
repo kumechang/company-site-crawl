@@ -1,0 +1,6 @@
+{
+ "origin": "https://kuzen.io",
+ "fetchedAt": "2026-10-06T23:50:18.829Z",
+ "status": 200,
+ "text": "User-agent: Googlebot\nUser-agent: *\nAllow: /\n\nSitemap: https://kuzen.io/sitemap.xml"
+}

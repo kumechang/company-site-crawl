@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.remow.com",
+ "fetchedAt": "2026-10-07T09:08:54.704Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://www.remow.com/wp-sitemap.xml\n"
+}

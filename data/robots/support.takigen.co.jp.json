@@ -1,0 +1,6 @@
+{
+ "origin": "https://support.takigen.co.jp",
+ "fetchedAt": "2026-10-07T01:17:08.219Z",
+ "status": 200,
+ "text": "# START YOAST BLOCK\n# ---------------------------\nUser-agent: *\nDisallow:\n\nSitemap: https://support.takigen.co.jp/sitemap_index.xml\n# ---------------------------\n# END YOAST BLOCK"
+}

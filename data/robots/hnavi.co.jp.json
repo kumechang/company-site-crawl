@@ -1,0 +1,6 @@
+{
+ "origin": "https://hnavi.co.jp",
+ "fetchedAt": "2026-10-06T09:15:40.550Z",
+ "status": 200,
+ "text": "# WP Default\nUser-agent: *\nSitemap: https://hnavi.co.jp/sitemap.xml\nDisallow: /developers/content_areas/\n\n# bingbot\nUser-agent: bingbot\nCrawl-Delay: 10\nDisallow: /company/\n\n# Naver\nUser-agent: Yeti\nDisallow: /company/\n\n# Baidu\nUser-agent: Baiduspider\nDisallow: /company/"
+}

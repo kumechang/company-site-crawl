@@ -1,0 +1,6 @@
+{
+ "origin": "https://service.grannet.co.jp",
+ "fetchedAt": "2026-10-06T23:30:05.095Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wps/wp-admin/\nAllow: /wps/wp-admin/admin-ajax.php\n\nSitemap: https://service.grannet.co.jp/wp-sitemap.xml\n"
+}

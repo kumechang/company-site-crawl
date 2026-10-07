@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.aeon.info",
+ "fetchedAt": "2026-10-07T01:25:30.612Z",
+ "status": 200,
+ "text": "\nUser-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://www.aeon.info/sitemap.xml\nSitemap: https://www.aeon.info/sitemap.html\n"
+}

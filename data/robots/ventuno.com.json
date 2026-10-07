@@ -1,0 +1,6 @@
+{
+ "origin": "https://ventuno.com",
+ "fetchedAt": "2026-10-06T23:56:38.004Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://ventuno.com/wp-sitemap.xml\n"
+}

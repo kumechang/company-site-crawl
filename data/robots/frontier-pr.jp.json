@@ -1,0 +1,6 @@
+{
+ "origin": "https://frontier-pr.jp",
+ "fetchedAt": "2026-10-07T01:03:25.989Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\nDisallow: /old/\n\nSitemap: https://frontier-pr.jp/sitemap.xml\n"
+}

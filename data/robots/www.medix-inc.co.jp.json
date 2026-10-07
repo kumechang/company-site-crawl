@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.medix-inc.co.jp",
+ "fetchedAt": "2026-10-07T01:45:44.118Z",
+ "status": 200,
+ "text": "User-Agent: *\nDisallow: /graduate/blog/wp-admin/\nDisallow: /wp/wp-admin/\nAllow: /\nSitemap: https://www.medix-inc.co.jp/sitemap.xml\nSitemap: https://www.medix-inc.co.jp/webbu/sitemap.xml\n"
+}

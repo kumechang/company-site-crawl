@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.hottolink.co.jp",
+ "fetchedAt": "2026-10-07T14:13:09.742Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nDisallow: /ir/soukai/\nAllow: /wp-admin/admin-ajax.php\n"
+}

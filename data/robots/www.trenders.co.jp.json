@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.trenders.co.jp",
+ "fetchedAt": "2026-10-07T01:02:24.295Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /download/\nDisallow: /wp-content/uploads/document/\n"
+}
