@@ -2,7 +2,8 @@ name: crawl
 
 # 手動実行のみ。企業の収集→補完→検証→CSV出力を GitHub Actions 上で回す（コンテナの再起動で途切れないように）。
 # 事前に Settings → Secrets and variables → Actions に EDINET_API_KEY を登録する。
-# 途中経過(data/companies.json)は 15 分ごとに、実行したブランチへコミットされ、次回はそこから続きを処理する。
+# 収集データ(companies.json・progress.json・robots記録)は 15 分ごとに専用ブランチ crawl-data へ退避され、次回の実行はそこから続きを処理する。
+# 実行したブランチ(main等)には書き込まない（他のコミットと衝突しないように）。
 on:
   workflow_dispatch:
     inputs:
@@ -53,11 +54,11 @@ jobs:
       - name: verify and export
         if: always()
         run: node src/cli.js verify && node src/cli.js export
-      - name: save snapshot
+      - name: save data
         if: always()
         run: |
-          git add -f data/companies.json data/progress.json && git add data/robots
-          git diff --cached --quiet || { git commit -qm "CI snapshot after verify/export"; git pull -q --rebase origin "$(git rev-parse --abbrev-ref HEAD)" && git push -q origin "HEAD:$(git rev-parse --abbrev-ref HEAD)"; }
+          source scripts/ci-data.sh
+          data_snapshot
       - uses: actions/upload-artifact@v4
         if: always()
         with:
