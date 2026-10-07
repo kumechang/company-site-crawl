@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.tosho-trading.co.jp",
+ "fetchedAt": "2026-10-07T07:05:32.082Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /file/\nDisallow: /wp/\n"
+}
