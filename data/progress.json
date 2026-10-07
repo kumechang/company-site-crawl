@@ -130,5 +130,60 @@
   "failedAt": null,
   "runs": 1,
   "lastAt": "2026-10-07T15:27:08.545Z"
+ },
+ "influencer_agency|article|https://buzz-navi.jp/influencer-agency/": {
+  "nextPage": 1,
+  "offset": 0,
+  "found": 0,
+  "exhausted": false,
+  "failures": 1,
+  "lastError": "article https://buzz-navi.jp/influencer-agency/: robots.txt を取得できない(error Navigation timeout of 20000 ms exceeded)のためアクセスしない: https://buzz-navi.jp/influencer-agency/",
+  "failedAt": "2026-10-07T15:38:31.720Z",
+  "runs": 1,
+  "lastAt": "2026-10-07T15:38:31.720Z"
+ },
+ "influencer_agency|article|https://influencerpulse.jp/recommend/influencer_prod/": {
+  "nextPage": 1,
+  "offset": 0,
+  "found": 0,
+  "exhausted": false,
+  "failures": 1,
+  "lastError": "article https://influencerpulse.jp/recommend/influencer_prod/: robots.txt を取得できない(error Navigation timeout of 20000 ms exceeded)のためアクセスしない: https://influencerpulse.jp/recommend/influencer_prod/",
+  "failedAt": "2026-10-07T15:38:51.804Z",
+  "runs": 1,
+  "lastAt": "2026-10-07T15:38:51.804Z"
+ },
+ "influencer_agency|article|https://boxil.jp/mag/a6710/": {
+  "nextPage": 1,
+  "offset": 7,
+  "found": 7,
+  "exhausted": false,
+  "failures": 0,
+  "lastError": null,
+  "failedAt": null,
+  "runs": 1,
+  "lastAt": "2026-10-07T15:39:08.051Z"
+ },
+ "influencer_agency|wantedly|インフルエンサー キャスティング": {
+  "nextPage": 1,
+  "offset": 8,
+  "found": 8,
+  "exhausted": false,
+  "failures": 0,
+  "lastError": null,
+  "failedAt": null,
+  "runs": 1,
+  "lastAt": "2026-10-07T15:48:05.394Z"
+ },
+ "influencer_agency|wantedly|インフルエンサー マネジメント": {
+  "nextPage": 1,
+  "offset": 8,
+  "found": 8,
+  "exhausted": false,
+  "failures": 0,
+  "lastError": null,
+  "failedAt": null,
+  "runs": 1,
+  "lastAt": "2026-10-07T15:48:28.822Z"
  }
 }

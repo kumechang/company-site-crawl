@@ -1,0 +1,6 @@
+{
+ "origin": "https://corp.rakuten.co.jp",
+ "fetchedAt": "2026-10-07T15:41:18.190Z",
+ "status": 200,
+ "text": "User-Agent: *\nDisallow: /brand/\nDisallow: /com/\nDisallow: /common/\nDisallow: /company/\nDisallow: /en/\nDisallow: /info/\nDisallow: /ir/\nDisallow: /newsrelease/\nDisallow: /pr/\nDisallow: /minakamiconference/\nSitemap: https://corp.rakuten.co.jp/sitemap.xml"
+}

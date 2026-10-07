@@ -1,0 +1,6 @@
+{
+ "origin": "https://biophilia.co.jp",
+ "fetchedAt": "2026-10-07T15:41:35.711Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://biophilia.co.jp/sitemap.xml\nSitemap: https://biophilia.co.jp/sitemap.rss\n"
+}

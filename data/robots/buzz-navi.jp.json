@@ -1,6 +1,7 @@
 {
  "origin": "https://buzz-navi.jp",
- "fetchedAt": "2026-10-06T10:19:18.360Z",
- "status": 200,
- "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://buzz-navi.jp/wp-sitemap.xml\n\nSitemap: https://buzz-navi.jp/sitemap.xml\n"
+ "fetchedAt": "2026-10-07T15:38:11.667Z",
+ "status": "error",
+ "text": "",
+ "error": "Navigation timeout of 20000 ms exceeded"
 }
