@@ -112,6 +112,12 @@ export const CATEGORIES = {
     match: { any: ['SNS運用', 'SNSアカウント運用', 'SNSマーケティング', 'Instagram運用', 'TikTok運用', 'SNS代行', 'SNSコンサル', 'SNS広告'] },
     green: ['https://www.green-japan.com/search/area/13/industry/100125'],
     wantedly: ['SNS運用代行', 'SNSマーケティング'],
+    // PR TIMES の検索で見つけた会社。label は「SNS」のみ（SNS運用代行かどうかは公式サイトの文章で判定する）。続きは進捗記録から次の位置を見る
+    prtimes: [
+      { keyword: 'SNS運用代行', label: 'SNS', limit: 15 },
+      { keyword: 'SNSマーケティング 支援', label: 'SNS', limit: 15 },
+      { keyword: 'Instagram運用 TikTok運用 代行', label: 'SNS', limit: 15 },
+    ],
     boxil: ['https://boxil.jp/sc-sns_operationagency/'],
     aspic: ['https://www.aspicjapan.org/asu/service/list/smm'],
     webkanji: ['https://web-kanji.com/posts/sns-tokyo'],
@@ -216,7 +222,7 @@ export const ORDER = {
   // grip は載っている会社がすべて該当で、判定OK・合格も多い → 先頭。他は実績データが無いため従来の順
   ad_agency: ['grip', 'webkanji', 'imitsu', 'boxil', 'aspic', 'meetsmore', 'digitre', 'agencyhub', 'pitact', 'houjingoo', 'salesnow', 'article', 'digimado', 'wantedly', 'green', 'doda', 'indeed', 'kyujinbox', 'stanby', 'mynavi', 'engage'],
   // 実績(合格/候補)の高い順: webkanji・slidelib・meetsmore・aspic → buzztan・imitsu → 求人ボックス・boxil・digimado → 求人系(該当率が低い)
-  sns_agency: ['webkanji', 'slidelib', 'meetsmore', 'aspic', 'buzztan', 'imitsu', 'kyujinbox', 'boxil', 'digimado', 'article', 'wantedly', 'stanby', 'engage', 'green', 'grip', 'indeed'],
+  sns_agency: ['webkanji', 'slidelib', 'meetsmore', 'aspic', 'buzztan', 'prtimes', 'imitsu', 'kyujinbox', 'boxil', 'digimado', 'article', 'wantedly', 'stanby', 'engage', 'green', 'grip', 'indeed'],
 };
 
 /**
