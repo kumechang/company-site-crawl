@@ -750,3 +750,67 @@ test('見切り: トップにカテゴリの語が無い会社は、概要・問
   await enrichFromOfficial(mk(), { crawler, log: () => {} });
   assert.ok(calls.length > 1);
 });
+
+// ---------------------------------------------------------------- 人の確認
+import { parseCsv, toRecords, importReviewRows, applyHuman, normalizeDecision, HUMAN_OK } from '../src/review.js';
+import { buildReviewQueue, passingCount } from '../src/review-queue.js';
+
+test('確認用CSV: 引用符・セル内改行・BOM・OK/NGの入力ゆれ', () => {
+  const rows = parseCsv('﻿企業ID,メモ\r\na,"改行\nあり, カンマ ""引用"""\r\nb,\r\n');
+  assert.deepEqual(rows, [['企業ID', 'メモ'], ['a', '改行\nあり, カンマ "引用"'], ['b', '']]);
+  assert.deepEqual(toRecords(rows)[0], { 企業ID: 'a', メモ: '改行\nあり, カンマ "引用"' });
+  assert.deepEqual(['OK', 'ok', '○', 'NG', '×', '', 'たぶん'].map(normalizeDecision), ['OK', 'OK', 'OK', 'NG', 'NG', null, null]);
+});
+
+const checked = (c, over = {}) => {
+  c.seedCategories = ['sns_agency'];
+  c.checks = { verifiedAt: '2026-10-07', industry: { sns_agency: { result: '要確認', comment: '主業か要確認' } }, employees: { result: 'OK', comment: '' }, contact: { result: 'OK', comment: '' }, identity: { result: 'OK', comment: '' }, ...over };
+  addEvidence(c, 'profileText', 'SNS運用代行 SNSアカウント運用を提供', { source: 'official', url: 'u', snippet: '' });
+  addEvidence(c, 'address', '東京都港区', { source: 'official', url: 'u', snippet: '' });
+  addEvidence(c, 'employees', 50, { source: 'official', url: 'u', snippet: '従業員数 50名' });
+  addEvidence(c, 'contactUrl', 'https://a.jp/contact', { source: 'official', url: 'u', snippet: '' });
+  setOfficialUrl(c, 'https://a.jp/', { source: 'salesnow', url: 'u', snippet: '' });
+  return c;
+};
+
+test('人の確認: 取り込んだ判断が検証結果を上書きし、合格に数えられる。修正値は証拠として最優先', () => {
+  const c = checked(newCompany('株式会社A'));
+  const store = { all: () => [c] };
+  assert.equal(passingCount([c], 'sns_agency'), 0);
+  // あと一歩の会社として、確認用の一覧に出る
+  const q = buildReviewQueue([c], { okTarget: 10, categories: ['sns_agency'] });
+  assert.equal(q.rows.length, 1);
+  assert.match(q.rows[0].reason, /業種/);
+  // 判断なしの行は無視、IDが違う行は「見つからない」
+  const res = importReviewRows(store, [{ 企業ID: c.key, カテゴリキー: 'sns_agency' }, { 企業ID: 'ない', 業種の判断: 'OK' }], new Date('2026-10-08'));
+  assert.deepEqual(res, { applied: 0, unknown: 1, skipped: 1 });
+  importReviewRows(store, [{ 企業ID: c.key, カテゴリキー: 'sns_agency', 業種の判断: 'OK', 'メモ': 'SNS運用が主力' }], new Date('2026-10-08'));
+  assert.equal(passingCount([c], 'sns_agency'), 1);
+  assert.equal(buildReviewQueue([c], { okTarget: 10, categories: ['sns_agency'] }).rows.length, 0); // 合格済みは一覧から外れる
+  const o = applyHuman({ industry: { result: '要確認', comment: 'x' }, employees: { result: 'OK' }, contact: { result: 'OK' }, identity: { result: 'OK' } }, c, 'sns_agency');
+  assert.equal(o.industry.result, HUMAN_OK);
+  assert.match(o.industry.comment, /人の判断\(2026-10-08\): OK SNS運用が主力 ／ 元の判定: 要確認/);
+  // NG の判断は NG のまま
+  importReviewRows(store, [{ 企業ID: c.key, カテゴリキー: 'sns_agency', 業種の判断: 'NG' }], new Date('2026-10-09'));
+  assert.equal(passingCount([c], 'sns_agency'), 0);
+  // 修正値は 'human' の証拠になり、公式・第三者より優先される(従業員数は確認済み扱い)
+  importReviewRows(store, [{ 企業ID: c.key, カテゴリキー: 'sns_agency', '従業員数(修正)': '1,200名', '問い合わせURL(修正)': 'a.jp/form' }], new Date('2026-10-09'));
+  const r = consolidate(c);
+  assert.deepEqual([r.employees, r.employeesSource, r.empConfirmed], [1200, 'human', true]);
+  assert.equal(r.contactUrl, 'https://a.jp/form');
+});
+
+test('人の確認: 未検証で不足項目が1つの会社も一覧に出る', () => {
+  const c = newCompany('株式会社B');
+  c.seedCategories = ['sns_agency'];
+  addEvidence(c, 'profileText', 'SNS運用代行 SNSアカウント運用', { source: 'official', url: 'u', snippet: '' });
+  addEvidence(c, 'address', '東京都渋谷区', { source: 'official', url: 'u', snippet: '' });
+  addEvidence(c, 'employees', 80, { source: 'official', url: 'u', snippet: '従業員数 80名' });
+  setOfficialUrl(c, 'https://b.jp/', { source: 'salesnow', url: 'u', snippet: '' }); // 問い合わせURLだけ無い
+  const q = buildReviewQueue([c], { okTarget: 10, categories: ['sns_agency'] });
+  assert.equal(q.rows.length, 1);
+  assert.equal(q.rows[0].kind, '未検証');
+  assert.match(q.rows[0].points, /問い合わせURL/);
+  // 目標に届いているカテゴリは一覧に出さない
+  assert.equal(buildReviewQueue([c], { okTarget: 0, categories: ['sns_agency'] }).rows.length, 0);
+});

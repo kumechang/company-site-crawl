@@ -4,7 +4,8 @@
 # 使い方: source scripts/ci-data.sh; data_restore  /  data_snapshot
 DATA_BRANCH="${DATA_BRANCH:-crawl-data}"
 DATA_WT="${RUNNER_TEMP:-/tmp}/crawl-data-wt"
-DATA_FILES=(data/companies.json data/progress.json)
+# review_input.csv: 人の確認(確認用CSVに判断を入れて、このブランチの data/ にアップロードする)。review_queue.csv: 確認用の一覧(実行ごとに作り直す)
+DATA_FILES=(data/companies.json data/progress.json data/review_input.csv data/review_queue.csv)
 
 data_init() {
   rm -rf "$DATA_WT"
@@ -24,6 +25,7 @@ data_restore() {
   mkdir -p data/robots
   for f in "${DATA_FILES[@]}"; do [ -f "$DATA_WT/$f" ] && cp "$DATA_WT/$f" "$f"; done
   [ -d "$DATA_WT/data/robots" ] && cp -r "$DATA_WT/data/robots/." data/robots/
+  if [ -d "$DATA_WT/data/review_applied" ]; then mkdir -p data/review_applied; cp -r "$DATA_WT/data/review_applied/." data/review_applied/; fi
   # EDINETの書類一覧・コード一覧のキャッシュ（毎回取り直すと数分かかるため引き継ぐ）
   if [ -d "$DATA_WT/data/cache/edinet" ]; then mkdir -p data/cache/edinet; cp -r "$DATA_WT/data/cache/edinet/." data/cache/edinet/; fi
   echo "データを復元: $(ls "$DATA_WT"/data 2>/dev/null | tr '\n' ' ')"
@@ -36,6 +38,9 @@ data_snapshot() {
   mkdir -p "$DATA_WT/data/robots"
   for f in "${DATA_FILES[@]}"; do [ -f "$f" ] && cp "$f" "$DATA_WT/$f"; done
   [ -d data/robots ] && cp -r data/robots/. "$DATA_WT/data/robots/"
+  # 取り込み済みの確認用CSVは、専用ブランチからも消す（同じ判断を繰り返し取り込まない）。取り込み記録は review_applied に残す
+  [ -f data/review_input.csv ] || rm -f "$DATA_WT/data/review_input.csv"
+  if [ -d data/review_applied ]; then mkdir -p "$DATA_WT/data/review_applied"; cp -r data/review_applied/. "$DATA_WT/data/review_applied/"; fi
   if [ -d data/cache/edinet ]; then mkdir -p "$DATA_WT/data/cache/edinet"; cp -r data/cache/edinet/. "$DATA_WT/data/cache/edinet/"; fi
   (
     cd "$DATA_WT" || exit 0

@@ -9,6 +9,8 @@ SNAP_MIN="${SNAP_MIN:-15}"         # 退避の間隔
 source "$(dirname "$0")/ci-data.sh"
 
 data_restore
+# 人の確認があれば、最初に取り込む（判断・修正が検証と合格件数に反映される）
+[ -f data/review_input.csv ] && node src/cli.js import-review
 
 # shellcheck disable=SC2086
 node src/cli.js $ARGS &

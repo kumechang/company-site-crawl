@@ -53,7 +53,7 @@ jobs:
           scripts/ci-crawl.sh "sample --ok ${{ inputs.ok }} --categories ${{ inputs.categories }} --enrich-limit ${{ inputs.enrich_limit }} --skip ${{ inputs.skip }}"
       - name: verify and export
         if: always()
-        run: node src/cli.js verify --categories ${{ inputs.categories }} && node src/cli.js export
+        run: node src/cli.js verify --categories ${{ inputs.categories }} && node src/cli.js export --ok ${{ inputs.ok }} --categories ${{ inputs.categories }}
       - name: save data
         if: always()
         run: |
@@ -66,5 +66,6 @@ jobs:
           path: |
             data/sample.csv
             data/sample_review.csv
+            data/review_queue.csv
             data/companies.csv
           if-no-files-found: warn

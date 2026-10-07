@@ -7,7 +7,7 @@ import { nfkc } from './util.js';
 export const ESTIMATE_SOURCES = new Set(['salesnow', 'agencyhub', 'openwork', 'gbizinfo']); // 推定値・レンジ・古い可能性のある政府保有情報
 const CORROBORATING = new Set(['green', 'grip', 'mynavi', 'careertasu', 'houjingoo', 'pitact']); // 複数一致すれば補強になる第三者
 export const SCOPE_RE = /連結|グループ(?:全体|合計|計|総数|スタッフ|従業員|人員)|当社グループ|関連会社|業務委託|派遣|うち日本|国内外|海外含/;
-const PRIMARY_SOURCES = new Set(['official', 'edinet']); // 会社自身が出した数字（公式サイト・有価証券報告書）
+const PRIMARY_SOURCES = new Set(['official', 'edinet', 'human']); // 会社自身が出した数字（公式サイト・有価証券報告書）と、人が確認した値
 const STALE_YEARS = 3; // これより古い時点の数字は現行値として断定しない
 
 /** 「2026年5月」「2025年10月現在」などの時点 → { year, month, label } */
@@ -30,7 +30,7 @@ export function assessEmployees(emp, evs, { now = new Date() } = {}) {
   const date = asOf(emp.snippet);
   let confirmed;
   if (PRIMARY_SOURCES.has(emp.source)) {
-    const label = emp.source === 'edinet' ? '有価証券報告書' : '公式';
+    const label = { edinet: '有価証券報告書', human: '人が確認した' }[emp.source] ?? '公式';
     confirmed = true;
     if (scope) {
       confirmed = false;

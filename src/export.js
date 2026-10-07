@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import { consolidate } from './lib/merge.js';
 import { CATEGORIES } from '../config/categories.js';
 import { worst } from './verify.js';
+import { HUMAN_OK, applyHuman } from './review.js';
 
 const ENRICH_SOURCES = new Set(['official', 'edinet', 'salesnow', 'prtimes', 'gbizinfo', 'mynavi', 'careertasu', 'openwork']);
 // 従業員数の出所の確からしさ（小さいほど確か）
@@ -35,7 +36,7 @@ export function flatChecks(c, catKey = null) {
   const inds = catKey ? [[catKey, k.industry?.[catKey]]] : Object.entries(k.industry ?? {});
   const ind = inds.filter(([, v]) => v);
   const industry = ind.length ? { result: worst(...ind.map(([, v]) => v.result)), comment: ind.map(([key, v]) => `[${CATEGORIES[key]?.label ?? key}] ${v.comment}`).join(' / '), after: ind.map(([, v]) => v.after).filter(Boolean)[0] ?? null } : { result: '要確認', comment: '業種チェック未実施', after: null };
-  return { industry, employees: k.employees, contact: k.contact, identity: k.identity, verifiedAt: k.verifiedAt };
+  return applyHuman({ industry, employees: k.employees, contact: k.contact, identity: k.identity, verifiedAt: k.verifiedAt }, c, catKey); // 人の判断があれば上書き
 }
 
 const CHECK_COLS = [
@@ -71,7 +72,7 @@ export function exportAll(companies, { outDir = 'data', minEmployees = 20 } = {}
  * カテゴリごとの「しっかりしたサンプル」(判定OKのみ・最大 perCategory 件)。
  * そのカテゴリの一覧・検索で見つけた会社を対象に、複数媒体に載る会社・従業員数の出所が確かな会社を優先する。
  */
-const isOk = (x) => x && (x.result === 'OK' || x.result === 'OK（リダイレクト）');
+export const isOk = (x) => x && (x.result === 'OK' || x.result === 'OK（リダイレクト）' || x.result === HUMAN_OK);
 /** 4観点(業種・従業員数・問い合わせURL・企業取り違え)がすべてOKか */
 export const allChecksOk = (checks) => !!checks && [checks.industry, checks.employees, checks.contact, checks.identity].every(isOk);
 
