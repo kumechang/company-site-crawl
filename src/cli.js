@@ -143,6 +143,14 @@ function hasPendingEnrichment(c) {
 const ESTIMATE_ONLY_SOURCES = new Set(['salesnow', 'agencyhub', 'gbizinfo', 'openwork']);
 const lacksFirmEmployees = (c) => !c.evidence.some((e) => e.field === 'employees' && !ESTIMATE_ONLY_SOURCES.has(e.source));
 
+/** 従業員数だけが不足して、確定できない会社(いま作っているカテゴリで、カテゴリは該当・他の項目は揃っている) */
+function isEmployeeBottleneck(c) {
+  const r = consolidate(c, { minEmployees });
+  if (r.status !== '要確認' || !r.missing.length || !r.missing.every((m) => /^従業員数/.test(m))) return false;
+  const def = currentCat ? CATEGORIES[currentCat] : null;
+  return !def || (c.seedCategories.includes(currentCat) && r.categories.includes(def.label));
+}
+
 /** この回の補完対象を選ぶ（いま作っているカテゴリの会社を優先。補完の手が残っている会社だけ） */
 function pickRound() {
   if (employeesOnly) {
