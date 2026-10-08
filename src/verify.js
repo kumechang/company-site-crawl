@@ -115,6 +115,15 @@ export function checkEmployees(c, r) {
 const FORM_HOSTS = /(forms\.gle|docs\.google\.com\/forms|tayori\.com|form\.run|formrun\.|hubspot|hsforms|typeform|formzu|secure-link|kintoneapp|cybozu\.com|b-forms|extra-form|pardot|marketo|sfdc|force\.com|zendesk)/i;
 const trimSlash = (u) => u.replace(/#.*$/, '').replace(/\/+$/, '').replace(/^https?:\/\/(www\.)?/, '');
 
+/** サイトに接続できなかった(robots.txtが取れない・403/429/5xx・タイムアウト等)エラーか。robots.txtの明示的な禁止や404は含めない */
+export function isAccessFailure(e) {
+  const m = String(e?.message ?? '');
+  if (/robots\.txt disallows/.test(m)) return false;
+  if (/robots\.txt を取得できない|連続して拒否/.test(m)) return true;
+  if (e?.status) return e.status === 401 || e.status === 403 || e.status === 429 || e.status >= 500;
+  return /timeout|net::|ERR_|ECONN|ENOTFOUND|ETIMEDOUT|Navigation|Connection closed|Target closed/i.test(m);
+}
+
 export async function checkContact(c, r, { crawler, top }) {
   const url = r.contactUrl && normalizeUrl(r.contactUrl);
   if (!url) return { result: '要確認', comment: '問い合わせURLを取得できていない', after: null };
@@ -124,6 +133,8 @@ export async function checkContact(c, r, { crawler, top }) {
     try {
       snap = await crawler.snapshot(url);
     } catch (e) {
+      // 接続できなかっただけでは問い合わせURLが誤りとは言えない（NGにせず、別の環境で取り直せるよう印を付ける）
+      if (isAccessFailure(e)) return { result: '要確認', comment: `サイトに接続できず確認できない(${e.message.slice(0, 60)})`, after: null, accessFailed: true };
       return { result: 'NG', comment: `問い合わせURLを開けない(${e.message.slice(0, 60)})`, after: null };
     }
   }
@@ -200,6 +211,18 @@ export function checkIdentity(c, r, { top, officialText }) {
 const RANK = { OK: 0, 'OK（リダイレクト）': 0, 'OK（人の確認）': 0, 要確認: 1, NG: 2 };
 export const worst = (...rs) => rs.reduce((a, b) => (RANK[b] > RANK[a] ? b : a), 'OK');
 
+/** 実行環境の種別（接続失敗が環境依存かどうかの判断用） */
+export const runEnv = () => (process.env.GITHUB_ACTIONS ? 'actions' : 'local');
+
+/** 検証をやり直すべきか: 入力が変わった／接続失敗で別の環境で実行している */
+export function needsVerify(c, sig, env = runEnv()) {
+  if (c.checks?.sig !== sig) return true;
+  // 旧形式: 接続失敗がNGとして保存されている（環境の記録なし）ものは、どの環境でも一度取り直す
+  const legacy = c.checks.contact?.result === 'NG' && /問い合わせURLを開けない\(.*(robots\.txt を取得できない|HTTP (401|403|429|5\d\d)|timeout|net::)/i.test(c.checks.contact.comment ?? '');
+  if (legacy) return true;
+  return !!c.checks.accessFailed && c.checks.env !== env;
+}
+
 /** 検証ロジックを変えたら上げる（保存済みの検証結果を無効にして、次の実行で取り直す） */
 export const VERIFY_VERSION = 3; // 3: 従業員数の採用ルール(公式優先・公式以外は時点が新しいもの)
 
@@ -211,10 +234,12 @@ export function checkSig(r, cats) {
 /** 1社を検証して c.checks に保存。cats: 検証するカテゴリキー（業種チェック用） */
 export async function verifyCompany(c, r, cats, { crawler, log }) {
   let top = null;
+  let accessFailed = false;
   if (r.officialUrl) {
     try {
       top = await crawler.snapshot(r.officialUrl);
     } catch (e) {
+      if (isAccessFailure(e)) accessFailed = true;
       log?.(`  ! verify ${r.name}: 公式サイトを開けない (${e.message.slice(0, 60)})`);
     }
   }
@@ -240,7 +265,9 @@ export async function verifyCompany(c, r, cats, { crawler, log }) {
   const identity = checkIdentity(c, r, { top, officialText });
   const employees = checkEmployees(c, r);
   const contact = await checkContact(c, r, { crawler, top });
-  c.checks = { verifiedAt: new Date().toISOString().slice(0, 10), sig: checkSig(r, cats), industry, employees, contact, identity };
+  // 接続できずに確認できなかった検証は、同じ環境で取り直しても結果が変わらない。実行環境を残し、別の環境(手元など)で動かしたときだけ再検証する
+  accessFailed = accessFailed || !!contact.accessFailed;
+  c.checks = { verifiedAt: new Date().toISOString().slice(0, 10), sig: checkSig(r, cats), ...(accessFailed ? { accessFailed: true, env: runEnv() } : {}), industry, employees, contact, identity };
   return c.checks;
 }
 
