@@ -1,0 +1,6 @@
+{
+ "origin": "https://www.tokiwa-corp.com",
+ "fetchedAt": "2026-10-08T01:04:23.058Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /cms/wp-admin/\nAllow: /cms/wp-admin/admin-ajax.php\n\n# START YOAST BLOCK\n# ---------------------------\nUser-agent: *\nDisallow:\n\nSitemap: https://www.tokiwa-corp.com/sitemap_index.xml\nSitemap: https://www.tokiwa-corp.com/en/sitemap_index.xml\n# ---------------------------\n# END YOAST BLOCK"
+}

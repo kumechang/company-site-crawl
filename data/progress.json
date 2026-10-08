@@ -199,69 +199,69 @@
  },
  "cosme_d2c|prtimes|D2C 化粧品": {
   "nextPage": 1,
-  "offset": 8,
-  "found": 8,
+  "offset": 16,
+  "found": 16,
   "exhausted": false,
   "failures": 0,
   "lastError": null,
   "failedAt": null,
-  "runs": 1,
-  "lastAt": "2026-10-07T16:16:06.710Z"
+  "runs": 2,
+  "lastAt": "2026-10-08T00:58:36.868Z"
  },
  "cosme_d2c|prtimes|スキンケア ブランド 公式通販": {
   "nextPage": 1,
-  "offset": 8,
-  "found": 8,
+  "offset": 16,
+  "found": 16,
   "exhausted": false,
   "failures": 0,
   "lastError": null,
   "failedAt": null,
-  "runs": 1,
-  "lastAt": "2026-10-07T16:16:32.777Z"
+  "runs": 2,
+  "lastAt": "2026-10-08T00:59:04.048Z"
  },
  "cosme_d2c|prtimes|コスメ 新ブランド 発売": {
   "nextPage": 1,
-  "offset": 8,
-  "found": 8,
+  "offset": 16,
+  "found": 16,
   "exhausted": false,
   "failures": 0,
   "lastError": null,
   "failedAt": null,
-  "runs": 1,
-  "lastAt": "2026-10-07T16:17:00.140Z"
+  "runs": 2,
+  "lastAt": "2026-10-08T00:59:30.004Z"
  },
  "cosme_d2c|wantedly|化粧品 D2C": {
   "nextPage": 1,
   "offset": 8,
   "found": 8,
-  "exhausted": false,
+  "exhausted": true,
   "failures": 0,
   "lastError": null,
   "failedAt": null,
-  "runs": 1,
-  "lastAt": "2026-10-07T16:25:58.938Z"
+  "runs": 2,
+  "lastAt": "2026-10-08T01:02:31.011Z"
  },
  "cosme_d2c|wantedly|コスメ ブランド": {
   "nextPage": 1,
   "offset": 8,
   "found": 8,
-  "exhausted": false,
+  "exhausted": true,
   "failures": 0,
   "lastError": null,
   "failedAt": null,
-  "runs": 1,
-  "lastAt": "2026-10-07T16:26:08.514Z"
+  "runs": 2,
+  "lastAt": "2026-10-08T01:02:39.553Z"
  },
  "cosme_d2c|article|https://service.aainc.co.jp/product/letro/article/d2c_brand": {
   "nextPage": 1,
   "offset": 2,
   "found": 2,
-  "exhausted": false,
+  "exhausted": true,
   "failures": 0,
   "lastError": null,
   "failedAt": null,
-  "runs": 1,
-  "lastAt": "2026-10-07T16:33:35.435Z"
+  "runs": 2,
+  "lastAt": "2026-10-08T01:07:36.908Z"
  },
  "cosme_d2c|salesnow|https://salesnow.jp/db/industries/retail-sales/subIndustries/cosmetics-sales": {
   "nextPage": 2,

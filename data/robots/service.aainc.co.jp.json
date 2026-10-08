@@ -1,6 +1,6 @@
 {
  "origin": "https://service.aainc.co.jp",
- "fetchedAt": "2026-10-07T16:33:26.752Z",
+ "fetchedAt": "2026-10-08T01:07:27.843Z",
  "status": 200,
  "text": "User-agent: *\nDisallow: /sample-*\nDisallow: /blog/sample-*\nDisallow: /_hcms/preview/\nDisallow: /hs/manage-preferences/\nDisallow: /hs/preferences-center/\nDisallow: /*?*hs_preview=*\nDisallow: /*?*hsCacheBuster=*\n"
 }

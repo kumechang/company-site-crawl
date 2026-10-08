@@ -1,0 +1,6 @@
+{
+ "origin": "http://yutori.tokyo",
+ "fetchedAt": "2026-10-08T01:11:12.827Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp/wp-admin/\nAllow: /wp/wp-admin/admin-ajax.php\n\nSitemap: https://yutori.tokyo/wp-sitemap.xml\n"
+}

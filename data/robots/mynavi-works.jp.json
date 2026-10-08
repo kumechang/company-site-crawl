@@ -1,0 +1,6 @@
+{
+ "origin": "https://mynavi-works.jp",
+ "fetchedAt": "2026-10-08T01:05:12.045Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /mynavicms/wp-admin/\nAllow: /mynavicms/wp-admin/admin-ajax.php\n\nSitemap: https://mynavi-works.jp/wp-sitemap.xml\n"
+}

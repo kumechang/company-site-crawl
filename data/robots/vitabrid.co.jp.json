@@ -1,0 +1,6 @@
+{
+ "origin": "https://vitabrid.co.jp",
+ "fetchedAt": "2026-10-08T01:09:44.545Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /kpi/\nDisallow: /support/\nDisallow: /shop/review/search.php\n\nSitemap: https://vitabrid.co.jp/sitemap.xml"
+}
