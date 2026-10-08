@@ -90,7 +90,10 @@ export function importReviewRows(store, records, now = new Date()) {
   for (const rec of records) {
     const c = byKey.get(rec[REVIEW_COLS.id]) ?? byKey.get(normalizeName(rec[REVIEW_COLS.id] ?? ''));
     const d = { industry: normalizeDecision(rec[REVIEW_COLS.industry]), employees: normalizeDecision(rec[REVIEW_COLS.employees]), contact: normalizeDecision(rec[REVIEW_COLS.contact]), identity: normalizeDecision(rec[REVIEW_COLS.identity]) };
-    const empValue = parseInt((rec[REVIEW_COLS.empValue] ?? '').normalize('NFKC').replace(/[,\s名人]/g, ''), 10);
+    // 「従業員数の判断」の列に数字を入れた場合は、「従業員数(修正)」の値として扱う（入力の取り違えを救う）
+    const judgeCell = (rec[REVIEW_COLS.employees] ?? '').normalize('NFKC').replace(/[,\s名人]/g, '');
+    const asValue = /^\d+$/.test(judgeCell) ? judgeCell : '';
+    const empValue = parseInt((rec[REVIEW_COLS.empValue] ?? '').normalize('NFKC').replace(/[,\s名人]/g, '') || asValue, 10);
     const contactValue = normUrl(rec[REVIEW_COLS.contactValue]);
     const officialValue = normUrl(rec[REVIEW_COLS.officialValue]);
     const note = rec[REVIEW_COLS.note] ?? '';

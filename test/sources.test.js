@@ -818,6 +818,15 @@ test('人の確認: 取り込んだ判断が検証結果を上書きし、合格
   assert.equal(r.contactUrl, 'https://a.jp/form');
 });
 
+test('人の確認: 「従業員数の判断」の列に数字を入れても、修正値として取り込む', () => {
+  const c = checked(newCompany('株式会社G'));
+  const store = { all: () => [c] };
+  const res = importReviewRows(store, [{ 企業ID: c.key, カテゴリキー: 'sns_agency', 従業員数の判断: '84', メモ: 'dodaの数字' }], new Date('2026-10-08'));
+  assert.equal(res.applied, 1);
+  assert.equal(consolidate(c).employees, 84);
+  assert.equal(c.review.employees, undefined); // 数字は OK/NG の判断ではない
+});
+
 test('人の確認: 未検証で不足項目が1つの会社も一覧に出る', () => {
   const c = newCompany('株式会社B');
   c.seedCategories = ['sns_agency'];
