@@ -46,32 +46,45 @@ test('従業員数: 公式の値が他と整合すればOK、時点を出す', (
   assert.equal(r.asOf, '2026年5月');
 });
 
-test('従業員数: 推定値のみは要確認（908名の例）', () => {
+test('従業員数: 公式以外のみでも、取れていれば採用し、出所と時点(無ければその旨)を備考に残す', () => {
   const c = co([ev('employees', 908, 'salesnow', 'SalesNowの推定値')]);
-  assert.equal(checkEmployees(c, rr(908, 'salesnow', 'SalesNowの推定値')).result, '要確認');
+  const k = checkEmployees(c, rr(908, 'salesnow', 'SalesNowの推定値'));
+  assert.equal(k.result, 'OK');
+  assert.match(k.comment, /公式サイトでは確認できず.*SalesNow.*時点の記載なし/);
+  const sn = 'マイナビ(新卒) 従業員: 150名（2025年4月現在）';
+  const k2 = checkEmployees(co([ev('employees', 150, 'mynavi', sn)]), rr(150, 'mynavi', sn));
+  assert.equal(k2.result, 'OK');
+  assert.match(k2.comment, /採用サイト\(マイナビ\(新卒\)\)の値を採用（2025年4月時点）/);
+  assert.equal(k2.asOf, '2025年4月');
 });
 
-test('従業員数: 公式でも数年前の時点なら要確認', () => {
+test('従業員数: 公式サイトの値を正とする（古い時点・業務委託/関連会社・連結の記載は備考に残す）', () => {
   const sn = '従業員数 120名(2021年4月現在)';
-  assert.equal(checkEmployees(co([ev('employees', 120, 'official', sn)]), rr(120, 'official', sn)).result, '要確認');
+  const k = checkEmployees(co([ev('employees', 120, 'official', sn)]), rr(120, 'official', sn));
+  assert.equal(k.result, 'OK');
+  assert.match(k.comment, /2021年4月時点と古い/);
+  const sn2 = '従業員 | 250名(業務委託・関連会社含む)';
+  const k2 = checkEmployees(co([ev('employees', 250, 'official', sn2)]), rr(250, 'official', sn2));
+  assert.equal(k2.result, 'OK');
+  assert.match(k2.comment, /「業務委託」の記載あり/);
+  const sn3 = '従業員数 500名（連結）';
+  assert.match(checkEmployees(co([ev('employees', 500, 'official', sn3)]), rr(500, 'official', sn3)).comment, /「連結」/);
+  assert.equal(checkEmployees(co([ev('employees', 149, 'official', '従業員数 | 149名 | グループ企業 |')]), rr(149, 'official', '従業員数 | 149名 | グループ企業 |')).comment.includes('記載あり'), false); // 「グループ企業」は見出し
 });
 
-test('従業員数: 業務委託・関連会社を含む数字は要確認', () => {
-  const sn = '従業員 | 250名(業務委託・関連会社含む)';
-  assert.equal(checkEmployees(co([ev('employees', 250, 'official', sn)]), rr(250, 'official', sn)).result, '要確認');
-});
-
-test('従業員数: 3倍以上の乖離で説明が無ければNG、連結の記載があれば要確認', () => {
+test('従業員数: 他の情報源との差は注記に留め、時点不明の公式以外が3倍以上ずれて説明も無いときだけNG', () => {
+  // 公式が正。他の情報源(グリップ 1500)と大きくずれても、公式の値のままOK(注記のみ)
   const c = co([ev('employees', 200, 'official', '従業員数 200名'), ev('employees', 1500, 'grip')]);
-  assert.equal(checkEmployees(c, rr(200, 'official', '従業員数 200名')).result, 'NG');
-  const c2 = co([ev('employees', 13135, 'mynavi', 'グループ連結 13,135名'), ev('employees', 1500, 'official', '従業員数 1,500名')]);
-  assert.equal(checkEmployees(c2, rr(1500, 'official', '従業員数 1,500名')).result, '要確認');
+  const k = checkEmployees(c, rr(200, 'official', '従業員数 200名'));
+  assert.equal(k.result, 'OK');
+  assert.match(k.comment, /差がある\(7\.5倍\)/);
+  // 公式以外(時点不明)を採用していて、他と3倍以上ずれ、連結等の理由も無い → 別会社の数字の可能性
+  const c2 = co([ev('employees', 200, 'grip', 'グリップ 従業員数: 200名'), ev('employees', 1500, 'houjingoo')]);
+  assert.equal(checkEmployees(c2, rr(200, 'grip', 'グリップ 従業員数: 200名')).result, 'NG');
+  // 時点が分かる値なら、ずれても注記のみ
+  const sn = 'グリップ 従業員数: 200名(2025年1月現在)';
+  assert.equal(checkEmployees(co([ev('employees', 200, 'grip', sn), ev('employees', 1500, 'houjingoo')]), rr(200, 'grip', sn)).result, 'OK');
   assert.equal(checkEmployees(co([]), rr(null)).result, '要確認');
-});
-
-test('従業員数: 連結・グループ全体の記載は要確認（グループ企業という見出しは除く）', () => {
-  assert.equal(checkEmployees(co([ev('employees', 500, 'official', '従業員数 500名（連結）')]), rr(500, 'official', '従業員数 500名（連結）')).result, '要確認');
-  assert.equal(checkEmployees(co([ev('employees', 149, 'official', '従業員数 | 149名 | グループ企業 |')]), rr(149, 'official', '従業員数 | 149名 | グループ企業 |')).result, 'OK');
 });
 
 test('企業取り違え: 社名が公式にあり所在地が他情報源と一致すればOK', () => {

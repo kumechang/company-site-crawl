@@ -5,9 +5,7 @@ import { nfkc } from './util.js';
  * 公式の値でも集計範囲(連結・グループ・業務委託・関連会社を含む等)や時点で意味が変わる。
  */
 export const ESTIMATE_SOURCES = new Set(['salesnow', 'agencyhub', 'openwork', 'gbizinfo']); // 推定値・レンジ・古い可能性のある政府保有情報
-const CORROBORATING = new Set(['green', 'grip', 'mynavi', 'careertasu', 'houjingoo', 'pitact']); // 複数一致すれば補強になる第三者
 export const SCOPE_RE = /連結|グループ(?:全体|合計|計|総数|スタッフ|従業員|人員)|当社グループ|関連会社|業務委託|派遣|うち日本|国内外|海外含/;
-const PRIMARY_SOURCES = new Set(['official', 'edinet', 'human']); // 会社自身が出した数字（公式サイト・有価証券報告書）と、人が確認した値
 const STALE_YEARS = 3; // これより古い時点の数字は現行値として断定しない
 
 /** 「2026年5月」「2025年10月現在」などの時点 → { year, month, label } */
@@ -16,38 +14,35 @@ export function asOf(s) {
   return m ? { year: Number(m[1]), month: m[2] ? Number(m[2]) : null, label: `${m[1]}年${m[2] ? m[2] + '月' : ''}` } : null;
 }
 
-const ratio = (a, b) => Math.max(a, b) / Math.max(1, Math.min(a, b));
+export const SOURCE_LABELS = { official: '公式サイト', edinet: '有価証券報告書(EDINET)', human: '人の確認', green: 'Green', wantedly: 'Wantedly', mynavi: 'マイナビ(新卒)', careertasu: 'キャリタス就活', openwork: 'OpenWork', gbizinfo: 'Gビズインフォ', salesnow: 'SalesNow', agencyhub: 'AgencyHub', grip: 'グリップ', houjingoo: '全国法人', pitact: 'PITACT', engage: 'engage', kyujinbox: '求人ボックス', stanby: 'スタンバイ' };
+export const RECRUIT_SOURCES = new Set(['green', 'wantedly', 'mynavi', 'careertasu', 'openwork', 'engage', 'kyujinbox', 'stanby']); // 採用サイト
 
 /**
+ * 従業員数の採用ルール(merge.js の pickEmployees で選んだ値の評価):
+ *  1. 公式サイトから取れればそれを正とする（連結・グループ等の記載や古い時点は、備考に残すだけで確認済みを妨げない）
+ *  2. 採用サイトなどから取った値に「◯◯年時点」の記載があれば、備考に残す（時点の記載が無ければ、その旨）
+ *  3. 公式サイト以外から取れた場合は、時点が最も新しい情報を採用する（merge.js）
+ * 値が取れていれば「確認済み」。要確認に残るのは、値が全く取れない会社か、推定値が閾値付近(10〜40名)の会社。
  * @param emp  採用した従業員数 { value, source, snippet }
  * @param evs  従業員数の証拠すべて [{ value, source, snippet }]
- * @returns { confirmed, reasons[], asOf, scope }
+ * @returns { confirmed, reasons[], remarks[], asOf, scope }  remarks は備考欄に出す文
  */
 export function assessEmployees(emp, evs, { now = new Date() } = {}) {
-  if (!emp) return { confirmed: false, reasons: ['従業員数を確認できていない'], asOf: null, scope: null };
-  const reasons = [];
+  if (!emp) return { confirmed: false, reasons: ['従業員数を確認できていない'], remarks: [], asOf: null, scope: null };
+  const remarks = [];
   const scope = (emp.snippet ?? '').match(SCOPE_RE)?.[0] ?? null;
   const date = asOf(emp.snippet);
-  let confirmed;
-  if (PRIMARY_SOURCES.has(emp.source)) {
-    const label = { edinet: '有価証券報告書', human: '人が確認した' }[emp.source] ?? '公式';
-    confirmed = true;
-    if (scope) {
-      confirmed = false;
-      reasons.push(`${label}の数字に「${scope}」の記載があり、単体の従業員数ではない可能性`);
-    }
-    if (date && now.getFullYear() - date.year >= STALE_YEARS) {
-      confirmed = false;
-      reasons.push(`${label}の数字が${date.label}時点と古く、現行値として断定できない`);
-    }
+  const label = SOURCE_LABELS[emp.source] ?? emp.source;
+  if (emp.source === 'human') {
+    remarks.push('従業員数は人が確認した値');
+  } else if (emp.source === 'official') {
+    if (scope) remarks.push(`公式の数字に「${scope}」の記載あり（単体の従業員数ではない可能性）`);
+    if (date && now.getFullYear() - date.year >= STALE_YEARS) remarks.push(`公式の数字は${date.label}時点と古い`);
   } else {
-    const others = evs.filter((e) => e.source !== emp.source && CORROBORATING.has(e.source) && ratio(e.value, emp.value) <= 1.5);
-    confirmed = CORROBORATING.has(emp.source) && others.length > 0 && !scope;
-    reasons.push(
-      confirmed
-        ? `公式では確認できないが、${emp.source}と${others.map((e) => e.source).join('/')}の値が概ね一致`
-        : `公式サイトで従業員数を確認できず、${emp.source}の${ESTIMATE_SOURCES.has(emp.source) ? '推定値/レンジ/古い可能性のある値' : '値'}(${emp.value}名)のみ。第三者情報のため断定しない`
-    );
+    const kind = RECRUIT_SOURCES.has(emp.source) ? '採用サイト' : '公式サイト以外';
+    remarks.push(`公式サイトでは確認できず、${kind}(${label})の値を採用${date ? `（${date.label}時点）` : '（時点の記載なし）'}`);
+    if (scope) remarks.push(`この数字に「${scope}」の記載あり（単体の従業員数ではない可能性）`);
+    if (ESTIMATE_SOURCES.has(emp.source)) remarks.push(`${label}の値は推定値/レンジ/古い可能性のある値`);
   }
-  return { confirmed, reasons, asOf: date?.label ?? null, scope };
+  return { confirmed: true, reasons: remarks, remarks, asOf: date?.label ?? null, scope };
 }
