@@ -1,7 +1,7 @@
 import { CATEGORIES, INDUSTRY_CORE, COMPETING_BUSINESS } from '../config/categories.js';
 import { looksLikeContactPage, sameBrand, contactKind, normalizeUrl, findServiceLinks } from './lib/extract.js';
 import { normalizeName, nfkc, domainOf, flatten } from './lib/util.js';
-import { assessEmployees, SCOPE_RE } from './lib/employees.js';
+import { assessEmployees, SCOPE_RE, SOURCE_LABELS } from './lib/employees.js';
 
 /**
  * 収集結果の自己検証（外部の「ファクトチェック」と同じ4観点）。判定は OK / 要確認 / NG。
@@ -89,24 +89,25 @@ export function checkEmployees(c, r) {
   const bySrc = new Map();
   for (const e of evs) if (!bySrc.has(e.source)) bySrc.set(e.source, e);
   const others = [...bySrc.values()].filter((e) => e.source !== chosen.source);
-  const notes = [];
+  const label = SOURCE_LABELS[chosen.source] ?? chosen.source;
+  // 採用ルール(公式サイト優先・公式以外は時点が新しいもの)で選んだ値は、取れていれば確認済み。出所・時点・集計範囲は備考として残す
   let result = a.confirmed ? 'OK' : '要確認';
-  if (!a.confirmed) notes.push(...a.reasons);
-  // 他の情報源との乖離
+  const notes = [`${label}で${r.employees}名${a.asOf ? `（${a.asOf}時点）` : ''}`, ...a.remarks];
+  // 他の情報源との差: 時点・集計範囲の違いで起こるので、注記に留める。時点が不明な値が3倍以上ずれ、理由も説明できないときだけ、別会社の数字を疑う(NG)
   const worst = others.map((e) => ({ e, ratio: Math.max(e.value, r.employees) / Math.max(1, Math.min(e.value, r.employees)) })).sort((x, y) => y.ratio - x.ratio)[0];
   if (worst && worst.ratio >= 1.5) {
-    const detail = `${worst.e.source}=${worst.e.value}名`;
+    const detail = `${SOURCE_LABELS[worst.e.source] ?? worst.e.source}=${worst.e.value}名`;
     const explained = SCOPE_RE.test(worst.e.snippet ?? '') || a.scope;
-    // 有報(EDINET)は社名+所在地で特定した一次情報。他サイトとの乖離は「別会社」ではなく集計範囲・時点の違いとして要確認に留める
-    if (worst.ratio >= 3 && !explained && chosen.source !== 'edinet') {
+    const primary = ['official', 'edinet', 'human'].includes(chosen.source);
+    if (worst.ratio >= 3 && !explained && !primary && !a.asOf) {
       result = 'NG';
-      notes.push(`${chosen.source}=${r.employees}名に対し${detail}と${worst.ratio.toFixed(1)}倍の乖離。別会社の数字の可能性`);
+      notes.push(`${label}=${r.employees}名に対し${detail}と${worst.ratio.toFixed(1)}倍の乖離。別会社の数字の可能性`);
     } else {
-      if (result === 'OK') result = '要確認';
-      notes.push(`${chosen.source}=${r.employees}名に対し${detail}と差がある(${worst.ratio.toFixed(1)}倍)。調査時点・集計範囲の違いの可能性`);
+      notes.push(`他の情報源の${detail}とは差がある(${worst.ratio.toFixed(1)}倍)。調査時点・集計範囲の違いの可能性`);
     }
+  } else if (others.length) {
+    notes.push(`他の情報源(${others.map((e) => `${SOURCE_LABELS[e.source] ?? e.source}=${e.value}`).join(', ')})とも概ね整合`);
   }
-  if (result === 'OK') notes.unshift(`${{ official: '公式サイト', edinet: '有価証券報告書(EDINET)', human: '人の確認' }[chosen.source] ?? chosen.source}で${r.employees}名${a.asOf ? `（${a.asOf}時点）` : ''}${others.length ? `。他の情報源(${others.map((e) => `${e.source}=${e.value}`).join(', ')})とも概ね整合` : ''}`);
   return { result, comment: notes.join(' / '), after: r.employees, asOf: a.asOf, source: chosen.source };
 }
 
@@ -200,7 +201,7 @@ const RANK = { OK: 0, 'OK（リダイレクト）': 0, 'OK（人の確認）': 0
 export const worst = (...rs) => rs.reduce((a, b) => (RANK[b] > RANK[a] ? b : a), 'OK');
 
 /** 検証ロジックを変えたら上げる（保存済みの検証結果を無効にして、次の実行で取り直す） */
-export const VERIFY_VERSION = 2;
+export const VERIFY_VERSION = 3; // 3: 従業員数の採用ルール(公式優先・公式以外は時点が新しいもの)
 
 /** 検証の入力の署名。これが前回と同じなら、検証結果も同じになるので取り直さない（会社の情報・カテゴリ・ロジックが変わったときだけ再検証） */
 export function checkSig(r, cats) {

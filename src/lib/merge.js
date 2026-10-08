@@ -2,7 +2,7 @@ import { classify } from './classify.js';
 import { isTokyoAddress } from './extract.js';
 import { nfkc } from './util.js';
 import { bestOfficial } from './model.js';
-import { assessEmployees } from './employees.js';
+import { assessEmployees, asOf } from './employees.js';
 import { CATEGORIES } from '../../config/categories.js';
 
 /**
@@ -36,6 +36,25 @@ export function pick(c, field, { valid = () => true, same = (a, b) => a === b, e
   return { value: best.value, source: best.source, url: best.url, snippet: best.snippet, from: [...new Set(ev.map((e) => e.source))], conflicts };
 }
 
+/**
+ * 従業員数の採用ルール:
+ *  1. 人が確認した値 → 2. 公式サイトの値（取れればそれを正とする）→
+ *  3. それ以外は、「◯◯年時点」の記載が最も新しい情報（時点の記載が無いものは最後。同じ新しさなら従来の情報源の優先順位）
+ */
+export function pickEmployees(c, { exclude = () => false } = {}) {
+  const ev = byField(c, 'employees').filter((e) => Number.isFinite(e.value) && !exclude(e));
+  if (!ev.length) return null;
+  const tier = (e) => (e.source === 'human' ? 0 : e.source === 'official' ? 1 : 2);
+  const when = (e) => {
+    const d = asOf(e.snippet);
+    return d ? d.year * 12 + (d.month ?? 6) : -1;
+  };
+  ev.sort((a, b) => tier(a) - tier(b) || (tier(a) === 2 ? when(b) - when(a) : 0) || rank('employees', a.source) - rank('employees', b.source));
+  const best = ev[0];
+  const conflicts = ev.slice(1).filter((e) => e.value !== best.value);
+  return { value: best.value, source: best.source, url: best.url, snippet: best.snippet, from: [...new Set(ev.map((e) => e.source))], conflicts };
+}
+
 /** 統合してレポート用の1レコードにする */
 export function consolidate(c, { minEmployees = 20 } = {}) {
   const addr = pick(c, 'address', { same: (a, b) => isTokyoAddress(a) === isTokyoAddress(b) });
@@ -48,7 +67,7 @@ export function consolidate(c, { minEmployees = 20 } = {}) {
       .map((e) => e.source)
       .filter((src) => src !== addr?.source)
   );
-  const emp = pick(c, 'employees', { valid: (v) => Number.isFinite(v), exclude: (e) => rejected.has(e.source) });
+  const emp = pickEmployees(c, { exclude: (e) => rejected.has(e.source) });
   const members = pick(c, 'wantedlyMembers');
   const edinetCode = byField(c, 'edinetCode')[0] ?? null;
   const consolidated = byField(c, 'employeesConsolidated')[0] ?? null;
@@ -64,11 +83,11 @@ export function consolidate(c, { minEmployees = 20 } = {}) {
   const tokyo = addr ? isTokyoAddress(addr.value) : null;
   // 従業員数: 確定値があれば判定、無ければ Wantedly メンバー数は参考値(判定には使わない)
   // SalesNow の規模は推定値。閾値付近(10〜40名)は断定せず「要確認」にする
-  const estimateOnly = ['salesnow', 'agencyhub', 'gbizinfo', 'openwork'].includes(emp?.source); // 推定値・規模レンジ・政府保有情報(古い可能性)は断定しない
+  const estimateOnly = ['salesnow', 'agencyhub', 'gbizinfo', 'openwork'].includes(emp?.source); // 時点不明の推定値・規模レンジ・政府保有情報は、採用はするが、閾値付近(10〜40名)では断定せず要確認（20名未満での除外を避ける）
   const nearThreshold = estimateOnly && emp.value >= 10 && emp.value <= 40;
   const emp20 = emp ? (nearThreshold ? null : emp.value >= minEmployees) : null;
 
-  // 従業員数が「確認済み」か(公式で、単体・最近の数字。または第三者が複数一致)。未確認のままOKにしない
+  // 従業員数の採用ルールに沿った評価(値が取れていれば確認済み。時点・出所・集計範囲は備考に残す)
   const empEvs = byField(c, 'employees').filter((e) => Number.isFinite(e.value) && !rejected.has(e.source));
   const empCheck = assessEmployees(emp, empEvs);
 
@@ -91,9 +110,11 @@ export function consolidate(c, { minEmployees = 20 } = {}) {
   if (!cats.length && c.seedCategories.length) notes.push(`カテゴリは検索元の推定のみ: ${[...new Set(c.seedCategories)].map((k) => CATEGORIES[k]?.label).join('/')}`);
   if (off && typeof off === 'object' && off.others.length) notes.push(`公式URL候補が複数: ${[off.url, ...off.others].join(' , ')}`);
   if (rejected.size && byField(c, 'employees').some((e) => rejected.has(e.source))) notes.push(`住所が一致しない情報源の従業員数は不採用(同名の別会社の可能性): ${[...rejected].join(', ')}`);
-  if (estimateOnly) notes.push(`従業員数は${{ agencyhub: 'AgencyHubの規模レンジ下限', openwork: 'OpenWorkの社員数レンジ(下限/上限)', gbizinfo: 'Gビズインフォ(政府保有情報・古い可能性)の値' }[emp.source] ?? 'SalesNowの推定値'}(${emp.value}名)${nearThreshold ? '・閾値付近のため要確認' : ''}`);
-  if (emp20 && !empCheck.confirmed) notes.push(`従業員数が未確認: ${empCheck.reasons.join(' / ')}`);
-  if (emp?.source === 'edinet' && consolidated) notes.push(`有価証券報告書の連結従業員数は${consolidated.value}名（採用した${emp.value}名は提出会社単体）`);
+  if (emp) notes.push(...empCheck.remarks.map((x) => `従業員数: ${x}`));
+  if (consolidated) {
+    const single = byField(c, 'employees').find((e) => e.source === 'edinet');
+    notes.push(`有価証券報告書の連結従業員数は${consolidated.value}名${single ? `（提出会社単体は${single.value}名${emp?.source === 'edinet' ? '。これを採用' : ''}）` : ''}`);
+  }
   if (byField(c, 'earlyStop').length) notes.push('公式トップにどのカテゴリの語も無く、巡回を途中で見切った(求人一覧のみで見つかった会社。取りこぼしの疑いがあれば --no-early-stop で取り直す)');
   if (emp == null && members) notes.push(`Wantedlyメンバー数 ${members.value}人(参考・従業員数とは別物)`);
 
@@ -107,6 +128,7 @@ export function consolidate(c, { minEmployees = 20 } = {}) {
     employeesSource: emp?.source ?? null,
     emp20,
     empConfirmed: empCheck.confirmed,
+    employeesAsOf: empCheck.asOf,
     edinetCode: edinetCode?.value ?? null,
     securitiesCode: (edinetCode?.snippet ?? '').match(/証券コード(\d{4,5})/)?.[1] ?? null,
     categories: cats.map((x) => x.label),

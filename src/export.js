@@ -15,6 +15,7 @@ const COLS = [
   ['本社所在地', (r) => r.address],
   ['東京都本社', (r) => (r.tokyo == null ? '未確認' : r.tokyo ? '○' : '×')],
   ['従業員数', (r) => r.employees],
+  ['従業員数の時点', (r) => r.employeesAsOf],
   ['20名以上', (r) => (r.emp20 == null ? '未確認' : r.emp20 ? '○' : '×')],
   ['カテゴリ', (r) => r.categories.join(' / ')],
   ['カテゴリ根拠KW', (r) => r.categoryKeywords.join(' / ')],

@@ -631,12 +631,13 @@ test('EDINET: 検索→証拠の追加（API部分は差し替え）と、判定
   addEvidence(c, 'employees', 60000, { source: 'official', url: 'u', snippet: 'グループ全体で60,000名' });
   assert.equal(await edinet.lookup(c, { edinet: fake, log: () => {} }), true);
   const r = consolidate(c);
-  // 有報(単体)が公式のグループ値より優先され、確認済み。連結値は備考に出る
-  assert.deepEqual([r.employees, r.employeesSource, r.empConfirmed], [135, 'edinet', true]);
+  // 公式サイトの値を正とする（グループ全体の記載は備考に残る）。有報の数字は他の情報源として証拠に残る
+  assert.deepEqual([r.employees, r.employeesSource, r.empConfirmed], [60000, 'official', true]);
+  assert.match(r.notes.join(' '), /「グループ全体」の記載あり/);
   assert.equal(r.edinetCode, 'E04760');
   assert.equal(r.securitiesCode, '4324');
   assert.equal(r.address, '東京都港区東新橋一丁目8番1号');
-  assert.match(r.notes.join(' '), /連結従業員数は67454名/);
+  assert.match(r.notes.join(' '), /連結従業員数は67454名（提出会社単体は135名）/);
   // 再実行しても証拠が重複しない
   await edinet.lookup(c, { edinet: fake, log: () => {} });
   assert.equal(c.evidence.filter((e) => e.source === 'edinet' && e.field === 'employees').length, 1);
@@ -650,14 +651,31 @@ test('EDINET: 検索→証拠の追加（API部分は差し替え）と、判定
   assert.equal(other.evidence.length, 0);
 });
 
-test('連結のみの有報は従業員数を「確認済み」にしない', () => {
+test('有報の連結のみの数字も採用し、「連結」の注記を残す。単体なら注記なし', () => {
   const ev = { value: 143, source: 'edinet', snippet: '有価証券報告書 2026年3月期（2026年6月25日提出・書類ID S1） 連結の従業員数 143名' };
   const a = assessEmployees(ev, [ev]);
-  assert.equal(a.confirmed, false);
-  assert.match(a.reasons.join(), /有価証券報告書の数字に「連結」/);
+  assert.equal(a.confirmed, true);
+  assert.match(a.remarks.join(), /公式サイトでは確認できず.*有価証券報告書\(EDINET\).*2026年3月時点/);
+  assert.match(a.remarks.join(), /「連結」の記載あり/);
   const ok = assessEmployees({ ...ev, snippet: ev.snippet.replace('連結', '提出会社単体') }, [ev]);
-  assert.equal(ok.confirmed, true);
+  assert.equal(ok.remarks.some((x) => x.includes('連結')), false);
   assert.equal(ok.asOf, '2026年3月');
+});
+
+test('従業員数の採用: 公式サイトを正とし、公式以外は時点が最も新しい情報', async () => {
+  const { pickEmployees } = await import('../src/lib/merge.js');
+  const mk = (list) => { const c = newCompany('株式会社P'); for (const [v, src, snip] of list) addEvidence(c, 'employees', v, { source: src, url: 'u', snippet: snip }); return c; };
+  // 公式があれば、より新しい他の情報があっても公式
+  assert.equal(pickEmployees(mk([[90, 'mynavi', 'マイナビ 2026年9月現在 90名'], [80, 'official', '従業員数 80名']])).source, 'official');
+  // 人の確認は公式より優先
+  assert.equal(pickEmployees(mk([[80, 'official', '従業員数 80名'], [95, 'human', '人が確認']])).value, 95);
+  // 公式以外: 時点が新しいものを採用（優先順位が低い情報源でも）
+  const p = pickEmployees(mk([[100, 'green', '従業員数: 100名（2024年4月現在）'], [130, 'careertasu', 'キャリタス 130名（2025年10月現在）'], [70, 'mynavi', 'マイナビ 70名（2023年4月現在）']]));
+  assert.deepEqual([p.value, p.source], [130, 'careertasu']);
+  // 時点の記載があるものが、無いものより先
+  assert.equal(pickEmployees(mk([[500, 'gbizinfo', 'Gビズインフォ 従業員数: 500人'], [60, 'pitact', 'PITACT 2022年1月 60名']])).source, 'pitact');
+  // 時点がすべて無ければ、従来の情報源の優先順位
+  assert.equal(pickEmployees(mk([[500, 'salesnow', '推定'], [60, 'gbizinfo', 'Gビズ']])).source, 'gbizinfo');
 });
 
 test('求人ボックス: 一覧見出しから全件数とページ番号', async () => {
