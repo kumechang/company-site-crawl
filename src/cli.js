@@ -6,7 +6,7 @@ import { Store } from './lib/store.js';
 import { log } from './lib/util.js';
 import { CATEGORIES, SITES, ORDER, INDUSTRY_CORE } from '../config/categories.js';
 import { consolidate } from './lib/merge.js';
-import { enrichFromOfficial } from './enrich.js';
+import { enrichFromOfficial, needsOfficialCrawl } from './enrich.js';
 import { needsCorporateUrl, bestOfficial } from './lib/model.js';
 import { domainOf, nfkc } from './lib/util.js';
 import { exportAll, exportSample, flatChecks, allChecksOk } from './export.js';
@@ -132,7 +132,7 @@ const prioritize = (list) => list.filter((c) => !outsideTokyo(c) && (!round || r
 function hasPendingEnrichment(c) {
   const hasEv = (src) => c.evidence.some((e) => e.source === src);
   const noEmp = employeesOnly ? lacksFirmEmployees(c) : !c.evidence.some((e) => e.field === 'employees');
-  const crawlPending = (c.officialUrl || bestOfficial(c)) && !hasEv('official');
+  const crawlPending = (c.officialUrl || bestOfficial(c)) && needsOfficialCrawl(c);
   const urlPending = !employeesOnly && !c.officialUrl && !skipped.has('prtimes') && !c.noPrtimes;
   // 各情報源の照会が、実際に対象にする条件と同じ(未照会・一致なしの印なし・証拠なし)で、まだ手が残っているか
   const left = (src, flag) => !skipped.has(src) && !c[flag] && !hasEv(src);
@@ -375,6 +375,16 @@ async function verify() {
   }
 }
 
+/** 検索結果の記録: false=一致なし → flag を立てて再検索しない / null=通信エラー等 → 連続 MAX_LOOKUP_ERRORS 回で諦める（毎回の補完で同じ会社を引き直し続けないため） */
+const MAX_LOOKUP_ERRORS = 2;
+function settle(c, flag, r) {
+  if (r === false) c[flag] = true;
+  else if (r === null || r === undefined) {
+    c.lookupErrors = { ...c.lookupErrors, [flag]: (c.lookupErrors?.[flag] ?? 0) + 1 };
+    if (c.lookupErrors[flag] >= MAX_LOOKUP_ERRORS) c[flag] = true;
+  } else if (c.lookupErrors?.[flag]) c.lookupErrors[flag] = 0; // 成功したら連続エラーを数え直す
+}
+
 /** 会社名検索型の補完。対象(pred)に合う会社を順に引く。一致なしは no* フラグを立てて再検索しない（エラー時は立てず再試行できる） */
 async function lookupAll(label, mod, flag, pred) {
   if (skipped.has(mod.id)) {
@@ -394,7 +404,7 @@ async function lookupAll(label, mod, flag, pred) {
     ]);
     clearTimeout(timer);
     if (r === true) n++;
-    else if (r === false) c[flag] = true;
+    settle(c, flag, r);
     store.save();
   }
   log(`  → ${n}/${todo.length} 社が一致`);
@@ -448,7 +458,7 @@ async function enrich() {
     for (const c of noUrl) {
       const r = await prtimes.resolve(c, { crawler, log });
       if (r) n++;
-      else if (r === false) c.noPrtimes = true; // 検索したが一致なし → 再検索しない（sample が enrich を何度も呼ぶため）
+      settle(c, 'noPrtimes', r); // 一致なしは再検索しない（sample が enrich を何度も呼ぶため）。エラーは連続2回まで
       store.save();
     }
     log(`  → ${n}/${noUrl.length} 社の公式URLを解決`);
@@ -468,7 +478,7 @@ async function enrich() {
       c.sources = c.sources.filter((s) => s.source !== 'official');
     }
   }
-  const targets = prioritize(store.all().filter((c) => (c.officialUrl || bestOfficial(c)) && !c.evidence.some((e) => e.source === 'official')));
+  const targets = prioritize(store.all().filter((c) => (c.officialUrl || bestOfficial(c)) && needsOfficialCrawl(c)));
   log(`# 公式サイト補完: ${targets.length} 社`);
   for (const c of targets) {
     log(`  official ${c.name} ${c.officialUrl}`);
@@ -486,7 +496,7 @@ async function enrich() {
     for (const c of gb) {
       const r = await gbizinfo.lookup(c, { crawler, log });
       if (r === true) n++;
-      else if (r === false) c.noGbiz = true; // 検索したが一致なし → 再検索しない（エラー時は印を付けず再試行できる）
+      settle(c, 'noGbiz', r); // 一致なしは再検索しない。エラーは連続2回まで
       store.save();
     }
     log(`  → ${n}/${gb.length} 社が一致`);

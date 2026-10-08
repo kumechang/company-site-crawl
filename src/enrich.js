@@ -3,6 +3,7 @@ import { addEvidence, addSource, bestOfficial } from './lib/model.js';
 import { domainOf } from './lib/util.js';
 import { clip, flatten } from './lib/util.js';
 import { RobotsDisallowed } from './lib/crawler.js';
+import { isAccessFailure, runEnv } from './lib/access.js';
 
 // 外部のフォームサービス（公式サイトからリンクされていれば公式の問い合わせ先とみなす。ページ自体は取得しない）
 const FORM_HOSTS = /(forms\.gle|docs\.google\.com\/forms|tayori\.com|form\.run|formrun\.|hubspot|hsforms|typeform|formzu|secure-link|kintoneapp|cybozu\.com|b-forms|extra-form|pardot|marketo|sfdc|force\.com|zendesk)/i;
@@ -36,6 +37,17 @@ function alternateOfficialUrls(c) {
   return out.slice(0, 2);
 }
 
+/** 公式サイトの巡回が必要か: 巡回の記録が無い会社。接続失敗だけで終わった会社は、まだ試していない環境(手元など)でだけ取り直す */
+export function needsOfficialCrawl(c, env = runEnv()) {
+  const off = c.evidence.filter((e) => e.source === 'official');
+  if (!off.length) return true;
+  if (off.some((e) => e.field !== 'officialError' && e.field !== 'officialAccessFailed')) return false;
+  const tried = off.filter((e) => e.field === 'officialAccessFailed').map((e) => e.value);
+  // 旧形式(環境の記録なし)の接続失敗は、GitHub Actions で試したものとみなす
+  if (!tried.length && off.some((e) => e.field === 'officialError' && /robots\.txt を取得できない|^HTTP (401|403|429|5\d\d)|timeout/i.test(e.value))) tried.push('actions');
+  return tried.length > 0 && !tried.includes(env);
+}
+
 /** 1つのサイトを巡回: トップ → 会社概要ページ(従業員数が見つかるまで最大4)。従業員数・住所・本文を証拠として追加 */
 async function crawlSite(c, url, { crawler, log, primary, earlyStop }) {
   const src = 'official';
@@ -44,9 +56,14 @@ async function crawlSite(c, url, { crawler, log, primary, earlyStop }) {
     top = await crawler.snapshot(url);
   } catch (e) {
     log(`  ! official ${url}: ${e instanceof RobotsDisallowed ? 'robots.txt禁止' : e.message}`);
-    if (primary) addEvidence(c, 'officialError', e.message.slice(0, 80), { source: src, url });
+    if (primary) {
+      addEvidence(c, 'officialError', e.message.slice(0, 80), { source: src, url });
+      // 接続できなかっただけ（robots.txtの403・HTTP 403/429/5xx・タイムアウト）なら、サイト側の拒否とは限らない。試した環境を残し、別の環境では取り直す
+      if (isAccessFailure(e)) addEvidence(c, 'officialAccessFailed', runEnv(), { source: src, url });
+    }
     return null;
   }
+  if (primary) c.evidence = c.evidence.filter((e) => !(e.source === src && (e.field === 'officialError' || e.field === 'officialAccessFailed'))); // 取り直しで開けたら、失敗の記録は消す
   addSource(c, src, url);
   addEvidence(c, 'profileText', clip(`${top.title} ${flatten(top.text)}`, 1500), { source: src, url, snippet: 'トップページ' });
   const pages = [{ url, snap: top }];

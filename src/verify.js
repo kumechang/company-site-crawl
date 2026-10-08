@@ -2,6 +2,8 @@ import { CATEGORIES, INDUSTRY_CORE, COMPETING_BUSINESS } from '../config/categor
 import { looksLikeContactPage, sameBrand, contactKind, normalizeUrl, findServiceLinks } from './lib/extract.js';
 import { normalizeName, nfkc, domainOf, flatten } from './lib/util.js';
 import { assessEmployees, SCOPE_RE, SOURCE_LABELS } from './lib/employees.js';
+import { isAccessFailure, runEnv } from './lib/access.js';
+export { isAccessFailure, runEnv };
 
 /**
  * 収集結果の自己検証（外部の「ファクトチェック」と同じ4観点）。判定は OK / 要確認 / NG。
@@ -115,15 +117,6 @@ export function checkEmployees(c, r) {
 const FORM_HOSTS = /(forms\.gle|docs\.google\.com\/forms|tayori\.com|form\.run|formrun\.|hubspot|hsforms|typeform|formzu|secure-link|kintoneapp|cybozu\.com|b-forms|extra-form|pardot|marketo|sfdc|force\.com|zendesk)/i;
 const trimSlash = (u) => u.replace(/#.*$/, '').replace(/\/+$/, '').replace(/^https?:\/\/(www\.)?/, '');
 
-/** サイトに接続できなかった(robots.txtが取れない・403/429/5xx・タイムアウト等)エラーか。robots.txtの明示的な禁止や404は含めない */
-export function isAccessFailure(e) {
-  const m = String(e?.message ?? '');
-  if (/robots\.txt disallows/.test(m)) return false;
-  if (/robots\.txt を取得できない|連続して拒否/.test(m)) return true;
-  if (e?.status) return e.status === 401 || e.status === 403 || e.status === 429 || e.status >= 500;
-  return /timeout|net::|ERR_|ECONN|ENOTFOUND|ETIMEDOUT|Navigation|Connection closed|Target closed/i.test(m);
-}
-
 export async function checkContact(c, r, { crawler, top }) {
   const url = r.contactUrl && normalizeUrl(r.contactUrl);
   if (!url) return { result: '要確認', comment: '問い合わせURLを取得できていない', after: null };
@@ -210,9 +203,6 @@ export function checkIdentity(c, r, { top, officialText }) {
 // ---------------------------------------------------------------- まとめ
 const RANK = { OK: 0, 'OK（リダイレクト）': 0, 'OK（人の確認）': 0, 要確認: 1, NG: 2 };
 export const worst = (...rs) => rs.reduce((a, b) => (RANK[b] > RANK[a] ? b : a), 'OK');
-
-/** 実行環境の種別（接続失敗が環境依存かどうかの判断用） */
-export const runEnv = () => (process.env.GITHUB_ACTIONS ? 'actions' : 'local');
 
 /** 検証をやり直すべきか: 入力が変わった／接続失敗で別の環境で実行している */
 export function needsVerify(c, sig, env = runEnv()) {

@@ -846,7 +846,7 @@ test('cli.js: 補助関数の定義が欠けていない（employees モード�
   const src = fs.readFileSync(new URL('../src/cli.js', import.meta.url), 'utf8');
   const declared = new Set([...src.matchAll(/(?:^|\n)\s*(?:async\s+)?function\s+(\w+)|(?:^|\n)\s*(?:const|let)\s+(\w+)\s*=/g)].map((m) => m[1] ?? m[2]));
   // cli.js の中で定義して、別の場所から呼ぶ補助関数・変数
-  for (const name of ['isEmployeeBottleneck', 'hasPendingEnrichment', 'lacksFirmEmployees', 'pickRound', 'prioritize', 'outsideTokyo', 'catFirst', 'employeesCmd', 'enrichEdinet', 'lookupAll', 'okCount', 'earlyStopFor', 'verify', 'enrich', 'sample']) {
+  for (const name of ['isEmployeeBottleneck', 'hasPendingEnrichment', 'lacksFirmEmployees', 'pickRound', 'prioritize', 'outsideTokyo', 'catFirst', 'employeesCmd', 'enrichEdinet', 'lookupAll', 'settle', 'okCount', 'earlyStopFor', 'verify', 'enrich', 'sample']) {
     assert.ok(declared.has(name), `${name} が cli.js に定義されていない`);
   }
 });
@@ -884,4 +884,32 @@ test('Renew lookup: 一致すれば住所・従業員数・企業URLを証拠に
   assert.deepEqual([ev('employees'), ev('address'), ev('officialUrl')], [[26], ['東京都渋谷区猿楽町９−８'], ['https://reaplus.jp/']]);
   assert.equal(await renew.lookup({ name: '別の会社', evidence: [], sources: [] }, { crawler: mk({ [q('別の会社')]: search }), log() {} }), false);
   assert.equal(await renew.lookup({ name: '別の会社', evidence: [], sources: [] }, { crawler: mk({}), log() {} }), null);
+});
+
+import { needsOfficialCrawl } from '../src/enrich.js';
+
+test('公式サイトの巡回: 記録が無ければ巡回。接続失敗だけなら試していない環境でだけ取り直す。サイト側の拒否は取り直さない', () => {
+  const ev = (field, value, source = 'official') => ({ field, value, source });
+  assert.equal(needsOfficialCrawl({ evidence: [] }, 'actions'), true);
+  assert.equal(needsOfficialCrawl({ evidence: [ev('profileText', 'x')] }, 'local'), false);
+  const failed = { evidence: [ev('officialError', 'robots.txt を取得できない(403)'), ev('officialAccessFailed', 'actions')] };
+  assert.equal(needsOfficialCrawl(failed, 'actions'), false);
+  assert.equal(needsOfficialCrawl(failed, 'local'), true);
+  assert.equal(needsOfficialCrawl({ evidence: [ev('officialError', 'robots.txt disallows https://a.jp/')] }, 'local'), false);
+  assert.equal(needsOfficialCrawl({ evidence: [ev('officialError', 'robots.txt を取得できない(403)のためアクセスしない: x')] }, 'actions'), false); // 旧形式
+  assert.equal(needsOfficialCrawl({ evidence: [ev('officialError', 'robots.txt を取得できない(403)のためアクセスしない: x')] }, 'local'), true);
+});
+
+test('公式サイトの巡回: 接続失敗は環境つきで記録し、取り直して開けたら失敗の記録を消す', async () => {
+  const { enrichFromOfficial } = await import('../src/enrich.js');
+  const { RobotsDisallowed } = await import('../src/lib/crawler.js');
+  const c = { name: 'A', officialUrl: 'https://a.jp/', evidence: [], sources: [] };
+  const down = { snapshot: async () => { throw new RobotsDisallowed('robots.txt を取得できない(403)のためアクセスしない: https://a.jp/'); } };
+  await enrichFromOfficial(c, { crawler: down, log() {} });
+  assert.deepEqual(c.evidence.map((e) => e.field).sort(), ['officialAccessFailed', 'officialError']);
+  assert.equal(needsOfficialCrawl(c, c.evidence.find((e) => e.field === 'officialAccessFailed').value), false);
+  const up = { snapshot: async () => ({ title: 'A社', text: '会社概要 従業員数 50名', anchors: [], finalUrl: 'https://a.jp/' }) };
+  await enrichFromOfficial(c, { crawler: up, log() {} });
+  assert.ok(!c.evidence.some((e) => e.field === 'officialError' || e.field === 'officialAccessFailed'));
+  assert.ok(c.evidence.some((e) => e.field === 'profileText'));
 });
