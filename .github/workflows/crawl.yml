@@ -7,6 +7,11 @@ name: crawl
 on:
   workflow_dispatch:
     inputs:
+      mode:
+        description: 'sample=収集から検証まで全部 / employees=従業員数だけが不足している会社の従業員数だけを取りに行く（サンプルを早く完成させる用）'
+        type: choice
+        options: [sample, employees]
+        default: sample
       categories:
         description: 'カテゴリ(カンマ区切り): cosme_d2c,influencer_agency,ad_agency,sns_agency'
         default: 'influencer_agency,cosme_d2c'
@@ -50,7 +55,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
       - name: crawl (sample)
         run: |
-          scripts/ci-crawl.sh "sample --ok ${{ inputs.ok }} --categories ${{ inputs.categories }} --enrich-limit ${{ inputs.enrich_limit }} --skip ${{ inputs.skip }}"
+          scripts/ci-crawl.sh "${{ inputs.mode }} --ok ${{ inputs.ok }} --categories ${{ inputs.categories }} --enrich-limit ${{ inputs.enrich_limit }} --skip ${{ inputs.skip }}"
       - name: verify and export
         if: always()
         run: node src/cli.js verify --categories ${{ inputs.categories }} && node src/cli.js export --ok ${{ inputs.ok }} --categories ${{ inputs.categories }}
