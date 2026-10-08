@@ -1,0 +1,6 @@
+{
+ "origin": "https://bruno-inc.com",
+ "fetchedAt": "2026-10-08T01:29:46.570Z",
+ "status": 200,
+ "text": "User-agent: *\nCrawl-delay: 3\nDisallow: /_error_docs/\nDisallow: /_img_bg/\nDisallow: /_inc_commons/\nDisallow: /_inc_globals/\nDisallow: /_inc_reference/\nDisallow: /_phps/\nDisallow: /login_false.html\nDisallow: /images/\n\nUser-agent: Googlebot-News\nDisallow: /\n\nUser-agent: newspaper/0.2.8\nDisallow: /\n\nUser-agent: SemrushBot\nDisallow: /\n\nUser-agent: MJ12bot\nDisallow: /\n\nUser-agent: AhrefsBot\nDisallow: /\n\nUser-agent: BLEXBot\nDisallow: /\n\nUser-agent: Yandex\nDisallow: /\n\nUser-agent: baiduspider\nDisallow: /\n\nUser-agent: bingbot\ncrawl-delay: 30\n\nUser-agent: BLP_bbot/0.1\nDisallow: /\n\nUser-agent: BLP_bbot\nDisallow: /\n"
+}
