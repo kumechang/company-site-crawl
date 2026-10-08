@@ -38,6 +38,7 @@ jobs:
     timeout-minutes: 350
     env:
       EDINET_API_KEY: ${{ secrets.EDINET_API_KEY }}
+      PROXY_LIST: ${{ secrets.PROXY_LIST }} # 任意。host:port:user:pass を改行区切り。未設定ならプロキシなしで動く
       CHROME_PATH: /usr/bin/google-chrome
       NO_SANDBOX: '1'
       PUPPETEER_SKIP_DOWNLOAD: '1'

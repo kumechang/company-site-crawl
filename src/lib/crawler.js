@@ -4,6 +4,7 @@ import crypto from 'node:crypto';
 import puppeteer from 'puppeteer';
 import { sleep, originOf, log } from './util.js';
 import { parseRobots, isAllowed } from './robots.js';
+import { isProxyError } from './proxy.js';
 
 export class RobotsDisallowed extends Error {}
 export class HostTripped extends Error {}
@@ -38,8 +39,9 @@ function findChrome() {
  * - 結果は cacheDir に保存（パーサ調整時にサイトへ再アクセスしないため）
  */
 export class Crawler {
-  constructor({ cacheDir = 'data/cache', robotsDir = 'data/robots', minDelayMs = 2500, timeoutMs = 45000, useCache = true, respectRobots = true } = {}) {
-    Object.assign(this, { cacheDir, robotsDir, minDelayMs, timeoutMs, useCache, respectRobots });
+  constructor({ cacheDir = 'data/cache', robotsDir = 'data/robots', minDelayMs = 2500, timeoutMs = 45000, useCache = true, respectRobots = true, proxies = null } = {}) {
+    Object.assign(this, { cacheDir, robotsDir, minDelayMs, timeoutMs, useCache, respectRobots, proxies });
+    this.contexts = new Map(); // プロキシ -> ブラウザコンテキスト
     this.browser = null;
     this.ua = null;
     this.lastHit = new Map(); // host -> timestamp
@@ -61,6 +63,15 @@ export class Crawler {
 
   async close() {
     await this.browser?.close();
+    this.contexts.clear();
+  }
+
+  /** ホストに割り当てたプロキシ用のブラウザコンテキスト（プロキシなしなら null）。コンテキストごとに出口IPが決まる */
+  async contextFor(host) {
+    const proxy = this.proxies?.forHost(host);
+    if (!proxy) return { proxy: null, ctx: null };
+    if (!this.contexts.has(proxy.label)) this.contexts.set(proxy.label, await this.browser.createBrowserContext({ proxyServer: proxy.server }));
+    return { proxy, ctx: this.contexts.get(proxy.label) };
   }
 
   cachePath(url) {
@@ -90,8 +101,25 @@ export class Crawler {
   }
 
   async rawPage(url, fn) {
-    const page = await this.browser.newPage();
+    // プロキシ自体につながらない/認証に失敗したときだけ、そのプロキシを外して割り当て直す（サイトの403などでは替えない）
+    for (let attempt = 0; ; attempt++) {
+      const { proxy } = await this.contextFor(new URL(url).host);
+      try {
+        return await this.rawPageVia(url, fn);
+      } catch (e) {
+        if (!proxy || !isProxyError(e) || attempt >= 3 || this.proxies.size <= 1) throw e;
+        log(`  ! プロキシ ${proxy.label} につながらないため外す (${e.message.split('\n')[0].slice(0, 60)})`);
+        this.proxies.markDead(proxy);
+        this.contexts.delete(proxy.label);
+      }
+    }
+  }
+
+  async rawPageVia(url, fn) {
+    const { proxy, ctx } = await this.contextFor(new URL(url).host);
+    const page = await (ctx ?? this.browser).newPage();
     try {
+      if (proxy?.username) await page.authenticate({ username: proxy.username, password: proxy.password });
       await page.setUserAgent(this.ua);
       await page.setExtraHTTPHeaders({ 'Accept-Language': 'ja,en;q=0.8' });
       await page.setViewport({ width: 1366, height: 900 });

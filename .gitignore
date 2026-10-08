@@ -5,3 +5,8 @@ data/*.csv
 !data/.gitkeep
 data/*.log
 out/
+
+# プロキシの認証情報などはコミットしない
+*proxies*.txt
+Webshare*.txt
+.env

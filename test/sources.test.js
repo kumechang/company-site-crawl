@@ -913,3 +913,29 @@ test('公式サイトの巡回: 接続失敗は環境つきで記録し、取り
   assert.ok(!c.evidence.some((e) => e.field === 'officialError' || e.field === 'officialAccessFailed'));
   assert.ok(c.evidence.some((e) => e.field === 'profileText'));
 });
+
+import { parseProxyList, ProxyPool, proxyPoolFromEnv, isProxyError } from '../src/lib/proxy.js';
+
+test('プロキシ一覧: host:port:user:pass を読み、ホストごとに固定のプロキシを割り当てる', () => {
+  const list = parseProxyList('\n1.2.3.4:6754:u:p:ss\n5.6.7.8:6014:u:p\n# コメント\nbad line\n9.9.9.9:80\n');
+  assert.equal(list.length, 3);
+  assert.deepEqual([list[0].server, list[0].username, list[0].password], ['http://1.2.3.4:6754', 'u', 'p:ss']);
+  assert.equal(list[2].username, null);
+  const pool = new ProxyPool(list);
+  assert.equal(pool.forHost('a.example.jp'), pool.forHost('a.example.jp')); // 同じホストは同じプロキシ
+  const hosts = Array.from({ length: 30 }, (_, i) => `h${i}.example.jp`);
+  assert.ok(new Set(hosts.map((h) => pool.forHost(h).label)).size > 1); // ホストが違えば散らばる
+  const first = pool.forHost('a.example.jp');
+  pool.markDead(first); // つながらないプロキシは外して割り当て直す
+  assert.notEqual(pool.forHost('a.example.jp').label, first.label);
+  assert.equal(pool.size, 2);
+  assert.equal(proxyPoolFromEnv({}), null);
+  assert.equal(proxyPoolFromEnv({ PROXY_LIST: '1.2.3.4:80:u:p' }).size, 1);
+});
+
+test('プロキシのエラー判定: プロキシ自体の不具合だけ。サイトの403・タイムアウトは含めない', () => {
+  assert.equal(isProxyError(new Error('net::ERR_PROXY_CONNECTION_FAILED at https://a.jp/')), true);
+  assert.equal(isProxyError(new Error('net::ERR_TUNNEL_CONNECTION_FAILED at https://a.jp/')), true);
+  assert.equal(isProxyError(new Error('HTTP 403 https://a.jp/')), false);
+  assert.equal(isProxyError(new Error('Navigation timeout of 45000 ms exceeded')), false);
+});

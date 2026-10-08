@@ -7,6 +7,8 @@ import { log } from './lib/util.js';
 import { CATEGORIES, SITES, ORDER, INDUSTRY_CORE } from '../config/categories.js';
 import { consolidate } from './lib/merge.js';
 import { enrichFromOfficial, needsOfficialCrawl } from './enrich.js';
+import { proxyPoolFromEnv } from './lib/proxy.js';
+import { setProxied } from './lib/access.js';
 import { needsCorporateUrl, bestOfficial } from './lib/model.js';
 import { domainOf, nfkc } from './lib/util.js';
 import { exportAll, exportSample, flatChecks, allChecksOk } from './export.js';
@@ -70,6 +72,7 @@ const { values: opt, positionals } = parseArgs({
     'no-cache': { type: 'boolean', default: false },
     'enrich-limit': { type: 'string', default: '0' }, // sample/enrich: 1回の補完で巡回・照会する会社数の上限(0=無制限。SalesNow・PR TIMES・公式サイト・Gビズ等すべて)。残りは次の補完で処理される
     reverify: { type: 'boolean', default: false }, // 検証済みで変更のない会社も、検証し直す
+    'no-proxy': { type: 'boolean', default: false }, // PROXY_LIST が設定されていてもプロキシを使わない
     'no-early-stop': { type: 'boolean', default: false }, // 公式トップにカテゴリの語が無い会社も、会社概要・問い合わせまで巡回する
     refresh: { type: 'boolean', default: false }, // 「最後まで見た」一覧も先頭から取り直す
     'retry-failed': { type: 'boolean', default: false }, // 連続失敗で飛ばしている一覧も再試行する
@@ -176,7 +179,11 @@ for (const sig of ['SIGTERM', 'SIGINT']) {
     process.exit(sig === 'SIGINT' ? 130 : 143);
   });
 }
-const crawler = new Crawler({ minDelayMs: Number(opt.delay), useCache: !opt['no-cache'] });
+// プロキシ: 環境変数 PROXY_LIST（host:port:user:pass を改行区切り）があれば、ブラウザの通信を経由する。ホストごとに同じプロキシを使い続ける
+const proxies = opt['no-proxy'] ? null : proxyPoolFromEnv();
+setProxied(!!proxies);
+if (proxies) log(`# プロキシ: ${proxies.size}件を使用（ホストごとに固定の割り当て）`);
+const crawler = new Crawler({ minDelayMs: Number(opt.delay), useCache: !opt['no-cache'], proxies });
 
 /** カテゴリに該当し、除外でない企業の数（打ち切り判定用） */
 function qualified(cat) {
