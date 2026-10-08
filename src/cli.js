@@ -129,20 +129,19 @@ const prioritize = (list) => list.filter((c) => !outsideTokyo(c) && (!round || r
 
 /** まだ補完の手が残っている会社か（公式サイト未巡回 / 公式URLが無く未照会 / 従業員数が無く未照会の情報源がある） */
 function hasPendingEnrichment(c) {
-  const noEmp = !c.evidence.some((e) => e.field === 'employees');
-  const crawlPending = (c.officialUrl || bestOfficial(c)) && !c.evidence.some((e) => e.source === 'official');
+  const hasEv = (src) => c.evidence.some((e) => e.source === src);
+  const noEmp = employeesOnly ? lacksFirmEmployees(c) : !c.evidence.some((e) => e.field === 'employees');
+  const crawlPending = (c.officialUrl || bestOfficial(c)) && !hasEv('official');
   const urlPending = !employeesOnly && !c.officialUrl && !skipped.has('prtimes') && !c.noPrtimes;
-  const empPending = noEmp && ((!skipped.has('gbizinfo') && !c.noGbiz) || (!skipped.has('mynavi') && !c.noMynavi) || (!skipped.has('careertasu') && !c.noCareertasu) || (!skipped.has('openwork') && !c.noOpenwork));
+  // 各情報源の照会が、実際に対象にする条件と同じ(未照会・一致なしの印なし・証拠なし)で、まだ手が残っているか
+  const left = (src, flag) => !skipped.has(src) && !c[flag] && !hasEv(src);
+  const empPending = noEmp && (left('gbizinfo', 'noGbiz') || left('mynavi', 'noMynavi') || left('careertasu', 'noCareertasu') || left('openwork', 'noOpenwork'));
   return Boolean(crawlPending || urlPending || empPending);
 }
 
-/** 従業員数だけが不足して、確定できない会社(いま作っているカテゴリで、カテゴリは該当・他の項目は揃っている) */
-function isEmployeeBottleneck(c) {
-  const r = consolidate(c, { minEmployees });
-  if (r.status !== '要確認' || !r.missing.length || !r.missing.every((m) => /^従業員数/.test(m))) return false;
-  const def = currentCat ? CATEGORIES[currentCat] : null;
-  return !def || (c.seedCategories.includes(currentCat) && r.categories.includes(def.label));
-}
+/** employees モード用: 推定値・レンジ(SalesNow・AgencyHub・Gビズ・OpenWork)しか従業員数の証拠が無い会社。マイナビ等で、より確かな数字を探す対象にする */
+const ESTIMATE_ONLY_SOURCES = new Set(['salesnow', 'agencyhub', 'gbizinfo', 'openwork']);
+const lacksFirmEmployees = (c) => !c.evidence.some((e) => e.field === 'employees' && !ESTIMATE_ONLY_SOURCES.has(e.source));
 
 /** この回の補完対象を選ぶ（いま作っているカテゴリの会社を優先。補完の手が残っている会社だけ） */
 function pickRound() {
@@ -484,7 +483,7 @@ async function enrich() {
     log(`  → ${n}/${gb.length} 社が一致`);
   }
   // 4) まだ従業員数が無い会社は、新卒向け媒体(マイナビ・キャリタス)の会社名検索 → OpenWork(社員数レンジ)の順で補完
-  const noEmp = (src) => (c) => !c.evidence.some((e) => e.field === 'employees') && !c.evidence.some((e) => e.source === src);
+  const noEmp = (src) => (c) => (employeesOnly ? lacksFirmEmployees(c) : !c.evidence.some((e) => e.field === 'employees')) && !c.evidence.some((e) => e.source === src);
   await lookupAll('マイナビ(新卒)', mynavi, 'noMynavi', noEmp('mynavi'));
   await lookupAll('キャリタス就活', careertasu, 'noCareertasu', noEmp('careertasu'));
   await lookupAll('OpenWork', openwork, 'noOpenwork', noEmp('openwork'));
