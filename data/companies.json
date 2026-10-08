@@ -6228,6 +6228,14 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=8",
     "snippet": "求人の勤務地(本社所在地とは限らない): 東京都 港区 / 六本木ヒルズ",
     "at": "2026-10-07T15:18:55.667Z"
+   },
+   {
+    "field": "employees",
+    "value": 84,
+    "source": "human",
+    "url": "",
+    "snippet": "人が確認(2026-10-08): 直近のdodaの数字を採用。人の入れ替わりが多いと考えられる。https://doda.jp/DodaFront/View/JobSearchDetail/j_jid__3015662000/",
+    "at": "2026-10-08T00:31:39.166Z"
    }
   ],
   "seedCategories": [
@@ -6243,7 +6251,13 @@
   ],
   "contactUrl": null,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "review": {
+   "industry": {},
+   "at": "2026-10-08",
+   "note": "直近のdodaの数字を採用。人の入れ替わりが多いと考えられる。https://doda.jp/DodaFront/View/JobSearchDetail/j_jid__3015662000/",
+   "employeesValue": 84
+  }
  },
  {
   "key": "シスコム",
@@ -20951,6 +20965,14 @@
     "url": "http://www.saraya.com/",
     "snippet": "リンク文言「お問い合わせ」/ ページ実在とフォームの記述を確認",
     "at": "2026-10-06T23:52:35.750Z"
+   },
+   {
+    "field": "employees",
+    "value": 2274,
+    "source": "human",
+    "url": "",
+    "snippet": "人が確認(2026-10-08): マイナビから。https://job.mynavi.jp/28/pc/search/corp267202/outline.html",
+    "at": "2026-10-08T00:31:39.167Z"
    }
   ],
   "seedCategories": [
@@ -20960,7 +20982,13 @@
    "cosme_d2c",
    "cosme_d2c"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "review": {
+   "industry": {},
+   "at": "2026-10-08",
+   "note": "マイナビから。https://job.mynavi.jp/28/pc/search/corp267202/outline.html",
+   "employeesValue": 2274
+  }
  },
  {
   "key": "大賀薬局",
@@ -25058,6 +25086,14 @@
     "url": "https://corp.orbis.co.jp/?adid=foot_bnr",
     "snippet": "リンク文言「お問い合わせ」/ ページ実在とフォームの記述を確認",
     "at": "2026-10-06T23:59:04.242Z"
+   },
+   {
+    "field": "employees",
+    "value": 1087,
+    "source": "human",
+    "url": "",
+    "snippet": "人が確認(2026-10-08): 公式サイトから。https://corp.orbis.co.jp/company/",
+    "at": "2026-10-08T00:31:39.167Z"
    }
   ],
   "seedCategories": [
@@ -25067,7 +25103,13 @@
    "cosme_d2c",
    "cosme_d2c"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "review": {
+   "industry": {},
+   "at": "2026-10-08",
+   "note": "公式サイトから。https://corp.orbis.co.jp/company/",
+   "employeesValue": 1087
+  }
  },
  {
   "key": "greenspoon",
@@ -40795,6 +40837,14 @@
     "url": "https://reaplus.jp/",
     "snippet": "リンク文言「CONTACT」/ ページ実在とフォームの記述を確認",
     "at": "2026-10-07T00:14:23.624Z"
+   },
+   {
+    "field": "employees",
+    "value": 26,
+    "source": "human",
+    "url": "",
+    "snippet": "人が確認(2026-10-08): インターン情報サイトから取得。https://renew-career.com/companies/539/joboffers/1636",
+    "at": "2026-10-08T00:31:39.167Z"
    }
   ],
   "seedCategories": [
@@ -40810,7 +40860,13 @@
   "noGbiz": true,
   "noMynavi": true,
   "noCareertasu": true,
-  "noOpenwork": true
+  "noOpenwork": true,
+  "review": {
+   "industry": {},
+   "at": "2026-10-08",
+   "note": "インターン情報サイトから取得。https://renew-career.com/companies/539/joboffers/1636",
+   "employeesValue": 26
+  }
  },
  {
   "key": "poporpop",
@@ -42107,6 +42163,12 @@
     "comment": "公式サイトに社名はあるが、所在地・ドメインを裏付ける別の情報源がなく、同名企業との区別は未確認",
     "after": "https://nadia-corp.co.jp/"
    }
+  },
+  "review": {
+   "industry": {},
+   "at": "2026-10-08",
+   "note": "情報は正しい。料理系インフルエンサーのマネジメントを行っている。",
+   "identity": "OK"
   }
  },
  {
@@ -43180,6 +43242,12 @@
     "comment": "公式サイトに社名はあるが、所在地・ドメインを裏付ける別の情報源がなく、同名企業との区別は未確認",
     "after": "https://twinplanet.co.jp/"
    }
+  },
+  "review": {
+   "industry": {},
+   "at": "2026-10-08",
+   "note": "情報は正しい。芸能事務所でインフルエンサーのマネジメントも行っている。",
+   "identity": "OK"
   }
  },
  {
@@ -43645,6 +43713,14 @@
     "url": "https://xn--pckua2a7gp15o89zb.com/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%AB%E3%82%A8%E3%83%B3%E3%82%B5%E3%83%BC-%E4%BA%8B%E5%8B%99%E6%89%80%E3%81%AE%E4%BB%95%E4%BA%8B-%E6%9D%B1%E4%BA%AC%E9%83%BD?pg=7",
     "snippet": "求人ボックスの求人タイトル: 経験者!フレックスタイム制",
     "at": "2026-10-07T15:18:50.211Z"
+   },
+   {
+    "field": "employees",
+    "value": 52,
+    "source": "human",
+    "url": "",
+    "snippet": "人が確認(2026-10-08): 日経新聞をソース　https://www.nikkei.com/nkd/company/gaiyo/?scode=7691",
+    "at": "2026-10-08T00:31:39.166Z"
    }
   ],
   "seedCategories": [
@@ -43663,7 +43739,13 @@
    "influencer_agency"
   ],
   "contactUrl": null,
-  "noPrtimes": true
+  "noPrtimes": true,
+  "review": {
+   "industry": {},
+   "at": "2026-10-08",
+   "note": "日経新聞をソース　https://www.nikkei.com/nkd/company/gaiyo/?scode=7691",
+   "employeesValue": 52
+  }
  },
  {
   "key": "apoc",
@@ -44434,6 +44516,14 @@
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XQKR,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月18日提出・書類ID S100XQKR） 連結の従業員数 136名",
     "at": "2026-10-07T16:51:30.211Z"
+   },
+   {
+    "field": "employees",
+    "value": 53,
+    "source": "human",
+    "url": "",
+    "snippet": "人が確認(2026-10-08): Yahooファイナンスも53だったので、EDINETを正としてよい。https://finance.yahoo.co.jp/quote/9337.T/profile",
+    "at": "2026-10-08T00:31:39.166Z"
    }
   ],
   "seedCategories": [
@@ -44470,6 +44560,12 @@
     "comment": "公式サイトに社名あり。所在地(東京都渋谷区)がofficialと一致、公式ドメインをmeetsmore/salesnowが示す",
     "after": "https://toridori.co.jp/"
    }
+  },
+  "review": {
+   "industry": {},
+   "at": "2026-10-08",
+   "note": "Yahooファイナンスも53だったので、EDINETを正としてよい。https://finance.yahoo.co.jp/quote/9337.T/profile",
+   "employeesValue": 53
   }
  },
  {
@@ -50576,12 +50672,26 @@
     "url": "https://jp.koala.com/",
     "snippet": "リンク文言「お問い合わせ」/ ページ実在とフォームの記述を確認",
     "at": "2026-10-07T01:30:59.144Z"
+   },
+   {
+    "field": "employees",
+    "value": 219,
+    "source": "human",
+    "url": "",
+    "snippet": "人が確認(2026-10-08): 公式サイトから。https://jp.koala.com/pages/company",
+    "at": "2026-10-08T00:31:39.167Z"
    }
   ],
   "seedCategories": [
    "cosme_d2c"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "review": {
+   "industry": {},
+   "at": "2026-10-08",
+   "note": "公式サイトから。https://jp.koala.com/pages/company",
+   "employeesValue": 219
+  }
  },
  {
   "key": "井田ラボラトリズ",
@@ -78598,6 +78708,13 @@
     "comment": "公式サイトに社名あり。所在地(東京都渋谷区)がprtimes/officialと一致",
     "after": "https://ceres-inc.jp/"
    }
+  },
+  "review": {
+   "industry": {
+    "cosme_d2c": "NG"
+   },
+   "at": "2026-10-08",
+   "note": "化粧品ではないので却下"
   }
  },
  {
