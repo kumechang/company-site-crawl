@@ -14,7 +14,7 @@ import { parseCsv, toRecords, importReviewRows } from './review.js';
 import { writeReviewQueue } from './review-queue.js';
 import { robotsReport } from './robots-report.js';
 import { Progress, progressKey, applyRun, shouldSkip } from './lib/progress.js';
-import { verifyCompany, checkSig } from './verify.js';
+import { verifyCompany, checkSig, needsVerify } from './verify.js';
 import * as green from './sources/green.js';
 import * as wantedly from './sources/wantedly.js';
 import * as imitsu from './sources/imitsu.js';
@@ -345,7 +345,7 @@ async function verify() {
   const scopeCats = currentCat ? [currentCat] : opt.categories.split(',');
   // 検索元のカテゴリと判定されたカテゴリが1つも重ならない会社は、どのカテゴリのサンプルにも数えられないので検証しない
   const scoped = ok.filter(({ c, r }) => catsOf(c, r).some((k) => scopeCats.includes(k)));
-  const targets = scoped.filter(({ c, r }) => opt.reverify || c.checks?.sig !== checkSig(r, catsOf(c, r)));
+  const targets = scoped.filter(({ c, r }) => opt.reverify || needsVerify(c, checkSig(r, catsOf(c, r))));
   log(`# 検証: 判定OK ${ok.length}社のうち対象カテゴリ(${scopeCats.map((k) => CATEGORIES[k]?.label ?? k).join('/')})の${scoped.length}社、検証済みで変更なし ${scoped.length - targets.length}社は飛ばし、${targets.length}社を検証`);
   let i = 0;
   for (const { c, r } of targets) {

@@ -127,3 +127,50 @@ test('検証の署名: 入力が同じなら同じ、会社の情報・カテゴ
   assert.notEqual(checkSig(r, ['ad_agency']), checkSig(r, ['ad_agency', 'sns_agency'])); // 検証するカテゴリが増えた
   assert.ok(checkSig(r, []).startsWith(`[${VERIFY_VERSION},`)); // ロジックのバージョンを含む
 });
+
+import { isAccessFailure, checkContact, needsVerify, verifyCompany } from '../src/verify.js';
+import { HttpError, RobotsDisallowed } from '../src/lib/crawler.js';
+
+test('接続失敗の判定: robots.txt取得不可・403/429/5xx・タイムアウトは接続失敗、明示的なrobots禁止や404は違う', () => {
+  assert.equal(isAccessFailure(new RobotsDisallowed('robots.txt を取得できない(403)のためアクセスしない: https://a.jp/')), true);
+  assert.equal(isAccessFailure(new HttpError(403, 'https://a.jp/')), true);
+  assert.equal(isAccessFailure(new HttpError(503, 'https://a.jp/')), true);
+  assert.equal(isAccessFailure(new Error('Navigation timeout of 45000 ms exceeded')), true);
+  assert.equal(isAccessFailure(new RobotsDisallowed('robots.txt disallows https://a.jp/contact')), false);
+  assert.equal(isAccessFailure(new HttpError(404, 'https://a.jp/contact')), false);
+});
+
+test('問い合わせURL: 接続できなかったときはNGにせず要確認(accessFailed)、開けて404ならNG', async () => {
+  const r = { contactUrl: 'https://a.jp/contact', officialUrl: 'https://a.jp/' };
+  const fail = (e) => ({ snapshot: async () => { throw e; } });
+  const a = await checkContact({}, r, { crawler: fail(new RobotsDisallowed('robots.txt を取得できない(403)のためアクセスしない: x')), top: null });
+  assert.equal(a.result, '要確認');
+  assert.equal(a.accessFailed, true);
+  const b = await checkContact({}, r, { crawler: fail(new HttpError(404, 'x')), top: null });
+  assert.equal(b.result, 'NG');
+});
+
+test('再検証の要否: 入力が変わったとき、または接続失敗で別の環境のときだけ', () => {
+  const ok = { checks: { sig: 's' } };
+  assert.equal(needsVerify(ok, 's', 'actions'), false);
+  assert.equal(needsVerify(ok, 't', 'actions'), true);
+  const failed = { checks: { sig: 's', accessFailed: true, env: 'actions' } };
+  assert.equal(needsVerify(failed, 's', 'actions'), false);
+  assert.equal(needsVerify(failed, 's', 'local'), true);
+});
+
+test('検証: 公式サイトに接続できなかった記録は accessFailed と環境が残る', async () => {
+  const c = { evidence: [] };
+  const r = { name: '株式会社テスト', officialUrl: 'https://a.jp/', contactUrl: null, employees: null, categories: [], address: '東京都渋谷区1-1', evidence: {} };
+  const crawler = { snapshot: async () => { throw new RobotsDisallowed('robots.txt を取得できない(403)のためアクセスしない: x'); } };
+  const k = await verifyCompany(c, r, [], { crawler });
+  assert.equal(k.accessFailed, true);
+  assert.ok(k.env);
+});
+
+test('再検証の要否: 接続失敗がNGで保存された旧形式は取り直す', () => {
+  const old = { checks: { sig: 's', contact: { result: 'NG', comment: '問い合わせURLを開けない(robots.txt を取得できない(403)のためアクセスしない: https://a.jp/c)' } } };
+  assert.equal(needsVerify(old, 's', 'local'), true);
+  const real = { checks: { sig: 's', contact: { result: 'NG', comment: '問い合わせURLを開けない(HTTP 404 https://a.jp/c)' } } };
+  assert.equal(needsVerify(real, 's', 'local'), false);
+});
