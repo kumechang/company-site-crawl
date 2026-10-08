@@ -841,3 +841,12 @@ test('人の確認: 未検証で不足項目が1つの会社も一覧に出る',
   // 目標に届いているカテゴリは一覧に出さない
   assert.equal(buildReviewQueue([c], { okTarget: 0, categories: ['sns_agency'] }).rows.length, 0);
 });
+
+test('cli.js: 補助関数の定義が欠けていない（employees モードで定義の削除に気づけなかった不具合の再発防止）', () => {
+  const src = fs.readFileSync(new URL('../src/cli.js', import.meta.url), 'utf8');
+  const declared = new Set([...src.matchAll(/(?:^|\n)\s*(?:async\s+)?function\s+(\w+)|(?:^|\n)\s*(?:const|let)\s+(\w+)\s*=/g)].map((m) => m[1] ?? m[2]));
+  // cli.js の中で定義して、別の場所から呼ぶ補助関数・変数
+  for (const name of ['isEmployeeBottleneck', 'hasPendingEnrichment', 'lacksFirmEmployees', 'pickRound', 'prioritize', 'outsideTokyo', 'catFirst', 'employeesCmd', 'enrichEdinet', 'lookupAll', 'okCount', 'earlyStopFor', 'verify', 'enrich', 'sample']) {
+    assert.ok(declared.has(name), `${name} が cli.js に定義されていない`);
+  }
+});
