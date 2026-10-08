@@ -195,6 +195,7 @@ export const SITES = {
   aspic: { name: 'アスピック', status: 'ready' },
   article: { name: '比較・おすすめ記事(共通抽出)', status: 'ready', note: '見出し→「<名>は…」で始まる説明文の規則性から掲載企業を抽出。精度は記事ごとに差がある' },
   careertasu: { name: 'キャリタス就活', status: 'enrich', note: '会社名検索(GET /condition-search/result/?keyword=)→会社データで従業員数・本社所在地。新卒採用している会社のみ' },
+  renew: { name: 'Renew(長期インターン)', status: 'enrich', note: '会社名検索(GET /search?keyword=)→会社ページ(/companies/ID)で従業員数・本社・企業URL。インターン募集している会社のみ。?page= ?sort= は robots.txt で禁止のため使わない' },
   openwork: { name: 'OpenWork', status: 'enrich', note: '会社名検索(GET /company_list?src_str=)→会社ページで公式URL・所在地・社員数レンジ。口コミサイトのため規約は利用者が確認' },
   digitre: { name: 'デジトレ', status: 'ready', note: '東京都の広告代理店75社。会社ページに本社所在地(従業員数・公式URLなし)' },
   grip: { name: 'グリップ 広告代理店DB', status: 'ready', note: '会社ページに公式サイト・従業員数・法人番号。一覧は?page=N' },

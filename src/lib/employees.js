@@ -14,8 +14,8 @@ export function asOf(s) {
   return m ? { year: Number(m[1]), month: m[2] ? Number(m[2]) : null, label: `${m[1]}年${m[2] ? m[2] + '月' : ''}` } : null;
 }
 
-export const SOURCE_LABELS = { official: '公式サイト', edinet: '有価証券報告書(EDINET)', human: '人の確認', green: 'Green', wantedly: 'Wantedly', mynavi: 'マイナビ(新卒)', careertasu: 'キャリタス就活', openwork: 'OpenWork', gbizinfo: 'Gビズインフォ', salesnow: 'SalesNow', agencyhub: 'AgencyHub', grip: 'グリップ', houjingoo: '全国法人', pitact: 'PITACT', engage: 'engage', kyujinbox: '求人ボックス', stanby: 'スタンバイ' };
-export const RECRUIT_SOURCES = new Set(['green', 'wantedly', 'mynavi', 'careertasu', 'openwork', 'engage', 'kyujinbox', 'stanby']); // 採用サイト
+export const SOURCE_LABELS = { official: '公式サイト', edinet: '有価証券報告書(EDINET)', human: '人の確認', green: 'Green', wantedly: 'Wantedly', mynavi: 'マイナビ(新卒)', careertasu: 'キャリタス就活', renew: 'Renew(インターン求人)', openwork: 'OpenWork', gbizinfo: 'Gビズインフォ', salesnow: 'SalesNow', agencyhub: 'AgencyHub', grip: 'グリップ', houjingoo: '全国法人', pitact: 'PITACT', engage: 'engage', kyujinbox: '求人ボックス', stanby: 'スタンバイ' };
+export const RECRUIT_SOURCES = new Set(['green', 'wantedly', 'mynavi', 'careertasu', 'renew', 'openwork', 'engage', 'kyujinbox', 'stanby']); // 採用サイト
 
 /**
  * 従業員数の採用ルール(merge.js の pickEmployees で選んだ値の評価):

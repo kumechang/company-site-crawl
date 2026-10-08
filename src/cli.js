@@ -25,6 +25,7 @@ import * as gbizinfo from './sources/gbizinfo.js';
 import * as edinetSrc from './sources/edinet.js';
 import * as mynavi from './sources/mynavi.js';
 import * as careertasu from './sources/careertasu.js';
+import * as renew from './sources/renew.js';
 import * as openwork from './sources/openwork.js';
 import * as aspic from './sources/aspic.js';
 import * as webkanji from './sources/webkanji.js';
@@ -72,7 +73,7 @@ const { values: opt, positionals } = parseArgs({
     'no-early-stop': { type: 'boolean', default: false }, // 公式トップにカテゴリの語が無い会社も、会社概要・問い合わせまで巡回する
     refresh: { type: 'boolean', default: false }, // 「最後まで見た」一覧も先頭から取り直す
     'retry-failed': { type: 'boolean', default: false }, // 連続失敗で飛ばしている一覧も再試行する
-    skip: { type: 'string', default: '' }, // 補完で飛ばす情報源(カンマ区切り): salesnow,prtimes,gbizinfo,mynavi,careertasu,openwork（反応が無い/遅い媒体を一時的に外す用）
+    skip: { type: 'string', default: '' }, // 補完で飛ばす情報源(カンマ区切り): salesnow,prtimes,gbizinfo,mynavi,careertasu,renew,openwork（反応が無い/遅い媒体を一時的に外す用）
     help: { type: 'boolean', short: 'h', default: false },
   },
 });
@@ -100,7 +101,7 @@ const enrichLimit = Number(opt['enrich-limit']);
 // 見切り: 求人の一覧だけで見つかった会社(募集しているだけで事業は無関係なことが多い。観測では該当は約2割)は、
 // 公式トップに4カテゴリのどの語(主要語・関連語)も無ければ、概要・問い合わせの巡回を省く。トップが薄い(JS描画など)ときは判断しない
 const JOB_LIST_SOURCES = new Set(['kyujinbox', 'stanby', 'wantedly', 'green', 'engage']);
-const ENRICH_SOURCES = new Set(['official', 'edinet', 'gbizinfo', 'salesnow', 'openwork', 'mynavi', 'careertasu', 'prtimes']);
+const ENRICH_SOURCES = new Set(['official', 'edinet', 'gbizinfo', 'salesnow', 'openwork', 'mynavi', 'careertasu', 'renew', 'prtimes']);
 const CORE_WORDS = [...new Set(Object.values(INDUSTRY_CORE).flatMap((d) => [...d.main, ...(d.weak ?? [])]))];
 const foundOnlyByJobLists = (c) => {
   const srcs = new Set(c.sources.map((x) => x.source).filter((x) => !ENRICH_SOURCES.has(x)));
@@ -122,7 +123,7 @@ const earlyStopFor = (c) => {
  */
 let currentCat = null;
 let round = null; // この回に補完する会社のkey集合。null=制限なし
-let employeesOnly = false; // `employees` コマンド: 従業員数を取る手段(公式サイト巡回・有報・Gビズ・マイナビ・キャリタス・OpenWork)だけを使う
+let employeesOnly = false; // `employees` コマンド: 従業員数を取る手段(公式サイト巡回・有報・Gビズ・マイナビ・キャリタス・Renew・OpenWork)だけを使う
 const outsideTokyo = (c) => consolidate(c, { minEmployees }).tokyo === false; // 東京以外と分かっている会社は、補完しても対象外のままなので巡回・照会しない
 const catFirst = (c) => (currentCat && c.seedCategories.includes(currentCat) ? 0 : 1);
 const prioritize = (list) => list.filter((c) => !outsideTokyo(c) && (!round || round.has(c.key))).sort((a, b) => catFirst(a) - catFirst(b));
@@ -135,7 +136,7 @@ function hasPendingEnrichment(c) {
   const urlPending = !employeesOnly && !c.officialUrl && !skipped.has('prtimes') && !c.noPrtimes;
   // 各情報源の照会が、実際に対象にする条件と同じ(未照会・一致なしの印なし・証拠なし)で、まだ手が残っているか
   const left = (src, flag) => !skipped.has(src) && !c[flag] && !hasEv(src);
-  const empPending = noEmp && (left('gbizinfo', 'noGbiz') || left('mynavi', 'noMynavi') || left('careertasu', 'noCareertasu') || left('openwork', 'noOpenwork'));
+  const empPending = noEmp && (left('gbizinfo', 'noGbiz') || left('mynavi', 'noMynavi') || left('careertasu', 'noCareertasu') || left('renew', 'noRenew') || left('openwork', 'noOpenwork'));
   return Boolean(crawlPending || urlPending || empPending);
 }
 
@@ -490,10 +491,11 @@ async function enrich() {
     }
     log(`  → ${n}/${gb.length} 社が一致`);
   }
-  // 4) まだ従業員数が無い会社は、新卒向け媒体(マイナビ・キャリタス)の会社名検索 → OpenWork(社員数レンジ)の順で補完
+  // 4) まだ従業員数が無い会社は、新卒向け媒体(マイナビ・キャリタス)とインターン求人(Renew)の会社名検索 → OpenWork(社員数レンジ)の順で補完
   const noEmp = (src) => (c) => (employeesOnly ? lacksFirmEmployees(c) : !c.evidence.some((e) => e.field === 'employees')) && !c.evidence.some((e) => e.source === src);
   await lookupAll('マイナビ(新卒)', mynavi, 'noMynavi', noEmp('mynavi'));
   await lookupAll('キャリタス就活', careertasu, 'noCareertasu', noEmp('careertasu'));
+  await lookupAll('Renew(インターン求人)', renew, 'noRenew', noEmp('renew'));
   await lookupAll('OpenWork', openwork, 'noOpenwork', noEmp('openwork'));
 }
 

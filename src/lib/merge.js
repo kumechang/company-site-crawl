@@ -13,9 +13,9 @@ import { CATEGORIES } from '../../config/categories.js';
 export const LISTING_SITES = ['boxil', 'aspic', 'buzztan', 'webkanji', 'meetsmore', 'slidelib'];
 
 export const PRIORITY = {
-  employees: ['human', 'edinet', 'official', 'green', 'grip', 'mynavi', 'careertasu', 'gbizinfo', 'houjingoo', 'pitact', 'salesnow', 'agencyhub', 'openwork', 'imitsu', 'wantedly'],
+  employees: ['human', 'edinet', 'official', 'green', 'grip', 'mynavi', 'careertasu', 'renew', 'gbizinfo', 'houjingoo', 'pitact', 'salesnow', 'agencyhub', 'openwork', 'imitsu', 'wantedly'],
   contactUrl: ['human', 'official'], // 人が確認した問い合わせURLを最優先
-  address: ['human', 'edinet', 'official', 'mynavi', 'careertasu', 'gbizinfo', 'grip', 'houjingoo', 'pitact', 'jcia', 'openwork', 'green', 'salesnow', 'wantedly', 'imitsu'],
+  address: ['human', 'edinet', 'official', 'mynavi', 'careertasu', 'renew', 'gbizinfo', 'grip', 'houjingoo', 'pitact', 'jcia', 'openwork', 'green', 'salesnow', 'wantedly', 'imitsu'],
 };
 
 const rank = (field, source) => {

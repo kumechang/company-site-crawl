@@ -850,3 +850,38 @@ test('cli.js: 補助関数の定義が欠けていない（employees モード�
     assert.ok(declared.has(name), `${name} が cli.js に定義されていない`);
   }
 });
+
+import * as renew from '../src/sources/renew.js';
+
+test('Renew 検索結果・会社ページ', () => {
+  const card = (cid, jid, pref, name) => ({ href: `https://renew-career.com/companies/${cid}/joboffers/${jid}`, text: `NEW\n\n${pref}\n営業\n求人タイトル\n\n${name}\n\ncurrency_yen\n\n時給1,226円〜\n\nplace\n\n渋谷区猿楽町９−８` });
+  const rows = renew.parseResults({
+    anchors: [
+      card(539, 1636, '東京都', '株式会社Reaplus'),
+      { href: 'https://renew-career.com/companies/539/joboffers/1636', text: '求人を見る' },
+      card(539, 1641, '東京都', '株式会社Reaplus'),
+      card(193, 1748, '大阪府', '株式会社H4'),
+    ],
+  });
+  assert.deepEqual(rows.map((r) => [r.name, r.pref, r.url]), [['株式会社Reaplus', '東京都', 'https://renew-career.com/companies/539'], ['株式会社H4', '大阪府', 'https://renew-career.com/companies/193']]);
+  assert.equal(renew.pickEntry(rows, 'Reaplus', []).url, 'https://renew-career.com/companies/539');
+  assert.equal(renew.pickEntry(rows, '株式会社H4', ['東京都港区']), null); // 既知の住所と都道府県が合わない
+  assert.equal(renew.pickEntry(rows, '別の会社', []), null);
+  // 資本金の値が空でも、次のラベル(従業員数)を値として読まない
+  const d = renew.parseDetail('株式会社Reaplus\n事業内容\n本文\n会社概要\n会社名\n株式会社Reaplus\n業界\n広告/PR\n代表者名\n松元 詞音\n資本金\n従業員数\n26人\n本社\n東京都渋谷区猿楽町９−８ Urban Park 代官山I 208\n企業URL\nhttps://reaplus.jp/\n株式会社Reaplusの長期インターン求人一覧\n');
+  assert.deepEqual([d.name, d.employees, d.address, d.officialUrl], ['株式会社Reaplus', 26, '東京都渋谷区猿楽町９−８ Urban Park 代官山I 208', 'https://reaplus.jp/']);
+});
+
+test('Renew lookup: 一致すれば住所・従業員数・企業URLを証拠にする。一致なしはfalse、通信エラーはnull', async () => {
+  const mk = (pages) => ({ snapshot: async (u) => { if (!(u in pages)) throw new Error('HTTP 500 ' + u); return pages[u]; } });
+  const search = { anchors: [{ href: 'https://renew-career.com/companies/539/joboffers/1', text: '東京都\n営業\nT\n\n株式会社Reaplus\n\ncurrency_yen' }] };
+  const page = { text: '会社概要\n会社名\n株式会社Reaplus\n資本金\n従業員数\n26人\n本社\n東京都渋谷区猿楽町９−８\n企業URL\nhttps://reaplus.jp/\n' };
+  const base = 'https://renew-career.com';
+  const q = (n) => `${base}/search?keyword=${encodeURIComponent(n)}`;
+  const c = { name: '株式会社Reaplus', evidence: [], sources: [], officialUrl: null };
+  assert.equal(await renew.lookup(c, { crawler: mk({ [q('株式会社Reaplus')]: search, [`${base}/companies/539`]: page }), log() {} }), true);
+  const ev = (f) => c.evidence.filter((e) => e.field === f && e.source === 'renew').map((e) => e.value);
+  assert.deepEqual([ev('employees'), ev('address'), ev('officialUrl')], [[26], ['東京都渋谷区猿楽町９−８'], ['https://reaplus.jp/']]);
+  assert.equal(await renew.lookup({ name: '別の会社', evidence: [], sources: [] }, { crawler: mk({ [q('別の会社')]: search }), log() {} }), false);
+  assert.equal(await renew.lookup({ name: '別の会社', evidence: [], sources: [] }, { crawler: mk({}), log() {} }), null);
+});

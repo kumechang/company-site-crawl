@@ -30,6 +30,7 @@ export const ORIGINS = {
   grip: 'https://grip-space.co.jp',
   digitre: 'https://www.digi-tre.com',
   careertasu: 'https://job.career-tasu.jp',
+  renew: 'https://renew-career.com',
   openwork: 'https://www.openwork.jp',
   houjingoo: 'https://houjin.goo.to',
   pitact: 'https://pitact.com',
