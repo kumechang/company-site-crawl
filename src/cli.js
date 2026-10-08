@@ -84,12 +84,13 @@ const HELP = `使い方: node src/cli.js <command> [options]
   run        discover → enrich → export を一括実行
   sample     カテゴリごとに「発見→補完→判定OKの件数」を繰り返し、OKが --ok 件に達したら次のカテゴリへ
   import-review [file]  人の確認(data/review_input.csv)を取り込む。確認用の一覧は export が data/review_queue.csv に出す
+  employees  従業員数だけが不足して確定できない会社(目標未達のカテゴリ)の従業員数だけを取りに行き、検証する。サンプルを早く完成させる用
   verify     判定OKの会社を4観点(業種・従業員数・問い合わせURL・企業取り違え)で自己検証し、OK/要確認/NGを付ける
   robots     全媒体の robots.txt を取得し、使うURLが許可されているか一覧にする
 オプション: --target N(カテゴリ目標社数)  --per-query N  --sources green,wantedly,imitsu  --categories cosme_d2c,...  --delay ms  --no-cache`;
 
 const cmd = positionals[0];
-if (!cmd || opt.help || !['discover', 'enrich', 'export', 'run', 'robots', 'sample', 'verify', 'import-review'].includes(cmd)) {
+if (!cmd || opt.help || !['discover', 'enrich', 'export', 'run', 'robots', 'sample', 'verify', 'import-review', 'employees'].includes(cmd)) {
   console.log(HELP);
   process.exit(cmd ? 0 : 1);
 }
@@ -121,6 +122,7 @@ const earlyStopFor = (c) => {
  */
 let currentCat = null;
 let round = null; // この回に補完する会社のkey集合。null=制限なし
+let employeesOnly = false; // `employees` コマンド: 従業員数を取る手段(公式サイト巡回・有報・Gビズ・マイナビ・キャリタス・OpenWork)だけを使う
 const outsideTokyo = (c) => consolidate(c, { minEmployees }).tokyo === false; // 東京以外と分かっている会社は、補完しても対象外のままなので巡回・照会しない
 const catFirst = (c) => (currentCat && c.seedCategories.includes(currentCat) ? 0 : 1);
 const prioritize = (list) => list.filter((c) => !outsideTokyo(c) && (!round || round.has(c.key))).sort((a, b) => catFirst(a) - catFirst(b));
@@ -129,13 +131,26 @@ const prioritize = (list) => list.filter((c) => !outsideTokyo(c) && (!round || r
 function hasPendingEnrichment(c) {
   const noEmp = !c.evidence.some((e) => e.field === 'employees');
   const crawlPending = (c.officialUrl || bestOfficial(c)) && !c.evidence.some((e) => e.source === 'official');
-  const urlPending = !c.officialUrl && !skipped.has('prtimes') && !c.noPrtimes;
+  const urlPending = !employeesOnly && !c.officialUrl && !skipped.has('prtimes') && !c.noPrtimes;
   const empPending = noEmp && ((!skipped.has('gbizinfo') && !c.noGbiz) || (!skipped.has('mynavi') && !c.noMynavi) || (!skipped.has('careertasu') && !c.noCareertasu) || (!skipped.has('openwork') && !c.noOpenwork));
   return Boolean(crawlPending || urlPending || empPending);
 }
 
+/** 従業員数だけが不足して、確定できない会社(いま作っているカテゴリで、カテゴリは該当・他の項目は揃っている) */
+function isEmployeeBottleneck(c) {
+  const r = consolidate(c, { minEmployees });
+  if (r.status !== '要確認' || !r.missing.length || !r.missing.every((m) => /^従業員数/.test(m))) return false;
+  const def = currentCat ? CATEGORIES[currentCat] : null;
+  return !def || (c.seedCategories.includes(currentCat) && r.categories.includes(def.label));
+}
+
 /** この回の補完対象を選ぶ（いま作っているカテゴリの会社を優先。補完の手が残っている会社だけ） */
 function pickRound() {
+  if (employeesOnly) {
+    // 従業員数だけを取りに行くモード: 従業員数だけが不足している会社に絞る（--enrich-limit があれば、その数まで）
+    const cand = store.all().filter((c) => isEmployeeBottleneck(c) && !outsideTokyo(c) && hasPendingEnrichment(c));
+    return new Set((enrichLimit > 0 ? cand.slice(0, enrichLimit) : cand).map((c) => c.key));
+  }
   if (!(enrichLimit > 0)) return null;
   const cand = store.all().filter((c) => !outsideTokyo(c) && hasPendingEnrichment(c)).sort((a, b) => catFirst(a) - catFirst(b));
   return new Set(cand.slice(0, enrichLimit).map((c) => c.key));
@@ -266,6 +281,28 @@ async function discover() {
 }
 
 /** サンプル作成: 媒体ごとに 発見 → 補完 → 「判定OK」件数を数え、目標(--ok)に達したらそのカテゴリを終える */
+/** 従業員数だけを取りに行く: 目標未達のカテゴリごとに、従業員数が唯一の不足項目の会社を補完 → 検証。取る手段が尽きた会社は、確認用CSV(export)で人が補う */
+async function employeesCmd() {
+  const okTarget = Number(opt.ok);
+  employeesOnly = true;
+  for (const cat of opt.categories.split(',')) {
+    const def = CATEGORIES[cat];
+    if (!def) throw new Error(`unknown category ${cat}`);
+    currentCat = cat;
+    const have = okCount(cat);
+    const all = store.all().filter(isEmployeeBottleneck);
+    log(`# ${def.label}: 検証OK ${have}/${okTarget}件。従業員数だけが不足している会社 ${all.length}社`);
+    if (have >= okTarget) {
+      log('  目標に達しているため飛ばす');
+      continue;
+    }
+    await enrich();
+    await verify();
+    const rest = store.all().filter(isEmployeeBottleneck);
+    log(`  → 検証OK ${okCount(cat)}/${okTarget}件。従業員数がまだ取れていない会社 ${rest.length}社（取る手段が尽きた会社は確認用CSVで人が補う）`);
+  }
+}
+
 async function sample() {
   const okTarget = Number(opt.ok);
   const only = opt.sources ? opt.sources.split(',') : null;
@@ -379,9 +416,9 @@ async function enrichEdinet() {
 async function enrich() {
   round = pickRound();
   if (round) log(`# 今回の補完対象: ${round.size}社（--enrich-limit ${enrichLimit}。各段階はこの会社の中だけで進める）`);
-  // 1) SalesNow の索引で、公式URLまたは従業員数が足りない会社を補完
+  // 1) SalesNow の索引で、公式URLまたは従業員数が足りない会社を補完（employees モードでは、URL探しの 1)〜1c) は行わない）
   const needs = (c) => !c.officialUrl || !c.evidence.some((e) => e.field === 'employees');
-  const lacking = skipped.has('salesnow') ? [] : prioritize(store.all().filter((c) => needs(c) && !c.evidence.some((e) => e.source === 'salesnow') && !c.noSalesnow));
+  const lacking = skipped.has('salesnow') || employeesOnly ? [] : prioritize(store.all().filter((c) => needs(c) && !c.evidence.some((e) => e.source === 'salesnow') && !c.noSalesnow));
   if (lacking.length) {
     log(`# SalesNow で補完: ${lacking.length} 社（索引を作成）`);
     const index = await salesnow.buildIndex(SALESNOW_INDEX_URLS, { crawler, log, maxPages: Number(opt['salesnow-pages']) });
@@ -396,7 +433,7 @@ async function enrich() {
   }
   // 1b) まだ公式URLが無い会社は PR TIMES の企業ページ(会社名が完全一致した場合のみ)で解決
   // 公式URLが無い、または製品ページ系の媒体由来のみ(本体サイトでない可能性)の会社が対象
-  const noUrl = skipped.has('prtimes') ? [] : prioritize(store.all().filter((c) => (!c.officialUrl || needsCorporateUrl(c)) && !c.evidence.some((e) => e.source === 'prtimes') && !c.noPrtimes));
+  const noUrl = skipped.has('prtimes') || employeesOnly ? [] : prioritize(store.all().filter((c) => (!c.officialUrl || needsCorporateUrl(c)) && !c.evidence.some((e) => e.source === 'prtimes') && !c.noPrtimes));
   if (noUrl.length) {
     log(`# PR TIMES で公式URLを解決: ${noUrl.length} 社`);
     let n = 0;
@@ -411,7 +448,7 @@ async function enrich() {
     store.save();
   }
   // 1c) それでも公式URLが無い会社は OpenWork の会社名検索（会社名が完全一致した場合のみ）で公式URL・所在地・社員数レンジを補完
-  await lookupAll('OpenWork', openwork, 'noOpenwork', (c) => !c.officialUrl && !c.evidence.some((e) => e.source === 'openwork'));
+  if (!employeesOnly) await lookupAll('OpenWork', openwork, 'noOpenwork', (c) => !c.officialUrl && !c.evidence.some((e) => e.source === 'openwork'));
   // 2) 公式サイトを巡回（従業員数・住所・問い合わせURL）
   // 公式URLの採用が変わった会社は、以前のサイト由来の情報を破棄して取り直す
   for (const c of store.all()) {
@@ -482,6 +519,7 @@ try {
   if (cmd !== 'export') await crawler.launch();
   if (cmd === 'discover' || cmd === 'run') await discover();
   if (cmd === 'sample') await sample();
+  if (cmd === 'employees') await employeesCmd();
   if (cmd === 'verify') await verify();
   if (cmd === 'enrich' || cmd === 'run') await enrich();
   const rows = exportAll(store.all(), { minEmployees });
