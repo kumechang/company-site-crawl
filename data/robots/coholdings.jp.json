@@ -1,0 +1,6 @@
+{
+ "origin": "https://coholdings.jp",
+ "fetchedAt": "2026-10-08T01:18:37.358Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wp/wp-admin/\nAllow: /wp/wp-admin/admin-ajax.php\n\nSitemap: https://coholdings.jp/sitemap.xml\nSitemap: https://coholdings.jp/sitemap.rss\n"
+}

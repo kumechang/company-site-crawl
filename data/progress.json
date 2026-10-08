@@ -264,37 +264,37 @@
   "lastAt": "2026-10-08T01:07:36.908Z"
  },
  "cosme_d2c|salesnow|https://salesnow.jp/db/industries/retail-sales/subIndustries/cosmetics-sales": {
-  "nextPage": 2,
+  "nextPage": 3,
   "offset": 0,
-  "found": 40,
+  "found": 80,
   "exhausted": false,
   "failures": 0,
   "lastError": null,
   "failedAt": null,
-  "runs": 1,
-  "lastAt": "2026-10-07T16:39:04.895Z"
+  "runs": 2,
+  "lastAt": "2026-10-08T01:16:20.380Z"
  },
  "cosme_d2c|jcia|https://www.jcia.org/admin/memberlist": {
   "nextPage": 1,
-  "offset": 40,
-  "found": 40,
+  "offset": 80,
+  "found": 80,
   "exhausted": false,
   "failures": 0,
   "lastError": null,
   "failedAt": null,
-  "runs": 1,
-  "lastAt": "2026-10-07T16:39:17.239Z"
+  "runs": 2,
+  "lastAt": "2026-10-08T01:21:00.383Z"
  },
  "cosme_d2c|green|https://www.green-japan.com/search/area/13/industry/130120": {
   "nextPage": 1,
-  "offset": 8,
-  "found": 8,
+  "offset": 10,
+  "found": 10,
   "exhausted": false,
   "failures": 0,
   "lastError": null,
   "failedAt": null,
-  "runs": 1,
-  "lastAt": "2026-10-07T16:41:19.178Z"
+  "runs": 2,
+  "lastAt": "2026-10-08T01:26:15.252Z"
  },
  "cosme_d2c|jaro|https://www.jaro.or.jp/kaiinsha/": {
   "nextPage": 1,

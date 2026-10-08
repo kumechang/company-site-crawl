@@ -1,0 +1,6 @@
+{
+ "origin": "https://ginza-stefany.com",
+ "fetchedAt": "2026-10-08T01:23:05.088Z",
+ "status": 200,
+ "text": "User-agent: *\nDisallow: /wps/wp-admin/\nAllow: /wps/wp-admin/admin-ajax.php\n\nSitemap: https://ginza-stefany.com/wp-sitemap.xml\n"
+}

@@ -1,0 +1,7 @@
+{
+ "origin": "https://alpenrose.co.jp",
+ "fetchedAt": "2026-10-08T01:18:56.327Z",
+ "status": "error",
+ "text": "",
+ "error": "net::ERR_CERT_DATE_INVALID at https://alpenrose.co.jp/robots.txt"
+}

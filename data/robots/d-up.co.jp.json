@@ -1,0 +1,6 @@
+{
+ "origin": "https://d-up.co.jp",
+ "fetchedAt": "2026-10-08T01:22:35.471Z",
+ "status": 200,
+ "text": "User-agent: Bytespider\nDisallow: /\n\nUser-agent: MJ12bot\nDisallow: /\n\nUser-agent: DotBot\nDisallow: /\n\nUser-agent: AhrefsBot\nDisallow: /\n\nUser-agent: Baiduspider\nDisallow: /\n\nUser-agent: Amazonbot\nDisallow: /\n\nUser-agent: SemrushBot\nDisallow: /\n\nUser-agent: PetalBot\nDisallow: /\n\nUser-agent: *\nCrawl-delay: 10"
+}
