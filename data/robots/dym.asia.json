@@ -1,6 +1,6 @@
 {
  "origin": "https://dym.asia",
- "fetchedAt": "2026-10-06T23:31:18.709Z",
+ "fetchedAt": "2026-10-08T00:41:16.687Z",
  "status": 200,
  "text": "User-Agent: *\nAllow: /\n\nUser-Agent: Baiduspider\nDisallow: /news/*/services/m&a/\nDisallow: /news/*/common/js/\n\nSitemap: https://dym.asia/sitemap.xml\nSitemap: https://dym.asia/sitemap-main.xml\nSitemap: https://dym.asia/media_sitemap.xml\nSitemap: https://dym.asia/news_sitemap.xml\nSitemap: https://dym.asia/medirun_sitemap.xml\nSitemap: https://dym.asia/biznavi_sitemap.xml\n"
 }

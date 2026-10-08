@@ -1,6 +1,6 @@
 {
  "origin": "https://www.2wayworld.jp",
- "fetchedAt": "2026-10-07T14:29:08.910Z",
+ "fetchedAt": "2026-10-08T00:49:15.862Z",
  "status": 200,
  "text": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\nDisallow: /mother-and-daughter/\n\nSitemap: https://www.2wayworld.jp/sitemap.xml\n"
 }

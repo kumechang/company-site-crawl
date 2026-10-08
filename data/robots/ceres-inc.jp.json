@@ -1,6 +1,6 @@
 {
  "origin": "https://ceres-inc.jp",
- "fetchedAt": "2026-10-07T15:41:57.619Z",
+ "fetchedAt": "2026-10-08T00:46:00.491Z",
  "status": 200,
  "text": "User-agent: *\nDisallow: /assets/scss/\nDisallow: /assets/css_preview/\nDisallow: /index/preview/\nDisallow: /index/complete/\nDisallow: /company/officer/preview/\nDisallow: /company/history/preview/\nDisallow: /business/mobile/preview/\nDisallow: /business/financial/preview/\nDisallow: /pr/complete/\nDisallow: /ir/complete/"
 }

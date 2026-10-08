@@ -1,6 +1,6 @@
 {
  "origin": "https://find-model.jp",
- "fetchedAt": "2026-10-07T14:15:42.742Z",
+ "fetchedAt": "2026-10-08T00:43:49.867Z",
  "status": 200,
  "text": "User-agent: *\nAllow: /\nDisallow: /api/\nDisallow: /admin/\nDisallow: /users/edit\nDisallow: /users/edit_account\nDisallow: /users/edit_option\nDisallow: /users/init_profiles\nDisallow: /users/sign_in\nDisallow: /login\nDisallow: /login_email\nDisallow: /login_instagram\nDisallow: /login_instagram_code\nDisallow: /regist_instagram\nDisallow: /user_login\nDisallow: /user_regist\nDisallow: /password/reset\nDisallow: /recruits/my_index\n\nSitemap: https://find-model.jp/sitemap.xml\n"
 }

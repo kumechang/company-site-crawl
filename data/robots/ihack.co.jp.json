@@ -1,6 +1,6 @@
 {
  "origin": "https://ihack.co.jp",
- "fetchedAt": "2026-10-07T15:41:10.438Z",
+ "fetchedAt": "2026-10-08T00:45:52.137Z",
  "status": 200,
  "text": "User-Agent: *\nAllow: /\nDisallow: /api/\n\nHost: https://ihack.co.jp\nSitemap: https://ihack.co.jp/sitemap.xml\n"
 }

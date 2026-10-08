@@ -882,7 +882,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XTO4,,",
     "snippet": "EDINETコード E34484 / 上場 証券コード7044 / サービス業",
-    "at": "2026-10-07T16:51:29.222Z"
+    "at": "2026-10-08T00:46:12.284Z"
    },
    {
     "field": "address",
@@ -890,7 +890,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XTO4,,",
     "snippet": "EDINETコード一覧の本店所在地: 渋谷区恵比寿四丁目２０番３号恵比寿ガーデンプレイスタワー１３階",
-    "at": "2026-10-07T16:51:29.222Z"
+    "at": "2026-10-08T00:46:12.284Z"
    },
    {
     "field": "employees",
@@ -898,7 +898,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XTO4,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月27日提出・書類ID S100XTO4） 提出会社単体の従業員数 108名",
-    "at": "2026-10-07T16:51:29.222Z"
+    "at": "2026-10-08T00:46:12.284Z"
    },
    {
     "field": "employeesConsolidated",
@@ -906,7 +906,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XTO4,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月27日提出・書類ID S100XTO4） 連結の従業員数 161名",
-    "at": "2026-10-07T16:51:29.222Z"
+    "at": "2026-10-08T00:46:12.284Z"
    }
   ],
   "seedCategories": [
@@ -928,8 +928,8 @@
   ],
   "contactUrl": null,
   "checks": {
-   "verifiedAt": "2026-10-07",
-   "sig": "[2,[\"influencer_agency\"],\"https://www.piala.co.jp/\",\"東京都渋谷区恵比寿四丁目20番3号恵比寿ガーデンプレイスタワー13階\",108,\"edinet\",\"https://www.piala.co.jp/contact\",[\"インフルエンサー事務所\"]]",
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"influencer_agency\"],\"https://www.piala.co.jp/\",\"東京都渋谷区恵比寿四丁目20番3号恵比寿ガーデンプレイスタワー13階\",108,\"edinet\",\"https://www.piala.co.jp/contact\",[\"インフルエンサー事務所\"]]",
    "industry": {
     "influencer_agency": {
      "result": "NG",
@@ -939,7 +939,7 @@
    },
    "employees": {
     "result": "OK",
-    "comment": "有価証券報告書(EDINET)で108名（2025年12月時点）。他の情報源(salesnow=133)とも概ね整合",
+    "comment": "有価証券報告書(EDINET)で108名（2025年12月時点） / 公式サイトでは確認できず、公式サイト以外(有価証券報告書(EDINET))の値を採用（2025年12月時点） / 他の情報源(SalesNow=133)とも概ね整合",
     "after": 108,
     "asOf": "2025年12月",
     "source": "edinet"
@@ -1309,8 +1309,8 @@
   ],
   "contactUrl": null,
   "checks": {
-   "verifiedAt": "2026-10-07",
-   "sig": "[2,[\"influencer_agency\",\"sns_agency\"],\"https://andthen.co.jp/\",\"東京都渋谷区千駄ヶ谷3-51-6 GrandStory千駄ヶ谷 3F / 4F\",23,\"official\",\"https://andthen.co.jp/contact\",[\"インフルエンサー事務所\",\"広告代理店\",\"SNS運用代行\"]]",
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"influencer_agency\",\"sns_agency\"],\"https://andthen.co.jp/\",\"東京都渋谷区千駄ヶ谷3-51-6 GrandStory千駄ヶ谷 3F / 4F\",23,\"official\",\"https://andthen.co.jp/contact\",[\"インフルエンサー事務所\",\"広告代理店\",\"SNS運用代行\"]]",
    "industry": {
     "influencer_agency": {
      "result": "OK",
@@ -1324,8 +1324,8 @@
     }
    },
    "employees": {
-    "result": "NG",
-    "comment": "official=23名に対しsalesnow=3名と7.7倍の乖離。別会社の数字の可能性",
+    "result": "OK",
+    "comment": "公式サイトで23名 / 他の情報源のSalesNow=3名とは差がある(7.7倍)。調査時点・集計範囲の違いの可能性",
     "after": 23,
     "asOf": null,
     "source": "official"
@@ -1980,7 +1980,40 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"influencer_agency\",\"sns_agency\"],\"https://dym.bz/\",\"東京都品川区大崎一丁目11番2号 ゲートシティ大崎イーストタワー10階\",686,\"green\",\"https://dym.asia/contact/\",[\"インフルエンサー事務所\",\"広告代理店\",\"SNS運用代行\"]]",
+   "industry": {
+    "influencer_agency": {
+     "result": "OK",
+     "comment": "公式サイトの本文に「インフルエンサー/クリエイター」が複数あり、インフルエンサー事務所を取り扱っている（自社説明の冒頭には無く、主業でない可能性）（他に DX/人材 等の事業もあり、インフルエンサー事務所は主業でない可能性）",
+     "after": "インフルエンサー事務所"
+    },
+    "sns_agency": {
+     "result": "OK",
+     "comment": "公式サイトの本文に「SNSアカウント運用/Instagram運用/TikTok運用」が複数あり、SNS運用代行を取り扱っている（自社説明の冒頭には無く、主業でない可能性）（他に DX/人材 等の事業もあり、SNS運用代行は主業でない可能性）",
+     "after": "SNS運用代行"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "Greenで686名 / 公式サイトでは確認できず、採用サイト(Green)の値を採用（時点の記載なし） / 他の情報源(SalesNow=631)とも概ね整合",
+    "after": 686,
+    "asOf": null,
+    "source": "green"
+   },
+   "contact": {
+    "result": "NG",
+    "comment": "問い合わせURLが公式サイト(dym.bz)と無関係のドメイン(dym.asia)",
+    "after": null
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都品川区)がsalesnow/imitsu/official/greenと一致、公式ドメインをwantedly/salesnowが示す",
+    "after": "https://dym.bz/"
+   }
+  }
  },
  {
   "key": "ハマンドット",
@@ -2911,7 +2944,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100X5W6,,",
     "snippet": "EDINETコード E36351 / 上場 証券コード4176 / サービス業",
-    "at": "2026-10-07T16:51:29.258Z"
+    "at": "2026-10-08T00:46:12.323Z"
    },
    {
     "field": "address",
@@ -2919,7 +2952,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100X5W6,,",
     "snippet": "EDINETコード一覧の本店所在地: 渋谷区桜丘町２０番１号",
-    "at": "2026-10-07T16:51:29.258Z"
+    "at": "2026-10-08T00:46:12.323Z"
    },
    {
     "field": "employees",
@@ -2927,7 +2960,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100X5W6,,",
     "snippet": "有価証券報告書 2025年8月期（2025年11月20日提出・書類ID S100X5W6） 提出会社単体の従業員数 219名",
-    "at": "2026-10-07T16:51:29.258Z"
+    "at": "2026-10-08T00:46:12.323Z"
    },
    {
     "field": "employeesConsolidated",
@@ -2935,7 +2968,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100X5W6,,",
     "snippet": "有価証券報告書 2025年8月期（2025年11月20日提出・書類ID S100X5W6） 連結の従業員数 266名",
-    "at": "2026-10-07T16:51:29.258Z"
+    "at": "2026-10-08T00:46:12.323Z"
    }
   ],
   "seedCategories": [
@@ -3787,7 +3820,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YJTH,,",
     "snippet": "EDINETコード E34487 / 上場 証券コード7046 / サービス業",
-    "at": "2026-10-07T16:51:29.274Z"
+    "at": "2026-10-08T00:46:12.338Z"
    },
    {
     "field": "address",
@@ -3795,7 +3828,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YJTH,,",
     "snippet": "EDINETコード一覧の本店所在地: 新宿区西新宿三丁目２０番２号",
-    "at": "2026-10-07T16:51:29.274Z"
+    "at": "2026-10-08T00:46:12.338Z"
    },
    {
     "field": "employees",
@@ -3803,7 +3836,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YJTH,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月26日提出・書類ID S100YJTH） 提出会社単体の従業員数 170名",
-    "at": "2026-10-07T16:51:29.274Z"
+    "at": "2026-10-08T00:46:12.338Z"
    }
   ],
   "seedCategories": [
@@ -4130,7 +4163,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XD0A,,",
     "snippet": "EDINETコード E36635 / 上場 証券コード4071 / サービス業",
-    "at": "2026-10-07T16:51:29.280Z"
+    "at": "2026-10-08T00:46:12.344Z"
    },
    {
     "field": "address",
@@ -4138,7 +4171,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XD0A,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区東新橋一丁目９番２号汐留住友ビル２５階",
-    "at": "2026-10-07T16:51:29.280Z"
+    "at": "2026-10-08T00:46:12.344Z"
    },
    {
     "field": "employees",
@@ -4146,7 +4179,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XD0A,,",
     "snippet": "有価証券報告書 2025年9月期（2025年12月25日提出・書類ID S100XD0A） 提出会社単体の従業員数 344名",
-    "at": "2026-10-07T16:51:29.280Z"
+    "at": "2026-10-08T00:46:12.344Z"
    },
    {
     "field": "employeesConsolidated",
@@ -4154,7 +4187,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XD0A,,",
     "snippet": "有価証券報告書 2025年9月期（2025年12月25日提出・書類ID S100XD0A） 連結の従業員数 469名",
-    "at": "2026-10-07T16:51:29.280Z"
+    "at": "2026-10-08T00:46:12.344Z"
    }
   ],
   "seedCategories": [
@@ -5013,7 +5046,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YI9F,,",
     "snippet": "EDINETコード E36123 / 上場 証券コード7694 / サービス業",
-    "at": "2026-10-07T16:51:29.298Z"
+    "at": "2026-10-08T00:46:12.363Z"
    },
    {
     "field": "address",
@@ -5021,7 +5054,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YI9F,,",
     "snippet": "EDINETコード一覧の本店所在地: 千代田区有楽町１－１３－２　第一生命日比谷ファースト",
-    "at": "2026-10-07T16:51:29.298Z"
+    "at": "2026-10-08T00:46:12.363Z"
    },
    {
     "field": "employees",
@@ -5029,7 +5062,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YI9F,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月24日提出・書類ID S100YI9F） 提出会社単体の従業員数 200名",
-    "at": "2026-10-07T16:51:29.298Z"
+    "at": "2026-10-08T00:46:12.363Z"
    },
    {
     "field": "employeesConsolidated",
@@ -5037,7 +5070,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YI9F,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月24日提出・書類ID S100YI9F） 連結の従業員数 212名",
-    "at": "2026-10-07T16:51:29.298Z"
+    "at": "2026-10-08T00:46:12.363Z"
    }
   ],
   "seedCategories": [
@@ -5875,7 +5908,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XUBY,,",
     "snippet": "EDINETコード E05497 / 上場 証券コード3775 / 情報・通信業",
-    "at": "2026-10-07T16:51:29.319Z"
+    "at": "2026-10-08T00:46:12.384Z"
    },
    {
     "field": "address",
@@ -5883,7 +5916,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XUBY,,",
     "snippet": "EDINETコード一覧の本店所在地: 千代田区平河町２丁目５番地３号",
-    "at": "2026-10-07T16:51:29.319Z"
+    "at": "2026-10-08T00:46:12.384Z"
    },
    {
     "field": "employees",
@@ -5891,7 +5924,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XUBY,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月26日提出・書類ID S100XUBY） 提出会社単体の従業員数 101名",
-    "at": "2026-10-07T16:51:29.319Z"
+    "at": "2026-10-08T00:46:12.384Z"
    },
    {
     "field": "employeesConsolidated",
@@ -5899,7 +5932,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XUBY,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月26日提出・書類ID S100XUBY） 連結の従業員数 124名",
-    "at": "2026-10-07T16:51:29.319Z"
+    "at": "2026-10-08T00:46:12.384Z"
    }
   ],
   "seedCategories": [
@@ -6257,6 +6290,39 @@
    "at": "2026-10-08",
    "note": "直近のdodaの数字を採用。人の入れ替わりが多いと考えられる。https://doda.jp/DodaFront/View/JobSearchDetail/j_jid__3015662000/",
    "employeesValue": 84
+  },
+  "checks": {
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"influencer_agency\",\"sns_agency\"],\"http://grove.tokyo/\",\"東京都港区六本木6-10-1 六本木ヒルズ森タワー31階\",84,\"human\",\"https://grove.tokyo/contact/\",[\"インフルエンサー事務所\",\"SNS運用代行\"]]",
+   "industry": {
+    "influencer_agency": {
+     "result": "OK",
+     "comment": "公式の自社説明に「インフルエンサー/クリエイター」あり。インフルエンサー事務所を取り扱っている（他に DX 等の事業もあり、インフルエンサー事務所は主業でない可能性）",
+     "after": "インフルエンサー事務所"
+    },
+    "sns_agency": {
+     "result": "要確認",
+     "comment": "公式サイトにSNS運用代行を示す具体的な語がなく、関連語(SNS/インフルエンサー)のみ。取り扱いの有無は要確認",
+     "after": null
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "人の確認で84名 / 従業員数は人が確認した値",
+    "after": 84,
+    "asOf": null,
+    "source": "human"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://grove.tokyo/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都港区)がbuzztan/gbizinfoと一致、公式ドメインをbuzztan/meetsmore/openworkが示す / 同名企業が複数ありうる(照合時に既知の住所で絞り込み済み)",
+    "after": "http://grove.tokyo/"
+   }
   }
  },
  {
@@ -7067,7 +7133,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XTX2,,",
     "snippet": "EDINETコード E30091 / 上場 証券コード3680 / サービス業",
-    "at": "2026-10-07T16:51:29.340Z"
+    "at": "2026-10-08T00:46:12.405Z"
    },
    {
     "field": "address",
@@ -7075,7 +7141,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XTX2,,",
     "snippet": "EDINETコード一覧の本店所在地: 千代田区富士見１－３－１１",
-    "at": "2026-10-07T16:51:29.340Z"
+    "at": "2026-10-08T00:46:12.405Z"
    },
    {
     "field": "employees",
@@ -7083,7 +7149,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XTX2,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月26日提出・書類ID S100XTX2） 提出会社単体の従業員数 119名",
-    "at": "2026-10-07T16:51:29.340Z"
+    "at": "2026-10-08T00:46:12.405Z"
    },
    {
     "field": "employeesConsolidated",
@@ -7091,7 +7157,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XTX2,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月26日提出・書類ID S100XTX2） 連結の従業員数 136名",
-    "at": "2026-10-07T16:51:29.340Z"
+    "at": "2026-10-08T00:46:12.405Z"
    }
   ],
   "seedCategories": [
@@ -7959,7 +8025,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y16K,,",
     "snippet": "EDINETコード E36213 / 上場 証券コード4174 / 情報・通信業",
-    "at": "2026-10-07T16:51:29.359Z"
+    "at": "2026-10-08T00:46:12.422Z"
    },
    {
     "field": "address",
@@ -7967,7 +8033,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y16K,,",
     "snippet": "EDINETコード一覧の本店所在地: 渋谷区桜丘町１番１号",
-    "at": "2026-10-07T16:51:29.359Z"
+    "at": "2026-10-08T00:46:12.422Z"
    },
    {
     "field": "employees",
@@ -7975,7 +8041,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y16K,,",
     "snippet": "有価証券報告書 2026年1月期（2026年4月28日提出・書類ID S100Y16K） 提出会社単体の従業員数 386名",
-    "at": "2026-10-07T16:51:29.359Z"
+    "at": "2026-10-08T00:46:12.422Z"
    },
    {
     "field": "employeesConsolidated",
@@ -7983,7 +8049,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y16K,,",
     "snippet": "有価証券報告書 2026年1月期（2026年4月28日提出・書類ID S100Y16K） 連結の従業員数 820名",
-    "at": "2026-10-07T16:51:29.359Z"
+    "at": "2026-10-08T00:46:12.422Z"
    }
   ],
   "seedCategories": [
@@ -11843,7 +11909,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XUHG,,",
     "snippet": "EDINETコード E37466 / 上場 証券コード5027 / 情報・通信業",
-    "at": "2026-10-07T16:51:29.450Z"
+    "at": "2026-10-08T00:46:12.515Z"
    },
    {
     "field": "address",
@@ -11851,7 +11917,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XUHG,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区六本木六丁目１０番１号六本木ヒルズ森タワー３１階",
-    "at": "2026-10-07T16:51:29.450Z"
+    "at": "2026-10-08T00:46:12.515Z"
    },
    {
     "field": "employees",
@@ -11859,7 +11925,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XUHG,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月26日提出・書類ID S100XUHG） 連結の従業員数 2160名",
-    "at": "2026-10-07T16:51:29.450Z"
+    "at": "2026-10-08T00:46:12.515Z"
    }
   ],
   "seedCategories": [
@@ -12232,7 +12298,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100X8TY,,",
     "snippet": "EDINETコード E05624 / 上場 証券コード2120 / サービス業",
-    "at": "2026-10-07T16:51:29.459Z"
+    "at": "2026-10-08T00:46:12.524Z"
    },
    {
     "field": "address",
@@ -12240,7 +12306,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100X8TY,,",
     "snippet": "EDINETコード一覧の本店所在地: 千代田区麹町１－４－４",
-    "at": "2026-10-07T16:51:29.459Z"
+    "at": "2026-10-08T00:46:12.524Z"
    },
    {
     "field": "employees",
@@ -12248,7 +12314,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100X8TY,,",
     "snippet": "有価証券報告書 2025年9月期（2025年12月22日提出・書類ID S100X8TY） 提出会社単体の従業員数 667名",
-    "at": "2026-10-07T16:51:29.459Z"
+    "at": "2026-10-08T00:46:12.524Z"
    },
    {
     "field": "employeesConsolidated",
@@ -12256,7 +12322,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100X8TY,,",
     "snippet": "有価証券報告書 2025年9月期（2025年12月22日提出・書類ID S100X8TY） 連結の従業員数 918名",
-    "at": "2026-10-07T16:51:29.459Z"
+    "at": "2026-10-08T00:46:12.524Z"
    }
   ],
   "seedCategories": [
@@ -12868,7 +12934,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Z49G,,",
     "snippet": "EDINETコード E27421 / 上場 証券コード3675 / 情報・通信業",
-    "at": "2026-10-07T16:51:29.468Z"
+    "at": "2026-10-08T00:46:12.533Z"
    },
    {
     "field": "address",
@@ -12876,7 +12942,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Z49G,,",
     "snippet": "EDINETコード一覧の本店所在地: 新宿区西新宿三丁目２０番２号",
-    "at": "2026-10-07T16:51:29.468Z"
+    "at": "2026-10-08T00:46:12.533Z"
    },
    {
     "field": "employees",
@@ -12884,7 +12950,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Z49G,,",
     "snippet": "有価証券報告書 2026年6月期（2026年9月28日提出・書類ID S100Z49G） 提出会社単体の従業員数 117名",
-    "at": "2026-10-07T16:51:29.468Z"
+    "at": "2026-10-08T00:46:12.533Z"
    },
    {
     "field": "employeesConsolidated",
@@ -12892,7 +12958,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Z49G,,",
     "snippet": "有価証券報告書 2026年6月期（2026年9月28日提出・書類ID S100Z49G） 連結の従業員数 1671名",
-    "at": "2026-10-07T16:51:29.468Z"
+    "at": "2026-10-08T00:46:12.533Z"
    }
   ],
   "seedCategories": [
@@ -13247,7 +13313,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100WQYI,,",
     "snippet": "EDINETコード E25817 / 非上場 / 情報・通信業",
-    "at": "2026-10-07T16:51:29.474Z"
+    "at": "2026-10-08T00:46:12.540Z"
    },
    {
     "field": "address",
@@ -13255,7 +13321,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100WQYI,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区六本木三丁目１番１号",
-    "at": "2026-10-07T16:51:29.474Z"
+    "at": "2026-10-08T00:46:12.540Z"
    },
    {
     "field": "employees",
@@ -13263,7 +13329,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100WQYI,,",
     "snippet": "有価証券報告書 2025年6月期（2025年9月25日提出・書類ID S100WQYI） 提出会社単体の従業員数 564名",
-    "at": "2026-10-07T16:51:29.474Z"
+    "at": "2026-10-08T00:46:12.540Z"
    },
    {
     "field": "employeesConsolidated",
@@ -13271,7 +13337,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100WQYI,,",
     "snippet": "有価証券報告書 2025年6月期（2025年9月25日提出・書類ID S100WQYI） 連結の従業員数 589名",
-    "at": "2026-10-07T16:51:29.474Z"
+    "at": "2026-10-08T00:46:12.540Z"
    }
   ],
   "seedCategories": [
@@ -13693,7 +13759,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XCU9,,",
     "snippet": "EDINETコード E05072 / 上場 証券コード4751 / サービス業",
-    "at": "2026-10-07T16:51:29.480Z"
+    "at": "2026-10-08T00:46:12.546Z"
    },
    {
     "field": "address",
@@ -13701,7 +13767,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XCU9,,",
     "snippet": "EDINETコード一覧の本店所在地: 渋谷区宇田川町４０番１号",
-    "at": "2026-10-07T16:51:29.480Z"
+    "at": "2026-10-08T00:46:12.546Z"
    },
    {
     "field": "employees",
@@ -13709,7 +13775,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XCU9,,",
     "snippet": "有価証券報告書 2025年9月期（2025年12月24日提出・書類ID S100XCU9） 提出会社単体の従業員数 2588名",
-    "at": "2026-10-07T16:51:29.480Z"
+    "at": "2026-10-08T00:46:12.546Z"
    },
    {
     "field": "employeesConsolidated",
@@ -13717,7 +13783,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XCU9,,",
     "snippet": "有価証券報告書 2025年9月期（2025年12月24日提出・書類ID S100XCU9） 連結の従業員数 8150名",
-    "at": "2026-10-07T16:51:29.480Z"
+    "at": "2026-10-08T00:46:12.546Z"
    }
   ],
   "seedCategories": [
@@ -13928,7 +13994,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XSXU,,",
     "snippet": "EDINETコード E05599 / 上場 証券コード2489 / サービス業",
-    "at": "2026-10-07T16:51:29.483Z"
+    "at": "2026-10-08T00:46:12.549Z"
    },
    {
     "field": "address",
@@ -13936,7 +14002,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XSXU,,",
     "snippet": "EDINETコード一覧の本店所在地: 新宿区西新宿五丁目１番１号",
-    "at": "2026-10-07T16:51:29.483Z"
+    "at": "2026-10-08T00:46:12.549Z"
    },
    {
     "field": "employees",
@@ -13944,7 +14010,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XSXU,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月24日提出・書類ID S100XSXU） 提出会社単体の従業員数 416名",
-    "at": "2026-10-07T16:51:29.483Z"
+    "at": "2026-10-08T00:46:12.549Z"
    },
    {
     "field": "employeesConsolidated",
@@ -13952,7 +14018,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XSXU,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月24日提出・書類ID S100XSXU） 連結の従業員数 941名",
-    "at": "2026-10-07T16:51:29.483Z"
+    "at": "2026-10-08T00:46:12.549Z"
    }
   ],
   "seedCategories": [
@@ -14735,7 +14801,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XS04,,",
     "snippet": "EDINETコード E35959 / 上場 証券コード4012 / 情報・通信業",
-    "at": "2026-10-07T16:51:29.501Z"
+    "at": "2026-10-08T00:46:12.567Z"
    },
    {
     "field": "address",
@@ -14743,7 +14809,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XS04,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区西新橋２丁目３番１号　マークライト虎ノ門８Ｆ",
-    "at": "2026-10-07T16:51:29.501Z"
+    "at": "2026-10-08T00:46:12.567Z"
    },
    {
     "field": "employees",
@@ -14751,7 +14817,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XS04,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月19日提出・書類ID S100XS04） 提出会社単体の従業員数 545名",
-    "at": "2026-10-07T16:51:29.501Z"
+    "at": "2026-10-08T00:46:12.567Z"
    }
   ],
   "seedCategories": [
@@ -15038,7 +15104,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YIA4,,",
     "snippet": "EDINETコード E35483 / 上場 証券コード7089 / サービス業",
-    "at": "2026-10-07T16:51:29.510Z"
+    "at": "2026-10-08T00:46:12.576Z"
    },
    {
     "field": "address",
@@ -15046,7 +15112,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YIA4,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区麻布台一丁目３番１号",
-    "at": "2026-10-07T16:51:29.510Z"
+    "at": "2026-10-08T00:46:12.576Z"
    },
    {
     "field": "employees",
@@ -15054,7 +15120,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YIA4,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月23日提出・書類ID S100YIA4） 提出会社単体の従業員数 238名",
-    "at": "2026-10-07T16:51:29.510Z"
+    "at": "2026-10-08T00:46:12.576Z"
    },
    {
     "field": "employeesConsolidated",
@@ -15062,7 +15128,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YIA4,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月23日提出・書類ID S100YIA4） 連結の従業員数 252名",
-    "at": "2026-10-07T16:51:29.510Z"
+    "at": "2026-10-08T00:46:12.576Z"
    }
   ],
   "seedCategories": [
@@ -15670,7 +15736,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YS8T,,",
     "snippet": "EDINETコード E02953 / 上場 証券コード2751 / 卸売業",
-    "at": "2026-10-07T16:51:29.528Z"
+    "at": "2026-10-08T00:46:12.594Z"
    },
    {
     "field": "address",
@@ -15678,7 +15744,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YS8T,,",
     "snippet": "EDINETコード一覧の本店所在地: 大田区東蒲田二丁目３０番１７号",
-    "at": "2026-10-07T16:51:29.528Z"
+    "at": "2026-10-08T00:46:12.594Z"
    },
    {
     "field": "employees",
@@ -15686,7 +15752,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YS8T,,",
     "snippet": "有価証券報告書 2026年4月期（2026年7月28日提出・書類ID S100YS8T） 提出会社単体の従業員数 31名",
-    "at": "2026-10-07T16:51:29.528Z"
+    "at": "2026-10-08T00:46:12.594Z"
    },
    {
     "field": "employeesConsolidated",
@@ -15694,7 +15760,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YS8T,,",
     "snippet": "有価証券報告書 2026年4月期（2026年7月28日提出・書類ID S100YS8T） 連結の従業員数 1306名",
-    "at": "2026-10-07T16:51:29.528Z"
+    "at": "2026-10-08T00:46:12.594Z"
    }
   ],
   "seedCategories": [
@@ -16803,7 +16869,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YDZP,,",
     "snippet": "EDINETコード E05153 / 上場 証券コード2130 / サービス業",
-    "at": "2026-10-07T16:51:29.561Z"
+    "at": "2026-10-08T00:46:12.627Z"
    },
    {
     "field": "address",
@@ -16811,7 +16877,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YDZP,,",
     "snippet": "EDINETコード一覧の本店所在地: 中央区晴海１－８－１０　晴海アイランドトリトンスクエア　オフィスタワーＸ３７階",
-    "at": "2026-10-07T16:51:29.561Z"
+    "at": "2026-10-08T00:46:12.627Z"
    },
    {
     "field": "employees",
@@ -16819,7 +16885,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YDZP,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月18日提出・書類ID S100YDZP） 提出会社単体の従業員数 2836名",
-    "at": "2026-10-07T16:51:29.561Z"
+    "at": "2026-10-08T00:46:12.627Z"
    },
    {
     "field": "employeesConsolidated",
@@ -16827,7 +16893,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YDZP,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月18日提出・書類ID S100YDZP） 連結の従業員数 2866名",
-    "at": "2026-10-07T16:51:29.561Z"
+    "at": "2026-10-08T00:46:12.627Z"
    }
   ],
   "seedCategories": [
@@ -17565,7 +17631,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XBQ8,,",
     "snippet": "EDINETコード E35089 / 上場 証券コード7069 / サービス業",
-    "at": "2026-10-07T16:51:29.576Z"
+    "at": "2026-10-08T00:46:12.642Z"
    },
    {
     "field": "address",
@@ -17573,7 +17639,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XBQ8,,",
     "snippet": "EDINETコード一覧の本店所在地: 渋谷区桜丘町１２番１０号",
-    "at": "2026-10-07T16:51:29.576Z"
+    "at": "2026-10-08T00:46:12.642Z"
    },
    {
     "field": "employees",
@@ -17581,7 +17647,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XBQ8,,",
     "snippet": "有価証券報告書 2025年9月期（2025年12月19日提出・書類ID S100XBQ8） 提出会社単体の従業員数 161名",
-    "at": "2026-10-07T16:51:29.576Z"
+    "at": "2026-10-08T00:46:12.642Z"
    },
    {
     "field": "employeesConsolidated",
@@ -17589,7 +17655,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XBQ8,,",
     "snippet": "有価証券報告書 2025年9月期（2025年12月19日提出・書類ID S100XBQ8） 連結の従業員数 202名",
-    "at": "2026-10-07T16:51:29.576Z"
+    "at": "2026-10-08T00:46:12.642Z"
    }
   ],
   "seedCategories": [
@@ -19091,7 +19157,40 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"influencer_agency\",\"sns_agency\"],\"http://www.torihada.co.jp/\",\"東京都渋谷区道玄坂2-25-12\",184,\"official\",\"https://www.torihada.co.jp/contact/\",[\"インフルエンサー事務所\",\"広告代理店\",\"SNS運用代行\"]]",
+   "industry": {
+    "influencer_agency": {
+     "result": "OK",
+     "comment": "公式の自社説明に「クリエイター」あり。インフルエンサー事務所を取り扱っている（他に SaaS/DX/AI 等の事業もあり、インフルエンサー事務所は主業でない可能性）",
+     "after": "インフルエンサー事務所"
+    },
+    "sns_agency": {
+     "result": "OK",
+     "comment": "公式サイトの本文に「SNSマーケティング」が複数あり、SNS運用代行を取り扱っている（自社説明の冒頭には無く、主業でない可能性）（他に SaaS/DX/AI 等の事業もあり、SNS運用代行は主業でない可能性）",
+     "after": "SNS運用代行"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "公式サイトで184名（2026年5月時点） / 公式の数字に「業務委託」の記載あり（単体の従業員数ではない可能性）",
+    "after": 184,
+    "asOf": "2026年5月",
+    "source": "official"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.torihada.co.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都渋谷区)がprtimesと一致、公式ドメインをslidelib/prtimes/wantedlyが示す",
+    "after": "http://www.torihada.co.jp/"
+   }
+  }
  },
  {
   "key": "natee",
@@ -20612,7 +20711,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YCH9,,",
     "snippet": "EDINETコード E03493 / 上場 証券コード7823 / その他製品",
-    "at": "2026-10-07T16:51:29.643Z"
+    "at": "2026-10-08T00:46:12.712Z"
    },
    {
     "field": "address",
@@ -20620,7 +20719,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YCH9,,",
     "snippet": "EDINETコード一覧の本店所在地: 渋谷区代々木三丁目４０番７号",
-    "at": "2026-10-07T16:51:29.643Z"
+    "at": "2026-10-08T00:46:12.712Z"
    },
    {
     "field": "employees",
@@ -20628,7 +20727,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YCH9,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月17日提出・書類ID S100YCH9） 提出会社単体の従業員数 2321名",
-    "at": "2026-10-07T16:51:29.643Z"
+    "at": "2026-10-08T00:46:12.712Z"
    },
    {
     "field": "employeesConsolidated",
@@ -20636,7 +20735,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YCH9,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月17日提出・書類ID S100YCH9） 連結の従業員数 3851名",
-    "at": "2026-10-07T16:51:29.643Z"
+    "at": "2026-10-08T00:46:12.712Z"
    }
   ],
   "seedCategories": [
@@ -20988,6 +21087,34 @@
    "at": "2026-10-08",
    "note": "マイナビから。https://job.mynavi.jp/28/pc/search/corp267202/outline.html",
    "employeesValue": 2274
+  },
+  "checks": {
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"cosme_d2c\"],\"http://www.saraya.com/\",\"東京都品川区東品川2-2-20\",2274,\"human\",\"https://www.saraya.com/info\",[\"化粧品D2C/P2C\"]]",
+   "industry": {
+    "cosme_d2c": {
+     "result": "OK",
+     "comment": "公式サイトの本文に「化粧品」が複数あり、化粧品D2C/P2Cを取り扱っている（自社説明の冒頭には無く、主業でない可能性）（他に 製造 等の事業もあり、化粧品D2C/P2Cは主業でない可能性）",
+     "after": "化粧品D2C/P2C"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "人の確認で2274名 / 従業員数は人が確認した値 / 他の情報源(SalesNow=1684)とも概ね整合",
+    "after": 2274,
+    "asOf": null,
+    "source": "human"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.saraya.com/info/"
+   },
+   "identity": {
+    "result": "要確認",
+    "comment": "社名は公式サイトにあるが、salesnowの所在地(大阪府)が採用した所在地(東京都)と食い違う",
+    "after": "http://www.saraya.com/"
+   }
   }
  },
  {
@@ -21370,7 +21497,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XTTF,,",
     "snippet": "EDINETコード E01039 / 上場 証券コード4919 / 化学",
-    "at": "2026-10-07T16:51:29.664Z"
+    "at": "2026-10-08T00:46:12.733Z"
    },
    {
     "field": "address",
@@ -21378,7 +21505,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XTTF,,",
     "snippet": "EDINETコード一覧の本店所在地: 大阪市都島区善源寺町２丁目３番３５号",
-    "at": "2026-10-07T16:51:29.664Z"
+    "at": "2026-10-08T00:46:12.733Z"
    },
    {
     "field": "employees",
@@ -21386,7 +21513,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XTTF,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月27日提出・書類ID S100XTTF） 提出会社単体の従業員数 941名",
-    "at": "2026-10-07T16:51:29.664Z"
+    "at": "2026-10-08T00:46:12.733Z"
    },
    {
     "field": "employeesConsolidated",
@@ -21394,7 +21521,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XTTF,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月27日提出・書類ID S100XTTF） 連結の従業員数 1237名",
-    "at": "2026-10-07T16:51:29.664Z"
+    "at": "2026-10-08T00:46:12.733Z"
    }
   ],
   "seedCategories": [
@@ -21598,7 +21725,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XSLS,,",
     "snippet": "EDINETコード E01015 / 上場 証券コード4985 / 化学",
-    "at": "2026-10-07T16:51:29.670Z"
+    "at": "2026-10-08T00:46:12.740Z"
    },
    {
     "field": "address",
@@ -21606,7 +21733,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XSLS,,",
     "snippet": "EDINETコード一覧の本店所在地: 千代田区神田司町二丁目１２番地１",
-    "at": "2026-10-07T16:51:29.670Z"
+    "at": "2026-10-08T00:46:12.740Z"
    },
    {
     "field": "employees",
@@ -21614,7 +21741,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XSLS,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月24日提出・書類ID S100XSLS） 提出会社単体の従業員数 1401名",
-    "at": "2026-10-07T16:51:29.670Z"
+    "at": "2026-10-08T00:46:12.740Z"
    },
    {
     "field": "employeesConsolidated",
@@ -21622,7 +21749,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XSLS,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月24日提出・書類ID S100XSLS） 連結の従業員数 4963名",
-    "at": "2026-10-07T16:51:29.670Z"
+    "at": "2026-10-08T00:46:12.740Z"
    }
   ],
   "seedCategories": [
@@ -22130,7 +22257,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Z3T5,,",
     "snippet": "EDINETコード E26301 / 上場 証券コード3660 / 情報・通信業",
-    "at": "2026-10-07T16:51:29.685Z"
+    "at": "2026-10-08T00:46:12.754Z"
    },
    {
     "field": "address",
@@ -22138,7 +22265,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Z3T5,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区赤坂一丁目１２番３２号　アーク森ビル３４階",
-    "at": "2026-10-07T16:51:29.685Z"
+    "at": "2026-10-08T00:46:12.755Z"
    },
    {
     "field": "employees",
@@ -22146,7 +22273,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Z3T5,,",
     "snippet": "有価証券報告書 2026年6月期（2026年9月25日提出・書類ID S100Z3T5） 提出会社単体の従業員数 591名",
-    "at": "2026-10-07T16:51:29.685Z"
+    "at": "2026-10-08T00:46:12.755Z"
    },
    {
     "field": "employeesConsolidated",
@@ -22154,7 +22281,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Z3T5,,",
     "snippet": "有価証券報告書 2026年6月期（2026年9月25日提出・書類ID S100Z3T5） 連結の従業員数 1395名",
-    "at": "2026-10-07T16:51:29.685Z"
+    "at": "2026-10-08T00:46:12.755Z"
    }
   ],
   "seedCategories": [
@@ -22363,7 +22490,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YHO9,,",
     "snippet": "EDINETコード E01035 / 上場 証券コード4918 / 化学",
-    "at": "2026-10-07T16:51:29.691Z"
+    "at": "2026-10-08T00:46:12.761Z"
    },
    {
     "field": "address",
@@ -22371,7 +22498,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YHO9,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区赤坂六丁目１８番３号",
-    "at": "2026-10-07T16:51:29.691Z"
+    "at": "2026-10-08T00:46:12.761Z"
    },
    {
     "field": "employees",
@@ -22379,7 +22506,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YHO9,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月23日提出・書類ID S100YHO9） 提出会社単体の従業員数 100名",
-    "at": "2026-10-07T16:51:29.691Z"
+    "at": "2026-10-08T00:46:12.761Z"
    }
   ],
   "seedCategories": [
@@ -22993,7 +23120,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100WWME,,",
     "snippet": "EDINETコード E36321 / 上場 証券コード4936 / 化学",
-    "at": "2026-10-07T16:51:29.709Z"
+    "at": "2026-10-08T00:46:12.778Z"
    },
    {
     "field": "address",
@@ -23001,7 +23128,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100WWME,,",
     "snippet": "EDINETコード一覧の本店所在地: 新宿区西新宿６－３－１新宿アイランド・ウィング２階",
-    "at": "2026-10-07T16:51:29.709Z"
+    "at": "2026-10-08T00:46:12.778Z"
    },
    {
     "field": "employees",
@@ -23009,7 +23136,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100WWME,,",
     "snippet": "有価証券報告書 2025年7月期（2025年10月23日提出・書類ID S100WWME） 提出会社単体の従業員数 134名",
-    "at": "2026-10-07T16:51:29.709Z"
+    "at": "2026-10-08T00:46:12.778Z"
    },
    {
     "field": "employeesConsolidated",
@@ -23017,7 +23144,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100WWME,,",
     "snippet": "有価証券報告書 2025年7月期（2025年10月23日提出・書類ID S100WWME） 連結の従業員数 248名",
-    "at": "2026-10-07T16:51:29.709Z"
+    "at": "2026-10-08T00:46:12.778Z"
    }
   ],
   "seedCategories": [
@@ -23029,8 +23156,8 @@
   ],
   "contactUrl": null,
   "checks": {
-   "verifiedAt": "2026-10-07",
-   "sig": "[2,[\"cosme_d2c\"],\"https://axxzia.co.jp/\",\"東京都新宿区西新宿6-3-1新宿アイランド・ウィング2階\",134,\"edinet\",\"https://axxzia.co.jp/contact/\",[\"化粧品D2C/P2C\"]]",
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"cosme_d2c\"],\"https://axxzia.co.jp/\",\"東京都新宿区西新宿6-3-1新宿アイランド・ウィング2階\",134,\"edinet\",\"https://axxzia.co.jp/contact/\",[\"化粧品D2C/P2C\"]]",
    "industry": {
     "cosme_d2c": {
      "result": "OK",
@@ -23040,7 +23167,7 @@
    },
    "employees": {
     "result": "OK",
-    "comment": "有価証券報告書(EDINET)で134名（2025年7月時点）。他の情報源(gbizinfo=134)とも概ね整合",
+    "comment": "有価証券報告書(EDINET)で134名（2025年7月時点） / 公式サイトでは確認できず、公式サイト以外(有価証券報告書(EDINET))の値を採用（2025年7月時点） / 他の情報源(Gビズインフォ=134)とも概ね整合",
     "after": 134,
     "asOf": "2025年7月",
     "source": "edinet"
@@ -23191,7 +23318,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y415,,",
     "snippet": "EDINETコード E35928 / 上場 証券コード4933 / 化学",
-    "at": "2026-10-07T16:51:29.712Z"
+    "at": "2026-10-08T00:46:12.781Z"
    },
    {
     "field": "address",
@@ -23199,7 +23326,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y415,,",
     "snippet": "EDINETコード一覧の本店所在地: 大阪市北区中之島六丁目１番２１号",
-    "at": "2026-10-07T16:51:29.712Z"
+    "at": "2026-10-08T00:46:12.781Z"
    },
    {
     "field": "employees",
@@ -23207,7 +23334,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y415,,",
     "snippet": "有価証券報告書 2025年12月期（2026年5月15日提出・書類ID S100Y415） 提出会社単体の従業員数 408名",
-    "at": "2026-10-07T16:51:29.712Z"
+    "at": "2026-10-08T00:46:12.781Z"
    },
    {
     "field": "employeesConsolidated",
@@ -23215,7 +23342,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y415,,",
     "snippet": "有価証券報告書 2025年12月期（2026年5月15日提出・書類ID S100Y415） 連結の従業員数 433名",
-    "at": "2026-10-07T16:51:29.712Z"
+    "at": "2026-10-08T00:46:12.781Z"
    }
   ],
   "seedCategories": [
@@ -24117,7 +24244,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YD9M,,",
     "snippet": "EDINETコード E01019 / 上場 証券コード4951 / 化学",
-    "at": "2026-10-07T16:51:29.732Z"
+    "at": "2026-10-08T00:46:12.802Z"
    },
    {
     "field": "address",
@@ -24125,7 +24252,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YD9M,,",
     "snippet": "EDINETコード一覧の本店所在地: 新宿区下落合１丁目４番１０号",
-    "at": "2026-10-07T16:51:29.732Z"
+    "at": "2026-10-08T00:46:12.802Z"
    },
    {
     "field": "employees",
@@ -24133,7 +24260,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YD9M,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月17日提出・書類ID S100YD9M） 提出会社単体の従業員数 460名",
-    "at": "2026-10-07T16:51:29.732Z"
+    "at": "2026-10-08T00:46:12.802Z"
    },
    {
     "field": "employeesConsolidated",
@@ -24141,7 +24268,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YD9M,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月17日提出・書類ID S100YD9M） 連結の従業員数 739名",
-    "at": "2026-10-07T16:51:29.732Z"
+    "at": "2026-10-08T00:46:12.802Z"
    }
   ],
   "seedCategories": [
@@ -24330,7 +24457,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XT6G,,",
     "snippet": "EDINETコード E00883 / 上場 証券コード4452 / 化学",
-    "at": "2026-10-07T16:51:29.738Z"
+    "at": "2026-10-08T00:46:12.808Z"
    },
    {
     "field": "address",
@@ -24338,7 +24465,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XT6G,,",
     "snippet": "EDINETコード一覧の本店所在地: 中央区日本橋茅場町一丁目１４番１０号",
-    "at": "2026-10-07T16:51:29.738Z"
+    "at": "2026-10-08T00:46:12.808Z"
    },
    {
     "field": "employees",
@@ -24346,7 +24473,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XT6G,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月25日提出・書類ID S100XT6G） 提出会社単体の従業員数 7761名",
-    "at": "2026-10-07T16:51:29.738Z"
+    "at": "2026-10-08T00:46:12.808Z"
    },
    {
     "field": "employeesConsolidated",
@@ -24354,7 +24481,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XT6G,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月25日提出・書類ID S100XT6G） 連結の従業員数 31514名",
-    "at": "2026-10-07T16:51:29.738Z"
+    "at": "2026-10-08T00:46:12.808Z"
    }
   ],
   "seedCategories": [
@@ -24774,7 +24901,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y5VV,,",
     "snippet": "EDINETコード E26549 / 上場 証券コード2930 / 化学",
-    "at": "2026-10-07T16:51:29.748Z"
+    "at": "2026-10-08T00:46:12.816Z"
    },
    {
     "field": "address",
@@ -24782,7 +24909,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y5VV,,",
     "snippet": "EDINETコード一覧の本店所在地: 札幌市中央区北一条西一丁目６番地",
-    "at": "2026-10-07T16:51:29.748Z"
+    "at": "2026-10-08T00:46:12.816Z"
    },
    {
     "field": "employees",
@@ -24790,7 +24917,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y5VV,,",
     "snippet": "有価証券報告書 2026年2月期（2026年5月25日提出・書類ID S100Y5VV） 提出会社単体の従業員数 225名",
-    "at": "2026-10-07T16:51:29.748Z"
+    "at": "2026-10-08T00:46:12.816Z"
    },
    {
     "field": "employeesConsolidated",
@@ -24798,7 +24925,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y5VV,,",
     "snippet": "有価証券報告書 2026年2月期（2026年5月25日提出・書類ID S100Y5VV） 連結の従業員数 227名",
-    "at": "2026-10-07T16:51:29.748Z"
+    "at": "2026-10-08T00:46:12.816Z"
    }
   ],
   "seedCategories": [
@@ -25109,6 +25236,34 @@
    "at": "2026-10-08",
    "note": "公式サイトから。https://corp.orbis.co.jp/company/",
    "employeesValue": 1087
+  },
+  "checks": {
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"cosme_d2c\"],\"http://www.orbis.co.jp/\",\"東京都品川区\",1087,\"human\",\"https://corp.orbis.co.jp/contact/\",[\"化粧品D2C/P2C\"]]",
+   "industry": {
+    "cosme_d2c": {
+     "result": "OK",
+     "comment": "公式の自社説明に「化粧品/スキンケア/ヘアケア」あり。化粧品D2C/P2Cを取り扱っている",
+     "after": "化粧品D2C/P2C"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "人の確認で1087名 / 従業員数は人が確認した値 / 他の情報源(Gビズインフォ=1119)とも概ね整合",
+    "after": 1087,
+    "asOf": null,
+    "source": "human"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://corp.orbis.co.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都品川区)がprtimesと一致 / 同名企業が複数ありうる(照合時に既知の住所で絞り込み済み)",
+    "after": "http://www.orbis.co.jp/"
+   }
   }
  },
  {
@@ -25335,7 +25490,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YENI,,",
     "snippet": "EDINETコード E04837 / 上場 証券コード9715 / サービス業",
-    "at": "2026-10-07T16:51:29.760Z"
+    "at": "2026-10-08T00:46:12.828Z"
    },
    {
     "field": "address",
@@ -25343,7 +25498,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YENI,,",
     "snippet": "EDINETコード一覧の本店所在地: 渋谷区東一丁目２番２０号",
-    "at": "2026-10-07T16:51:29.760Z"
+    "at": "2026-10-08T00:46:12.828Z"
    },
    {
     "field": "employees",
@@ -25351,7 +25506,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YENI,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月19日提出・書類ID S100YENI） 提出会社単体の従業員数 18141名",
-    "at": "2026-10-07T16:51:29.760Z"
+    "at": "2026-10-08T00:46:12.828Z"
    },
    {
     "field": "employeesConsolidated",
@@ -25359,7 +25514,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YENI,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月19日提出・書類ID S100YENI） 連結の従業員数 43571名",
-    "at": "2026-10-07T16:51:29.760Z"
+    "at": "2026-10-08T00:46:12.828Z"
    }
   ],
   "seedCategories": [
@@ -25509,7 +25664,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XSPB,,",
     "snippet": "EDINETコード E00736 / 上場 証券コード7849 / 情報・通信業",
-    "at": "2026-10-07T16:51:29.764Z"
+    "at": "2026-10-08T00:46:12.831Z"
    },
    {
     "field": "address",
@@ -25517,7 +25672,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XSPB,,",
     "snippet": "EDINETコード一覧の本店所在地: 江戸川区中葛西五丁目３３番１４号",
-    "at": "2026-10-07T16:51:29.764Z"
+    "at": "2026-10-08T00:46:12.831Z"
    },
    {
     "field": "employees",
@@ -25525,7 +25680,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XSPB,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月23日提出・書類ID S100XSPB） 提出会社単体の従業員数 240名",
-    "at": "2026-10-07T16:51:29.764Z"
+    "at": "2026-10-08T00:46:12.831Z"
    }
   ],
   "seedCategories": [
@@ -25691,7 +25846,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XVCC,,",
     "snippet": "EDINETコード E30053 / 上場 証券コード6081 / サービス業",
-    "at": "2026-10-07T16:51:29.767Z"
+    "at": "2026-10-08T00:46:12.834Z"
    },
    {
     "field": "address",
@@ -25699,7 +25854,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XVCC,,",
     "snippet": "EDINETコード一覧の本店所在地: 渋谷区恵比寿一丁目１９番１５号ウノサワ東急ビル",
-    "at": "2026-10-07T16:51:29.767Z"
+    "at": "2026-10-08T00:46:12.834Z"
    },
    {
     "field": "employees",
@@ -25707,7 +25862,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XVCC,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月30日提出・書類ID S100XVCC） 提出会社単体の従業員数 136名",
-    "at": "2026-10-07T16:51:29.767Z"
+    "at": "2026-10-08T00:46:12.834Z"
    },
    {
     "field": "employeesConsolidated",
@@ -25715,7 +25870,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XVCC,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月30日提出・書類ID S100XVCC） 連結の従業員数 159名",
-    "at": "2026-10-07T16:51:29.767Z"
+    "at": "2026-10-08T00:46:12.834Z"
    }
   ],
   "seedCategories": [
@@ -25813,7 +25968,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YGKQ,,",
     "snippet": "EDINETコード E00360 / 上場 証券コード2114 / 食料品",
-    "at": "2026-10-07T16:51:29.770Z"
+    "at": "2026-10-08T00:46:12.837Z"
    },
    {
     "field": "address",
@@ -25821,7 +25976,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YGKQ,,",
     "snippet": "EDINETコード一覧の本店所在地: 中央区日本橋兜町６番７号",
-    "at": "2026-10-07T16:51:29.770Z"
+    "at": "2026-10-08T00:46:12.837Z"
    },
    {
     "field": "employees",
@@ -25829,7 +25984,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YGKQ,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月22日提出・書類ID S100YGKQ） 提出会社単体の従業員数 70名",
-    "at": "2026-10-07T16:51:29.770Z"
+    "at": "2026-10-08T00:46:12.837Z"
    },
    {
     "field": "employeesConsolidated",
@@ -25837,7 +25992,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YGKQ,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月22日提出・書類ID S100YGKQ） 連結の従業員数 254名",
-    "at": "2026-10-07T16:51:29.770Z"
+    "at": "2026-10-08T00:46:12.837Z"
    }
   ],
   "seedCategories": [
@@ -25967,7 +26122,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YKO9,,",
     "snippet": "EDINETコード E05307 / 上場 証券コード2329 / 情報・通信業",
-    "at": "2026-10-07T16:51:29.773Z"
+    "at": "2026-10-08T00:46:12.840Z"
    },
    {
     "field": "address",
@@ -25975,7 +26130,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YKO9,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区赤坂四丁目８番１０号",
-    "at": "2026-10-07T16:51:29.773Z"
+    "at": "2026-10-08T00:46:12.840Z"
    },
    {
     "field": "employees",
@@ -25983,7 +26138,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YKO9,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月25日提出・書類ID S100YKO9） 提出会社単体の従業員数 705名",
-    "at": "2026-10-07T16:51:29.773Z"
+    "at": "2026-10-08T00:46:12.840Z"
    },
    {
     "field": "employeesConsolidated",
@@ -25991,7 +26146,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YKO9,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月25日提出・書類ID S100YKO9） 連結の従業員数 1163名",
-    "at": "2026-10-07T16:51:29.773Z"
+    "at": "2026-10-08T00:46:12.840Z"
    }
   ],
   "seedCategories": [
@@ -26193,7 +26348,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YJGW,,",
     "snippet": "EDINETコード E33247 / 上場 証券コード6549 / サービス業",
-    "at": "2026-10-07T16:51:29.776Z"
+    "at": "2026-10-08T00:46:12.843Z"
    },
    {
     "field": "address",
@@ -26201,7 +26356,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YJGW,,",
     "snippet": "EDINETコード一覧の本店所在地: 武蔵野市御殿山一丁目１番３号",
-    "at": "2026-10-07T16:51:29.776Z"
+    "at": "2026-10-08T00:46:12.843Z"
    },
    {
     "field": "employees",
@@ -26209,7 +26364,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YJGW,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月24日提出・書類ID S100YJGW） 提出会社単体の従業員数 324名",
-    "at": "2026-10-07T16:51:29.776Z"
+    "at": "2026-10-08T00:46:12.843Z"
    },
    {
     "field": "employeesConsolidated",
@@ -26217,7 +26372,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YJGW,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月24日提出・書類ID S100YJGW） 連結の従業員数 355名",
-    "at": "2026-10-07T16:51:29.776Z"
+    "at": "2026-10-08T00:46:12.843Z"
    }
   ],
   "seedCategories": [
@@ -26337,7 +26492,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y66D,,",
     "snippet": "EDINETコード E04835 / 上場 証券コード9716 / サービス業",
-    "at": "2026-10-07T16:51:29.779Z"
+    "at": "2026-10-08T00:46:12.846Z"
    },
    {
     "field": "address",
@@ -26345,7 +26500,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y66D,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区台場２丁目３番４号",
-    "at": "2026-10-07T16:51:29.779Z"
+    "at": "2026-10-08T00:46:12.846Z"
    },
    {
     "field": "employees",
@@ -26353,7 +26508,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y66D,,",
     "snippet": "有価証券報告書 2026年2月期（2026年5月26日提出・書類ID S100Y66D） 提出会社単体の従業員数 1587名",
-    "at": "2026-10-07T16:51:29.779Z"
+    "at": "2026-10-08T00:46:12.846Z"
    },
    {
     "field": "employeesConsolidated",
@@ -26361,7 +26516,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y66D,,",
     "snippet": "有価証券報告書 2026年2月期（2026年5月26日提出・書類ID S100Y66D） 連結の従業員数 2154名",
-    "at": "2026-10-07T16:51:29.779Z"
+    "at": "2026-10-08T00:46:12.846Z"
    }
   ],
   "seedCategories": [
@@ -26483,7 +26638,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YEOU,,",
     "snippet": "EDINETコード E05417 / 上場 証券コード2411 / 情報・通信業",
-    "at": "2026-10-07T16:51:29.782Z"
+    "at": "2026-10-08T00:46:12.849Z"
    },
    {
     "field": "address",
@@ -26491,7 +26646,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YEOU,,",
     "snippet": "EDINETコード一覧の本店所在地: 新宿区西新宿三丁目２０番２号",
-    "at": "2026-10-07T16:51:29.782Z"
+    "at": "2026-10-08T00:46:12.849Z"
    },
    {
     "field": "employees",
@@ -26499,7 +26654,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YEOU,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月19日提出・書類ID S100YEOU） 提出会社単体の従業員数 138名",
-    "at": "2026-10-07T16:51:29.782Z"
+    "at": "2026-10-08T00:46:12.849Z"
    },
    {
     "field": "employeesConsolidated",
@@ -26507,7 +26662,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YEOU,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月19日提出・書類ID S100YEOU） 連結の従業員数 208名",
-    "at": "2026-10-07T16:51:29.782Z"
+    "at": "2026-10-08T00:46:12.849Z"
    }
   ],
   "seedCategories": [
@@ -26641,7 +26796,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YKQI,,",
     "snippet": "EDINETコード E34379 / 上場 証券コード7042 / サービス業",
-    "at": "2026-10-07T16:51:29.785Z"
+    "at": "2026-10-08T00:46:12.852Z"
    },
    {
     "field": "address",
@@ -26649,7 +26804,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YKQI,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区南青山一丁目１番１号",
-    "at": "2026-10-07T16:51:29.785Z"
+    "at": "2026-10-08T00:46:12.852Z"
    },
    {
     "field": "employees",
@@ -26657,7 +26812,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YKQI,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月25日提出・書類ID S100YKQI） 提出会社単体の従業員数 13名",
-    "at": "2026-10-07T16:51:29.785Z"
+    "at": "2026-10-08T00:46:12.852Z"
    },
    {
     "field": "employeesConsolidated",
@@ -26665,7 +26820,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YKQI,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月25日提出・書類ID S100YKQI） 連結の従業員数 130名",
-    "at": "2026-10-07T16:51:29.785Z"
+    "at": "2026-10-08T00:46:12.852Z"
    }
   ],
   "seedCategories": [
@@ -26803,7 +26958,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XS0O,,",
     "snippet": "EDINETコード E04760 / 上場 証券コード4324 / サービス業",
-    "at": "2026-10-07T16:51:29.788Z"
+    "at": "2026-10-08T00:46:12.855Z"
    },
    {
     "field": "address",
@@ -26811,7 +26966,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XS0O,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区東新橋一丁目８番１号",
-    "at": "2026-10-07T16:51:29.788Z"
+    "at": "2026-10-08T00:46:12.855Z"
    },
    {
     "field": "employees",
@@ -26819,7 +26974,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XS0O,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月26日提出・書類ID S100XS0O） 提出会社単体の従業員数 135名",
-    "at": "2026-10-07T16:51:29.788Z"
+    "at": "2026-10-08T00:46:12.855Z"
    },
    {
     "field": "employeesConsolidated",
@@ -26827,7 +26982,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XS0O,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月26日提出・書類ID S100XS0O） 連結の従業員数 67454名",
-    "at": "2026-10-07T16:51:29.788Z"
+    "at": "2026-10-08T00:46:12.855Z"
    }
   ],
   "seedCategories": [
@@ -26985,7 +27140,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YXYC,,",
     "snippet": "EDINETコード E36638 / 上場 証券コード7370 / サービス業",
-    "at": "2026-10-07T16:51:29.792Z"
+    "at": "2026-10-08T00:46:12.858Z"
    },
    {
     "field": "address",
@@ -26993,7 +27148,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YXYC,,",
     "snippet": "EDINETコード一覧の本店所在地: 中央区銀座５－１３－１６",
-    "at": "2026-10-07T16:51:29.792Z"
+    "at": "2026-10-08T00:46:12.858Z"
    },
    {
     "field": "employees",
@@ -27001,7 +27156,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YXYC,,",
     "snippet": "有価証券報告書 2026年5月期（2026年8月21日提出・書類ID S100YXYC） 提出会社単体の従業員数 126名",
-    "at": "2026-10-07T16:51:29.792Z"
+    "at": "2026-10-08T00:46:12.858Z"
    },
    {
     "field": "employeesConsolidated",
@@ -27009,7 +27164,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YXYC,,",
     "snippet": "有価証券報告書 2026年5月期（2026年8月21日提出・書類ID S100YXYC） 連結の従業員数 149名",
-    "at": "2026-10-07T16:51:29.792Z"
+    "at": "2026-10-08T00:46:12.858Z"
    }
   ],
   "seedCategories": [
@@ -27159,7 +27314,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y7IM,,",
     "snippet": "EDINETコード E26428 / 上場 証券コード6058 / サービス業",
-    "at": "2026-10-07T16:51:29.795Z"
+    "at": "2026-10-08T00:46:12.861Z"
    },
    {
     "field": "address",
@@ -27167,7 +27322,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y7IM,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区赤坂四丁目１５番１号",
-    "at": "2026-10-07T16:51:29.795Z"
+    "at": "2026-10-08T00:46:12.861Z"
    },
    {
     "field": "employees",
@@ -27175,7 +27330,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y7IM,,",
     "snippet": "有価証券報告書 2026年2月期（2026年5月29日提出・書類ID S100Y7IM） 提出会社単体の従業員数 184名",
-    "at": "2026-10-07T16:51:29.795Z"
+    "at": "2026-10-08T00:46:12.861Z"
    },
    {
     "field": "employeesConsolidated",
@@ -27183,7 +27338,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y7IM,,",
     "snippet": "有価証券報告書 2026年2月期（2026年5月29日提出・書類ID S100Y7IM） 連結の従業員数 1571名",
-    "at": "2026-10-07T16:51:29.795Z"
+    "at": "2026-10-08T00:46:12.861Z"
    }
   ],
   "seedCategories": [
@@ -27333,7 +27488,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YSEQ,,",
     "snippet": "EDINETコード E35534 / 上場 証券コード7095 / サービス業",
-    "at": "2026-10-07T16:51:29.798Z"
+    "at": "2026-10-08T00:46:12.864Z"
    },
    {
     "field": "address",
@@ -27341,7 +27496,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YSEQ,,",
     "snippet": "EDINETコード一覧の本店所在地: 渋谷区渋谷３ー１１ー１１ＩＶＹイーストビル５階",
-    "at": "2026-10-07T16:51:29.798Z"
+    "at": "2026-10-08T00:46:12.864Z"
    },
    {
     "field": "employees",
@@ -27349,7 +27504,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YSEQ,,",
     "snippet": "有価証券報告書 2026年4月期（2026年7月27日提出・書類ID S100YSEQ） 提出会社単体の従業員数 42名",
-    "at": "2026-10-07T16:51:29.798Z"
+    "at": "2026-10-08T00:46:12.864Z"
    },
    {
     "field": "employeesConsolidated",
@@ -27357,7 +27512,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YSEQ,,",
     "snippet": "有価証券報告書 2026年4月期（2026年7月27日提出・書類ID S100YSEQ） 連結の従業員数 201名",
-    "at": "2026-10-07T16:51:29.798Z"
+    "at": "2026-10-08T00:46:12.864Z"
    }
   ],
   "seedCategories": [
@@ -27511,7 +27666,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XBWH,,",
     "snippet": "EDINETコード E37742 / 上場 証券コード9553 / サービス業",
-    "at": "2026-10-07T16:51:29.801Z"
+    "at": "2026-10-08T00:46:12.867Z"
    },
    {
     "field": "address",
@@ -27519,7 +27674,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XBWH,,",
     "snippet": "EDINETコード一覧の本店所在地: 渋谷区桜丘町２０－１　渋谷インフォスタワー１３階",
-    "at": "2026-10-07T16:51:29.801Z"
+    "at": "2026-10-08T00:46:12.867Z"
    },
    {
     "field": "employees",
@@ -27527,7 +27682,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XBWH,,",
     "snippet": "有価証券報告書 2025年9月期（2025年12月19日提出・書類ID S100XBWH） 提出会社単体の従業員数 246名",
-    "at": "2026-10-07T16:51:29.801Z"
+    "at": "2026-10-08T00:46:12.867Z"
    },
    {
     "field": "employeesConsolidated",
@@ -27535,7 +27690,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XBWH,,",
     "snippet": "有価証券報告書 2025年9月期（2025年12月19日提出・書類ID S100XBWH） 連結の従業員数 391名",
-    "at": "2026-10-07T16:51:29.801Z"
+    "at": "2026-10-08T00:46:12.867Z"
    }
   ],
   "seedCategories": [
@@ -27685,7 +27840,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YHXU,,",
     "snippet": "EDINETコード E05410 / 上場 証券コード2433 / サービス業",
-    "at": "2026-10-07T16:51:29.804Z"
+    "at": "2026-10-08T00:46:12.869Z"
    },
    {
     "field": "address",
@@ -27693,7 +27848,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YHXU,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区赤坂五丁目３番１号",
-    "at": "2026-10-07T16:51:29.804Z"
+    "at": "2026-10-08T00:46:12.869Z"
    },
    {
     "field": "employees",
@@ -27701,7 +27856,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YHXU,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月25日提出・書類ID S100YHXU） 提出会社単体の従業員数 144名",
-    "at": "2026-10-07T16:51:29.804Z"
+    "at": "2026-10-08T00:46:12.869Z"
    },
    {
     "field": "employeesConsolidated",
@@ -27709,7 +27864,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YHXU,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月25日提出・書類ID S100YHXU） 連結の従業員数 28921名",
-    "at": "2026-10-07T16:51:29.804Z"
+    "at": "2026-10-08T00:46:12.869Z"
    }
   ],
   "seedCategories": [
@@ -27915,7 +28070,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XRYY,,",
     "snippet": "EDINETコード E05533 / 上場 証券コード2461 / サービス業",
-    "at": "2026-10-07T16:51:29.807Z"
+    "at": "2026-10-08T00:46:12.872Z"
    },
    {
     "field": "address",
@@ -27923,7 +28078,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XRYY,,",
     "snippet": "EDINETコード一覧の本店所在地: 渋谷区渋谷一丁目１番８号",
-    "at": "2026-10-07T16:51:29.807Z"
+    "at": "2026-10-08T00:46:12.872Z"
    },
    {
     "field": "employees",
@@ -27931,7 +28086,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XRYY,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月25日提出・書類ID S100XRYY） 提出会社単体の従業員数 319名",
-    "at": "2026-10-07T16:51:29.807Z"
+    "at": "2026-10-08T00:46:12.872Z"
    },
    {
     "field": "employeesConsolidated",
@@ -27939,7 +28094,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XRYY,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月25日提出・書類ID S100XRYY） 連結の従業員数 356名",
-    "at": "2026-10-07T16:51:29.807Z"
+    "at": "2026-10-08T00:46:12.872Z"
    }
   ],
   "seedCategories": [
@@ -28098,7 +28253,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XC4C,,",
     "snippet": "EDINETコード E35632 / 上場 証券コード4499 / 情報・通信業",
-    "at": "2026-10-07T16:51:29.810Z"
+    "at": "2026-10-08T00:46:12.875Z"
    },
    {
     "field": "address",
@@ -28106,7 +28261,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XC4C,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区六本木四丁目１番４号",
-    "at": "2026-10-07T16:51:29.810Z"
+    "at": "2026-10-08T00:46:12.876Z"
    },
    {
     "field": "employees",
@@ -28114,7 +28269,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XC4C,,",
     "snippet": "有価証券報告書 2025年9月期（2025年12月22日提出・書類ID S100XC4C） 提出会社単体の従業員数 601名",
-    "at": "2026-10-07T16:51:29.810Z"
+    "at": "2026-10-08T00:46:12.876Z"
    },
    {
     "field": "employeesConsolidated",
@@ -28122,7 +28277,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XC4C,,",
     "snippet": "有価証券報告書 2025年9月期（2025年12月22日提出・書類ID S100XC4C） 連結の従業員数 661名",
-    "at": "2026-10-07T16:51:29.810Z"
+    "at": "2026-10-08T00:46:12.876Z"
    }
   ],
   "seedCategories": [
@@ -28308,7 +28463,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YNBB,,",
     "snippet": "EDINETコード E33615 / 上場 証券コード6562 / 情報・通信業",
-    "at": "2026-10-07T16:51:29.813Z"
+    "at": "2026-10-08T00:46:12.878Z"
    },
    {
     "field": "address",
@@ -28316,7 +28471,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YNBB,,",
     "snippet": "EDINETコード一覧の本店所在地: 新宿区西新宿６－８－１",
-    "at": "2026-10-07T16:51:29.813Z"
+    "at": "2026-10-08T00:46:12.878Z"
    },
    {
     "field": "employees",
@@ -28324,7 +28479,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YNBB,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月30日提出・書類ID S100YNBB） 提出会社単体の従業員数 460名",
-    "at": "2026-10-07T16:51:29.813Z"
+    "at": "2026-10-08T00:46:12.878Z"
    },
    {
     "field": "employeesConsolidated",
@@ -28332,7 +28487,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YNBB,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月30日提出・書類ID S100YNBB） 連結の従業員数 816名",
-    "at": "2026-10-07T16:51:29.813Z"
+    "at": "2026-10-08T00:46:12.878Z"
    }
   ],
   "seedCategories": [
@@ -28810,7 +28965,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XVWO,,",
     "snippet": "EDINETコード E34294 / 上場 証券コード7036 / サービス業",
-    "at": "2026-10-07T16:51:29.823Z"
+    "at": "2026-10-08T00:46:12.887Z"
    },
    {
     "field": "address",
@@ -28818,7 +28973,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XVWO,,",
     "snippet": "EDINETコード一覧の本店所在地: 新宿区西新宿六丁目１０番１号",
-    "at": "2026-10-07T16:51:29.823Z"
+    "at": "2026-10-08T00:46:12.887Z"
    },
    {
     "field": "employees",
@@ -28826,7 +28981,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XVWO,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月31日提出・書類ID S100XVWO） 提出会社単体の従業員数 130名",
-    "at": "2026-10-07T16:51:29.823Z"
+    "at": "2026-10-08T00:46:12.887Z"
    }
   ],
   "seedCategories": [
@@ -28945,7 +29100,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YIBN,,",
     "snippet": "EDINETコード E31446 / 上場 証券コード6045 / サービス業",
-    "at": "2026-10-07T16:51:29.826Z"
+    "at": "2026-10-08T00:46:12.890Z"
    },
    {
     "field": "address",
@@ -28953,7 +29108,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YIBN,,",
     "snippet": "EDINETコード一覧の本店所在地: 江戸川区西葛西五丁目２番３号",
-    "at": "2026-10-07T16:51:29.826Z"
+    "at": "2026-10-08T00:46:12.890Z"
    },
    {
     "field": "employees",
@@ -28961,7 +29116,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YIBN,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月23日提出・書類ID S100YIBN） 提出会社単体の従業員数 52名",
-    "at": "2026-10-07T16:51:29.826Z"
+    "at": "2026-10-08T00:46:12.890Z"
    },
    {
     "field": "employeesConsolidated",
@@ -28969,7 +29124,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YIBN,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月23日提出・書類ID S100YIBN） 連結の従業員数 126名",
-    "at": "2026-10-07T16:51:29.826Z"
+    "at": "2026-10-08T00:46:12.890Z"
    }
   ],
   "seedCategories": [
@@ -29084,7 +29239,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XT7F,,",
     "snippet": "EDINETコード E05206 / 上場 証券コード4293 / サービス業",
-    "at": "2026-10-07T16:51:29.829Z"
+    "at": "2026-10-08T00:46:12.893Z"
    },
    {
     "field": "address",
@@ -29092,7 +29247,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XT7F,,",
     "snippet": "EDINETコード一覧の本店所在地: 新宿区西新宿八丁目１７番１号",
-    "at": "2026-10-07T16:51:29.829Z"
+    "at": "2026-10-08T00:46:12.893Z"
    },
    {
     "field": "employees",
@@ -29100,7 +29255,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XT7F,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月25日提出・書類ID S100XT7F） 提出会社単体の従業員数 97名",
-    "at": "2026-10-07T16:51:29.829Z"
+    "at": "2026-10-08T00:46:12.893Z"
    },
    {
     "field": "employeesConsolidated",
@@ -29108,7 +29263,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XT7F,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月25日提出・書類ID S100XT7F） 連結の従業員数 1674名",
-    "at": "2026-10-07T16:51:29.829Z"
+    "at": "2026-10-08T00:46:12.893Z"
    }
   ],
   "seedCategories": [
@@ -29266,7 +29421,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YFW5,,",
     "snippet": "EDINETコード E05514 / 上場 証券コード2454 / サービス業",
-    "at": "2026-10-07T16:51:29.832Z"
+    "at": "2026-10-08T00:46:12.896Z"
    },
    {
     "field": "address",
@@ -29274,7 +29429,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YFW5,,",
     "snippet": "EDINETコード一覧の本店所在地: 渋谷区恵比寿南１丁目１５番１号",
-    "at": "2026-10-07T16:51:29.832Z"
+    "at": "2026-10-08T00:46:12.896Z"
    },
    {
     "field": "employees",
@@ -29282,7 +29437,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YFW5,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月23日提出・書類ID S100YFW5） 提出会社単体の従業員数 126名",
-    "at": "2026-10-07T16:51:29.832Z"
+    "at": "2026-10-08T00:46:12.896Z"
    },
    {
     "field": "employeesConsolidated",
@@ -29290,7 +29445,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YFW5,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月23日提出・書類ID S100YFW5） 連結の従業員数 296名",
-    "at": "2026-10-07T16:51:29.832Z"
+    "at": "2026-10-08T00:46:12.896Z"
    }
   ],
   "seedCategories": [
@@ -29568,7 +29723,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YHLO,,",
     "snippet": "EDINETコード E40420 / 上場 証券コード331A / サービス業",
-    "at": "2026-10-07T16:51:29.838Z"
+    "at": "2026-10-08T00:46:12.902Z"
    },
    {
     "field": "address",
@@ -29576,7 +29731,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YHLO,,",
     "snippet": "EDINETコード一覧の本店所在地: 千代田区神田神保町１‐１０５",
-    "at": "2026-10-07T16:51:29.838Z"
+    "at": "2026-10-08T00:46:12.902Z"
    },
    {
     "field": "employees",
@@ -29584,7 +29739,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YHLO,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月25日提出・書類ID S100YHLO） 提出会社単体の従業員数 268名",
-    "at": "2026-10-07T16:51:29.838Z"
+    "at": "2026-10-08T00:46:12.902Z"
    },
    {
     "field": "employeesConsolidated",
@@ -29592,7 +29747,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YHLO,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月25日提出・書類ID S100YHLO） 連結の従業員数 343名",
-    "at": "2026-10-07T16:51:29.838Z"
+    "at": "2026-10-08T00:46:12.902Z"
    }
   ],
   "seedCategories": [
@@ -29690,7 +29845,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XC3I,,",
     "snippet": "EDINETコード E37744 / 上場 証券コード9554 / サービス業",
-    "at": "2026-10-07T16:51:29.841Z"
+    "at": "2026-10-08T00:46:12.905Z"
    },
    {
     "field": "address",
@@ -29698,7 +29853,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XC3I,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区赤坂１－１２－３２　アーク森ビル４階",
-    "at": "2026-10-07T16:51:29.841Z"
+    "at": "2026-10-08T00:46:12.905Z"
    },
    {
     "field": "employees",
@@ -29706,7 +29861,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XC3I,,",
     "snippet": "有価証券報告書 2025年9月期（2025年12月22日提出・書類ID S100XC3I） 提出会社単体の従業員数 72名",
-    "at": "2026-10-07T16:51:29.841Z"
+    "at": "2026-10-08T00:46:12.905Z"
    },
    {
     "field": "employeesConsolidated",
@@ -29714,7 +29869,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XC3I,,",
     "snippet": "有価証券報告書 2025年9月期（2025年12月22日提出・書類ID S100XC3I） 連結の従業員数 91名",
-    "at": "2026-10-07T16:51:29.841Z"
+    "at": "2026-10-08T00:46:12.905Z"
    }
   ],
   "seedCategories": [
@@ -29836,7 +29991,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XU5J,,",
     "snippet": "EDINETコード E05149 / 上場 証券コード2491 / サービス業",
-    "at": "2026-10-07T16:51:29.844Z"
+    "at": "2026-10-08T00:46:12.908Z"
    },
    {
     "field": "address",
@@ -29844,7 +29999,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XU5J,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区芝２丁目７番１７号　住友芝公園ビル７階",
-    "at": "2026-10-07T16:51:29.844Z"
+    "at": "2026-10-08T00:46:12.908Z"
    },
    {
     "field": "employees",
@@ -29852,7 +30007,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XU5J,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月26日提出・書類ID S100XU5J） 提出会社単体の従業員数 381名",
-    "at": "2026-10-07T16:51:29.844Z"
+    "at": "2026-10-08T00:46:12.908Z"
    }
   ],
   "seedCategories": [
@@ -29995,7 +30150,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XR0F,,",
     "snippet": "EDINETコード E40916 / 上場 証券コード410A / 情報・通信業",
-    "at": "2026-10-07T16:51:29.847Z"
+    "at": "2026-10-08T00:46:12.911Z"
    },
    {
     "field": "address",
@@ -30003,7 +30158,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XR0F,,",
     "snippet": "EDINETコード一覧の本店所在地: 渋谷区道玄坂一丁目２番３号",
-    "at": "2026-10-07T16:51:29.847Z"
+    "at": "2026-10-08T00:46:12.911Z"
    },
    {
     "field": "employees",
@@ -30011,7 +30166,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XR0F,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月17日提出・書類ID S100XR0F） 提出会社単体の従業員数 103名",
-    "at": "2026-10-07T16:51:29.847Z"
+    "at": "2026-10-08T00:46:12.911Z"
    }
   ],
   "seedCategories": [
@@ -30145,7 +30300,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YIYU,,",
     "snippet": "EDINETコード E31958 / 上場 証券コード6185 / サービス業",
-    "at": "2026-10-07T16:51:29.851Z"
+    "at": "2026-10-08T00:46:12.914Z"
    },
    {
     "field": "address",
@@ -30153,7 +30308,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YIYU,,",
     "snippet": "EDINETコード一覧の本店所在地: 品川区大崎二丁目１１番１号",
-    "at": "2026-10-07T16:51:29.851Z"
+    "at": "2026-10-08T00:46:12.914Z"
    },
    {
     "field": "employees",
@@ -30161,7 +30316,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YIYU,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月24日提出・書類ID S100YIYU） 提出会社単体の従業員数 151名",
-    "at": "2026-10-07T16:51:29.851Z"
+    "at": "2026-10-08T00:46:12.914Z"
    },
    {
     "field": "employeesConsolidated",
@@ -30169,7 +30324,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YIYU,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月24日提出・書類ID S100YIYU） 連結の従業員数 240名",
-    "at": "2026-10-07T16:51:29.851Z"
+    "at": "2026-10-08T00:46:12.914Z"
    }
   ],
   "seedCategories": [
@@ -30303,7 +30458,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XTR2,,",
     "snippet": "EDINETコード E32601 / 上場 証券コード6533 / サービス業",
-    "at": "2026-10-07T16:51:29.853Z"
+    "at": "2026-10-08T00:46:12.917Z"
    },
    {
     "field": "address",
@@ -30311,7 +30466,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XTR2,,",
     "snippet": "EDINETコード一覧の本店所在地: 渋谷区恵比寿四丁目２０番３号",
-    "at": "2026-10-07T16:51:29.853Z"
+    "at": "2026-10-08T00:46:12.917Z"
    },
    {
     "field": "employees",
@@ -30319,7 +30474,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XTR2,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月25日提出・書類ID S100XTR2） 提出会社単体の従業員数 40名",
-    "at": "2026-10-07T16:51:29.853Z"
+    "at": "2026-10-08T00:46:12.917Z"
    },
    {
     "field": "employeesConsolidated",
@@ -30327,7 +30482,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XTR2,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月25日提出・書類ID S100XTR2） 連結の従業員数 1178名",
-    "at": "2026-10-07T16:51:29.853Z"
+    "at": "2026-10-08T00:46:12.917Z"
    }
   ],
   "seedCategories": [
@@ -30497,7 +30652,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XCIW,,",
     "snippet": "EDINETコード E36961 / 上場 証券コード9244 / サービス業",
-    "at": "2026-10-07T16:51:29.857Z"
+    "at": "2026-10-08T00:46:12.920Z"
    },
    {
     "field": "address",
@@ -30505,7 +30660,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XCIW,,",
     "snippet": "EDINETコード一覧の本店所在地: 渋谷区神宮前六丁目１７番１１号",
-    "at": "2026-10-07T16:51:29.857Z"
+    "at": "2026-10-08T00:46:12.920Z"
    },
    {
     "field": "employees",
@@ -30513,7 +30668,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XCIW,,",
     "snippet": "有価証券報告書 2025年9月期（2025年12月24日提出・書類ID S100XCIW） 提出会社単体の従業員数 46名",
-    "at": "2026-10-07T16:51:29.857Z"
+    "at": "2026-10-08T00:46:12.920Z"
    },
    {
     "field": "employeesConsolidated",
@@ -30521,7 +30676,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XCIW,,",
     "snippet": "有価証券報告書 2025年9月期（2025年12月24日提出・書類ID S100XCIW） 連結の従業員数 55名",
-    "at": "2026-10-07T16:51:29.857Z"
+    "at": "2026-10-08T00:46:12.920Z"
    }
   ],
   "seedCategories": [
@@ -31299,7 +31454,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YHK9,,",
     "snippet": "EDINETコード E03266 / 上場 証券コード7506 / 小売業",
-    "at": "2026-10-07T16:51:29.878Z"
+    "at": "2026-10-08T00:46:12.940Z"
    },
    {
     "field": "address",
@@ -31307,7 +31462,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YHK9,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区赤坂二丁目２１番７号",
-    "at": "2026-10-07T16:51:29.878Z"
+    "at": "2026-10-08T00:46:12.940Z"
    },
    {
     "field": "employees",
@@ -31315,7 +31470,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YHK9,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月23日提出・書類ID S100YHK9） 提出会社単体の従業員数 752名",
-    "at": "2026-10-07T16:51:29.878Z"
+    "at": "2026-10-08T00:46:12.940Z"
    }
   ],
   "seedCategories": [
@@ -31325,8 +31480,8 @@
   ],
   "contactUrl": null,
   "checks": {
-   "verifiedAt": "2026-10-07",
-   "sig": "[2,[\"cosme_d2c\"],\"https://www.houseofrose.co.jp/\",\"東京都港区赤坂二丁目21番7号\",752,\"edinet\",\"https://www.houseofrose.jp/contact/\",[\"化粧品D2C/P2C\"]]",
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"cosme_d2c\"],\"https://www.houseofrose.co.jp/\",\"東京都港区赤坂二丁目21番7号\",752,\"edinet\",\"https://www.houseofrose.jp/contact/\",[\"化粧品D2C/P2C\"]]",
    "industry": {
     "cosme_d2c": {
      "result": "OK",
@@ -31336,7 +31491,7 @@
    },
    "employees": {
     "result": "OK",
-    "comment": "有価証券報告書(EDINET)で752名（2026年3月時点）。他の情報源(salesnow=908)とも概ね整合",
+    "comment": "有価証券報告書(EDINET)で752名（2026年3月時点） / 公式サイトでは確認できず、公式サイト以外(有価証券報告書(EDINET))の値を採用（2026年3月時点） / 他の情報源(SalesNow=908)とも概ね整合",
     "after": 752,
     "asOf": "2026年3月",
     "source": "edinet"
@@ -31582,7 +31737,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XTLN,,",
     "snippet": "EDINETコード E00887 / 上場 証券コード4463 / 化学",
-    "at": "2026-10-07T16:51:29.884Z"
+    "at": "2026-10-08T00:46:12.946Z"
    },
    {
     "field": "address",
@@ -31590,7 +31745,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XTLN,,",
     "snippet": "EDINETコード一覧の本店所在地: 福井市文京４丁目２３番１号",
-    "at": "2026-10-07T16:51:29.884Z"
+    "at": "2026-10-08T00:46:12.946Z"
    },
    {
     "field": "employees",
@@ -31598,7 +31753,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XTLN,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月25日提出・書類ID S100XTLN） 提出会社単体の従業員数 628名",
-    "at": "2026-10-07T16:51:29.884Z"
+    "at": "2026-10-08T00:46:12.946Z"
    },
    {
     "field": "employeesConsolidated",
@@ -31606,7 +31761,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XTLN,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月25日提出・書類ID S100XTLN） 連結の従業員数 1576名",
-    "at": "2026-10-07T16:51:29.884Z"
+    "at": "2026-10-08T00:46:12.946Z"
    }
   ],
   "seedCategories": [
@@ -32459,7 +32614,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YIZ2,,",
     "snippet": "EDINETコード E01120 / 上場 証券コード7932 / その他製品",
-    "at": "2026-10-07T16:51:29.908Z"
+    "at": "2026-10-08T00:46:12.969Z"
    },
    {
     "field": "address",
@@ -32467,7 +32622,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YIZ2,,",
     "snippet": "EDINETコード一覧の本店所在地: 足立区千住緑町１－１－１",
-    "at": "2026-10-07T16:51:29.908Z"
+    "at": "2026-10-08T00:46:12.969Z"
    },
    {
     "field": "employees",
@@ -32475,7 +32630,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YIZ2,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月25日提出・書類ID S100YIZ2） 提出会社単体の従業員数 466名",
-    "at": "2026-10-07T16:51:29.908Z"
+    "at": "2026-10-08T00:46:12.969Z"
    },
    {
     "field": "employeesConsolidated",
@@ -32483,7 +32638,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YIZ2,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月25日提出・書類ID S100YIZ2） 連結の従業員数 630名",
-    "at": "2026-10-07T16:51:29.908Z"
+    "at": "2026-10-08T00:46:12.969Z"
    }
   ],
   "seedCategories": [
@@ -32611,7 +32766,35 @@
    "cosme_d2c",
    "cosme_d2c"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"cosme_d2c\"],\"https://www.svenson.co.jp/\",\"東京都港区赤坂1-12-32 アーク森ビル17階\",743,\"official\",\"https://www.svenson.co.jp/contact/\",[\"化粧品D2C/P2C\"]]",
+   "industry": {
+    "cosme_d2c": {
+     "result": "OK",
+     "comment": "公式の自社説明に「コスメ/ヘアケア」あり。化粧品D2C/P2Cを取り扱っている（他に ウィッグ 等の事業もあり、化粧品D2C/P2Cは主業でない可能性）",
+     "after": "化粧品D2C/P2C"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "公式サイトで743名（2026年5月時点） / 公式の数字に「連結」の記載あり（単体の従業員数ではない可能性） / 他の情報源(SalesNow=567)とも概ね整合",
+    "after": 743,
+    "asOf": "2026年5月",
+    "source": "official"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.svenson.co.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都港区)がsalesnow/officialと一致",
+    "after": "https://www.svenson.co.jp/"
+   }
+  }
  },
  {
   "key": "群馬ヤクルト販売",
@@ -33011,7 +33194,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YF39,,",
     "snippet": "EDINETコード E00442 / 上場 証券コード2892 / 食料品",
-    "at": "2026-10-07T16:51:29.922Z"
+    "at": "2026-10-08T00:46:12.983Z"
    },
    {
     "field": "address",
@@ -33019,7 +33202,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YF39,,",
     "snippet": "EDINETコード一覧の本店所在地: 千代田区丸の内一丁目６番５号",
-    "at": "2026-10-07T16:51:29.922Z"
+    "at": "2026-10-08T00:46:12.983Z"
    },
    {
     "field": "employees",
@@ -33027,7 +33210,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YF39,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月22日提出・書類ID S100YF39） 提出会社単体の従業員数 452名",
-    "at": "2026-10-07T16:51:29.922Z"
+    "at": "2026-10-08T00:46:12.983Z"
    }
   ],
   "seedCategories": [
@@ -33531,7 +33714,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100X6W8,,",
     "snippet": "EDINETコード E01064 / 上場 証券コード2927 / 食料品",
-    "at": "2026-10-07T16:51:29.937Z"
+    "at": "2026-10-08T00:46:12.998Z"
    },
    {
     "field": "address",
@@ -33539,7 +33722,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100X6W8,,",
     "snippet": "EDINETコード一覧の本店所在地: 静岡市駿河区豊田３丁目６番３６号",
-    "at": "2026-10-07T16:51:29.937Z"
+    "at": "2026-10-08T00:46:12.998Z"
    },
    {
     "field": "employees",
@@ -33547,7 +33730,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100X6W8,,",
     "snippet": "有価証券報告書 2025年8月期（2025年11月26日提出・書類ID S100X6W8） 提出会社単体の従業員数 360名",
-    "at": "2026-10-07T16:51:29.937Z"
+    "at": "2026-10-08T00:46:12.998Z"
    },
    {
     "field": "employeesConsolidated",
@@ -33555,7 +33738,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100X6W8,,",
     "snippet": "有価証券報告書 2025年8月期（2025年11月26日提出・書類ID S100X6W8） 連結の従業員数 1008名",
-    "at": "2026-10-07T16:51:29.937Z"
+    "at": "2026-10-08T00:46:12.998Z"
    }
   ],
   "seedCategories": [
@@ -33879,7 +34062,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YYQN,,",
     "snippet": "EDINETコード E01059 / 上場 証券コード4923 / 化学",
-    "at": "2026-10-07T16:51:29.946Z"
+    "at": "2026-10-08T00:46:13.007Z"
    },
    {
     "field": "address",
@@ -33887,7 +34070,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YYQN,,",
     "snippet": "EDINETコード一覧の本店所在地: 久世郡久御山町田井新荒見７７番地",
-    "at": "2026-10-07T16:51:29.946Z"
+    "at": "2026-10-08T00:46:13.007Z"
    },
    {
     "field": "employees",
@@ -33895,7 +34078,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YYQN,,",
     "snippet": "有価証券報告書 2026年3月期（2026年8月31日提出・書類ID S100YYQN） 提出会社単体の従業員数 395名",
-    "at": "2026-10-07T16:51:29.946Z"
+    "at": "2026-10-08T00:46:13.007Z"
    }
   ],
   "seedCategories": [
@@ -36209,7 +36392,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YFI1,,",
     "snippet": "EDINETコード E35568 / 上場 証券コード4932 / 化学",
-    "at": "2026-10-07T16:51:30.016Z"
+    "at": "2026-10-08T00:46:13.072Z"
    },
    {
     "field": "address",
@@ -36217,7 +36400,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YFI1,,",
     "snippet": "EDINETコード一覧の本店所在地: 中央区日本橋室町４－６－２　菱華ビルディング７階",
-    "at": "2026-10-07T16:51:30.016Z"
+    "at": "2026-10-08T00:46:13.072Z"
    },
    {
     "field": "employees",
@@ -36225,7 +36408,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YFI1,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月22日提出・書類ID S100YFI1） 提出会社単体の従業員数 93名",
-    "at": "2026-10-07T16:51:30.016Z"
+    "at": "2026-10-08T00:46:13.072Z"
    }
   ],
   "seedCategories": [
@@ -36752,7 +36935,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XSXS,,",
     "snippet": "EDINETコード E01047 / 上場 証券コード4967 / 化学",
-    "at": "2026-10-07T16:51:30.031Z"
+    "at": "2026-10-08T00:46:13.087Z"
    },
    {
     "field": "address",
@@ -36760,7 +36943,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XSXS,,",
     "snippet": "EDINETコード一覧の本店所在地: 大阪市中央区道修町４丁目４番１０号",
-    "at": "2026-10-07T16:51:30.031Z"
+    "at": "2026-10-08T00:46:13.087Z"
    },
    {
     "field": "employees",
@@ -36768,7 +36951,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XSXS,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月25日提出・書類ID S100XSXS） 提出会社単体の従業員数 1737名",
-    "at": "2026-10-07T16:51:30.031Z"
+    "at": "2026-10-08T00:46:13.087Z"
    },
    {
     "field": "employeesConsolidated",
@@ -36776,7 +36959,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XSXS,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月25日提出・書類ID S100XSXS） 連結の従業員数 3731名",
-    "at": "2026-10-07T16:51:30.031Z"
+    "at": "2026-10-08T00:46:13.087Z"
    }
   ],
   "seedCategories": [
@@ -37395,7 +37578,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YIUO,,",
     "snippet": "EDINETコード E23479 / 上場 証券コード4926 / 化学",
-    "at": "2026-10-07T16:51:30.046Z"
+    "at": "2026-10-08T00:46:13.101Z"
    },
    {
     "field": "address",
@@ -37403,7 +37586,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YIUO,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区六本木七丁目１８番１２号",
-    "at": "2026-10-07T16:51:30.046Z"
+    "at": "2026-10-08T00:46:13.101Z"
    },
    {
     "field": "employees",
@@ -37411,7 +37594,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YIUO,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月24日提出・書類ID S100YIUO） 提出会社単体の従業員数 713名",
-    "at": "2026-10-07T16:51:30.046Z"
+    "at": "2026-10-08T00:46:13.101Z"
    },
    {
     "field": "employeesConsolidated",
@@ -37419,7 +37602,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YIUO,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月24日提出・書類ID S100YIUO） 連結の従業員数 717名",
-    "at": "2026-10-07T16:51:30.046Z"
+    "at": "2026-10-08T00:46:13.101Z"
    }
   ],
   "seedCategories": [
@@ -37679,7 +37862,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XSCU,,",
     "snippet": "EDINETコード E00990 / 上場 証券コード4911 / 化学",
-    "at": "2026-10-07T16:51:30.052Z"
+    "at": "2026-10-08T00:46:13.107Z"
    },
    {
     "field": "address",
@@ -37687,7 +37870,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XSCU,,",
     "snippet": "EDINETコード一覧の本店所在地: 中央区銀座七丁目５番５号",
-    "at": "2026-10-07T16:51:30.052Z"
+    "at": "2026-10-08T00:46:13.107Z"
    },
    {
     "field": "employees",
@@ -37695,7 +37878,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XSCU,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月23日提出・書類ID S100XSCU） 提出会社単体の従業員数 3850名",
-    "at": "2026-10-07T16:51:30.052Z"
+    "at": "2026-10-08T00:46:13.107Z"
    },
    {
     "field": "employeesConsolidated",
@@ -37703,7 +37886,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XSCU,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月23日提出・書類ID S100XSCU） 連結の従業員数 26330名",
-    "at": "2026-10-07T16:51:30.052Z"
+    "at": "2026-10-08T00:46:13.107Z"
    }
   ],
   "seedCategories": [
@@ -38239,7 +38422,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XA5Q,,",
     "snippet": "EDINETコード E34965 / 上場 証券コード4931 / 化学",
-    "at": "2026-10-07T16:51:30.071Z"
+    "at": "2026-10-08T00:46:13.125Z"
    },
    {
     "field": "address",
@@ -38247,7 +38430,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XA5Q,,",
     "snippet": "EDINETコード一覧の本店所在地: 福岡市中央区大手門一丁目４番７号",
-    "at": "2026-10-07T16:51:30.071Z"
+    "at": "2026-10-08T00:46:13.125Z"
    },
    {
     "field": "employees",
@@ -38255,7 +38438,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XA5Q,,",
     "snippet": "有価証券報告書 2025年9月期（2025年12月16日提出・書類ID S100XA5Q） 提出会社単体の従業員数 309名",
-    "at": "2026-10-07T16:51:30.071Z"
+    "at": "2026-10-08T00:46:13.125Z"
    },
    {
     "field": "employeesConsolidated",
@@ -38263,7 +38446,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XA5Q,,",
     "snippet": "有価証券報告書 2025年9月期（2025年12月16日提出・書類ID S100XA5Q） 連結の従業員数 316名",
-    "at": "2026-10-07T16:51:30.071Z"
+    "at": "2026-10-08T00:46:13.125Z"
    }
   ],
   "seedCategories": [
@@ -38988,7 +39171,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YA2L,,",
     "snippet": "EDINETコード E01063 / 上場 証券コード4925 / 化学",
-    "at": "2026-10-07T16:51:30.090Z"
+    "at": "2026-10-08T00:46:13.142Z"
    },
    {
     "field": "address",
@@ -38996,7 +39179,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YA2L,,",
     "snippet": "EDINETコード一覧の本店所在地: 千代田区神田須田町一丁目２４番地",
-    "at": "2026-10-07T16:51:30.090Z"
+    "at": "2026-10-08T00:46:13.142Z"
    },
    {
     "field": "employees",
@@ -39004,7 +39187,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YA2L,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月19日提出・書類ID S100YA2L） 提出会社単体の従業員数 370名",
-    "at": "2026-10-07T16:51:30.090Z"
+    "at": "2026-10-08T00:46:13.142Z"
    },
    {
     "field": "employeesConsolidated",
@@ -39012,7 +39195,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YA2L,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月19日提出・書類ID S100YA2L） 連結の従業員数 523名",
-    "at": "2026-10-07T16:51:30.090Z"
+    "at": "2026-10-08T00:46:13.142Z"
    }
   ],
   "seedCategories": [
@@ -40724,7 +40907,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Z2G0,,",
     "snippet": "EDINETコード E38687 / 上場 証券コード9159 / サービス業",
-    "at": "2026-10-07T16:51:30.126Z"
+    "at": "2026-10-08T00:46:13.178Z"
    },
    {
     "field": "address",
@@ -40732,7 +40915,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Z2G0,,",
     "snippet": "EDINETコード一覧の本店所在地: 渋谷区神宮前五丁目２８番５号",
-    "at": "2026-10-07T16:51:30.126Z"
+    "at": "2026-10-08T00:46:13.178Z"
    },
    {
     "field": "employees",
@@ -40740,7 +40923,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Z2G0,,",
     "snippet": "有価証券報告書 2026年6月期（2026年9月18日提出・書類ID S100Z2G0） 提出会社単体の従業員数 60名",
-    "at": "2026-10-07T16:51:30.126Z"
+    "at": "2026-10-08T00:46:13.178Z"
    }
   ],
   "seedCategories": [
@@ -40866,6 +41049,39 @@
    "at": "2026-10-08",
    "note": "インターン情報サイトから取得。https://renew-career.com/companies/539/joboffers/1636",
    "employeesValue": 26
+  },
+  "checks": {
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"cosme_d2c\",\"influencer_agency\"],\"https://reaplus.jp/\",\"東京都渋谷区桜丘町31-14 SLACK SHIBUYA 603\",26,\"human\",\"https://reaplus.jp/contact\",[\"化粧品D2C/P2C\",\"インフルエンサー事務所\"]]",
+   "industry": {
+    "cosme_d2c": {
+     "result": "OK",
+     "comment": "公式サイトの本文に「スキンケア」が複数あり、化粧品D2C/P2Cを取り扱っている（自社説明の冒頭には無く、主業でない可能性）",
+     "after": "化粧品D2C/P2C"
+    },
+    "influencer_agency": {
+     "result": "OK",
+     "comment": "公式の自社説明に「インフルエンサー」あり。インフルエンサー事務所を取り扱っている",
+     "after": "インフルエンサー事務所"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "人の確認で26名 / 従業員数は人が確認した値",
+    "after": 26,
+    "asOf": null,
+    "source": "human"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://reaplus.jp/contact"
+   },
+   "identity": {
+    "result": "要確認",
+    "comment": "公式サイトに社名はあるが、所在地・ドメインを裏付ける別の情報源がなく、同名企業との区別は未確認",
+    "after": "https://reaplus.jp/"
+   }
   }
  },
  {
@@ -41849,7 +42065,35 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"influencer_agency\"],\"https://nahato.co.jp/\",\"東京都渋谷区道玄坂1-12-1 渋谷マークシティウエスト 15F\",96,\"gbizinfo\",\"https://nahato.co.jp/contact\",[\"化粧品D2C/P2C\",\"インフルエンサー事務所\",\"広告代理店\",\"SNS運用代行\"]]",
+   "industry": {
+    "influencer_agency": {
+     "result": "OK",
+     "comment": "公式の自社説明に「インフルエンサー」あり。インフルエンサー事務所を取り扱っている",
+     "after": "インフルエンサー事務所"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "Gビズインフォで96名 / 公式サイトでは確認できず、公式サイト以外(Gビズインフォ)の値を採用（時点の記載なし） / Gビズインフォの値は推定値/レンジ/古い可能性のある値",
+    "after": 96,
+    "asOf": null,
+    "source": "gbizinfo"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://nahato.co.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都渋谷区)がprtimes/gbizinfoと一致",
+    "after": "https://nahato.co.jp/"
+   }
+  }
  },
  {
   "key": "alcmst",
@@ -42137,8 +42381,8 @@
   ],
   "contactUrl": null,
   "checks": {
-   "verifiedAt": "2026-10-07",
-   "sig": "[2,[\"influencer_agency\"],\"https://nadia-corp.co.jp/\",\"東京都港区高輪2-16-4 STOCKビル 2F・3F\",41,\"official\",\"https://nadia-corp.co.jp/contact\",[\"インフルエンサー事務所\",\"SNS運用代行\"]]",
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"influencer_agency\"],\"https://nadia-corp.co.jp/\",\"東京都港区高輪2-16-4 STOCKビル 2F・3F\",41,\"official\",\"https://nadia-corp.co.jp/contact\",[\"インフルエンサー事務所\",\"SNS運用代行\"]]",
    "industry": {
     "influencer_agency": {
      "result": "OK",
@@ -42354,7 +42598,35 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"influencer_agency\"],\"http://kirinz.tokyo/\",\"東京都目黒区中目黒1-8-8 目黒F2ビル 1F\",99,\"gbizinfo\",\"https://kirinz.tokyo/contact/\",[\"インフルエンサー事務所\"]]",
+   "industry": {
+    "influencer_agency": {
+     "result": "OK",
+     "comment": "公式の自社説明に「インフルエンサー」あり。インフルエンサー事務所を取り扱っている（他に AI 等の事業もあり、インフルエンサー事務所は主業でない可能性）",
+     "after": "インフルエンサー事務所"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "Gビズインフォで99名 / 公式サイトでは確認できず、公式サイト以外(Gビズインフォ)の値を採用（時点の記載なし） / Gビズインフォの値は推定値/レンジ/古い可能性のある値",
+    "after": 99,
+    "asOf": null,
+    "source": "gbizinfo"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://kirinz.tokyo/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都目黒区)がprtimes/gbizinfoと一致",
+    "after": "http://kirinz.tokyo/"
+   }
+  }
  },
  {
   "key": "ソケッツ",
@@ -42462,7 +42734,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y9J8,,",
     "snippet": "EDINETコード E22461 / 上場 証券コード3634 / 情報・通信業",
-    "at": "2026-10-07T16:51:30.167Z"
+    "at": "2026-10-08T00:46:13.221Z"
    },
    {
     "field": "address",
@@ -42470,7 +42742,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y9J8,,",
     "snippet": "EDINETコード一覧の本店所在地: 渋谷区恵比寿４丁目２０番３号　恵比寿ガーデンプレイスタワー３６階",
-    "at": "2026-10-07T16:51:30.167Z"
+    "at": "2026-10-08T00:46:13.221Z"
    },
    {
     "field": "employees",
@@ -42478,7 +42750,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y9J8,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月23日提出・書類ID S100Y9J8） 提出会社単体の従業員数 53名",
-    "at": "2026-10-07T16:51:30.167Z"
+    "at": "2026-10-08T00:46:13.221Z"
    }
   ],
   "seedCategories": [
@@ -43216,8 +43488,8 @@
   ],
   "contactUrl": null,
   "checks": {
-   "verifiedAt": "2026-10-07",
-   "sig": "[2,[\"influencer_agency\"],\"https://twinplanet.co.jp/\",\"東京都渋谷区神宮前5-52-2 青山オーバルビル12階\",150,\"official\",\"https://twinplanet.co.jp/contact/\",[\"インフルエンサー事務所\"]]",
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"influencer_agency\"],\"https://twinplanet.co.jp/\",\"東京都渋谷区神宮前5-52-2 青山オーバルビル12階\",150,\"official\",\"https://twinplanet.co.jp/contact/\",[\"インフルエンサー事務所\"]]",
    "industry": {
     "influencer_agency": {
      "result": "OK",
@@ -43386,7 +43658,35 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"influencer_agency\"],\"https://fint.co.jp/\",\"東京都渋谷区恵比寿1丁目18-14 恵比寿ファーストスクエア12階\",80,\"salesnow\",\"https://fint.co.jp/contact/\",[\"インフルエンサー事務所\",\"SNS運用代行\"]]",
+   "industry": {
+    "influencer_agency": {
+     "result": "OK",
+     "comment": "公式の自社説明に「インフルエンサー」あり。インフルエンサー事務所を取り扱っている（他に 金融/AI 等の事業もあり、インフルエンサー事務所は主業でない可能性）",
+     "after": "インフルエンサー事務所"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "SalesNowで80名 / 公式サイトでは確認できず、公式サイト以外(SalesNow)の値を採用（時点の記載なし） / SalesNowの値は推定値/レンジ/古い可能性のある値",
+    "after": 80,
+    "asOf": null,
+    "source": "salesnow"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://fint.co.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都渋谷区)がprtimes/salesnowと一致、公式ドメインをprtimes/salesnowが示す",
+    "after": "https://fint.co.jp/"
+   }
+  }
  },
  {
   "key": "認定npo法人キッズドア",
@@ -43745,6 +44045,34 @@
    "at": "2026-10-08",
    "note": "日経新聞をソース　https://www.nikkei.com/nkd/company/gaiyo/?scode=7691",
    "employeesValue": 52
+  },
+  "checks": {
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"influencer_agency\"],\"https://corp.cchan.tv/\",\"東京都港区南青山7-1-5 コラム南青山7階\",52,\"human\",\"https://corp.cchan.tv/contact\",[\"インフルエンサー事務所\"]]",
+   "industry": {
+    "influencer_agency": {
+     "result": "OK",
+     "comment": "公式の自社説明に「インフルエンサー/クリエイター」あり。インフルエンサー事務所を取り扱っている（他に プラットフォーム 等の事業もあり、インフルエンサー事務所は主業でない可能性）",
+     "after": "インフルエンサー事務所"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "人の確認で52名 / 従業員数は人が確認した値 / 他の情報源のOpenWork=30名とは差がある(1.7倍)。調査時点・集計範囲の違いの可能性",
+    "after": 52,
+    "asOf": null,
+    "source": "human"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://corp.cchan.tv/contact"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都港区)がgbizinfo/openworkと一致",
+    "after": "https://corp.cchan.tv/"
+   }
   }
  },
  {
@@ -44067,8 +44395,8 @@
   ],
   "contactUrl": null,
   "checks": {
-   "verifiedAt": "2026-10-07",
-   "sig": "[2,[\"influencer_agency\"],\"https://corp.bitstar.tokyo/\",\"東京都渋谷区渋谷2-22-3 渋谷東口ビル 10F\",162,\"official\",\"https://bitstar.tokyo/corp/contact\",[\"インフルエンサー事務所\",\"広告代理店\",\"SNS運用代行\"]]",
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"influencer_agency\"],\"https://corp.bitstar.tokyo/\",\"東京都渋谷区渋谷2-22-3 渋谷東口ビル 10F\",162,\"official\",\"https://bitstar.tokyo/corp/contact\",[\"インフルエンサー事務所\",\"広告代理店\",\"SNS運用代行\"]]",
    "industry": {
     "influencer_agency": {
      "result": "OK",
@@ -44078,7 +44406,7 @@
    },
    "employees": {
     "result": "OK",
-    "comment": "公式サイトで162名。他の情報源(gbizinfo=143)とも概ね整合",
+    "comment": "公式サイトで162名 / 他の情報源(Gビズインフォ=143)とも概ね整合",
     "after": 162,
     "asOf": null,
     "source": "official"
@@ -44281,7 +44609,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YF9R,,",
     "snippet": "EDINETコード E31955 / 上場 証券コード3929 / 情報・通信業",
-    "at": "2026-10-07T16:51:30.208Z"
+    "at": "2026-10-08T00:46:13.261Z"
    },
    {
     "field": "address",
@@ -44289,7 +44617,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YF9R,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区芝浦三丁目９番１号　芝浦ルネサイトタワー６階",
-    "at": "2026-10-07T16:51:30.208Z"
+    "at": "2026-10-08T00:46:13.261Z"
    },
    {
     "field": "employees",
@@ -44297,7 +44625,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YF9R,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月24日提出・書類ID S100YF9R） 提出会社単体の従業員数 105名",
-    "at": "2026-10-07T16:51:30.208Z"
+    "at": "2026-10-08T00:46:13.261Z"
    },
    {
     "field": "employeesConsolidated",
@@ -44305,7 +44633,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YF9R,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月24日提出・書類ID S100YF9R） 連結の従業員数 153名",
-    "at": "2026-10-07T16:51:30.208Z"
+    "at": "2026-10-08T00:46:13.261Z"
    }
   ],
   "seedCategories": [
@@ -44316,8 +44644,8 @@
   ],
   "contactUrl": null,
   "checks": {
-   "verifiedAt": "2026-10-07",
-   "sig": "[2,[\"influencer_agency\"],\"https://find-model.jp/\",\"東京都港区芝浦三丁目9番1号 芝浦ルネサイトタワー6階\",105,\"edinet\",\"https://find-model.jp/company/contact\",[\"インフルエンサー事務所\",\"広告代理店\",\"SNS運用代行\"]]",
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"influencer_agency\"],\"https://find-model.jp/\",\"東京都港区芝浦三丁目9番1号 芝浦ルネサイトタワー6階\",105,\"edinet\",\"https://find-model.jp/company/contact\",[\"インフルエンサー事務所\",\"広告代理店\",\"SNS運用代行\"]]",
    "industry": {
     "influencer_agency": {
      "result": "OK",
@@ -44326,8 +44654,8 @@
     }
    },
    "employees": {
-    "result": "要確認",
-    "comment": "edinet=105名に対しgbizinfo=274名と差がある(2.6倍)。調査時点・集計範囲の違いの可能性",
+    "result": "OK",
+    "comment": "有価証券報告書(EDINET)で105名（2026年3月時点） / 公式サイトでは確認できず、公式サイト以外(有価証券報告書(EDINET))の値を採用（2026年3月時点） / 他の情報源のGビズインフォ=274名とは差がある(2.6倍)。調査時点・集計範囲の違いの可能性",
     "after": 105,
     "asOf": "2026年3月",
     "source": "edinet"
@@ -44486,12 +44814,20 @@
     "at": "2026-10-07T15:20:22.553Z"
    },
    {
+    "field": "employees",
+    "value": 53,
+    "source": "human",
+    "url": "",
+    "snippet": "人が確認(2026-10-08): Yahooファイナンスも53だったので、EDINETを正としてよい。https://finance.yahoo.co.jp/quote/9337.T/profile",
+    "at": "2026-10-08T00:31:39.166Z"
+   },
+   {
     "field": "edinetCode",
     "value": "E38162",
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XQKR,,",
     "snippet": "EDINETコード E38162 / 上場 証券コード9337 / サービス業",
-    "at": "2026-10-07T16:51:30.211Z"
+    "at": "2026-10-08T00:46:13.264Z"
    },
    {
     "field": "address",
@@ -44499,7 +44835,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XQKR,,",
     "snippet": "EDINETコード一覧の本店所在地: 渋谷区円山町２８番１号",
-    "at": "2026-10-07T16:51:30.211Z"
+    "at": "2026-10-08T00:46:13.264Z"
    },
    {
     "field": "employees",
@@ -44507,7 +44843,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XQKR,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月18日提出・書類ID S100XQKR） 提出会社単体の従業員数 53名",
-    "at": "2026-10-07T16:51:30.211Z"
+    "at": "2026-10-08T00:46:13.264Z"
    },
    {
     "field": "employeesConsolidated",
@@ -44515,15 +44851,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XQKR,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月18日提出・書類ID S100XQKR） 連結の従業員数 136名",
-    "at": "2026-10-07T16:51:30.211Z"
-   },
-   {
-    "field": "employees",
-    "value": 53,
-    "source": "human",
-    "url": "",
-    "snippet": "人が確認(2026-10-08): Yahooファイナンスも53だったので、EDINETを正としてよい。https://finance.yahoo.co.jp/quote/9337.T/profile",
-    "at": "2026-10-08T00:31:39.166Z"
+    "at": "2026-10-08T00:46:13.264Z"
    }
   ],
   "seedCategories": [
@@ -44534,8 +44862,8 @@
   ],
   "contactUrl": null,
   "checks": {
-   "verifiedAt": "2026-10-07",
-   "sig": "[2,[\"influencer_agency\"],\"https://toridori.co.jp/\",\"東京都渋谷区円山町28番1号\",53,\"edinet\",\"https://toridori.co.jp/contact\",[\"インフルエンサー事務所\"]]",
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"influencer_agency\"],\"https://toridori.co.jp/\",\"東京都渋谷区円山町28番1号\",53,\"human\",\"https://toridori.co.jp/contact\",[\"インフルエンサー事務所\"]]",
    "industry": {
     "influencer_agency": {
      "result": "OK",
@@ -44544,11 +44872,11 @@
     }
    },
    "employees": {
-    "result": "要確認",
-    "comment": "edinet=53名に対しsalesnow=125名と差がある(2.4倍)。調査時点・集計範囲の違いの可能性",
+    "result": "OK",
+    "comment": "人の確認で53名 / 従業員数は人が確認した値 / 他の情報源のSalesNow=125名とは差がある(2.4倍)。調査時点・集計範囲の違いの可能性",
     "after": 53,
-    "asOf": "2025年12月",
-    "source": "edinet"
+    "asOf": null,
+    "source": "human"
    },
    "contact": {
     "result": "OK",
@@ -44706,7 +45034,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YNGH,,",
     "snippet": "EDINETコード E26933 / 上場 証券コード6069 / サービス業",
-    "at": "2026-10-07T16:51:30.214Z"
+    "at": "2026-10-08T00:46:13.267Z"
    },
    {
     "field": "address",
@@ -44714,7 +45042,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YNGH,,",
     "snippet": "EDINETコード一覧の本店所在地: 渋谷区東三丁目１６番３号",
-    "at": "2026-10-07T16:51:30.214Z"
+    "at": "2026-10-08T00:46:13.267Z"
    },
    {
     "field": "employees",
@@ -44722,7 +45050,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YNGH,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月30日提出・書類ID S100YNGH） 提出会社単体の従業員数 204名",
-    "at": "2026-10-07T16:51:30.214Z"
+    "at": "2026-10-08T00:46:13.267Z"
    },
    {
     "field": "employeesConsolidated",
@@ -44730,7 +45058,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YNGH,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月30日提出・書類ID S100YNGH） 連結の従業員数 277名",
-    "at": "2026-10-07T16:51:30.214Z"
+    "at": "2026-10-08T00:46:13.267Z"
    }
   ],
   "seedCategories": [
@@ -44870,7 +45198,35 @@
    "influencer_agency"
   ],
   "contactUrl": null,
-  "noPrtimes": true
+  "noPrtimes": true,
+  "checks": {
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"influencer_agency\"],\"https://www.uuum.co.jp/\",\"東京都港区六本木7-15-9 住友不動産六本木セントラルタワー7階\",364,\"gbizinfo\",\"https://www.uuum.co.jp/inquiry\",[\"インフルエンサー事務所\",\"広告代理店\",\"SNS運用代行\"]]",
+   "industry": {
+    "influencer_agency": {
+     "result": "OK",
+     "comment": "公式の自社説明に「インフルエンサー」あり。インフルエンサー事務所を取り扱っている（他に ゲーム 等の事業もあり、インフルエンサー事務所は主業でない可能性）",
+     "after": "インフルエンサー事務所"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "Gビズインフォで364名 / 公式サイトでは確認できず、公式サイト以外(Gビズインフォ)の値を採用（時点の記載なし） / Gビズインフォの値は推定値/レンジ/古い可能性のある値",
+    "after": 364,
+    "asOf": null,
+    "source": "gbizinfo"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.uuum.co.jp/inquiry"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都港区)がgbizinfoと一致",
+    "after": "https://www.uuum.co.jp/"
+   }
+  }
  },
  {
   "key": "フロンティアコンサルティング",
@@ -45387,8 +45743,8 @@
   ],
   "contactUrl": null,
   "checks": {
-   "verifiedAt": "2026-10-07",
-   "sig": "[2,[\"cosme_d2c\"],\"https://storiiy.com/\",\"東京都渋谷区神南1-19-4\",26,\"official\",\"https://storiiy.com/contact/\",[\"化粧品D2C/P2C\"]]",
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"cosme_d2c\"],\"https://storiiy.com/\",\"東京都渋谷区神南1-19-4\",26,\"official\",\"https://storiiy.com/contact/\",[\"化粧品D2C/P2C\"]]",
    "industry": {
     "cosme_d2c": {
      "result": "OK",
@@ -45572,7 +45928,35 @@
   ],
   "contactUrl": null,
   "noMynavi": true,
-  "noCareertasu": true
+  "noCareertasu": true,
+  "checks": {
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"cosme_d2c\"],\"http://smbrand.co.jp/\",\"東京都中央区京橋2-2-1 京橋エドグラン16階\",100,\"openwork\",\"https://smbrand.co.jp/contact\",[\"化粧品D2C/P2C\"]]",
+   "industry": {
+    "cosme_d2c": {
+     "result": "OK",
+     "comment": "公式の自社説明に「コスメ」あり。化粧品D2C/P2Cを取り扱っている（他に EC事業 等の事業もあり、化粧品D2C/P2Cは主業でない可能性）",
+     "after": "化粧品D2C/P2C"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "OpenWorkで100名 / 公式サイトでは確認できず、採用サイト(OpenWork)の値を採用（時点の記載なし） / OpenWorkの値は推定値/レンジ/古い可能性のある値",
+    "after": 100,
+    "asOf": null,
+    "source": "openwork"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://smbrand.co.jp/contact"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都中央区)がprtimes/gbizinfo/openworkと一致、公式ドメインをwantedly/prtimes/openworkが示す",
+    "after": "http://smbrand.co.jp/"
+   }
+  }
  },
  {
   "key": "武内製薬",
@@ -45707,8 +46091,8 @@
   ],
   "contactUrl": null,
   "checks": {
-   "verifiedAt": "2026-10-07",
-   "sig": "[2,[\"cosme_d2c\"],\"https://takeuchi-corp.jp/\",\"東京都品川区西五反田1-18-9 五反田NTビル 5F\",95,\"official\",\"https://takeuchi-corp.jp/contact/\",[\"化粧品D2C/P2C\"]]",
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"cosme_d2c\"],\"https://takeuchi-corp.jp/\",\"東京都品川区西五反田1-18-9 五反田NTビル 5F\",95,\"official\",\"https://takeuchi-corp.jp/contact/\",[\"化粧品D2C/P2C\"]]",
    "industry": {
     "cosme_d2c": {
      "result": "OK",
@@ -46375,7 +46759,9 @@
    "cosme_d2c",
    "cosme_d2c"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "noMynavi": true,
+  "noCareertasu": true
  },
  {
   "key": "イメジマジック",
@@ -46511,7 +46897,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XVC1,,",
     "snippet": "EDINETコード E37419 / 上場 証券コード7793 / その他製品",
-    "at": "2026-10-07T16:51:30.252Z"
+    "at": "2026-10-08T00:46:13.304Z"
    },
    {
     "field": "address",
@@ -46519,7 +46905,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XVC1,,",
     "snippet": "EDINETコード一覧の本店所在地: 文京区小石川一丁目３番１１号",
-    "at": "2026-10-07T16:51:30.252Z"
+    "at": "2026-10-08T00:46:13.304Z"
    },
    {
     "field": "employees",
@@ -46527,7 +46913,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XVC1,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月30日提出・書類ID S100XVC1） 提出会社単体の従業員数 224名",
-    "at": "2026-10-07T16:51:30.252Z"
+    "at": "2026-10-08T00:46:13.304Z"
    }
   ],
   "seedCategories": [
@@ -46819,7 +47205,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y6RE,,",
     "snippet": "EDINETコード E32966 / 上場 証券コード3558 / 小売業",
-    "at": "2026-10-07T16:51:30.258Z"
+    "at": "2026-10-08T00:46:13.310Z"
    },
    {
     "field": "address",
@@ -46827,7 +47213,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y6RE,,",
     "snippet": "EDINETコード一覧の本店所在地: 渋谷区元代々木町３０－１３ＯＮＥＳＴ元代々木スクエア",
-    "at": "2026-10-07T16:51:30.258Z"
+    "at": "2026-10-08T00:46:13.310Z"
    },
    {
     "field": "employees",
@@ -46835,7 +47221,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y6RE,,",
     "snippet": "有価証券報告書 2026年2月期（2026年5月27日提出・書類ID S100Y6RE） 提出会社単体の従業員数 164名",
-    "at": "2026-10-07T16:51:30.258Z"
+    "at": "2026-10-08T00:46:13.310Z"
    },
    {
     "field": "employeesConsolidated",
@@ -46843,7 +47229,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y6RE,,",
     "snippet": "有価証券報告書 2026年2月期（2026年5月27日提出・書類ID S100Y6RE） 連結の従業員数 336名",
-    "at": "2026-10-07T16:51:30.258Z"
+    "at": "2026-10-08T00:46:13.310Z"
    }
   ],
   "seedCategories": [
@@ -47898,7 +48284,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100WWWK,,",
     "snippet": "EDINETコード E36046 / 上場 証券コード4934 / 化学",
-    "at": "2026-10-07T16:51:30.287Z"
+    "at": "2026-10-08T00:46:13.338Z"
    },
    {
     "field": "address",
@@ -47906,7 +48292,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100WWWK,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区虎ノ門二丁目６番１号虎ノ門ヒルズステーションタワー",
-    "at": "2026-10-07T16:51:30.287Z"
+    "at": "2026-10-08T00:46:13.338Z"
    },
    {
     "field": "employees",
@@ -47914,7 +48300,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100WWWK,,",
     "snippet": "有価証券報告書 2025年7月期（2025年10月24日提出・書類ID S100WWWK） 提出会社単体の従業員数 174名",
-    "at": "2026-10-07T16:51:30.287Z"
+    "at": "2026-10-08T00:46:13.338Z"
    },
    {
     "field": "employeesConsolidated",
@@ -47922,7 +48308,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100WWWK,,",
     "snippet": "有価証券報告書 2025年7月期（2025年10月24日提出・書類ID S100WWWK） 連結の従業員数 216名",
-    "at": "2026-10-07T16:51:30.287Z"
+    "at": "2026-10-08T00:46:13.338Z"
    }
   ],
   "seedCategories": [
@@ -47932,8 +48318,8 @@
   ],
   "contactUrl": null,
   "checks": {
-   "verifiedAt": "2026-10-07",
-   "sig": "[2,[\"cosme_d2c\"],\"https://www.p-antiaging.com/\",\"東京都港区虎ノ門二丁目6番1号虎ノ門ヒルズステーションタワー\",174,\"edinet\",\"https://www.p-antiaging.co.jp/ja/contact.html\",[\"化粧品D2C/P2C\"]]",
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"cosme_d2c\"],\"https://www.p-antiaging.com/\",\"東京都港区虎ノ門二丁目6番1号虎ノ門ヒルズステーションタワー\",174,\"edinet\",\"https://www.p-antiaging.co.jp/ja/contact.html\",[\"化粧品D2C/P2C\"]]",
    "industry": {
     "cosme_d2c": {
      "result": "OK",
@@ -47943,7 +48329,7 @@
    },
    "employees": {
     "result": "OK",
-    "comment": "有価証券報告書(EDINET)で174名（2025年7月時点）。他の情報源(gbizinfo=192)とも概ね整合",
+    "comment": "有価証券報告書(EDINET)で174名（2025年7月時点） / 公式サイトでは確認できず、公式サイト以外(有価証券報告書(EDINET))の値を採用（2025年7月時点） / 他の情報源(Gビズインフォ=192)とも概ね整合",
     "after": 174,
     "asOf": "2025年7月",
     "source": "edinet"
@@ -48384,8 +48770,8 @@
   ],
   "contactUrl": null,
   "checks": {
-   "verifiedAt": "2026-10-07",
-   "sig": "[2,[\"cosme_d2c\"],\"https://www.2wayworld.jp/\",\"東京都渋谷区神宮前3-1-17 2Way World Bld.\",50,\"official\",\"https://www.2wayworld.jp/contact\",[\"化粧品D2C/P2C\"]]",
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"cosme_d2c\"],\"https://www.2wayworld.jp/\",\"東京都渋谷区神宮前3-1-17 2Way World Bld.\",50,\"official\",\"https://www.2wayworld.jp/contact\",[\"化粧品D2C/P2C\"]]",
    "industry": {
     "cosme_d2c": {
      "result": "OK",
@@ -49947,7 +50333,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y5VH,,",
     "snippet": "EDINETコード E03061 / 上場 証券コード8267 / 小売業",
-    "at": "2026-10-07T16:51:30.336Z"
+    "at": "2026-10-08T00:46:13.386Z"
    },
    {
     "field": "address",
@@ -49955,7 +50341,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y5VH,,",
     "snippet": "EDINETコード一覧の本店所在地: 千葉市美浜区中瀬１丁目５番地１",
-    "at": "2026-10-07T16:51:30.336Z"
+    "at": "2026-10-08T00:46:13.386Z"
    },
    {
     "field": "employees",
@@ -49963,7 +50349,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y5VH,,",
     "snippet": "有価証券報告書 2026年2月期（2026年5月25日提出・書類ID S100Y5VH） 提出会社単体の従業員数 559名",
-    "at": "2026-10-07T16:51:30.336Z"
+    "at": "2026-10-08T00:46:13.386Z"
    },
    {
     "field": "employeesConsolidated",
@@ -49971,7 +50357,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y5VH,,",
     "snippet": "有価証券報告書 2026年2月期（2026年5月25日提出・書類ID S100Y5VH） 連結の従業員数 179230名",
-    "at": "2026-10-07T16:51:30.336Z"
+    "at": "2026-10-08T00:46:13.386Z"
    }
   ],
   "seedCategories": [
@@ -50691,6 +51077,34 @@
    "at": "2026-10-08",
    "note": "公式サイトから。https://jp.koala.com/pages/company",
    "employeesValue": 219
+  },
+  "checks": {
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"cosme_d2c\"],\"https://jp.koala.com/\",\"東京都渋谷区神宮前5丁目43番7号\",219,\"human\",\"https://jp.koala.com/pages/contact-us\",[\"化粧品D2C/P2C\"]]",
+   "industry": {
+    "cosme_d2c": {
+     "result": "NG",
+     "comment": "公式サイトの文章に「化粧品/コスメ/スキンケア/ヘアケア」等が見当たらず、化粧品D2C/P2Cとは確認できない",
+     "after": "主業は インテリア・マットレス・寝具 の可能性"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "人の確認で219名 / 従業員数は人が確認した値 / 他の情報源(公式サイト=219)とも概ね整合",
+    "after": 219,
+    "asOf": null,
+    "source": "human"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://jp.koala.com/pages/contact-us"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都渋谷区)がprtimesと一致",
+    "after": "https://jp.koala.com/"
+   }
   }
  },
  {
@@ -52213,7 +52627,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100WX3D,,",
     "snippet": "EDINETコード E37779 / 上場 証券コード9556 / サービス業",
-    "at": "2026-10-07T16:51:30.392Z"
+    "at": "2026-10-08T00:46:13.440Z"
    },
    {
     "field": "address",
@@ -52221,7 +52635,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100WX3D,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区赤坂二丁目４番６号",
-    "at": "2026-10-07T16:51:30.392Z"
+    "at": "2026-10-08T00:46:13.440Z"
    },
    {
     "field": "employees",
@@ -52229,7 +52643,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100WX3D,,",
     "snippet": "有価証券報告書 2025年7月期（2025年10月27日提出・書類ID S100WX3D） 提出会社単体の従業員数 716名",
-    "at": "2026-10-07T16:51:30.392Z"
+    "at": "2026-10-08T00:46:13.440Z"
    },
    {
     "field": "employeesConsolidated",
@@ -52237,7 +52651,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100WX3D,,",
     "snippet": "有価証券報告書 2025年7月期（2025年10月27日提出・書類ID S100WX3D） 連結の従業員数 1374名",
-    "at": "2026-10-07T16:51:30.392Z"
+    "at": "2026-10-08T00:46:13.440Z"
    }
   ],
   "seedCategories": [
@@ -52386,7 +52800,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YFWI,,",
     "snippet": "EDINETコード E31009 / 上場 証券コード6027 / サービス業",
-    "at": "2026-10-07T16:51:30.395Z"
+    "at": "2026-10-08T00:46:13.443Z"
    },
    {
     "field": "address",
@@ -52394,7 +52808,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YFWI,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区六本木四丁目１番４号",
-    "at": "2026-10-07T16:51:30.395Z"
+    "at": "2026-10-08T00:46:13.443Z"
    },
    {
     "field": "employees",
@@ -52402,7 +52816,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YFWI,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月22日提出・書類ID S100YFWI） 提出会社単体の従業員数 613名",
-    "at": "2026-10-07T16:51:30.395Z"
+    "at": "2026-10-08T00:46:13.443Z"
    },
    {
     "field": "employeesConsolidated",
@@ -52410,7 +52824,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YFWI,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月22日提出・書類ID S100YFWI） 連結の従業員数 639名",
-    "at": "2026-10-07T16:51:30.395Z"
+    "at": "2026-10-08T00:46:13.443Z"
    }
   ],
   "seedCategories": [
@@ -53993,7 +54407,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XTKE,,",
     "snippet": "EDINETコード E37105 / 上場 証券コード4255 / 情報・通信業",
-    "at": "2026-10-07T16:51:30.424Z"
+    "at": "2026-10-08T00:46:13.472Z"
    },
    {
     "field": "address",
@@ -54001,7 +54415,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XTKE,,",
     "snippet": "EDINETコード一覧の本店所在地: 渋谷区神宮前３丁目２５－１５神宮前テラス５階",
-    "at": "2026-10-07T16:51:30.424Z"
+    "at": "2026-10-08T00:46:13.472Z"
    },
    {
     "field": "employees",
@@ -54009,7 +54423,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XTKE,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月25日提出・書類ID S100XTKE） 提出会社単体の従業員数 115名",
-    "at": "2026-10-07T16:51:30.424Z"
+    "at": "2026-10-08T00:46:13.472Z"
    }
   ],
   "seedCategories": [
@@ -54026,8 +54440,8 @@
   ],
   "contactUrl": null,
   "checks": {
-   "verifiedAt": "2026-10-07",
-   "sig": "[2,[\"influencer_agency\"],\"https://thecoo.co.jp/\",\"東京都渋谷区神宮前3丁目25-15神宮前テラス5階\",115,\"edinet\",\"https://ir.thecoo.co.jp/contact\",[\"インフルエンサー事務所\",\"広告代理店\"]]",
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"influencer_agency\"],\"https://thecoo.co.jp/\",\"東京都渋谷区神宮前3丁目25-15神宮前テラス5階\",115,\"edinet\",\"https://ir.thecoo.co.jp/contact\",[\"インフルエンサー事務所\",\"広告代理店\"]]",
    "industry": {
     "influencer_agency": {
      "result": "OK",
@@ -54037,7 +54451,7 @@
    },
    "employees": {
     "result": "OK",
-    "comment": "有価証券報告書(EDINET)で115名（2025年12月時点）",
+    "comment": "有価証券報告書(EDINET)で115名（2025年12月時点） / 公式サイトでは確認できず、公式サイト以外(有価証券報告書(EDINET))の値を採用（2025年12月時点）",
     "after": 115,
     "asOf": "2025年12月",
     "source": "edinet"
@@ -55424,7 +55838,9 @@
    "influencer_agency"
   ],
   "contactUrl": null,
-  "noPrtimes": true
+  "noPrtimes": true,
+  "noMynavi": true,
+  "noCareertasu": true
  },
  {
   "key": "directtech",
@@ -56598,7 +57014,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XBEJ,,",
     "snippet": "EDINETコード E05419 / 上場 証券コード2410 / サービス業",
-    "at": "2026-10-07T16:51:30.488Z"
+    "at": "2026-10-08T00:46:13.534Z"
    },
    {
     "field": "address",
@@ -56606,7 +57022,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XBEJ,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区赤坂三丁目２１番２０号",
-    "at": "2026-10-07T16:51:30.488Z"
+    "at": "2026-10-08T00:46:13.534Z"
    },
    {
     "field": "employees",
@@ -56614,7 +57030,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XBEJ,,",
     "snippet": "有価証券報告書 2025年9月期（2025年12月18日提出・書類ID S100XBEJ） 提出会社単体の従業員数 768名",
-    "at": "2026-10-07T16:51:30.488Z"
+    "at": "2026-10-08T00:46:13.534Z"
    }
   ],
   "seedCategories": [
@@ -58904,7 +59320,8 @@
    "influencer_agency"
   ],
   "contactUrl": null,
-  "noMynavi": true
+  "noMynavi": true,
+  "noCareertasu": true
  },
  {
   "key": "グリンショップ",
@@ -59639,7 +60056,35 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"influencer_agency\"],\"https://www.e-spirit.jp/\",\"東京都渋谷区渋谷1-7-7 住友不動産青山通ビル13F\",69,\"mynavi\",\"https://www.e-spirit.jp/contact\",[\"インフルエンサー事務所\"]]",
+   "industry": {
+    "influencer_agency": {
+     "result": "OK",
+     "comment": "公式の自社説明に「インフルエンサー」あり。インフルエンサー事務所を取り扱っている",
+     "after": "インフルエンサー事務所"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "マイナビ(新卒)で69名 / 公式サイトでは確認できず、採用サイト(マイナビ(新卒))の値を採用（時点の記載なし）",
+    "after": 69,
+    "asOf": null,
+    "source": "mynavi"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.e-spirit.jp/contact"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都渋谷区)がprtimes/mynaviと一致",
+    "after": "https://www.e-spirit.jp/"
+   }
+  }
  },
  {
   "key": "fism",
@@ -60076,7 +60521,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Z3R0,,",
     "snippet": "EDINETコード E38155 / 上場 証券コード9565 / サービス業",
-    "at": "2026-10-07T16:51:30.577Z"
+    "at": "2026-10-08T00:46:13.621Z"
    },
    {
     "field": "address",
@@ -60084,7 +60529,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Z3R0,,",
     "snippet": "EDINETコード一覧の本店所在地: 新宿区西新宿７－５－２５　西新宿プライムスクエア１５階",
-    "at": "2026-10-07T16:51:30.577Z"
+    "at": "2026-10-08T00:46:13.621Z"
    },
    {
     "field": "employees",
@@ -60092,7 +60537,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Z3R0,,",
     "snippet": "有価証券報告書 2026年6月期（2026年9月24日提出・書類ID S100Z3R0） 提出会社単体の従業員数 76名",
-    "at": "2026-10-07T16:51:30.577Z"
+    "at": "2026-10-08T00:46:13.621Z"
    },
    {
     "field": "employeesConsolidated",
@@ -60100,7 +60545,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Z3R0,,",
     "snippet": "有価証券報告書 2026年6月期（2026年9月24日提出・書類ID S100Z3R0） 連結の従業員数 103名",
-    "at": "2026-10-07T16:51:30.577Z"
+    "at": "2026-10-08T00:46:13.621Z"
    }
   ],
   "seedCategories": [
@@ -60110,8 +60555,8 @@
   ],
   "contactUrl": null,
   "checks": {
-   "verifiedAt": "2026-10-07",
-   "sig": "[2,[\"influencer_agency\"],\"https://gloe.jp/\",\"東京都新宿区西新宿7-5-25 西新宿プライムスクエア15階\",76,\"edinet\",\"https://gloe.jp/contact\",[\"インフルエンサー事務所\"]]",
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"influencer_agency\"],\"https://gloe.jp/\",\"東京都新宿区西新宿7-5-25 西新宿プライムスクエア15階\",77,\"official\",\"https://gloe.jp/contact\",[\"インフルエンサー事務所\"]]",
    "industry": {
     "influencer_agency": {
      "result": "OK",
@@ -60121,10 +60566,10 @@
    },
    "employees": {
     "result": "OK",
-    "comment": "有価証券報告書(EDINET)で76名（2026年6月時点）。他の情報源(official=77)とも概ね整合",
-    "after": 76,
-    "asOf": "2026年6月",
-    "source": "edinet"
+    "comment": "公式サイトで77名（2026年3月時点） / 他の情報源(有価証券報告書(EDINET)=76)とも概ね整合",
+    "after": 77,
+    "asOf": "2026年3月",
+    "source": "official"
    },
    "contact": {
     "result": "OK",
@@ -61227,7 +61672,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y17X,,",
     "snippet": "EDINETコード E41076 / 上場 証券コード456A / 小売業",
-    "at": "2026-10-07T16:51:30.603Z"
+    "at": "2026-10-08T00:46:13.647Z"
    },
    {
     "field": "address",
@@ -61235,7 +61680,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y17X,,",
     "snippet": "EDINETコード一覧の本店所在地: 品川区上大崎２－２４－９",
-    "at": "2026-10-07T16:51:30.603Z"
+    "at": "2026-10-08T00:46:13.647Z"
    },
    {
     "field": "employees",
@@ -61243,7 +61688,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y17X,,",
     "snippet": "有価証券報告書 2026年1月期（2026年4月28日提出・書類ID S100Y17X） 提出会社単体の従業員数 193名",
-    "at": "2026-10-07T16:51:30.603Z"
+    "at": "2026-10-08T00:46:13.647Z"
    }
   ],
   "seedCategories": [
@@ -62254,7 +62699,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XDE3,,",
     "snippet": "EDINETコード E27394 / 上場 証券コード3674 / 情報・通信業",
-    "at": "2026-10-07T16:51:30.630Z"
+    "at": "2026-10-08T00:46:13.673Z"
    },
    {
     "field": "address",
@@ -62262,7 +62707,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XDE3,,",
     "snippet": "EDINETコード一覧の本店所在地: 品川区北品川五丁目１番１８号",
-    "at": "2026-10-07T16:51:30.630Z"
+    "at": "2026-10-08T00:46:13.673Z"
    },
    {
     "field": "employees",
@@ -62270,7 +62715,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XDE3,,",
     "snippet": "有価証券報告書 2025年9月期（2025年12月26日提出・書類ID S100XDE3） 提出会社単体の従業員数 103名",
-    "at": "2026-10-07T16:51:30.630Z"
+    "at": "2026-10-08T00:46:13.673Z"
    },
    {
     "field": "employeesConsolidated",
@@ -62278,7 +62723,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XDE3,,",
     "snippet": "有価証券報告書 2025年9月期（2025年12月26日提出・書類ID S100XDE3） 連結の従業員数 163名",
-    "at": "2026-10-07T16:51:30.630Z"
+    "at": "2026-10-08T00:46:13.673Z"
    }
   ],
   "seedCategories": [
@@ -63292,7 +63737,35 @@
    "influencer_agency"
   ],
   "contactUrl": null,
-  "noPrtimes": true
+  "noPrtimes": true,
+  "checks": {
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"influencer_agency\"],\"https://www.excrie.co.jp/\",\"東京都新宿区、代表取締役社長:小笠原 亨、以下「エクスクリエ」)は、食品スーパーを週1回以上利用する全国20~69歳の女性1,503人を対象に、「\",100,\"openwork\",\"https://www.excrie.co.jp/contact\",[\"インフルエンサー事務所\",\"広告代理店\",\"SNS運用代行\"]]",
+   "industry": {
+    "influencer_agency": {
+     "result": "OK",
+     "comment": "公式の自社説明に「インフルエンサー」あり。インフルエンサー事務所を取り扱っている",
+     "after": "インフルエンサー事務所"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "OpenWorkで100名 / 公式サイトでは確認できず、採用サイト(OpenWork)の値を採用（時点の記載なし） / OpenWorkの値は推定値/レンジ/古い可能性のある値",
+    "after": 100,
+    "asOf": null,
+    "source": "openwork"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://www.excrie.co.jp/contact"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都新宿区)がopenwork/officialと一致",
+    "after": "https://www.excrie.co.jp/"
+   }
+  }
  },
  {
   "key": "zig",
@@ -64297,7 +64770,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y6IG,,",
     "snippet": "EDINETコード E05096 / 上場 証券コード4763 / サービス業",
-    "at": "2026-10-07T16:51:30.683Z"
+    "at": "2026-10-08T00:46:13.725Z"
    },
    {
     "field": "address",
@@ -64305,7 +64778,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y6IG,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区新橋四丁目１番１号",
-    "at": "2026-10-07T16:51:30.683Z"
+    "at": "2026-10-08T00:46:13.725Z"
    },
    {
     "field": "employees",
@@ -64313,7 +64786,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y6IG,,",
     "snippet": "有価証券報告書 2026年2月期（2026年5月26日提出・書類ID S100Y6IG） 提出会社単体の従業員数 1461名",
-    "at": "2026-10-07T16:51:30.683Z"
+    "at": "2026-10-08T00:46:13.725Z"
    },
    {
     "field": "employeesConsolidated",
@@ -64321,7 +64794,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y6IG,,",
     "snippet": "有価証券報告書 2026年2月期（2026年5月26日提出・書類ID S100Y6IG） 連結の従業員数 2858名",
-    "at": "2026-10-07T16:51:30.683Z"
+    "at": "2026-10-08T00:46:13.725Z"
    }
   ],
   "seedCategories": [
@@ -65853,7 +66326,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YYK8,,",
     "snippet": "EDINETコード E33800 / 上場 証券コード2934 / 情報・通信業",
-    "at": "2026-10-07T16:51:30.724Z"
+    "at": "2026-10-08T00:46:13.764Z"
    },
    {
     "field": "address",
@@ -65861,7 +66334,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YYK8,,",
     "snippet": "EDINETコード一覧の本店所在地: 渋谷区渋谷二丁目９番９号",
-    "at": "2026-10-07T16:51:30.724Z"
+    "at": "2026-10-08T00:46:13.765Z"
    },
    {
     "field": "employees",
@@ -65869,7 +66342,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YYK8,,",
     "snippet": "有価証券報告書 2026年5月期（2026年8月25日提出・書類ID S100YYK8） 提出会社単体の従業員数 67名",
-    "at": "2026-10-07T16:51:30.724Z"
+    "at": "2026-10-08T00:46:13.765Z"
    },
    {
     "field": "employeesConsolidated",
@@ -65877,7 +66350,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YYK8,,",
     "snippet": "有価証券報告書 2026年5月期（2026年8月25日提出・書類ID S100YYK8） 連結の従業員数 201名",
-    "at": "2026-10-07T16:51:30.724Z"
+    "at": "2026-10-08T00:46:13.765Z"
    }
   ],
   "seedCategories": [
@@ -65887,15 +66360,21 @@
   ],
   "contactUrl": null,
   "checks": {
-   "verifiedAt": "2026-10-07",
-   "sig": "[2,[],\"https://jfrontier.jp/\",\"東京都渋谷区渋谷二丁目9番9号\",67,\"edinet\",\"https://jfrontier.jp/contact/\",[\"化粧品D2C/P2C\",\"広告代理店\"]]",
-   "industry": {},
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"cosme_d2c\"],\"https://jfrontier.jp/\",\"東京都渋谷区渋谷二丁目9番9号\",355,\"official\",\"https://jfrontier.jp/contact/\",[\"化粧品D2C/P2C\",\"広告代理店\"]]",
+   "industry": {
+    "cosme_d2c": {
+     "result": "OK",
+     "comment": "公式の自社説明に「コスメ」あり。化粧品D2C/P2Cを取り扱っている",
+     "after": "化粧品D2C/P2C"
+    }
+   },
    "employees": {
-    "result": "要確認",
-    "comment": "edinet=67名に対しofficial=355名と差がある(5.3倍)。調査時点・集計範囲の違いの可能性",
-    "after": 67,
+    "result": "OK",
+    "comment": "公式サイトで355名（2026年5月時点） / 公式の数字に「グループ合計」の記載あり（単体の従業員数ではない可能性） / 他の情報源の有価証券報告書(EDINET)=67名とは差がある(5.3倍)。調査時点・集計範囲の違いの可能性",
+    "after": 355,
     "asOf": "2026年5月",
-    "source": "edinet"
+    "source": "official"
    },
    "contact": {
     "result": "OK",
@@ -66640,7 +67119,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Z5DN,,",
     "snippet": "EDINETコード E41973 / 上場 証券コード607A / 情報・通信業",
-    "at": "2026-10-07T16:51:30.741Z"
+    "at": "2026-10-08T00:46:13.782Z"
    },
    {
     "field": "address",
@@ -66648,7 +67127,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Z5DN,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区六本木三丁目２番１号",
-    "at": "2026-10-07T16:51:30.741Z"
+    "at": "2026-10-08T00:46:13.782Z"
    },
    {
     "field": "employees",
@@ -66656,7 +67135,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Z5DN,,",
     "snippet": "有価証券報告書 2026年6月期（2026年9月30日提出・書類ID S100Z5DN） 提出会社単体の従業員数 172名",
-    "at": "2026-10-07T16:51:30.741Z"
+    "at": "2026-10-08T00:46:13.782Z"
    }
   ],
   "seedCategories": [
@@ -67354,7 +67833,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XUI4,,",
     "snippet": "EDINETコード E41144 / 上場 証券コード472A / 情報・通信業",
-    "at": "2026-10-07T16:51:30.762Z"
+    "at": "2026-10-08T00:46:13.802Z"
    },
    {
     "field": "address",
@@ -67362,7 +67841,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XUI4,,",
     "snippet": "EDINETコード一覧の本店所在地: 目黒区目黒２丁目１０ー１１目黒山手プレイス８階",
-    "at": "2026-10-07T16:51:30.762Z"
+    "at": "2026-10-08T00:46:13.802Z"
    },
    {
     "field": "employees",
@@ -67370,7 +67849,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XUI4,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月30日提出・書類ID S100XUI4） 提出会社単体の従業員数 149名",
-    "at": "2026-10-07T16:51:30.762Z"
+    "at": "2026-10-08T00:46:13.802Z"
    },
    {
     "field": "employeesConsolidated",
@@ -67378,7 +67857,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XUI4,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月30日提出・書類ID S100XUI4） 連結の従業員数 151名",
-    "at": "2026-10-07T16:51:30.762Z"
+    "at": "2026-10-08T00:46:13.802Z"
    }
   ],
   "seedCategories": [
@@ -68915,7 +69394,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YGT9,,",
     "snippet": "EDINETコード E38478 / 上場 証券コード5253 / 情報・通信業（所在地での照合なし・社名のみ一致）",
-    "at": "2026-10-07T16:51:30.815Z"
+    "at": "2026-10-08T00:46:13.853Z"
    },
    {
     "field": "address",
@@ -68923,7 +69402,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YGT9,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区三田３－５ー１９　住友不動産東京三田ガーデンタワー１５階（所在地での照合なし・社名のみ一致）",
-    "at": "2026-10-07T16:51:30.815Z"
+    "at": "2026-10-08T00:46:13.853Z"
    },
    {
     "field": "employees",
@@ -68931,7 +69410,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YGT9,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月24日提出・書類ID S100YGT9） 提出会社単体の従業員数 735名（所在地での照合なし・社名のみ一致）",
-    "at": "2026-10-07T16:51:30.815Z"
+    "at": "2026-10-08T00:46:13.853Z"
    }
   ],
   "seedCategories": [
@@ -70559,8 +71038,8 @@
   ],
   "contactUrl": null,
   "checks": {
-   "verifiedAt": "2026-10-07",
-   "sig": "[2,[\"influencer_agency\"],\"https://funnelinc.tokyo/\",\"東京都千代田区内神田2丁目15-4 司ビルディング 5F(総合受付)・6F・7F\",800,\"official\",\"https://funnelinc.tokyo/contact/\",[\"インフルエンサー事務所\",\"広告代理店\"]]",
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"influencer_agency\"],\"https://funnelinc.tokyo/\",\"東京都千代田区内神田2丁目15-4 司ビルディング 5F(総合受付)・6F・7F\",800,\"official\",\"https://funnelinc.tokyo/contact/\",[\"インフルエンサー事務所\",\"広告代理店\"]]",
    "industry": {
     "influencer_agency": {
      "result": "OK",
@@ -71227,7 +71706,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YSEA,,",
     "snippet": "EDINETコード E37573 / 上場 証券コード5032 / サービス業",
-    "at": "2026-10-07T16:51:30.900Z"
+    "at": "2026-10-08T00:46:13.932Z"
    },
    {
     "field": "address",
@@ -71235,7 +71714,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YSEA,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区赤坂９丁目７番２号ミッドタウン・イースト１１階",
-    "at": "2026-10-07T16:51:30.900Z"
+    "at": "2026-10-08T00:46:13.932Z"
    },
    {
     "field": "employees",
@@ -71243,7 +71722,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YSEA,,",
     "snippet": "有価証券報告書 2026年4月期（2026年7月27日提出・書類ID S100YSEA） 提出会社単体の従業員数 677名",
-    "at": "2026-10-07T16:51:30.900Z"
+    "at": "2026-10-08T00:46:13.932Z"
    }
   ],
   "seedCategories": [
@@ -71554,7 +72033,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YITC,,",
     "snippet": "EDINETコード E00055 / 上場 証券コード1802 / 建設業",
-    "at": "2026-10-07T16:51:30.908Z"
+    "at": "2026-10-08T00:46:13.940Z"
    },
    {
     "field": "address",
@@ -71562,7 +72041,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YITC,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区港南二丁目１５番２号",
-    "at": "2026-10-07T16:51:30.908Z"
+    "at": "2026-10-08T00:46:13.940Z"
    },
    {
     "field": "employees",
@@ -71570,7 +72049,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YITC,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月24日提出・書類ID S100YITC） 提出会社単体の従業員数 9472名",
-    "at": "2026-10-07T16:51:30.908Z"
+    "at": "2026-10-08T00:46:13.940Z"
    },
    {
     "field": "employeesConsolidated",
@@ -71578,7 +72057,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YITC,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月24日提出・書類ID S100YITC） 連結の従業員数 18031名",
-    "at": "2026-10-07T16:51:30.908Z"
+    "at": "2026-10-08T00:46:13.940Z"
    }
   ],
   "seedCategories": [
@@ -73068,7 +73547,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XS8C,,",
     "snippet": "EDINETコード E02644 / 上場 証券コード8060 / 卸売業（所在地での照合なし・社名のみ一致）",
-    "at": "2026-10-07T16:51:30.963Z"
+    "at": "2026-10-08T00:46:13.994Z"
    },
    {
     "field": "address",
@@ -73076,7 +73555,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XS8C,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区港南２丁目１６番６号（所在地での照合なし・社名のみ一致）",
-    "at": "2026-10-07T16:51:30.964Z"
+    "at": "2026-10-08T00:46:13.994Z"
    },
    {
     "field": "employees",
@@ -73084,7 +73563,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XS8C,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月24日提出・書類ID S100XS8C） 提出会社単体の従業員数 4563名（所在地での照合なし・社名のみ一致）",
-    "at": "2026-10-07T16:51:30.964Z"
+    "at": "2026-10-08T00:46:13.994Z"
    },
    {
     "field": "employeesConsolidated",
@@ -73092,7 +73571,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XS8C,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月24日提出・書類ID S100XS8C） 連結の従業員数 18425名",
-    "at": "2026-10-07T16:51:30.964Z"
+    "at": "2026-10-08T00:46:13.994Z"
    }
   ],
   "seedCategories": [
@@ -73255,7 +73734,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YH8W,,",
     "snippet": "EDINETコード E04514 / 上場 証券コード9531 / 電気・ガス業（所在地での照合なし・社名のみ一致）",
-    "at": "2026-10-07T16:51:30.973Z"
+    "at": "2026-10-08T00:46:14.002Z"
    },
    {
     "field": "address",
@@ -73263,7 +73742,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YH8W,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区海岸一丁目５番２０号（所在地での照合なし・社名のみ一致）",
-    "at": "2026-10-07T16:51:30.973Z"
+    "at": "2026-10-08T00:46:14.002Z"
    },
    {
     "field": "employees",
@@ -73271,7 +73750,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YH8W,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月23日提出・書類ID S100YH8W） 提出会社単体の従業員数 3769名（所在地での照合なし・社名のみ一致）",
-    "at": "2026-10-07T16:51:30.973Z"
+    "at": "2026-10-08T00:46:14.002Z"
    },
    {
     "field": "employeesConsolidated",
@@ -73279,7 +73758,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YH8W,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月23日提出・書類ID S100YH8W） 連結の従業員数 16001名",
-    "at": "2026-10-07T16:51:30.973Z"
+    "at": "2026-10-08T00:46:14.002Z"
    }
   ],
   "seedCategories": [
@@ -73390,7 +73869,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XHL0,,",
     "snippet": "EDINETコード E41086 / 上場 証券コード460A / 情報・通信業（所在地での照合なし・社名のみ一致）",
-    "at": "2026-10-07T16:51:30.979Z"
+    "at": "2026-10-08T00:46:14.008Z"
    },
    {
     "field": "address",
@@ -73398,7 +73877,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XHL0,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区六本木六丁目１番２４号ラピロス六本木４階（所在地での照合なし・社名のみ一致）",
-    "at": "2026-10-07T16:51:30.979Z"
+    "at": "2026-10-08T00:46:14.008Z"
    },
    {
     "field": "employees",
@@ -73406,7 +73885,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XHL0,,",
     "snippet": "有価証券報告書 2025年10月期（2026年1月27日提出・書類ID S100XHL0） 提出会社単体の従業員数 108名（所在地での照合なし・社名のみ一致）",
-    "at": "2026-10-07T16:51:30.979Z"
+    "at": "2026-10-08T00:46:14.008Z"
    }
   ],
   "seedCategories": [
@@ -74922,7 +75401,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YHJS,,",
     "snippet": "EDINETコード E00369 / 上場 証券コード2201 / 食料品",
-    "at": "2026-10-07T16:51:31.037Z"
+    "at": "2026-10-08T00:46:14.067Z"
    },
    {
     "field": "address",
@@ -74930,7 +75409,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YHJS,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区芝浦一丁目１３番１６号",
-    "at": "2026-10-07T16:51:31.037Z"
+    "at": "2026-10-08T00:46:14.067Z"
    },
    {
     "field": "employees",
@@ -74938,7 +75417,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YHJS,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月25日提出・書類ID S100YHJS） 提出会社単体の従業員数 1587名",
-    "at": "2026-10-07T16:51:31.037Z"
+    "at": "2026-10-08T00:46:14.067Z"
    },
    {
     "field": "employeesConsolidated",
@@ -74946,7 +75425,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YHJS,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月25日提出・書類ID S100YHJS） 連結の従業員数 3222名",
-    "at": "2026-10-07T16:51:31.037Z"
+    "at": "2026-10-08T00:46:14.067Z"
    }
   ],
   "seedCategories": [
@@ -75787,7 +76266,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YIFC,,",
     "snippet": "EDINETコード E00165 / 上場 証券コード8836 / 不動産業（所在地での照合なし・社名のみ一致）",
-    "at": "2026-10-07T16:51:31.081Z"
+    "at": "2026-10-08T00:46:14.109Z"
    },
    {
     "field": "address",
@@ -75795,7 +76274,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YIFC,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区虎ノ門一丁目１４番１号　郵政福祉琴平ビル８階（所在地での照合なし・社名のみ一致）",
-    "at": "2026-10-07T16:51:31.081Z"
+    "at": "2026-10-08T00:46:14.109Z"
    },
    {
     "field": "employees",
@@ -75803,7 +76282,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YIFC,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月25日提出・書類ID S100YIFC） 提出会社単体の従業員数 3名（所在地での照合なし・社名のみ一致）",
-    "at": "2026-10-07T16:51:31.081Z"
+    "at": "2026-10-08T00:46:14.109Z"
    },
    {
     "field": "employeesConsolidated",
@@ -75811,7 +76290,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YIFC,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月25日提出・書類ID S100YIFC） 連結の従業員数 11名",
-    "at": "2026-10-07T16:51:31.081Z"
+    "at": "2026-10-08T00:46:14.109Z"
    }
   ],
   "seedCategories": [
@@ -76356,7 +76835,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XU39,,",
     "snippet": "EDINETコード E38163 / 上場 証券コード5242 / サービス業",
-    "at": "2026-10-07T16:51:31.106Z"
+    "at": "2026-10-08T00:46:14.131Z"
    },
    {
     "field": "address",
@@ -76364,7 +76843,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XU39,,",
     "snippet": "EDINETコード一覧の本店所在地: 渋谷区渋谷三丁目１２番２２号",
-    "at": "2026-10-07T16:51:31.107Z"
+    "at": "2026-10-08T00:46:14.131Z"
    },
    {
     "field": "employees",
@@ -76372,7 +76851,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XU39,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月26日提出・書類ID S100XU39） 提出会社単体の従業員数 64名",
-    "at": "2026-10-07T16:51:31.107Z"
+    "at": "2026-10-08T00:46:14.131Z"
    }
   ],
   "seedCategories": [
@@ -77412,7 +77891,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y6Q0,,",
     "snippet": "EDINETコード E37397 / 上場 証券コード5025 / 情報・通信業",
-    "at": "2026-10-07T16:51:31.151Z"
+    "at": "2026-10-08T00:46:14.173Z"
    },
    {
     "field": "address",
@@ -77420,7 +77899,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y6Q0,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区六本木三丁目２－１",
-    "at": "2026-10-07T16:51:31.151Z"
+    "at": "2026-10-08T00:46:14.173Z"
    },
    {
     "field": "employees",
@@ -77428,7 +77907,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y6Q0,,",
     "snippet": "有価証券報告書 2026年2月期（2026年5月27日提出・書類ID S100Y6Q0） 提出会社単体の従業員数 59名",
-    "at": "2026-10-07T16:51:31.151Z"
+    "at": "2026-10-08T00:46:14.173Z"
    }
   ],
   "seedCategories": [
@@ -77717,7 +78196,35 @@
   "seedCategories": [
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"influencer_agency\"],\"https://skaly.co.jp/\",\"東京都港区赤坂3-11-15 VORT 赤坂見附 7F\",45,\"mynavi\",\"https://skaly.co.jp/contact\",[\"インフルエンサー事務所\"]]",
+   "industry": {
+    "influencer_agency": {
+     "result": "OK",
+     "comment": "公式の自社説明に「インフルエンサー」あり。インフルエンサー事務所を取り扱っている",
+     "after": "インフルエンサー事務所"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "マイナビ(新卒)で45名（2026年9月時点） / 公式サイトでは確認できず、採用サイト(マイナビ(新卒))の値を採用（2026年9月時点）",
+    "after": 45,
+    "asOf": "2026年9月",
+    "source": "mynavi"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://skaly.co.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都港区)がprtimesと一致",
+    "after": "https://skaly.co.jp/"
+   }
+  }
  },
  {
   "key": "配信ライバ専門事務所gqueen",
@@ -77990,7 +78497,35 @@
    "influencer_agency",
    "influencer_agency"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"influencer_agency\"],\"https://ihack.co.jp/\",\"東京都港区港南二丁目12番32号\",25,\"mynavi\",\"https://ihack.co.jp/contact/\",[\"インフルエンサー事務所\"]]",
+   "industry": {
+    "influencer_agency": {
+     "result": "OK",
+     "comment": "公式の自社説明に「インフルエンサー/クリエイター」あり。インフルエンサー事務所を取り扱っている（他に 製造 等の事業もあり、インフルエンサー事務所は主業でない可能性）",
+     "after": "インフルエンサー事務所"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "マイナビ(新卒)で25名（2026年2月時点） / 公式サイトでは確認できず、採用サイト(マイナビ(新卒))の値を採用（2026年2月時点） / この数字に「業務委託」の記載あり（単体の従業員数ではない可能性）",
+    "after": 25,
+    "asOf": "2026年2月",
+    "source": "mynavi"
+   },
+   "contact": {
+    "result": "OK",
+    "comment": "公式ドメイン上の問い合わせページを開いて確認",
+    "after": "https://ihack.co.jp/contact/"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都港区)がmynaviと一致",
+    "after": "https://ihack.co.jp/"
+   }
+  }
  },
  {
   "key": "楽天グルプ",
@@ -78114,7 +78649,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XTNW,,",
     "snippet": "EDINETコード E05080 / 上場 証券コード4755 / サービス業",
-    "at": "2026-10-07T16:51:31.177Z"
+    "at": "2026-10-08T00:46:14.198Z"
    },
    {
     "field": "address",
@@ -78122,7 +78657,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XTNW,,",
     "snippet": "EDINETコード一覧の本店所在地: 世田谷区玉川一丁目１４番１号",
-    "at": "2026-10-07T16:51:31.177Z"
+    "at": "2026-10-08T00:46:14.198Z"
    },
    {
     "field": "employees",
@@ -78130,7 +78665,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XTNW,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月26日提出・書類ID S100XTNW） 提出会社単体の従業員数 9989名",
-    "at": "2026-10-07T16:51:31.177Z"
+    "at": "2026-10-08T00:46:14.198Z"
    },
    {
     "field": "employeesConsolidated",
@@ -78138,7 +78673,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XTNW,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月26日提出・書類ID S100XTNW） 連結の従業員数 29419名",
-    "at": "2026-10-07T16:51:31.177Z"
+    "at": "2026-10-08T00:46:14.198Z"
    }
   ],
   "seedCategories": [
@@ -78649,7 +79184,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XU6S,,",
     "snippet": "EDINETコード E30919 / 上場 証券コード3696 / 情報・通信業",
-    "at": "2026-10-07T16:51:31.194Z"
+    "at": "2026-10-08T00:46:14.215Z"
    },
    {
     "field": "address",
@@ -78657,7 +79192,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XU6S,,",
     "snippet": "EDINETコード一覧の本店所在地: 渋谷区桜丘町１番１号",
-    "at": "2026-10-07T16:51:31.194Z"
+    "at": "2026-10-08T00:46:14.215Z"
    },
    {
     "field": "employees",
@@ -78665,7 +79200,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XU6S,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月27日提出・書類ID S100XU6S） 提出会社単体の従業員数 291名",
-    "at": "2026-10-07T16:51:31.194Z"
+    "at": "2026-10-08T00:46:14.215Z"
    },
    {
     "field": "employeesConsolidated",
@@ -78673,7 +79208,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XU6S,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月27日提出・書類ID S100XU6S） 連結の従業員数 351名",
-    "at": "2026-10-07T16:51:31.195Z"
+    "at": "2026-10-08T00:46:14.215Z"
    }
   ],
   "seedCategories": [
@@ -78682,9 +79217,14 @@
   ],
   "contactUrl": null,
   "checks": {
-   "verifiedAt": "2026-10-07",
-   "sig": "[2,[\"influencer_agency\"],\"https://ceres-inc.jp/\",\"東京都渋谷区桜丘町1番1号\",291,\"edinet\",\"https://ceres-inc.jp/index/inquiry-contents/\",[\"化粧品D2C/P2C\",\"インフルエンサー事務所\",\"広告代理店\"]]",
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"cosme_d2c\",\"influencer_agency\"],\"https://ceres-inc.jp/\",\"東京都渋谷区桜丘町1番1号\",291,\"edinet\",\"https://ceres-inc.jp/index/inquiry-contents/\",[\"化粧品D2C/P2C\",\"インフルエンサー事務所\",\"広告代理店\"]]",
    "industry": {
+    "cosme_d2c": {
+     "result": "OK",
+     "comment": "公式サイトの本文に「コスメ/スキンケア」が複数あり、化粧品D2C/P2Cを取り扱っている（自社説明の冒頭には無く、主業でない可能性）（他に 人材/AI 等の事業もあり、化粧品D2C/P2Cは主業でない可能性）",
+     "after": "化粧品D2C/P2C"
+    },
     "influencer_agency": {
      "result": "OK",
      "comment": "公式サイトの本文に「インフルエンサー/クリエイター」が複数あり、インフルエンサー事務所を取り扱っている（自社説明の冒頭には無く、主業でない可能性）（他に 人材/AI 等の事業もあり、インフルエンサー事務所は主業でない可能性）",
@@ -78693,7 +79233,7 @@
    },
    "employees": {
     "result": "OK",
-    "comment": "有価証券報告書(EDINET)で291名（2025年12月時点）",
+    "comment": "有価証券報告書(EDINET)で291名（2025年12月時点） / 公式サイトでは確認できず、公式サイト以外(有価証券報告書(EDINET))の値を採用（2025年12月時点）",
     "after": 291,
     "asOf": "2025年12月",
     "source": "edinet"
@@ -82924,7 +83464,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YE10,,",
     "snippet": "EDINETコード E01685 / 上場 証券コード6287 / 機械",
-    "at": "2026-10-07T16:51:31.373Z"
+    "at": "2026-10-08T00:46:14.388Z"
    },
    {
     "field": "address",
@@ -82932,7 +83472,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YE10,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区芝浦三丁目１番１号",
-    "at": "2026-10-07T16:51:31.373Z"
+    "at": "2026-10-08T00:46:14.388Z"
    },
    {
     "field": "employees",
@@ -82940,7 +83480,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YE10,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月19日提出・書類ID S100YE10） 提出会社単体の従業員数 1902名",
-    "at": "2026-10-07T16:51:31.373Z"
+    "at": "2026-10-08T00:46:14.388Z"
    },
    {
     "field": "employeesConsolidated",
@@ -82948,7 +83488,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YE10,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月19日提出・書類ID S100YE10） 連結の従業員数 6012名",
-    "at": "2026-10-07T16:51:31.373Z"
+    "at": "2026-10-08T00:46:14.388Z"
    }
   ],
   "seedCategories": [
@@ -83180,7 +83720,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XVY3,,",
     "snippet": "EDINETコード E05248 / 上場 証券コード4331 / サービス業（所在地での照合なし・社名のみ一致）",
-    "at": "2026-10-07T16:51:31.385Z"
+    "at": "2026-10-08T00:46:14.399Z"
    },
    {
     "field": "address",
@@ -83188,7 +83728,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XVY3,,",
     "snippet": "EDINETコード一覧の本店所在地: 品川区東品川　二丁目３番１２号（所在地での照合なし・社名のみ一致）",
-    "at": "2026-10-07T16:51:31.385Z"
+    "at": "2026-10-08T00:46:14.399Z"
    },
    {
     "field": "employees",
@@ -83196,7 +83736,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XVY3,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月31日提出・書類ID S100XVY3） 提出会社単体の従業員数 1447名（所在地での照合なし・社名のみ一致）",
-    "at": "2026-10-07T16:51:31.385Z"
+    "at": "2026-10-08T00:46:14.399Z"
    },
    {
     "field": "employeesConsolidated",
@@ -83204,7 +83744,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XVY3,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月31日提出・書類ID S100XVY3） 連結の従業員数 1846名",
-    "at": "2026-10-07T16:51:31.385Z"
+    "at": "2026-10-08T00:46:14.399Z"
    }
   ],
   "seedCategories": [
@@ -83658,7 +84198,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XCVT,,",
     "snippet": "EDINETコード E30648 / 上場 証券コード6094 / サービス業",
-    "at": "2026-10-07T16:51:31.400Z"
+    "at": "2026-10-08T00:46:14.413Z"
    },
    {
     "field": "address",
@@ -83666,7 +84206,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XCVT,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区六本木六丁目３番１号",
-    "at": "2026-10-07T16:51:31.400Z"
+    "at": "2026-10-08T00:46:14.413Z"
    },
    {
     "field": "employees",
@@ -83674,7 +84214,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XCVT,,",
     "snippet": "有価証券報告書 2025年9月期（2025年12月24日提出・書類ID S100XCVT） 提出会社単体の従業員数 62名",
-    "at": "2026-10-07T16:51:31.400Z"
+    "at": "2026-10-08T00:46:14.413Z"
    },
    {
     "field": "employeesConsolidated",
@@ -83682,7 +84222,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XCVT,,",
     "snippet": "有価証券報告書 2025年9月期（2025年12月24日提出・書類ID S100XCVT） 連結の従業員数 1051名",
-    "at": "2026-10-07T16:51:31.400Z"
+    "at": "2026-10-08T00:46:14.413Z"
    }
   ],
   "seedCategories": [
@@ -84311,7 +84851,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100X6AI,,",
     "snippet": "EDINETコード E34238 / 上場 証券コード7035 / サービス業",
-    "at": "2026-10-07T16:51:31.426Z"
+    "at": "2026-10-08T00:46:14.438Z"
    },
    {
     "field": "address",
@@ -84319,7 +84859,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100X6AI,,",
     "snippet": "EDINETコード一覧の本店所在地: 目黒区青葉台三丁目６番２８号",
-    "at": "2026-10-07T16:51:31.426Z"
+    "at": "2026-10-08T00:46:14.438Z"
    },
    {
     "field": "employees",
@@ -84327,7 +84867,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100X6AI,,",
     "snippet": "有価証券報告書 2025年8月期（2025年11月25日提出・書類ID S100X6AI） 提出会社単体の従業員数 128名",
-    "at": "2026-10-07T16:51:31.426Z"
+    "at": "2026-10-08T00:46:14.438Z"
    },
    {
     "field": "employeesConsolidated",
@@ -84335,7 +84875,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100X6AI,,",
     "snippet": "有価証券報告書 2025年8月期（2025年11月25日提出・書類ID S100X6AI） 連結の従業員数 131名",
-    "at": "2026-10-07T16:51:31.426Z"
+    "at": "2026-10-08T00:46:14.438Z"
    }
   ],
   "seedCategories": [
@@ -86576,7 +87116,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XUO8,,",
     "snippet": "EDINETコード E35096 / 非上場 / 情報・通信業",
-    "at": "2026-10-07T16:51:31.517Z"
+    "at": "2026-10-08T00:46:14.525Z"
    },
    {
     "field": "address",
@@ -86584,7 +87124,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XUO8,,",
     "snippet": "EDINETコード一覧の本店所在地: 品川区東五反田２－１０－２",
-    "at": "2026-10-07T16:51:31.517Z"
+    "at": "2026-10-08T00:46:14.525Z"
    },
    {
     "field": "employees",
@@ -86592,7 +87132,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XUO8,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月27日提出・書類ID S100XUO8） 提出会社単体の従業員数 332名",
-    "at": "2026-10-07T16:51:31.517Z"
+    "at": "2026-10-08T00:46:14.525Z"
    },
    {
     "field": "employeesConsolidated",
@@ -86600,7 +87140,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XUO8,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月27日提出・書類ID S100XUO8） 連結の従業員数 685名",
-    "at": "2026-10-07T16:51:31.517Z"
+    "at": "2026-10-08T00:46:14.525Z"
    }
   ],
   "seedCategories": [
@@ -86832,7 +87372,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YJ25,,",
     "snippet": "EDINETコード E05425 / 上場 証券コード2413 / サービス業（所在地での照合なし・社名のみ一致）",
-    "at": "2026-10-07T16:51:31.529Z"
+    "at": "2026-10-08T00:46:14.537Z"
    },
    {
     "field": "address",
@@ -86840,7 +87380,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YJ25,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区赤坂一丁目１１番４４号（所在地での照合なし・社名のみ一致）",
-    "at": "2026-10-07T16:51:31.529Z"
+    "at": "2026-10-08T00:46:14.537Z"
    },
    {
     "field": "employees",
@@ -86848,7 +87388,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YJ25,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月25日提出・書類ID S100YJ25） 提出会社単体の従業員数 750名（所在地での照合なし・社名のみ一致）",
-    "at": "2026-10-07T16:51:31.529Z"
+    "at": "2026-10-08T00:46:14.537Z"
    },
    {
     "field": "employeesConsolidated",
@@ -86856,7 +87396,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YJ25,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月25日提出・書類ID S100YJ25） 連結の従業員数 17010名",
-    "at": "2026-10-07T16:51:31.529Z"
+    "at": "2026-10-08T00:46:14.537Z"
    }
   ],
   "seedCategories": [
@@ -86987,7 +87527,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100X62P,,",
     "snippet": "EDINETコード E05622 / 上場 証券コード3815 / 情報・通信業",
-    "at": "2026-10-07T16:51:31.535Z"
+    "at": "2026-10-08T00:46:14.543Z"
    },
    {
     "field": "address",
@@ -86995,7 +87535,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100X62P,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区六本木七丁目１５番９号",
-    "at": "2026-10-07T16:51:31.535Z"
+    "at": "2026-10-08T00:46:14.543Z"
    },
    {
     "field": "employees",
@@ -87003,7 +87543,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100X62P,,",
     "snippet": "有価証券報告書 2025年8月期（2025年11月21日提出・書類ID S100X62P） 提出会社単体の従業員数 59名",
-    "at": "2026-10-07T16:51:31.535Z"
+    "at": "2026-10-08T00:46:14.543Z"
    }
   ],
   "seedCategories": [
@@ -87539,7 +88079,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XUX3,,",
     "snippet": "EDINETコード E33586 / 上場 証券コード4480 / 情報・通信業",
-    "at": "2026-10-07T16:51:31.553Z"
+    "at": "2026-10-08T00:46:14.560Z"
    },
    {
     "field": "address",
@@ -87547,7 +88087,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XUX3,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区六本木三丁目２番１号",
-    "at": "2026-10-07T16:51:31.553Z"
+    "at": "2026-10-08T00:46:14.560Z"
    },
    {
     "field": "employees",
@@ -87555,7 +88095,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XUX3,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月27日提出・書類ID S100XUX3） 提出会社単体の従業員数 1511名",
-    "at": "2026-10-07T16:51:31.553Z"
+    "at": "2026-10-08T00:46:14.560Z"
    },
    {
     "field": "employeesConsolidated",
@@ -87563,7 +88103,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XUX3,,",
     "snippet": "有価証券報告書 2025年12月期（2026年3月27日提出・書類ID S100XUX3） 連結の従業員数 1815名",
-    "at": "2026-10-07T16:51:31.553Z"
+    "at": "2026-10-08T00:46:14.560Z"
    }
   ],
   "seedCategories": [
@@ -87752,7 +88292,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YAEV,,",
     "snippet": "EDINETコード E05304 / 上場 証券コード2327 / 情報・通信業（所在地での照合なし・社名のみ一致）",
-    "at": "2026-10-07T16:51:31.561Z"
+    "at": "2026-10-08T00:46:14.568Z"
    },
    {
     "field": "address",
@@ -87760,7 +88300,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YAEV,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区虎ノ門１丁目１７番１号（所在地での照合なし・社名のみ一致）",
-    "at": "2026-10-07T16:51:31.561Z"
+    "at": "2026-10-08T00:46:14.568Z"
    },
    {
     "field": "employees",
@@ -87768,7 +88308,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YAEV,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月15日提出・書類ID S100YAEV） 提出会社単体の従業員数 4102名（所在地での照合なし・社名のみ一致）",
-    "at": "2026-10-07T16:51:31.561Z"
+    "at": "2026-10-08T00:46:14.568Z"
    },
    {
     "field": "employeesConsolidated",
@@ -87776,7 +88316,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YAEV,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月15日提出・書類ID S100YAEV） 連結の従業員数 10276名",
-    "at": "2026-10-07T16:51:31.561Z"
+    "at": "2026-10-08T00:46:14.568Z"
    }
   ],
   "seedCategories": [
@@ -87863,7 +88403,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Z3F1,,",
     "snippet": "EDINETコード E22012 / 上場 証券コード3632 / 情報・通信業",
-    "at": "2026-10-07T16:51:31.564Z"
+    "at": "2026-10-08T00:46:14.571Z"
    },
    {
     "field": "address",
@@ -87871,7 +88411,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Z3F1,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区六本木六丁目１１番１号六本木ヒルズゲートタワー",
-    "at": "2026-10-07T16:51:31.564Z"
+    "at": "2026-10-08T00:46:14.571Z"
    },
    {
     "field": "employees",
@@ -87879,7 +88419,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Z3F1,,",
     "snippet": "有価証券報告書 2026年6月期（2026年9月25日提出・書類ID S100Z3F1） 提出会社単体の従業員数 122名",
-    "at": "2026-10-07T16:51:31.564Z"
+    "at": "2026-10-08T00:46:14.571Z"
    },
    {
     "field": "employeesConsolidated",
@@ -87887,7 +88427,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Z3F1,,",
     "snippet": "有価証券報告書 2026年6月期（2026年9月25日提出・書類ID S100Z3F1） 連結の従業員数 1474名",
-    "at": "2026-10-07T16:51:31.564Z"
+    "at": "2026-10-08T00:46:14.571Z"
    }
   ],
   "seedCategories": [
@@ -88344,7 +88884,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XN2T,,",
     "snippet": "EDINETコード E02585 / 上場 証券コード8095 / 卸売業",
-    "at": "2026-10-07T16:51:31.579Z"
+    "at": "2026-10-08T00:46:14.585Z"
    },
    {
     "field": "address",
@@ -88352,7 +88892,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XN2T,,",
     "snippet": "EDINETコード一覧の本店所在地: 中央区日本橋本町四丁目８番２号",
-    "at": "2026-10-07T16:51:31.579Z"
+    "at": "2026-10-08T00:46:14.585Z"
    },
    {
     "field": "employees",
@@ -88360,7 +88900,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XN2T,,",
     "snippet": "有価証券報告書 2025年11月期（2026年2月25日提出・書類ID S100XN2T） 提出会社単体の従業員数 96名",
-    "at": "2026-10-07T16:51:31.579Z"
+    "at": "2026-10-08T00:46:14.585Z"
    },
    {
     "field": "employeesConsolidated",
@@ -88368,7 +88908,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XN2T,,",
     "snippet": "有価証券報告書 2025年11月期（2026年2月25日提出・書類ID S100XN2T） 連結の従業員数 1543名",
-    "at": "2026-10-07T16:51:31.579Z"
+    "at": "2026-10-08T00:46:14.585Z"
    }
   ],
   "seedCategories": [
@@ -88531,7 +89071,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YBXD,,",
     "snippet": "EDINETコード E05000 / 上場 証券コード4689 / 情報・通信業",
-    "at": "2026-10-07T16:51:31.588Z"
+    "at": "2026-10-08T00:46:14.593Z"
    },
    {
     "field": "address",
@@ -88539,7 +89079,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YBXD,,",
     "snippet": "EDINETコード一覧の本店所在地: 千代田区紀尾井町１番３号",
-    "at": "2026-10-07T16:51:31.588Z"
+    "at": "2026-10-08T00:46:14.593Z"
    },
    {
     "field": "employees",
@@ -88547,7 +89087,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YBXD,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月18日提出・書類ID S100YBXD） 提出会社単体の従業員数 10577名",
-    "at": "2026-10-07T16:51:31.588Z"
+    "at": "2026-10-08T00:46:14.593Z"
    },
    {
     "field": "employeesConsolidated",
@@ -88555,7 +89095,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YBXD,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月18日提出・書類ID S100YBXD） 連結の従業員数 29863名",
-    "at": "2026-10-07T16:51:31.588Z"
+    "at": "2026-10-08T00:46:14.593Z"
    }
   ],
   "seedCategories": [
@@ -89104,7 +89644,35 @@
    "cosme_d2c",
    "cosme_d2c"
   ],
-  "contactUrl": null
+  "contactUrl": null,
+  "checks": {
+   "verifiedAt": "2026-10-08",
+   "sig": "[3,[\"cosme_d2c\"],\"https://www.bijin-seizo.com/\",\"東京都港区南青山3−1−34 3rd MINAMIAOYAMA 7階\",300,\"green\",\"https://bijin-seizo.com/pages/contact\",[\"化粧品D2C/P2C\"]]",
+   "industry": {
+    "cosme_d2c": {
+     "result": "OK",
+     "comment": "公式の自社説明に「コスメ/サプリメント」あり。化粧品D2C/P2Cを取り扱っている",
+     "after": "化粧品D2C/P2C"
+    }
+   },
+   "employees": {
+    "result": "OK",
+    "comment": "Greenで300名 / 公式サイトでは確認できず、採用サイト(Green)の値を採用（時点の記載なし）",
+    "after": 300,
+    "asOf": null,
+    "source": "green"
+   },
+   "contact": {
+    "result": "要確認",
+    "comment": "サポート・お客様窓口の問い合わせページの可能性(/pages/contact)。一般の問い合わせ用途か要確認",
+    "after": "https://bijin-seizo.com/pages/contact"
+   },
+   "identity": {
+    "result": "OK",
+    "comment": "公式サイトに社名あり。所在地(東京都港区)がgreen/prtimesと一致",
+    "after": "https://www.bijin-seizo.com/"
+   }
+  }
  },
  {
   "key": "ワルドフィット",
@@ -89630,7 +90198,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YGBO,,",
     "snippet": "EDINETコード E01737 / 上場 証券コード6501 / 電気機器",
-    "at": "2026-10-07T16:51:32.989Z"
+    "at": "2026-10-08T00:46:14.627Z"
    },
    {
     "field": "address",
@@ -89638,7 +90206,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YGBO,,",
     "snippet": "EDINETコード一覧の本店所在地: 千代田区丸の内一丁目６番６号",
-    "at": "2026-10-07T16:51:32.989Z"
+    "at": "2026-10-08T00:46:14.627Z"
    },
    {
     "field": "employees",
@@ -89646,7 +90214,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YGBO,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月22日提出・書類ID S100YGBO） 提出会社単体の従業員数 25934名",
-    "at": "2026-10-07T16:51:32.989Z"
+    "at": "2026-10-08T00:46:14.627Z"
    },
    {
     "field": "employeesConsolidated",
@@ -89654,7 +90222,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YGBO,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月22日提出・書類ID S100YGBO） 連結の従業員数 287901名",
-    "at": "2026-10-07T16:51:32.989Z"
+    "at": "2026-10-08T00:46:14.627Z"
    }
   ],
   "seedCategories": [
@@ -91542,7 +92110,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y5S8,,",
     "snippet": "EDINETコード E41361 / 上場 証券コード542A / 化学（所在地での照合なし・社名のみ一致）",
-    "at": "2026-10-07T16:51:38.226Z"
+    "at": "2026-10-08T00:46:14.749Z"
    },
    {
     "field": "address",
@@ -91550,7 +92118,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y5S8,,",
     "snippet": "EDINETコード一覧の本店所在地: 港区赤坂五丁目３番１号（所在地での照合なし・社名のみ一致）",
-    "at": "2026-10-07T16:51:38.226Z"
+    "at": "2026-10-08T00:46:14.749Z"
    },
    {
     "field": "employees",
@@ -91558,7 +92126,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y5S8,,",
     "snippet": "有価証券報告書 2026年2月期（2026年5月25日提出・書類ID S100Y5S8） 提出会社単体の従業員数 95名（所在地での照合なし・社名のみ一致）",
-    "at": "2026-10-07T16:51:38.226Z"
+    "at": "2026-10-08T00:46:14.749Z"
    }
   ],
   "seedCategories": [
@@ -91842,7 +92410,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YC75,,",
     "snippet": "EDINETコード E39222 / 上場 証券コード5892 / 小売業（所在地での照合なし・社名のみ一致）",
-    "at": "2026-10-07T16:51:43.439Z"
+    "at": "2026-10-08T00:46:14.772Z"
    },
    {
     "field": "address",
@@ -91850,7 +92418,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YC75,,",
     "snippet": "EDINETコード一覧の本店所在地: 世田谷区北沢２－５－２（所在地での照合なし・社名のみ一致）",
-    "at": "2026-10-07T16:51:43.439Z"
+    "at": "2026-10-08T00:46:14.772Z"
    },
    {
     "field": "employees",
@@ -91858,7 +92426,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YC75,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月16日提出・書類ID S100YC75） 提出会社単体の従業員数 159名（所在地での照合なし・社名のみ一致）",
-    "at": "2026-10-07T16:51:43.439Z"
+    "at": "2026-10-08T00:46:14.772Z"
    },
    {
     "field": "employeesConsolidated",
@@ -91866,7 +92434,7 @@
     "source": "edinet",
     "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YC75,,",
     "snippet": "有価証券報告書 2026年3月期（2026年6月16日提出・書類ID S100YC75） 連結の従業員数 261名",
-    "at": "2026-10-07T16:51:43.439Z"
+    "at": "2026-10-08T00:46:14.772Z"
    }
   ],
   "seedCategories": [

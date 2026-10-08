@@ -1,6 +1,6 @@
 {
- "origin": "https://www.orbis.co.jp",
- "fetchedAt": "2026-10-06T23:58:44.843Z",
+ "origin": "http://www.orbis.co.jp",
+ "fetchedAt": "2026-10-08T00:47:37.199Z",
  "status": 200,
  "text": "User-agent: *\nDisallow: /review/search/$\nDisallow: /review/search/free$\nDisallow: /review/reviews/keyword_serch/\nDisallow: /review/profile/\nDisallow: /review/ranking/reviewers/$\nDisallow: /review/mypages/public_profile/\nDisallow: /review/reviews/use_purpose_serch/\nDisallow: /review/reviews/pc_index/\n\nUser-agent: AhrefsBot\nDisallow: /review/\n\nUser-agent: dotbot\nDisallow: /review/\n\nUser-agent: GPTBot\nDisallow: /review/\n\nUser-agent: trendictionbot\nDisallow: /review/\n\nUser-agent: MJ12bot\nDisallow: /review/\n\nUser-agent: CCBot\nDisallow: /review/\n\nUser-agent: Bytespider\nDisallow: /review/\n\nUser-agent: Baiduspider\nDisallow: /archives/\n\nUser-agent: ClaudeBot\nCrawl-delay: 1\n\nUser-agent: meta-externalagent\nDisallow: /review/search/$\nDisallow: /review/search/free$\nDisallow: /review/reviews/keyword_serch/\nDisallow: /review/profile/\nDisallow: /review/ranking/reviewers/$\nDisallow: /review/mypages/public_profile/\nDisallow: /review/reviews/use_purpose_serch/\nDisallow: /review/reviews/pc_index/\nDisallow: /review/reviews/profile/\n\nSitemap: https://www.orbis.co.jp/sitemap.xml\nSitemap: https://www.orbis.co.jp/sitemap_kuchikomi.xml\n"
 }

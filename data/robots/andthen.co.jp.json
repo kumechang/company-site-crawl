@@ -1,6 +1,6 @@
 {
  "origin": "https://andthen.co.jp",
- "fetchedAt": "2026-10-07T14:12:58.523Z",
+ "fetchedAt": "2026-10-08T00:40:56.343Z",
  "status": 200,
  "text": "User-agent: *\nDisallow: /wp/wp-admin/\nAllow: /wp/wp-admin/admin-ajax.php\n\n# START YOAST BLOCK\n# ---------------------------\nUser-agent: *\nDisallow:\n\nSitemap: https://andthen.co.jp/sitemap_index.xml\n# ---------------------------\n# END YOAST BLOCK"
 }
